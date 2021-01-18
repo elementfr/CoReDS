@@ -28,13 +28,57 @@ image:
 projects: []
 ---
 
+<script src="{{< blogdown/postref >}}index.en_files/kePrint/kePrint.js"></script>
+<link href="{{< blogdown/postref >}}index.en_files/lightable/lightable.css" rel="stylesheet" />
 
 
-<pre class="r"><code>library(REDCapR)
-
-uri &lt;- &quot;http://s1.eq22.fr/redcap/api/&quot;
-token &lt;- &quot;3707C9643481CAE91EAC1EAE913B0E30&quot;
-
-ds_all_rows_all_fields &lt;- redcap_read(redcap_uri = uri, token = token)$data</code></pre>
-<pre><code>## The data dictionary describing 1 fields was read from REDCap in 0.1 seconds.  The http status code was 200.</code></pre>
-<pre><code>## The REDCapR read/export operation was not successful.  The returned dataset was empty.</code></pre>
+<p>Liste des recherches (répertoriées ci-dessous par date de soumission). Toutes ces études sont menées par des professionnels de l’AP-HP, certaines en collaboration avec des partenaires extérieurs à l’AP-HP.</p>
+<table class="table" style="margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:unnamed-chunk-2">Table 1: </span>Le tableau de suivi des projets est mis à jour toutes les 24H
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+Date
+</th>
+<th style="text-align:left;">
+Nom de l’étude
+</th>
+<th style="text-align:left;">
+Investigateur
+</th>
+<th style="text-align:left;">
+Avis URC
+</th>
+<th style="text-align:left;">
+Avis informatique
+</th>
+<th style="text-align:left;">
+Avis éthique
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+2021-01-18
+</td>
+<td style="text-align:left;width: 5cm; ">
+Lunette virtuelle pour cocker
+</td>
+<td style="text-align:left;width: 3cm; ">
+Sabatier
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: lightseagreen !important;">Avis OK</span>
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: gray !important;">Non concerné</span>
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: orange !important;">En attente</span>
+</td>
+</tr>
+</tbody>
+</table>

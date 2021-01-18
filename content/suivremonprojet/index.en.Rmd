@@ -28,17 +28,77 @@ image:
 projects: []
 ---
 
+Liste des recherches (répertoriées ci-dessous par date de soumission). Toutes ces études sont menées par des professionnels de l’AP-HP, certaines en collaboration avec des partenaires extérieurs à l’AP-HP.  
 
-```{r}
+```{r include=FALSE}
 library(REDCapR)
+library(questionr)
+library(tidyverse)
+library(kableExtra)
+library(formattable)
 
 uri <- "http://s1.eq22.fr/redcap/api/"
 token <- "3707C9643481CAE91EAC1EAE913B0E30"
 
 ds_all_rows_all_fields <- redcap_read(redcap_uri = uri, token = token)$data
 
+tableau <- ds_all_rows_all_fields %>% 
+  filter(demande_complete == 2) %>% 
+  select(titre_etude, pi_nom, demande_date, avis_urc_complete, avis_infomed_complete, avis_ceraphp_complete) 
+
+
+tableau$avis_urc_complete <- as.character(tableau$avis_urc_complete)
+tableau$avis_urc_complete <- fct_recode(tableau$avis_urc_complete,
+  "En attente" = "0")
+tableau$avis_urc_complete <- fct_recode(tableau$avis_urc_complete,
+  "Non concerné" = "1")
+tableau$avis_urc_complete <- fct_recode(tableau$avis_urc_complete,
+  "Avis OK" = "2")
+
+tableau$avis_infomed_complete <- as.character(tableau$avis_infomed_complete)
+tableau$avis_infomed_complete <- fct_recode(tableau$avis_infomed_complete,
+  "En attente" = "0")
+tableau$avis_infomed_complete <- fct_recode(tableau$avis_infomed_complete,
+  "Non concerné" = "1")
+tableau$avis_infomed_complete <- fct_recode(tableau$avis_infomed_complete,
+  "Avis OK" = "2")
+
+tableau$avis_ceraphp_complete <- as.character(tableau$avis_ceraphp_complete)
+tableau$avis_ceraphp_complete <- fct_recode(tableau$avis_ceraphp_complete,
+  "En attente" = "0")
+tableau$avis_ceraphp_complete <- fct_recode(tableau$avis_ceraphp_complete,
+  "Non concerné" = "1")
+tableau$avis_ceraphp_complete <- fct_recode(tableau$avis_ceraphp_complete,
+  "Avis OK" = "2")
+
+tableau2 <- tableau %>% 
+  select(demande_date, everything()) %>% 
+  rename("Nom de l'étude" = titre_etude, "Investigateur" = pi_nom, "Date" = demande_date, "Avis URC" = avis_urc_complete, "Avis éthique" = avis_ceraphp_complete, "Avis informatique" = avis_infomed_complete) 
 ```
 
+```{r echo=FALSE}
+tableau2 %>% 
+  mutate(`Avis URC` = if (`Avis URC` == "Avis OK"){
+    cell_spec(`Avis URC`, "html", color = "lightseagreen", bold = T)} 
+    else if (`Avis URC` == "En attente"){
+     cell_spec(`Avis URC`, "html", color = "orange", bold = T)} 
+    else {cell_spec(`Avis URC`, "html", color = "gray", bold = T)},
+    `Avis éthique` = if (`Avis éthique` == "Avis OK"){
+    cell_spec(`Avis éthique`, "html", color = "lightseagreen", bold = T)} 
+    else if (`Avis éthique` == "En attente"){
+     cell_spec(`Avis éthique`, "html", color = "orange", bold = T)} 
+    else {cell_spec(`Avis éthique`, "html", color = "gray", bold = T)},
+    `Avis informatique` = if (`Avis informatique` == "Avis OK"){
+    cell_spec(`Avis informatique`, "html", color = "lightseagreen", bold = T)} 
+    else if (`Avis informatique` == "En attente"){
+     cell_spec(`Avis informatique`, "html", color = "orange", bold = T)} 
+    else {cell_spec(`Avis informatique`, "html", color = "gray", bold = T)}) %>%
+  kable("html", escape = F, caption = 'Le tableau de suivi des projets est mis à jour toutes les 24H') %>%
+  kable_styling(position = "center") %>% 
+  column_spec(2, width = "5cm") %>% 
+  column_spec(3, width = "3cm")
+
+```
 
 
 

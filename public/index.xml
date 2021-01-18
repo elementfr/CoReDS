@@ -400,16 +400,60 @@ Si votre traitement répond à ces trois critères, vous pouvez débuter le remp
       <pubDate>Wed, 11 Nov 2020 20:53:03 +0100</pubDate>
       <guid>https://www.coreds.com/suivremonprojet/</guid>
       <description>
+&lt;script src=&#34;https://www.coreds.com/suivremonprojet/index.en_files/kePrint/kePrint.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://www.coreds.com/suivremonprojet/index.en_files/lightable/lightable.css&#34; rel=&#34;stylesheet&#34; /&gt;
 
 
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(REDCapR)
-
-uri &amp;lt;- &amp;quot;http://s1.eq22.fr/redcap/api/&amp;quot;
-token &amp;lt;- &amp;quot;3707C9643481CAE91EAC1EAE913B0E30&amp;quot;
-
-ds_all_rows_all_fields &amp;lt;- redcap_read(redcap_uri = uri, token = token)$data&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## The data dictionary describing 1 fields was read from REDCap in 0.1 seconds.  The http status code was 200.&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## The REDCapR read/export operation was not successful.  The returned dataset was empty.&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Liste des recherches (répertoriées ci-dessous par date de soumission). Toutes ces études sont menées par des professionnels de l’AP-HP, certaines en collaboration avec des partenaires extérieurs à l’AP-HP.&lt;/p&gt;
+&lt;table class=&#34;table&#34; style=&#34;margin-left: auto; margin-right: auto;&#34;&gt;
+&lt;caption&gt;
+&lt;span id=&#34;tab:unnamed-chunk-2&#34;&gt;Table 1: &lt;/span&gt;Le tableau de suivi des projets est mis à jour toutes les 24H
+&lt;/caption&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left;&#34;&gt;
+Date
+&lt;/th&gt;
+&lt;th style=&#34;text-align:left;&#34;&gt;
+Nom de l’étude
+&lt;/th&gt;
+&lt;th style=&#34;text-align:left;&#34;&gt;
+Investigateur
+&lt;/th&gt;
+&lt;th style=&#34;text-align:left;&#34;&gt;
+Avis URC
+&lt;/th&gt;
+&lt;th style=&#34;text-align:left;&#34;&gt;
+Avis informatique
+&lt;/th&gt;
+&lt;th style=&#34;text-align:left;&#34;&gt;
+Avis éthique
+&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2021-01-18
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;width: 5cm; &#34;&gt;
+Lunette virtuelle pour cocker
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;width: 3cm; &#34;&gt;
+Sabatier
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;span style=&#34; font-weight: bold;    color: lightseagreen !important;&#34;&gt;Avis OK&lt;/span&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;span style=&#34; font-weight: bold;    color: gray !important;&#34;&gt;Non concerné&lt;/span&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;span style=&#34; font-weight: bold;    color: orange !important;&#34;&gt;En attente&lt;/span&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 </description>
     </item>
     
@@ -421,7 +465,7 @@ ds_all_rows_all_fields &amp;lt;- redcap_read(redcap_uri = uri, token = token)$da
       <description>
 
 
-&lt;iframe src=&#34;https://egp-svwacarp4.egp.aphp.fr/redcap/surveys/?s=8R9P4C9FHX&#34; style=&#34;position:absolute; top:0; left:0; bottom:0; right:0; width:100%; height:100%  &#34;&gt;
+&lt;iframe src=&#34;http://s1.eq22.fr/redcap/surveys/?s=CP9DJJ4W3J&#34; style=&#34;position:absolute; top:0; left:0; bottom:0; right:0; width:100%; height:100%  &#34;&gt;
 &lt;/iframe&gt;
 </description>
     </item>
