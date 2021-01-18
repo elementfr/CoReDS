@@ -1,0 +1,9 @@
+---
+title: "Mise à jour automatique des publication des auteurs"
+site: blogdown:::blogdown_site
+---
+
+```{r include=FALSE}
+source(file = "auto_articles.R")
+```
+
