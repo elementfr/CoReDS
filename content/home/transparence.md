@@ -38,7 +38,7 @@ subtitle = ""
   #   2 = Compact
   #   3 = Card
   #   4 = Citation (publication only)
-  view = 3
+  view = 2
   
 [design.background]
   # Apply a background color, gradient, or image.
@@ -69,3 +69,4 @@ subtitle = ""
  # CSS class.
  css_class = ""
 +++
+

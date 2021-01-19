@@ -3,5 +3,5 @@ header:
   caption: ""
   image: ""
 title: Portail de transparence
-view: 4
+view: 5
 ---
