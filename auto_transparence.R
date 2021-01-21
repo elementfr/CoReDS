@@ -11,14 +11,14 @@ library(REDCapR)
 uri <- "http://s1.eq22.fr/redcap/api/"
 token <- "3707C9643481CAE91EAC1EAE913B0E30"
 
-pubmed_data <- redcap_read(redcap_uri = uri, token = token)$data
+projet_data <- redcap_read(redcap_uri = uri, token = token)$data
 
-pubmed_data <- pubmed_data %>% 
+projet_data <- projet_data %>% 
   mutate(PublicationType = 2,
          demande_date = ymd(demande_date))
 
 
-bibtex_2academic <- function(pubmed_data,
+bibtex_2academic <- function(projet_data,
                              outfold,
                              overwrite = TRUE) {
   
@@ -88,11 +88,11 @@ bibtex_2academic <- function(pubmed_data,
   # apply the "create_md" function over the publications list to generate
   # the different "md" files.
   
-  apply(pubmed_data, FUN = function(x) create_md(x), MARGIN = 1)
+  apply(projet_data, FUN = function(x) create_md(x), MARGIN = 1)
 }
 
 
 out_fold   <- "content/transparence"
 
-bibtex_2academic(pubmed_data  = pubmed_data, 
+bibtex_2academic(projet_data  = projet_data, 
                  outfold   = out_fold)
