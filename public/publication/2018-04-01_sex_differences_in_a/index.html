@@ -37,7 +37,7 @@
   <meta name="description" content="BACKGROUND:Sex differences in antihypertensive treatment have often been highlighted, but whether there is truly a difference or whether this difference is mediated by confounding factors has yet to be deciphered.PATIENTS AND METHODS:We performed a cross-sectional study on the first consultation in the Georges Pompidou Hospital Tertiary Hypertension Unit between July 2000 and June 2015 to explore sex differences in both patient and treatment characteristics over this period.RESULTS:A total of 17 856 patients were included. We observed in both women and men an increase in blood pressure control over time despite having more comorbidities. In conjunction, there was an increasing number of treated patients and treatments per patient. The treatments previously selected by the referring physicians strongly differed by sex: women were more frequently treated with loop diuretics [odds ratio (OR) = 1.2 (95% confidence interval (CI): 1.05-1.37)], thiazide diuretics [OR = 1.13 (95% CI: 1.03-1.23)], aldosterone-receptor blockers [OR = 1.41 (95% CI: 1.24-1.61)], and beta blockers [OR = 1.53 (95% CI: 1.41-1.66)] but less frequently with angiotensin-converting enzyme inhibitors [OR = 0.77 (95% CI: 0.70-0.84)], angiotensin II-receptor blockers [OR = 0.93 (95% CI: 0.86-1.0)], and calcium channel blockers [OR = 0.72 (95% CI: 0.67-0.78)] than men after adjusting for various patient-related confounding factors.CONCLUSION:Blood pressure control has greatly improved over the last 15 years in both men and women. Although the treatment choice remained strongly dependent on sex, this is not justified by a sex-related difference in cardiovascular benefit from antihypertensive treatment. ">
 
   
-  <link rel="alternate" hreflang="fr" href="https://www.coreds.com/publication/2018-04-01_sex_differences_in_a/">
+  <link rel="alternate" hreflang="fr" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2018-04-01_sex_differences_in_a/">
 
   
 
@@ -66,7 +66,7 @@
   
   
   
-  <script src="/js/mathjax-config.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/mathjax-config.js"></script>
   
 
   
@@ -241,13 +241,51 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.css">
+  <link rel="stylesheet" href="https://consultation-recherche-donnees-sante.netlify.app/css/wowchemy.css">
 
   
 
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-80B5KND2Y6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-80B5KND2Y6', { 'anonymize_ip': true });
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
   
@@ -258,11 +296,11 @@
 
   
 
-  <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
+  <link rel="manifest" href="https://consultation-recherche-donnees-sante.netlify.app/index.webmanifest">
+  <link rel="icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="https://www.coreds.com/publication/2018-04-01_sex_differences_in_a/">
+  <link rel="canonical" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2018-04-01_sex_differences_in_a/">
 
   
   
@@ -278,10 +316,10 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:url" content="https://www.coreds.com/publication/2018-04-01_sex_differences_in_a/">
+  <meta property="og:url" content="https://consultation-recherche-donnees-sante.netlify.app/publication/2018-04-01_sex_differences_in_a/">
   <meta property="og:title" content="Sex differences in antihypertensive treatment in France among 17 856 patients in a tertiary hypertension unit. | Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:description" content="BACKGROUND:Sex differences in antihypertensive treatment have often been highlighted, but whether there is truly a difference or whether this difference is mediated by confounding factors has yet to be deciphered.PATIENTS AND METHODS:We performed a cross-sectional study on the first consultation in the Georges Pompidou Hospital Tertiary Hypertension Unit between July 2000 and June 2015 to explore sex differences in both patient and treatment characteristics over this period.RESULTS:A total of 17 856 patients were included. We observed in both women and men an increase in blood pressure control over time despite having more comorbidities. In conjunction, there was an increasing number of treated patients and treatments per patient. The treatments previously selected by the referring physicians strongly differed by sex: women were more frequently treated with loop diuretics [odds ratio (OR) = 1.2 (95% confidence interval (CI): 1.05-1.37)], thiazide diuretics [OR = 1.13 (95% CI: 1.03-1.23)], aldosterone-receptor blockers [OR = 1.41 (95% CI: 1.24-1.61)], and beta blockers [OR = 1.53 (95% CI: 1.41-1.66)] but less frequently with angiotensin-converting enzyme inhibitors [OR = 0.77 (95% CI: 0.70-0.84)], angiotensin II-receptor blockers [OR = 0.93 (95% CI: 0.86-1.0)], and calcium channel blockers [OR = 0.72 (95% CI: 0.67-0.78)] than men after adjusting for various patient-related confounding factors.CONCLUSION:Blood pressure control has greatly improved over the last 15 years in both men and women. Although the treatment choice remained strongly dependent on sex, this is not justified by a sex-related difference in cardiovascular benefit from antihypertensive treatment. "><meta property="og:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
-  <meta property="twitter:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
+  <meta property="og:description" content="BACKGROUND:Sex differences in antihypertensive treatment have often been highlighted, but whether there is truly a difference or whether this difference is mediated by confounding factors has yet to be deciphered.PATIENTS AND METHODS:We performed a cross-sectional study on the first consultation in the Georges Pompidou Hospital Tertiary Hypertension Unit between July 2000 and June 2015 to explore sex differences in both patient and treatment characteristics over this period.RESULTS:A total of 17 856 patients were included. We observed in both women and men an increase in blood pressure control over time despite having more comorbidities. In conjunction, there was an increasing number of treated patients and treatments per patient. The treatments previously selected by the referring physicians strongly differed by sex: women were more frequently treated with loop diuretics [odds ratio (OR) = 1.2 (95% confidence interval (CI): 1.05-1.37)], thiazide diuretics [OR = 1.13 (95% CI: 1.03-1.23)], aldosterone-receptor blockers [OR = 1.41 (95% CI: 1.24-1.61)], and beta blockers [OR = 1.53 (95% CI: 1.41-1.66)] but less frequently with angiotensin-converting enzyme inhibitors [OR = 0.77 (95% CI: 0.70-0.84)], angiotensin II-receptor blockers [OR = 0.93 (95% CI: 0.86-1.0)], and calcium channel blockers [OR = 0.72 (95% CI: 0.67-0.78)] than men after adjusting for various patient-related confounding factors.CONCLUSION:Blood pressure control has greatly improved over the last 15 years in both men and women. Although the treatment choice remained strongly dependent on sex, this is not justified by a sex-related difference in cardiovascular benefit from antihypertensive treatment. "><meta property="og:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
+  <meta property="twitter:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
   
     
       <meta property="article:published_time" content="2018-04-01T00:00:00&#43;00:00">
@@ -308,7 +346,7 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://www.coreds.com/publication/2018-04-01_sex_differences_in_a/"
+    "@id": "https://consultation-recherche-donnees-sante.netlify.app/publication/2018-04-01_sex_differences_in_a/"
   },
   "headline": "Sex differences in antihypertensive treatment in France among 17 856 patients in a tertiary hypertension unit.",
   
@@ -325,7 +363,7 @@
     "name": "Consultation Recherche Données de Santé - CoReDS",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
+      "url": "https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
     }
   },
   "description": "BACKGROUND:Sex differences in antihypertensive treatment have often been highlighted, but whether there is truly a difference or whether this difference is mediated by confounding factors has yet to be deciphered.PATIENTS AND METHODS:We performed a cross-sectional study on the first consultation in the Georges Pompidou Hospital Tertiary Hypertension Unit between July 2000 and June 2015 to explore sex differences in both patient and treatment characteristics over this period.RESULTS:A total of 17 856 patients were included. We observed in both women and men an increase in blood pressure control over time despite having more comorbidities. In conjunction, there was an increasing number of treated patients and treatments per patient. The treatments previously selected by the referring physicians strongly differed by sex: women were more frequently treated with loop diuretics [odds ratio (OR) = 1.2 (95% confidence interval (CI): 1.05-1.37)], thiazide diuretics [OR = 1.13 (95% CI: 1.03-1.23)], aldosterone-receptor blockers [OR = 1.41 (95% CI: 1.24-1.61)], and beta blockers [OR = 1.53 (95% CI: 1.41-1.66)] but less frequently with angiotensin-converting enzyme inhibitors [OR = 0.77 (95% CI: 0.70-0.84)], angiotensin II-receptor blockers [OR = 0.93 (95% CI: 0.86-1.0)], and calcium channel blockers [OR = 0.72 (95% CI: 0.67-0.78)] than men after adjusting for various patient-related confounding factors.CONCLUSION:Blood pressure control has greatly improved over the last 15 years in both men and women. Although the treatment choice remained strongly dependent on sex, this is not justified by a sex-related difference in cardiovascular benefit from antihypertensive treatment. "
@@ -390,7 +428,7 @@
     <script>const isSiteThemeDark = false;</script>
   
   
-  <script src="/js/load-theme.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/load-theme.js"></script>
 
   <aside class="search-results" id="search">
   <div class="container">
@@ -445,7 +483,7 @@
 
     
     <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -458,7 +496,7 @@
 
     
     <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -494,7 +532,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/entreprendre/"><span>Commencer un projet</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/entreprendre/"><span>Commencer un projet</span></a>
         </li>
 
         
@@ -524,44 +562,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/suivremonprojet/"><span>Suivre son projet</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-            
-            
-            
-              
-            
-            
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#outils"><span>Boite à outils</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/suivremonprojet/"><span>Suivre son projet</span></a>
         </li>
 
         
@@ -598,7 +599,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#publi"><span>Publications</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#outils"><span>Boite à outils</span></a>
         </li>
 
         
@@ -635,7 +636,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#transparence"><span>Portail de transparence</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#publi"><span>Publications</span></a>
         </li>
 
         
@@ -672,7 +673,44 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#people"><span>Qui sommes-nous ?</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#transparence"><span>Portail de transparence</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#people"><span>Qui sommes-nous ?</span></a>
         </li>
 
         
@@ -745,7 +783,7 @@
     
 
   
-  <span ><a href="/author/deborde-therese/">Deborde Therese</a></span>, <span ><a href="/author/amar-laurence/">Amar Laurence</a></span>, <span ><a href="/author/bobrie-guillaume/">Bobrie Guillaume</a></span>, <span ><a href="/author/postel-vinay-nicolas/">Postel-Vinay Nicolas</a></span>, <span ><a href="/author/battaglia-christiane/">Battaglia Christiane</a></span>, <span ><a href="/author/tache-amokrane/">Tache Amokrane</a></span>, <span ><a href="/author/chedid-antoine/">Chedid Antoine</a></span>, <span ><a href="/author/dhib-mohamed-malek/">Dhib Mohamed-Malek</a></span>, <span ><a href="/author/chatellier-gilles/">Chatellier Gilles</a></span>, <span ><a href="/author/plouin-pierre-francois/">Plouin Pierre-Francois</a></span>, <span ><a href="/author/burgun-anita/">Burgun Anita</a></span>, <span ><a href="/author/azizi-michel/">Azizi Michel</a></span>, <span ><a href="/author/jannot-anne-sophie/">Jannot Anne-Sophie</a></span>
+  <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/deborde-therese/">Deborde Therese</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/amar-laurence/">Amar Laurence</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/bobrie-guillaume/">Bobrie Guillaume</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/postel-vinay-nicolas/">Postel-Vinay Nicolas</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/battaglia-christiane/">Battaglia Christiane</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/tache-amokrane/">Tache Amokrane</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/chedid-antoine/">Chedid Antoine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/dhib-mohamed-malek/">Dhib Mohamed-Malek</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/chatellier-gilles/">Chatellier Gilles</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/plouin-pierre-francois/">Plouin Pierre-Francois</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/burgun-anita/">Burgun Anita</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/azizi-michel/">Azizi Michel</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/jannot-anne-sophie/">Jannot Anne-Sophie</a></span>
   </div>
   
   
@@ -811,7 +849,7 @@
           <div class="col-12 col-md-9">
             
             
-            <a href="/publication/#2">
+            <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/#2">
               Article de revue
             </a>
             
@@ -870,7 +908,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://www.coreds.com/publication/2018-04-01_sex_differences_in_a/&amp;text=Sex%20differences%20in%20antihypertensive%20treatment%20in%20France%20among%2017%e2%80%8a856%20patients%20in%20a%20tertiary%20hypertension%20unit." target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2018-04-01_sex_differences_in_a/&amp;text=Sex%20differences%20in%20antihypertensive%20treatment%20in%20France%20among%2017%e2%80%8a856%20patients%20in%20a%20tertiary%20hypertension%20unit." target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -883,7 +921,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://www.coreds.com/publication/2018-04-01_sex_differences_in_a/&amp;t=Sex%20differences%20in%20antihypertensive%20treatment%20in%20France%20among%2017%e2%80%8a856%20patients%20in%20a%20tertiary%20hypertension%20unit." target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://consultation-recherche-donnees-sante.netlify.app/publication/2018-04-01_sex_differences_in_a/&amp;t=Sex%20differences%20in%20antihypertensive%20treatment%20in%20France%20among%2017%e2%80%8a856%20patients%20in%20a%20tertiary%20hypertension%20unit." target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -896,7 +934,7 @@
       
       
       <li>
-        <a href="mailto:?subject=Sex%20differences%20in%20antihypertensive%20treatment%20in%20France%20among%2017%e2%80%8a856%20patients%20in%20a%20tertiary%20hypertension%20unit.&amp;body=https://www.coreds.com/publication/2018-04-01_sex_differences_in_a/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=Sex%20differences%20in%20antihypertensive%20treatment%20in%20France%20among%2017%e2%80%8a856%20patients%20in%20a%20tertiary%20hypertension%20unit.&amp;body=https://consultation-recherche-donnees-sante.netlify.app/publication/2018-04-01_sex_differences_in_a/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -909,7 +947,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://www.coreds.com/publication/2018-04-01_sex_differences_in_a/&amp;title=Sex%20differences%20in%20antihypertensive%20treatment%20in%20France%20among%2017%e2%80%8a856%20patients%20in%20a%20tertiary%20hypertension%20unit." target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2018-04-01_sex_differences_in_a/&amp;title=Sex%20differences%20in%20antihypertensive%20treatment%20in%20France%20among%2017%e2%80%8a856%20patients%20in%20a%20tertiary%20hypertension%20unit." target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -922,7 +960,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=Sex%20differences%20in%20antihypertensive%20treatment%20in%20France%20among%2017%e2%80%8a856%20patients%20in%20a%20tertiary%20hypertension%20unit.%20https://www.coreds.com/publication/2018-04-01_sex_differences_in_a/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=Sex%20differences%20in%20antihypertensive%20treatment%20in%20France%20among%2017%e2%80%8a856%20patients%20in%20a%20tertiary%20hypertension%20unit.%20https://consultation-recherche-donnees-sante.netlify.app/publication/2018-04-01_sex_differences_in_a/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -935,7 +973,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://www.coreds.com/publication/2018-04-01_sex_differences_in_a/&amp;title=Sex%20differences%20in%20antihypertensive%20treatment%20in%20France%20among%2017%e2%80%8a856%20patients%20in%20a%20tertiary%20hypertension%20unit." target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2018-04-01_sex_differences_in_a/&amp;title=Sex%20differences%20in%20antihypertensive%20treatment%20in%20France%20among%2017%e2%80%8a856%20patients%20in%20a%20tertiary%20hypertension%20unit." target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1053,7 +1091,7 @@
     <h3>Sur le même sujet</h3>
     <ul>
       
-      <li><a href="/publication/2017-03-01_cause_of_renal_infar/">Cause of renal infarction: a retrospective analysis of 186 consecutive cases.</a></li>
+      <li><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2017-03-01_cause_of_renal_infar/">Cause of renal infarction: a retrospective analysis of 186 consecutive cases.</a></li>
       
     </ul>
   </div>
@@ -1237,7 +1275,7 @@
     
     
     
-    <script src="/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
+    <script src="https://consultation-recherche-donnees-sante.netlify.app/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
 
     
 

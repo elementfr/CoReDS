@@ -37,7 +37,7 @@
   <meta name="description" content="Introduction NlmCategory=UNASSIGNED:Acute kidney injury (AKI) occurring in the hospital in noncritically ill patients involves a broad spectrum of clinical conditions and medical scenarios that are better appreciated by systematic association studies.Methods NlmCategory=UNASSIGNED:We extracted all diagnoses and drug prescriptions from an i2b2 clinical data warehouse for patients who stayed in an academic hospital between 2013 and 2017, and had at least two plasma creatinine measurements performed during the first week of their stay, and analyzed the association between AKI occurring outside the intensive care unit (ICU), as identified using the AKIN classification criteria, and International Classification of Diseases (ICD)-10 diagnosis codes and drug categories.Results NlmCategory=UNASSIGNED:16,662 hospital stays for unique individuals were extracted. The prevalence of AKI outside the ICU was 8%, with a distribution of frequencies that greatly varied according to the departments. 4% of patients with AKI died during their hospital stay (OR 6.17, 95% CI [2.59-17.9]). ICD-10 diagnosis codes were related to infections, kidney cancer, heart failure, respiratory failure, and chronic kidney disease. Drugs targeting the renin angiotensin system and loop diuretics had the larger size effect on AKI. The ICD-10 code N17/&amp;quot;Acute kidney failure&amp;quot; was recorded in average in only 16% of the cases with AKI, and its frequency ranged from 0 to 80%, according to the hospital department; the lack of encoding did not impact mortality.Conclusion NlmCategory=UNASSIGNED:A systematic search for the associations of AKI with prescribed drugs and medical diagnosis using a phenome-wide approach allows to describe in depth the epidemiology of AKI outside the ICU. ">
 
   
-  <link rel="alternate" hreflang="fr" href="https://www.coreds.com/publication/2019-10-01_clinical_and_pharmac/">
+  <link rel="alternate" hreflang="fr" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2019-10-01_clinical_and_pharmac/">
 
   
 
@@ -66,7 +66,7 @@
   
   
   
-  <script src="/js/mathjax-config.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/mathjax-config.js"></script>
   
 
   
@@ -241,13 +241,51 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.css">
+  <link rel="stylesheet" href="https://consultation-recherche-donnees-sante.netlify.app/css/wowchemy.css">
 
   
 
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-80B5KND2Y6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-80B5KND2Y6', { 'anonymize_ip': true });
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
   
@@ -258,11 +296,11 @@
 
   
 
-  <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
+  <link rel="manifest" href="https://consultation-recherche-donnees-sante.netlify.app/index.webmanifest">
+  <link rel="icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="https://www.coreds.com/publication/2019-10-01_clinical_and_pharmac/">
+  <link rel="canonical" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2019-10-01_clinical_and_pharmac/">
 
   
   
@@ -278,10 +316,10 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:url" content="https://www.coreds.com/publication/2019-10-01_clinical_and_pharmac/">
+  <meta property="og:url" content="https://consultation-recherche-donnees-sante.netlify.app/publication/2019-10-01_clinical_and_pharmac/">
   <meta property="og:title" content="Clinical and Pharmacological Aspects of Hospital-Acquired Acute Kidney Injuries Outside the Intensive Care Unit: A Phenome-Wide Association Study. | Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:description" content="Introduction NlmCategory=UNASSIGNED:Acute kidney injury (AKI) occurring in the hospital in noncritically ill patients involves a broad spectrum of clinical conditions and medical scenarios that are better appreciated by systematic association studies.Methods NlmCategory=UNASSIGNED:We extracted all diagnoses and drug prescriptions from an i2b2 clinical data warehouse for patients who stayed in an academic hospital between 2013 and 2017, and had at least two plasma creatinine measurements performed during the first week of their stay, and analyzed the association between AKI occurring outside the intensive care unit (ICU), as identified using the AKIN classification criteria, and International Classification of Diseases (ICD)-10 diagnosis codes and drug categories.Results NlmCategory=UNASSIGNED:16,662 hospital stays for unique individuals were extracted. The prevalence of AKI outside the ICU was 8%, with a distribution of frequencies that greatly varied according to the departments. 4% of patients with AKI died during their hospital stay (OR 6.17, 95% CI [2.59-17.9]). ICD-10 diagnosis codes were related to infections, kidney cancer, heart failure, respiratory failure, and chronic kidney disease. Drugs targeting the renin angiotensin system and loop diuretics had the larger size effect on AKI. The ICD-10 code N17/&amp;quot;Acute kidney failure&amp;quot; was recorded in average in only 16% of the cases with AKI, and its frequency ranged from 0 to 80%, according to the hospital department; the lack of encoding did not impact mortality.Conclusion NlmCategory=UNASSIGNED:A systematic search for the associations of AKI with prescribed drugs and medical diagnosis using a phenome-wide approach allows to describe in depth the epidemiology of AKI outside the ICU. "><meta property="og:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
-  <meta property="twitter:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
+  <meta property="og:description" content="Introduction NlmCategory=UNASSIGNED:Acute kidney injury (AKI) occurring in the hospital in noncritically ill patients involves a broad spectrum of clinical conditions and medical scenarios that are better appreciated by systematic association studies.Methods NlmCategory=UNASSIGNED:We extracted all diagnoses and drug prescriptions from an i2b2 clinical data warehouse for patients who stayed in an academic hospital between 2013 and 2017, and had at least two plasma creatinine measurements performed during the first week of their stay, and analyzed the association between AKI occurring outside the intensive care unit (ICU), as identified using the AKIN classification criteria, and International Classification of Diseases (ICD)-10 diagnosis codes and drug categories.Results NlmCategory=UNASSIGNED:16,662 hospital stays for unique individuals were extracted. The prevalence of AKI outside the ICU was 8%, with a distribution of frequencies that greatly varied according to the departments. 4% of patients with AKI died during their hospital stay (OR 6.17, 95% CI [2.59-17.9]). ICD-10 diagnosis codes were related to infections, kidney cancer, heart failure, respiratory failure, and chronic kidney disease. Drugs targeting the renin angiotensin system and loop diuretics had the larger size effect on AKI. The ICD-10 code N17/&amp;quot;Acute kidney failure&amp;quot; was recorded in average in only 16% of the cases with AKI, and its frequency ranged from 0 to 80%, according to the hospital department; the lack of encoding did not impact mortality.Conclusion NlmCategory=UNASSIGNED:A systematic search for the associations of AKI with prescribed drugs and medical diagnosis using a phenome-wide approach allows to describe in depth the epidemiology of AKI outside the ICU. "><meta property="og:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
+  <meta property="twitter:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
   
     
       <meta property="article:published_time" content="2019-10-01T00:00:00&#43;00:00">
@@ -308,7 +346,7 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://www.coreds.com/publication/2019-10-01_clinical_and_pharmac/"
+    "@id": "https://consultation-recherche-donnees-sante.netlify.app/publication/2019-10-01_clinical_and_pharmac/"
   },
   "headline": "Clinical and Pharmacological Aspects of Hospital-Acquired Acute Kidney Injuries Outside the Intensive Care Unit: A Phenome-Wide Association Study.",
   
@@ -325,7 +363,7 @@
     "name": "Consultation Recherche Données de Santé - CoReDS",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
+      "url": "https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
     }
   },
   "description": "Introduction NlmCategory=UNASSIGNED:Acute kidney injury (AKI) occurring in the hospital in noncritically ill patients involves a broad spectrum of clinical conditions and medical scenarios that are better appreciated by systematic association studies.Methods NlmCategory=UNASSIGNED:We extracted all diagnoses and drug prescriptions from an i2b2 clinical data warehouse for patients who stayed in an academic hospital between 2013 and 2017, and had at least two plasma creatinine measurements performed during the first week of their stay, and analyzed the association between AKI occurring outside the intensive care unit (ICU), as identified using the AKIN classification criteria, and International Classification of Diseases (ICD)-10 diagnosis codes and drug categories.Results NlmCategory=UNASSIGNED:16,662 hospital stays for unique individuals were extracted. The prevalence of AKI outside the ICU was 8%, with a distribution of frequencies that greatly varied according to the departments. 4% of patients with AKI died during their hospital stay (OR 6.17, 95% CI [2.59-17.9]). ICD-10 diagnosis codes were related to infections, kidney cancer, heart failure, respiratory failure, and chronic kidney disease. Drugs targeting the renin angiotensin system and loop diuretics had the larger size effect on AKI. The ICD-10 code N17/\u0026quot;Acute kidney failure\u0026quot; was recorded in average in only 16% of the cases with AKI, and its frequency ranged from 0 to 80%, according to the hospital department; the lack of encoding did not impact mortality.Conclusion NlmCategory=UNASSIGNED:A systematic search for the associations of AKI with prescribed drugs and medical diagnosis using a phenome-wide approach allows to describe in depth the epidemiology of AKI outside the ICU. "
@@ -390,7 +428,7 @@
     <script>const isSiteThemeDark = false;</script>
   
   
-  <script src="/js/load-theme.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/load-theme.js"></script>
 
   <aside class="search-results" id="search">
   <div class="container">
@@ -445,7 +483,7 @@
 
     
     <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -458,7 +496,7 @@
 
     
     <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -494,7 +532,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/entreprendre/"><span>Commencer un projet</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/entreprendre/"><span>Commencer un projet</span></a>
         </li>
 
         
@@ -524,44 +562,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/suivremonprojet/"><span>Suivre son projet</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-            
-            
-            
-              
-            
-            
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#outils"><span>Boite à outils</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/suivremonprojet/"><span>Suivre son projet</span></a>
         </li>
 
         
@@ -598,7 +599,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#publi"><span>Publications</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#outils"><span>Boite à outils</span></a>
         </li>
 
         
@@ -635,7 +636,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#transparence"><span>Portail de transparence</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#publi"><span>Publications</span></a>
         </li>
 
         
@@ -672,7 +673,44 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#people"><span>Qui sommes-nous ?</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#transparence"><span>Portail de transparence</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#people"><span>Qui sommes-nous ?</span></a>
         </li>
 
         
@@ -745,7 +783,7 @@
     
 
   
-  <span ><a href="/author/nevoret-camille/">Nevoret Camille</a></span>, <span ><a href="/author/jannot-anne-sophie/">Jannot Anne-Sophie</a></span>, <span ><a href="/author/pallet-nicolas/">Pallet Nicolas</a></span>
+  <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/nevoret-camille/">Nevoret Camille</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/jannot-anne-sophie/">Jannot Anne-Sophie</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/pallet-nicolas/">Pallet Nicolas</a></span>
   </div>
   
   
@@ -811,7 +849,7 @@
           <div class="col-12 col-md-9">
             
             
-            <a href="/publication/#2">
+            <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/#2">
               Article de revue
             </a>
             
@@ -870,7 +908,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://www.coreds.com/publication/2019-10-01_clinical_and_pharmac/&amp;text=Clinical%20and%20Pharmacological%20Aspects%20of%20Hospital-Acquired%20Acute%20Kidney%20Injuries%20Outside%20the%20Intensive%20Care%20Unit:%20A%20Phenome-Wide%20Association%20Study." target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2019-10-01_clinical_and_pharmac/&amp;text=Clinical%20and%20Pharmacological%20Aspects%20of%20Hospital-Acquired%20Acute%20Kidney%20Injuries%20Outside%20the%20Intensive%20Care%20Unit:%20A%20Phenome-Wide%20Association%20Study." target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -883,7 +921,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://www.coreds.com/publication/2019-10-01_clinical_and_pharmac/&amp;t=Clinical%20and%20Pharmacological%20Aspects%20of%20Hospital-Acquired%20Acute%20Kidney%20Injuries%20Outside%20the%20Intensive%20Care%20Unit:%20A%20Phenome-Wide%20Association%20Study." target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://consultation-recherche-donnees-sante.netlify.app/publication/2019-10-01_clinical_and_pharmac/&amp;t=Clinical%20and%20Pharmacological%20Aspects%20of%20Hospital-Acquired%20Acute%20Kidney%20Injuries%20Outside%20the%20Intensive%20Care%20Unit:%20A%20Phenome-Wide%20Association%20Study." target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -896,7 +934,7 @@
       
       
       <li>
-        <a href="mailto:?subject=Clinical%20and%20Pharmacological%20Aspects%20of%20Hospital-Acquired%20Acute%20Kidney%20Injuries%20Outside%20the%20Intensive%20Care%20Unit:%20A%20Phenome-Wide%20Association%20Study.&amp;body=https://www.coreds.com/publication/2019-10-01_clinical_and_pharmac/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=Clinical%20and%20Pharmacological%20Aspects%20of%20Hospital-Acquired%20Acute%20Kidney%20Injuries%20Outside%20the%20Intensive%20Care%20Unit:%20A%20Phenome-Wide%20Association%20Study.&amp;body=https://consultation-recherche-donnees-sante.netlify.app/publication/2019-10-01_clinical_and_pharmac/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -909,7 +947,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://www.coreds.com/publication/2019-10-01_clinical_and_pharmac/&amp;title=Clinical%20and%20Pharmacological%20Aspects%20of%20Hospital-Acquired%20Acute%20Kidney%20Injuries%20Outside%20the%20Intensive%20Care%20Unit:%20A%20Phenome-Wide%20Association%20Study." target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2019-10-01_clinical_and_pharmac/&amp;title=Clinical%20and%20Pharmacological%20Aspects%20of%20Hospital-Acquired%20Acute%20Kidney%20Injuries%20Outside%20the%20Intensive%20Care%20Unit:%20A%20Phenome-Wide%20Association%20Study." target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -922,7 +960,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=Clinical%20and%20Pharmacological%20Aspects%20of%20Hospital-Acquired%20Acute%20Kidney%20Injuries%20Outside%20the%20Intensive%20Care%20Unit:%20A%20Phenome-Wide%20Association%20Study.%20https://www.coreds.com/publication/2019-10-01_clinical_and_pharmac/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=Clinical%20and%20Pharmacological%20Aspects%20of%20Hospital-Acquired%20Acute%20Kidney%20Injuries%20Outside%20the%20Intensive%20Care%20Unit:%20A%20Phenome-Wide%20Association%20Study.%20https://consultation-recherche-donnees-sante.netlify.app/publication/2019-10-01_clinical_and_pharmac/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -935,7 +973,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://www.coreds.com/publication/2019-10-01_clinical_and_pharmac/&amp;title=Clinical%20and%20Pharmacological%20Aspects%20of%20Hospital-Acquired%20Acute%20Kidney%20Injuries%20Outside%20the%20Intensive%20Care%20Unit:%20A%20Phenome-Wide%20Association%20Study." target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2019-10-01_clinical_and_pharmac/&amp;title=Clinical%20and%20Pharmacological%20Aspects%20of%20Hospital-Acquired%20Acute%20Kidney%20Injuries%20Outside%20the%20Intensive%20Care%20Unit:%20A%20Phenome-Wide%20Association%20Study." target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1168,7 +1206,7 @@
     
     
     
-    <script src="/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
+    <script src="https://consultation-recherche-donnees-sante.netlify.app/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
 
     
 

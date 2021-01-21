@@ -37,7 +37,7 @@
   <meta name="description" content="The retest effect-improvement of performance on second exposure to a task-may impede the detection of cognitive decline in clinical trials for neurodegenerative diseases. We assessed the impact of the retest effect in Huntington&#39;s disease trials, and investigated its possible neutralization. We enrolled 54 patients in the Multicentric Intracerebral Grafting in Huntington&#39;s Disease (MIG-HD) trial and 39 in the placebo arm of the Riluzole trial in Huntington&#39;s Disease (RIL-HD). All were assessed with the Unified Huntington&#39;s Disease Rating Scale (UHDRS) plus additional cognitive tasks at baseline (A1), shortly after baseline (A2) and one year later (A3). We used paired t-tests to analyze the retest effect between A1 and A2. For each task of the MIG-HD study, we used a stepwise algorithm to design models predictive of patient performance at A3, which we applied to the RIL-HD trial for external validation. We observed a retest effect in most cognitive tasks. A decline in performance at one year was detected in 3 of the 15 cognitive tasks with A1 as the baseline, and 9 of the 15 cognitive tasks with A2 as the baseline. We also included the retest effect in performance modeling and showed that it facilitated performance prediction one year later for 14 of the 15 cognitive tasks. The retest effect may mask cognitive decline in patients with neurodegenerative diseases. The dual baseline can improve clinical trial design, and better prediction should homogenize patient groups, resulting in smaller numbers of participants being required. ">
 
   
-  <link rel="alternate" hreflang="fr" href="https://www.coreds.com/publication/2015-01-01_how_to_capitalize_on/">
+  <link rel="alternate" hreflang="fr" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2015-01-01_how_to_capitalize_on/">
 
   
 
@@ -66,7 +66,7 @@
   
   
   
-  <script src="/js/mathjax-config.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/mathjax-config.js"></script>
   
 
   
@@ -241,13 +241,51 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.css">
+  <link rel="stylesheet" href="https://consultation-recherche-donnees-sante.netlify.app/css/wowchemy.css">
 
   
 
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-80B5KND2Y6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-80B5KND2Y6', { 'anonymize_ip': true });
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
   
@@ -258,11 +296,11 @@
 
   
 
-  <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
+  <link rel="manifest" href="https://consultation-recherche-donnees-sante.netlify.app/index.webmanifest">
+  <link rel="icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="https://www.coreds.com/publication/2015-01-01_how_to_capitalize_on/">
+  <link rel="canonical" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2015-01-01_how_to_capitalize_on/">
 
   
   
@@ -278,10 +316,10 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:url" content="https://www.coreds.com/publication/2015-01-01_how_to_capitalize_on/">
+  <meta property="og:url" content="https://consultation-recherche-donnees-sante.netlify.app/publication/2015-01-01_how_to_capitalize_on/">
   <meta property="og:title" content="How to Capitalize on the Retest Effect in Future Trials on Huntington&#39;s Disease. | Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:description" content="The retest effect-improvement of performance on second exposure to a task-may impede the detection of cognitive decline in clinical trials for neurodegenerative diseases. We assessed the impact of the retest effect in Huntington&#39;s disease trials, and investigated its possible neutralization. We enrolled 54 patients in the Multicentric Intracerebral Grafting in Huntington&#39;s Disease (MIG-HD) trial and 39 in the placebo arm of the Riluzole trial in Huntington&#39;s Disease (RIL-HD). All were assessed with the Unified Huntington&#39;s Disease Rating Scale (UHDRS) plus additional cognitive tasks at baseline (A1), shortly after baseline (A2) and one year later (A3). We used paired t-tests to analyze the retest effect between A1 and A2. For each task of the MIG-HD study, we used a stepwise algorithm to design models predictive of patient performance at A3, which we applied to the RIL-HD trial for external validation. We observed a retest effect in most cognitive tasks. A decline in performance at one year was detected in 3 of the 15 cognitive tasks with A1 as the baseline, and 9 of the 15 cognitive tasks with A2 as the baseline. We also included the retest effect in performance modeling and showed that it facilitated performance prediction one year later for 14 of the 15 cognitive tasks. The retest effect may mask cognitive decline in patients with neurodegenerative diseases. The dual baseline can improve clinical trial design, and better prediction should homogenize patient groups, resulting in smaller numbers of participants being required. "><meta property="og:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
-  <meta property="twitter:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
+  <meta property="og:description" content="The retest effect-improvement of performance on second exposure to a task-may impede the detection of cognitive decline in clinical trials for neurodegenerative diseases. We assessed the impact of the retest effect in Huntington&#39;s disease trials, and investigated its possible neutralization. We enrolled 54 patients in the Multicentric Intracerebral Grafting in Huntington&#39;s Disease (MIG-HD) trial and 39 in the placebo arm of the Riluzole trial in Huntington&#39;s Disease (RIL-HD). All were assessed with the Unified Huntington&#39;s Disease Rating Scale (UHDRS) plus additional cognitive tasks at baseline (A1), shortly after baseline (A2) and one year later (A3). We used paired t-tests to analyze the retest effect between A1 and A2. For each task of the MIG-HD study, we used a stepwise algorithm to design models predictive of patient performance at A3, which we applied to the RIL-HD trial for external validation. We observed a retest effect in most cognitive tasks. A decline in performance at one year was detected in 3 of the 15 cognitive tasks with A1 as the baseline, and 9 of the 15 cognitive tasks with A2 as the baseline. We also included the retest effect in performance modeling and showed that it facilitated performance prediction one year later for 14 of the 15 cognitive tasks. The retest effect may mask cognitive decline in patients with neurodegenerative diseases. The dual baseline can improve clinical trial design, and better prediction should homogenize patient groups, resulting in smaller numbers of participants being required. "><meta property="og:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
+  <meta property="twitter:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
   
     
       <meta property="article:published_time" content="2015-01-01T00:00:00&#43;00:00">
@@ -308,7 +346,7 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://www.coreds.com/publication/2015-01-01_how_to_capitalize_on/"
+    "@id": "https://consultation-recherche-donnees-sante.netlify.app/publication/2015-01-01_how_to_capitalize_on/"
   },
   "headline": "How to Capitalize on the Retest Effect in Future Trials on Huntington's Disease.",
   
@@ -325,7 +363,7 @@
     "name": "Consultation Recherche Données de Santé - CoReDS",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
+      "url": "https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
     }
   },
   "description": "The retest effect-improvement of performance on second exposure to a task-may impede the detection of cognitive decline in clinical trials for neurodegenerative diseases. We assessed the impact of the retest effect in Huntington's disease trials, and investigated its possible neutralization. We enrolled 54 patients in the Multicentric Intracerebral Grafting in Huntington's Disease (MIG-HD) trial and 39 in the placebo arm of the Riluzole trial in Huntington's Disease (RIL-HD). All were assessed with the Unified Huntington's Disease Rating Scale (UHDRS) plus additional cognitive tasks at baseline (A1), shortly after baseline (A2) and one year later (A3). We used paired t-tests to analyze the retest effect between A1 and A2. For each task of the MIG-HD study, we used a stepwise algorithm to design models predictive of patient performance at A3, which we applied to the RIL-HD trial for external validation. We observed a retest effect in most cognitive tasks. A decline in performance at one year was detected in 3 of the 15 cognitive tasks with A1 as the baseline, and 9 of the 15 cognitive tasks with A2 as the baseline. We also included the retest effect in performance modeling and showed that it facilitated performance prediction one year later for 14 of the 15 cognitive tasks. The retest effect may mask cognitive decline in patients with neurodegenerative diseases. The dual baseline can improve clinical trial design, and better prediction should homogenize patient groups, resulting in smaller numbers of participants being required. "
@@ -390,7 +428,7 @@
     <script>const isSiteThemeDark = false;</script>
   
   
-  <script src="/js/load-theme.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/load-theme.js"></script>
 
   <aside class="search-results" id="search">
   <div class="container">
@@ -445,7 +483,7 @@
 
     
     <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -458,7 +496,7 @@
 
     
     <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -494,7 +532,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/entreprendre/"><span>Commencer un projet</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/entreprendre/"><span>Commencer un projet</span></a>
         </li>
 
         
@@ -524,44 +562,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/suivremonprojet/"><span>Suivre son projet</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-            
-            
-            
-              
-            
-            
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#outils"><span>Boite à outils</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/suivremonprojet/"><span>Suivre son projet</span></a>
         </li>
 
         
@@ -598,7 +599,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#publi"><span>Publications</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#outils"><span>Boite à outils</span></a>
         </li>
 
         
@@ -635,7 +636,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#transparence"><span>Portail de transparence</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#publi"><span>Publications</span></a>
         </li>
 
         
@@ -672,7 +673,44 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#people"><span>Qui sommes-nous ?</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#transparence"><span>Portail de transparence</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#people"><span>Qui sommes-nous ?</span></a>
         </li>
 
         
@@ -745,7 +783,7 @@
     
 
   
-  <span ><a href="/author/schramm-catherine/">Schramm Catherine</a></span>, <span ><a href="/author/katsahian-sandrine/">Katsahian Sandrine</a></span>, <span ><a href="/author/youssov-katia/">Youssov Katia</a></span>, <span ><a href="/author/demonet-jean-francois/">Demonet Jean-Francois</a></span>, <span ><a href="/author/krystkowiak-pierre/">Krystkowiak Pierre</a></span>, <span ><a href="/author/supiot-frederic/">Supiot Frederic</a></span>, <span ><a href="/author/verny-christophe/">Verny Christophe</a></span>, <span ><a href="/author/cleret-de-langavant-laurent/">Cleret de Langavant Laurent</a></span>, <span ><a href="/author/bachoud-levi-anne-catherine/">Bachoud-Levi Anne-Catherine</a></span>, <span ><a href="/author/lemoine-l/">Lemoine L</a></span>, <span ><a href="/author/verny-c/">Verny C</a></span>, <span ><a href="/author/aubin-g/">Aubin G</a></span>, <span ><a href="/author/demonet-j-f/">Demonet J-F</a></span>, <span ><a href="/author/calvas-f/">Calvas F</a></span>, <span ><a href="/author/simonin-c/">Simonin C</a></span>, <span ><a href="/author/delliaux-m/">Delliaux M</a></span>, <span ><a href="/author/damier-p/">Damier P</a></span>, <span ><a href="/author/renou-p/">Renou P</a></span>, <span ><a href="/author/supiot-f/">Supiot F</a></span>, <span ><a href="/author/slama-h/">Slama H</a></span>, <span ><a href="/author/bachoud-levi-a-c/">Bachoud-Levi A-C</a></span>, <span ><a href="/author/guillamo-j-s/">Guillamo J  S</a></span>, <span ><a href="/author/boisse-m-f/">Boisse M-F</a></span>, <span ><a href="/author/durr-a/">Durr A</a></span>, <span ><a href="/author/bloch-f/">Bloch F</a></span>, <span ><a href="/author/messouak-o/">Messouak O</a></span>, <span ><a href="/author/tallaksen-c/">Tallaksen C</a></span>, <span ><a href="/author/dubois-b/">Dubois B</a></span>, <span ><a href="/author/engles-a/">Engles A</a></span>, <span ><a href="/author/krystkowiak-p/">Krystkowiak P</a></span>, <span ><a href="/author/destee-a/">Destee A</a></span>, <span ><a href="/author/memin-a/">Memin A</a></span>, <span ><a href="/author/thibaut-tanchou-s/">Thibaut-Tanchou S</a></span>, <span ><a href="/author/pasquier-f/">Pasquier F</a></span>, <span ><a href="/author/galitzky-m/">Galitzky M</a></span>, <span ><a href="/author/rascol-o/">Rascol O</a></span>, <span ><a href="/author/mollion-h/">Mollion H</a></span>, <span ><a href="/author/broussolle-e/">Broussolle E</a></span>, <span ><a href="/author/madigand-m/">Madigand M</a></span>, <span ><a href="/author/lallement-f/">Lallement F</a></span>, <span ><a href="/author/goizet-c/">Goizet C</a></span>, <span ><a href="/author/tison-f/">Tison F</a></span>, <span ><a href="/author/arguillere-s/">Arguillere S</a></span>, <span ><a href="/author/bakchine-s/">Bakchine S</a></span>, <span ><a href="/author/khoris-j/">Khoris J</a></span>, <span ><a href="/author/camu-w/">Camu W</a></span>, <span ><a href="/author/resch-f/">Resch F</a></span>, <span ><a href="/author/hannequin-d/">Hannequin D</a></span>, <span ><a href="/author/durif-f/">Durif F</a></span>, <span ><a href="/author/saudeau-d/">Saudeau D</a></span>, <span ><a href="/author/autret-a/">Autret A</a></span>
+  <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/schramm-catherine/">Schramm Catherine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/katsahian-sandrine/">Katsahian Sandrine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/youssov-katia/">Youssov Katia</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/demonet-jean-francois/">Demonet Jean-Francois</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/krystkowiak-pierre/">Krystkowiak Pierre</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/supiot-frederic/">Supiot Frederic</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/verny-christophe/">Verny Christophe</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/cleret-de-langavant-laurent/">Cleret de Langavant Laurent</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/bachoud-levi-anne-catherine/">Bachoud-Levi Anne-Catherine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/lemoine-l/">Lemoine L</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/verny-c/">Verny C</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/aubin-g/">Aubin G</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/demonet-j-f/">Demonet J-F</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/calvas-f/">Calvas F</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/simonin-c/">Simonin C</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/delliaux-m/">Delliaux M</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/damier-p/">Damier P</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/renou-p/">Renou P</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/supiot-f/">Supiot F</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/slama-h/">Slama H</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/bachoud-levi-a-c/">Bachoud-Levi A-C</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/guillamo-j-s/">Guillamo J  S</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/boisse-m-f/">Boisse M-F</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/durr-a/">Durr A</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/bloch-f/">Bloch F</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/messouak-o/">Messouak O</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/tallaksen-c/">Tallaksen C</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/dubois-b/">Dubois B</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/engles-a/">Engles A</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/krystkowiak-p/">Krystkowiak P</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/destee-a/">Destee A</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/memin-a/">Memin A</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/thibaut-tanchou-s/">Thibaut-Tanchou S</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/pasquier-f/">Pasquier F</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/galitzky-m/">Galitzky M</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/rascol-o/">Rascol O</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/mollion-h/">Mollion H</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/broussolle-e/">Broussolle E</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/madigand-m/">Madigand M</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/lallement-f/">Lallement F</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/goizet-c/">Goizet C</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/tison-f/">Tison F</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/arguillere-s/">Arguillere S</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/bakchine-s/">Bakchine S</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/khoris-j/">Khoris J</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/camu-w/">Camu W</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/resch-f/">Resch F</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/hannequin-d/">Hannequin D</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/durif-f/">Durif F</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/saudeau-d/">Saudeau D</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/autret-a/">Autret A</a></span>
   </div>
   
   
@@ -811,7 +849,7 @@
           <div class="col-12 col-md-9">
             
             
-            <a href="/publication/#2">
+            <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/#2">
               Article de revue
             </a>
             
@@ -870,7 +908,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://www.coreds.com/publication/2015-01-01_how_to_capitalize_on/&amp;text=How%20to%20Capitalize%20on%20the%20Retest%20Effect%20in%20Future%20Trials%20on%20Huntington&amp;#39;s%20Disease." target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2015-01-01_how_to_capitalize_on/&amp;text=How%20to%20Capitalize%20on%20the%20Retest%20Effect%20in%20Future%20Trials%20on%20Huntington&amp;#39;s%20Disease." target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -883,7 +921,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://www.coreds.com/publication/2015-01-01_how_to_capitalize_on/&amp;t=How%20to%20Capitalize%20on%20the%20Retest%20Effect%20in%20Future%20Trials%20on%20Huntington&amp;#39;s%20Disease." target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://consultation-recherche-donnees-sante.netlify.app/publication/2015-01-01_how_to_capitalize_on/&amp;t=How%20to%20Capitalize%20on%20the%20Retest%20Effect%20in%20Future%20Trials%20on%20Huntington&amp;#39;s%20Disease." target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -896,7 +934,7 @@
       
       
       <li>
-        <a href="mailto:?subject=How%20to%20Capitalize%20on%20the%20Retest%20Effect%20in%20Future%20Trials%20on%20Huntington&amp;#39;s%20Disease.&amp;body=https://www.coreds.com/publication/2015-01-01_how_to_capitalize_on/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=How%20to%20Capitalize%20on%20the%20Retest%20Effect%20in%20Future%20Trials%20on%20Huntington&amp;#39;s%20Disease.&amp;body=https://consultation-recherche-donnees-sante.netlify.app/publication/2015-01-01_how_to_capitalize_on/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -909,7 +947,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://www.coreds.com/publication/2015-01-01_how_to_capitalize_on/&amp;title=How%20to%20Capitalize%20on%20the%20Retest%20Effect%20in%20Future%20Trials%20on%20Huntington&amp;#39;s%20Disease." target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2015-01-01_how_to_capitalize_on/&amp;title=How%20to%20Capitalize%20on%20the%20Retest%20Effect%20in%20Future%20Trials%20on%20Huntington&amp;#39;s%20Disease." target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -922,7 +960,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=How%20to%20Capitalize%20on%20the%20Retest%20Effect%20in%20Future%20Trials%20on%20Huntington&amp;#39;s%20Disease.%20https://www.coreds.com/publication/2015-01-01_how_to_capitalize_on/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=How%20to%20Capitalize%20on%20the%20Retest%20Effect%20in%20Future%20Trials%20on%20Huntington&amp;#39;s%20Disease.%20https://consultation-recherche-donnees-sante.netlify.app/publication/2015-01-01_how_to_capitalize_on/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -935,7 +973,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://www.coreds.com/publication/2015-01-01_how_to_capitalize_on/&amp;title=How%20to%20Capitalize%20on%20the%20Retest%20Effect%20in%20Future%20Trials%20on%20Huntington&amp;#39;s%20Disease." target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2015-01-01_how_to_capitalize_on/&amp;title=How%20to%20Capitalize%20on%20the%20Retest%20Effect%20in%20Future%20Trials%20on%20Huntington&amp;#39;s%20Disease." target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1456,7 +1494,7 @@
     
     
     
-    <script src="/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
+    <script src="https://consultation-recherche-donnees-sante.netlify.app/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
 
     
 

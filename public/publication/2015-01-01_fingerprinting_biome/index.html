@@ -37,7 +37,7 @@
   <meta name="description" content="OBJECTIVE:To explore automatic methods for the classification of biomedical vocabularies based on their content.METHODS:We create semantic group profiles for each source vocabulary in the UMLS and compare the vectors using a Euclidian distance. We explore several techniques for visualizing individual semantic group profiles and the entire distance matrix, including donut pie charts, heatmaps, dendrograms and networks.RESULTS:We provide donut pie charts for individual source vocavularies, as well as a heatmap, dendrogram and network for a subset of 78 vocabularies from the UMLS.CONCLUSIONS:Our approach to fingerprinting biomedical terminologies is completely automated and can easily be applied to all source vocabularies in the UMLS, including upcoming versions of the UMLS. It supports the exploration, selection and comparison of the biomedical terminologies integrated into the UMLS. The visualizations are available at (http://mor.-nlm.nih.gov/pubs/supp/2015-medinfo-br/index.html). ">
 
   
-  <link rel="alternate" hreflang="fr" href="https://www.coreds.com/publication/2015-01-01_fingerprinting_biome/">
+  <link rel="alternate" hreflang="fr" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2015-01-01_fingerprinting_biome/">
 
   
 
@@ -66,7 +66,7 @@
   
   
   
-  <script src="/js/mathjax-config.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/mathjax-config.js"></script>
   
 
   
@@ -241,13 +241,51 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.css">
+  <link rel="stylesheet" href="https://consultation-recherche-donnees-sante.netlify.app/css/wowchemy.css">
 
   
 
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-80B5KND2Y6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-80B5KND2Y6', { 'anonymize_ip': true });
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
   
@@ -258,11 +296,11 @@
 
   
 
-  <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
+  <link rel="manifest" href="https://consultation-recherche-donnees-sante.netlify.app/index.webmanifest">
+  <link rel="icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="https://www.coreds.com/publication/2015-01-01_fingerprinting_biome/">
+  <link rel="canonical" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2015-01-01_fingerprinting_biome/">
 
   
   
@@ -278,10 +316,10 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:url" content="https://www.coreds.com/publication/2015-01-01_fingerprinting_biome/">
+  <meta property="og:url" content="https://consultation-recherche-donnees-sante.netlify.app/publication/2015-01-01_fingerprinting_biome/">
   <meta property="og:title" content="Fingerprinting Biomedical Terminologies--Automatic Classification and Visualization of Biomedical Vocabularies through UMLS Semantic Group Profiles. | Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:description" content="OBJECTIVE:To explore automatic methods for the classification of biomedical vocabularies based on their content.METHODS:We create semantic group profiles for each source vocabulary in the UMLS and compare the vectors using a Euclidian distance. We explore several techniques for visualizing individual semantic group profiles and the entire distance matrix, including donut pie charts, heatmaps, dendrograms and networks.RESULTS:We provide donut pie charts for individual source vocavularies, as well as a heatmap, dendrogram and network for a subset of 78 vocabularies from the UMLS.CONCLUSIONS:Our approach to fingerprinting biomedical terminologies is completely automated and can easily be applied to all source vocabularies in the UMLS, including upcoming versions of the UMLS. It supports the exploration, selection and comparison of the biomedical terminologies integrated into the UMLS. The visualizations are available at (http://mor.-nlm.nih.gov/pubs/supp/2015-medinfo-br/index.html). "><meta property="og:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
-  <meta property="twitter:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
+  <meta property="og:description" content="OBJECTIVE:To explore automatic methods for the classification of biomedical vocabularies based on their content.METHODS:We create semantic group profiles for each source vocabulary in the UMLS and compare the vectors using a Euclidian distance. We explore several techniques for visualizing individual semantic group profiles and the entire distance matrix, including donut pie charts, heatmaps, dendrograms and networks.RESULTS:We provide donut pie charts for individual source vocavularies, as well as a heatmap, dendrogram and network for a subset of 78 vocabularies from the UMLS.CONCLUSIONS:Our approach to fingerprinting biomedical terminologies is completely automated and can easily be applied to all source vocabularies in the UMLS, including upcoming versions of the UMLS. It supports the exploration, selection and comparison of the biomedical terminologies integrated into the UMLS. The visualizations are available at (http://mor.-nlm.nih.gov/pubs/supp/2015-medinfo-br/index.html). "><meta property="og:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
+  <meta property="twitter:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
   
     
       <meta property="article:published_time" content="2015-01-01T00:00:00&#43;00:00">
@@ -308,7 +346,7 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://www.coreds.com/publication/2015-01-01_fingerprinting_biome/"
+    "@id": "https://consultation-recherche-donnees-sante.netlify.app/publication/2015-01-01_fingerprinting_biome/"
   },
   "headline": "Fingerprinting Biomedical Terminologies--Automatic Classification and Visualization of Biomedical Vocabularies through UMLS Semantic Group Profiles.",
   
@@ -325,7 +363,7 @@
     "name": "Consultation Recherche Données de Santé - CoReDS",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
+      "url": "https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
     }
   },
   "description": "OBJECTIVE:To explore automatic methods for the classification of biomedical vocabularies based on their content.METHODS:We create semantic group profiles for each source vocabulary in the UMLS and compare the vectors using a Euclidian distance. We explore several techniques for visualizing individual semantic group profiles and the entire distance matrix, including donut pie charts, heatmaps, dendrograms and networks.RESULTS:We provide donut pie charts for individual source vocavularies, as well as a heatmap, dendrogram and network for a subset of 78 vocabularies from the UMLS.CONCLUSIONS:Our approach to fingerprinting biomedical terminologies is completely automated and can easily be applied to all source vocabularies in the UMLS, including upcoming versions of the UMLS. It supports the exploration, selection and comparison of the biomedical terminologies integrated into the UMLS. The visualizations are available at (http://mor.-nlm.nih.gov/pubs/supp/2015-medinfo-br/index.html). "
@@ -390,7 +428,7 @@
     <script>const isSiteThemeDark = false;</script>
   
   
-  <script src="/js/load-theme.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/load-theme.js"></script>
 
   <aside class="search-results" id="search">
   <div class="container">
@@ -445,7 +483,7 @@
 
     
     <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -458,7 +496,7 @@
 
     
     <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -494,7 +532,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/entreprendre/"><span>Commencer un projet</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/entreprendre/"><span>Commencer un projet</span></a>
         </li>
 
         
@@ -524,44 +562,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/suivremonprojet/"><span>Suivre son projet</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-            
-            
-            
-              
-            
-            
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#outils"><span>Boite à outils</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/suivremonprojet/"><span>Suivre son projet</span></a>
         </li>
 
         
@@ -598,7 +599,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#publi"><span>Publications</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#outils"><span>Boite à outils</span></a>
         </li>
 
         
@@ -635,7 +636,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#transparence"><span>Portail de transparence</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#publi"><span>Publications</span></a>
         </li>
 
         
@@ -672,7 +673,44 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#people"><span>Qui sommes-nous ?</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#transparence"><span>Portail de transparence</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#people"><span>Qui sommes-nous ?</span></a>
         </li>
 
         
@@ -745,7 +783,7 @@
     
 
   
-  <span ><a href="/author/rance-bastien/">Rance Bastien</a></span>, <span ><a href="/author/le-thai/">Le Thai</a></span>, <span ><a href="/author/bodenreider-olivier/">Bodenreider Olivier</a></span>
+  <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/rance-bastien/">Rance Bastien</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/le-thai/">Le Thai</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/bodenreider-olivier/">Bodenreider Olivier</a></span>
   </div>
   
   
@@ -811,7 +849,7 @@
           <div class="col-12 col-md-9">
             
             
-            <a href="/publication/#2">
+            <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/#2">
               Article de revue
             </a>
             
@@ -870,7 +908,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://www.coreds.com/publication/2015-01-01_fingerprinting_biome/&amp;text=Fingerprinting%20Biomedical%20Terminologies--Automatic%20Classification%20and%20Visualization%20of%20Biomedical%20Vocabularies%20through%20UMLS%20Semantic%20Group%20Profiles." target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2015-01-01_fingerprinting_biome/&amp;text=Fingerprinting%20Biomedical%20Terminologies--Automatic%20Classification%20and%20Visualization%20of%20Biomedical%20Vocabularies%20through%20UMLS%20Semantic%20Group%20Profiles." target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -883,7 +921,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://www.coreds.com/publication/2015-01-01_fingerprinting_biome/&amp;t=Fingerprinting%20Biomedical%20Terminologies--Automatic%20Classification%20and%20Visualization%20of%20Biomedical%20Vocabularies%20through%20UMLS%20Semantic%20Group%20Profiles." target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://consultation-recherche-donnees-sante.netlify.app/publication/2015-01-01_fingerprinting_biome/&amp;t=Fingerprinting%20Biomedical%20Terminologies--Automatic%20Classification%20and%20Visualization%20of%20Biomedical%20Vocabularies%20through%20UMLS%20Semantic%20Group%20Profiles." target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -896,7 +934,7 @@
       
       
       <li>
-        <a href="mailto:?subject=Fingerprinting%20Biomedical%20Terminologies--Automatic%20Classification%20and%20Visualization%20of%20Biomedical%20Vocabularies%20through%20UMLS%20Semantic%20Group%20Profiles.&amp;body=https://www.coreds.com/publication/2015-01-01_fingerprinting_biome/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=Fingerprinting%20Biomedical%20Terminologies--Automatic%20Classification%20and%20Visualization%20of%20Biomedical%20Vocabularies%20through%20UMLS%20Semantic%20Group%20Profiles.&amp;body=https://consultation-recherche-donnees-sante.netlify.app/publication/2015-01-01_fingerprinting_biome/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -909,7 +947,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://www.coreds.com/publication/2015-01-01_fingerprinting_biome/&amp;title=Fingerprinting%20Biomedical%20Terminologies--Automatic%20Classification%20and%20Visualization%20of%20Biomedical%20Vocabularies%20through%20UMLS%20Semantic%20Group%20Profiles." target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2015-01-01_fingerprinting_biome/&amp;title=Fingerprinting%20Biomedical%20Terminologies--Automatic%20Classification%20and%20Visualization%20of%20Biomedical%20Vocabularies%20through%20UMLS%20Semantic%20Group%20Profiles." target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -922,7 +960,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=Fingerprinting%20Biomedical%20Terminologies--Automatic%20Classification%20and%20Visualization%20of%20Biomedical%20Vocabularies%20through%20UMLS%20Semantic%20Group%20Profiles.%20https://www.coreds.com/publication/2015-01-01_fingerprinting_biome/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=Fingerprinting%20Biomedical%20Terminologies--Automatic%20Classification%20and%20Visualization%20of%20Biomedical%20Vocabularies%20through%20UMLS%20Semantic%20Group%20Profiles.%20https://consultation-recherche-donnees-sante.netlify.app/publication/2015-01-01_fingerprinting_biome/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -935,7 +973,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://www.coreds.com/publication/2015-01-01_fingerprinting_biome/&amp;title=Fingerprinting%20Biomedical%20Terminologies--Automatic%20Classification%20and%20Visualization%20of%20Biomedical%20Vocabularies%20through%20UMLS%20Semantic%20Group%20Profiles." target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2015-01-01_fingerprinting_biome/&amp;title=Fingerprinting%20Biomedical%20Terminologies--Automatic%20Classification%20and%20Visualization%20of%20Biomedical%20Vocabularies%20through%20UMLS%20Semantic%20Group%20Profiles." target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1168,7 +1206,7 @@
     
     
     
-    <script src="/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
+    <script src="https://consultation-recherche-donnees-sante.netlify.app/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
 
     
 

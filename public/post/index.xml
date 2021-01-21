@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts | Consultation Recherche Données de Santé - CoReDS</title>
-    <link>https://www.coreds.com/post/</link>
-      <atom:link href="https://www.coreds.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://consultation-recherche-donnees-sante.netlify.app/post/</link>
+      <atom:link href="https://consultation-recherche-donnees-sante.netlify.app/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>fr</language><copyright>`2021` - **CoReDS**</copyright><lastBuildDate>Thu, 10 Dec 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png</url>
+      <url>https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png</url>
       <title>Posts</title>
-      <link>https://www.coreds.com/post/</link>
+      <link>https://consultation-recherche-donnees-sante.netlify.app/post/</link>
     </image>
     
     <item>
       <title>Travaux de recherche de l&#39;équipe CoReDS</title>
-      <link>https://www.coreds.com/post/publi/</link>
+      <link>https://consultation-recherche-donnees-sante.netlify.app/post/publi/</link>
       <pubDate>Thu, 10 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>https://www.coreds.com/post/publi/</guid>
+      <guid>https://consultation-recherche-donnees-sante.netlify.app/post/publi/</guid>
       <description>
-&lt;script src=&#34;https://www.coreds.com/rmarkdown-libs/htmlwidgets/htmlwidgets.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;https://www.coreds.com/rmarkdown-libs/plotly-binding/plotly.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;https://www.coreds.com/rmarkdown-libs/typedarray/typedarray.min.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;https://www.coreds.com/rmarkdown-libs/jquery/jquery.min.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;https://www.coreds.com/rmarkdown-libs/crosstalk/css/crosstalk.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;https://www.coreds.com/rmarkdown-libs/crosstalk/js/crosstalk.min.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;https://www.coreds.com/rmarkdown-libs/plotly-htmlwidgets-css/plotly-htmlwidgets.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;https://www.coreds.com/rmarkdown-libs/plotly-main/plotly-latest.min.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://consultation-recherche-donnees-sante.netlify.app/rmarkdown-libs/htmlwidgets/htmlwidgets.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://consultation-recherche-donnees-sante.netlify.app/rmarkdown-libs/plotly-binding/plotly.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://consultation-recherche-donnees-sante.netlify.app/rmarkdown-libs/typedarray/typedarray.min.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://consultation-recherche-donnees-sante.netlify.app/rmarkdown-libs/jquery/jquery.min.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://consultation-recherche-donnees-sante.netlify.app/rmarkdown-libs/crosstalk/css/crosstalk.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://consultation-recherche-donnees-sante.netlify.app/rmarkdown-libs/crosstalk/js/crosstalk.min.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://consultation-recherche-donnees-sante.netlify.app/rmarkdown-libs/plotly-htmlwidgets-css/plotly-htmlwidgets.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://consultation-recherche-donnees-sante.netlify.app/rmarkdown-libs/plotly-main/plotly-latest.min.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;Pluridisciplinaire et transversale, la recherche sur données de santé a pour objectif d’améliorer la santé et le bien-être des populations. L’équipe CoReDS est la pour vous accompagner dans l’exploitation de ces données massives de santé.&lt;/p&gt;

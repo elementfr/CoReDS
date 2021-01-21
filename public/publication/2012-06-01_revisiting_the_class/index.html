@@ -37,7 +37,7 @@
   <meta name="description" content="BACKGROUND:Granulomatosis with polyangiitis (Wegener&#39;s) (GPA) and microscopic polyangiitis (MPA) are subgroups of anti-neutrophil cytoplasmic antibody (ANCA)-associated vasculitis (AAV) defined historically by clinical and histological features. GPA and MPA are heterogeneous entities with overlapping phenotypes. To identify novel subgroupings, cluster analysis was used to explore the phenotypic spectrum of AAV.METHODS:This study used a dataset of patients newly diagnosed as having GPA and MPA enrolled in five clinical trials. One cluster model included nine clinical baseline variables as input variables, and a second cluster model additionally included ANCA specificities. The clustering process involved multiple correspondence analyses followed by hierarchical ascendant cluster analysis. The clinical relevance of the generated clusters was analysed by their summary characteristics and outcomes.RESULTS:The analyses involved data for 673 subjects: 396 (59%) with GPA and 277 (41%) with MPA. Both cluster models resulted in five partially redundant clusters of subjects, and the model including ANCA resulted in more pertinent separations. These clusters were named &#39;renal AAV with proteinase 3 (PR3)-ANCA&#39; (40% of subjects), &#39;renal AAV without PR3-ANCA&#39; (32%) and &#39;non-renal AAV&#39; (12%), &#39;cardiovascular AAV&#39; (9%) and &#39;gastrointestinal AAV&#39; (7%). The five clusters had distinct death and relapse rates. On the basis of 4 variables, 651 subjects (97%) could be accurately allocated to 1 of the 5 classes.CONCLUSIONS:This analysis suggests that AAV encompasses five classes associated with different outcomes. As compared with the traditional GPA-MPA separation, this classification system may better reflect the phenotypic spectrum of AAV. ">
 
   
-  <link rel="alternate" hreflang="fr" href="https://www.coreds.com/publication/2012-06-01_revisiting_the_class/">
+  <link rel="alternate" hreflang="fr" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2012-06-01_revisiting_the_class/">
 
   
 
@@ -66,7 +66,7 @@
   
   
   
-  <script src="/js/mathjax-config.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/mathjax-config.js"></script>
   
 
   
@@ -241,13 +241,51 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.css">
+  <link rel="stylesheet" href="https://consultation-recherche-donnees-sante.netlify.app/css/wowchemy.css">
 
   
 
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-80B5KND2Y6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-80B5KND2Y6', { 'anonymize_ip': true });
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
   
@@ -258,11 +296,11 @@
 
   
 
-  <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
+  <link rel="manifest" href="https://consultation-recherche-donnees-sante.netlify.app/index.webmanifest">
+  <link rel="icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="https://www.coreds.com/publication/2012-06-01_revisiting_the_class/">
+  <link rel="canonical" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2012-06-01_revisiting_the_class/">
 
   
   
@@ -278,10 +316,10 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:url" content="https://www.coreds.com/publication/2012-06-01_revisiting_the_class/">
+  <meta property="og:url" content="https://consultation-recherche-donnees-sante.netlify.app/publication/2012-06-01_revisiting_the_class/">
   <meta property="og:title" content="Revisiting the classification of clinical phenotypes of anti-neutrophil cytoplasmic antibody-associated vasculitis: a cluster analysis. | Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:description" content="BACKGROUND:Granulomatosis with polyangiitis (Wegener&#39;s) (GPA) and microscopic polyangiitis (MPA) are subgroups of anti-neutrophil cytoplasmic antibody (ANCA)-associated vasculitis (AAV) defined historically by clinical and histological features. GPA and MPA are heterogeneous entities with overlapping phenotypes. To identify novel subgroupings, cluster analysis was used to explore the phenotypic spectrum of AAV.METHODS:This study used a dataset of patients newly diagnosed as having GPA and MPA enrolled in five clinical trials. One cluster model included nine clinical baseline variables as input variables, and a second cluster model additionally included ANCA specificities. The clustering process involved multiple correspondence analyses followed by hierarchical ascendant cluster analysis. The clinical relevance of the generated clusters was analysed by their summary characteristics and outcomes.RESULTS:The analyses involved data for 673 subjects: 396 (59%) with GPA and 277 (41%) with MPA. Both cluster models resulted in five partially redundant clusters of subjects, and the model including ANCA resulted in more pertinent separations. These clusters were named &#39;renal AAV with proteinase 3 (PR3)-ANCA&#39; (40% of subjects), &#39;renal AAV without PR3-ANCA&#39; (32%) and &#39;non-renal AAV&#39; (12%), &#39;cardiovascular AAV&#39; (9%) and &#39;gastrointestinal AAV&#39; (7%). The five clusters had distinct death and relapse rates. On the basis of 4 variables, 651 subjects (97%) could be accurately allocated to 1 of the 5 classes.CONCLUSIONS:This analysis suggests that AAV encompasses five classes associated with different outcomes. As compared with the traditional GPA-MPA separation, this classification system may better reflect the phenotypic spectrum of AAV. "><meta property="og:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
-  <meta property="twitter:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
+  <meta property="og:description" content="BACKGROUND:Granulomatosis with polyangiitis (Wegener&#39;s) (GPA) and microscopic polyangiitis (MPA) are subgroups of anti-neutrophil cytoplasmic antibody (ANCA)-associated vasculitis (AAV) defined historically by clinical and histological features. GPA and MPA are heterogeneous entities with overlapping phenotypes. To identify novel subgroupings, cluster analysis was used to explore the phenotypic spectrum of AAV.METHODS:This study used a dataset of patients newly diagnosed as having GPA and MPA enrolled in five clinical trials. One cluster model included nine clinical baseline variables as input variables, and a second cluster model additionally included ANCA specificities. The clustering process involved multiple correspondence analyses followed by hierarchical ascendant cluster analysis. The clinical relevance of the generated clusters was analysed by their summary characteristics and outcomes.RESULTS:The analyses involved data for 673 subjects: 396 (59%) with GPA and 277 (41%) with MPA. Both cluster models resulted in five partially redundant clusters of subjects, and the model including ANCA resulted in more pertinent separations. These clusters were named &#39;renal AAV with proteinase 3 (PR3)-ANCA&#39; (40% of subjects), &#39;renal AAV without PR3-ANCA&#39; (32%) and &#39;non-renal AAV&#39; (12%), &#39;cardiovascular AAV&#39; (9%) and &#39;gastrointestinal AAV&#39; (7%). The five clusters had distinct death and relapse rates. On the basis of 4 variables, 651 subjects (97%) could be accurately allocated to 1 of the 5 classes.CONCLUSIONS:This analysis suggests that AAV encompasses five classes associated with different outcomes. As compared with the traditional GPA-MPA separation, this classification system may better reflect the phenotypic spectrum of AAV. "><meta property="og:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
+  <meta property="twitter:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
   
     
       <meta property="article:published_time" content="2012-06-01T00:00:00&#43;00:00">
@@ -308,7 +346,7 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://www.coreds.com/publication/2012-06-01_revisiting_the_class/"
+    "@id": "https://consultation-recherche-donnees-sante.netlify.app/publication/2012-06-01_revisiting_the_class/"
   },
   "headline": "Revisiting the classification of clinical phenotypes of anti-neutrophil cytoplasmic antibody-associated vasculitis: a cluster analysis.",
   
@@ -325,7 +363,7 @@
     "name": "Consultation Recherche Données de Santé - CoReDS",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
+      "url": "https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
     }
   },
   "description": "BACKGROUND:Granulomatosis with polyangiitis (Wegener's) (GPA) and microscopic polyangiitis (MPA) are subgroups of anti-neutrophil cytoplasmic antibody (ANCA)-associated vasculitis (AAV) defined historically by clinical and histological features. GPA and MPA are heterogeneous entities with overlapping phenotypes. To identify novel subgroupings, cluster analysis was used to explore the phenotypic spectrum of AAV.METHODS:This study used a dataset of patients newly diagnosed as having GPA and MPA enrolled in five clinical trials. One cluster model included nine clinical baseline variables as input variables, and a second cluster model additionally included ANCA specificities. The clustering process involved multiple correspondence analyses followed by hierarchical ascendant cluster analysis. The clinical relevance of the generated clusters was analysed by their summary characteristics and outcomes.RESULTS:The analyses involved data for 673 subjects: 396 (59%) with GPA and 277 (41%) with MPA. Both cluster models resulted in five partially redundant clusters of subjects, and the model including ANCA resulted in more pertinent separations. These clusters were named 'renal AAV with proteinase 3 (PR3)-ANCA' (40% of subjects), 'renal AAV without PR3-ANCA' (32%) and 'non-renal AAV' (12%), 'cardiovascular AAV' (9%) and 'gastrointestinal AAV' (7%). The five clusters had distinct death and relapse rates. On the basis of 4 variables, 651 subjects (97%) could be accurately allocated to 1 of the 5 classes.CONCLUSIONS:This analysis suggests that AAV encompasses five classes associated with different outcomes. As compared with the traditional GPA-MPA separation, this classification system may better reflect the phenotypic spectrum of AAV. "
@@ -390,7 +428,7 @@
     <script>const isSiteThemeDark = false;</script>
   
   
-  <script src="/js/load-theme.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/load-theme.js"></script>
 
   <aside class="search-results" id="search">
   <div class="container">
@@ -445,7 +483,7 @@
 
     
     <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -458,7 +496,7 @@
 
     
     <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -494,7 +532,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/entreprendre/"><span>Commencer un projet</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/entreprendre/"><span>Commencer un projet</span></a>
         </li>
 
         
@@ -524,44 +562,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/suivremonprojet/"><span>Suivre son projet</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-            
-            
-            
-              
-            
-            
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#outils"><span>Boite à outils</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/suivremonprojet/"><span>Suivre son projet</span></a>
         </li>
 
         
@@ -598,7 +599,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#publi"><span>Publications</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#outils"><span>Boite à outils</span></a>
         </li>
 
         
@@ -635,7 +636,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#transparence"><span>Portail de transparence</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#publi"><span>Publications</span></a>
         </li>
 
         
@@ -672,7 +673,44 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#people"><span>Qui sommes-nous ?</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#transparence"><span>Portail de transparence</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#people"><span>Qui sommes-nous ?</span></a>
         </li>
 
         
@@ -745,7 +783,7 @@
     
 
   
-  <span ><a href="/author/mahr-alfred/">Mahr Alfred</a></span>, <span ><a href="/author/katsahian-sandrine/">Katsahian Sandrine</a></span>, <span ><a href="/author/varet-hugo/">Varet Hugo</a></span>, <span ><a href="/author/guillevin-loic/">Guillevin Loic</a></span>, <span ><a href="/author/hagen-e-christiaan/">Hagen E Christiaan</a></span>, <span ><a href="/author/hoglund-peter/">Hoglund Peter</a></span>, <span ><a href="/author/merkel-peter-a/">Merkel Peter A</a></span>, <span ><a href="/author/pagnoux-christian/">Pagnoux Christian</a></span>, <span ><a href="/author/rasmussen-niels/">Rasmussen Niels</a></span>, <span ><a href="/author/westman-kerstin/">Westman Kerstin</a></span>, <span ><a href="/author/jayne-david-r-w/">Jayne David R W</a></span>
+  <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/mahr-alfred/">Mahr Alfred</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/katsahian-sandrine/">Katsahian Sandrine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/varet-hugo/">Varet Hugo</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/guillevin-loic/">Guillevin Loic</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/hagen-e-christiaan/">Hagen E Christiaan</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/hoglund-peter/">Hoglund Peter</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/merkel-peter-a/">Merkel Peter A</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/pagnoux-christian/">Pagnoux Christian</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/rasmussen-niels/">Rasmussen Niels</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/westman-kerstin/">Westman Kerstin</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/jayne-david-r-w/">Jayne David R W</a></span>
   </div>
   
   
@@ -811,7 +849,7 @@
           <div class="col-12 col-md-9">
             
             
-            <a href="/publication/#2">
+            <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/#2">
               Article de revue
             </a>
             
@@ -870,7 +908,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://www.coreds.com/publication/2012-06-01_revisiting_the_class/&amp;text=Revisiting%20the%20classification%20of%20clinical%20phenotypes%20of%20anti-neutrophil%20cytoplasmic%20antibody-associated%20vasculitis:%20a%20cluster%20analysis." target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2012-06-01_revisiting_the_class/&amp;text=Revisiting%20the%20classification%20of%20clinical%20phenotypes%20of%20anti-neutrophil%20cytoplasmic%20antibody-associated%20vasculitis:%20a%20cluster%20analysis." target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -883,7 +921,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://www.coreds.com/publication/2012-06-01_revisiting_the_class/&amp;t=Revisiting%20the%20classification%20of%20clinical%20phenotypes%20of%20anti-neutrophil%20cytoplasmic%20antibody-associated%20vasculitis:%20a%20cluster%20analysis." target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://consultation-recherche-donnees-sante.netlify.app/publication/2012-06-01_revisiting_the_class/&amp;t=Revisiting%20the%20classification%20of%20clinical%20phenotypes%20of%20anti-neutrophil%20cytoplasmic%20antibody-associated%20vasculitis:%20a%20cluster%20analysis." target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -896,7 +934,7 @@
       
       
       <li>
-        <a href="mailto:?subject=Revisiting%20the%20classification%20of%20clinical%20phenotypes%20of%20anti-neutrophil%20cytoplasmic%20antibody-associated%20vasculitis:%20a%20cluster%20analysis.&amp;body=https://www.coreds.com/publication/2012-06-01_revisiting_the_class/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=Revisiting%20the%20classification%20of%20clinical%20phenotypes%20of%20anti-neutrophil%20cytoplasmic%20antibody-associated%20vasculitis:%20a%20cluster%20analysis.&amp;body=https://consultation-recherche-donnees-sante.netlify.app/publication/2012-06-01_revisiting_the_class/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -909,7 +947,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://www.coreds.com/publication/2012-06-01_revisiting_the_class/&amp;title=Revisiting%20the%20classification%20of%20clinical%20phenotypes%20of%20anti-neutrophil%20cytoplasmic%20antibody-associated%20vasculitis:%20a%20cluster%20analysis." target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2012-06-01_revisiting_the_class/&amp;title=Revisiting%20the%20classification%20of%20clinical%20phenotypes%20of%20anti-neutrophil%20cytoplasmic%20antibody-associated%20vasculitis:%20a%20cluster%20analysis." target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -922,7 +960,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=Revisiting%20the%20classification%20of%20clinical%20phenotypes%20of%20anti-neutrophil%20cytoplasmic%20antibody-associated%20vasculitis:%20a%20cluster%20analysis.%20https://www.coreds.com/publication/2012-06-01_revisiting_the_class/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=Revisiting%20the%20classification%20of%20clinical%20phenotypes%20of%20anti-neutrophil%20cytoplasmic%20antibody-associated%20vasculitis:%20a%20cluster%20analysis.%20https://consultation-recherche-donnees-sante.netlify.app/publication/2012-06-01_revisiting_the_class/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -935,7 +973,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://www.coreds.com/publication/2012-06-01_revisiting_the_class/&amp;title=Revisiting%20the%20classification%20of%20clinical%20phenotypes%20of%20anti-neutrophil%20cytoplasmic%20antibody-associated%20vasculitis:%20a%20cluster%20analysis." target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2012-06-01_revisiting_the_class/&amp;title=Revisiting%20the%20classification%20of%20clinical%20phenotypes%20of%20anti-neutrophil%20cytoplasmic%20antibody-associated%20vasculitis:%20a%20cluster%20analysis." target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1216,7 +1254,7 @@
     
     
     
-    <script src="/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
+    <script src="https://consultation-recherche-donnees-sante.netlify.app/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
 
     
 

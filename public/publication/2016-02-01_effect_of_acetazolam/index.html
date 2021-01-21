@@ -37,7 +37,7 @@
   <meta name="description" content="OBJECTIVE:Acetazolamide has been used for decades as a respiratory stimulant for patients with chronic obstructive pulmonary disease (COPD) and metabolic alkalosis, but no large randomized placebo-controlled trial is available to confirm this approach.OBJECTIVE:To determine whether acetazolamide reduces mechanical ventilation duration in critically ill patients with COPD and metabolic alkalosis.DESIGN, SETTING, AND METHODS:The DIABOLO study, a randomized, double-blind, multicenter trial, was conducted from October 2011 through July 2014 in 15 intensive care units (ICUs) in France. A total of 382 patients with COPD who were expected to receive mechanical ventilation for more 24 hours were randomized to the acetazolamide or placebo group and 380 were included in an intention-to treat analysis.METHODS:Acetazolamide (500-1000 mg, twice daily) vs placebo administered intravenously in cases of pure or mixed metabolic alkalosis, initiated within 48 hours of ICU admission and continued during the ICU stay for a maximum of 28 days.MAIN OUTCOMES AND METHODS:The primary outcome was the duration of invasive mechanical ventilation via endotracheal intubation or tracheotomy. Secondary outcomes included changes in arterial blood gas and respiratory parameters, weaning duration, adverse events, use of noninvasive ventilation after extubation, successful weaning, the duration of ICU stay, and in-ICU mortality.RESULTS:Among 382 randomized patients, 380 (mean age, 69 years; 272 men [71.6%]; 379 [99.7%] with endotracheal intubation) completed the study. For the acetazolamide group (n = 187), compared with the placebo group (n = 193), no significant between-group differences were found for median duration of mechanical ventilation (-16.0 hours; 95% CI, -36.5 to 4.0 hours; P = .17), duration of weaning off mechanical ventilation (-0.9 hours; 95% CI, -4.3 to 1.3 hours; P = .36), daily changes of minute-ventilation (-0.0 L/min; 95% CI, -0.2 to 0.2 L/min; P = .72), or partial carbon-dioxide pressure in arterial blood (-0.3 mm Hg; 95% CI, -0.8 to 0.2 mm Hg; P = .25), although daily changes of serum bicarbonate (between-group difference, -0.8 mEq/L; 95% CI, -1.2 to -0.5 mEq/L; P &amp;lt; .001) and number of days with metabolic alkalosis (between-group difference, -1; 95% CI, -2 to -1 days; P &amp;lt; .001) decreased significantly more in the acetazolamide group. Other secondary outcomes also did not differ significantly between groups.CONCLUSIONS AND CONCLUSIONS:Among patients with COPD receiving invasive mechanical ventilation, the use of acetazolamide, compared with placebo, did not result in a statistically significant reduction in the duration of invasive mechanical ventilation. However, the magnitude of the difference was clinically important, and it is possible that the study was underpowered to establish statistical significance.TRIAL BACKGROUND:clinicaltrials.gov Identifier: NCT01627639. ">
 
   
-  <link rel="alternate" hreflang="fr" href="https://www.coreds.com/publication/2016-02-01_effect_of_acetazolam/">
+  <link rel="alternate" hreflang="fr" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2016-02-01_effect_of_acetazolam/">
 
   
 
@@ -66,7 +66,7 @@
   
   
   
-  <script src="/js/mathjax-config.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/mathjax-config.js"></script>
   
 
   
@@ -241,13 +241,51 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.css">
+  <link rel="stylesheet" href="https://consultation-recherche-donnees-sante.netlify.app/css/wowchemy.css">
 
   
 
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-80B5KND2Y6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-80B5KND2Y6', { 'anonymize_ip': true });
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
   
@@ -258,11 +296,11 @@
 
   
 
-  <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
+  <link rel="manifest" href="https://consultation-recherche-donnees-sante.netlify.app/index.webmanifest">
+  <link rel="icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="https://www.coreds.com/publication/2016-02-01_effect_of_acetazolam/">
+  <link rel="canonical" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2016-02-01_effect_of_acetazolam/">
 
   
   
@@ -278,10 +316,10 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:url" content="https://www.coreds.com/publication/2016-02-01_effect_of_acetazolam/">
+  <meta property="og:url" content="https://consultation-recherche-donnees-sante.netlify.app/publication/2016-02-01_effect_of_acetazolam/">
   <meta property="og:title" content="Effect of Acetazolamide vs Placebo on Duration of Invasive Mechanical Ventilation Among Patients With Chronic Obstructive Pulmonary Disease: A Randomized Clinical Trial. | Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:description" content="OBJECTIVE:Acetazolamide has been used for decades as a respiratory stimulant for patients with chronic obstructive pulmonary disease (COPD) and metabolic alkalosis, but no large randomized placebo-controlled trial is available to confirm this approach.OBJECTIVE:To determine whether acetazolamide reduces mechanical ventilation duration in critically ill patients with COPD and metabolic alkalosis.DESIGN, SETTING, AND METHODS:The DIABOLO study, a randomized, double-blind, multicenter trial, was conducted from October 2011 through July 2014 in 15 intensive care units (ICUs) in France. A total of 382 patients with COPD who were expected to receive mechanical ventilation for more 24 hours were randomized to the acetazolamide or placebo group and 380 were included in an intention-to treat analysis.METHODS:Acetazolamide (500-1000 mg, twice daily) vs placebo administered intravenously in cases of pure or mixed metabolic alkalosis, initiated within 48 hours of ICU admission and continued during the ICU stay for a maximum of 28 days.MAIN OUTCOMES AND METHODS:The primary outcome was the duration of invasive mechanical ventilation via endotracheal intubation or tracheotomy. Secondary outcomes included changes in arterial blood gas and respiratory parameters, weaning duration, adverse events, use of noninvasive ventilation after extubation, successful weaning, the duration of ICU stay, and in-ICU mortality.RESULTS:Among 382 randomized patients, 380 (mean age, 69 years; 272 men [71.6%]; 379 [99.7%] with endotracheal intubation) completed the study. For the acetazolamide group (n = 187), compared with the placebo group (n = 193), no significant between-group differences were found for median duration of mechanical ventilation (-16.0 hours; 95% CI, -36.5 to 4.0 hours; P = .17), duration of weaning off mechanical ventilation (-0.9 hours; 95% CI, -4.3 to 1.3 hours; P = .36), daily changes of minute-ventilation (-0.0 L/min; 95% CI, -0.2 to 0.2 L/min; P = .72), or partial carbon-dioxide pressure in arterial blood (-0.3 mm Hg; 95% CI, -0.8 to 0.2 mm Hg; P = .25), although daily changes of serum bicarbonate (between-group difference, -0.8 mEq/L; 95% CI, -1.2 to -0.5 mEq/L; P &amp;lt; .001) and number of days with metabolic alkalosis (between-group difference, -1; 95% CI, -2 to -1 days; P &amp;lt; .001) decreased significantly more in the acetazolamide group. Other secondary outcomes also did not differ significantly between groups.CONCLUSIONS AND CONCLUSIONS:Among patients with COPD receiving invasive mechanical ventilation, the use of acetazolamide, compared with placebo, did not result in a statistically significant reduction in the duration of invasive mechanical ventilation. However, the magnitude of the difference was clinically important, and it is possible that the study was underpowered to establish statistical significance.TRIAL BACKGROUND:clinicaltrials.gov Identifier: NCT01627639. "><meta property="og:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
-  <meta property="twitter:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
+  <meta property="og:description" content="OBJECTIVE:Acetazolamide has been used for decades as a respiratory stimulant for patients with chronic obstructive pulmonary disease (COPD) and metabolic alkalosis, but no large randomized placebo-controlled trial is available to confirm this approach.OBJECTIVE:To determine whether acetazolamide reduces mechanical ventilation duration in critically ill patients with COPD and metabolic alkalosis.DESIGN, SETTING, AND METHODS:The DIABOLO study, a randomized, double-blind, multicenter trial, was conducted from October 2011 through July 2014 in 15 intensive care units (ICUs) in France. A total of 382 patients with COPD who were expected to receive mechanical ventilation for more 24 hours were randomized to the acetazolamide or placebo group and 380 were included in an intention-to treat analysis.METHODS:Acetazolamide (500-1000 mg, twice daily) vs placebo administered intravenously in cases of pure or mixed metabolic alkalosis, initiated within 48 hours of ICU admission and continued during the ICU stay for a maximum of 28 days.MAIN OUTCOMES AND METHODS:The primary outcome was the duration of invasive mechanical ventilation via endotracheal intubation or tracheotomy. Secondary outcomes included changes in arterial blood gas and respiratory parameters, weaning duration, adverse events, use of noninvasive ventilation after extubation, successful weaning, the duration of ICU stay, and in-ICU mortality.RESULTS:Among 382 randomized patients, 380 (mean age, 69 years; 272 men [71.6%]; 379 [99.7%] with endotracheal intubation) completed the study. For the acetazolamide group (n = 187), compared with the placebo group (n = 193), no significant between-group differences were found for median duration of mechanical ventilation (-16.0 hours; 95% CI, -36.5 to 4.0 hours; P = .17), duration of weaning off mechanical ventilation (-0.9 hours; 95% CI, -4.3 to 1.3 hours; P = .36), daily changes of minute-ventilation (-0.0 L/min; 95% CI, -0.2 to 0.2 L/min; P = .72), or partial carbon-dioxide pressure in arterial blood (-0.3 mm Hg; 95% CI, -0.8 to 0.2 mm Hg; P = .25), although daily changes of serum bicarbonate (between-group difference, -0.8 mEq/L; 95% CI, -1.2 to -0.5 mEq/L; P &amp;lt; .001) and number of days with metabolic alkalosis (between-group difference, -1; 95% CI, -2 to -1 days; P &amp;lt; .001) decreased significantly more in the acetazolamide group. Other secondary outcomes also did not differ significantly between groups.CONCLUSIONS AND CONCLUSIONS:Among patients with COPD receiving invasive mechanical ventilation, the use of acetazolamide, compared with placebo, did not result in a statistically significant reduction in the duration of invasive mechanical ventilation. However, the magnitude of the difference was clinically important, and it is possible that the study was underpowered to establish statistical significance.TRIAL BACKGROUND:clinicaltrials.gov Identifier: NCT01627639. "><meta property="og:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
+  <meta property="twitter:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
   
     
       <meta property="article:published_time" content="2016-02-01T00:00:00&#43;00:00">
@@ -308,7 +346,7 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://www.coreds.com/publication/2016-02-01_effect_of_acetazolam/"
+    "@id": "https://consultation-recherche-donnees-sante.netlify.app/publication/2016-02-01_effect_of_acetazolam/"
   },
   "headline": "Effect of Acetazolamide vs Placebo on Duration of Invasive Mechanical Ventilation Among Patients With Chronic Obstructive Pulmonary Disease: A Randomized Clinical Trial.",
   
@@ -325,7 +363,7 @@
     "name": "Consultation Recherche Données de Santé - CoReDS",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
+      "url": "https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
     }
   },
   "description": "OBJECTIVE:Acetazolamide has been used for decades as a respiratory stimulant for patients with chronic obstructive pulmonary disease (COPD) and metabolic alkalosis, but no large randomized placebo-controlled trial is available to confirm this approach.OBJECTIVE:To determine whether acetazolamide reduces mechanical ventilation duration in critically ill patients with COPD and metabolic alkalosis.DESIGN, SETTING, AND METHODS:The DIABOLO study, a randomized, double-blind, multicenter trial, was conducted from October 2011 through July 2014 in 15 intensive care units (ICUs) in France. A total of 382 patients with COPD who were expected to receive mechanical ventilation for more 24 hours were randomized to the acetazolamide or placebo group and 380 were included in an intention-to treat analysis.METHODS:Acetazolamide (500-1000 mg, twice daily) vs placebo administered intravenously in cases of pure or mixed metabolic alkalosis, initiated within 48 hours of ICU admission and continued during the ICU stay for a maximum of 28 days.MAIN OUTCOMES AND METHODS:The primary outcome was the duration of invasive mechanical ventilation via endotracheal intubation or tracheotomy. Secondary outcomes included changes in arterial blood gas and respiratory parameters, weaning duration, adverse events, use of noninvasive ventilation after extubation, successful weaning, the duration of ICU stay, and in-ICU mortality.RESULTS:Among 382 randomized patients, 380 (mean age, 69 years; 272 men [71.6%]; 379 [99.7%] with endotracheal intubation) completed the study. For the acetazolamide group (n = 187), compared with the placebo group (n = 193), no significant between-group differences were found for median duration of mechanical ventilation (-16.0 hours; 95% CI, -36.5 to 4.0 hours; P = .17), duration of weaning off mechanical ventilation (-0.9 hours; 95% CI, -4.3 to 1.3 hours; P = .36), daily changes of minute-ventilation (-0.0 L/min; 95% CI, -0.2 to 0.2 L/min; P = .72), or partial carbon-dioxide pressure in arterial blood (-0.3 mm Hg; 95% CI, -0.8 to 0.2 mm Hg; P = .25), although daily changes of serum bicarbonate (between-group difference, -0.8 mEq/L; 95% CI, -1.2 to -0.5 mEq/L; P \u0026lt; .001) and number of days with metabolic alkalosis (between-group difference, -1; 95% CI, -2 to -1 days; P \u0026lt; .001) decreased significantly more in the acetazolamide group. Other secondary outcomes also did not differ significantly between groups.CONCLUSIONS AND CONCLUSIONS:Among patients with COPD receiving invasive mechanical ventilation, the use of acetazolamide, compared with placebo, did not result in a statistically significant reduction in the duration of invasive mechanical ventilation. However, the magnitude of the difference was clinically important, and it is possible that the study was underpowered to establish statistical significance.TRIAL BACKGROUND:clinicaltrials.gov Identifier: NCT01627639. "
@@ -390,7 +428,7 @@
     <script>const isSiteThemeDark = false;</script>
   
   
-  <script src="/js/load-theme.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/load-theme.js"></script>
 
   <aside class="search-results" id="search">
   <div class="container">
@@ -445,7 +483,7 @@
 
     
     <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -458,7 +496,7 @@
 
     
     <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -494,7 +532,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/entreprendre/"><span>Commencer un projet</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/entreprendre/"><span>Commencer un projet</span></a>
         </li>
 
         
@@ -524,44 +562,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/suivremonprojet/"><span>Suivre son projet</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-            
-            
-            
-              
-            
-            
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#outils"><span>Boite à outils</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/suivremonprojet/"><span>Suivre son projet</span></a>
         </li>
 
         
@@ -598,7 +599,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#publi"><span>Publications</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#outils"><span>Boite à outils</span></a>
         </li>
 
         
@@ -635,7 +636,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#transparence"><span>Portail de transparence</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#publi"><span>Publications</span></a>
         </li>
 
         
@@ -672,7 +673,44 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#people"><span>Qui sommes-nous ?</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#transparence"><span>Portail de transparence</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#people"><span>Qui sommes-nous ?</span></a>
         </li>
 
         
@@ -745,7 +783,7 @@
     
 
   
-  <span ><a href="/author/faisy-christophe/">Faisy Christophe</a></span>, <span ><a href="/author/meziani-ferhat/">Meziani Ferhat</a></span>, <span ><a href="/author/planquette-benjamin/">Planquette Benjamin</a></span>, <span ><a href="/author/clavel-marc/">Clavel Marc</a></span>, <span ><a href="/author/gacouin-arnaud/">Gacouin Arnaud</a></span>, <span ><a href="/author/bornstain-caroline/">Bornstain Caroline</a></span>, <span ><a href="/author/schneider-francis/">Schneider Francis</a></span>, <span ><a href="/author/duguet-alexandre/">Duguet Alexandre</a></span>, <span ><a href="/author/gibot-sebastien/">Gibot Sebastien</a></span>, <span ><a href="/author/lerolle-nicolas/">Lerolle Nicolas</a></span>, <span ><a href="/author/ricard-jean-damien/">Ricard Jean-Damien</a></span>, <span ><a href="/author/sanchez-olivier/">Sanchez Olivier</a></span>, <span ><a href="/author/djibre-michel/">Djibre Michel</a></span>, <span ><a href="/author/ricome-jean-louis/">Ricome Jean-Louis</a></span>, <span ><a href="/author/rabbat-antoine/">Rabbat Antoine</a></span>, <span ><a href="/author/heming-nicholas/">Heming Nicholas</a></span>, <span ><a href="/author/urien-saik/">Urien Saik</a></span>, <span ><a href="/author/esvan-maxime/">Esvan Maxime</a></span>, <span ><a href="/author/katsahian-sandrine/">Katsahian Sandrine</a></span>, <span ><a href="/author/pelieu-iris/">Pelieu Iris</a></span>, <span ><a href="/author/lortat-jacob-brice/">Lortat-Jacob Brice</a></span>, <span ><a href="/author/venot-marion/">Venot Marion</a></span>, <span ><a href="/author/roux-antoine/">Roux Antoine</a></span>, <span ><a href="/author/gosset-marine/">Gosset Marine</a></span>, <span ><a href="/author/martinet-olivier/">Martinet Olivier</a></span>, <span ><a href="/author/rahmani-hassene/">Rahmani Hassene</a></span>, <span ><a href="/author/kummerlen-christine/">Kummerlen Christine</a></span>, <span ><a href="/author/schnell-david/">Schnell David</a></span>, <span ><a href="/author/neagu-anca-raluga/">Neagu Anca Raluga</a></span>, <span ><a href="/author/delabranche-xavier/">Delabranche Xavier</a></span>, <span ><a href="/author/boisrame-helms-julie/">Boisrame-Helms Julie</a></span>, <span ><a href="/author/zuber-benjamin/">Zuber Benjamin</a></span>, <span ><a href="/author/troche-gilles/">Troche Gilles</a></span>, <span ><a href="/author/legriel-stephane/">Legriel Stephane</a></span>, <span ><a href="/author/brunel-fabrice/">Brunel Fabrice</a></span>, <span ><a href="/author/guezennec-pierre/">Guezennec Pierre</a></span>, <span ><a href="/author/laurent-virginie/">Laurent Virginie</a></span>, <span ><a href="/author/hilly-ginoux-julia/">Hilly-Ginoux Julia</a></span>, <span ><a href="/author/henry-lagarrigue-mathieu/">Henry-Lagarrigue Mathieu</a></span>, <span ><a href="/author/vignon-philippe/">Vignon Philippe</a></span>, <span ><a href="/author/pichon-nicolas/">Pichon Nicolas</a></span>, <span ><a href="/author/francois-bruno/">Francois Bruno</a></span>, <span ><a href="/author/dugard-anthony/">Dugard Anthony</a></span>, <span ><a href="/author/amiel-jean-bernard/">Amiel Jean-Bernard</a></span>, <span ><a href="/author/beguot-emmanuelle/">Beguot Emmanuelle</a></span>, <span ><a href="/author/bellier-remy/">Bellier Remy</a></span>, <span ><a href="/author/coulaud-jean-michel/">Coulaud Jean-Michel</a></span>, <span ><a href="/author/donetti-laurence/">Donetti Laurence</a></span>, <span ><a href="/author/barchasz-jean/">Barchasz Jean</a></span>, <span ><a href="/author/harley-marie-line/">Harley Marie-Line</a></span>, <span ><a href="/author/castelain-vincent/">Castelain Vincent</a></span>, <span ><a href="/author/lutun-philippe/">Lutun Philippe</a></span>, <span ><a href="/author/herbrecht-jean-etienne/">Herbrecht Jean-Etienne</a></span>, <span ><a href="/author/janssen-langestein-ralf/">Janssen-Langestein Ralf</a></span>, <span ><a href="/author/schenck-maleka/">Schenck Maleka</a></span>, <span ><a href="/author/guillot-max/">Guillot Max</a></span>, <span ><a href="/author/poidevin-antoine/">Poidevin Antoine</a></span>, <span ><a href="/author/prodanovic-helene/">Prodanovic Helene</a></span>, <span ><a href="/author/schmidt-mathieu/">Schmidt Mathieu</a></span>, <span ><a href="/author/mayaux-julien/">Mayaux Julien</a></span>, <span ><a href="/author/delemazure-julie/">Delemazure Julie</a></span>, <span ><a href="/author/persichini-romain/">Persichini Romain</a></span>, <span ><a href="/author/conrad-marie/">Conrad Marie</a></span>, <span ><a href="/author/barraud-damien/">Barraud Damien</a></span>, <span ><a href="/author/lai-alexandre/">Lai Alexandre</a></span>, <span ><a href="/author/lemarie-jeremie/">Lemarie Jeremie</a></span>, <span ><a href="/author/nace-lionel/">Nace Lionel</a></span>, <span ><a href="/author/cravoisy-popovic-aurelie/">Cravoisy-Popovic Aurelie</a></span>, <span ><a href="/author/mercat-alain/">Mercat Alain</a></span>, <span ><a href="/author/asfar-pierre/">Asfar Pierre</a></span>, <span ><a href="/author/kouatchet-achille/">Kouatchet Achille</a></span>, <span ><a href="/author/pierrot-marc/">Pierrot Marc</a></span>, <span ><a href="/author/souday-vincent/">Souday Vincent</a></span>, <span ><a href="/author/bourgoin-pierre/">Bourgoin Pierre</a></span>, <span ><a href="/author/fleury-carole/">Fleury Carole</a></span>, <span ><a href="/author/foucher-lezla-annelise/">Foucher-Lezla Annelise</a></span>, <span ><a href="/author/bouvier-guillaume/">Bouvier Guillaume</a></span>, <span ><a href="/author/abouzahr-tarek/">Abouzahr Tarek</a></span>, <span ><a href="/author/giquello-jacques-armel/">Giquello Jacques-Armel</a></span>, <span ><a href="/author/mortaza-satar/">Mortaza Satar</a></span>, <span ><a href="/author/rafat-cedric/">Rafat Cedric</a></span>, <span ><a href="/author/leclaire-clement/">Leclaire Clement</a></span>, <span ><a href="/author/messika-jonathan/">Messika Jonathan</a></span>, <span ><a href="/author/dufour-nicolas/">Dufour Nicolas</a></span>, <span ><a href="/author/jean-baptiste-sylvain/">Jean-Baptiste Sylvain</a></span>, <span ><a href="/author/montanes-romain-miguel/">Montanes Romain Miguel</a></span>, <span ><a href="/author/gaudry-stephane/">Gaudry Stephane</a></span>, <span ><a href="/author/fartoukh-muriel/">Fartoukh Muriel</a></span>, <span ><a href="/author/labbe-vincent/">Labbe Vincent</a></span>, <span ><a href="/author/parrot-antoine/">Parrot Antoine</a></span>, <span ><a href="/author/fangio-pascal/">Fangio Pascal</a></span>, <span ><a href="/author/outin-herve/">Outin Herve</a></span>, <span ><a href="/author/barbier-christophe/">Barbier Christophe</a></span>, <span ><a href="/author/de-jonghe-bernard/">De Jonghe Bernard</a></span>, <span ><a href="/author/loubieres-yann/">Loubieres Yann</a></span>, <span ><a href="/author/lefebvre-aurelie/">Lefebvre Aurelie</a></span>, <span ><a href="/author/tesnieres-antoine/">Tesnieres Antoine</a></span>
+  <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/faisy-christophe/">Faisy Christophe</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/meziani-ferhat/">Meziani Ferhat</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/planquette-benjamin/">Planquette Benjamin</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/clavel-marc/">Clavel Marc</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/gacouin-arnaud/">Gacouin Arnaud</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/bornstain-caroline/">Bornstain Caroline</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/schneider-francis/">Schneider Francis</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/duguet-alexandre/">Duguet Alexandre</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/gibot-sebastien/">Gibot Sebastien</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/lerolle-nicolas/">Lerolle Nicolas</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/ricard-jean-damien/">Ricard Jean-Damien</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/sanchez-olivier/">Sanchez Olivier</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/djibre-michel/">Djibre Michel</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/ricome-jean-louis/">Ricome Jean-Louis</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/rabbat-antoine/">Rabbat Antoine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/heming-nicholas/">Heming Nicholas</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/urien-saik/">Urien Saik</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/esvan-maxime/">Esvan Maxime</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/katsahian-sandrine/">Katsahian Sandrine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/pelieu-iris/">Pelieu Iris</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/lortat-jacob-brice/">Lortat-Jacob Brice</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/venot-marion/">Venot Marion</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/roux-antoine/">Roux Antoine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/gosset-marine/">Gosset Marine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/martinet-olivier/">Martinet Olivier</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/rahmani-hassene/">Rahmani Hassene</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/kummerlen-christine/">Kummerlen Christine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/schnell-david/">Schnell David</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/neagu-anca-raluga/">Neagu Anca Raluga</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/delabranche-xavier/">Delabranche Xavier</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/boisrame-helms-julie/">Boisrame-Helms Julie</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/zuber-benjamin/">Zuber Benjamin</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/troche-gilles/">Troche Gilles</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/legriel-stephane/">Legriel Stephane</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/brunel-fabrice/">Brunel Fabrice</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/guezennec-pierre/">Guezennec Pierre</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/laurent-virginie/">Laurent Virginie</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/hilly-ginoux-julia/">Hilly-Ginoux Julia</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/henry-lagarrigue-mathieu/">Henry-Lagarrigue Mathieu</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/vignon-philippe/">Vignon Philippe</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/pichon-nicolas/">Pichon Nicolas</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/francois-bruno/">Francois Bruno</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/dugard-anthony/">Dugard Anthony</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/amiel-jean-bernard/">Amiel Jean-Bernard</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/beguot-emmanuelle/">Beguot Emmanuelle</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/bellier-remy/">Bellier Remy</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/coulaud-jean-michel/">Coulaud Jean-Michel</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/donetti-laurence/">Donetti Laurence</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/barchasz-jean/">Barchasz Jean</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/harley-marie-line/">Harley Marie-Line</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/castelain-vincent/">Castelain Vincent</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/lutun-philippe/">Lutun Philippe</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/herbrecht-jean-etienne/">Herbrecht Jean-Etienne</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/janssen-langestein-ralf/">Janssen-Langestein Ralf</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/schenck-maleka/">Schenck Maleka</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/guillot-max/">Guillot Max</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/poidevin-antoine/">Poidevin Antoine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/prodanovic-helene/">Prodanovic Helene</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/schmidt-mathieu/">Schmidt Mathieu</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/mayaux-julien/">Mayaux Julien</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/delemazure-julie/">Delemazure Julie</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/persichini-romain/">Persichini Romain</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/conrad-marie/">Conrad Marie</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/barraud-damien/">Barraud Damien</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/lai-alexandre/">Lai Alexandre</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/lemarie-jeremie/">Lemarie Jeremie</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/nace-lionel/">Nace Lionel</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/cravoisy-popovic-aurelie/">Cravoisy-Popovic Aurelie</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/mercat-alain/">Mercat Alain</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/asfar-pierre/">Asfar Pierre</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/kouatchet-achille/">Kouatchet Achille</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/pierrot-marc/">Pierrot Marc</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/souday-vincent/">Souday Vincent</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/bourgoin-pierre/">Bourgoin Pierre</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/fleury-carole/">Fleury Carole</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/foucher-lezla-annelise/">Foucher-Lezla Annelise</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/bouvier-guillaume/">Bouvier Guillaume</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/abouzahr-tarek/">Abouzahr Tarek</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/giquello-jacques-armel/">Giquello Jacques-Armel</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/mortaza-satar/">Mortaza Satar</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/rafat-cedric/">Rafat Cedric</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/leclaire-clement/">Leclaire Clement</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/messika-jonathan/">Messika Jonathan</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/dufour-nicolas/">Dufour Nicolas</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/jean-baptiste-sylvain/">Jean-Baptiste Sylvain</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/montanes-romain-miguel/">Montanes Romain Miguel</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/gaudry-stephane/">Gaudry Stephane</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/fartoukh-muriel/">Fartoukh Muriel</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/labbe-vincent/">Labbe Vincent</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/parrot-antoine/">Parrot Antoine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/fangio-pascal/">Fangio Pascal</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/outin-herve/">Outin Herve</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/barbier-christophe/">Barbier Christophe</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/de-jonghe-bernard/">De Jonghe Bernard</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/loubieres-yann/">Loubieres Yann</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/lefebvre-aurelie/">Lefebvre Aurelie</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/tesnieres-antoine/">Tesnieres Antoine</a></span>
   </div>
   
   
@@ -811,7 +849,7 @@
           <div class="col-12 col-md-9">
             
             
-            <a href="/publication/#2">
+            <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/#2">
               Article de revue
             </a>
             
@@ -870,7 +908,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://www.coreds.com/publication/2016-02-01_effect_of_acetazolam/&amp;text=Effect%20of%20Acetazolamide%20vs%20Placebo%20on%20Duration%20of%20Invasive%20Mechanical%20Ventilation%20Among%20Patients%20With%20Chronic%20Obstructive%20Pulmonary%20Disease:%20A%20Randomized%20Clinical%20Trial." target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2016-02-01_effect_of_acetazolam/&amp;text=Effect%20of%20Acetazolamide%20vs%20Placebo%20on%20Duration%20of%20Invasive%20Mechanical%20Ventilation%20Among%20Patients%20With%20Chronic%20Obstructive%20Pulmonary%20Disease:%20A%20Randomized%20Clinical%20Trial." target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -883,7 +921,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://www.coreds.com/publication/2016-02-01_effect_of_acetazolam/&amp;t=Effect%20of%20Acetazolamide%20vs%20Placebo%20on%20Duration%20of%20Invasive%20Mechanical%20Ventilation%20Among%20Patients%20With%20Chronic%20Obstructive%20Pulmonary%20Disease:%20A%20Randomized%20Clinical%20Trial." target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://consultation-recherche-donnees-sante.netlify.app/publication/2016-02-01_effect_of_acetazolam/&amp;t=Effect%20of%20Acetazolamide%20vs%20Placebo%20on%20Duration%20of%20Invasive%20Mechanical%20Ventilation%20Among%20Patients%20With%20Chronic%20Obstructive%20Pulmonary%20Disease:%20A%20Randomized%20Clinical%20Trial." target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -896,7 +934,7 @@
       
       
       <li>
-        <a href="mailto:?subject=Effect%20of%20Acetazolamide%20vs%20Placebo%20on%20Duration%20of%20Invasive%20Mechanical%20Ventilation%20Among%20Patients%20With%20Chronic%20Obstructive%20Pulmonary%20Disease:%20A%20Randomized%20Clinical%20Trial.&amp;body=https://www.coreds.com/publication/2016-02-01_effect_of_acetazolam/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=Effect%20of%20Acetazolamide%20vs%20Placebo%20on%20Duration%20of%20Invasive%20Mechanical%20Ventilation%20Among%20Patients%20With%20Chronic%20Obstructive%20Pulmonary%20Disease:%20A%20Randomized%20Clinical%20Trial.&amp;body=https://consultation-recherche-donnees-sante.netlify.app/publication/2016-02-01_effect_of_acetazolam/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -909,7 +947,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://www.coreds.com/publication/2016-02-01_effect_of_acetazolam/&amp;title=Effect%20of%20Acetazolamide%20vs%20Placebo%20on%20Duration%20of%20Invasive%20Mechanical%20Ventilation%20Among%20Patients%20With%20Chronic%20Obstructive%20Pulmonary%20Disease:%20A%20Randomized%20Clinical%20Trial." target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2016-02-01_effect_of_acetazolam/&amp;title=Effect%20of%20Acetazolamide%20vs%20Placebo%20on%20Duration%20of%20Invasive%20Mechanical%20Ventilation%20Among%20Patients%20With%20Chronic%20Obstructive%20Pulmonary%20Disease:%20A%20Randomized%20Clinical%20Trial." target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -922,7 +960,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=Effect%20of%20Acetazolamide%20vs%20Placebo%20on%20Duration%20of%20Invasive%20Mechanical%20Ventilation%20Among%20Patients%20With%20Chronic%20Obstructive%20Pulmonary%20Disease:%20A%20Randomized%20Clinical%20Trial.%20https://www.coreds.com/publication/2016-02-01_effect_of_acetazolam/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=Effect%20of%20Acetazolamide%20vs%20Placebo%20on%20Duration%20of%20Invasive%20Mechanical%20Ventilation%20Among%20Patients%20With%20Chronic%20Obstructive%20Pulmonary%20Disease:%20A%20Randomized%20Clinical%20Trial.%20https://consultation-recherche-donnees-sante.netlify.app/publication/2016-02-01_effect_of_acetazolam/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -935,7 +973,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://www.coreds.com/publication/2016-02-01_effect_of_acetazolam/&amp;title=Effect%20of%20Acetazolamide%20vs%20Placebo%20on%20Duration%20of%20Invasive%20Mechanical%20Ventilation%20Among%20Patients%20With%20Chronic%20Obstructive%20Pulmonary%20Disease:%20A%20Randomized%20Clinical%20Trial." target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2016-02-01_effect_of_acetazolam/&amp;title=Effect%20of%20Acetazolamide%20vs%20Placebo%20on%20Duration%20of%20Invasive%20Mechanical%20Ventilation%20Among%20Patients%20With%20Chronic%20Obstructive%20Pulmonary%20Disease:%20A%20Randomized%20Clinical%20Trial." target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1557,7 +1595,7 @@
     <h3>Sur le même sujet</h3>
     <ul>
       
-      <li><a href="/publication/2020-01-01_effect_of_tocilizuma/">Effect of Tocilizumab vs Usual Care in Adults Hospitalized With COVID-19 and Moderate or Severe Pneumonia: A Randomized Clinical Trial.</a></li>
+      <li><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2020-01-01_effect_of_tocilizuma/">Effect of Tocilizumab vs Usual Care in Adults Hospitalized With COVID-19 and Moderate or Severe Pneumonia: A Randomized Clinical Trial.</a></li>
       
     </ul>
   </div>
@@ -1741,7 +1779,7 @@
     
     
     
-    <script src="/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
+    <script src="https://consultation-recherche-donnees-sante.netlify.app/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
 
     
 

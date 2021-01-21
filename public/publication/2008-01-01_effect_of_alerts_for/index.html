@@ -37,7 +37,7 @@
   <meta name="description" content="OBJECTIVE:Medication errors constitute a major problem in all hospitals. Between 20% and 46% of prescriptions requiring dosage adjustments based on renal function are inappropriate. This study aimed to determine whether implementing alerts at the time of ordering medication integrated into the computerized physician order entry decreases the proportion of inappropriate prescriptions based on the renal function of inpatients.METHODS:Six alternating 2-month control and intervention periods were conducted between August 2006 and August 2007 in two medical departments of a teaching hospital in France. A total of 603 patients and 38 physicians were included. During the intervention periods, alerts were triggered if a patient with renal impairment was prescribed one of the 24 targeted drugs that required adjustment according to estimated glomerular filtration rate (eGFR).METHODS:The main outcome measure was the proportion of inappropriate first prescriptions, according to recommendation.RESULTS:A total of 1,122 alerts were triggered. The rate of inappropriate first prescriptions did not differ significantly between intervention and control periods (19.9% vs. 21.3%; p=0.63). The effect of intervention differed significantly between residents and senior physicians (p=0.03). Residents tended to make fewer errors in intervention versus control periods (Odds ratio 0.69; 95% confidence interval 0.41 to 1.15), whereas senior physicians tended to make more inappropriate prescriptions in intervention periods (odds ratio 1.88; 95% confidence interval 0.91 to 3.89).CONCLUSIONS:Alert activation was not followed by a significant decrease in inappropriate prescriptions in our study. Thus, it is still necessary to evaluate the impact of these systems if newly implemented in other settings thanks to studies also designed to watch for possible unanticipated effects of decision supports and their underlying causes. ">
 
   
-  <link rel="alternate" hreflang="fr" href="https://www.coreds.com/publication/2008-01-01_effect_of_alerts_for/">
+  <link rel="alternate" hreflang="fr" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2008-01-01_effect_of_alerts_for/">
 
   
 
@@ -66,7 +66,7 @@
   
   
   
-  <script src="/js/mathjax-config.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/mathjax-config.js"></script>
   
 
   
@@ -241,13 +241,51 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.css">
+  <link rel="stylesheet" href="https://consultation-recherche-donnees-sante.netlify.app/css/wowchemy.css">
 
   
 
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-80B5KND2Y6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-80B5KND2Y6', { 'anonymize_ip': true });
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
   
@@ -258,11 +296,11 @@
 
   
 
-  <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
+  <link rel="manifest" href="https://consultation-recherche-donnees-sante.netlify.app/index.webmanifest">
+  <link rel="icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="https://www.coreds.com/publication/2008-01-01_effect_of_alerts_for/">
+  <link rel="canonical" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2008-01-01_effect_of_alerts_for/">
 
   
   
@@ -278,10 +316,10 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:url" content="https://www.coreds.com/publication/2008-01-01_effect_of_alerts_for/">
+  <meta property="og:url" content="https://consultation-recherche-donnees-sante.netlify.app/publication/2008-01-01_effect_of_alerts_for/">
   <meta property="og:title" content="Effect of alerts for drug dosage adjustment in inpatients with renal insufficiency. | Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:description" content="OBJECTIVE:Medication errors constitute a major problem in all hospitals. Between 20% and 46% of prescriptions requiring dosage adjustments based on renal function are inappropriate. This study aimed to determine whether implementing alerts at the time of ordering medication integrated into the computerized physician order entry decreases the proportion of inappropriate prescriptions based on the renal function of inpatients.METHODS:Six alternating 2-month control and intervention periods were conducted between August 2006 and August 2007 in two medical departments of a teaching hospital in France. A total of 603 patients and 38 physicians were included. During the intervention periods, alerts were triggered if a patient with renal impairment was prescribed one of the 24 targeted drugs that required adjustment according to estimated glomerular filtration rate (eGFR).METHODS:The main outcome measure was the proportion of inappropriate first prescriptions, according to recommendation.RESULTS:A total of 1,122 alerts were triggered. The rate of inappropriate first prescriptions did not differ significantly between intervention and control periods (19.9% vs. 21.3%; p=0.63). The effect of intervention differed significantly between residents and senior physicians (p=0.03). Residents tended to make fewer errors in intervention versus control periods (Odds ratio 0.69; 95% confidence interval 0.41 to 1.15), whereas senior physicians tended to make more inappropriate prescriptions in intervention periods (odds ratio 1.88; 95% confidence interval 0.91 to 3.89).CONCLUSIONS:Alert activation was not followed by a significant decrease in inappropriate prescriptions in our study. Thus, it is still necessary to evaluate the impact of these systems if newly implemented in other settings thanks to studies also designed to watch for possible unanticipated effects of decision supports and their underlying causes. "><meta property="og:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
-  <meta property="twitter:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
+  <meta property="og:description" content="OBJECTIVE:Medication errors constitute a major problem in all hospitals. Between 20% and 46% of prescriptions requiring dosage adjustments based on renal function are inappropriate. This study aimed to determine whether implementing alerts at the time of ordering medication integrated into the computerized physician order entry decreases the proportion of inappropriate prescriptions based on the renal function of inpatients.METHODS:Six alternating 2-month control and intervention periods were conducted between August 2006 and August 2007 in two medical departments of a teaching hospital in France. A total of 603 patients and 38 physicians were included. During the intervention periods, alerts were triggered if a patient with renal impairment was prescribed one of the 24 targeted drugs that required adjustment according to estimated glomerular filtration rate (eGFR).METHODS:The main outcome measure was the proportion of inappropriate first prescriptions, according to recommendation.RESULTS:A total of 1,122 alerts were triggered. The rate of inappropriate first prescriptions did not differ significantly between intervention and control periods (19.9% vs. 21.3%; p=0.63). The effect of intervention differed significantly between residents and senior physicians (p=0.03). Residents tended to make fewer errors in intervention versus control periods (Odds ratio 0.69; 95% confidence interval 0.41 to 1.15), whereas senior physicians tended to make more inappropriate prescriptions in intervention periods (odds ratio 1.88; 95% confidence interval 0.91 to 3.89).CONCLUSIONS:Alert activation was not followed by a significant decrease in inappropriate prescriptions in our study. Thus, it is still necessary to evaluate the impact of these systems if newly implemented in other settings thanks to studies also designed to watch for possible unanticipated effects of decision supports and their underlying causes. "><meta property="og:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
+  <meta property="twitter:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
   
     
       <meta property="article:published_time" content="2008-01-01T00:00:00&#43;00:00">
@@ -308,7 +346,7 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://www.coreds.com/publication/2008-01-01_effect_of_alerts_for/"
+    "@id": "https://consultation-recherche-donnees-sante.netlify.app/publication/2008-01-01_effect_of_alerts_for/"
   },
   "headline": "Effect of alerts for drug dosage adjustment in inpatients with renal insufficiency.",
   
@@ -325,7 +363,7 @@
     "name": "Consultation Recherche Données de Santé - CoReDS",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
+      "url": "https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
     }
   },
   "description": "OBJECTIVE:Medication errors constitute a major problem in all hospitals. Between 20% and 46% of prescriptions requiring dosage adjustments based on renal function are inappropriate. This study aimed to determine whether implementing alerts at the time of ordering medication integrated into the computerized physician order entry decreases the proportion of inappropriate prescriptions based on the renal function of inpatients.METHODS:Six alternating 2-month control and intervention periods were conducted between August 2006 and August 2007 in two medical departments of a teaching hospital in France. A total of 603 patients and 38 physicians were included. During the intervention periods, alerts were triggered if a patient with renal impairment was prescribed one of the 24 targeted drugs that required adjustment according to estimated glomerular filtration rate (eGFR).METHODS:The main outcome measure was the proportion of inappropriate first prescriptions, according to recommendation.RESULTS:A total of 1,122 alerts were triggered. The rate of inappropriate first prescriptions did not differ significantly between intervention and control periods (19.9% vs. 21.3%; p=0.63). The effect of intervention differed significantly between residents and senior physicians (p=0.03). Residents tended to make fewer errors in intervention versus control periods (Odds ratio 0.69; 95% confidence interval 0.41 to 1.15), whereas senior physicians tended to make more inappropriate prescriptions in intervention periods (odds ratio 1.88; 95% confidence interval 0.91 to 3.89).CONCLUSIONS:Alert activation was not followed by a significant decrease in inappropriate prescriptions in our study. Thus, it is still necessary to evaluate the impact of these systems if newly implemented in other settings thanks to studies also designed to watch for possible unanticipated effects of decision supports and their underlying causes. "
@@ -390,7 +428,7 @@
     <script>const isSiteThemeDark = false;</script>
   
   
-  <script src="/js/load-theme.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/load-theme.js"></script>
 
   <aside class="search-results" id="search">
   <div class="container">
@@ -445,7 +483,7 @@
 
     
     <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -458,7 +496,7 @@
 
     
     <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -494,7 +532,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/entreprendre/"><span>Commencer un projet</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/entreprendre/"><span>Commencer un projet</span></a>
         </li>
 
         
@@ -524,44 +562,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/suivremonprojet/"><span>Suivre son projet</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-            
-            
-            
-              
-            
-            
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#outils"><span>Boite à outils</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/suivremonprojet/"><span>Suivre son projet</span></a>
         </li>
 
         
@@ -598,7 +599,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#publi"><span>Publications</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#outils"><span>Boite à outils</span></a>
         </li>
 
         
@@ -635,7 +636,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#transparence"><span>Portail de transparence</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#publi"><span>Publications</span></a>
         </li>
 
         
@@ -672,7 +673,44 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#people"><span>Qui sommes-nous ?</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#transparence"><span>Portail de transparence</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#people"><span>Qui sommes-nous ?</span></a>
         </li>
 
         
@@ -745,7 +783,7 @@
     
 
   
-  <span ><a href="/author/sellier-elodie/">Sellier Elodie</a></span>, <span ><a href="/author/colombet-isabelle/">Colombet Isabelle</a></span>, <span ><a href="/author/sabatier-brigitte/">Sabatier Brigitte</a></span>, <span ><a href="/author/breton-gaelle/">Breton Gaelle</a></span>, <span ><a href="/author/nies-julie/">Nies Julie</a></span>, <span ><a href="/author/zapletal-eric/">Zapletal Eric</a></span>, <span ><a href="/author/arlet-jean-benoit/">Arlet Jean-Benoit</a></span>, <span ><a href="/author/somme-dominique/">Somme Dominique</a></span>, <span ><a href="/author/durieux-pierre/">Durieux Pierre</a></span>
+  <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/sellier-elodie/">Sellier Elodie</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/colombet-isabelle/">Colombet Isabelle</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/sabatier-brigitte/">Sabatier Brigitte</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/breton-gaelle/">Breton Gaelle</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/nies-julie/">Nies Julie</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/zapletal-eric/">Zapletal Eric</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/arlet-jean-benoit/">Arlet Jean-Benoit</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/somme-dominique/">Somme Dominique</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/durieux-pierre/">Durieux Pierre</a></span>
   </div>
   
   
@@ -811,7 +849,7 @@
           <div class="col-12 col-md-9">
             
             
-            <a href="/publication/#2">
+            <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/#2">
               Article de revue
             </a>
             
@@ -870,7 +908,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://www.coreds.com/publication/2008-01-01_effect_of_alerts_for/&amp;text=Effect%20of%20alerts%20for%20drug%20dosage%20adjustment%20in%20inpatients%20with%20renal%20insufficiency." target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2008-01-01_effect_of_alerts_for/&amp;text=Effect%20of%20alerts%20for%20drug%20dosage%20adjustment%20in%20inpatients%20with%20renal%20insufficiency." target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -883,7 +921,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://www.coreds.com/publication/2008-01-01_effect_of_alerts_for/&amp;t=Effect%20of%20alerts%20for%20drug%20dosage%20adjustment%20in%20inpatients%20with%20renal%20insufficiency." target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://consultation-recherche-donnees-sante.netlify.app/publication/2008-01-01_effect_of_alerts_for/&amp;t=Effect%20of%20alerts%20for%20drug%20dosage%20adjustment%20in%20inpatients%20with%20renal%20insufficiency." target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -896,7 +934,7 @@
       
       
       <li>
-        <a href="mailto:?subject=Effect%20of%20alerts%20for%20drug%20dosage%20adjustment%20in%20inpatients%20with%20renal%20insufficiency.&amp;body=https://www.coreds.com/publication/2008-01-01_effect_of_alerts_for/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=Effect%20of%20alerts%20for%20drug%20dosage%20adjustment%20in%20inpatients%20with%20renal%20insufficiency.&amp;body=https://consultation-recherche-donnees-sante.netlify.app/publication/2008-01-01_effect_of_alerts_for/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -909,7 +947,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://www.coreds.com/publication/2008-01-01_effect_of_alerts_for/&amp;title=Effect%20of%20alerts%20for%20drug%20dosage%20adjustment%20in%20inpatients%20with%20renal%20insufficiency." target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2008-01-01_effect_of_alerts_for/&amp;title=Effect%20of%20alerts%20for%20drug%20dosage%20adjustment%20in%20inpatients%20with%20renal%20insufficiency." target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -922,7 +960,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=Effect%20of%20alerts%20for%20drug%20dosage%20adjustment%20in%20inpatients%20with%20renal%20insufficiency.%20https://www.coreds.com/publication/2008-01-01_effect_of_alerts_for/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=Effect%20of%20alerts%20for%20drug%20dosage%20adjustment%20in%20inpatients%20with%20renal%20insufficiency.%20https://consultation-recherche-donnees-sante.netlify.app/publication/2008-01-01_effect_of_alerts_for/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -935,7 +973,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://www.coreds.com/publication/2008-01-01_effect_of_alerts_for/&amp;title=Effect%20of%20alerts%20for%20drug%20dosage%20adjustment%20in%20inpatients%20with%20renal%20insufficiency." target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2008-01-01_effect_of_alerts_for/&amp;title=Effect%20of%20alerts%20for%20drug%20dosage%20adjustment%20in%20inpatients%20with%20renal%20insufficiency." target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1204,7 +1242,7 @@
     
     
     
-    <script src="/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
+    <script src="https://consultation-recherche-donnees-sante.netlify.app/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
 
     
 

@@ -37,7 +37,7 @@
   <meta name="description" content="Consultation recherche données de santé">
 
   
-  <link rel="alternate" hreflang="fr" href="https://www.coreds.com/publication-type/2/">
+  <link rel="alternate" hreflang="fr" href="https://consultation-recherche-donnees-sante.netlify.app/publication-type/2/">
 
   
 
@@ -238,30 +238,68 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.css">
+  <link rel="stylesheet" href="https://consultation-recherche-donnees-sante.netlify.app/css/wowchemy.css">
 
   
 
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-80B5KND2Y6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-80B5KND2Y6', { 'anonymize_ip': true });
+
   
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
 
   
 
+  
+
 
   
   
 
   
-  <link rel="alternate" href="/publication-type/2/index.xml" type="application/rss+xml" title="Consultation Recherche Données de Santé - CoReDS">
+  <link rel="alternate" href="https://consultation-recherche-donnees-sante.netlify.app/publication-type/2/index.xml" type="application/rss+xml" title="Consultation Recherche Données de Santé - CoReDS">
   
 
-  <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
+  <link rel="manifest" href="https://consultation-recherche-donnees-sante.netlify.app/index.webmanifest">
+  <link rel="icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="https://www.coreds.com/publication-type/2/">
+  <link rel="canonical" href="https://consultation-recherche-donnees-sante.netlify.app/publication-type/2/">
 
   
   
@@ -277,10 +315,10 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:url" content="https://www.coreds.com/publication-type/2/">
+  <meta property="og:url" content="https://consultation-recherche-donnees-sante.netlify.app/publication-type/2/">
   <meta property="og:title" content="2 | Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:description" content="Consultation recherche données de santé"><meta property="og:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
-  <meta property="twitter:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
+  <meta property="og:description" content="Consultation recherche données de santé"><meta property="og:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
+  <meta property="twitter:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
   
     <meta property="og:updated_time" content="2020-12-01T00:00:00&#43;00:00">
   
@@ -343,7 +381,7 @@
     <script>const isSiteThemeDark = false;</script>
   
   
-  <script src="/js/load-theme.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/load-theme.js"></script>
 
   <aside class="search-results" id="search">
   <div class="container">
@@ -398,7 +436,7 @@
 
     
     <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -411,7 +449,7 @@
 
     
     <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -447,7 +485,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/entreprendre/"><span>Commencer un projet</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/entreprendre/"><span>Commencer un projet</span></a>
         </li>
 
         
@@ -477,44 +515,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/suivremonprojet/"><span>Suivre son projet</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-            
-            
-            
-              
-            
-            
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#outils"><span>Boite à outils</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/suivremonprojet/"><span>Suivre son projet</span></a>
         </li>
 
         
@@ -551,7 +552,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#publi"><span>Publications</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#outils"><span>Boite à outils</span></a>
         </li>
 
         
@@ -588,7 +589,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#transparence"><span>Portail de transparence</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#publi"><span>Publications</span></a>
         </li>
 
         
@@ -625,7 +626,44 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#people"><span>Qui sommes-nous ?</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#transparence"><span>Portail de transparence</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#people"><span>Qui sommes-nous ?</span></a>
         </li>
 
         
@@ -698,7 +736,7 @@
     
     
     <div>
-      <h2><a href="/publication/2007-03-01_practical_methodolog/" >Practical methodology of meta-analysis of individual patient data using a survival outcome.</a></h2>
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2007-03-01_practical_methodolog/" >Practical methodology of meta-analysis of individual patient data using a survival outcome.</a></h2>
       <div class="article-style">
         
           Meta-analysis of individual patient data (MIPD) is considered as one of the statistical approaches to provide integrated information on the effect of a treatment or an intervention. Statistical analysis of such meta-analyses should account for the …
@@ -710,7 +748,7 @@
     
     
     <div>
-      <h2><a href="/publication/2006-07-01_brachial_pressure-in/" >Brachial pressure-independent reduction in carotid stiffness after long-term angiotensin-converting enzyme inhibition in diabetic hypertensives.</a></h2>
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2006-07-01_brachial_pressure-in/" >Brachial pressure-independent reduction in carotid stiffness after long-term angiotensin-converting enzyme inhibition in diabetic hypertensives.</a></h2>
       <div class="article-style">
         
           Hypertension and diabetes are associated with an increased arterial stiffness. A direct blood pressure-independent effect of angiotensin-converting enzyme inhibitors on arterial stiffness has never been unequivocally demonstrated. In this mechanistic …
@@ -722,7 +760,7 @@
     
     
     <div>
-      <h2><a href="/publication/2006-03-01_prospective_evaluati/" >Prospective evaluation of a polymerase chain reaction-ELISA targeted to Aspergillus fumigatus and Aspergillus flavus for the early diagnosis of invasive aspergillosis in patients with hematological malignancies.</a></h2>
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2006-03-01_prospective_evaluati/" >Prospective evaluation of a polymerase chain reaction-ELISA targeted to Aspergillus fumigatus and Aspergillus flavus for the early diagnosis of invasive aspergillosis in patients with hematological malignancies.</a></h2>
       <div class="article-style">
         
           BACKGROUND:Current laboratory and radiological methods for diagnosis of invasive aspergillosis (IA) lack sensitivity and specificity.METHODS:We prospectively evaluated the diagnostic value of twice-weekly screening for circulating Aspergillus …
@@ -734,7 +772,7 @@
     
     
     <div>
-      <h2><a href="/publication/2006-01-01_factors_influencing_/" >Factors influencing inclusion of patients with malignancies in clinical trials.</a></h2>
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2006-01-01_factors_influencing_/" >Factors influencing inclusion of patients with malignancies in clinical trials.</a></h2>
       <div class="article-style">
         
           Participation in clinical trials remains low and is a central issue in oncology. The authors identified, through a systematic review, 75 papers published up to August 2004 that report barriers to recruitment of patients in clinical trials. These …
@@ -746,7 +784,7 @@
     
     
     <div>
-      <h2><a href="/publication/2004-11-01_glucose_level_is_a_m/" >Glucose level is a major determinant of carotid intima-media thickness in patients with hypertension and hyperglycemia.</a></h2>
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2004-11-01_glucose_level_is_a_m/" >Glucose level is a major determinant of carotid intima-media thickness in patients with hypertension and hyperglycemia.</a></h2>
       <div class="article-style">
         
           BACKGROUND:A causal relationship has been established between hyperglycemia and cardiovascular diseases, but no threshold has been retained to determine a 'glycemia-associated' cardiovascular risk. Carotid intima-media thickness (CIMT) is an …
@@ -758,7 +796,7 @@
     
     
     <div>
-      <h2><a href="/publication/2003-05-01_aortic_stiffness_is_/" >Aortic stiffness is an independent predictor of fatal stroke in essential hypertension.</a></h2>
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2003-05-01_aortic_stiffness_is_/" >Aortic stiffness is an independent predictor of fatal stroke in essential hypertension.</a></h2>
       <div class="article-style">
         
           BACKGROUND AND OBJECTIVE:Pulse pressure is a stronger predictor of cardiovascular events than systolic or diastolic blood pressure in large cohorts of French and North American patients. However, its influence on stroke is controversial. Large-artery …
@@ -771,7 +809,7 @@
 <nav>
   <ul class="pagination justify-content-center">
     
-    <li class="page-item"><a class="page-link" href="/publication-type/2/page/7/">&laquo;</a></li>
+    <li class="page-item"><a class="page-link" href="https://consultation-recherche-donnees-sante.netlify.app/publication-type/2/page/7/">&laquo;</a></li>
     
     
   </ul>
@@ -951,7 +989,7 @@
     
     
     
-    <script src="/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
+    <script src="https://consultation-recherche-donnees-sante.netlify.app/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
 
     
 

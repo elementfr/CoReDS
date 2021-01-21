@@ -37,7 +37,7 @@
   <meta name="description" content="Background NlmCategory=UNASSIGNED:Iodinated and gadolinium-based contrast media (ICM; GBCM) induce immediate hypersensitivity (IH) reactions. Differentiating allergic from non-allergic IH is crucial; allergy contraindicates the culprit agent for life. We studied frequency of allergic IH among ICM or GBCM reactors.Methods NlmCategory=UNASSIGNED:Patients were recruited in 31 hospitals between 2005 and 2009. Clinical symptoms, plasma histamine and tryptase concentrations and skin tests were recorded. Allergic IH was diagnosed by intradermal tests (IDT) with the culprit CM diluted 1:10, &amp;quot;potentially allergic&amp;quot; IH by positive IDT with pure CM, and non-allergic IH by negative IDT.Findings NlmCategory=UNASSIGNED:Among 245 skin-tested patients (ICM = 209; GBCM = 36), allergic IH to ICM was identified in 41 (19.6%) and to GBCM in 10 (27.8%). Skin cross-reactivity was observed in 11 patients with ICM (26.8%) and 5 with GBCM (50%). Allergy frequency increased with clinical severity and histamine and tryptase concentrations (p &amp;lt; 0.0001). Cardiovascular signs were strongly associated with allergy. Non-allergic IH was observed in 152 patients (62%) (ICM:134; GBCM:18). Severity grade was lower (p &amp;lt; 0.0001) and reaction delay longer (11.6 vs 5.6 min; p &amp;lt; 0.001). Potentially allergic IH was diagnosed in 42 patients (17.1%) (ICM:34; GBCM:8). The delay, severity grade, and mediator release were intermediate between the two other groups.Interpretation NlmCategory=UNASSIGNED:Allergic IH accounted for &amp;lt; 10% of cutaneous reactions, and &amp;gt; 50% of life-threatening ones. GBCM and ICM triggered comparable IH reactions in frequency and severity. Cross-reactivity was frequent, especially for GBCM. We propose considering skin testing with pure contrast agent, as it is more sensitive than the usual 1:10 dilution criteria. ">
 
   
-  <link rel="alternate" hreflang="fr" href="https://www.coreds.com/publication/2019-07-01_immediate_hypersensi/">
+  <link rel="alternate" hreflang="fr" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2019-07-01_immediate_hypersensi/">
 
   
 
@@ -66,7 +66,7 @@
   
   
   
-  <script src="/js/mathjax-config.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/mathjax-config.js"></script>
   
 
   
@@ -241,13 +241,51 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.css">
+  <link rel="stylesheet" href="https://consultation-recherche-donnees-sante.netlify.app/css/wowchemy.css">
 
   
 
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-80B5KND2Y6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-80B5KND2Y6', { 'anonymize_ip': true });
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
   
@@ -258,11 +296,11 @@
 
   
 
-  <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
+  <link rel="manifest" href="https://consultation-recherche-donnees-sante.netlify.app/index.webmanifest">
+  <link rel="icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="https://www.coreds.com/publication/2019-07-01_immediate_hypersensi/">
+  <link rel="canonical" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2019-07-01_immediate_hypersensi/">
 
   
   
@@ -278,10 +316,10 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:url" content="https://www.coreds.com/publication/2019-07-01_immediate_hypersensi/">
+  <meta property="og:url" content="https://consultation-recherche-donnees-sante.netlify.app/publication/2019-07-01_immediate_hypersensi/">
   <meta property="og:title" content="Immediate Hypersensitivity to Contrast Agents: The French 5-year CIRTACI Study. | Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:description" content="Background NlmCategory=UNASSIGNED:Iodinated and gadolinium-based contrast media (ICM; GBCM) induce immediate hypersensitivity (IH) reactions. Differentiating allergic from non-allergic IH is crucial; allergy contraindicates the culprit agent for life. We studied frequency of allergic IH among ICM or GBCM reactors.Methods NlmCategory=UNASSIGNED:Patients were recruited in 31 hospitals between 2005 and 2009. Clinical symptoms, plasma histamine and tryptase concentrations and skin tests were recorded. Allergic IH was diagnosed by intradermal tests (IDT) with the culprit CM diluted 1:10, &amp;quot;potentially allergic&amp;quot; IH by positive IDT with pure CM, and non-allergic IH by negative IDT.Findings NlmCategory=UNASSIGNED:Among 245 skin-tested patients (ICM = 209; GBCM = 36), allergic IH to ICM was identified in 41 (19.6%) and to GBCM in 10 (27.8%). Skin cross-reactivity was observed in 11 patients with ICM (26.8%) and 5 with GBCM (50%). Allergy frequency increased with clinical severity and histamine and tryptase concentrations (p &amp;lt; 0.0001). Cardiovascular signs were strongly associated with allergy. Non-allergic IH was observed in 152 patients (62%) (ICM:134; GBCM:18). Severity grade was lower (p &amp;lt; 0.0001) and reaction delay longer (11.6 vs 5.6 min; p &amp;lt; 0.001). Potentially allergic IH was diagnosed in 42 patients (17.1%) (ICM:34; GBCM:8). The delay, severity grade, and mediator release were intermediate between the two other groups.Interpretation NlmCategory=UNASSIGNED:Allergic IH accounted for &amp;lt; 10% of cutaneous reactions, and &amp;gt; 50% of life-threatening ones. GBCM and ICM triggered comparable IH reactions in frequency and severity. Cross-reactivity was frequent, especially for GBCM. We propose considering skin testing with pure contrast agent, as it is more sensitive than the usual 1:10 dilution criteria. "><meta property="og:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
-  <meta property="twitter:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
+  <meta property="og:description" content="Background NlmCategory=UNASSIGNED:Iodinated and gadolinium-based contrast media (ICM; GBCM) induce immediate hypersensitivity (IH) reactions. Differentiating allergic from non-allergic IH is crucial; allergy contraindicates the culprit agent for life. We studied frequency of allergic IH among ICM or GBCM reactors.Methods NlmCategory=UNASSIGNED:Patients were recruited in 31 hospitals between 2005 and 2009. Clinical symptoms, plasma histamine and tryptase concentrations and skin tests were recorded. Allergic IH was diagnosed by intradermal tests (IDT) with the culprit CM diluted 1:10, &amp;quot;potentially allergic&amp;quot; IH by positive IDT with pure CM, and non-allergic IH by negative IDT.Findings NlmCategory=UNASSIGNED:Among 245 skin-tested patients (ICM = 209; GBCM = 36), allergic IH to ICM was identified in 41 (19.6%) and to GBCM in 10 (27.8%). Skin cross-reactivity was observed in 11 patients with ICM (26.8%) and 5 with GBCM (50%). Allergy frequency increased with clinical severity and histamine and tryptase concentrations (p &amp;lt; 0.0001). Cardiovascular signs were strongly associated with allergy. Non-allergic IH was observed in 152 patients (62%) (ICM:134; GBCM:18). Severity grade was lower (p &amp;lt; 0.0001) and reaction delay longer (11.6 vs 5.6 min; p &amp;lt; 0.001). Potentially allergic IH was diagnosed in 42 patients (17.1%) (ICM:34; GBCM:8). The delay, severity grade, and mediator release were intermediate between the two other groups.Interpretation NlmCategory=UNASSIGNED:Allergic IH accounted for &amp;lt; 10% of cutaneous reactions, and &amp;gt; 50% of life-threatening ones. GBCM and ICM triggered comparable IH reactions in frequency and severity. Cross-reactivity was frequent, especially for GBCM. We propose considering skin testing with pure contrast agent, as it is more sensitive than the usual 1:10 dilution criteria. "><meta property="og:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
+  <meta property="twitter:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
   
     
       <meta property="article:published_time" content="2019-07-01T00:00:00&#43;00:00">
@@ -308,7 +346,7 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://www.coreds.com/publication/2019-07-01_immediate_hypersensi/"
+    "@id": "https://consultation-recherche-donnees-sante.netlify.app/publication/2019-07-01_immediate_hypersensi/"
   },
   "headline": "Immediate Hypersensitivity to Contrast Agents: The French 5-year CIRTACI Study.",
   
@@ -325,7 +363,7 @@
     "name": "Consultation Recherche Données de Santé - CoReDS",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
+      "url": "https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
     }
   },
   "description": "Background NlmCategory=UNASSIGNED:Iodinated and gadolinium-based contrast media (ICM; GBCM) induce immediate hypersensitivity (IH) reactions. Differentiating allergic from non-allergic IH is crucial; allergy contraindicates the culprit agent for life. We studied frequency of allergic IH among ICM or GBCM reactors.Methods NlmCategory=UNASSIGNED:Patients were recruited in 31 hospitals between 2005 and 2009. Clinical symptoms, plasma histamine and tryptase concentrations and skin tests were recorded. Allergic IH was diagnosed by intradermal tests (IDT) with the culprit CM diluted 1:10, \u0026quot;potentially allergic\u0026quot; IH by positive IDT with pure CM, and non-allergic IH by negative IDT.Findings NlmCategory=UNASSIGNED:Among 245 skin-tested patients (ICM = 209; GBCM = 36), allergic IH to ICM was identified in 41 (19.6%) and to GBCM in 10 (27.8%). Skin cross-reactivity was observed in 11 patients with ICM (26.8%) and 5 with GBCM (50%). Allergy frequency increased with clinical severity and histamine and tryptase concentrations (p \u0026lt; 0.0001). Cardiovascular signs were strongly associated with allergy. Non-allergic IH was observed in 152 patients (62%) (ICM:134; GBCM:18). Severity grade was lower (p \u0026lt; 0.0001) and reaction delay longer (11.6 vs 5.6 min; p \u0026lt; 0.001). Potentially allergic IH was diagnosed in 42 patients (17.1%) (ICM:34; GBCM:8). The delay, severity grade, and mediator release were intermediate between the two other groups.Interpretation NlmCategory=UNASSIGNED:Allergic IH accounted for \u0026lt; 10% of cutaneous reactions, and \u0026gt; 50% of life-threatening ones. GBCM and ICM triggered comparable IH reactions in frequency and severity. Cross-reactivity was frequent, especially for GBCM. We propose considering skin testing with pure contrast agent, as it is more sensitive than the usual 1:10 dilution criteria. "
@@ -390,7 +428,7 @@
     <script>const isSiteThemeDark = false;</script>
   
   
-  <script src="/js/load-theme.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/load-theme.js"></script>
 
   <aside class="search-results" id="search">
   <div class="container">
@@ -445,7 +483,7 @@
 
     
     <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -458,7 +496,7 @@
 
     
     <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -494,7 +532,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/entreprendre/"><span>Commencer un projet</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/entreprendre/"><span>Commencer un projet</span></a>
         </li>
 
         
@@ -524,44 +562,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/suivremonprojet/"><span>Suivre son projet</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-            
-            
-            
-              
-            
-            
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#outils"><span>Boite à outils</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/suivremonprojet/"><span>Suivre son projet</span></a>
         </li>
 
         
@@ -598,7 +599,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#publi"><span>Publications</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#outils"><span>Boite à outils</span></a>
         </li>
 
         
@@ -635,7 +636,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#transparence"><span>Portail de transparence</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#publi"><span>Publications</span></a>
         </li>
 
         
@@ -672,7 +673,44 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#people"><span>Qui sommes-nous ?</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#transparence"><span>Portail de transparence</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#people"><span>Qui sommes-nous ?</span></a>
         </li>
 
         
@@ -745,7 +783,7 @@
     
 
   
-  <span ><a href="/author/clement-olivier/">Clement Olivier</a></span>, <span ><a href="/author/dewachter-pascale/">Dewachter Pascale</a></span>, <span ><a href="/author/mouton-faivre-claudie/">Mouton-Faivre Claudie</a></span>, <span ><a href="/author/nevoret-camille/">Nevoret Camille</a></span>, <span ><a href="/author/guilloux-laurence/">Guilloux Laurence</a></span>, <span ><a href="/author/bloch-morot-evelyne/">Bloch Morot Evelyne</a></span>, <span ><a href="/author/katsahian-sandrine/">Katsahian Sandrine</a></span>, <span ><a href="/author/laroche-dominique/">Laroche Dominique</a></span>, <span ><a href="/author/audebert-martine/">Audebert Martine</a></span>, <span ><a href="/author/benabes-jezraoui-beatrice/">Benabes-Jezraoui Beatrice</a></span>, <span ><a href="/author/benoit-yves/">Benoit Yves</a></span>, <span ><a href="/author/beot-sylvie/">Beot Sylvie</a></span>, <span ><a href="/author/berard-frederic/">Berard Frederic</a></span>, <span ><a href="/author/berthezene-yves/">Berthezene Yves</a></span>, <span ><a href="/author/bertrand-philippe/">Bertrand Philippe</a></span>, <span ><a href="/author/bouffard-juliette/">Bouffard Juliette</a></span>, <span ><a href="/author/bourrain-jean-luc/">Bourrain Jean-Luc</a></span>, <span ><a href="/author/boyer-bruno/">Boyer Bruno</a></span>, <span ><a href="/author/carette-marie-france/">Carette Marie-France</a></span>, <span ><a href="/author/caron-poitreau-christine/">Caron-Poitreau Christine</a></span>, <span ><a href="/author/cavestri-beatrice/">Cavestri Beatrice</a></span>, <span ><a href="/author/cercueil-jean-pierre/">Cercueil Jean Pierre</a></span>, <span ><a href="/author/charpin-denis-andre/">Charpin Denis-Andre</a></span>, <span ><a href="/author/collet-evelyne/">Collet Evelyne</a></span>, <span ><a href="/author/crombe-ternamian-arielle/">Crombe-Ternamian Arielle</a></span>, <span ><a href="/author/dalmas-jacques/">Dalmas Jacques</a></span>, <span ><a href="/author/decoux-eric/">Decoux Eric</a></span>, <span ><a href="/author/defrance-marie-france/">Defrance Marie-France</a></span>, <span ><a href="/author/delaval-yvonne/">Delaval Yvonne</a></span>, <span ><a href="/author/demoly-pascal/">Demoly Pascal</a></span>, <span ><a href="/author/depriester-claude/">Depriester Claude</a></span>, <span ><a href="/author/depriester-pascale/">Depriester Pascale</a></span>, <span ><a href="/author/didier-alain/">Didier Alain</a></span>, <span ><a href="/author/drouet-martine/">Drouet Martine</a></span>, <span ><a href="/author/dupas-benoit/">Dupas Benoit</a></span>, <span ><a href="/author/dupre-goetchebeur-dominique/">Dupre-Goetchebeur Dominique</a></span>, <span ><a href="/author/dzviga-charles/">Dzviga Charles</a></span>, <span ><a href="/author/fabre-christine/">Fabre Christine</a></span>, <span ><a href="/author/ferretti-gilbert/">Ferretti Gilbert</a></span>, <span ><a href="/author/fourre-jullian-corinne/">Fourre-Jullian Corinne</a></span>, <span ><a href="/author/girardin-pascal/">Girardin Pascal</a></span>, <span ><a href="/author/giron-jacques/">Giron Jacques</a></span>, <span ><a href="/author/gouitaa-marion/">Gouitaa Marion</a></span>, <span ><a href="/author/grenier-nicolas/">Grenier Nicolas</a></span>, <span ><a href="/author/guenard-bilbault-lydie/">Guenard Bilbault Lydie</a></span>, <span ><a href="/author/guez-stephane/">Guez Stephane</a></span>, <span ><a href="/author/gunera-saad-nathalie/">Gunera-Saad Nathalie</a></span>, <span ><a href="/author/heautot-jean-francois/">Heautot Jean-Francois</a></span>, <span ><a href="/author/herbin-dominique/">Herbin Dominique</a></span>, <span ><a href="/author/hoarau-cyrille/">Hoarau Cyrille</a></span>, <span ><a href="/author/jacquot-claude/">Jacquot Claude</a></span>, <span ><a href="/author/julien-christian/">Julien Christian</a></span>, <span ><a href="/author/laborie-laurent/">Laborie Laurent</a></span>, <span ><a href="/author/lambert-claude/">Lambert Claude</a></span>, <span ><a href="/author/larroche-pascal/">Larroche Pascal</a></span>, <span ><a href="/author/leclerc-xavier/">Leclerc Xavier</a></span>, <span ><a href="/author/lemaitre-laurent/">Lemaitre Laurent</a></span>, <span ><a href="/author/leynadier-francisque/">Leynadier Francisque</a></span>, <span ><a href="/author/lillo-le-louet-agnes/">Lillo-Le Louet Agnes</a></span>, <span ><a href="/author/louvel-jean-pierre/">Louvel Jean-Pierre</a></span>, <span ><a href="/author/louvier-nathalie/">Louvier Nathalie</a></span>, <span ><a href="/author/lucas-marie-madeleine/">Lucas Marie-Madeleine</a></span>, <span ><a href="/author/meites-genevieve/">Meites Genevieve</a></span>, <span ><a href="/author/mennesson-nicolas/">Mennesson Nicolas</a></span>, <span ><a href="/author/metge-liliane/">Metge Liliane</a></span>, <span ><a href="/author/meunier-yannick/">Meunier Yannick</a></span>, <span ><a href="/author/monnier-cholley-laurence/">Monnier-Cholley Laurence</a></span>, <span ><a href="/author/musacchio-mariano/">Musacchio Mariano</a></span>, <span ><a href="/author/nicolie-brigitte/">Nicolie Brigitte</a></span>, <span ><a href="/author/occelli-gisele/">Occelli Gisele</a></span>, <span ><a href="/author/oesterle-helene/">Oesterle Helene</a></span>, <span ><a href="/author/paisant-thouveny-francine/">Paisant-Thouveny Francine</a></span>, <span ><a href="/author/panuel-michel/">Panuel Michel</a></span>, <span ><a href="/author/railhac-nadine/">Railhac Nadine</a></span>, <span ><a href="/author/rety-jacob-frederique/">Rety-Jacob Frederique</a></span>, <span ><a href="/author/rochefort-morel-cecile/">Rochefort-Morel Cecile</a></span>, <span ><a href="/author/roy-catherine/">Roy Catherine</a></span>, <span ><a href="/author/sarlieve-philippe/">Sarlieve Philippe</a></span>, <span ><a href="/author/sesay-musa/">Sesay Musa</a></span>, <span ><a href="/author/sgro-catherine/">Sgro Catherine</a></span>, <span ><a href="/author/taourel-patrice/">Taourel Patrice</a></span>, <span ><a href="/author/terrier-patrick/">Terrier Patrick</a></span>, <span ><a href="/author/theissen-odile/">Theissen Odile</a></span>, <span ><a href="/author/topenot-ingrid/">Topenot Ingrid</a></span>, <span ><a href="/author/valfrey-jocelyne/">Valfrey Jocelyne</a></span>, <span ><a href="/author/veillon-francis/">Veillon Francis</a></span>, <span ><a href="/author/vergnaud-marie-claude/">Vergnaud Marie-Claude</a></span>, <span ><a href="/author/veyret-charles/">Veyret Charles</a></span>, <span ><a href="/author/vincent-denis/">Vincent Denis</a></span>, <span ><a href="/author/wallaert-benoit/">Wallaert Benoit</a></span>, <span ><a href="/author/wessel-francois/">Wessel Francois</a></span>, <span ><a href="/author/zins-marc/">Zins Marc</a></span>
+  <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/clement-olivier/">Clement Olivier</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/dewachter-pascale/">Dewachter Pascale</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/mouton-faivre-claudie/">Mouton-Faivre Claudie</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/nevoret-camille/">Nevoret Camille</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/guilloux-laurence/">Guilloux Laurence</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/bloch-morot-evelyne/">Bloch Morot Evelyne</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/katsahian-sandrine/">Katsahian Sandrine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/laroche-dominique/">Laroche Dominique</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/audebert-martine/">Audebert Martine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/benabes-jezraoui-beatrice/">Benabes-Jezraoui Beatrice</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/benoit-yves/">Benoit Yves</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/beot-sylvie/">Beot Sylvie</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/berard-frederic/">Berard Frederic</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/berthezene-yves/">Berthezene Yves</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/bertrand-philippe/">Bertrand Philippe</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/bouffard-juliette/">Bouffard Juliette</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/bourrain-jean-luc/">Bourrain Jean-Luc</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/boyer-bruno/">Boyer Bruno</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/carette-marie-france/">Carette Marie-France</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/caron-poitreau-christine/">Caron-Poitreau Christine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/cavestri-beatrice/">Cavestri Beatrice</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/cercueil-jean-pierre/">Cercueil Jean Pierre</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/charpin-denis-andre/">Charpin Denis-Andre</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/collet-evelyne/">Collet Evelyne</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/crombe-ternamian-arielle/">Crombe-Ternamian Arielle</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/dalmas-jacques/">Dalmas Jacques</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/decoux-eric/">Decoux Eric</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/defrance-marie-france/">Defrance Marie-France</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/delaval-yvonne/">Delaval Yvonne</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/demoly-pascal/">Demoly Pascal</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/depriester-claude/">Depriester Claude</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/depriester-pascale/">Depriester Pascale</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/didier-alain/">Didier Alain</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/drouet-martine/">Drouet Martine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/dupas-benoit/">Dupas Benoit</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/dupre-goetchebeur-dominique/">Dupre-Goetchebeur Dominique</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/dzviga-charles/">Dzviga Charles</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/fabre-christine/">Fabre Christine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/ferretti-gilbert/">Ferretti Gilbert</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/fourre-jullian-corinne/">Fourre-Jullian Corinne</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/girardin-pascal/">Girardin Pascal</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/giron-jacques/">Giron Jacques</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/gouitaa-marion/">Gouitaa Marion</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/grenier-nicolas/">Grenier Nicolas</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/guenard-bilbault-lydie/">Guenard Bilbault Lydie</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/guez-stephane/">Guez Stephane</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/gunera-saad-nathalie/">Gunera-Saad Nathalie</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/heautot-jean-francois/">Heautot Jean-Francois</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/herbin-dominique/">Herbin Dominique</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/hoarau-cyrille/">Hoarau Cyrille</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/jacquot-claude/">Jacquot Claude</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/julien-christian/">Julien Christian</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/laborie-laurent/">Laborie Laurent</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/lambert-claude/">Lambert Claude</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/larroche-pascal/">Larroche Pascal</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/leclerc-xavier/">Leclerc Xavier</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/lemaitre-laurent/">Lemaitre Laurent</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/leynadier-francisque/">Leynadier Francisque</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/lillo-le-louet-agnes/">Lillo-Le Louet Agnes</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/louvel-jean-pierre/">Louvel Jean-Pierre</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/louvier-nathalie/">Louvier Nathalie</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/lucas-marie-madeleine/">Lucas Marie-Madeleine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/meites-genevieve/">Meites Genevieve</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/mennesson-nicolas/">Mennesson Nicolas</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/metge-liliane/">Metge Liliane</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/meunier-yannick/">Meunier Yannick</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/monnier-cholley-laurence/">Monnier-Cholley Laurence</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/musacchio-mariano/">Musacchio Mariano</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/nicolie-brigitte/">Nicolie Brigitte</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/occelli-gisele/">Occelli Gisele</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/oesterle-helene/">Oesterle Helene</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/paisant-thouveny-francine/">Paisant-Thouveny Francine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/panuel-michel/">Panuel Michel</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/railhac-nadine/">Railhac Nadine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/rety-jacob-frederique/">Rety-Jacob Frederique</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/rochefort-morel-cecile/">Rochefort-Morel Cecile</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/roy-catherine/">Roy Catherine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/sarlieve-philippe/">Sarlieve Philippe</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/sesay-musa/">Sesay Musa</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/sgro-catherine/">Sgro Catherine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/taourel-patrice/">Taourel Patrice</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/terrier-patrick/">Terrier Patrick</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/theissen-odile/">Theissen Odile</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/topenot-ingrid/">Topenot Ingrid</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/valfrey-jocelyne/">Valfrey Jocelyne</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/veillon-francis/">Veillon Francis</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/vergnaud-marie-claude/">Vergnaud Marie-Claude</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/veyret-charles/">Veyret Charles</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/vincent-denis/">Vincent Denis</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/wallaert-benoit/">Wallaert Benoit</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/wessel-francois/">Wessel Francois</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/zins-marc/">Zins Marc</a></span>
   </div>
   
   
@@ -811,7 +849,7 @@
           <div class="col-12 col-md-9">
             
             
-            <a href="/publication/#2">
+            <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/#2">
               Article de revue
             </a>
             
@@ -870,7 +908,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://www.coreds.com/publication/2019-07-01_immediate_hypersensi/&amp;text=Immediate%20Hypersensitivity%20to%20Contrast%20Agents:%20The%20French%205-year%20CIRTACI%20Study." target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2019-07-01_immediate_hypersensi/&amp;text=Immediate%20Hypersensitivity%20to%20Contrast%20Agents:%20The%20French%205-year%20CIRTACI%20Study." target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -883,7 +921,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://www.coreds.com/publication/2019-07-01_immediate_hypersensi/&amp;t=Immediate%20Hypersensitivity%20to%20Contrast%20Agents:%20The%20French%205-year%20CIRTACI%20Study." target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://consultation-recherche-donnees-sante.netlify.app/publication/2019-07-01_immediate_hypersensi/&amp;t=Immediate%20Hypersensitivity%20to%20Contrast%20Agents:%20The%20French%205-year%20CIRTACI%20Study." target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -896,7 +934,7 @@
       
       
       <li>
-        <a href="mailto:?subject=Immediate%20Hypersensitivity%20to%20Contrast%20Agents:%20The%20French%205-year%20CIRTACI%20Study.&amp;body=https://www.coreds.com/publication/2019-07-01_immediate_hypersensi/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=Immediate%20Hypersensitivity%20to%20Contrast%20Agents:%20The%20French%205-year%20CIRTACI%20Study.&amp;body=https://consultation-recherche-donnees-sante.netlify.app/publication/2019-07-01_immediate_hypersensi/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -909,7 +947,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://www.coreds.com/publication/2019-07-01_immediate_hypersensi/&amp;title=Immediate%20Hypersensitivity%20to%20Contrast%20Agents:%20The%20French%205-year%20CIRTACI%20Study." target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2019-07-01_immediate_hypersensi/&amp;title=Immediate%20Hypersensitivity%20to%20Contrast%20Agents:%20The%20French%205-year%20CIRTACI%20Study." target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -922,7 +960,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=Immediate%20Hypersensitivity%20to%20Contrast%20Agents:%20The%20French%205-year%20CIRTACI%20Study.%20https://www.coreds.com/publication/2019-07-01_immediate_hypersensi/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=Immediate%20Hypersensitivity%20to%20Contrast%20Agents:%20The%20French%205-year%20CIRTACI%20Study.%20https://consultation-recherche-donnees-sante.netlify.app/publication/2019-07-01_immediate_hypersensi/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -935,7 +973,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://www.coreds.com/publication/2019-07-01_immediate_hypersensi/&amp;title=Immediate%20Hypersensitivity%20to%20Contrast%20Agents:%20The%20French%205-year%20CIRTACI%20Study." target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2019-07-01_immediate_hypersensi/&amp;title=Immediate%20Hypersensitivity%20to%20Contrast%20Agents:%20The%20French%205-year%20CIRTACI%20Study." target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1702,7 +1740,7 @@
     
     
     
-    <script src="/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
+    <script src="https://consultation-recherche-donnees-sante.netlify.app/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
 
     
 

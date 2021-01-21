@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Recent &amp; Upcoming Talks | Consultation Recherche Données de Santé - CoReDS</title>
-    <link>https://www.coreds.com/talk/</link>
-      <atom:link href="https://www.coreds.com/talk/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://consultation-recherche-donnees-sante.netlify.app/talk/</link>
+      <atom:link href="https://consultation-recherche-donnees-sante.netlify.app/talk/index.xml" rel="self" type="application/rss+xml" />
     <description>Recent &amp; Upcoming Talks</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>fr</language><copyright>`2021` - **CoReDS**</copyright><lastBuildDate>Sat, 01 Jun 2030 13:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png</url>
+      <url>https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png</url>
       <title>Recent &amp; Upcoming Talks</title>
-      <link>https://www.coreds.com/talk/</link>
+      <link>https://consultation-recherche-donnees-sante.netlify.app/talk/</link>
     </image>
     
     <item>
       <title>Example Talk</title>
-      <link>https://www.coreds.com/talk/example/</link>
+      <link>https://consultation-recherche-donnees-sante.netlify.app/talk/example/</link>
       <pubDate>Sat, 01 Jun 2030 13:00:00 +0000</pubDate>
-      <guid>https://www.coreds.com/talk/example/</guid>
+      <guid>https://consultation-recherche-donnees-sante.netlify.app/talk/example/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click on the &lt;strong&gt;Slides&lt;/strong&gt; button above to view the built-in slides feature.

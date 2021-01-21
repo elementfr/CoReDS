@@ -37,7 +37,7 @@
   <meta name="description" content="BACKGROUND:Choosing the most performing method in terms of outcome prediction or variables selection is a recurring problem in prognosis studies, leading to many publications on methods comparison. But some aspects have received little attention. First, most comparison studies treat prediction performance and variable selection aspects separately. Second, methods are either compared within a binary outcome setting (where we want to predict whether the readmission will occur within an arbitrarily chosen delay or not) or within a survival analysis setting (where the outcomes are directly the censored times), but not both. In this paper, we propose a comparison methodology to weight up those different settings both in terms of prediction and variables selection, while incorporating advanced machine learning strategies.METHODS:Using a high-dimensional case study on a sickle-cell disease (SCD) cohort, we compare 8 statistical methods. In the binary outcome setting, we consider logistic regression (LR), support vector machine (SVM), random forest (RF), gradient boosting (GB) and neural network (NN); while on the survival analysis setting, we consider the Cox Proportional Hazards (PH), the CURE and the C-mix models. We also propose a method using Gaussian Processes to extract meaningfull structured covariates from longitudinal data.RESULTS:Among all assessed statistical methods, the survival analysis ones obtain the best results. In particular the C-mix model yields the better performances in both the two considered settings (AUC =0.94 in the binary outcome setting), as well as interesting interpretation aspects. There is some consistency in selected covariates across methods within a setting, but not much across the two settings.CONCLUSIONS:It appears that learning withing the survival analysis setting first (so using all the temporal information), and then going back to a binary prediction using the survival estimates gives significantly better prediction performances than the ones obtained by models trained &amp;quot;directly&amp;quot; within the binary outcome setting. ">
 
   
-  <link rel="alternate" hreflang="fr" href="https://www.coreds.com/publication/2019-03-01_comparison_of_method/">
+  <link rel="alternate" hreflang="fr" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2019-03-01_comparison_of_method/">
 
   
 
@@ -66,7 +66,7 @@
   
   
   
-  <script src="/js/mathjax-config.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/mathjax-config.js"></script>
   
 
   
@@ -241,13 +241,51 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.css">
+  <link rel="stylesheet" href="https://consultation-recherche-donnees-sante.netlify.app/css/wowchemy.css">
 
   
 
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-80B5KND2Y6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-80B5KND2Y6', { 'anonymize_ip': true });
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
   
@@ -258,11 +296,11 @@
 
   
 
-  <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
+  <link rel="manifest" href="https://consultation-recherche-donnees-sante.netlify.app/index.webmanifest">
+  <link rel="icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="https://www.coreds.com/publication/2019-03-01_comparison_of_method/">
+  <link rel="canonical" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2019-03-01_comparison_of_method/">
 
   
   
@@ -278,10 +316,10 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:url" content="https://www.coreds.com/publication/2019-03-01_comparison_of_method/">
+  <meta property="og:url" content="https://consultation-recherche-donnees-sante.netlify.app/publication/2019-03-01_comparison_of_method/">
   <meta property="og:title" content="Comparison of methods for early-readmission prediction in a high-dimensional heterogeneous covariates and time-to-event outcome framework. | Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:description" content="BACKGROUND:Choosing the most performing method in terms of outcome prediction or variables selection is a recurring problem in prognosis studies, leading to many publications on methods comparison. But some aspects have received little attention. First, most comparison studies treat prediction performance and variable selection aspects separately. Second, methods are either compared within a binary outcome setting (where we want to predict whether the readmission will occur within an arbitrarily chosen delay or not) or within a survival analysis setting (where the outcomes are directly the censored times), but not both. In this paper, we propose a comparison methodology to weight up those different settings both in terms of prediction and variables selection, while incorporating advanced machine learning strategies.METHODS:Using a high-dimensional case study on a sickle-cell disease (SCD) cohort, we compare 8 statistical methods. In the binary outcome setting, we consider logistic regression (LR), support vector machine (SVM), random forest (RF), gradient boosting (GB) and neural network (NN); while on the survival analysis setting, we consider the Cox Proportional Hazards (PH), the CURE and the C-mix models. We also propose a method using Gaussian Processes to extract meaningfull structured covariates from longitudinal data.RESULTS:Among all assessed statistical methods, the survival analysis ones obtain the best results. In particular the C-mix model yields the better performances in both the two considered settings (AUC =0.94 in the binary outcome setting), as well as interesting interpretation aspects. There is some consistency in selected covariates across methods within a setting, but not much across the two settings.CONCLUSIONS:It appears that learning withing the survival analysis setting first (so using all the temporal information), and then going back to a binary prediction using the survival estimates gives significantly better prediction performances than the ones obtained by models trained &amp;quot;directly&amp;quot; within the binary outcome setting. "><meta property="og:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
-  <meta property="twitter:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
+  <meta property="og:description" content="BACKGROUND:Choosing the most performing method in terms of outcome prediction or variables selection is a recurring problem in prognosis studies, leading to many publications on methods comparison. But some aspects have received little attention. First, most comparison studies treat prediction performance and variable selection aspects separately. Second, methods are either compared within a binary outcome setting (where we want to predict whether the readmission will occur within an arbitrarily chosen delay or not) or within a survival analysis setting (where the outcomes are directly the censored times), but not both. In this paper, we propose a comparison methodology to weight up those different settings both in terms of prediction and variables selection, while incorporating advanced machine learning strategies.METHODS:Using a high-dimensional case study on a sickle-cell disease (SCD) cohort, we compare 8 statistical methods. In the binary outcome setting, we consider logistic regression (LR), support vector machine (SVM), random forest (RF), gradient boosting (GB) and neural network (NN); while on the survival analysis setting, we consider the Cox Proportional Hazards (PH), the CURE and the C-mix models. We also propose a method using Gaussian Processes to extract meaningfull structured covariates from longitudinal data.RESULTS:Among all assessed statistical methods, the survival analysis ones obtain the best results. In particular the C-mix model yields the better performances in both the two considered settings (AUC =0.94 in the binary outcome setting), as well as interesting interpretation aspects. There is some consistency in selected covariates across methods within a setting, but not much across the two settings.CONCLUSIONS:It appears that learning withing the survival analysis setting first (so using all the temporal information), and then going back to a binary prediction using the survival estimates gives significantly better prediction performances than the ones obtained by models trained &amp;quot;directly&amp;quot; within the binary outcome setting. "><meta property="og:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
+  <meta property="twitter:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
   
     
       <meta property="article:published_time" content="2019-03-01T00:00:00&#43;00:00">
@@ -308,7 +346,7 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://www.coreds.com/publication/2019-03-01_comparison_of_method/"
+    "@id": "https://consultation-recherche-donnees-sante.netlify.app/publication/2019-03-01_comparison_of_method/"
   },
   "headline": "Comparison of methods for early-readmission prediction in a high-dimensional heterogeneous covariates and time-to-event outcome framework.",
   
@@ -325,7 +363,7 @@
     "name": "Consultation Recherche Données de Santé - CoReDS",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
+      "url": "https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
     }
   },
   "description": "BACKGROUND:Choosing the most performing method in terms of outcome prediction or variables selection is a recurring problem in prognosis studies, leading to many publications on methods comparison. But some aspects have received little attention. First, most comparison studies treat prediction performance and variable selection aspects separately. Second, methods are either compared within a binary outcome setting (where we want to predict whether the readmission will occur within an arbitrarily chosen delay or not) or within a survival analysis setting (where the outcomes are directly the censored times), but not both. In this paper, we propose a comparison methodology to weight up those different settings both in terms of prediction and variables selection, while incorporating advanced machine learning strategies.METHODS:Using a high-dimensional case study on a sickle-cell disease (SCD) cohort, we compare 8 statistical methods. In the binary outcome setting, we consider logistic regression (LR), support vector machine (SVM), random forest (RF), gradient boosting (GB) and neural network (NN); while on the survival analysis setting, we consider the Cox Proportional Hazards (PH), the CURE and the C-mix models. We also propose a method using Gaussian Processes to extract meaningfull structured covariates from longitudinal data.RESULTS:Among all assessed statistical methods, the survival analysis ones obtain the best results. In particular the C-mix model yields the better performances in both the two considered settings (AUC =0.94 in the binary outcome setting), as well as interesting interpretation aspects. There is some consistency in selected covariates across methods within a setting, but not much across the two settings.CONCLUSIONS:It appears that learning withing the survival analysis setting first (so using all the temporal information), and then going back to a binary prediction using the survival estimates gives significantly better prediction performances than the ones obtained by models trained \u0026quot;directly\u0026quot; within the binary outcome setting. "
@@ -390,7 +428,7 @@
     <script>const isSiteThemeDark = false;</script>
   
   
-  <script src="/js/load-theme.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/load-theme.js"></script>
 
   <aside class="search-results" id="search">
   <div class="container">
@@ -445,7 +483,7 @@
 
     
     <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -458,7 +496,7 @@
 
     
     <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -494,7 +532,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/entreprendre/"><span>Commencer un projet</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/entreprendre/"><span>Commencer un projet</span></a>
         </li>
 
         
@@ -524,44 +562,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/suivremonprojet/"><span>Suivre son projet</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-            
-            
-            
-              
-            
-            
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#outils"><span>Boite à outils</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/suivremonprojet/"><span>Suivre son projet</span></a>
         </li>
 
         
@@ -598,7 +599,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#publi"><span>Publications</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#outils"><span>Boite à outils</span></a>
         </li>
 
         
@@ -635,7 +636,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#transparence"><span>Portail de transparence</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#publi"><span>Publications</span></a>
         </li>
 
         
@@ -672,7 +673,44 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#people"><span>Qui sommes-nous ?</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#transparence"><span>Portail de transparence</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#people"><span>Qui sommes-nous ?</span></a>
         </li>
 
         
@@ -745,7 +783,7 @@
     
 
   
-  <span ><a href="/author/bussy-simon/">Bussy Simon</a></span>, <span ><a href="/author/veil-raphael/">Veil Raphael</a></span>, <span ><a href="/author/looten-vincent/">Looten Vincent</a></span>, <span ><a href="/author/burgun-anita/">Burgun Anita</a></span>, <span ><a href="/author/gaiffas-stephane/">Gaiffas Stephane</a></span>, <span ><a href="/author/guilloux-agathe/">Guilloux Agathe</a></span>, <span ><a href="/author/ranque-brigitte/">Ranque Brigitte</a></span>, <span ><a href="/author/jannot-anne-sophie/">Jannot Anne-Sophie</a></span>
+  <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/bussy-simon/">Bussy Simon</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/veil-raphael/">Veil Raphael</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/looten-vincent/">Looten Vincent</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/burgun-anita/">Burgun Anita</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/gaiffas-stephane/">Gaiffas Stephane</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/guilloux-agathe/">Guilloux Agathe</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/ranque-brigitte/">Ranque Brigitte</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/jannot-anne-sophie/">Jannot Anne-Sophie</a></span>
   </div>
   
   
@@ -811,7 +849,7 @@
           <div class="col-12 col-md-9">
             
             
-            <a href="/publication/#2">
+            <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/#2">
               Article de revue
             </a>
             
@@ -870,7 +908,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://www.coreds.com/publication/2019-03-01_comparison_of_method/&amp;text=Comparison%20of%20methods%20for%20early-readmission%20prediction%20in%20a%20high-dimensional%20heterogeneous%20covariates%20and%20time-to-event%20outcome%20framework." target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2019-03-01_comparison_of_method/&amp;text=Comparison%20of%20methods%20for%20early-readmission%20prediction%20in%20a%20high-dimensional%20heterogeneous%20covariates%20and%20time-to-event%20outcome%20framework." target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -883,7 +921,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://www.coreds.com/publication/2019-03-01_comparison_of_method/&amp;t=Comparison%20of%20methods%20for%20early-readmission%20prediction%20in%20a%20high-dimensional%20heterogeneous%20covariates%20and%20time-to-event%20outcome%20framework." target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://consultation-recherche-donnees-sante.netlify.app/publication/2019-03-01_comparison_of_method/&amp;t=Comparison%20of%20methods%20for%20early-readmission%20prediction%20in%20a%20high-dimensional%20heterogeneous%20covariates%20and%20time-to-event%20outcome%20framework." target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -896,7 +934,7 @@
       
       
       <li>
-        <a href="mailto:?subject=Comparison%20of%20methods%20for%20early-readmission%20prediction%20in%20a%20high-dimensional%20heterogeneous%20covariates%20and%20time-to-event%20outcome%20framework.&amp;body=https://www.coreds.com/publication/2019-03-01_comparison_of_method/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=Comparison%20of%20methods%20for%20early-readmission%20prediction%20in%20a%20high-dimensional%20heterogeneous%20covariates%20and%20time-to-event%20outcome%20framework.&amp;body=https://consultation-recherche-donnees-sante.netlify.app/publication/2019-03-01_comparison_of_method/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -909,7 +947,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://www.coreds.com/publication/2019-03-01_comparison_of_method/&amp;title=Comparison%20of%20methods%20for%20early-readmission%20prediction%20in%20a%20high-dimensional%20heterogeneous%20covariates%20and%20time-to-event%20outcome%20framework." target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2019-03-01_comparison_of_method/&amp;title=Comparison%20of%20methods%20for%20early-readmission%20prediction%20in%20a%20high-dimensional%20heterogeneous%20covariates%20and%20time-to-event%20outcome%20framework." target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -922,7 +960,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=Comparison%20of%20methods%20for%20early-readmission%20prediction%20in%20a%20high-dimensional%20heterogeneous%20covariates%20and%20time-to-event%20outcome%20framework.%20https://www.coreds.com/publication/2019-03-01_comparison_of_method/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=Comparison%20of%20methods%20for%20early-readmission%20prediction%20in%20a%20high-dimensional%20heterogeneous%20covariates%20and%20time-to-event%20outcome%20framework.%20https://consultation-recherche-donnees-sante.netlify.app/publication/2019-03-01_comparison_of_method/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -935,7 +973,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://www.coreds.com/publication/2019-03-01_comparison_of_method/&amp;title=Comparison%20of%20methods%20for%20early-readmission%20prediction%20in%20a%20high-dimensional%20heterogeneous%20covariates%20and%20time-to-event%20outcome%20framework." target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2019-03-01_comparison_of_method/&amp;title=Comparison%20of%20methods%20for%20early-readmission%20prediction%20in%20a%20high-dimensional%20heterogeneous%20covariates%20and%20time-to-event%20outcome%20framework." target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1023,9 +1061,9 @@
     <h3>Sur le même sujet</h3>
     <ul>
       
-      <li><a href="/publication/2019-09-01_trajectories_of_biol/">Trajectories of Biological Values and Vital Parameters: An Observational Cohort Study of Adult Patients with Sickle Cell Disease Hospitalized for a Non-Complicated Vaso-Occlusive Crisis.</a></li>
+      <li><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2019-09-01_trajectories_of_biol/">Trajectories of Biological Values and Vital Parameters: An Observational Cohort Study of Adult Patients with Sickle Cell Disease Hospitalized for a Non-Complicated Vaso-Occlusive Crisis.</a></li>
       
-      <li><a href="/publication/2018-05-01_c-mix_a_high-dimensi/">C-mix: A high-dimensional mixture model for censored durations, with applications to genetic data.</a></li>
+      <li><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2018-05-01_c-mix_a_high-dimensi/">C-mix: A high-dimensional mixture model for censored durations, with applications to genetic data.</a></li>
       
     </ul>
   </div>
@@ -1209,7 +1247,7 @@
     
     
     
-    <script src="/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
+    <script src="https://consultation-recherche-donnees-sante.netlify.app/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
 
     
 

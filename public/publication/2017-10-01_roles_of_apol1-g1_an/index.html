@@ -37,7 +37,7 @@
   <meta name="description" content="In African-American patients with sickle cell disease (SCD), APOL1 G1 and G2 variants are associated with increased risk of sickle cell nephropathy (SCN). To determine the role of APOL1 variants in SCD patients living in Europe, we genotyped 152 SCD patients [aged 30·4 (24·3-36·4) years], mainly of Sub-Saharan African ancestry, for APOL1 G1 and G2 and for variants of four genes with kidney tropism (GSTM1, GSTT1, GSTP1, and HMOX1). Homozygous or double-heterozygous APOL G1 and G2 genotypes were strongly associated with end stage renal disease (P = 0·003) and worse Kidney Disease: Improving Global Outcomes stages (P = 0·001). Further, these genotypes were associated in an age-dependent manner with lower estimated glomerular filtration rate (eGFR, P = 0·008), proteinuria (P = 0·009) and albuminuria (P &amp;lt; 0·001) but not with other SCD complications. Compared to APOL1 G1/wild type (WT), the APOL1 G2/WT genotype was associated with a lower eGFR (P = 0·04) in an age-dependent manner, suggesting that the G2/WT patients are likely to have worse kidney prognosis. Other genes variants analysed were not associated with SCN or other SCD complications. Our data indicate that APOL1 screening should be considered for the management of SCD patients, including those of non-African-American origin, as those with homozygous or double heterozygous variants are clearly at higher risk of SCN.">
 
   
-  <link rel="alternate" hreflang="fr" href="https://www.coreds.com/publication/2017-10-01_roles_of_apol1-g1_an/">
+  <link rel="alternate" hreflang="fr" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2017-10-01_roles_of_apol1-g1_an/">
 
   
 
@@ -66,7 +66,7 @@
   
   
   
-  <script src="/js/mathjax-config.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/mathjax-config.js"></script>
   
 
   
@@ -241,13 +241,51 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.css">
+  <link rel="stylesheet" href="https://consultation-recherche-donnees-sante.netlify.app/css/wowchemy.css">
 
   
 
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-80B5KND2Y6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-80B5KND2Y6', { 'anonymize_ip': true });
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
   
@@ -258,11 +296,11 @@
 
   
 
-  <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
+  <link rel="manifest" href="https://consultation-recherche-donnees-sante.netlify.app/index.webmanifest">
+  <link rel="icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="https://www.coreds.com/publication/2017-10-01_roles_of_apol1-g1_an/">
+  <link rel="canonical" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2017-10-01_roles_of_apol1-g1_an/">
 
   
   
@@ -278,10 +316,10 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:url" content="https://www.coreds.com/publication/2017-10-01_roles_of_apol1-g1_an/">
+  <meta property="og:url" content="https://consultation-recherche-donnees-sante.netlify.app/publication/2017-10-01_roles_of_apol1-g1_an/">
   <meta property="og:title" content="Roles of APOL1 G1 and G2 variants in sickle cell disease patients: kidney is the main target. | Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:description" content="In African-American patients with sickle cell disease (SCD), APOL1 G1 and G2 variants are associated with increased risk of sickle cell nephropathy (SCN). To determine the role of APOL1 variants in SCD patients living in Europe, we genotyped 152 SCD patients [aged 30·4 (24·3-36·4) years], mainly of Sub-Saharan African ancestry, for APOL1 G1 and G2 and for variants of four genes with kidney tropism (GSTM1, GSTT1, GSTP1, and HMOX1). Homozygous or double-heterozygous APOL G1 and G2 genotypes were strongly associated with end stage renal disease (P = 0·003) and worse Kidney Disease: Improving Global Outcomes stages (P = 0·001). Further, these genotypes were associated in an age-dependent manner with lower estimated glomerular filtration rate (eGFR, P = 0·008), proteinuria (P = 0·009) and albuminuria (P &amp;lt; 0·001) but not with other SCD complications. Compared to APOL1 G1/wild type (WT), the APOL1 G2/WT genotype was associated with a lower eGFR (P = 0·04) in an age-dependent manner, suggesting that the G2/WT patients are likely to have worse kidney prognosis. Other genes variants analysed were not associated with SCN or other SCD complications. Our data indicate that APOL1 screening should be considered for the management of SCD patients, including those of non-African-American origin, as those with homozygous or double heterozygous variants are clearly at higher risk of SCN."><meta property="og:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
-  <meta property="twitter:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
+  <meta property="og:description" content="In African-American patients with sickle cell disease (SCD), APOL1 G1 and G2 variants are associated with increased risk of sickle cell nephropathy (SCN). To determine the role of APOL1 variants in SCD patients living in Europe, we genotyped 152 SCD patients [aged 30·4 (24·3-36·4) years], mainly of Sub-Saharan African ancestry, for APOL1 G1 and G2 and for variants of four genes with kidney tropism (GSTM1, GSTT1, GSTP1, and HMOX1). Homozygous or double-heterozygous APOL G1 and G2 genotypes were strongly associated with end stage renal disease (P = 0·003) and worse Kidney Disease: Improving Global Outcomes stages (P = 0·001). Further, these genotypes were associated in an age-dependent manner with lower estimated glomerular filtration rate (eGFR, P = 0·008), proteinuria (P = 0·009) and albuminuria (P &amp;lt; 0·001) but not with other SCD complications. Compared to APOL1 G1/wild type (WT), the APOL1 G2/WT genotype was associated with a lower eGFR (P = 0·04) in an age-dependent manner, suggesting that the G2/WT patients are likely to have worse kidney prognosis. Other genes variants analysed were not associated with SCN or other SCD complications. Our data indicate that APOL1 screening should be considered for the management of SCD patients, including those of non-African-American origin, as those with homozygous or double heterozygous variants are clearly at higher risk of SCN."><meta property="og:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
+  <meta property="twitter:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
   
     
       <meta property="article:published_time" content="2017-10-01T00:00:00&#43;00:00">
@@ -308,7 +346,7 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://www.coreds.com/publication/2017-10-01_roles_of_apol1-g1_an/"
+    "@id": "https://consultation-recherche-donnees-sante.netlify.app/publication/2017-10-01_roles_of_apol1-g1_an/"
   },
   "headline": "Roles of APOL1 G1 and G2 variants in sickle cell disease patients: kidney is the main target.",
   
@@ -325,7 +363,7 @@
     "name": "Consultation Recherche Données de Santé - CoReDS",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
+      "url": "https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
     }
   },
   "description": "In African-American patients with sickle cell disease (SCD), APOL1 G1 and G2 variants are associated with increased risk of sickle cell nephropathy (SCN). To determine the role of APOL1 variants in SCD patients living in Europe, we genotyped 152 SCD patients [aged 30·4 (24·3-36·4) years], mainly of Sub-Saharan African ancestry, for APOL1 G1 and G2 and for variants of four genes with kidney tropism (GSTM1, GSTT1, GSTP1, and HMOX1). Homozygous or double-heterozygous APOL G1 and G2 genotypes were strongly associated with end stage renal disease (P = 0·003) and worse Kidney Disease: Improving Global Outcomes stages (P = 0·001). Further, these genotypes were associated in an age-dependent manner with lower estimated glomerular filtration rate (eGFR, P = 0·008), proteinuria (P = 0·009) and albuminuria (P \u0026lt; 0·001) but not with other SCD complications. Compared to APOL1 G1/wild type (WT), the APOL1 G2/WT genotype was associated with a lower eGFR (P = 0·04) in an age-dependent manner, suggesting that the G2/WT patients are likely to have worse kidney prognosis. Other genes variants analysed were not associated with SCN or other SCD complications. Our data indicate that APOL1 screening should be considered for the management of SCD patients, including those of non-African-American origin, as those with homozygous or double heterozygous variants are clearly at higher risk of SCN."
@@ -390,7 +428,7 @@
     <script>const isSiteThemeDark = false;</script>
   
   
-  <script src="/js/load-theme.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/load-theme.js"></script>
 
   <aside class="search-results" id="search">
   <div class="container">
@@ -445,7 +483,7 @@
 
     
     <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -458,7 +496,7 @@
 
     
     <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -494,7 +532,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/entreprendre/"><span>Commencer un projet</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/entreprendre/"><span>Commencer un projet</span></a>
         </li>
 
         
@@ -524,44 +562,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/suivremonprojet/"><span>Suivre son projet</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-            
-            
-            
-              
-            
-            
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#outils"><span>Boite à outils</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/suivremonprojet/"><span>Suivre son projet</span></a>
         </li>
 
         
@@ -598,7 +599,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#publi"><span>Publications</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#outils"><span>Boite à outils</span></a>
         </li>
 
         
@@ -635,7 +636,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#transparence"><span>Portail de transparence</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#publi"><span>Publications</span></a>
         </li>
 
         
@@ -672,7 +673,44 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#people"><span>Qui sommes-nous ?</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#transparence"><span>Portail de transparence</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#people"><span>Qui sommes-nous ?</span></a>
         </li>
 
         
@@ -745,7 +783,7 @@
     
 
   
-  <span ><a href="/author/kormann-raphael/">Kormann Raphael</a></span>, <span ><a href="/author/jannot-anne-sophie/">Jannot Anne-Sophie</a></span>, <span ><a href="/author/narjoz-celine/">Narjoz Celine</a></span>, <span ><a href="/author/ribeil-jean-antoine/">Ribeil Jean-Antoine</a></span>, <span ><a href="/author/manceau-sandra/">Manceau Sandra</a></span>, <span ><a href="/author/delville-marianne/">Delville Marianne</a></span>, <span ><a href="/author/joste-valentin/">Joste Valentin</a></span>, <span ><a href="/author/prie-dominique/">Prie Dominique</a></span>, <span ><a href="/author/pouchot-jacques/">Pouchot Jacques</a></span>, <span ><a href="/author/thervet-eric/">Thervet Eric</a></span>, <span ><a href="/author/courbebaisse-marie/">Courbebaisse Marie</a></span>, <span ><a href="/author/arlet-jean-benoit/">Arlet Jean-Benoit</a></span>
+  <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/kormann-raphael/">Kormann Raphael</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/jannot-anne-sophie/">Jannot Anne-Sophie</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/narjoz-celine/">Narjoz Celine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/ribeil-jean-antoine/">Ribeil Jean-Antoine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/manceau-sandra/">Manceau Sandra</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/delville-marianne/">Delville Marianne</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/joste-valentin/">Joste Valentin</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/prie-dominique/">Prie Dominique</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/pouchot-jacques/">Pouchot Jacques</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/thervet-eric/">Thervet Eric</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/courbebaisse-marie/">Courbebaisse Marie</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/arlet-jean-benoit/">Arlet Jean-Benoit</a></span>
   </div>
   
   
@@ -811,7 +849,7 @@
           <div class="col-12 col-md-9">
             
             
-            <a href="/publication/#2">
+            <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/#2">
               Article de revue
             </a>
             
@@ -870,7 +908,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://www.coreds.com/publication/2017-10-01_roles_of_apol1-g1_an/&amp;text=Roles%20of%20APOL1%c2%a0G1%20and%20G2%20variants%20in%20sickle%20cell%20disease%20patients:%20kidney%20is%20the%20main%20target." target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2017-10-01_roles_of_apol1-g1_an/&amp;text=Roles%20of%20APOL1%c2%a0G1%20and%20G2%20variants%20in%20sickle%20cell%20disease%20patients:%20kidney%20is%20the%20main%20target." target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -883,7 +921,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://www.coreds.com/publication/2017-10-01_roles_of_apol1-g1_an/&amp;t=Roles%20of%20APOL1%c2%a0G1%20and%20G2%20variants%20in%20sickle%20cell%20disease%20patients:%20kidney%20is%20the%20main%20target." target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://consultation-recherche-donnees-sante.netlify.app/publication/2017-10-01_roles_of_apol1-g1_an/&amp;t=Roles%20of%20APOL1%c2%a0G1%20and%20G2%20variants%20in%20sickle%20cell%20disease%20patients:%20kidney%20is%20the%20main%20target." target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -896,7 +934,7 @@
       
       
       <li>
-        <a href="mailto:?subject=Roles%20of%20APOL1%c2%a0G1%20and%20G2%20variants%20in%20sickle%20cell%20disease%20patients:%20kidney%20is%20the%20main%20target.&amp;body=https://www.coreds.com/publication/2017-10-01_roles_of_apol1-g1_an/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=Roles%20of%20APOL1%c2%a0G1%20and%20G2%20variants%20in%20sickle%20cell%20disease%20patients:%20kidney%20is%20the%20main%20target.&amp;body=https://consultation-recherche-donnees-sante.netlify.app/publication/2017-10-01_roles_of_apol1-g1_an/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -909,7 +947,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://www.coreds.com/publication/2017-10-01_roles_of_apol1-g1_an/&amp;title=Roles%20of%20APOL1%c2%a0G1%20and%20G2%20variants%20in%20sickle%20cell%20disease%20patients:%20kidney%20is%20the%20main%20target." target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2017-10-01_roles_of_apol1-g1_an/&amp;title=Roles%20of%20APOL1%c2%a0G1%20and%20G2%20variants%20in%20sickle%20cell%20disease%20patients:%20kidney%20is%20the%20main%20target." target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -922,7 +960,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=Roles%20of%20APOL1%c2%a0G1%20and%20G2%20variants%20in%20sickle%20cell%20disease%20patients:%20kidney%20is%20the%20main%20target.%20https://www.coreds.com/publication/2017-10-01_roles_of_apol1-g1_an/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=Roles%20of%20APOL1%c2%a0G1%20and%20G2%20variants%20in%20sickle%20cell%20disease%20patients:%20kidney%20is%20the%20main%20target.%20https://consultation-recherche-donnees-sante.netlify.app/publication/2017-10-01_roles_of_apol1-g1_an/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -935,7 +973,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://www.coreds.com/publication/2017-10-01_roles_of_apol1-g1_an/&amp;title=Roles%20of%20APOL1%c2%a0G1%20and%20G2%20variants%20in%20sickle%20cell%20disease%20patients:%20kidney%20is%20the%20main%20target." target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2017-10-01_roles_of_apol1-g1_an/&amp;title=Roles%20of%20APOL1%c2%a0G1%20and%20G2%20variants%20in%20sickle%20cell%20disease%20patients:%20kidney%20is%20the%20main%20target." target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1222,7 +1260,7 @@
     
     
     
-    <script src="/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
+    <script src="https://consultation-recherche-donnees-sante.netlify.app/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
 
     
 

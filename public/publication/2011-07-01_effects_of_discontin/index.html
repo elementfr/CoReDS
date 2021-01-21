@@ -37,7 +37,7 @@
   <meta name="description" content="BACKGROUND:Recent publications suggest potential benefits from statins as a preventive or adjuvant therapy in sepsis. Whether ongoing statin therapy should be continued or discontinued in patients admitted in the intensive care unit (ICU) for sepsis is open to question.METHODS:We retrospectively compared patients with severe sepsis and septic shock in whom statin therapy had been discontinued or continued. The primary endpoint was the number of organ failure-free days at day 14. Secondary end-points included hospital mortality and safety. The association of statin continuation with outcome was evaluated for crude analysis and after propensity score matching and adjustment. We also measured plasma atorvastatin concentrations in a separate set of ICU septic patients continuing the drug.RESULTS:Patients in whom statin therapy had been continued in the ICU (n = 44) had significantly more organ failure-free days (11 67891011121314 vs. 6 [0-12], mean difference of 2.34, 95%CI from 0.47 to 5.21, P = 0.03) as compared to others (n = 32). However, there were important imbalances between groups, with more hospital-acquired infections, more need for surgery before ICU admission, and a trend towards more septic shock at ICU admission in the discontinuation group. The significant association of statin continuation with organ failure free days found in the crude analysis did not persist after propensity-matching or multivariable adjustment: beta coefficients [95% CI] of 2.37 [-0.96 to 5.70] (P = 0.20) and 2.24 [-0.43 to 4.91] (P = 0.11) respectively. We found particularly high pre-dose and post-dose atorvastatin concentrations in ICU septic patients continuing the drug.CONCLUSIONS:Continuing statin therapy in ICU septic patients was not associated with reduction in the severity of organ failure after matching and adjustment. In addition, the very high plasma concentrations achieved during continuation of statin treatment advocates some caution. ">
 
   
-  <link rel="alternate" hreflang="fr" href="https://www.coreds.com/publication/2011-07-01_effects_of_discontin/">
+  <link rel="alternate" hreflang="fr" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2011-07-01_effects_of_discontin/">
 
   
 
@@ -66,7 +66,7 @@
   
   
   
-  <script src="/js/mathjax-config.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/mathjax-config.js"></script>
   
 
   
@@ -241,13 +241,51 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.css">
+  <link rel="stylesheet" href="https://consultation-recherche-donnees-sante.netlify.app/css/wowchemy.css">
 
   
 
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-80B5KND2Y6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-80B5KND2Y6', { 'anonymize_ip': true });
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
   
@@ -258,11 +296,11 @@
 
   
 
-  <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
+  <link rel="manifest" href="https://consultation-recherche-donnees-sante.netlify.app/index.webmanifest">
+  <link rel="icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="https://www.coreds.com/publication/2011-07-01_effects_of_discontin/">
+  <link rel="canonical" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2011-07-01_effects_of_discontin/">
 
   
   
@@ -278,10 +316,10 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:url" content="https://www.coreds.com/publication/2011-07-01_effects_of_discontin/">
+  <meta property="og:url" content="https://consultation-recherche-donnees-sante.netlify.app/publication/2011-07-01_effects_of_discontin/">
   <meta property="og:title" content="Effects of discontinuing or continuing ongoing statin therapy in severe sepsis and septic shock: a retrospective cohort study. | Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:description" content="BACKGROUND:Recent publications suggest potential benefits from statins as a preventive or adjuvant therapy in sepsis. Whether ongoing statin therapy should be continued or discontinued in patients admitted in the intensive care unit (ICU) for sepsis is open to question.METHODS:We retrospectively compared patients with severe sepsis and septic shock in whom statin therapy had been discontinued or continued. The primary endpoint was the number of organ failure-free days at day 14. Secondary end-points included hospital mortality and safety. The association of statin continuation with outcome was evaluated for crude analysis and after propensity score matching and adjustment. We also measured plasma atorvastatin concentrations in a separate set of ICU septic patients continuing the drug.RESULTS:Patients in whom statin therapy had been continued in the ICU (n = 44) had significantly more organ failure-free days (11 67891011121314 vs. 6 [0-12], mean difference of 2.34, 95%CI from 0.47 to 5.21, P = 0.03) as compared to others (n = 32). However, there were important imbalances between groups, with more hospital-acquired infections, more need for surgery before ICU admission, and a trend towards more septic shock at ICU admission in the discontinuation group. The significant association of statin continuation with organ failure free days found in the crude analysis did not persist after propensity-matching or multivariable adjustment: beta coefficients [95% CI] of 2.37 [-0.96 to 5.70] (P = 0.20) and 2.24 [-0.43 to 4.91] (P = 0.11) respectively. We found particularly high pre-dose and post-dose atorvastatin concentrations in ICU septic patients continuing the drug.CONCLUSIONS:Continuing statin therapy in ICU septic patients was not associated with reduction in the severity of organ failure after matching and adjustment. In addition, the very high plasma concentrations achieved during continuation of statin treatment advocates some caution. "><meta property="og:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
-  <meta property="twitter:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
+  <meta property="og:description" content="BACKGROUND:Recent publications suggest potential benefits from statins as a preventive or adjuvant therapy in sepsis. Whether ongoing statin therapy should be continued or discontinued in patients admitted in the intensive care unit (ICU) for sepsis is open to question.METHODS:We retrospectively compared patients with severe sepsis and septic shock in whom statin therapy had been discontinued or continued. The primary endpoint was the number of organ failure-free days at day 14. Secondary end-points included hospital mortality and safety. The association of statin continuation with outcome was evaluated for crude analysis and after propensity score matching and adjustment. We also measured plasma atorvastatin concentrations in a separate set of ICU septic patients continuing the drug.RESULTS:Patients in whom statin therapy had been continued in the ICU (n = 44) had significantly more organ failure-free days (11 67891011121314 vs. 6 [0-12], mean difference of 2.34, 95%CI from 0.47 to 5.21, P = 0.03) as compared to others (n = 32). However, there were important imbalances between groups, with more hospital-acquired infections, more need for surgery before ICU admission, and a trend towards more septic shock at ICU admission in the discontinuation group. The significant association of statin continuation with organ failure free days found in the crude analysis did not persist after propensity-matching or multivariable adjustment: beta coefficients [95% CI] of 2.37 [-0.96 to 5.70] (P = 0.20) and 2.24 [-0.43 to 4.91] (P = 0.11) respectively. We found particularly high pre-dose and post-dose atorvastatin concentrations in ICU septic patients continuing the drug.CONCLUSIONS:Continuing statin therapy in ICU septic patients was not associated with reduction in the severity of organ failure after matching and adjustment. In addition, the very high plasma concentrations achieved during continuation of statin treatment advocates some caution. "><meta property="og:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
+  <meta property="twitter:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
   
     
       <meta property="article:published_time" content="2011-07-01T00:00:00&#43;00:00">
@@ -308,7 +346,7 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://www.coreds.com/publication/2011-07-01_effects_of_discontin/"
+    "@id": "https://consultation-recherche-donnees-sante.netlify.app/publication/2011-07-01_effects_of_discontin/"
   },
   "headline": "Effects of discontinuing or continuing ongoing statin therapy in severe sepsis and septic shock: a retrospective cohort study.",
   
@@ -325,7 +363,7 @@
     "name": "Consultation Recherche Données de Santé - CoReDS",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
+      "url": "https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
     }
   },
   "description": "BACKGROUND:Recent publications suggest potential benefits from statins as a preventive or adjuvant therapy in sepsis. Whether ongoing statin therapy should be continued or discontinued in patients admitted in the intensive care unit (ICU) for sepsis is open to question.METHODS:We retrospectively compared patients with severe sepsis and septic shock in whom statin therapy had been discontinued or continued. The primary endpoint was the number of organ failure-free days at day 14. Secondary end-points included hospital mortality and safety. The association of statin continuation with outcome was evaluated for crude analysis and after propensity score matching and adjustment. We also measured plasma atorvastatin concentrations in a separate set of ICU septic patients continuing the drug.RESULTS:Patients in whom statin therapy had been continued in the ICU (n = 44) had significantly more organ failure-free days (11 67891011121314 vs. 6 [0-12], mean difference of 2.34, 95%CI from 0.47 to 5.21, P = 0.03) as compared to others (n = 32). However, there were important imbalances between groups, with more hospital-acquired infections, more need for surgery before ICU admission, and a trend towards more septic shock at ICU admission in the discontinuation group. The significant association of statin continuation with organ failure free days found in the crude analysis did not persist after propensity-matching or multivariable adjustment: beta coefficients [95% CI] of 2.37 [-0.96 to 5.70] (P = 0.20) and 2.24 [-0.43 to 4.91] (P = 0.11) respectively. We found particularly high pre-dose and post-dose atorvastatin concentrations in ICU septic patients continuing the drug.CONCLUSIONS:Continuing statin therapy in ICU septic patients was not associated with reduction in the severity of organ failure after matching and adjustment. In addition, the very high plasma concentrations achieved during continuation of statin treatment advocates some caution. "
@@ -390,7 +428,7 @@
     <script>const isSiteThemeDark = false;</script>
   
   
-  <script src="/js/load-theme.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/load-theme.js"></script>
 
   <aside class="search-results" id="search">
   <div class="container">
@@ -445,7 +483,7 @@
 
     
     <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -458,7 +496,7 @@
 
     
     <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -494,7 +532,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/entreprendre/"><span>Commencer un projet</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/entreprendre/"><span>Commencer un projet</span></a>
         </li>
 
         
@@ -524,44 +562,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/suivremonprojet/"><span>Suivre son projet</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-            
-            
-            
-              
-            
-            
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#outils"><span>Boite à outils</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/suivremonprojet/"><span>Suivre son projet</span></a>
         </li>
 
         
@@ -598,7 +599,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#publi"><span>Publications</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#outils"><span>Boite à outils</span></a>
         </li>
 
         
@@ -635,7 +636,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#transparence"><span>Portail de transparence</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#publi"><span>Publications</span></a>
         </li>
 
         
@@ -672,7 +673,44 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#people"><span>Qui sommes-nous ?</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#transparence"><span>Portail de transparence</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#people"><span>Qui sommes-nous ?</span></a>
         </li>
 
         
@@ -745,7 +783,7 @@
     
 
   
-  <span ><a href="/author/mekontso-dessap-armand/">Mekontso Dessap Armand</a></span>, <span ><a href="/author/ouanes-islem/">Ouanes Islem</a></span>, <span ><a href="/author/rana-nerlep/">Rana Nerlep</a></span>, <span ><a href="/author/borghi-beatrice/">Borghi Beatrice</a></span>, <span ><a href="/author/bazin-christophe/">Bazin Christophe</a></span>, <span ><a href="/author/katsahian-sandrine/">Katsahian Sandrine</a></span>, <span ><a href="/author/hulin-anne/">Hulin Anne</a></span>, <span ><a href="/author/brun-buisson-christian/">Brun-Buisson Christian</a></span>
+  <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/mekontso-dessap-armand/">Mekontso Dessap Armand</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/ouanes-islem/">Ouanes Islem</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/rana-nerlep/">Rana Nerlep</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/borghi-beatrice/">Borghi Beatrice</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/bazin-christophe/">Bazin Christophe</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/katsahian-sandrine/">Katsahian Sandrine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/hulin-anne/">Hulin Anne</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/brun-buisson-christian/">Brun-Buisson Christian</a></span>
   </div>
   
   
@@ -811,7 +849,7 @@
           <div class="col-12 col-md-9">
             
             
-            <a href="/publication/#2">
+            <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/#2">
               Article de revue
             </a>
             
@@ -870,7 +908,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://www.coreds.com/publication/2011-07-01_effects_of_discontin/&amp;text=Effects%20of%20discontinuing%20or%20continuing%20ongoing%20statin%20therapy%20in%20severe%20sepsis%20and%20septic%20shock:%20a%20retrospective%20cohort%20study." target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2011-07-01_effects_of_discontin/&amp;text=Effects%20of%20discontinuing%20or%20continuing%20ongoing%20statin%20therapy%20in%20severe%20sepsis%20and%20septic%20shock:%20a%20retrospective%20cohort%20study." target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -883,7 +921,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://www.coreds.com/publication/2011-07-01_effects_of_discontin/&amp;t=Effects%20of%20discontinuing%20or%20continuing%20ongoing%20statin%20therapy%20in%20severe%20sepsis%20and%20septic%20shock:%20a%20retrospective%20cohort%20study." target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://consultation-recherche-donnees-sante.netlify.app/publication/2011-07-01_effects_of_discontin/&amp;t=Effects%20of%20discontinuing%20or%20continuing%20ongoing%20statin%20therapy%20in%20severe%20sepsis%20and%20septic%20shock:%20a%20retrospective%20cohort%20study." target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -896,7 +934,7 @@
       
       
       <li>
-        <a href="mailto:?subject=Effects%20of%20discontinuing%20or%20continuing%20ongoing%20statin%20therapy%20in%20severe%20sepsis%20and%20septic%20shock:%20a%20retrospective%20cohort%20study.&amp;body=https://www.coreds.com/publication/2011-07-01_effects_of_discontin/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=Effects%20of%20discontinuing%20or%20continuing%20ongoing%20statin%20therapy%20in%20severe%20sepsis%20and%20septic%20shock:%20a%20retrospective%20cohort%20study.&amp;body=https://consultation-recherche-donnees-sante.netlify.app/publication/2011-07-01_effects_of_discontin/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -909,7 +947,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://www.coreds.com/publication/2011-07-01_effects_of_discontin/&amp;title=Effects%20of%20discontinuing%20or%20continuing%20ongoing%20statin%20therapy%20in%20severe%20sepsis%20and%20septic%20shock:%20a%20retrospective%20cohort%20study." target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2011-07-01_effects_of_discontin/&amp;title=Effects%20of%20discontinuing%20or%20continuing%20ongoing%20statin%20therapy%20in%20severe%20sepsis%20and%20septic%20shock:%20a%20retrospective%20cohort%20study." target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -922,7 +960,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=Effects%20of%20discontinuing%20or%20continuing%20ongoing%20statin%20therapy%20in%20severe%20sepsis%20and%20septic%20shock:%20a%20retrospective%20cohort%20study.%20https://www.coreds.com/publication/2011-07-01_effects_of_discontin/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=Effects%20of%20discontinuing%20or%20continuing%20ongoing%20statin%20therapy%20in%20severe%20sepsis%20and%20septic%20shock:%20a%20retrospective%20cohort%20study.%20https://consultation-recherche-donnees-sante.netlify.app/publication/2011-07-01_effects_of_discontin/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -935,7 +973,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://www.coreds.com/publication/2011-07-01_effects_of_discontin/&amp;title=Effects%20of%20discontinuing%20or%20continuing%20ongoing%20statin%20therapy%20in%20severe%20sepsis%20and%20septic%20shock:%20a%20retrospective%20cohort%20study." target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2011-07-01_effects_of_discontin/&amp;title=Effects%20of%20discontinuing%20or%20continuing%20ongoing%20statin%20therapy%20in%20severe%20sepsis%20and%20septic%20shock:%20a%20retrospective%20cohort%20study." target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1198,7 +1236,7 @@
     
     
     
-    <script src="/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
+    <script src="https://consultation-recherche-donnees-sante.netlify.app/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
 
     
 

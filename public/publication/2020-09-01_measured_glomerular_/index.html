@@ -37,7 +37,7 @@
   <meta name="description" content="Precise determination of glomerular filtration rate (GFR) is essential for the management of patients with muscle-invasive bladder cancer (MIBC). We aim to describe the early evolution of measured GFR (mGFR) after radical cystectomy and urinary diversion (RCUD) and to identify risk factors for GFR decline. GFR measurement using 51Cr-EDTA continuous infusion, estimated GFR (eGFR) from five published equations and renal scintigraphy with split renal function determination were performed before and 6 months after RCUD. Chronic Kidney Disease (mGFR &amp;lt; 60 mL/min/1.73 m2) and GFR stages were defined according to the KDIGO guidelines using mGFR. Twenty-seven patients (men 85%, median age 65, IQR 59; 68 years) were included. A total of 20 (74%) patients experienced significant mGFR decline at 6 months postoperatively. Median mGFR decreased from 84.1 pre-operatively (IQR 65.3; 97.2) to 69.9 mL/min/1.73 m2 (IQR 55.0; 77.9) 6 months after surgery (p &amp;lt; 0.001). Thirteen (48%) patients had a progression to a worse GFR stage. Of the 22 patients without pre-operative CKD, 5 (23%) developed post-operative CKD. Diabetes mellitus was more frequent in patients in the highest tertile of relative mGFR decline (44% vs. 11%, p = 0.02) and platinum-based adjuvant chemotherapy tended to be more frequently used in these patients (44% vs. 17%, p = 0.06). Importantly, pre-operative weight was independently and negatively associated with post-operative mGFR and with mGFR slope in multivariable analyses. In this prospective series, we demonstrated that early and significant mGFR decline occurred after RCUD and perioperative platinum-based chemotherapy, especially in patients with diabetes mellitus and overweight.">
 
   
-  <link rel="alternate" hreflang="fr" href="https://www.coreds.com/publication/2020-09-01_measured_glomerular_/">
+  <link rel="alternate" hreflang="fr" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2020-09-01_measured_glomerular_/">
 
   
 
@@ -66,7 +66,7 @@
   
   
   
-  <script src="/js/mathjax-config.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/mathjax-config.js"></script>
   
 
   
@@ -241,13 +241,51 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.css">
+  <link rel="stylesheet" href="https://consultation-recherche-donnees-sante.netlify.app/css/wowchemy.css">
 
   
 
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-80B5KND2Y6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-80B5KND2Y6', { 'anonymize_ip': true });
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
   
@@ -258,11 +296,11 @@
 
   
 
-  <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
+  <link rel="manifest" href="https://consultation-recherche-donnees-sante.netlify.app/index.webmanifest">
+  <link rel="icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="https://www.coreds.com/publication/2020-09-01_measured_glomerular_/">
+  <link rel="canonical" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2020-09-01_measured_glomerular_/">
 
   
   
@@ -278,10 +316,10 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:url" content="https://www.coreds.com/publication/2020-09-01_measured_glomerular_/">
+  <meta property="og:url" content="https://consultation-recherche-donnees-sante.netlify.app/publication/2020-09-01_measured_glomerular_/">
   <meta property="og:title" content="Measured glomerular filtration rate (GFR) significantly and rapidly decreases after radical cystectomy for bladder cancer. | Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:description" content="Precise determination of glomerular filtration rate (GFR) is essential for the management of patients with muscle-invasive bladder cancer (MIBC). We aim to describe the early evolution of measured GFR (mGFR) after radical cystectomy and urinary diversion (RCUD) and to identify risk factors for GFR decline. GFR measurement using 51Cr-EDTA continuous infusion, estimated GFR (eGFR) from five published equations and renal scintigraphy with split renal function determination were performed before and 6 months after RCUD. Chronic Kidney Disease (mGFR &amp;lt; 60 mL/min/1.73 m2) and GFR stages were defined according to the KDIGO guidelines using mGFR. Twenty-seven patients (men 85%, median age 65, IQR 59; 68 years) were included. A total of 20 (74%) patients experienced significant mGFR decline at 6 months postoperatively. Median mGFR decreased from 84.1 pre-operatively (IQR 65.3; 97.2) to 69.9 mL/min/1.73 m2 (IQR 55.0; 77.9) 6 months after surgery (p &amp;lt; 0.001). Thirteen (48%) patients had a progression to a worse GFR stage. Of the 22 patients without pre-operative CKD, 5 (23%) developed post-operative CKD. Diabetes mellitus was more frequent in patients in the highest tertile of relative mGFR decline (44% vs. 11%, p = 0.02) and platinum-based adjuvant chemotherapy tended to be more frequently used in these patients (44% vs. 17%, p = 0.06). Importantly, pre-operative weight was independently and negatively associated with post-operative mGFR and with mGFR slope in multivariable analyses. In this prospective series, we demonstrated that early and significant mGFR decline occurred after RCUD and perioperative platinum-based chemotherapy, especially in patients with diabetes mellitus and overweight."><meta property="og:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
-  <meta property="twitter:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
+  <meta property="og:description" content="Precise determination of glomerular filtration rate (GFR) is essential for the management of patients with muscle-invasive bladder cancer (MIBC). We aim to describe the early evolution of measured GFR (mGFR) after radical cystectomy and urinary diversion (RCUD) and to identify risk factors for GFR decline. GFR measurement using 51Cr-EDTA continuous infusion, estimated GFR (eGFR) from five published equations and renal scintigraphy with split renal function determination were performed before and 6 months after RCUD. Chronic Kidney Disease (mGFR &amp;lt; 60 mL/min/1.73 m2) and GFR stages were defined according to the KDIGO guidelines using mGFR. Twenty-seven patients (men 85%, median age 65, IQR 59; 68 years) were included. A total of 20 (74%) patients experienced significant mGFR decline at 6 months postoperatively. Median mGFR decreased from 84.1 pre-operatively (IQR 65.3; 97.2) to 69.9 mL/min/1.73 m2 (IQR 55.0; 77.9) 6 months after surgery (p &amp;lt; 0.001). Thirteen (48%) patients had a progression to a worse GFR stage. Of the 22 patients without pre-operative CKD, 5 (23%) developed post-operative CKD. Diabetes mellitus was more frequent in patients in the highest tertile of relative mGFR decline (44% vs. 11%, p = 0.02) and platinum-based adjuvant chemotherapy tended to be more frequently used in these patients (44% vs. 17%, p = 0.06). Importantly, pre-operative weight was independently and negatively associated with post-operative mGFR and with mGFR slope in multivariable analyses. In this prospective series, we demonstrated that early and significant mGFR decline occurred after RCUD and perioperative platinum-based chemotherapy, especially in patients with diabetes mellitus and overweight."><meta property="og:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
+  <meta property="twitter:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
   
     
       <meta property="article:published_time" content="2020-09-01T00:00:00&#43;00:00">
@@ -308,7 +346,7 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://www.coreds.com/publication/2020-09-01_measured_glomerular_/"
+    "@id": "https://consultation-recherche-donnees-sante.netlify.app/publication/2020-09-01_measured_glomerular_/"
   },
   "headline": "Measured glomerular filtration rate (GFR) significantly and rapidly decreases after radical cystectomy for bladder cancer.",
   
@@ -325,7 +363,7 @@
     "name": "Consultation Recherche Données de Santé - CoReDS",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
+      "url": "https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
     }
   },
   "description": "Precise determination of glomerular filtration rate (GFR) is essential for the management of patients with muscle-invasive bladder cancer (MIBC). We aim to describe the early evolution of measured GFR (mGFR) after radical cystectomy and urinary diversion (RCUD) and to identify risk factors for GFR decline. GFR measurement using 51Cr-EDTA continuous infusion, estimated GFR (eGFR) from five published equations and renal scintigraphy with split renal function determination were performed before and 6 months after RCUD. Chronic Kidney Disease (mGFR \u0026lt; 60 mL/min/1.73 m2) and GFR stages were defined according to the KDIGO guidelines using mGFR. Twenty-seven patients (men 85%, median age 65, IQR 59; 68 years) were included. A total of 20 (74%) patients experienced significant mGFR decline at 6 months postoperatively. Median mGFR decreased from 84.1 pre-operatively (IQR 65.3; 97.2) to 69.9 mL/min/1.73 m2 (IQR 55.0; 77.9) 6 months after surgery (p \u0026lt; 0.001). Thirteen (48%) patients had a progression to a worse GFR stage. Of the 22 patients without pre-operative CKD, 5 (23%) developed post-operative CKD. Diabetes mellitus was more frequent in patients in the highest tertile of relative mGFR decline (44% vs. 11%, p = 0.02) and platinum-based adjuvant chemotherapy tended to be more frequently used in these patients (44% vs. 17%, p = 0.06). Importantly, pre-operative weight was independently and negatively associated with post-operative mGFR and with mGFR slope in multivariable analyses. In this prospective series, we demonstrated that early and significant mGFR decline occurred after RCUD and perioperative platinum-based chemotherapy, especially in patients with diabetes mellitus and overweight."
@@ -390,7 +428,7 @@
     <script>const isSiteThemeDark = false;</script>
   
   
-  <script src="/js/load-theme.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/load-theme.js"></script>
 
   <aside class="search-results" id="search">
   <div class="container">
@@ -445,7 +483,7 @@
 
     
     <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -458,7 +496,7 @@
 
     
     <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -494,7 +532,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/entreprendre/"><span>Commencer un projet</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/entreprendre/"><span>Commencer un projet</span></a>
         </li>
 
         
@@ -524,44 +562,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/suivremonprojet/"><span>Suivre son projet</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-            
-            
-            
-              
-            
-            
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#outils"><span>Boite à outils</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/suivremonprojet/"><span>Suivre son projet</span></a>
         </li>
 
         
@@ -598,7 +599,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#publi"><span>Publications</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#outils"><span>Boite à outils</span></a>
         </li>
 
         
@@ -635,7 +636,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#transparence"><span>Portail de transparence</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#publi"><span>Publications</span></a>
         </li>
 
         
@@ -672,7 +673,44 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#people"><span>Qui sommes-nous ?</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#transparence"><span>Portail de transparence</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#people"><span>Qui sommes-nous ?</span></a>
         </li>
 
         
@@ -745,7 +783,7 @@
     
 
   
-  <span ><a href="/author/rouanne-mathieu/">Rouanne Mathieu</a></span>, <span ><a href="/author/gaillard-francois/">Gaillard Francois</a></span>, <span ><a href="/author/meunier-matthias/">Meunier Matthias</a></span>, <span ><a href="/author/soorojebally-yanish/">Soorojebally Yanish</a></span>, <span ><a href="/author/phan-hoang/">Phan Hoang</a></span>, <span ><a href="/author/slimani-thevenet-hind/">Slimani-Thevenet Hind</a></span>, <span ><a href="/author/jannot-anne-sophie/">Jannot Anne-Sophie</a></span>, <span ><a href="/author/neuzillet-yann/">Neuzillet Yann</a></span>, <span ><a href="/author/friedlander-gerard/">Friedlander Gerard</a></span>, <span ><a href="/author/froissart-marc/">Froissart Marc</a></span>, <span ><a href="/author/botto-henry/">Botto Henry</a></span>, <span ><a href="/author/houillier-pascal/">Houillier Pascal</a></span>, <span ><a href="/author/lebret-thierry/">Lebret Thierry</a></span>, <span ><a href="/author/courbebaisse-marie/">Courbebaisse Marie</a></span>
+  <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/rouanne-mathieu/">Rouanne Mathieu</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/gaillard-francois/">Gaillard Francois</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/meunier-matthias/">Meunier Matthias</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/soorojebally-yanish/">Soorojebally Yanish</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/phan-hoang/">Phan Hoang</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/slimani-thevenet-hind/">Slimani-Thevenet Hind</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/jannot-anne-sophie/">Jannot Anne-Sophie</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/neuzillet-yann/">Neuzillet Yann</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/friedlander-gerard/">Friedlander Gerard</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/froissart-marc/">Froissart Marc</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/botto-henry/">Botto Henry</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/houillier-pascal/">Houillier Pascal</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/lebret-thierry/">Lebret Thierry</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/courbebaisse-marie/">Courbebaisse Marie</a></span>
   </div>
   
   
@@ -811,7 +849,7 @@
           <div class="col-12 col-md-9">
             
             
-            <a href="/publication/#2">
+            <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/#2">
               Article de revue
             </a>
             
@@ -870,7 +908,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://www.coreds.com/publication/2020-09-01_measured_glomerular_/&amp;text=Measured%20glomerular%20filtration%20rate%20%28GFR%29%20significantly%20and%20rapidly%20decreases%20after%20radical%20cystectomy%20for%20bladder%20cancer." target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2020-09-01_measured_glomerular_/&amp;text=Measured%20glomerular%20filtration%20rate%20%28GFR%29%20significantly%20and%20rapidly%20decreases%20after%20radical%20cystectomy%20for%20bladder%20cancer." target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -883,7 +921,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://www.coreds.com/publication/2020-09-01_measured_glomerular_/&amp;t=Measured%20glomerular%20filtration%20rate%20%28GFR%29%20significantly%20and%20rapidly%20decreases%20after%20radical%20cystectomy%20for%20bladder%20cancer." target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://consultation-recherche-donnees-sante.netlify.app/publication/2020-09-01_measured_glomerular_/&amp;t=Measured%20glomerular%20filtration%20rate%20%28GFR%29%20significantly%20and%20rapidly%20decreases%20after%20radical%20cystectomy%20for%20bladder%20cancer." target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -896,7 +934,7 @@
       
       
       <li>
-        <a href="mailto:?subject=Measured%20glomerular%20filtration%20rate%20%28GFR%29%20significantly%20and%20rapidly%20decreases%20after%20radical%20cystectomy%20for%20bladder%20cancer.&amp;body=https://www.coreds.com/publication/2020-09-01_measured_glomerular_/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=Measured%20glomerular%20filtration%20rate%20%28GFR%29%20significantly%20and%20rapidly%20decreases%20after%20radical%20cystectomy%20for%20bladder%20cancer.&amp;body=https://consultation-recherche-donnees-sante.netlify.app/publication/2020-09-01_measured_glomerular_/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -909,7 +947,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://www.coreds.com/publication/2020-09-01_measured_glomerular_/&amp;title=Measured%20glomerular%20filtration%20rate%20%28GFR%29%20significantly%20and%20rapidly%20decreases%20after%20radical%20cystectomy%20for%20bladder%20cancer." target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2020-09-01_measured_glomerular_/&amp;title=Measured%20glomerular%20filtration%20rate%20%28GFR%29%20significantly%20and%20rapidly%20decreases%20after%20radical%20cystectomy%20for%20bladder%20cancer." target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -922,7 +960,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=Measured%20glomerular%20filtration%20rate%20%28GFR%29%20significantly%20and%20rapidly%20decreases%20after%20radical%20cystectomy%20for%20bladder%20cancer.%20https://www.coreds.com/publication/2020-09-01_measured_glomerular_/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=Measured%20glomerular%20filtration%20rate%20%28GFR%29%20significantly%20and%20rapidly%20decreases%20after%20radical%20cystectomy%20for%20bladder%20cancer.%20https://consultation-recherche-donnees-sante.netlify.app/publication/2020-09-01_measured_glomerular_/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -935,7 +973,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://www.coreds.com/publication/2020-09-01_measured_glomerular_/&amp;title=Measured%20glomerular%20filtration%20rate%20%28GFR%29%20significantly%20and%20rapidly%20decreases%20after%20radical%20cystectomy%20for%20bladder%20cancer." target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2020-09-01_measured_glomerular_/&amp;title=Measured%20glomerular%20filtration%20rate%20%28GFR%29%20significantly%20and%20rapidly%20decreases%20after%20radical%20cystectomy%20for%20bladder%20cancer." target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1234,7 +1272,7 @@
     
     
     
-    <script src="/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
+    <script src="https://consultation-recherche-donnees-sante.netlify.app/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
 
     
 

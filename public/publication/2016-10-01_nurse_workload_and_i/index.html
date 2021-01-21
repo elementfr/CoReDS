@@ -37,7 +37,7 @@
   <meta name="description" content="OBJECTIVE:Our purpose was to identify potential organizational factors that contributed to life-threatening adverse events in adult intensive care unit.METHODS:A prospective, observational, dynamic cohort study was carried out from January 2006 to December 2013 in a 20-bed adult medical intensive care unit. All patients admitted to the intensive care unit and who experienced one or more selected life-threatening adverse events (mainly unexpected cardiac arrest, unplanned extubation, reintubation after planned extubation, and readmission within 48h of intensive care unit discharge) were included in the analysis. Negative binomial regression was used to model how human resources, work organization, and intensive care activity influenced the monthly rate of selected severe adverse events. Data were collected from local and national databases.RESULTS:Overall, 638 severe adverse events involving 498 patients were recorded. Adverse events increased seasonally in May, November and December (p&amp;lt;.001 vs other months). The proportion of inexperienced nurses and doctors&#39; working hours could not explain these seasonal peaks of adverse events. Multivariate analysis identified bed-to-nurse ratio and the arrival of inexperienced residents or senior registrars as being independently associated with the rate of adverse events (incidence risk ratio=1.36 (95% confidence interval, 1.05-1.75), and 1.07 (95% confidence interval, 1.01-1.13), respectively; p=.01 in both cases). According to this model, a one-unit increase in the day-night shifts carried out by each nurse per month tended to reduce the rate of adverse events (incidence risk ratio=0.60 (95% confidence interval, 0.36-1.01), p=.05). Severity at intensive care unit admission did not influence the rate of adverse events (incidence risk ratio=1.02 (95% confidence interval, 1.00-1.04), p=.12).CONCLUSIONS:Results identify nurse workload and the arrival of inexperienced residents or senior registrars as risk factors for the occurrence of life-threatening adverse events in the adult medical intensive care unit. Limiting fluctuations in bed-to-nurse ratio and providing inexperienced medical staff members with sufficient supervision may decrease severe adverse events in critically ill patients. ">
 
   
-  <link rel="alternate" hreflang="fr" href="https://www.coreds.com/publication/2016-10-01_nurse_workload_and_i/">
+  <link rel="alternate" hreflang="fr" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2016-10-01_nurse_workload_and_i/">
 
   
 
@@ -66,7 +66,7 @@
   
   
   
-  <script src="/js/mathjax-config.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/mathjax-config.js"></script>
   
 
   
@@ -241,13 +241,51 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.css">
+  <link rel="stylesheet" href="https://consultation-recherche-donnees-sante.netlify.app/css/wowchemy.css">
 
   
 
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-80B5KND2Y6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-80B5KND2Y6', { 'anonymize_ip': true });
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
   
@@ -258,11 +296,11 @@
 
   
 
-  <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
+  <link rel="manifest" href="https://consultation-recherche-donnees-sante.netlify.app/index.webmanifest">
+  <link rel="icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="https://www.coreds.com/publication/2016-10-01_nurse_workload_and_i/">
+  <link rel="canonical" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2016-10-01_nurse_workload_and_i/">
 
   
   
@@ -278,10 +316,10 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:url" content="https://www.coreds.com/publication/2016-10-01_nurse_workload_and_i/">
+  <meta property="og:url" content="https://consultation-recherche-donnees-sante.netlify.app/publication/2016-10-01_nurse_workload_and_i/">
   <meta property="og:title" content="Nurse workload and inexperienced medical staff members are associated with seasonal peaks in severe adverse events in the adult medical intensive care unit: A seven-year prospective study. | Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:description" content="OBJECTIVE:Our purpose was to identify potential organizational factors that contributed to life-threatening adverse events in adult intensive care unit.METHODS:A prospective, observational, dynamic cohort study was carried out from January 2006 to December 2013 in a 20-bed adult medical intensive care unit. All patients admitted to the intensive care unit and who experienced one or more selected life-threatening adverse events (mainly unexpected cardiac arrest, unplanned extubation, reintubation after planned extubation, and readmission within 48h of intensive care unit discharge) were included in the analysis. Negative binomial regression was used to model how human resources, work organization, and intensive care activity influenced the monthly rate of selected severe adverse events. Data were collected from local and national databases.RESULTS:Overall, 638 severe adverse events involving 498 patients were recorded. Adverse events increased seasonally in May, November and December (p&amp;lt;.001 vs other months). The proportion of inexperienced nurses and doctors&#39; working hours could not explain these seasonal peaks of adverse events. Multivariate analysis identified bed-to-nurse ratio and the arrival of inexperienced residents or senior registrars as being independently associated with the rate of adverse events (incidence risk ratio=1.36 (95% confidence interval, 1.05-1.75), and 1.07 (95% confidence interval, 1.01-1.13), respectively; p=.01 in both cases). According to this model, a one-unit increase in the day-night shifts carried out by each nurse per month tended to reduce the rate of adverse events (incidence risk ratio=0.60 (95% confidence interval, 0.36-1.01), p=.05). Severity at intensive care unit admission did not influence the rate of adverse events (incidence risk ratio=1.02 (95% confidence interval, 1.00-1.04), p=.12).CONCLUSIONS:Results identify nurse workload and the arrival of inexperienced residents or senior registrars as risk factors for the occurrence of life-threatening adverse events in the adult medical intensive care unit. Limiting fluctuations in bed-to-nurse ratio and providing inexperienced medical staff members with sufficient supervision may decrease severe adverse events in critically ill patients. "><meta property="og:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
-  <meta property="twitter:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
+  <meta property="og:description" content="OBJECTIVE:Our purpose was to identify potential organizational factors that contributed to life-threatening adverse events in adult intensive care unit.METHODS:A prospective, observational, dynamic cohort study was carried out from January 2006 to December 2013 in a 20-bed adult medical intensive care unit. All patients admitted to the intensive care unit and who experienced one or more selected life-threatening adverse events (mainly unexpected cardiac arrest, unplanned extubation, reintubation after planned extubation, and readmission within 48h of intensive care unit discharge) were included in the analysis. Negative binomial regression was used to model how human resources, work organization, and intensive care activity influenced the monthly rate of selected severe adverse events. Data were collected from local and national databases.RESULTS:Overall, 638 severe adverse events involving 498 patients were recorded. Adverse events increased seasonally in May, November and December (p&amp;lt;.001 vs other months). The proportion of inexperienced nurses and doctors&#39; working hours could not explain these seasonal peaks of adverse events. Multivariate analysis identified bed-to-nurse ratio and the arrival of inexperienced residents or senior registrars as being independently associated with the rate of adverse events (incidence risk ratio=1.36 (95% confidence interval, 1.05-1.75), and 1.07 (95% confidence interval, 1.01-1.13), respectively; p=.01 in both cases). According to this model, a one-unit increase in the day-night shifts carried out by each nurse per month tended to reduce the rate of adverse events (incidence risk ratio=0.60 (95% confidence interval, 0.36-1.01), p=.05). Severity at intensive care unit admission did not influence the rate of adverse events (incidence risk ratio=1.02 (95% confidence interval, 1.00-1.04), p=.12).CONCLUSIONS:Results identify nurse workload and the arrival of inexperienced residents or senior registrars as risk factors for the occurrence of life-threatening adverse events in the adult medical intensive care unit. Limiting fluctuations in bed-to-nurse ratio and providing inexperienced medical staff members with sufficient supervision may decrease severe adverse events in critically ill patients. "><meta property="og:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
+  <meta property="twitter:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
   
     
       <meta property="article:published_time" content="2016-10-01T00:00:00&#43;00:00">
@@ -308,7 +346,7 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://www.coreds.com/publication/2016-10-01_nurse_workload_and_i/"
+    "@id": "https://consultation-recherche-donnees-sante.netlify.app/publication/2016-10-01_nurse_workload_and_i/"
   },
   "headline": "Nurse workload and inexperienced medical staff members are associated with seasonal peaks in severe adverse events in the adult medical intensive care unit: A seven-year prospective study.",
   
@@ -325,7 +363,7 @@
     "name": "Consultation Recherche Données de Santé - CoReDS",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
+      "url": "https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
     }
   },
   "description": "OBJECTIVE:Our purpose was to identify potential organizational factors that contributed to life-threatening adverse events in adult intensive care unit.METHODS:A prospective, observational, dynamic cohort study was carried out from January 2006 to December 2013 in a 20-bed adult medical intensive care unit. All patients admitted to the intensive care unit and who experienced one or more selected life-threatening adverse events (mainly unexpected cardiac arrest, unplanned extubation, reintubation after planned extubation, and readmission within 48h of intensive care unit discharge) were included in the analysis. Negative binomial regression was used to model how human resources, work organization, and intensive care activity influenced the monthly rate of selected severe adverse events. Data were collected from local and national databases.RESULTS:Overall, 638 severe adverse events involving 498 patients were recorded. Adverse events increased seasonally in May, November and December (p\u0026lt;.001 vs other months). The proportion of inexperienced nurses and doctors' working hours could not explain these seasonal peaks of adverse events. Multivariate analysis identified bed-to-nurse ratio and the arrival of inexperienced residents or senior registrars as being independently associated with the rate of adverse events (incidence risk ratio=1.36 (95% confidence interval, 1.05-1.75), and 1.07 (95% confidence interval, 1.01-1.13), respectively; p=.01 in both cases). According to this model, a one-unit increase in the day-night shifts carried out by each nurse per month tended to reduce the rate of adverse events (incidence risk ratio=0.60 (95% confidence interval, 0.36-1.01), p=.05). Severity at intensive care unit admission did not influence the rate of adverse events (incidence risk ratio=1.02 (95% confidence interval, 1.00-1.04), p=.12).CONCLUSIONS:Results identify nurse workload and the arrival of inexperienced residents or senior registrars as risk factors for the occurrence of life-threatening adverse events in the adult medical intensive care unit. Limiting fluctuations in bed-to-nurse ratio and providing inexperienced medical staff members with sufficient supervision may decrease severe adverse events in critically ill patients. "
@@ -390,7 +428,7 @@
     <script>const isSiteThemeDark = false;</script>
   
   
-  <script src="/js/load-theme.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/load-theme.js"></script>
 
   <aside class="search-results" id="search">
   <div class="container">
@@ -445,7 +483,7 @@
 
     
     <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -458,7 +496,7 @@
 
     
     <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -494,7 +532,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/entreprendre/"><span>Commencer un projet</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/entreprendre/"><span>Commencer un projet</span></a>
         </li>
 
         
@@ -524,44 +562,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/suivremonprojet/"><span>Suivre son projet</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-            
-            
-            
-              
-            
-            
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#outils"><span>Boite à outils</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/suivremonprojet/"><span>Suivre son projet</span></a>
         </li>
 
         
@@ -598,7 +599,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#publi"><span>Publications</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#outils"><span>Boite à outils</span></a>
         </li>
 
         
@@ -635,7 +636,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#transparence"><span>Portail de transparence</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#publi"><span>Publications</span></a>
         </li>
 
         
@@ -672,7 +673,44 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#people"><span>Qui sommes-nous ?</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#transparence"><span>Portail de transparence</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#people"><span>Qui sommes-nous ?</span></a>
         </li>
 
         
@@ -745,7 +783,7 @@
     
 
   
-  <span ><a href="/author/faisy-christophe/">Faisy Christophe</a></span>, <span ><a href="/author/davagnar-cindy/">Davagnar Cindy</a></span>, <span ><a href="/author/ladiray-dominique/">Ladiray Dominique</a></span>, <span ><a href="/author/djadi-prat-juliette/">Djadi-Prat Juliette</a></span>, <span ><a href="/author/esvan-maxime/">Esvan Maxime</a></span>, <span ><a href="/author/lenain-emilie/">Lenain Emilie</a></span>, <span ><a href="/author/durieux-pierre/">Durieux Pierre</a></span>, <span ><a href="/author/leforestier-jean-francois/">Leforestier Jean-Francois</a></span>, <span ><a href="/author/marlet-carine/">Marlet Carine</a></span>, <span ><a href="/author/seijo-marta/">Seijo Marta</a></span>, <span ><a href="/author/guillou-anne/">Guillou Anne</a></span>
+  <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/faisy-christophe/">Faisy Christophe</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/davagnar-cindy/">Davagnar Cindy</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/ladiray-dominique/">Ladiray Dominique</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/djadi-prat-juliette/">Djadi-Prat Juliette</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/esvan-maxime/">Esvan Maxime</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/lenain-emilie/">Lenain Emilie</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/durieux-pierre/">Durieux Pierre</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/leforestier-jean-francois/">Leforestier Jean-Francois</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/marlet-carine/">Marlet Carine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/seijo-marta/">Seijo Marta</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/guillou-anne/">Guillou Anne</a></span>
   </div>
   
   
@@ -811,7 +849,7 @@
           <div class="col-12 col-md-9">
             
             
-            <a href="/publication/#2">
+            <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/#2">
               Article de revue
             </a>
             
@@ -870,7 +908,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://www.coreds.com/publication/2016-10-01_nurse_workload_and_i/&amp;text=Nurse%20workload%20and%20inexperienced%20medical%20staff%20members%20are%20associated%20with%20seasonal%20peaks%20in%20severe%20adverse%20events%20in%20the%20adult%20medical%20intensive%20care%20unit:%20A%20seven-year%20prospective%20study." target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2016-10-01_nurse_workload_and_i/&amp;text=Nurse%20workload%20and%20inexperienced%20medical%20staff%20members%20are%20associated%20with%20seasonal%20peaks%20in%20severe%20adverse%20events%20in%20the%20adult%20medical%20intensive%20care%20unit:%20A%20seven-year%20prospective%20study." target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -883,7 +921,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://www.coreds.com/publication/2016-10-01_nurse_workload_and_i/&amp;t=Nurse%20workload%20and%20inexperienced%20medical%20staff%20members%20are%20associated%20with%20seasonal%20peaks%20in%20severe%20adverse%20events%20in%20the%20adult%20medical%20intensive%20care%20unit:%20A%20seven-year%20prospective%20study." target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://consultation-recherche-donnees-sante.netlify.app/publication/2016-10-01_nurse_workload_and_i/&amp;t=Nurse%20workload%20and%20inexperienced%20medical%20staff%20members%20are%20associated%20with%20seasonal%20peaks%20in%20severe%20adverse%20events%20in%20the%20adult%20medical%20intensive%20care%20unit:%20A%20seven-year%20prospective%20study." target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -896,7 +934,7 @@
       
       
       <li>
-        <a href="mailto:?subject=Nurse%20workload%20and%20inexperienced%20medical%20staff%20members%20are%20associated%20with%20seasonal%20peaks%20in%20severe%20adverse%20events%20in%20the%20adult%20medical%20intensive%20care%20unit:%20A%20seven-year%20prospective%20study.&amp;body=https://www.coreds.com/publication/2016-10-01_nurse_workload_and_i/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=Nurse%20workload%20and%20inexperienced%20medical%20staff%20members%20are%20associated%20with%20seasonal%20peaks%20in%20severe%20adverse%20events%20in%20the%20adult%20medical%20intensive%20care%20unit:%20A%20seven-year%20prospective%20study.&amp;body=https://consultation-recherche-donnees-sante.netlify.app/publication/2016-10-01_nurse_workload_and_i/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -909,7 +947,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://www.coreds.com/publication/2016-10-01_nurse_workload_and_i/&amp;title=Nurse%20workload%20and%20inexperienced%20medical%20staff%20members%20are%20associated%20with%20seasonal%20peaks%20in%20severe%20adverse%20events%20in%20the%20adult%20medical%20intensive%20care%20unit:%20A%20seven-year%20prospective%20study." target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2016-10-01_nurse_workload_and_i/&amp;title=Nurse%20workload%20and%20inexperienced%20medical%20staff%20members%20are%20associated%20with%20seasonal%20peaks%20in%20severe%20adverse%20events%20in%20the%20adult%20medical%20intensive%20care%20unit:%20A%20seven-year%20prospective%20study." target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -922,7 +960,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=Nurse%20workload%20and%20inexperienced%20medical%20staff%20members%20are%20associated%20with%20seasonal%20peaks%20in%20severe%20adverse%20events%20in%20the%20adult%20medical%20intensive%20care%20unit:%20A%20seven-year%20prospective%20study.%20https://www.coreds.com/publication/2016-10-01_nurse_workload_and_i/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=Nurse%20workload%20and%20inexperienced%20medical%20staff%20members%20are%20associated%20with%20seasonal%20peaks%20in%20severe%20adverse%20events%20in%20the%20adult%20medical%20intensive%20care%20unit:%20A%20seven-year%20prospective%20study.%20https://consultation-recherche-donnees-sante.netlify.app/publication/2016-10-01_nurse_workload_and_i/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -935,7 +973,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://www.coreds.com/publication/2016-10-01_nurse_workload_and_i/&amp;title=Nurse%20workload%20and%20inexperienced%20medical%20staff%20members%20are%20associated%20with%20seasonal%20peaks%20in%20severe%20adverse%20events%20in%20the%20adult%20medical%20intensive%20care%20unit:%20A%20seven-year%20prospective%20study." target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2016-10-01_nurse_workload_and_i/&amp;title=Nurse%20workload%20and%20inexperienced%20medical%20staff%20members%20are%20associated%20with%20seasonal%20peaks%20in%20severe%20adverse%20events%20in%20the%20adult%20medical%20intensive%20care%20unit:%20A%20seven-year%20prospective%20study." target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1216,7 +1254,7 @@
     
     
     
-    <script src="/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
+    <script src="https://consultation-recherche-donnees-sante.netlify.app/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
 
     
 

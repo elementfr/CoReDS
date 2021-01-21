@@ -37,7 +37,7 @@
   <meta name="description" content="BACKGROUND:There is currently no guidance for selecting a specific difference to be detected in a superiority trial. We explored 3 factors that in our opinion should influence the difference to be detected (type of outcome, patient age group, and presence of treatment side-effects), and 3 that should not (baseline level of risk, logistical difficulties, and cost of treatment).METHODS:We conducted an experimental survey using a factorial design among 380 corresponding authors of randomized controlled trials indexed in Medline. Two hypothetical vignettes were submitted to participants: one described a trial of a new analgesic in mild trauma injuries, the other described a trial of a new chemotherapy among cancer patients. The first vignette tested the baseline level of risk, patient age-group, patient recruitment difficulties, and treatment side-effects. The second tested the baseline level of risk, patient age-group, type of outcome, and cost of treatment. The respondents were asked to select the smallest gain of effectiveness that should be detected by the trial.RESULTS:In vignette 1, respondents selected a median difference to be detected corresponding to an improvement of 7.0 % in pain control with the new treatment. In vignette 2, they selected a median difference to be detected corresponding to a reduction of 5.0 % in mortality or cancer recurrence with the new chemotherapy. In both vignettes, the difference to be detected decreased significantly with the baseline risk. The other factor influencing difference to be detected was the age group, but the impact of this factor was smaller. Cost, side-effects, outcome severity, or mention of logistical difficulties did not significantly impact the difference to be detected selected by participants.CONCLUSIONS:Three of the anticipated effects conformed to our expectations (the effect of patient age, and absence of effect of the cost of treatment and of patient recruitment difficulties) and the other three did not. These findings can guide future research in determining differences to be detected in trials that can translate to meaningful clinical decision-making. ">
 
   
-  <link rel="alternate" hreflang="fr" href="https://www.coreds.com/publication/2016-07-01_how_do_researchers_d/">
+  <link rel="alternate" hreflang="fr" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2016-07-01_how_do_researchers_d/">
 
   
 
@@ -66,7 +66,7 @@
   
   
   
-  <script src="/js/mathjax-config.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/mathjax-config.js"></script>
   
 
   
@@ -241,13 +241,51 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.css">
+  <link rel="stylesheet" href="https://consultation-recherche-donnees-sante.netlify.app/css/wowchemy.css">
 
   
 
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-80B5KND2Y6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-80B5KND2Y6', { 'anonymize_ip': true });
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
   
@@ -258,11 +296,11 @@
 
   
 
-  <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
+  <link rel="manifest" href="https://consultation-recherche-donnees-sante.netlify.app/index.webmanifest">
+  <link rel="icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="https://www.coreds.com/publication/2016-07-01_how_do_researchers_d/">
+  <link rel="canonical" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2016-07-01_how_do_researchers_d/">
 
   
   
@@ -278,10 +316,10 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:url" content="https://www.coreds.com/publication/2016-07-01_how_do_researchers_d/">
+  <meta property="og:url" content="https://consultation-recherche-donnees-sante.netlify.app/publication/2016-07-01_how_do_researchers_d/">
   <meta property="og:title" content="How do researchers determine the difference to be detected in superiority trials? Results of a survey from a panel of researchers. | Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:description" content="BACKGROUND:There is currently no guidance for selecting a specific difference to be detected in a superiority trial. We explored 3 factors that in our opinion should influence the difference to be detected (type of outcome, patient age group, and presence of treatment side-effects), and 3 that should not (baseline level of risk, logistical difficulties, and cost of treatment).METHODS:We conducted an experimental survey using a factorial design among 380 corresponding authors of randomized controlled trials indexed in Medline. Two hypothetical vignettes were submitted to participants: one described a trial of a new analgesic in mild trauma injuries, the other described a trial of a new chemotherapy among cancer patients. The first vignette tested the baseline level of risk, patient age-group, patient recruitment difficulties, and treatment side-effects. The second tested the baseline level of risk, patient age-group, type of outcome, and cost of treatment. The respondents were asked to select the smallest gain of effectiveness that should be detected by the trial.RESULTS:In vignette 1, respondents selected a median difference to be detected corresponding to an improvement of 7.0 % in pain control with the new treatment. In vignette 2, they selected a median difference to be detected corresponding to a reduction of 5.0 % in mortality or cancer recurrence with the new chemotherapy. In both vignettes, the difference to be detected decreased significantly with the baseline risk. The other factor influencing difference to be detected was the age group, but the impact of this factor was smaller. Cost, side-effects, outcome severity, or mention of logistical difficulties did not significantly impact the difference to be detected selected by participants.CONCLUSIONS:Three of the anticipated effects conformed to our expectations (the effect of patient age, and absence of effect of the cost of treatment and of patient recruitment difficulties) and the other three did not. These findings can guide future research in determining differences to be detected in trials that can translate to meaningful clinical decision-making. "><meta property="og:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
-  <meta property="twitter:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
+  <meta property="og:description" content="BACKGROUND:There is currently no guidance for selecting a specific difference to be detected in a superiority trial. We explored 3 factors that in our opinion should influence the difference to be detected (type of outcome, patient age group, and presence of treatment side-effects), and 3 that should not (baseline level of risk, logistical difficulties, and cost of treatment).METHODS:We conducted an experimental survey using a factorial design among 380 corresponding authors of randomized controlled trials indexed in Medline. Two hypothetical vignettes were submitted to participants: one described a trial of a new analgesic in mild trauma injuries, the other described a trial of a new chemotherapy among cancer patients. The first vignette tested the baseline level of risk, patient age-group, patient recruitment difficulties, and treatment side-effects. The second tested the baseline level of risk, patient age-group, type of outcome, and cost of treatment. The respondents were asked to select the smallest gain of effectiveness that should be detected by the trial.RESULTS:In vignette 1, respondents selected a median difference to be detected corresponding to an improvement of 7.0 % in pain control with the new treatment. In vignette 2, they selected a median difference to be detected corresponding to a reduction of 5.0 % in mortality or cancer recurrence with the new chemotherapy. In both vignettes, the difference to be detected decreased significantly with the baseline risk. The other factor influencing difference to be detected was the age group, but the impact of this factor was smaller. Cost, side-effects, outcome severity, or mention of logistical difficulties did not significantly impact the difference to be detected selected by participants.CONCLUSIONS:Three of the anticipated effects conformed to our expectations (the effect of patient age, and absence of effect of the cost of treatment and of patient recruitment difficulties) and the other three did not. These findings can guide future research in determining differences to be detected in trials that can translate to meaningful clinical decision-making. "><meta property="og:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
+  <meta property="twitter:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
   
     
       <meta property="article:published_time" content="2016-07-01T00:00:00&#43;00:00">
@@ -308,7 +346,7 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://www.coreds.com/publication/2016-07-01_how_do_researchers_d/"
+    "@id": "https://consultation-recherche-donnees-sante.netlify.app/publication/2016-07-01_how_do_researchers_d/"
   },
   "headline": "How do researchers determine the difference to be detected in superiority trials? Results of a survey from a panel of researchers.",
   
@@ -325,7 +363,7 @@
     "name": "Consultation Recherche Données de Santé - CoReDS",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
+      "url": "https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
     }
   },
   "description": "BACKGROUND:There is currently no guidance for selecting a specific difference to be detected in a superiority trial. We explored 3 factors that in our opinion should influence the difference to be detected (type of outcome, patient age group, and presence of treatment side-effects), and 3 that should not (baseline level of risk, logistical difficulties, and cost of treatment).METHODS:We conducted an experimental survey using a factorial design among 380 corresponding authors of randomized controlled trials indexed in Medline. Two hypothetical vignettes were submitted to participants: one described a trial of a new analgesic in mild trauma injuries, the other described a trial of a new chemotherapy among cancer patients. The first vignette tested the baseline level of risk, patient age-group, patient recruitment difficulties, and treatment side-effects. The second tested the baseline level of risk, patient age-group, type of outcome, and cost of treatment. The respondents were asked to select the smallest gain of effectiveness that should be detected by the trial.RESULTS:In vignette 1, respondents selected a median difference to be detected corresponding to an improvement of 7.0 % in pain control with the new treatment. In vignette 2, they selected a median difference to be detected corresponding to a reduction of 5.0 % in mortality or cancer recurrence with the new chemotherapy. In both vignettes, the difference to be detected decreased significantly with the baseline risk. The other factor influencing difference to be detected was the age group, but the impact of this factor was smaller. Cost, side-effects, outcome severity, or mention of logistical difficulties did not significantly impact the difference to be detected selected by participants.CONCLUSIONS:Three of the anticipated effects conformed to our expectations (the effect of patient age, and absence of effect of the cost of treatment and of patient recruitment difficulties) and the other three did not. These findings can guide future research in determining differences to be detected in trials that can translate to meaningful clinical decision-making. "
@@ -390,7 +428,7 @@
     <script>const isSiteThemeDark = false;</script>
   
   
-  <script src="/js/load-theme.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/load-theme.js"></script>
 
   <aside class="search-results" id="search">
   <div class="container">
@@ -445,7 +483,7 @@
 
     
     <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -458,7 +496,7 @@
 
     
     <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -494,7 +532,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/entreprendre/"><span>Commencer un projet</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/entreprendre/"><span>Commencer un projet</span></a>
         </li>
 
         
@@ -524,44 +562,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/suivremonprojet/"><span>Suivre son projet</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-            
-            
-            
-              
-            
-            
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#outils"><span>Boite à outils</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/suivremonprojet/"><span>Suivre son projet</span></a>
         </li>
 
         
@@ -598,7 +599,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#publi"><span>Publications</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#outils"><span>Boite à outils</span></a>
         </li>
 
         
@@ -635,7 +636,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#transparence"><span>Portail de transparence</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#publi"><span>Publications</span></a>
         </li>
 
         
@@ -672,7 +673,44 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#people"><span>Qui sommes-nous ?</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#transparence"><span>Portail de transparence</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#people"><span>Qui sommes-nous ?</span></a>
         </li>
 
         
@@ -745,7 +783,7 @@
     
 
   
-  <span ><a href="/author/gayet-ageron-angele/">Gayet-Ageron Angele</a></span>, <span ><a href="/author/jannot-anne-sophie/">Jannot Anne-Sophie</a></span>, <span ><a href="/author/agoritsas-thomas/">Agoritsas Thomas</a></span>, <span ><a href="/author/rudaz-sandrine/">Rudaz Sandrine</a></span>, <span ><a href="/author/combescure-christophe/">Combescure Christophe</a></span>, <span ><a href="/author/perneger-thomas/">Perneger Thomas</a></span>
+  <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/gayet-ageron-angele/">Gayet-Ageron Angele</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/jannot-anne-sophie/">Jannot Anne-Sophie</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/agoritsas-thomas/">Agoritsas Thomas</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/rudaz-sandrine/">Rudaz Sandrine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/combescure-christophe/">Combescure Christophe</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/perneger-thomas/">Perneger Thomas</a></span>
   </div>
   
   
@@ -811,7 +849,7 @@
           <div class="col-12 col-md-9">
             
             
-            <a href="/publication/#2">
+            <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/#2">
               Article de revue
             </a>
             
@@ -870,7 +908,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://www.coreds.com/publication/2016-07-01_how_do_researchers_d/&amp;text=How%20do%20researchers%20determine%20the%20difference%20to%20be%20detected%20in%20superiority%20trials?%20Results%20of%20a%20survey%20from%20a%20panel%20of%20researchers." target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2016-07-01_how_do_researchers_d/&amp;text=How%20do%20researchers%20determine%20the%20difference%20to%20be%20detected%20in%20superiority%20trials?%20Results%20of%20a%20survey%20from%20a%20panel%20of%20researchers." target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -883,7 +921,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://www.coreds.com/publication/2016-07-01_how_do_researchers_d/&amp;t=How%20do%20researchers%20determine%20the%20difference%20to%20be%20detected%20in%20superiority%20trials?%20Results%20of%20a%20survey%20from%20a%20panel%20of%20researchers." target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://consultation-recherche-donnees-sante.netlify.app/publication/2016-07-01_how_do_researchers_d/&amp;t=How%20do%20researchers%20determine%20the%20difference%20to%20be%20detected%20in%20superiority%20trials?%20Results%20of%20a%20survey%20from%20a%20panel%20of%20researchers." target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -896,7 +934,7 @@
       
       
       <li>
-        <a href="mailto:?subject=How%20do%20researchers%20determine%20the%20difference%20to%20be%20detected%20in%20superiority%20trials?%20Results%20of%20a%20survey%20from%20a%20panel%20of%20researchers.&amp;body=https://www.coreds.com/publication/2016-07-01_how_do_researchers_d/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=How%20do%20researchers%20determine%20the%20difference%20to%20be%20detected%20in%20superiority%20trials?%20Results%20of%20a%20survey%20from%20a%20panel%20of%20researchers.&amp;body=https://consultation-recherche-donnees-sante.netlify.app/publication/2016-07-01_how_do_researchers_d/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -909,7 +947,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://www.coreds.com/publication/2016-07-01_how_do_researchers_d/&amp;title=How%20do%20researchers%20determine%20the%20difference%20to%20be%20detected%20in%20superiority%20trials?%20Results%20of%20a%20survey%20from%20a%20panel%20of%20researchers." target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2016-07-01_how_do_researchers_d/&amp;title=How%20do%20researchers%20determine%20the%20difference%20to%20be%20detected%20in%20superiority%20trials?%20Results%20of%20a%20survey%20from%20a%20panel%20of%20researchers." target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -922,7 +960,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=How%20do%20researchers%20determine%20the%20difference%20to%20be%20detected%20in%20superiority%20trials?%20Results%20of%20a%20survey%20from%20a%20panel%20of%20researchers.%20https://www.coreds.com/publication/2016-07-01_how_do_researchers_d/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=How%20do%20researchers%20determine%20the%20difference%20to%20be%20detected%20in%20superiority%20trials?%20Results%20of%20a%20survey%20from%20a%20panel%20of%20researchers.%20https://consultation-recherche-donnees-sante.netlify.app/publication/2016-07-01_how_do_researchers_d/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -935,7 +973,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://www.coreds.com/publication/2016-07-01_how_do_researchers_d/&amp;title=How%20do%20researchers%20determine%20the%20difference%20to%20be%20detected%20in%20superiority%20trials?%20Results%20of%20a%20survey%20from%20a%20panel%20of%20researchers." target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2016-07-01_how_do_researchers_d/&amp;title=How%20do%20researchers%20determine%20the%20difference%20to%20be%20detected%20in%20superiority%20trials?%20Results%20of%20a%20survey%20from%20a%20panel%20of%20researchers." target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1186,7 +1224,7 @@
     
     
     
-    <script src="/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
+    <script src="https://consultation-recherche-donnees-sante.netlify.app/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
 
     
 

@@ -37,7 +37,7 @@
   <meta name="description" content="INTRODUCTION:Clinical data warehouses are often oriented toward integration and exploration of coded data. However narrative reports are of crucial importance for translational research. This paper describes Dr. Warehouse®, an open source data warehouse oriented toward clinical narrative reports and designed to support clinicians&#39; day-to-day use.METHOD:Dr. Warehouse relies on an original database model to focus on documents in addition to facts. Besides classical querying functionalities, the system provides an advanced search engine and Graphical User Interfaces adapted to the exploration of text. Dr. Warehouse is dedicated to translational research with cohort recruitment capabilities, high throughput phenotyping and patient centric views (including similarity metrics among patients). These features leverage Natural Language Processing based on the extraction of UMLS® concepts, as well as negation and family history detection.RESULTS:A survey conducted after 6 months of use at the Necker Children&#39;s Hospital shows a high rate of satisfaction among the users (96.6%). During this period, 122 users performed 2837 queries, accessed 4,267 patients&#39; records and included 36,632 patients in 131 cohorts. The source code is available at this github link https://github.com/imagine-bdd/DRWH. A demonstration based on PubMed abstracts is available at https://imagine-plateforme-bdd.fr/dwh_pubmed/. ">
 
   
-  <link rel="alternate" hreflang="fr" href="https://www.coreds.com/publication/2018-04-01_a_clinician_friendly/">
+  <link rel="alternate" hreflang="fr" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2018-04-01_a_clinician_friendly/">
 
   
 
@@ -66,7 +66,7 @@
   
   
   
-  <script src="/js/mathjax-config.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/mathjax-config.js"></script>
   
 
   
@@ -241,13 +241,51 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.css">
+  <link rel="stylesheet" href="https://consultation-recherche-donnees-sante.netlify.app/css/wowchemy.css">
 
   
 
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-80B5KND2Y6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-80B5KND2Y6', { 'anonymize_ip': true });
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
   
@@ -258,11 +296,11 @@
 
   
 
-  <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
+  <link rel="manifest" href="https://consultation-recherche-donnees-sante.netlify.app/index.webmanifest">
+  <link rel="icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="https://www.coreds.com/publication/2018-04-01_a_clinician_friendly/">
+  <link rel="canonical" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2018-04-01_a_clinician_friendly/">
 
   
   
@@ -278,10 +316,10 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:url" content="https://www.coreds.com/publication/2018-04-01_a_clinician_friendly/">
+  <meta property="og:url" content="https://consultation-recherche-donnees-sante.netlify.app/publication/2018-04-01_a_clinician_friendly/">
   <meta property="og:title" content="A clinician friendly data warehouse oriented toward narrative reports: Dr. Warehouse. | Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:description" content="INTRODUCTION:Clinical data warehouses are often oriented toward integration and exploration of coded data. However narrative reports are of crucial importance for translational research. This paper describes Dr. Warehouse®, an open source data warehouse oriented toward clinical narrative reports and designed to support clinicians&#39; day-to-day use.METHOD:Dr. Warehouse relies on an original database model to focus on documents in addition to facts. Besides classical querying functionalities, the system provides an advanced search engine and Graphical User Interfaces adapted to the exploration of text. Dr. Warehouse is dedicated to translational research with cohort recruitment capabilities, high throughput phenotyping and patient centric views (including similarity metrics among patients). These features leverage Natural Language Processing based on the extraction of UMLS® concepts, as well as negation and family history detection.RESULTS:A survey conducted after 6 months of use at the Necker Children&#39;s Hospital shows a high rate of satisfaction among the users (96.6%). During this period, 122 users performed 2837 queries, accessed 4,267 patients&#39; records and included 36,632 patients in 131 cohorts. The source code is available at this github link https://github.com/imagine-bdd/DRWH. A demonstration based on PubMed abstracts is available at https://imagine-plateforme-bdd.fr/dwh_pubmed/. "><meta property="og:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
-  <meta property="twitter:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
+  <meta property="og:description" content="INTRODUCTION:Clinical data warehouses are often oriented toward integration and exploration of coded data. However narrative reports are of crucial importance for translational research. This paper describes Dr. Warehouse®, an open source data warehouse oriented toward clinical narrative reports and designed to support clinicians&#39; day-to-day use.METHOD:Dr. Warehouse relies on an original database model to focus on documents in addition to facts. Besides classical querying functionalities, the system provides an advanced search engine and Graphical User Interfaces adapted to the exploration of text. Dr. Warehouse is dedicated to translational research with cohort recruitment capabilities, high throughput phenotyping and patient centric views (including similarity metrics among patients). These features leverage Natural Language Processing based on the extraction of UMLS® concepts, as well as negation and family history detection.RESULTS:A survey conducted after 6 months of use at the Necker Children&#39;s Hospital shows a high rate of satisfaction among the users (96.6%). During this period, 122 users performed 2837 queries, accessed 4,267 patients&#39; records and included 36,632 patients in 131 cohorts. The source code is available at this github link https://github.com/imagine-bdd/DRWH. A demonstration based on PubMed abstracts is available at https://imagine-plateforme-bdd.fr/dwh_pubmed/. "><meta property="og:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
+  <meta property="twitter:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
   
     
       <meta property="article:published_time" content="2018-04-01T00:00:00&#43;00:00">
@@ -308,7 +346,7 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://www.coreds.com/publication/2018-04-01_a_clinician_friendly/"
+    "@id": "https://consultation-recherche-donnees-sante.netlify.app/publication/2018-04-01_a_clinician_friendly/"
   },
   "headline": "A clinician friendly data warehouse oriented toward narrative reports: Dr. Warehouse.",
   
@@ -325,7 +363,7 @@
     "name": "Consultation Recherche Données de Santé - CoReDS",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
+      "url": "https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
     }
   },
   "description": "INTRODUCTION:Clinical data warehouses are often oriented toward integration and exploration of coded data. However narrative reports are of crucial importance for translational research. This paper describes Dr. Warehouse®, an open source data warehouse oriented toward clinical narrative reports and designed to support clinicians' day-to-day use.METHOD:Dr. Warehouse relies on an original database model to focus on documents in addition to facts. Besides classical querying functionalities, the system provides an advanced search engine and Graphical User Interfaces adapted to the exploration of text. Dr. Warehouse is dedicated to translational research with cohort recruitment capabilities, high throughput phenotyping and patient centric views (including similarity metrics among patients). These features leverage Natural Language Processing based on the extraction of UMLS® concepts, as well as negation and family history detection.RESULTS:A survey conducted after 6 months of use at the Necker Children's Hospital shows a high rate of satisfaction among the users (96.6%). During this period, 122 users performed 2837 queries, accessed 4,267 patients' records and included 36,632 patients in 131 cohorts. The source code is available at this github link https://github.com/imagine-bdd/DRWH. A demonstration based on PubMed abstracts is available at https://imagine-plateforme-bdd.fr/dwh_pubmed/. "
@@ -390,7 +428,7 @@
     <script>const isSiteThemeDark = false;</script>
   
   
-  <script src="/js/load-theme.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/load-theme.js"></script>
 
   <aside class="search-results" id="search">
   <div class="container">
@@ -445,7 +483,7 @@
 
     
     <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -458,7 +496,7 @@
 
     
     <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -494,7 +532,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/entreprendre/"><span>Commencer un projet</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/entreprendre/"><span>Commencer un projet</span></a>
         </li>
 
         
@@ -524,44 +562,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/suivremonprojet/"><span>Suivre son projet</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-            
-            
-            
-              
-            
-            
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#outils"><span>Boite à outils</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/suivremonprojet/"><span>Suivre son projet</span></a>
         </li>
 
         
@@ -598,7 +599,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#publi"><span>Publications</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#outils"><span>Boite à outils</span></a>
         </li>
 
         
@@ -635,7 +636,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#transparence"><span>Portail de transparence</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#publi"><span>Publications</span></a>
         </li>
 
         
@@ -672,7 +673,44 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#people"><span>Qui sommes-nous ?</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#transparence"><span>Portail de transparence</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#people"><span>Qui sommes-nous ?</span></a>
         </li>
 
         
@@ -745,7 +783,7 @@
     
 
   
-  <span ><a href="/author/garcelon-nicolas/">Garcelon Nicolas</a></span>, <span ><a href="/author/neuraz-antoine/">Neuraz Antoine</a></span>, <span ><a href="/author/salomon-remi/">Salomon Remi</a></span>, <span ><a href="/author/faour-hassan/">Faour Hassan</a></span>, <span ><a href="/author/benoit-vincent/">Benoit Vincent</a></span>, <span ><a href="/author/delapalme-arthur/">Delapalme Arthur</a></span>, <span ><a href="/author/munnich-arnold/">Munnich Arnold</a></span>, <span ><a href="/author/burgun-anita/">Burgun Anita</a></span>, <span ><a href="/author/rance-bastien/">Rance Bastien</a></span>
+  <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/garcelon-nicolas/">Garcelon Nicolas</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/neuraz-antoine/">Neuraz Antoine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/salomon-remi/">Salomon Remi</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/faour-hassan/">Faour Hassan</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/benoit-vincent/">Benoit Vincent</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/delapalme-arthur/">Delapalme Arthur</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/munnich-arnold/">Munnich Arnold</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/burgun-anita/">Burgun Anita</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/rance-bastien/">Rance Bastien</a></span>
   </div>
   
   
@@ -811,7 +849,7 @@
           <div class="col-12 col-md-9">
             
             
-            <a href="/publication/#2">
+            <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/#2">
               Article de revue
             </a>
             
@@ -870,7 +908,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://www.coreds.com/publication/2018-04-01_a_clinician_friendly/&amp;text=A%20clinician%20friendly%20data%20warehouse%20oriented%20toward%20narrative%20reports:%20Dr.%20Warehouse." target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2018-04-01_a_clinician_friendly/&amp;text=A%20clinician%20friendly%20data%20warehouse%20oriented%20toward%20narrative%20reports:%20Dr.%20Warehouse." target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -883,7 +921,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://www.coreds.com/publication/2018-04-01_a_clinician_friendly/&amp;t=A%20clinician%20friendly%20data%20warehouse%20oriented%20toward%20narrative%20reports:%20Dr.%20Warehouse." target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://consultation-recherche-donnees-sante.netlify.app/publication/2018-04-01_a_clinician_friendly/&amp;t=A%20clinician%20friendly%20data%20warehouse%20oriented%20toward%20narrative%20reports:%20Dr.%20Warehouse." target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -896,7 +934,7 @@
       
       
       <li>
-        <a href="mailto:?subject=A%20clinician%20friendly%20data%20warehouse%20oriented%20toward%20narrative%20reports:%20Dr.%20Warehouse.&amp;body=https://www.coreds.com/publication/2018-04-01_a_clinician_friendly/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=A%20clinician%20friendly%20data%20warehouse%20oriented%20toward%20narrative%20reports:%20Dr.%20Warehouse.&amp;body=https://consultation-recherche-donnees-sante.netlify.app/publication/2018-04-01_a_clinician_friendly/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -909,7 +947,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://www.coreds.com/publication/2018-04-01_a_clinician_friendly/&amp;title=A%20clinician%20friendly%20data%20warehouse%20oriented%20toward%20narrative%20reports:%20Dr.%20Warehouse." target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2018-04-01_a_clinician_friendly/&amp;title=A%20clinician%20friendly%20data%20warehouse%20oriented%20toward%20narrative%20reports:%20Dr.%20Warehouse." target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -922,7 +960,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=A%20clinician%20friendly%20data%20warehouse%20oriented%20toward%20narrative%20reports:%20Dr.%20Warehouse.%20https://www.coreds.com/publication/2018-04-01_a_clinician_friendly/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=A%20clinician%20friendly%20data%20warehouse%20oriented%20toward%20narrative%20reports:%20Dr.%20Warehouse.%20https://consultation-recherche-donnees-sante.netlify.app/publication/2018-04-01_a_clinician_friendly/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -935,7 +973,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://www.coreds.com/publication/2018-04-01_a_clinician_friendly/&amp;title=A%20clinician%20friendly%20data%20warehouse%20oriented%20toward%20narrative%20reports:%20Dr.%20Warehouse." target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2018-04-01_a_clinician_friendly/&amp;title=A%20clinician%20friendly%20data%20warehouse%20oriented%20toward%20narrative%20reports:%20Dr.%20Warehouse." target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1029,13 +1067,13 @@
     <h3>Sur le même sujet</h3>
     <ul>
       
-      <li><a href="/publication/2020-08-01_natural_language_pro/">Natural Language Processing for Rapid Response to Emergent Diseases: Case Study of Calcium Channel Blockers and Hypertension in the COVID-19 Pandemic.</a></li>
+      <li><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2020-08-01_natural_language_pro/">Natural Language Processing for Rapid Response to Emergent Diseases: Case Study of Calcium Channel Blockers and Hypertension in the COVID-19 Pandemic.</a></li>
       
-      <li><a href="/publication/2018-05-01_next_generation_phen/">Next generation phenotyping using narrative reports in a rare disease clinical data warehouse.</a></li>
+      <li><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2018-05-01_next_generation_phen/">Next generation phenotyping using narrative reports in a rare disease clinical data warehouse.</a></li>
       
-      <li><a href="/publication/2020-12-01_obesity_doubles_mort/">Obesity Doubles Mortality in Patients Hospitalized for Severe Acute Respiratory Syndrome Coronavirus 2 in Paris Hospitals, France: A Cohort Study on 5,795 Patients.</a></li>
+      <li><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2020-12-01_obesity_doubles_mort/">Obesity Doubles Mortality in Patients Hospitalized for Severe Acute Respiratory Syndrome Coronavirus 2 in Paris Hospitals, France: A Cohort Study on 5,795 Patients.</a></li>
       
-      <li><a href="/publication/2019-08-01_do_you_need_embeddin/">Do You Need Embeddings Trained on a Massive Specialized Corpus for Your Clinical Natural Language Processing Task?</a></li>
+      <li><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2019-08-01_do_you_need_embeddin/">Do You Need Embeddings Trained on a Massive Specialized Corpus for Your Clinical Natural Language Processing Task?</a></li>
       
     </ul>
   </div>
@@ -1219,7 +1257,7 @@
     
     
     
-    <script src="/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
+    <script src="https://consultation-recherche-donnees-sante.netlify.app/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
 
     
 

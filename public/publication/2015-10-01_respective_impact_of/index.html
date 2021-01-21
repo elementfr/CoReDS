@@ -37,7 +37,7 @@
   <meta name="description" content="OBJECTIVE:We previously showed that external cooling decreases day 14 mortality in febrile septic shock. Because cooling may participate in heart rate control, we studied the respective impact of heart rate and temperature lowering on mortality.METHODS:Post hoc analysis of the Sepsiscool randomized controlled trial database (NCT00527007). Cooling was applied to maintain normothermia (36.5-37 °C) during 48 h. We assessed the time spent below different thresholds of temperature and heart rate on day 14 mortality. The best threshold was selected by AUC-ROC and tested as a potential mediator of mortality reduction. Mediation analysis was adjusted for severity and treatments influencing temperature and heart rate evolution. Sensitivity analysis was done using only patients with appropriate antimicrobial therapy.RESULTS:A total of 197/200 patients with adequate heart rate and temperature monitoring were analyzed. The best threshold differentiating survivors and nonsurvivors was 38.4 °C for temperature and 95 b/min for heart rate. During the 48 h of intervention, cooling significantly increased the time spent with a temperature below 38.4 °C, p = 0.001, and with a heart rate below 95 b/min, p &amp;lt; 0.01. The longer was the time spent with a temperature below 38.4 °C, the lower was the mortality [adjOR 0.17 (0.06-0.49), p = 0.001]. The time spent with a heart rate below 95 b/min was similar in survivors and nonsurvivors [adjOR 0.68 (0.27-1.72), p = 0.42]. Mediation analysis showed that the time spent with a temperature below 38.4 °C was a significant mediator of mortality.CONCLUSIONS:The time spent with a temperature below 38.4 °C was independently associated with patient&#39;s outcome and explained 73% of the effect of the randomization on the day 14 mortality. Heart rate lowering was not a mediator of mortality. ">
 
   
-  <link rel="alternate" hreflang="fr" href="https://www.coreds.com/publication/2015-10-01_respective_impact_of/">
+  <link rel="alternate" hreflang="fr" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2015-10-01_respective_impact_of/">
 
   
 
@@ -66,7 +66,7 @@
   
   
   
-  <script src="/js/mathjax-config.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/mathjax-config.js"></script>
   
 
   
@@ -241,13 +241,51 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.css">
+  <link rel="stylesheet" href="https://consultation-recherche-donnees-sante.netlify.app/css/wowchemy.css">
 
   
 
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-80B5KND2Y6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-80B5KND2Y6', { 'anonymize_ip': true });
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
   
@@ -258,11 +296,11 @@
 
   
 
-  <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
+  <link rel="manifest" href="https://consultation-recherche-donnees-sante.netlify.app/index.webmanifest">
+  <link rel="icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="https://www.coreds.com/publication/2015-10-01_respective_impact_of/">
+  <link rel="canonical" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2015-10-01_respective_impact_of/">
 
   
   
@@ -278,10 +316,10 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:url" content="https://www.coreds.com/publication/2015-10-01_respective_impact_of/">
+  <meta property="og:url" content="https://consultation-recherche-donnees-sante.netlify.app/publication/2015-10-01_respective_impact_of/">
   <meta property="og:title" content="Respective impact of lowering body temperature and heart rate on mortality in septic shock: mediation analysis of a randomized trial. | Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:description" content="OBJECTIVE:We previously showed that external cooling decreases day 14 mortality in febrile septic shock. Because cooling may participate in heart rate control, we studied the respective impact of heart rate and temperature lowering on mortality.METHODS:Post hoc analysis of the Sepsiscool randomized controlled trial database (NCT00527007). Cooling was applied to maintain normothermia (36.5-37 °C) during 48 h. We assessed the time spent below different thresholds of temperature and heart rate on day 14 mortality. The best threshold was selected by AUC-ROC and tested as a potential mediator of mortality reduction. Mediation analysis was adjusted for severity and treatments influencing temperature and heart rate evolution. Sensitivity analysis was done using only patients with appropriate antimicrobial therapy.RESULTS:A total of 197/200 patients with adequate heart rate and temperature monitoring were analyzed. The best threshold differentiating survivors and nonsurvivors was 38.4 °C for temperature and 95 b/min for heart rate. During the 48 h of intervention, cooling significantly increased the time spent with a temperature below 38.4 °C, p = 0.001, and with a heart rate below 95 b/min, p &amp;lt; 0.01. The longer was the time spent with a temperature below 38.4 °C, the lower was the mortality [adjOR 0.17 (0.06-0.49), p = 0.001]. The time spent with a heart rate below 95 b/min was similar in survivors and nonsurvivors [adjOR 0.68 (0.27-1.72), p = 0.42]. Mediation analysis showed that the time spent with a temperature below 38.4 °C was a significant mediator of mortality.CONCLUSIONS:The time spent with a temperature below 38.4 °C was independently associated with patient&#39;s outcome and explained 73% of the effect of the randomization on the day 14 mortality. Heart rate lowering was not a mediator of mortality. "><meta property="og:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
-  <meta property="twitter:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
+  <meta property="og:description" content="OBJECTIVE:We previously showed that external cooling decreases day 14 mortality in febrile septic shock. Because cooling may participate in heart rate control, we studied the respective impact of heart rate and temperature lowering on mortality.METHODS:Post hoc analysis of the Sepsiscool randomized controlled trial database (NCT00527007). Cooling was applied to maintain normothermia (36.5-37 °C) during 48 h. We assessed the time spent below different thresholds of temperature and heart rate on day 14 mortality. The best threshold was selected by AUC-ROC and tested as a potential mediator of mortality reduction. Mediation analysis was adjusted for severity and treatments influencing temperature and heart rate evolution. Sensitivity analysis was done using only patients with appropriate antimicrobial therapy.RESULTS:A total of 197/200 patients with adequate heart rate and temperature monitoring were analyzed. The best threshold differentiating survivors and nonsurvivors was 38.4 °C for temperature and 95 b/min for heart rate. During the 48 h of intervention, cooling significantly increased the time spent with a temperature below 38.4 °C, p = 0.001, and with a heart rate below 95 b/min, p &amp;lt; 0.01. The longer was the time spent with a temperature below 38.4 °C, the lower was the mortality [adjOR 0.17 (0.06-0.49), p = 0.001]. The time spent with a heart rate below 95 b/min was similar in survivors and nonsurvivors [adjOR 0.68 (0.27-1.72), p = 0.42]. Mediation analysis showed that the time spent with a temperature below 38.4 °C was a significant mediator of mortality.CONCLUSIONS:The time spent with a temperature below 38.4 °C was independently associated with patient&#39;s outcome and explained 73% of the effect of the randomization on the day 14 mortality. Heart rate lowering was not a mediator of mortality. "><meta property="og:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
+  <meta property="twitter:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
   
     
       <meta property="article:published_time" content="2015-10-01T00:00:00&#43;00:00">
@@ -308,7 +346,7 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://www.coreds.com/publication/2015-10-01_respective_impact_of/"
+    "@id": "https://consultation-recherche-donnees-sante.netlify.app/publication/2015-10-01_respective_impact_of/"
   },
   "headline": "Respective impact of lowering body temperature and heart rate on mortality in septic shock: mediation analysis of a randomized trial.",
   
@@ -325,7 +363,7 @@
     "name": "Consultation Recherche Données de Santé - CoReDS",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
+      "url": "https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
     }
   },
   "description": "OBJECTIVE:We previously showed that external cooling decreases day 14 mortality in febrile septic shock. Because cooling may participate in heart rate control, we studied the respective impact of heart rate and temperature lowering on mortality.METHODS:Post hoc analysis of the Sepsiscool randomized controlled trial database (NCT00527007). Cooling was applied to maintain normothermia (36.5-37 °C) during 48 h. We assessed the time spent below different thresholds of temperature and heart rate on day 14 mortality. The best threshold was selected by AUC-ROC and tested as a potential mediator of mortality reduction. Mediation analysis was adjusted for severity and treatments influencing temperature and heart rate evolution. Sensitivity analysis was done using only patients with appropriate antimicrobial therapy.RESULTS:A total of 197/200 patients with adequate heart rate and temperature monitoring were analyzed. The best threshold differentiating survivors and nonsurvivors was 38.4 °C for temperature and 95 b/min for heart rate. During the 48 h of intervention, cooling significantly increased the time spent with a temperature below 38.4 °C, p = 0.001, and with a heart rate below 95 b/min, p \u0026lt; 0.01. The longer was the time spent with a temperature below 38.4 °C, the lower was the mortality [adjOR 0.17 (0.06-0.49), p = 0.001]. The time spent with a heart rate below 95 b/min was similar in survivors and nonsurvivors [adjOR 0.68 (0.27-1.72), p = 0.42]. Mediation analysis showed that the time spent with a temperature below 38.4 °C was a significant mediator of mortality.CONCLUSIONS:The time spent with a temperature below 38.4 °C was independently associated with patient's outcome and explained 73% of the effect of the randomization on the day 14 mortality. Heart rate lowering was not a mediator of mortality. "
@@ -390,7 +428,7 @@
     <script>const isSiteThemeDark = false;</script>
   
   
-  <script src="/js/load-theme.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/load-theme.js"></script>
 
   <aside class="search-results" id="search">
   <div class="container">
@@ -445,7 +483,7 @@
 
     
     <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -458,7 +496,7 @@
 
     
     <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -494,7 +532,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/entreprendre/"><span>Commencer un projet</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/entreprendre/"><span>Commencer un projet</span></a>
         </li>
 
         
@@ -524,44 +562,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/suivremonprojet/"><span>Suivre son projet</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-            
-            
-            
-              
-            
-            
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#outils"><span>Boite à outils</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/suivremonprojet/"><span>Suivre son projet</span></a>
         </li>
 
         
@@ -598,7 +599,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#publi"><span>Publications</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#outils"><span>Boite à outils</span></a>
         </li>
 
         
@@ -635,7 +636,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#transparence"><span>Portail de transparence</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#publi"><span>Publications</span></a>
         </li>
 
         
@@ -672,7 +673,44 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#people"><span>Qui sommes-nous ?</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#transparence"><span>Portail de transparence</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#people"><span>Qui sommes-nous ?</span></a>
         </li>
 
         
@@ -745,7 +783,7 @@
     
 
   
-  <span ><a href="/author/schortgen-frederique/">Schortgen Frederique</a></span>, <span ><a href="/author/charles-nelson-anais/">Charles-Nelson Anais</a></span>, <span ><a href="/author/bouadma-lila/">Bouadma Lila</a></span>, <span ><a href="/author/bizouard-geoffray/">Bizouard Geoffray</a></span>, <span ><a href="/author/brochard-laurent/">Brochard Laurent</a></span>, <span ><a href="/author/katsahian-sandrine/">Katsahian Sandrine</a></span>
+  <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/schortgen-frederique/">Schortgen Frederique</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/charles-nelson-anais/">Charles-Nelson Anais</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/bouadma-lila/">Bouadma Lila</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/bizouard-geoffray/">Bizouard Geoffray</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/brochard-laurent/">Brochard Laurent</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/katsahian-sandrine/">Katsahian Sandrine</a></span>
   </div>
   
   
@@ -811,7 +849,7 @@
           <div class="col-12 col-md-9">
             
             
-            <a href="/publication/#2">
+            <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/#2">
               Article de revue
             </a>
             
@@ -870,7 +908,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://www.coreds.com/publication/2015-10-01_respective_impact_of/&amp;text=Respective%20impact%20of%20lowering%20body%20temperature%20and%20heart%20rate%20on%20mortality%20in%20septic%20shock:%20mediation%20analysis%20of%20a%20randomized%20trial." target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2015-10-01_respective_impact_of/&amp;text=Respective%20impact%20of%20lowering%20body%20temperature%20and%20heart%20rate%20on%20mortality%20in%20septic%20shock:%20mediation%20analysis%20of%20a%20randomized%20trial." target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -883,7 +921,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://www.coreds.com/publication/2015-10-01_respective_impact_of/&amp;t=Respective%20impact%20of%20lowering%20body%20temperature%20and%20heart%20rate%20on%20mortality%20in%20septic%20shock:%20mediation%20analysis%20of%20a%20randomized%20trial." target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://consultation-recherche-donnees-sante.netlify.app/publication/2015-10-01_respective_impact_of/&amp;t=Respective%20impact%20of%20lowering%20body%20temperature%20and%20heart%20rate%20on%20mortality%20in%20septic%20shock:%20mediation%20analysis%20of%20a%20randomized%20trial." target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -896,7 +934,7 @@
       
       
       <li>
-        <a href="mailto:?subject=Respective%20impact%20of%20lowering%20body%20temperature%20and%20heart%20rate%20on%20mortality%20in%20septic%20shock:%20mediation%20analysis%20of%20a%20randomized%20trial.&amp;body=https://www.coreds.com/publication/2015-10-01_respective_impact_of/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=Respective%20impact%20of%20lowering%20body%20temperature%20and%20heart%20rate%20on%20mortality%20in%20septic%20shock:%20mediation%20analysis%20of%20a%20randomized%20trial.&amp;body=https://consultation-recherche-donnees-sante.netlify.app/publication/2015-10-01_respective_impact_of/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -909,7 +947,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://www.coreds.com/publication/2015-10-01_respective_impact_of/&amp;title=Respective%20impact%20of%20lowering%20body%20temperature%20and%20heart%20rate%20on%20mortality%20in%20septic%20shock:%20mediation%20analysis%20of%20a%20randomized%20trial." target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2015-10-01_respective_impact_of/&amp;title=Respective%20impact%20of%20lowering%20body%20temperature%20and%20heart%20rate%20on%20mortality%20in%20septic%20shock:%20mediation%20analysis%20of%20a%20randomized%20trial." target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -922,7 +960,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=Respective%20impact%20of%20lowering%20body%20temperature%20and%20heart%20rate%20on%20mortality%20in%20septic%20shock:%20mediation%20analysis%20of%20a%20randomized%20trial.%20https://www.coreds.com/publication/2015-10-01_respective_impact_of/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=Respective%20impact%20of%20lowering%20body%20temperature%20and%20heart%20rate%20on%20mortality%20in%20septic%20shock:%20mediation%20analysis%20of%20a%20randomized%20trial.%20https://consultation-recherche-donnees-sante.netlify.app/publication/2015-10-01_respective_impact_of/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -935,7 +973,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://www.coreds.com/publication/2015-10-01_respective_impact_of/&amp;title=Respective%20impact%20of%20lowering%20body%20temperature%20and%20heart%20rate%20on%20mortality%20in%20septic%20shock:%20mediation%20analysis%20of%20a%20randomized%20trial." target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2015-10-01_respective_impact_of/&amp;title=Respective%20impact%20of%20lowering%20body%20temperature%20and%20heart%20rate%20on%20mortality%20in%20septic%20shock:%20mediation%20analysis%20of%20a%20randomized%20trial." target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1011,9 +1049,9 @@
     <h3>Sur le même sujet</h3>
     <ul>
       
-      <li><a href="/publication/2013-10-01_prevention_of_contra/">Prevention of contrast-induced nephropathy by N-acetylcysteine in critically ill patients: different definitions, different results.</a></li>
+      <li><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2013-10-01_prevention_of_contra/">Prevention of contrast-induced nephropathy by N-acetylcysteine in critically ill patients: different definitions, different results.</a></li>
       
-      <li><a href="/publication/2012-05-01_fever_control_using_/">Fever control using external cooling in septic shock: a randomized controlled trial.</a></li>
+      <li><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2012-05-01_fever_control_using_/">Fever control using external cooling in septic shock: a randomized controlled trial.</a></li>
       
     </ul>
   </div>
@@ -1197,7 +1235,7 @@
     
     
     
-    <script src="/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
+    <script src="https://consultation-recherche-donnees-sante.netlify.app/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
 
     
 

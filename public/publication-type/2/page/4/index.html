@@ -37,7 +37,7 @@
   <meta name="description" content="Consultation recherche données de santé">
 
   
-  <link rel="alternate" hreflang="fr" href="https://www.coreds.com/publication-type/2/">
+  <link rel="alternate" hreflang="fr" href="https://consultation-recherche-donnees-sante.netlify.app/publication-type/2/">
 
   
 
@@ -238,30 +238,68 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.css">
+  <link rel="stylesheet" href="https://consultation-recherche-donnees-sante.netlify.app/css/wowchemy.css">
 
   
 
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-80B5KND2Y6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-80B5KND2Y6', { 'anonymize_ip': true });
+
   
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
 
   
 
+  
+
 
   
   
 
   
-  <link rel="alternate" href="/publication-type/2/index.xml" type="application/rss+xml" title="Consultation Recherche Données de Santé - CoReDS">
+  <link rel="alternate" href="https://consultation-recherche-donnees-sante.netlify.app/publication-type/2/index.xml" type="application/rss+xml" title="Consultation Recherche Données de Santé - CoReDS">
   
 
-  <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
+  <link rel="manifest" href="https://consultation-recherche-donnees-sante.netlify.app/index.webmanifest">
+  <link rel="icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="https://www.coreds.com/publication-type/2/">
+  <link rel="canonical" href="https://consultation-recherche-donnees-sante.netlify.app/publication-type/2/">
 
   
   
@@ -277,10 +315,10 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:url" content="https://www.coreds.com/publication-type/2/">
+  <meta property="og:url" content="https://consultation-recherche-donnees-sante.netlify.app/publication-type/2/">
   <meta property="og:title" content="2 | Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:description" content="Consultation recherche données de santé"><meta property="og:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
-  <meta property="twitter:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
+  <meta property="og:description" content="Consultation recherche données de santé"><meta property="og:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
+  <meta property="twitter:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
   
     <meta property="og:updated_time" content="2020-12-01T00:00:00&#43;00:00">
   
@@ -343,7 +381,7 @@
     <script>const isSiteThemeDark = false;</script>
   
   
-  <script src="/js/load-theme.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/load-theme.js"></script>
 
   <aside class="search-results" id="search">
   <div class="container">
@@ -398,7 +436,7 @@
 
     
     <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -411,7 +449,7 @@
 
     
     <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -447,7 +485,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/entreprendre/"><span>Commencer un projet</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/entreprendre/"><span>Commencer un projet</span></a>
         </li>
 
         
@@ -477,44 +515,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/suivremonprojet/"><span>Suivre son projet</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-            
-            
-            
-              
-            
-            
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#outils"><span>Boite à outils</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/suivremonprojet/"><span>Suivre son projet</span></a>
         </li>
 
         
@@ -551,7 +552,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#publi"><span>Publications</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#outils"><span>Boite à outils</span></a>
         </li>
 
         
@@ -588,7 +589,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#transparence"><span>Portail de transparence</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#publi"><span>Publications</span></a>
         </li>
 
         
@@ -625,7 +626,44 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#people"><span>Qui sommes-nous ?</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#transparence"><span>Portail de transparence</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#people"><span>Qui sommes-nous ?</span></a>
         </li>
 
         
@@ -698,7 +736,7 @@
     
     
     <div>
-      <h2><a href="/publication/2018-01-01_mining_patients_nar/" >Mining Patients&#39; Narratives in Social Media for Pharmacovigilance: Adverse Effects and Misuse of Methylphenidate.</a></h2>
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2018-01-01_mining_patients_nar/" >Mining Patients&#39; Narratives in Social Media for Pharmacovigilance: Adverse Effects and Misuse of Methylphenidate.</a></h2>
       <div class="article-style">
         
           Background: The Food and Drug Administration (FDA) in the United States and the European Medicines Agency (EMA) have recognized social media as a new data source to strengthen their activities regarding drug safety. Objective: Our objective in the …
@@ -710,7 +748,7 @@
     
     
     <div>
-      <h2><a href="/publication/2018-01-01_the_need_of_an_open_/" >The Need of an Open Data Quality Policy: The Case of the &amp;quot;Transparency - Health&amp;quot; Database in the Prevention of Conflict of Interest.</a></h2>
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2018-01-01_the_need_of_an_open_/" >The Need of an Open Data Quality Policy: The Case of the &amp;quot;Transparency - Health&amp;quot; Database in the Prevention of Conflict of Interest.</a></h2>
       <div class="article-style">
         
           Open data available largely and with minimal constraints to the general public and journalists are needed to help rebuild trust between citizens and the health system. By opening data, we can expect to increase the democratic accountability, the …
@@ -722,7 +760,7 @@
     
     
     <div>
-      <h2><a href="/publication/2017-12-01_outcomes_in_elderly_/" >Outcomes in elderly patients admitted to the intensive care unit with solid tumors.</a></h2>
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2017-12-01_outcomes_in_elderly_/" >Outcomes in elderly patients admitted to the intensive care unit with solid tumors.</a></h2>
       <div class="article-style">
         
           BACKGROUND:As the population ages and cancer therapies improve, there is an increased call for elderly cancer patients to be admitted to the intensive care unit (ICU). This study aimed to assess short-term survival and prognostic factors in …
@@ -734,7 +772,7 @@
     
     
     <div>
-      <h2><a href="/publication/2017-11-01_association_between_/" >Association between borderline dysnatremia and mortality insight into a new data mining approach.</a></h2>
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2017-11-01_association_between_/" >Association between borderline dysnatremia and mortality insight into a new data mining approach.</a></h2>
       <div class="article-style">
         
           BACKGROUND:Even small variations of serum sodium concentration may be associated with mortality. Our objective was to confirm the impact of borderline dysnatremia for patients admitted to hospital on in-hospital mortality using real life care data …
@@ -746,7 +784,7 @@
     
     
     <div>
-      <h2><a href="/publication/2017-10-01_roles_of_apol1-g1_an/" >Roles of APOL1 G1 and G2 variants in sickle cell disease patients: kidney is the main target.</a></h2>
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2017-10-01_roles_of_apol1-g1_an/" >Roles of APOL1 G1 and G2 variants in sickle cell disease patients: kidney is the main target.</a></h2>
       <div class="article-style">
         
           In African-American patients with sickle cell disease (SCD), APOL1 G1 and G2 variants are associated with increased risk of sickle cell nephropathy (SCN). To determine the role of APOL1 variants in SCD patients living in Europe, we genotyped 152 SCD …
@@ -758,7 +796,7 @@
     
     
     <div>
-      <h2><a href="/publication/2017-09-01_a_novel_data-driven_/" >A novel data-driven workflow combining literature and electronic health records to estimate comorbidities burden for a specific disease: a case study on autoimmune comorbidities in patients with celiac disease.</a></h2>
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2017-09-01_a_novel_data-driven_/" >A novel data-driven workflow combining literature and electronic health records to estimate comorbidities burden for a specific disease: a case study on autoimmune comorbidities in patients with celiac disease.</a></h2>
       <div class="article-style">
         
           BACKGROUND:Data collected in EHRs have been widely used to identifying specific conditions; however there is still a need for methods to define comorbidities and sources to identify comorbidities burden. We propose an approach to assess comorbidities …
@@ -770,7 +808,7 @@
     
     
     <div>
-      <h2><a href="/publication/2017-09-01_patent_foramen_ovale/" >Patent Foramen Ovale Closure or Anticoagulation vs. Antiplatelets after Stroke.</a></h2>
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2017-09-01_patent_foramen_ovale/" >Patent Foramen Ovale Closure or Anticoagulation vs. Antiplatelets after Stroke.</a></h2>
       <div class="article-style">
         
           BACKGROUND:Trials of patent foramen ovale (PFO) closure to prevent recurrent stroke have been inconclusive. We investigated whether patients with cryptogenic stroke and echocardiographic features representing risk of stroke would benefit from PFO …
@@ -782,7 +820,7 @@
     
     
     <div>
-      <h2><a href="/publication/2017-09-01_successful_treatment/" >Successful treatment of Pseudomonas aeruginosa osteomyelitis with antibiotic monotherapy of limited duration.</a></h2>
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2017-09-01_successful_treatment/" >Successful treatment of Pseudomonas aeruginosa osteomyelitis with antibiotic monotherapy of limited duration.</a></h2>
       <div class="article-style">
         
           OBJECTIVES:The aim of this study was to present a 15-year experience and provide a comprehensive analysis of a large cohort of patients with Pseudomonas aeruginosa osteomyelitis.METHODS:We reviewed the medical records of patients admitted to a large …
@@ -794,7 +832,7 @@
     
     
     <div>
-      <h2><a href="/publication/2017-09-01_the_adverse_drug_rea/" >The Adverse Drug Reactions from Patient Reports in Social Media Project: Five Major Challenges to Overcome to Operationalize Analysis and Efficiently Support Pharmacovigilance Process.</a></h2>
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2017-09-01_the_adverse_drug_rea/" >The Adverse Drug Reactions from Patient Reports in Social Media Project: Five Major Challenges to Overcome to Operationalize Analysis and Efficiently Support Pharmacovigilance Process.</a></h2>
       <div class="article-style">
         
           BACKGROUND:Adverse drug reactions (ADRs) are an important cause of morbidity and mortality. Classical Pharmacovigilance process is limited by underreporting which justifies the current interest in new knowledge sources such as social media. The …
@@ -806,7 +844,7 @@
     
     
     <div>
-      <h2><a href="/publication/2017-08-01_a_fast_healthcare_in/" >A Fast Healthcare Interoperability Resources (FHIR) layer implemented over i2b2.</a></h2>
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2017-08-01_a_fast_healthcare_in/" >A Fast Healthcare Interoperability Resources (FHIR) layer implemented over i2b2.</a></h2>
       <div class="article-style">
         
           BACKGROUND:Standards and technical specifications have been developed to define how the information contained in Electronic Health Records (EHRs) should be structured, semantically described, and communicated. Current trends rely on differentiating …
@@ -818,7 +856,7 @@
     
     
     <div>
-      <h2><a href="/publication/2017-08-01_icu_patients_requiri/" >ICU Patients Requiring Renal Replacement Therapy Initiation: Fewer Survivors and More Dialysis Dependents From 80 Years Old.</a></h2>
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2017-08-01_icu_patients_requiri/" >ICU Patients Requiring Renal Replacement Therapy Initiation: Fewer Survivors and More Dialysis Dependents From 80 Years Old.</a></h2>
       <div class="article-style">
         
           OBJECTIVE:To assess the role of advanced age on survival and dialysis dependency after initiation of renal replacement therapy for acute kidney injury.METHODS:Retrospective pooled analysis of prospectively collected data.METHODS:ICUs of two teaching …
@@ -830,7 +868,7 @@
     
     
     <div>
-      <h2><a href="/publication/2017-06-01_the_diagnosis-wide_l/" >The Diagnosis-Wide Landscape of Hospital-Acquired AKI.</a></h2>
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2017-06-01_the_diagnosis-wide_l/" >The Diagnosis-Wide Landscape of Hospital-Acquired AKI.</a></h2>
       <div class="article-style">
         
           BACKGROUND AND OBJECTIVE:The exploration of electronic hospital records offers a unique opportunity to describe in-depth the prevalence of conditions associated with diagnoses at an unprecedented level of comprehensiveness. We used a diagnosis-wide …
@@ -842,7 +880,7 @@
     
     
     <div>
-      <h2><a href="/publication/2017-06-01_the_georges_pompidou/" >The Georges Pompidou University Hospital Clinical Data Warehouse: A 8-years follow-up experience.</a></h2>
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2017-06-01_the_georges_pompidou/" >The Georges Pompidou University Hospital Clinical Data Warehouse: A 8-years follow-up experience.</a></h2>
       <div class="article-style">
         
           BACKGROUND:When developed jointly with clinical information systems, clinical data warehouses (CDWs) facilitate the reuse of healthcare data and leverage clinical research.OBJECTIVE:To describe both data access and use for clinical research, …
@@ -854,7 +892,7 @@
     
     
     <div>
-      <h2><a href="/publication/2017-05-01_induction_of_residen/" >Induction of resident memory T cells enhances the efficacy of cancer vaccine.</a></h2>
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2017-05-01_induction_of_residen/" >Induction of resident memory T cells enhances the efficacy of cancer vaccine.</a></h2>
       <div class="article-style">
         
           Tissue-resident memory T cells (Trm) represent a new subset of long-lived memory T cells that remain in tissue and do not recirculate. Although they are considered as early immune effectors in infectious diseases, their role in cancer …
@@ -866,7 +904,7 @@
     
     
     <div>
-      <h2><a href="/publication/2017-04-01_evaluation_of_the_th/" >Evaluation of the Theoretical Teaching of Postgraduate Radiation Oncology Medical Residents in France: a Cross-Sectional Study.</a></h2>
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2017-04-01_evaluation_of_the_th/" >Evaluation of the Theoretical Teaching of Postgraduate Radiation Oncology Medical Residents in France: a Cross-Sectional Study.</a></h2>
       <div class="article-style">
         
           This study's purpose was to have residents evaluate Radiation Oncology (RO) theoretical teaching practices in France. An anonymous electronically cross-functional survey on theoretical teaching practices in the RO residents was conducted by (i) …
@@ -878,7 +916,7 @@
     
     
     <div>
-      <h2><a href="/publication/2017-03-01_cause_of_renal_infar/" >Cause of renal infarction: a retrospective analysis of 186 consecutive cases.</a></h2>
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2017-03-01_cause_of_renal_infar/" >Cause of renal infarction: a retrospective analysis of 186 consecutive cases.</a></h2>
       <div class="article-style">
         
           BACKGROUND:Renal infarction can cause abrupt and severe hypertension and less frequently renal failure. Renal infarction results from disruption of renal blood flow in the main ipsilateral renal artery or in a segmental branch. Underlying mechanism …
@@ -890,7 +928,7 @@
     
     
     <div>
-      <h2><a href="/publication/2017-02-01_features_from_comput/" >Features from Computerized Texture Analysis of Breast Cancers at Pretreatment MR Imaging Are Associated with Response to Neoadjuvant Chemotherapy.</a></h2>
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2017-02-01_features_from_comput/" >Features from Computerized Texture Analysis of Breast Cancers at Pretreatment MR Imaging Are Associated with Response to Neoadjuvant Chemotherapy.</a></h2>
       <div class="article-style">
         
           Purpose To evaluate whether features from texture analysis of breast cancers were associated with pathologic complete response (pCR) after neoadjuvant chemotherapy and to explore the association between texture features and tumor subtypes at …
@@ -902,7 +940,7 @@
     
     
     <div>
-      <h2><a href="/publication/2017-02-01_leveraging_the_ehr4c/" >Leveraging the EHR4CR platform to support patient inclusion in academic studies: challenges and lessons learned.</a></h2>
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2017-02-01_leveraging_the_ehr4c/" >Leveraging the EHR4CR platform to support patient inclusion in academic studies: challenges and lessons learned.</a></h2>
       <div class="article-style">
         
           BACKGROUND:The development of Electronic Health Records (EHRs) in hospitals offers the ability to reuse data from patient care activities for clinical research. EHR4CR is a European public-private partnership aiming to develop a computerized platform …
@@ -914,7 +952,7 @@
     
     
     <div>
-      <h2><a href="/publication/2016-11-01_common_data_elements/" >Common data elements for secondary use of electronic health record data for clinical trial execution and serious adverse event reporting.</a></h2>
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2016-11-01_common_data_elements/" >Common data elements for secondary use of electronic health record data for clinical trial execution and serious adverse event reporting.</a></h2>
       <div class="article-style">
         
           BACKGROUND:Data capture is one of the most expensive phases during the conduct of a clinical trial and the increasing use of electronic health records (EHR) offers significant savings to clinical research. To facilitate these secondary uses of …
@@ -926,7 +964,7 @@
     
     
     <div>
-      <h2><a href="/publication/2016-11-01_publication_trends_i/" >Publication Trends in Bariatric Surgery: a Bibliometric Study.</a></h2>
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2016-11-01_publication_trends_i/" >Publication Trends in Bariatric Surgery: a Bibliometric Study.</a></h2>
       <div class="article-style">
         
           BACKGROUND:The interest in bariatric surgery has considerably increased in the scientific community in the last two decades. We present a bibliometric analysis of scientific publications in bariatric surgery focusing on the period …
@@ -939,10 +977,10 @@
 <nav>
   <ul class="pagination justify-content-center">
     
-    <li class="page-item"><a class="page-link" href="/publication-type/2/page/3/">&laquo;</a></li>
+    <li class="page-item"><a class="page-link" href="https://consultation-recherche-donnees-sante.netlify.app/publication-type/2/page/3/">&laquo;</a></li>
     
     
-    <li class="page-item"><a class="page-link" href="/publication-type/2/page/5/">&raquo;</a></li>
+    <li class="page-item"><a class="page-link" href="https://consultation-recherche-donnees-sante.netlify.app/publication-type/2/page/5/">&raquo;</a></li>
     
   </ul>
 </nav>
@@ -1121,7 +1159,7 @@
     
     
     
-    <script src="/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
+    <script src="https://consultation-recherche-donnees-sante.netlify.app/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
 
     
 

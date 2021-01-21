@@ -37,7 +37,7 @@
   <meta name="description" content="We aimed to determine whether pretherapeutic assessment of HPV circulating tumoral DNA (HPV ctDNA) by droplet-based digital PCR (ddPCR) could constitute a predictive and prognostic biomarker for HPV-associated oropharyngeal squamous cell carcinoma (OPSCC). A mono-institutional prospective biomarker study on 66 patients with p16&#43;/HPV16-positive oropharyngeal squamous cell carcinoma (OPSCC) was conducted in European Georges Pompidou Hospital, Paris, France. Blood samples were collected at the time of diagnosis before any treatment. Optimized digital PCR assays were used to quantify HPV16 ctDNA. Forty-seven (71%) patients showed a positive pretherapeutic HPV ctDNA at time of diagnosis. Interestingly, the quantity of HPV16 ctDNA at baseline, as assessed by ddPCR, was significantly correlated with the T/N/M status or OPSCC stages according to the 2018 new staging criteria for high-risk human papillomavirus (HR HPV) related OPSCC from American Joint Committee on Cancer (AJCC). Moreover, all recurrences and the majority (83%) of death reported events occurred in patients with positive HPV16 ctDNA at baseline. Finally, when posttreatment blood samples were available (n = 6), the kinetic of pretreatment/posttreatment HPV16 ctDNA was clearly associated with treatment success or failure. HPV ctDNA monitoring by ddPCR could constitute a useful and noninvasive dynamic biomarker to select HR HPV-related OPSCC patients eligible for potential treatment de-escalation and to monitor treatment response.">
 
   
-  <link rel="alternate" hreflang="fr" href="https://www.coreds.com/publication/2019-08-01_hpv_circulating_tumo/">
+  <link rel="alternate" hreflang="fr" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2019-08-01_hpv_circulating_tumo/">
 
   
 
@@ -66,7 +66,7 @@
   
   
   
-  <script src="/js/mathjax-config.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/mathjax-config.js"></script>
   
 
   
@@ -241,13 +241,51 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.css">
+  <link rel="stylesheet" href="https://consultation-recherche-donnees-sante.netlify.app/css/wowchemy.css">
 
   
 
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-80B5KND2Y6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-80B5KND2Y6', { 'anonymize_ip': true });
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
   
@@ -258,11 +296,11 @@
 
   
 
-  <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
+  <link rel="manifest" href="https://consultation-recherche-donnees-sante.netlify.app/index.webmanifest">
+  <link rel="icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="https://www.coreds.com/publication/2019-08-01_hpv_circulating_tumo/">
+  <link rel="canonical" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2019-08-01_hpv_circulating_tumo/">
 
   
   
@@ -278,10 +316,10 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:url" content="https://www.coreds.com/publication/2019-08-01_hpv_circulating_tumo/">
+  <meta property="og:url" content="https://consultation-recherche-donnees-sante.netlify.app/publication/2019-08-01_hpv_circulating_tumo/">
   <meta property="og:title" content="HPV circulating tumoral DNA quantification by droplet-based digital PCR: A promising predictive and prognostic biomarker for HPV-associated oropharyngeal cancers. | Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:description" content="We aimed to determine whether pretherapeutic assessment of HPV circulating tumoral DNA (HPV ctDNA) by droplet-based digital PCR (ddPCR) could constitute a predictive and prognostic biomarker for HPV-associated oropharyngeal squamous cell carcinoma (OPSCC). A mono-institutional prospective biomarker study on 66 patients with p16&#43;/HPV16-positive oropharyngeal squamous cell carcinoma (OPSCC) was conducted in European Georges Pompidou Hospital, Paris, France. Blood samples were collected at the time of diagnosis before any treatment. Optimized digital PCR assays were used to quantify HPV16 ctDNA. Forty-seven (71%) patients showed a positive pretherapeutic HPV ctDNA at time of diagnosis. Interestingly, the quantity of HPV16 ctDNA at baseline, as assessed by ddPCR, was significantly correlated with the T/N/M status or OPSCC stages according to the 2018 new staging criteria for high-risk human papillomavirus (HR HPV) related OPSCC from American Joint Committee on Cancer (AJCC). Moreover, all recurrences and the majority (83%) of death reported events occurred in patients with positive HPV16 ctDNA at baseline. Finally, when posttreatment blood samples were available (n = 6), the kinetic of pretreatment/posttreatment HPV16 ctDNA was clearly associated with treatment success or failure. HPV ctDNA monitoring by ddPCR could constitute a useful and noninvasive dynamic biomarker to select HR HPV-related OPSCC patients eligible for potential treatment de-escalation and to monitor treatment response."><meta property="og:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
-  <meta property="twitter:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
+  <meta property="og:description" content="We aimed to determine whether pretherapeutic assessment of HPV circulating tumoral DNA (HPV ctDNA) by droplet-based digital PCR (ddPCR) could constitute a predictive and prognostic biomarker for HPV-associated oropharyngeal squamous cell carcinoma (OPSCC). A mono-institutional prospective biomarker study on 66 patients with p16&#43;/HPV16-positive oropharyngeal squamous cell carcinoma (OPSCC) was conducted in European Georges Pompidou Hospital, Paris, France. Blood samples were collected at the time of diagnosis before any treatment. Optimized digital PCR assays were used to quantify HPV16 ctDNA. Forty-seven (71%) patients showed a positive pretherapeutic HPV ctDNA at time of diagnosis. Interestingly, the quantity of HPV16 ctDNA at baseline, as assessed by ddPCR, was significantly correlated with the T/N/M status or OPSCC stages according to the 2018 new staging criteria for high-risk human papillomavirus (HR HPV) related OPSCC from American Joint Committee on Cancer (AJCC). Moreover, all recurrences and the majority (83%) of death reported events occurred in patients with positive HPV16 ctDNA at baseline. Finally, when posttreatment blood samples were available (n = 6), the kinetic of pretreatment/posttreatment HPV16 ctDNA was clearly associated with treatment success or failure. HPV ctDNA monitoring by ddPCR could constitute a useful and noninvasive dynamic biomarker to select HR HPV-related OPSCC patients eligible for potential treatment de-escalation and to monitor treatment response."><meta property="og:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
+  <meta property="twitter:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
   
     
       <meta property="article:published_time" content="2019-08-01T00:00:00&#43;00:00">
@@ -308,7 +346,7 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://www.coreds.com/publication/2019-08-01_hpv_circulating_tumo/"
+    "@id": "https://consultation-recherche-donnees-sante.netlify.app/publication/2019-08-01_hpv_circulating_tumo/"
   },
   "headline": "HPV circulating tumoral DNA quantification by droplet-based digital PCR: A promising predictive and prognostic biomarker for HPV-associated oropharyngeal cancers.",
   
@@ -325,7 +363,7 @@
     "name": "Consultation Recherche Données de Santé - CoReDS",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
+      "url": "https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
     }
   },
   "description": "We aimed to determine whether pretherapeutic assessment of HPV circulating tumoral DNA (HPV ctDNA) by droplet-based digital PCR (ddPCR) could constitute a predictive and prognostic biomarker for HPV-associated oropharyngeal squamous cell carcinoma (OPSCC). A mono-institutional prospective biomarker study on 66 patients with p16+/HPV16-positive oropharyngeal squamous cell carcinoma (OPSCC) was conducted in European Georges Pompidou Hospital, Paris, France. Blood samples were collected at the time of diagnosis before any treatment. Optimized digital PCR assays were used to quantify HPV16 ctDNA. Forty-seven (71%) patients showed a positive pretherapeutic HPV ctDNA at time of diagnosis. Interestingly, the quantity of HPV16 ctDNA at baseline, as assessed by ddPCR, was significantly correlated with the T/N/M status or OPSCC stages according to the 2018 new staging criteria for high-risk human papillomavirus (HR HPV) related OPSCC from American Joint Committee on Cancer (AJCC). Moreover, all recurrences and the majority (83%) of death reported events occurred in patients with positive HPV16 ctDNA at baseline. Finally, when posttreatment blood samples were available (n = 6), the kinetic of pretreatment/posttreatment HPV16 ctDNA was clearly associated with treatment success or failure. HPV ctDNA monitoring by ddPCR could constitute a useful and noninvasive dynamic biomarker to select HR HPV-related OPSCC patients eligible for potential treatment de-escalation and to monitor treatment response."
@@ -390,7 +428,7 @@
     <script>const isSiteThemeDark = false;</script>
   
   
-  <script src="/js/load-theme.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/load-theme.js"></script>
 
   <aside class="search-results" id="search">
   <div class="container">
@@ -445,7 +483,7 @@
 
     
     <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -458,7 +496,7 @@
 
     
     <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -494,7 +532,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/entreprendre/"><span>Commencer un projet</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/entreprendre/"><span>Commencer un projet</span></a>
         </li>
 
         
@@ -524,44 +562,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/suivremonprojet/"><span>Suivre son projet</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-            
-            
-            
-              
-            
-            
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#outils"><span>Boite à outils</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/suivremonprojet/"><span>Suivre son projet</span></a>
         </li>
 
         
@@ -598,7 +599,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#publi"><span>Publications</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#outils"><span>Boite à outils</span></a>
         </li>
 
         
@@ -635,7 +636,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#transparence"><span>Portail de transparence</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#publi"><span>Publications</span></a>
         </li>
 
         
@@ -672,7 +673,44 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#people"><span>Qui sommes-nous ?</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#transparence"><span>Portail de transparence</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#people"><span>Qui sommes-nous ?</span></a>
         </li>
 
         
@@ -745,7 +783,7 @@
     
 
   
-  <span ><a href="/author/veyer-david/">Veyer David</a></span>, <span ><a href="/author/wack-maxime/">Wack Maxime</a></span>, <span ><a href="/author/mandavit-marion/">Mandavit Marion</a></span>, <span ><a href="/author/garrigou-sonia/">Garrigou Sonia</a></span>, <span ><a href="/author/hans-stephane/">Hans Stephane</a></span>, <span ><a href="/author/bonfils-pierre/">Bonfils Pierre</a></span>, <span ><a href="/author/tartour-eric/">Tartour Eric</a></span>, <span ><a href="/author/belec-laurent/">Belec Laurent</a></span>, <span ><a href="/author/wang-renault-shu-fang/">Wang-Renault Shu-Fang</a></span>, <span ><a href="/author/laurent-puig-pierre/">Laurent-Puig Pierre</a></span>, <span ><a href="/author/mirghani-haitham/">Mirghani Haitham</a></span>, <span ><a href="/author/rance-bastien/">Rance Bastien</a></span>, <span ><a href="/author/taly-valerie/">Taly Valerie</a></span>, <span ><a href="/author/badoual-cecile/">Badoual Cecile</a></span>, <span ><a href="/author/pere-helene/">Pere Helene</a></span>
+  <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/veyer-david/">Veyer David</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/wack-maxime/">Wack Maxime</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/mandavit-marion/">Mandavit Marion</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/garrigou-sonia/">Garrigou Sonia</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/hans-stephane/">Hans Stephane</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/bonfils-pierre/">Bonfils Pierre</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/tartour-eric/">Tartour Eric</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/belec-laurent/">Belec Laurent</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/wang-renault-shu-fang/">Wang-Renault Shu-Fang</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/laurent-puig-pierre/">Laurent-Puig Pierre</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/mirghani-haitham/">Mirghani Haitham</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/rance-bastien/">Rance Bastien</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/taly-valerie/">Taly Valerie</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/badoual-cecile/">Badoual Cecile</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/pere-helene/">Pere Helene</a></span>
   </div>
   
   
@@ -811,7 +849,7 @@
           <div class="col-12 col-md-9">
             
             
-            <a href="/publication/#2">
+            <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/#2">
               Article de revue
             </a>
             
@@ -870,7 +908,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://www.coreds.com/publication/2019-08-01_hpv_circulating_tumo/&amp;text=HPV%20circulating%20tumoral%20DNA%20quantification%20by%20droplet-based%20digital%20PCR:%20A%20promising%20predictive%20and%20prognostic%20biomarker%20for%20HPV-associated%20oropharyngeal%20cancers." target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2019-08-01_hpv_circulating_tumo/&amp;text=HPV%20circulating%20tumoral%20DNA%20quantification%20by%20droplet-based%20digital%20PCR:%20A%20promising%20predictive%20and%20prognostic%20biomarker%20for%20HPV-associated%20oropharyngeal%20cancers." target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -883,7 +921,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://www.coreds.com/publication/2019-08-01_hpv_circulating_tumo/&amp;t=HPV%20circulating%20tumoral%20DNA%20quantification%20by%20droplet-based%20digital%20PCR:%20A%20promising%20predictive%20and%20prognostic%20biomarker%20for%20HPV-associated%20oropharyngeal%20cancers." target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://consultation-recherche-donnees-sante.netlify.app/publication/2019-08-01_hpv_circulating_tumo/&amp;t=HPV%20circulating%20tumoral%20DNA%20quantification%20by%20droplet-based%20digital%20PCR:%20A%20promising%20predictive%20and%20prognostic%20biomarker%20for%20HPV-associated%20oropharyngeal%20cancers." target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -896,7 +934,7 @@
       
       
       <li>
-        <a href="mailto:?subject=HPV%20circulating%20tumoral%20DNA%20quantification%20by%20droplet-based%20digital%20PCR:%20A%20promising%20predictive%20and%20prognostic%20biomarker%20for%20HPV-associated%20oropharyngeal%20cancers.&amp;body=https://www.coreds.com/publication/2019-08-01_hpv_circulating_tumo/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=HPV%20circulating%20tumoral%20DNA%20quantification%20by%20droplet-based%20digital%20PCR:%20A%20promising%20predictive%20and%20prognostic%20biomarker%20for%20HPV-associated%20oropharyngeal%20cancers.&amp;body=https://consultation-recherche-donnees-sante.netlify.app/publication/2019-08-01_hpv_circulating_tumo/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -909,7 +947,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://www.coreds.com/publication/2019-08-01_hpv_circulating_tumo/&amp;title=HPV%20circulating%20tumoral%20DNA%20quantification%20by%20droplet-based%20digital%20PCR:%20A%20promising%20predictive%20and%20prognostic%20biomarker%20for%20HPV-associated%20oropharyngeal%20cancers." target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2019-08-01_hpv_circulating_tumo/&amp;title=HPV%20circulating%20tumoral%20DNA%20quantification%20by%20droplet-based%20digital%20PCR:%20A%20promising%20predictive%20and%20prognostic%20biomarker%20for%20HPV-associated%20oropharyngeal%20cancers." target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -922,7 +960,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=HPV%20circulating%20tumoral%20DNA%20quantification%20by%20droplet-based%20digital%20PCR:%20A%20promising%20predictive%20and%20prognostic%20biomarker%20for%20HPV-associated%20oropharyngeal%20cancers.%20https://www.coreds.com/publication/2019-08-01_hpv_circulating_tumo/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=HPV%20circulating%20tumoral%20DNA%20quantification%20by%20droplet-based%20digital%20PCR:%20A%20promising%20predictive%20and%20prognostic%20biomarker%20for%20HPV-associated%20oropharyngeal%20cancers.%20https://consultation-recherche-donnees-sante.netlify.app/publication/2019-08-01_hpv_circulating_tumo/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -935,7 +973,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://www.coreds.com/publication/2019-08-01_hpv_circulating_tumo/&amp;title=HPV%20circulating%20tumoral%20DNA%20quantification%20by%20droplet-based%20digital%20PCR:%20A%20promising%20predictive%20and%20prognostic%20biomarker%20for%20HPV-associated%20oropharyngeal%20cancers." target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2019-08-01_hpv_circulating_tumo/&amp;title=HPV%20circulating%20tumoral%20DNA%20quantification%20by%20droplet-based%20digital%20PCR:%20A%20promising%20predictive%20and%20prognostic%20biomarker%20for%20HPV-associated%20oropharyngeal%20cancers." target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1065,15 +1103,15 @@
     <h3>Sur le même sujet</h3>
     <ul>
       
-      <li><a href="/publication/2019-06-01_hpv_detection_and_ge/">HPV detection and genotyping of head and neck cancer biopsies by molecular testing with regard to the new oropharyngeal squamous cell carcinoma classification based on HPV status.</a></li>
+      <li><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2019-06-01_hpv_detection_and_ge/">HPV detection and genotyping of head and neck cancer biopsies by molecular testing with regard to the new oropharyngeal squamous cell carcinoma classification based on HPV status.</a></li>
       
-      <li><a href="/publication/2020-08-01_highly_sensitive_qua/">Highly sensitive quantification of plasma SARS-CoV-2 RNA shelds light on its potential clinical value.</a></li>
+      <li><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2020-08-01_highly_sensitive_qua/">Highly sensitive quantification of plasma SARS-CoV-2 RNA shelds light on its potential clinical value.</a></li>
       
-      <li><a href="/publication/2020-11-01_sequential_sars-cov-/">Sequential SARS-CoV-2 IgG assays as confirmatory strategy to confirm equivocal results: Hospital-wide antibody screening in 3,569 staff health care workers in Paris.</a></li>
+      <li><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2020-11-01_sequential_sars-cov-/">Sequential SARS-CoV-2 IgG assays as confirmatory strategy to confirm equivocal results: Hospital-wide antibody screening in 3,569 staff health care workers in Paris.</a></li>
       
-      <li><a href="/publication/2020-09-01_curative_anticoagula/">Curative anticoagulation prevents endothelial lesion in COVID-19 patients.</a></li>
+      <li><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2020-09-01_curative_anticoagula/">Curative anticoagulation prevents endothelial lesion in COVID-19 patients.</a></li>
       
-      <li><a href="/publication/2020-05-01_nasal_swab_sampling_/">Nasal Swab Sampling for SARS-CoV-2: a Convenient Alternative in Times of Nasopharyngeal Swab Shortage.</a></li>
+      <li><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2020-05-01_nasal_swab_sampling_/">Nasal Swab Sampling for SARS-CoV-2: a Convenient Alternative in Times of Nasopharyngeal Swab Shortage.</a></li>
       
     </ul>
   </div>
@@ -1257,7 +1295,7 @@
     
     
     
-    <script src="/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
+    <script src="https://consultation-recherche-donnees-sante.netlify.app/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
 
     
 

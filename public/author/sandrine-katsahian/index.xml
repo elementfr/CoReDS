@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sandrine Katsahian | Consultation Recherche Données de Santé - CoReDS</title>
-    <link>https://www.coreds.com/author/sandrine-katsahian/</link>
-      <atom:link href="https://www.coreds.com/author/sandrine-katsahian/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://consultation-recherche-donnees-sante.netlify.app/author/sandrine-katsahian/</link>
+      <atom:link href="https://consultation-recherche-donnees-sante.netlify.app/author/sandrine-katsahian/index.xml" rel="self" type="application/rss+xml" />
     <description>Sandrine Katsahian</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>fr</language><copyright>`2021` - **CoReDS**</copyright>
     <image>
-      <url>https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png</url>
+      <url>https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png</url>
       <title>Sandrine Katsahian</title>
-      <link>https://www.coreds.com/author/sandrine-katsahian/</link>
+      <link>https://consultation-recherche-donnees-sante.netlify.app/author/sandrine-katsahian/</link>
     </image>
     
   </channel>

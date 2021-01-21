@@ -37,7 +37,7 @@
   <meta name="description" content="BACKGROUND:With the increase of clinical trial costs during the last decades, the design of feasibility studies has become an essential process to reduce avoidable and costly protocol amendments. This design includes timelines, targeted sites and budget, together with a list of eligibility criteria that potential participants need to match. The present work was designed to assess the value of obtaining potential study participant counts using an automated patient count cohort system for large multi-country and multi-site trials: the Electronic Health Records for Clinical Research (EHR4CR) system.METHODS:The evaluation focuses on the accuracy of the patient counts and the time invested to obtain these using the EHR4CR platform compared to the current questionnaire based process. This evaluation will assess the patient counts from ten clinical trials at two different sites. In order to assess the accuracy of the results, the numbers obtained following the two processes need to be compared to a baseline number, the &amp;quot;alloyed&amp;quot; gold standard, which was produced by a manual check of patient records.RESULTS:The patient counts obtained using the EHR4CR system were in three evaluated trials more accurate than the ones obtained following the current process whereas in six other trials the current process counts were more accurate. In two of the trials both of the processes had counts within the gold standard&#39;s confidence interval. In terms of efficiency the EHR4CR protocol feasibility system proved to save approximately seven calendar days in the process of obtaining patient counts compared to the current manual process.CONCLUSIONS:At the current stage, electronic health record data sources need to be enhanced with better structured data so that these can be re-used for research purposes. With this kind of data, systems such as the EHR4CR are able to provide accurate objective patient counts in a more efficient way than the current methods. Additional research using both structured and unstructured data search technology is needed to assess the value of unstructured data and to compare the amount of efforts needed for data preparation. ">
 
   
-  <link rel="alternate" hreflang="fr" href="https://www.coreds.com/publication/2015-05-01_efficiency_and_effec/">
+  <link rel="alternate" hreflang="fr" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2015-05-01_efficiency_and_effec/">
 
   
 
@@ -66,7 +66,7 @@
   
   
   
-  <script src="/js/mathjax-config.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/mathjax-config.js"></script>
   
 
   
@@ -241,13 +241,51 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.css">
+  <link rel="stylesheet" href="https://consultation-recherche-donnees-sante.netlify.app/css/wowchemy.css">
 
   
 
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-80B5KND2Y6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-80B5KND2Y6', { 'anonymize_ip': true });
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
   
@@ -258,11 +296,11 @@
 
   
 
-  <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
+  <link rel="manifest" href="https://consultation-recherche-donnees-sante.netlify.app/index.webmanifest">
+  <link rel="icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="https://www.coreds.com/publication/2015-05-01_efficiency_and_effec/">
+  <link rel="canonical" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2015-05-01_efficiency_and_effec/">
 
   
   
@@ -278,10 +316,10 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:url" content="https://www.coreds.com/publication/2015-05-01_efficiency_and_effec/">
+  <meta property="og:url" content="https://consultation-recherche-donnees-sante.netlify.app/publication/2015-05-01_efficiency_and_effec/">
   <meta property="og:title" content="Efficiency and effectiveness evaluation of an automated multi-country patient count cohort system. | Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:description" content="BACKGROUND:With the increase of clinical trial costs during the last decades, the design of feasibility studies has become an essential process to reduce avoidable and costly protocol amendments. This design includes timelines, targeted sites and budget, together with a list of eligibility criteria that potential participants need to match. The present work was designed to assess the value of obtaining potential study participant counts using an automated patient count cohort system for large multi-country and multi-site trials: the Electronic Health Records for Clinical Research (EHR4CR) system.METHODS:The evaluation focuses on the accuracy of the patient counts and the time invested to obtain these using the EHR4CR platform compared to the current questionnaire based process. This evaluation will assess the patient counts from ten clinical trials at two different sites. In order to assess the accuracy of the results, the numbers obtained following the two processes need to be compared to a baseline number, the &amp;quot;alloyed&amp;quot; gold standard, which was produced by a manual check of patient records.RESULTS:The patient counts obtained using the EHR4CR system were in three evaluated trials more accurate than the ones obtained following the current process whereas in six other trials the current process counts were more accurate. In two of the trials both of the processes had counts within the gold standard&#39;s confidence interval. In terms of efficiency the EHR4CR protocol feasibility system proved to save approximately seven calendar days in the process of obtaining patient counts compared to the current manual process.CONCLUSIONS:At the current stage, electronic health record data sources need to be enhanced with better structured data so that these can be re-used for research purposes. With this kind of data, systems such as the EHR4CR are able to provide accurate objective patient counts in a more efficient way than the current methods. Additional research using both structured and unstructured data search technology is needed to assess the value of unstructured data and to compare the amount of efforts needed for data preparation. "><meta property="og:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
-  <meta property="twitter:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
+  <meta property="og:description" content="BACKGROUND:With the increase of clinical trial costs during the last decades, the design of feasibility studies has become an essential process to reduce avoidable and costly protocol amendments. This design includes timelines, targeted sites and budget, together with a list of eligibility criteria that potential participants need to match. The present work was designed to assess the value of obtaining potential study participant counts using an automated patient count cohort system for large multi-country and multi-site trials: the Electronic Health Records for Clinical Research (EHR4CR) system.METHODS:The evaluation focuses on the accuracy of the patient counts and the time invested to obtain these using the EHR4CR platform compared to the current questionnaire based process. This evaluation will assess the patient counts from ten clinical trials at two different sites. In order to assess the accuracy of the results, the numbers obtained following the two processes need to be compared to a baseline number, the &amp;quot;alloyed&amp;quot; gold standard, which was produced by a manual check of patient records.RESULTS:The patient counts obtained using the EHR4CR system were in three evaluated trials more accurate than the ones obtained following the current process whereas in six other trials the current process counts were more accurate. In two of the trials both of the processes had counts within the gold standard&#39;s confidence interval. In terms of efficiency the EHR4CR protocol feasibility system proved to save approximately seven calendar days in the process of obtaining patient counts compared to the current manual process.CONCLUSIONS:At the current stage, electronic health record data sources need to be enhanced with better structured data so that these can be re-used for research purposes. With this kind of data, systems such as the EHR4CR are able to provide accurate objective patient counts in a more efficient way than the current methods. Additional research using both structured and unstructured data search technology is needed to assess the value of unstructured data and to compare the amount of efforts needed for data preparation. "><meta property="og:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
+  <meta property="twitter:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
   
     
       <meta property="article:published_time" content="2015-05-01T00:00:00&#43;00:00">
@@ -308,7 +346,7 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://www.coreds.com/publication/2015-05-01_efficiency_and_effec/"
+    "@id": "https://consultation-recherche-donnees-sante.netlify.app/publication/2015-05-01_efficiency_and_effec/"
   },
   "headline": "Efficiency and effectiveness evaluation of an automated multi-country patient count cohort system.",
   
@@ -325,7 +363,7 @@
     "name": "Consultation Recherche Données de Santé - CoReDS",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
+      "url": "https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
     }
   },
   "description": "BACKGROUND:With the increase of clinical trial costs during the last decades, the design of feasibility studies has become an essential process to reduce avoidable and costly protocol amendments. This design includes timelines, targeted sites and budget, together with a list of eligibility criteria that potential participants need to match. The present work was designed to assess the value of obtaining potential study participant counts using an automated patient count cohort system for large multi-country and multi-site trials: the Electronic Health Records for Clinical Research (EHR4CR) system.METHODS:The evaluation focuses on the accuracy of the patient counts and the time invested to obtain these using the EHR4CR platform compared to the current questionnaire based process. This evaluation will assess the patient counts from ten clinical trials at two different sites. In order to assess the accuracy of the results, the numbers obtained following the two processes need to be compared to a baseline number, the \u0026quot;alloyed\u0026quot; gold standard, which was produced by a manual check of patient records.RESULTS:The patient counts obtained using the EHR4CR system were in three evaluated trials more accurate than the ones obtained following the current process whereas in six other trials the current process counts were more accurate. In two of the trials both of the processes had counts within the gold standard's confidence interval. In terms of efficiency the EHR4CR protocol feasibility system proved to save approximately seven calendar days in the process of obtaining patient counts compared to the current manual process.CONCLUSIONS:At the current stage, electronic health record data sources need to be enhanced with better structured data so that these can be re-used for research purposes. With this kind of data, systems such as the EHR4CR are able to provide accurate objective patient counts in a more efficient way than the current methods. Additional research using both structured and unstructured data search technology is needed to assess the value of unstructured data and to compare the amount of efforts needed for data preparation. "
@@ -390,7 +428,7 @@
     <script>const isSiteThemeDark = false;</script>
   
   
-  <script src="/js/load-theme.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/load-theme.js"></script>
 
   <aside class="search-results" id="search">
   <div class="container">
@@ -445,7 +483,7 @@
 
     
     <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -458,7 +496,7 @@
 
     
     <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -494,7 +532,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/entreprendre/"><span>Commencer un projet</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/entreprendre/"><span>Commencer un projet</span></a>
         </li>
 
         
@@ -524,44 +562,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/suivremonprojet/"><span>Suivre son projet</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-            
-            
-            
-              
-            
-            
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#outils"><span>Boite à outils</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/suivremonprojet/"><span>Suivre son projet</span></a>
         </li>
 
         
@@ -598,7 +599,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#publi"><span>Publications</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#outils"><span>Boite à outils</span></a>
         </li>
 
         
@@ -635,7 +636,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#transparence"><span>Portail de transparence</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#publi"><span>Publications</span></a>
         </li>
 
         
@@ -672,7 +673,44 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#people"><span>Qui sommes-nous ?</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#transparence"><span>Portail de transparence</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#people"><span>Qui sommes-nous ?</span></a>
         </li>
 
         
@@ -745,7 +783,7 @@
     
 
   
-  <span ><a href="/author/soto-rey-inaki/">Soto-Rey Inaki</a></span>, <span ><a href="/author/trinczek-benjamin/">Trinczek Benjamin</a></span>, <span ><a href="/author/girardeau-yannick/">Girardeau Yannick</a></span>, <span ><a href="/author/zapletal-eric/">Zapletal Eric</a></span>, <span ><a href="/author/ammour-nadir/">Ammour Nadir</a></span>, <span ><a href="/author/doods-justin/">Doods Justin</a></span>, <span ><a href="/author/dugas-martin/">Dugas Martin</a></span>, <span ><a href="/author/fritz-fleur/">Fritz Fleur</a></span>
+  <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/soto-rey-inaki/">Soto-Rey Inaki</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/trinczek-benjamin/">Trinczek Benjamin</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/girardeau-yannick/">Girardeau Yannick</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/zapletal-eric/">Zapletal Eric</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/ammour-nadir/">Ammour Nadir</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/doods-justin/">Doods Justin</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/dugas-martin/">Dugas Martin</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/fritz-fleur/">Fritz Fleur</a></span>
   </div>
   
   
@@ -811,7 +849,7 @@
           <div class="col-12 col-md-9">
             
             
-            <a href="/publication/#2">
+            <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/#2">
               Article de revue
             </a>
             
@@ -870,7 +908,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://www.coreds.com/publication/2015-05-01_efficiency_and_effec/&amp;text=Efficiency%20and%20effectiveness%20evaluation%20of%20an%20automated%20multi-country%20patient%20count%20cohort%20system." target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2015-05-01_efficiency_and_effec/&amp;text=Efficiency%20and%20effectiveness%20evaluation%20of%20an%20automated%20multi-country%20patient%20count%20cohort%20system." target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -883,7 +921,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://www.coreds.com/publication/2015-05-01_efficiency_and_effec/&amp;t=Efficiency%20and%20effectiveness%20evaluation%20of%20an%20automated%20multi-country%20patient%20count%20cohort%20system." target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://consultation-recherche-donnees-sante.netlify.app/publication/2015-05-01_efficiency_and_effec/&amp;t=Efficiency%20and%20effectiveness%20evaluation%20of%20an%20automated%20multi-country%20patient%20count%20cohort%20system." target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -896,7 +934,7 @@
       
       
       <li>
-        <a href="mailto:?subject=Efficiency%20and%20effectiveness%20evaluation%20of%20an%20automated%20multi-country%20patient%20count%20cohort%20system.&amp;body=https://www.coreds.com/publication/2015-05-01_efficiency_and_effec/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=Efficiency%20and%20effectiveness%20evaluation%20of%20an%20automated%20multi-country%20patient%20count%20cohort%20system.&amp;body=https://consultation-recherche-donnees-sante.netlify.app/publication/2015-05-01_efficiency_and_effec/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -909,7 +947,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://www.coreds.com/publication/2015-05-01_efficiency_and_effec/&amp;title=Efficiency%20and%20effectiveness%20evaluation%20of%20an%20automated%20multi-country%20patient%20count%20cohort%20system." target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2015-05-01_efficiency_and_effec/&amp;title=Efficiency%20and%20effectiveness%20evaluation%20of%20an%20automated%20multi-country%20patient%20count%20cohort%20system." target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -922,7 +960,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=Efficiency%20and%20effectiveness%20evaluation%20of%20an%20automated%20multi-country%20patient%20count%20cohort%20system.%20https://www.coreds.com/publication/2015-05-01_efficiency_and_effec/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=Efficiency%20and%20effectiveness%20evaluation%20of%20an%20automated%20multi-country%20patient%20count%20cohort%20system.%20https://consultation-recherche-donnees-sante.netlify.app/publication/2015-05-01_efficiency_and_effec/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -935,7 +973,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://www.coreds.com/publication/2015-05-01_efficiency_and_effec/&amp;title=Efficiency%20and%20effectiveness%20evaluation%20of%20an%20automated%20multi-country%20patient%20count%20cohort%20system." target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2015-05-01_efficiency_and_effec/&amp;title=Efficiency%20and%20effectiveness%20evaluation%20of%20an%20automated%20multi-country%20patient%20count%20cohort%20system." target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1023,7 +1061,7 @@
     <h3>Sur le même sujet</h3>
     <ul>
       
-      <li><a href="/publication/2017-02-01_leveraging_the_ehr4c/">Leveraging the EHR4CR platform to support patient inclusion in academic studies: challenges and lessons learned.</a></li>
+      <li><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2017-02-01_leveraging_the_ehr4c/">Leveraging the EHR4CR platform to support patient inclusion in academic studies: challenges and lessons learned.</a></li>
       
     </ul>
   </div>
@@ -1207,7 +1245,7 @@
     
     
     
-    <script src="/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
+    <script src="https://consultation-recherche-donnees-sante.netlify.app/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
 
     
 

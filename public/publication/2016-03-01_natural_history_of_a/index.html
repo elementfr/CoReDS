@@ -37,7 +37,7 @@
   <meta name="description" content="OBJECTIVE:The aim of this study was to analyze the adjustable gastric banding (AGB) natural history on a national basis.BACKGROUND:Adjustable gastric banding represented the most common bariatric procedure in France until 2010. Since then, the number of AGBs has decreased and the rate of band removal and revisional surgeries has progressively increased.METHODS:For analysis, we included all adult patients operated on with AGB in France between 2007 and 2013. Data were extracted from a national administrative database (&amp;quot;Programme De Médicalisation des Systèmes d&#39;Information,&amp;quot; PMSI), which is an exhaustive source of all surgical procedures performed in France. The Cox proportional hazard model was used to test univariate and multivariate associations with band survival and revisional rate. To control for center-specific effects, we performed a frailty analysis, in which each center was assumed to have a random effect indicating the possibility of different baseline risks for patients at different centers.RESULTS:During the study period, 52,868 patients underwent AGB, and 10,815 bands were removed. The removal rate at 5, 6, and 7 years was 28%, 34%, and 40%, respectively. Female sex, body mass index &amp;gt;50 kg/m, type 2 diabetes, hypertension, dyslipidemia, and sleep apnea were found to be significantly associated with band removal by multivariate analysis. A significant center effect was also found, but this did not change the impact of the highly significant factors already identified. After band removal, the median time to revisional surgery was 1 year (95% confidence interval 1.0-1.1) and the conversion rate at 7 years was 71%.CONCLUSIONS:With a removal rate of about 6% annually and the need for revisional surgery for more than two-thirds of patients after removal, AGB does not appear to provide a long-term solution for obesity. ">
 
   
-  <link rel="alternate" hreflang="fr" href="https://www.coreds.com/publication/2016-03-01_natural_history_of_a/">
+  <link rel="alternate" hreflang="fr" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2016-03-01_natural_history_of_a/">
 
   
 
@@ -66,7 +66,7 @@
   
   
   
-  <script src="/js/mathjax-config.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/mathjax-config.js"></script>
   
 
   
@@ -241,13 +241,51 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.css">
+  <link rel="stylesheet" href="https://consultation-recherche-donnees-sante.netlify.app/css/wowchemy.css">
 
   
 
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-80B5KND2Y6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-80B5KND2Y6', { 'anonymize_ip': true });
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
   
@@ -258,11 +296,11 @@
 
   
 
-  <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
+  <link rel="manifest" href="https://consultation-recherche-donnees-sante.netlify.app/index.webmanifest">
+  <link rel="icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="https://www.coreds.com/publication/2016-03-01_natural_history_of_a/">
+  <link rel="canonical" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2016-03-01_natural_history_of_a/">
 
   
   
@@ -278,10 +316,10 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:url" content="https://www.coreds.com/publication/2016-03-01_natural_history_of_a/">
+  <meta property="og:url" content="https://consultation-recherche-donnees-sante.netlify.app/publication/2016-03-01_natural_history_of_a/">
   <meta property="og:title" content="Natural History of Adjustable Gastric Banding: Lifespan and Revisional Rate: A Nationwide Study on Administrative Data on 53,000 Patients. | Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:description" content="OBJECTIVE:The aim of this study was to analyze the adjustable gastric banding (AGB) natural history on a national basis.BACKGROUND:Adjustable gastric banding represented the most common bariatric procedure in France until 2010. Since then, the number of AGBs has decreased and the rate of band removal and revisional surgeries has progressively increased.METHODS:For analysis, we included all adult patients operated on with AGB in France between 2007 and 2013. Data were extracted from a national administrative database (&amp;quot;Programme De Médicalisation des Systèmes d&#39;Information,&amp;quot; PMSI), which is an exhaustive source of all surgical procedures performed in France. The Cox proportional hazard model was used to test univariate and multivariate associations with band survival and revisional rate. To control for center-specific effects, we performed a frailty analysis, in which each center was assumed to have a random effect indicating the possibility of different baseline risks for patients at different centers.RESULTS:During the study period, 52,868 patients underwent AGB, and 10,815 bands were removed. The removal rate at 5, 6, and 7 years was 28%, 34%, and 40%, respectively. Female sex, body mass index &amp;gt;50 kg/m, type 2 diabetes, hypertension, dyslipidemia, and sleep apnea were found to be significantly associated with band removal by multivariate analysis. A significant center effect was also found, but this did not change the impact of the highly significant factors already identified. After band removal, the median time to revisional surgery was 1 year (95% confidence interval 1.0-1.1) and the conversion rate at 7 years was 71%.CONCLUSIONS:With a removal rate of about 6% annually and the need for revisional surgery for more than two-thirds of patients after removal, AGB does not appear to provide a long-term solution for obesity. "><meta property="og:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
-  <meta property="twitter:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
+  <meta property="og:description" content="OBJECTIVE:The aim of this study was to analyze the adjustable gastric banding (AGB) natural history on a national basis.BACKGROUND:Adjustable gastric banding represented the most common bariatric procedure in France until 2010. Since then, the number of AGBs has decreased and the rate of band removal and revisional surgeries has progressively increased.METHODS:For analysis, we included all adult patients operated on with AGB in France between 2007 and 2013. Data were extracted from a national administrative database (&amp;quot;Programme De Médicalisation des Systèmes d&#39;Information,&amp;quot; PMSI), which is an exhaustive source of all surgical procedures performed in France. The Cox proportional hazard model was used to test univariate and multivariate associations with band survival and revisional rate. To control for center-specific effects, we performed a frailty analysis, in which each center was assumed to have a random effect indicating the possibility of different baseline risks for patients at different centers.RESULTS:During the study period, 52,868 patients underwent AGB, and 10,815 bands were removed. The removal rate at 5, 6, and 7 years was 28%, 34%, and 40%, respectively. Female sex, body mass index &amp;gt;50 kg/m, type 2 diabetes, hypertension, dyslipidemia, and sleep apnea were found to be significantly associated with band removal by multivariate analysis. A significant center effect was also found, but this did not change the impact of the highly significant factors already identified. After band removal, the median time to revisional surgery was 1 year (95% confidence interval 1.0-1.1) and the conversion rate at 7 years was 71%.CONCLUSIONS:With a removal rate of about 6% annually and the need for revisional surgery for more than two-thirds of patients after removal, AGB does not appear to provide a long-term solution for obesity. "><meta property="og:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
+  <meta property="twitter:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
   
     
       <meta property="article:published_time" content="2016-03-01T00:00:00&#43;00:00">
@@ -308,7 +346,7 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://www.coreds.com/publication/2016-03-01_natural_history_of_a/"
+    "@id": "https://consultation-recherche-donnees-sante.netlify.app/publication/2016-03-01_natural_history_of_a/"
   },
   "headline": "Natural History of Adjustable Gastric Banding: Lifespan and Revisional Rate: A Nationwide Study on Administrative Data on 53,000 Patients.",
   
@@ -325,7 +363,7 @@
     "name": "Consultation Recherche Données de Santé - CoReDS",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
+      "url": "https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
     }
   },
   "description": "OBJECTIVE:The aim of this study was to analyze the adjustable gastric banding (AGB) natural history on a national basis.BACKGROUND:Adjustable gastric banding represented the most common bariatric procedure in France until 2010. Since then, the number of AGBs has decreased and the rate of band removal and revisional surgeries has progressively increased.METHODS:For analysis, we included all adult patients operated on with AGB in France between 2007 and 2013. Data were extracted from a national administrative database (\u0026quot;Programme De Médicalisation des Systèmes d'Information,\u0026quot; PMSI), which is an exhaustive source of all surgical procedures performed in France. The Cox proportional hazard model was used to test univariate and multivariate associations with band survival and revisional rate. To control for center-specific effects, we performed a frailty analysis, in which each center was assumed to have a random effect indicating the possibility of different baseline risks for patients at different centers.RESULTS:During the study period, 52,868 patients underwent AGB, and 10,815 bands were removed. The removal rate at 5, 6, and 7 years was 28%, 34%, and 40%, respectively. Female sex, body mass index \u0026gt;50 kg/m, type 2 diabetes, hypertension, dyslipidemia, and sleep apnea were found to be significantly associated with band removal by multivariate analysis. A significant center effect was also found, but this did not change the impact of the highly significant factors already identified. After band removal, the median time to revisional surgery was 1 year (95% confidence interval 1.0-1.1) and the conversion rate at 7 years was 71%.CONCLUSIONS:With a removal rate of about 6% annually and the need for revisional surgery for more than two-thirds of patients after removal, AGB does not appear to provide a long-term solution for obesity. "
@@ -390,7 +428,7 @@
     <script>const isSiteThemeDark = false;</script>
   
   
-  <script src="/js/load-theme.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/load-theme.js"></script>
 
   <aside class="search-results" id="search">
   <div class="container">
@@ -445,7 +483,7 @@
 
     
     <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -458,7 +496,7 @@
 
     
     <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -494,7 +532,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/entreprendre/"><span>Commencer un projet</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/entreprendre/"><span>Commencer un projet</span></a>
         </li>
 
         
@@ -524,44 +562,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/suivremonprojet/"><span>Suivre son projet</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-            
-            
-            
-              
-            
-            
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#outils"><span>Boite à outils</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/suivremonprojet/"><span>Suivre son projet</span></a>
         </li>
 
         
@@ -598,7 +599,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#publi"><span>Publications</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#outils"><span>Boite à outils</span></a>
         </li>
 
         
@@ -635,7 +636,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#transparence"><span>Portail de transparence</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#publi"><span>Publications</span></a>
         </li>
 
         
@@ -672,7 +673,44 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#people"><span>Qui sommes-nous ?</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#transparence"><span>Portail de transparence</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#people"><span>Qui sommes-nous ?</span></a>
         </li>
 
         
@@ -745,7 +783,7 @@
     
 
   
-  <span ><a href="/author/lazzati-andrea/">Lazzati Andrea</a></span>, <span ><a href="/author/de-antonio-marie/">De Antonio Marie</a></span>, <span ><a href="/author/paolino-luca/">Paolino Luca</a></span>, <span ><a href="/author/martini-francesco/">Martini Francesco</a></span>, <span ><a href="/author/azoulay-daniel/">Azoulay Daniel</a></span>, <span ><a href="/author/iannelli-antonio/">Iannelli Antonio</a></span>, <span ><a href="/author/katsahian-sandrine/">Katsahian Sandrine</a></span>
+  <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/lazzati-andrea/">Lazzati Andrea</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/de-antonio-marie/">De Antonio Marie</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/paolino-luca/">Paolino Luca</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/martini-francesco/">Martini Francesco</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/azoulay-daniel/">Azoulay Daniel</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/iannelli-antonio/">Iannelli Antonio</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/katsahian-sandrine/">Katsahian Sandrine</a></span>
   </div>
   
   
@@ -811,7 +849,7 @@
           <div class="col-12 col-md-9">
             
             
-            <a href="/publication/#2">
+            <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/#2">
               Article de revue
             </a>
             
@@ -870,7 +908,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://www.coreds.com/publication/2016-03-01_natural_history_of_a/&amp;text=Natural%20History%20of%20Adjustable%20Gastric%20Banding:%20Lifespan%20and%20Revisional%20Rate:%20A%20Nationwide%20Study%20on%20Administrative%20Data%20on%2053,000%20Patients." target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2016-03-01_natural_history_of_a/&amp;text=Natural%20History%20of%20Adjustable%20Gastric%20Banding:%20Lifespan%20and%20Revisional%20Rate:%20A%20Nationwide%20Study%20on%20Administrative%20Data%20on%2053,000%20Patients." target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -883,7 +921,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://www.coreds.com/publication/2016-03-01_natural_history_of_a/&amp;t=Natural%20History%20of%20Adjustable%20Gastric%20Banding:%20Lifespan%20and%20Revisional%20Rate:%20A%20Nationwide%20Study%20on%20Administrative%20Data%20on%2053,000%20Patients." target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://consultation-recherche-donnees-sante.netlify.app/publication/2016-03-01_natural_history_of_a/&amp;t=Natural%20History%20of%20Adjustable%20Gastric%20Banding:%20Lifespan%20and%20Revisional%20Rate:%20A%20Nationwide%20Study%20on%20Administrative%20Data%20on%2053,000%20Patients." target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -896,7 +934,7 @@
       
       
       <li>
-        <a href="mailto:?subject=Natural%20History%20of%20Adjustable%20Gastric%20Banding:%20Lifespan%20and%20Revisional%20Rate:%20A%20Nationwide%20Study%20on%20Administrative%20Data%20on%2053,000%20Patients.&amp;body=https://www.coreds.com/publication/2016-03-01_natural_history_of_a/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=Natural%20History%20of%20Adjustable%20Gastric%20Banding:%20Lifespan%20and%20Revisional%20Rate:%20A%20Nationwide%20Study%20on%20Administrative%20Data%20on%2053,000%20Patients.&amp;body=https://consultation-recherche-donnees-sante.netlify.app/publication/2016-03-01_natural_history_of_a/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -909,7 +947,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://www.coreds.com/publication/2016-03-01_natural_history_of_a/&amp;title=Natural%20History%20of%20Adjustable%20Gastric%20Banding:%20Lifespan%20and%20Revisional%20Rate:%20A%20Nationwide%20Study%20on%20Administrative%20Data%20on%2053,000%20Patients." target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2016-03-01_natural_history_of_a/&amp;title=Natural%20History%20of%20Adjustable%20Gastric%20Banding:%20Lifespan%20and%20Revisional%20Rate:%20A%20Nationwide%20Study%20on%20Administrative%20Data%20on%2053,000%20Patients." target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -922,7 +960,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=Natural%20History%20of%20Adjustable%20Gastric%20Banding:%20Lifespan%20and%20Revisional%20Rate:%20A%20Nationwide%20Study%20on%20Administrative%20Data%20on%2053,000%20Patients.%20https://www.coreds.com/publication/2016-03-01_natural_history_of_a/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=Natural%20History%20of%20Adjustable%20Gastric%20Banding:%20Lifespan%20and%20Revisional%20Rate:%20A%20Nationwide%20Study%20on%20Administrative%20Data%20on%2053,000%20Patients.%20https://consultation-recherche-donnees-sante.netlify.app/publication/2016-03-01_natural_history_of_a/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -935,7 +973,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://www.coreds.com/publication/2016-03-01_natural_history_of_a/&amp;title=Natural%20History%20of%20Adjustable%20Gastric%20Banding:%20Lifespan%20and%20Revisional%20Rate:%20A%20Nationwide%20Study%20on%20Administrative%20Data%20on%2053,000%20Patients." target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2016-03-01_natural_history_of_a/&amp;title=Natural%20History%20of%20Adjustable%20Gastric%20Banding:%20Lifespan%20and%20Revisional%20Rate:%20A%20Nationwide%20Study%20on%20Administrative%20Data%20on%2053,000%20Patients." target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1017,7 +1055,7 @@
     <h3>Sur le même sujet</h3>
     <ul>
       
-      <li><a href="/publication/2016-11-01_publication_trends_i/">Publication Trends in Bariatric Surgery: a Bibliometric Study.</a></li>
+      <li><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2016-11-01_publication_trends_i/">Publication Trends in Bariatric Surgery: a Bibliometric Study.</a></li>
       
     </ul>
   </div>
@@ -1201,7 +1239,7 @@
     
     
     
-    <script src="/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
+    <script src="https://consultation-recherche-donnees-sante.netlify.app/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
 
     
 

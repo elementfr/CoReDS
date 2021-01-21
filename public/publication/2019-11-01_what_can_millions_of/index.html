@@ -37,7 +37,7 @@
   <meta name="description" content="OBJECTIVE:To identify common temporal evolution profiles in biological data and propose a semi-automated method to these patterns in a clinical data warehouse (CDW).MATERIALS AND METHODS:We leveraged the CDW of the European Hospital Georges Pompidou and tracked the evolution of 192 biological parameters over a period of 17 years (for 445,000 &#43; patients, and 131 million laboratory test results).RESULTS:We identified three common profiles of evolution: discretization, breakpoints, and trends. We developed computational and statistical methods to identify these profiles in the CDW. Overall, of the 192 observed biological parameters (87,814,136 values), 135 presented at least one evolution. We identified breakpoints in 30 distinct parameters, discretizations in 32, and trends in 79.DISCUSSION AND CONCLUSIONS:our method allowed the identification of several temporal events in the data. Considering the distribution over time of these events, we identified probable causes for the observed profiles: instruments or software upgrades and changes in computation formulas. We evaluated the potential impact for data reuse. Finally, we formulated recommendations to enable safe use and sharing of biological data collection to limit the impact of data evolution in retrospective and federated studies (e.g. the annotation of laboratory parameters presenting breakpoints or trends). ">
 
   
-  <link rel="alternate" hreflang="fr" href="https://www.coreds.com/publication/2019-11-01_what_can_millions_of/">
+  <link rel="alternate" hreflang="fr" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2019-11-01_what_can_millions_of/">
 
   
 
@@ -66,7 +66,7 @@
   
   
   
-  <script src="/js/mathjax-config.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/mathjax-config.js"></script>
   
 
   
@@ -241,13 +241,51 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.css">
+  <link rel="stylesheet" href="https://consultation-recherche-donnees-sante.netlify.app/css/wowchemy.css">
 
   
 
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-80B5KND2Y6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-80B5KND2Y6', { 'anonymize_ip': true });
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
   
@@ -258,11 +296,11 @@
 
   
 
-  <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
+  <link rel="manifest" href="https://consultation-recherche-donnees-sante.netlify.app/index.webmanifest">
+  <link rel="icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="https://www.coreds.com/publication/2019-11-01_what_can_millions_of/">
+  <link rel="canonical" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2019-11-01_what_can_millions_of/">
 
   
   
@@ -278,10 +316,10 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:url" content="https://www.coreds.com/publication/2019-11-01_what_can_millions_of/">
+  <meta property="og:url" content="https://consultation-recherche-donnees-sante.netlify.app/publication/2019-11-01_what_can_millions_of/">
   <meta property="og:title" content="What can millions of laboratory test results tell us about the temporal aspect of data quality? Study of data spanning 17 years in a clinical data warehouse. | Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:description" content="OBJECTIVE:To identify common temporal evolution profiles in biological data and propose a semi-automated method to these patterns in a clinical data warehouse (CDW).MATERIALS AND METHODS:We leveraged the CDW of the European Hospital Georges Pompidou and tracked the evolution of 192 biological parameters over a period of 17 years (for 445,000 &#43; patients, and 131 million laboratory test results).RESULTS:We identified three common profiles of evolution: discretization, breakpoints, and trends. We developed computational and statistical methods to identify these profiles in the CDW. Overall, of the 192 observed biological parameters (87,814,136 values), 135 presented at least one evolution. We identified breakpoints in 30 distinct parameters, discretizations in 32, and trends in 79.DISCUSSION AND CONCLUSIONS:our method allowed the identification of several temporal events in the data. Considering the distribution over time of these events, we identified probable causes for the observed profiles: instruments or software upgrades and changes in computation formulas. We evaluated the potential impact for data reuse. Finally, we formulated recommendations to enable safe use and sharing of biological data collection to limit the impact of data evolution in retrospective and federated studies (e.g. the annotation of laboratory parameters presenting breakpoints or trends). "><meta property="og:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
-  <meta property="twitter:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
+  <meta property="og:description" content="OBJECTIVE:To identify common temporal evolution profiles in biological data and propose a semi-automated method to these patterns in a clinical data warehouse (CDW).MATERIALS AND METHODS:We leveraged the CDW of the European Hospital Georges Pompidou and tracked the evolution of 192 biological parameters over a period of 17 years (for 445,000 &#43; patients, and 131 million laboratory test results).RESULTS:We identified three common profiles of evolution: discretization, breakpoints, and trends. We developed computational and statistical methods to identify these profiles in the CDW. Overall, of the 192 observed biological parameters (87,814,136 values), 135 presented at least one evolution. We identified breakpoints in 30 distinct parameters, discretizations in 32, and trends in 79.DISCUSSION AND CONCLUSIONS:our method allowed the identification of several temporal events in the data. Considering the distribution over time of these events, we identified probable causes for the observed profiles: instruments or software upgrades and changes in computation formulas. We evaluated the potential impact for data reuse. Finally, we formulated recommendations to enable safe use and sharing of biological data collection to limit the impact of data evolution in retrospective and federated studies (e.g. the annotation of laboratory parameters presenting breakpoints or trends). "><meta property="og:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
+  <meta property="twitter:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
   
     
       <meta property="article:published_time" content="2019-11-01T00:00:00&#43;00:00">
@@ -308,7 +346,7 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://www.coreds.com/publication/2019-11-01_what_can_millions_of/"
+    "@id": "https://consultation-recherche-donnees-sante.netlify.app/publication/2019-11-01_what_can_millions_of/"
   },
   "headline": "What can millions of laboratory test results tell us about the temporal aspect of data quality? Study of data spanning 17 years in a clinical data warehouse.",
   
@@ -325,7 +363,7 @@
     "name": "Consultation Recherche Données de Santé - CoReDS",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
+      "url": "https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
     }
   },
   "description": "OBJECTIVE:To identify common temporal evolution profiles in biological data and propose a semi-automated method to these patterns in a clinical data warehouse (CDW).MATERIALS AND METHODS:We leveraged the CDW of the European Hospital Georges Pompidou and tracked the evolution of 192 biological parameters over a period of 17 years (for 445,000 + patients, and 131 million laboratory test results).RESULTS:We identified three common profiles of evolution: discretization, breakpoints, and trends. We developed computational and statistical methods to identify these profiles in the CDW. Overall, of the 192 observed biological parameters (87,814,136 values), 135 presented at least one evolution. We identified breakpoints in 30 distinct parameters, discretizations in 32, and trends in 79.DISCUSSION AND CONCLUSIONS:our method allowed the identification of several temporal events in the data. Considering the distribution over time of these events, we identified probable causes for the observed profiles: instruments or software upgrades and changes in computation formulas. We evaluated the potential impact for data reuse. Finally, we formulated recommendations to enable safe use and sharing of biological data collection to limit the impact of data evolution in retrospective and federated studies (e.g. the annotation of laboratory parameters presenting breakpoints or trends). "
@@ -390,7 +428,7 @@
     <script>const isSiteThemeDark = false;</script>
   
   
-  <script src="/js/load-theme.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/load-theme.js"></script>
 
   <aside class="search-results" id="search">
   <div class="container">
@@ -445,7 +483,7 @@
 
     
     <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -458,7 +496,7 @@
 
     
     <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -494,7 +532,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/entreprendre/"><span>Commencer un projet</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/entreprendre/"><span>Commencer un projet</span></a>
         </li>
 
         
@@ -524,44 +562,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/suivremonprojet/"><span>Suivre son projet</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-            
-            
-            
-              
-            
-            
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#outils"><span>Boite à outils</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/suivremonprojet/"><span>Suivre son projet</span></a>
         </li>
 
         
@@ -598,7 +599,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#publi"><span>Publications</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#outils"><span>Boite à outils</span></a>
         </li>
 
         
@@ -635,7 +636,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#transparence"><span>Portail de transparence</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#publi"><span>Publications</span></a>
         </li>
 
         
@@ -672,7 +673,44 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#people"><span>Qui sommes-nous ?</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#transparence"><span>Portail de transparence</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#people"><span>Qui sommes-nous ?</span></a>
         </li>
 
         
@@ -745,7 +783,7 @@
     
 
   
-  <span ><a href="/author/looten-vincent/">Looten Vincent</a></span>, <span ><a href="/author/kong-win-chang-liliane/">Kong Win Chang Liliane</a></span>, <span ><a href="/author/neuraz-antoine/">Neuraz Antoine</a></span>, <span ><a href="/author/landau-loriot-marie-anne/">Landau-Loriot Marie-Anne</a></span>, <span ><a href="/author/vedie-benoit/">Vedie Benoit</a></span>, <span ><a href="/author/paul-jean-louis/">Paul Jean-Louis</a></span>, <span ><a href="/author/mauge-laetitia/">Mauge Laetitia</a></span>, <span ><a href="/author/rivet-nadia/">Rivet Nadia</a></span>, <span ><a href="/author/bonifati-angela/">Bonifati Angela</a></span>, <span ><a href="/author/chatellier-gilles/">Chatellier Gilles</a></span>, <span ><a href="/author/burgun-anita/">Burgun Anita</a></span>, <span ><a href="/author/rance-bastien/">Rance Bastien</a></span>
+  <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/looten-vincent/">Looten Vincent</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/kong-win-chang-liliane/">Kong Win Chang Liliane</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/neuraz-antoine/">Neuraz Antoine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/landau-loriot-marie-anne/">Landau-Loriot Marie-Anne</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/vedie-benoit/">Vedie Benoit</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/paul-jean-louis/">Paul Jean-Louis</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/mauge-laetitia/">Mauge Laetitia</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/rivet-nadia/">Rivet Nadia</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/bonifati-angela/">Bonifati Angela</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/chatellier-gilles/">Chatellier Gilles</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/burgun-anita/">Burgun Anita</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/rance-bastien/">Rance Bastien</a></span>
   </div>
   
   
@@ -811,7 +849,7 @@
           <div class="col-12 col-md-9">
             
             
-            <a href="/publication/#2">
+            <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/#2">
               Article de revue
             </a>
             
@@ -870,7 +908,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://www.coreds.com/publication/2019-11-01_what_can_millions_of/&amp;text=What%20can%20millions%20of%20laboratory%20test%20results%20tell%20us%20about%20the%20temporal%20aspect%20of%20data%20quality?%20Study%20of%20data%20spanning%2017%20years%20in%20a%20clinical%20data%20warehouse." target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2019-11-01_what_can_millions_of/&amp;text=What%20can%20millions%20of%20laboratory%20test%20results%20tell%20us%20about%20the%20temporal%20aspect%20of%20data%20quality?%20Study%20of%20data%20spanning%2017%20years%20in%20a%20clinical%20data%20warehouse." target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -883,7 +921,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://www.coreds.com/publication/2019-11-01_what_can_millions_of/&amp;t=What%20can%20millions%20of%20laboratory%20test%20results%20tell%20us%20about%20the%20temporal%20aspect%20of%20data%20quality?%20Study%20of%20data%20spanning%2017%20years%20in%20a%20clinical%20data%20warehouse." target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://consultation-recherche-donnees-sante.netlify.app/publication/2019-11-01_what_can_millions_of/&amp;t=What%20can%20millions%20of%20laboratory%20test%20results%20tell%20us%20about%20the%20temporal%20aspect%20of%20data%20quality?%20Study%20of%20data%20spanning%2017%20years%20in%20a%20clinical%20data%20warehouse." target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -896,7 +934,7 @@
       
       
       <li>
-        <a href="mailto:?subject=What%20can%20millions%20of%20laboratory%20test%20results%20tell%20us%20about%20the%20temporal%20aspect%20of%20data%20quality?%20Study%20of%20data%20spanning%2017%20years%20in%20a%20clinical%20data%20warehouse.&amp;body=https://www.coreds.com/publication/2019-11-01_what_can_millions_of/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=What%20can%20millions%20of%20laboratory%20test%20results%20tell%20us%20about%20the%20temporal%20aspect%20of%20data%20quality?%20Study%20of%20data%20spanning%2017%20years%20in%20a%20clinical%20data%20warehouse.&amp;body=https://consultation-recherche-donnees-sante.netlify.app/publication/2019-11-01_what_can_millions_of/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -909,7 +947,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://www.coreds.com/publication/2019-11-01_what_can_millions_of/&amp;title=What%20can%20millions%20of%20laboratory%20test%20results%20tell%20us%20about%20the%20temporal%20aspect%20of%20data%20quality?%20Study%20of%20data%20spanning%2017%20years%20in%20a%20clinical%20data%20warehouse." target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2019-11-01_what_can_millions_of/&amp;title=What%20can%20millions%20of%20laboratory%20test%20results%20tell%20us%20about%20the%20temporal%20aspect%20of%20data%20quality?%20Study%20of%20data%20spanning%2017%20years%20in%20a%20clinical%20data%20warehouse." target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -922,7 +960,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=What%20can%20millions%20of%20laboratory%20test%20results%20tell%20us%20about%20the%20temporal%20aspect%20of%20data%20quality?%20Study%20of%20data%20spanning%2017%20years%20in%20a%20clinical%20data%20warehouse.%20https://www.coreds.com/publication/2019-11-01_what_can_millions_of/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=What%20can%20millions%20of%20laboratory%20test%20results%20tell%20us%20about%20the%20temporal%20aspect%20of%20data%20quality?%20Study%20of%20data%20spanning%2017%20years%20in%20a%20clinical%20data%20warehouse.%20https://consultation-recherche-donnees-sante.netlify.app/publication/2019-11-01_what_can_millions_of/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -935,7 +973,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://www.coreds.com/publication/2019-11-01_what_can_millions_of/&amp;title=What%20can%20millions%20of%20laboratory%20test%20results%20tell%20us%20about%20the%20temporal%20aspect%20of%20data%20quality?%20Study%20of%20data%20spanning%2017%20years%20in%20a%20clinical%20data%20warehouse." target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2019-11-01_what_can_millions_of/&amp;title=What%20can%20millions%20of%20laboratory%20test%20results%20tell%20us%20about%20the%20temporal%20aspect%20of%20data%20quality?%20Study%20of%20data%20spanning%2017%20years%20in%20a%20clinical%20data%20warehouse." target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1047,11 +1085,11 @@
     <h3>Sur le même sujet</h3>
     <ul>
       
-      <li><a href="/publication/2020-08-01_natural_language_pro/">Natural Language Processing for Rapid Response to Emergent Diseases: Case Study of Calcium Channel Blockers and Hypertension in the COVID-19 Pandemic.</a></li>
+      <li><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2020-08-01_natural_language_pro/">Natural Language Processing for Rapid Response to Emergent Diseases: Case Study of Calcium Channel Blockers and Hypertension in the COVID-19 Pandemic.</a></li>
       
-      <li><a href="/publication/2019-08-01_do_you_need_embeddin/">Do You Need Embeddings Trained on a Massive Specialized Corpus for Your Clinical Natural Language Processing Task?</a></li>
+      <li><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2019-08-01_do_you_need_embeddin/">Do You Need Embeddings Trained on a Massive Specialized Corpus for Your Clinical Natural Language Processing Task?</a></li>
       
-      <li><a href="/publication/2019-08-01_evaluating_the_impac/">Evaluating the Impact of Text Duplications on a Corpus of More than 600,000 Clinical Narratives in a French Hospital.</a></li>
+      <li><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2019-08-01_evaluating_the_impac/">Evaluating the Impact of Text Duplications on a Corpus of More than 600,000 Clinical Narratives in a French Hospital.</a></li>
       
     </ul>
   </div>
@@ -1235,7 +1273,7 @@
     
     
     
-    <script src="/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
+    <script src="https://consultation-recherche-donnees-sante.netlify.app/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
 
     
 

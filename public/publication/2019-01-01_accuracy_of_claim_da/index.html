@@ -37,7 +37,7 @@
   <meta name="description" content="BACKGROUND:The content of electronic medical records (EMRs) encompasses both structured data, such as billing codes, and unstructured data, including free-text reports. Epidemiological and clinical research into adult congenital heart disease (ACHD) increasingly relies on administrative claim data using the International Classification of Diseases (9th revision) (ICD-9). In France, administrative databases use ICD-10, the reliability of which is largely unknown in this context.AIMS NlmCategory=OBJECTIVE:To assess the accuracy of ICD-10 codes retrieved from administrative claim data in the identification and classification of ACHD.METHODS:We randomly included 6000 patients hospitalized at least once in 2000-2014 in a cardiology department with a dedicated specialized ACHD Unit. For each patient, the clinical diagnosis extracted from the EMR was compared with the assigned ICD-10 codes. Performance of ICD-10 codes in the identification and classification of ACHD was assessed by estimating sensitivity, specificity and positive predictive value.RESULTS:Among the 6000 patients included, 780 (13%) patients with ACHD were manually identified from EMRs (107,092 documents). ICD-10 codes correctly categorized 629 as having ACHD (sensitivity 0.81, 95% confidence interval 0.78-0.83), with a specificity of 0.99 (95% confidence interval 0.99-1). The performance of ICD-10 codes in correctly categorizing the ACHD defect subtype depended on the defect, with sensitivity ranging from 0 (e.g. unspecified congenital malformation of tricuspid valve) to 1 (e.g. common arterial trunk), and specificity ranging from 0.99 to 1.CONCLUSIONS:Administrative data using ICD-10 codes is a precise tool for detecting ACHD, and may be used to establish a national cohort. Mining free-text reports in addition to coded administrative data may offset the lack of sensitivity and accuracy when describing the spectrum of congenital heart disease using ICD-10 codes. ">
 
   
-  <link rel="alternate" hreflang="fr" href="https://www.coreds.com/publication/2019-01-01_accuracy_of_claim_da/">
+  <link rel="alternate" hreflang="fr" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2019-01-01_accuracy_of_claim_da/">
 
   
 
@@ -66,7 +66,7 @@
   
   
   
-  <script src="/js/mathjax-config.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/mathjax-config.js"></script>
   
 
   
@@ -241,13 +241,51 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.css">
+  <link rel="stylesheet" href="https://consultation-recherche-donnees-sante.netlify.app/css/wowchemy.css">
 
   
 
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-80B5KND2Y6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-80B5KND2Y6', { 'anonymize_ip': true });
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
   
@@ -258,11 +296,11 @@
 
   
 
-  <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
+  <link rel="manifest" href="https://consultation-recherche-donnees-sante.netlify.app/index.webmanifest">
+  <link rel="icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="https://www.coreds.com/publication/2019-01-01_accuracy_of_claim_da/">
+  <link rel="canonical" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2019-01-01_accuracy_of_claim_da/">
 
   
   
@@ -278,10 +316,10 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:url" content="https://www.coreds.com/publication/2019-01-01_accuracy_of_claim_da/">
+  <meta property="og:url" content="https://consultation-recherche-donnees-sante.netlify.app/publication/2019-01-01_accuracy_of_claim_da/">
   <meta property="og:title" content="Accuracy of claim data in the identification and classification of adults with congenital heart diseases in electronic medical records. | Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:description" content="BACKGROUND:The content of electronic medical records (EMRs) encompasses both structured data, such as billing codes, and unstructured data, including free-text reports. Epidemiological and clinical research into adult congenital heart disease (ACHD) increasingly relies on administrative claim data using the International Classification of Diseases (9th revision) (ICD-9). In France, administrative databases use ICD-10, the reliability of which is largely unknown in this context.AIMS NlmCategory=OBJECTIVE:To assess the accuracy of ICD-10 codes retrieved from administrative claim data in the identification and classification of ACHD.METHODS:We randomly included 6000 patients hospitalized at least once in 2000-2014 in a cardiology department with a dedicated specialized ACHD Unit. For each patient, the clinical diagnosis extracted from the EMR was compared with the assigned ICD-10 codes. Performance of ICD-10 codes in the identification and classification of ACHD was assessed by estimating sensitivity, specificity and positive predictive value.RESULTS:Among the 6000 patients included, 780 (13%) patients with ACHD were manually identified from EMRs (107,092 documents). ICD-10 codes correctly categorized 629 as having ACHD (sensitivity 0.81, 95% confidence interval 0.78-0.83), with a specificity of 0.99 (95% confidence interval 0.99-1). The performance of ICD-10 codes in correctly categorizing the ACHD defect subtype depended on the defect, with sensitivity ranging from 0 (e.g. unspecified congenital malformation of tricuspid valve) to 1 (e.g. common arterial trunk), and specificity ranging from 0.99 to 1.CONCLUSIONS:Administrative data using ICD-10 codes is a precise tool for detecting ACHD, and may be used to establish a national cohort. Mining free-text reports in addition to coded administrative data may offset the lack of sensitivity and accuracy when describing the spectrum of congenital heart disease using ICD-10 codes. "><meta property="og:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
-  <meta property="twitter:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
+  <meta property="og:description" content="BACKGROUND:The content of electronic medical records (EMRs) encompasses both structured data, such as billing codes, and unstructured data, including free-text reports. Epidemiological and clinical research into adult congenital heart disease (ACHD) increasingly relies on administrative claim data using the International Classification of Diseases (9th revision) (ICD-9). In France, administrative databases use ICD-10, the reliability of which is largely unknown in this context.AIMS NlmCategory=OBJECTIVE:To assess the accuracy of ICD-10 codes retrieved from administrative claim data in the identification and classification of ACHD.METHODS:We randomly included 6000 patients hospitalized at least once in 2000-2014 in a cardiology department with a dedicated specialized ACHD Unit. For each patient, the clinical diagnosis extracted from the EMR was compared with the assigned ICD-10 codes. Performance of ICD-10 codes in the identification and classification of ACHD was assessed by estimating sensitivity, specificity and positive predictive value.RESULTS:Among the 6000 patients included, 780 (13%) patients with ACHD were manually identified from EMRs (107,092 documents). ICD-10 codes correctly categorized 629 as having ACHD (sensitivity 0.81, 95% confidence interval 0.78-0.83), with a specificity of 0.99 (95% confidence interval 0.99-1). The performance of ICD-10 codes in correctly categorizing the ACHD defect subtype depended on the defect, with sensitivity ranging from 0 (e.g. unspecified congenital malformation of tricuspid valve) to 1 (e.g. common arterial trunk), and specificity ranging from 0.99 to 1.CONCLUSIONS:Administrative data using ICD-10 codes is a precise tool for detecting ACHD, and may be used to establish a national cohort. Mining free-text reports in addition to coded administrative data may offset the lack of sensitivity and accuracy when describing the spectrum of congenital heart disease using ICD-10 codes. "><meta property="og:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
+  <meta property="twitter:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
   
     
       <meta property="article:published_time" content="2019-01-01T00:00:00&#43;00:00">
@@ -308,7 +346,7 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://www.coreds.com/publication/2019-01-01_accuracy_of_claim_da/"
+    "@id": "https://consultation-recherche-donnees-sante.netlify.app/publication/2019-01-01_accuracy_of_claim_da/"
   },
   "headline": "Accuracy of claim data in the identification and classification of adults with congenital heart diseases in electronic medical records.",
   
@@ -325,7 +363,7 @@
     "name": "Consultation Recherche Données de Santé - CoReDS",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
+      "url": "https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
     }
   },
   "description": "BACKGROUND:The content of electronic medical records (EMRs) encompasses both structured data, such as billing codes, and unstructured data, including free-text reports. Epidemiological and clinical research into adult congenital heart disease (ACHD) increasingly relies on administrative claim data using the International Classification of Diseases (9th revision) (ICD-9). In France, administrative databases use ICD-10, the reliability of which is largely unknown in this context.AIMS NlmCategory=OBJECTIVE:To assess the accuracy of ICD-10 codes retrieved from administrative claim data in the identification and classification of ACHD.METHODS:We randomly included 6000 patients hospitalized at least once in 2000-2014 in a cardiology department with a dedicated specialized ACHD Unit. For each patient, the clinical diagnosis extracted from the EMR was compared with the assigned ICD-10 codes. Performance of ICD-10 codes in the identification and classification of ACHD was assessed by estimating sensitivity, specificity and positive predictive value.RESULTS:Among the 6000 patients included, 780 (13%) patients with ACHD were manually identified from EMRs (107,092 documents). ICD-10 codes correctly categorized 629 as having ACHD (sensitivity 0.81, 95% confidence interval 0.78-0.83), with a specificity of 0.99 (95% confidence interval 0.99-1). The performance of ICD-10 codes in correctly categorizing the ACHD defect subtype depended on the defect, with sensitivity ranging from 0 (e.g. unspecified congenital malformation of tricuspid valve) to 1 (e.g. common arterial trunk), and specificity ranging from 0.99 to 1.CONCLUSIONS:Administrative data using ICD-10 codes is a precise tool for detecting ACHD, and may be used to establish a national cohort. Mining free-text reports in addition to coded administrative data may offset the lack of sensitivity and accuracy when describing the spectrum of congenital heart disease using ICD-10 codes. "
@@ -390,7 +428,7 @@
     <script>const isSiteThemeDark = false;</script>
   
   
-  <script src="/js/load-theme.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/load-theme.js"></script>
 
   <aside class="search-results" id="search">
   <div class="container">
@@ -445,7 +483,7 @@
 
     
     <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -458,7 +496,7 @@
 
     
     <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -494,7 +532,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/entreprendre/"><span>Commencer un projet</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/entreprendre/"><span>Commencer un projet</span></a>
         </li>
 
         
@@ -524,44 +562,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/suivremonprojet/"><span>Suivre son projet</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-            
-            
-            
-              
-            
-            
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#outils"><span>Boite à outils</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/suivremonprojet/"><span>Suivre son projet</span></a>
         </li>
 
         
@@ -598,7 +599,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#publi"><span>Publications</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#outils"><span>Boite à outils</span></a>
         </li>
 
         
@@ -635,7 +636,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#transparence"><span>Portail de transparence</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#publi"><span>Publications</span></a>
         </li>
 
         
@@ -672,7 +673,44 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#people"><span>Qui sommes-nous ?</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#transparence"><span>Portail de transparence</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#people"><span>Qui sommes-nous ?</span></a>
         </li>
 
         
@@ -745,7 +783,7 @@
     
 
   
-  <span ><a href="/author/cohen-sarah/">Cohen Sarah</a></span>, <span ><a href="/author/jannot-anne-sophie/">Jannot Anne-Sophie</a></span>, <span ><a href="/author/iserin-laurence/">Iserin Laurence</a></span>, <span ><a href="/author/bonnet-damien/">Bonnet Damien</a></span>, <span ><a href="/author/burgun-anita/">Burgun Anita</a></span>, <span ><a href="/author/escudie-jean-baptiste/">Escudie Jean-Baptiste</a></span>
+  <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/cohen-sarah/">Cohen Sarah</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/jannot-anne-sophie/">Jannot Anne-Sophie</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/iserin-laurence/">Iserin Laurence</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/bonnet-damien/">Bonnet Damien</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/burgun-anita/">Burgun Anita</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/escudie-jean-baptiste/">Escudie Jean-Baptiste</a></span>
   </div>
   
   
@@ -811,7 +849,7 @@
           <div class="col-12 col-md-9">
             
             
-            <a href="/publication/#2">
+            <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/#2">
               Article de revue
             </a>
             
@@ -870,7 +908,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://www.coreds.com/publication/2019-01-01_accuracy_of_claim_da/&amp;text=Accuracy%20of%20claim%20data%20in%20the%20identification%20and%20classification%20of%20adults%20with%20congenital%20heart%20diseases%20in%20electronic%20medical%20records." target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2019-01-01_accuracy_of_claim_da/&amp;text=Accuracy%20of%20claim%20data%20in%20the%20identification%20and%20classification%20of%20adults%20with%20congenital%20heart%20diseases%20in%20electronic%20medical%20records." target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -883,7 +921,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://www.coreds.com/publication/2019-01-01_accuracy_of_claim_da/&amp;t=Accuracy%20of%20claim%20data%20in%20the%20identification%20and%20classification%20of%20adults%20with%20congenital%20heart%20diseases%20in%20electronic%20medical%20records." target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://consultation-recherche-donnees-sante.netlify.app/publication/2019-01-01_accuracy_of_claim_da/&amp;t=Accuracy%20of%20claim%20data%20in%20the%20identification%20and%20classification%20of%20adults%20with%20congenital%20heart%20diseases%20in%20electronic%20medical%20records." target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -896,7 +934,7 @@
       
       
       <li>
-        <a href="mailto:?subject=Accuracy%20of%20claim%20data%20in%20the%20identification%20and%20classification%20of%20adults%20with%20congenital%20heart%20diseases%20in%20electronic%20medical%20records.&amp;body=https://www.coreds.com/publication/2019-01-01_accuracy_of_claim_da/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=Accuracy%20of%20claim%20data%20in%20the%20identification%20and%20classification%20of%20adults%20with%20congenital%20heart%20diseases%20in%20electronic%20medical%20records.&amp;body=https://consultation-recherche-donnees-sante.netlify.app/publication/2019-01-01_accuracy_of_claim_da/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -909,7 +947,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://www.coreds.com/publication/2019-01-01_accuracy_of_claim_da/&amp;title=Accuracy%20of%20claim%20data%20in%20the%20identification%20and%20classification%20of%20adults%20with%20congenital%20heart%20diseases%20in%20electronic%20medical%20records." target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2019-01-01_accuracy_of_claim_da/&amp;title=Accuracy%20of%20claim%20data%20in%20the%20identification%20and%20classification%20of%20adults%20with%20congenital%20heart%20diseases%20in%20electronic%20medical%20records." target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -922,7 +960,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=Accuracy%20of%20claim%20data%20in%20the%20identification%20and%20classification%20of%20adults%20with%20congenital%20heart%20diseases%20in%20electronic%20medical%20records.%20https://www.coreds.com/publication/2019-01-01_accuracy_of_claim_da/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=Accuracy%20of%20claim%20data%20in%20the%20identification%20and%20classification%20of%20adults%20with%20congenital%20heart%20diseases%20in%20electronic%20medical%20records.%20https://consultation-recherche-donnees-sante.netlify.app/publication/2019-01-01_accuracy_of_claim_da/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -935,7 +973,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://www.coreds.com/publication/2019-01-01_accuracy_of_claim_da/&amp;title=Accuracy%20of%20claim%20data%20in%20the%20identification%20and%20classification%20of%20adults%20with%20congenital%20heart%20diseases%20in%20electronic%20medical%20records." target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2019-01-01_accuracy_of_claim_da/&amp;title=Accuracy%20of%20claim%20data%20in%20the%20identification%20and%20classification%20of%20adults%20with%20congenital%20heart%20diseases%20in%20electronic%20medical%20records." target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1011,9 +1049,9 @@
     <h3>Sur le même sujet</h3>
     <ul>
       
-      <li><a href="/publication/2015-03-01_temporal_trends_and_/">Temporal trends and changing profile of adults with congenital heart disease undergoing heart transplantation.</a></li>
+      <li><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2015-03-01_temporal_trends_and_/">Temporal trends and changing profile of adults with congenital heart disease undergoing heart transplantation.</a></li>
       
-      <li><a href="/publication/2015-01-01_reviewing_741_patien/">Reviewing 741 patients records in two hours with FASTVISU.</a></li>
+      <li><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2015-01-01_reviewing_741_patien/">Reviewing 741 patients records in two hours with FASTVISU.</a></li>
       
     </ul>
   </div>
@@ -1197,7 +1235,7 @@
     
     
     
-    <script src="/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
+    <script src="https://consultation-recherche-donnees-sante.netlify.app/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
 
     
 

@@ -37,7 +37,7 @@
   <meta name="description" content="BACKGROUND AND OBJECTIVE:Pulse pressure is a stronger predictor of cardiovascular events than systolic or diastolic blood pressure in large cohorts of French and North American patients. However, its influence on stroke is controversial. Large-artery stiffness is the main determinant of pulse pressure. The influence of arterial stiffness on the occurrence of stroke has never been demonstrated. Our aim was to establish the relationship between aortic stiffness and stroke death in hypertensive patients.METHODS:We included, in a longitudinal study, 1715 essential hypertensive patients who had a measurement of arterial stiffness at entry (ie, between 1980 and 2001) and no overt cardiovascular disease or symptoms. Mean follow-up was 7.9 years. At entry, aortic stiffness was assessed from the carotid-femoral pulse wave velocity. A Cox proportional hazard regression model was used to estimate the relative risk (RR) of stroke and coronary deaths.RESULTS:Mean&#43;/-SD age at entry was 51&#43;/-13 years. Twenty-five fatal strokes and 35 fatal coronary events occurred. Pulse wave velocity significantly predicted the occurrence of stroke death in the whole population. There was a RR increase of 1.72 (95% CI, 1.48 to 1.96; P&amp;lt;0.0001) for each SD increase in pulse wave velocity (4 m/s). The predictive value of pulse wave velocity remained significant (RR=1.39 [95% CI, 1.08 to 1.72]; P=0.02) after full adjustment for classic cardiovascular risk factors, including age, cholesterol, diabetes, smoking, mean blood pressure, and pulse pressure. In this population, pulse pressure significantly predicted stroke in univariate analysis, with a RR increase of 1.33 (95% CI, 1.16 to 1.51) for each 10 mm Hg of pulse pressure (P&amp;lt;0.0001) but not after adjustment for age (RR=1.19 [95% CI, 0.96 to 1.47]; P=0.10).CONCLUSIONS:This study provides the first evidence, in a longitudinal study, that aortic stiffness is an independent predictor of fatal stroke in patients with essential hypertension. ">
 
   
-  <link rel="alternate" hreflang="fr" href="https://www.coreds.com/publication/2003-05-01_aortic_stiffness_is_/">
+  <link rel="alternate" hreflang="fr" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2003-05-01_aortic_stiffness_is_/">
 
   
 
@@ -66,7 +66,7 @@
   
   
   
-  <script src="/js/mathjax-config.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/mathjax-config.js"></script>
   
 
   
@@ -241,13 +241,51 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.css">
+  <link rel="stylesheet" href="https://consultation-recherche-donnees-sante.netlify.app/css/wowchemy.css">
 
   
 
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-80B5KND2Y6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-80B5KND2Y6', { 'anonymize_ip': true });
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
   
@@ -258,11 +296,11 @@
 
   
 
-  <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
+  <link rel="manifest" href="https://consultation-recherche-donnees-sante.netlify.app/index.webmanifest">
+  <link rel="icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="https://www.coreds.com/publication/2003-05-01_aortic_stiffness_is_/">
+  <link rel="canonical" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2003-05-01_aortic_stiffness_is_/">
 
   
   
@@ -278,10 +316,10 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:url" content="https://www.coreds.com/publication/2003-05-01_aortic_stiffness_is_/">
+  <meta property="og:url" content="https://consultation-recherche-donnees-sante.netlify.app/publication/2003-05-01_aortic_stiffness_is_/">
   <meta property="og:title" content="Aortic stiffness is an independent predictor of fatal stroke in essential hypertension. | Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:description" content="BACKGROUND AND OBJECTIVE:Pulse pressure is a stronger predictor of cardiovascular events than systolic or diastolic blood pressure in large cohorts of French and North American patients. However, its influence on stroke is controversial. Large-artery stiffness is the main determinant of pulse pressure. The influence of arterial stiffness on the occurrence of stroke has never been demonstrated. Our aim was to establish the relationship between aortic stiffness and stroke death in hypertensive patients.METHODS:We included, in a longitudinal study, 1715 essential hypertensive patients who had a measurement of arterial stiffness at entry (ie, between 1980 and 2001) and no overt cardiovascular disease or symptoms. Mean follow-up was 7.9 years. At entry, aortic stiffness was assessed from the carotid-femoral pulse wave velocity. A Cox proportional hazard regression model was used to estimate the relative risk (RR) of stroke and coronary deaths.RESULTS:Mean&#43;/-SD age at entry was 51&#43;/-13 years. Twenty-five fatal strokes and 35 fatal coronary events occurred. Pulse wave velocity significantly predicted the occurrence of stroke death in the whole population. There was a RR increase of 1.72 (95% CI, 1.48 to 1.96; P&amp;lt;0.0001) for each SD increase in pulse wave velocity (4 m/s). The predictive value of pulse wave velocity remained significant (RR=1.39 [95% CI, 1.08 to 1.72]; P=0.02) after full adjustment for classic cardiovascular risk factors, including age, cholesterol, diabetes, smoking, mean blood pressure, and pulse pressure. In this population, pulse pressure significantly predicted stroke in univariate analysis, with a RR increase of 1.33 (95% CI, 1.16 to 1.51) for each 10 mm Hg of pulse pressure (P&amp;lt;0.0001) but not after adjustment for age (RR=1.19 [95% CI, 0.96 to 1.47]; P=0.10).CONCLUSIONS:This study provides the first evidence, in a longitudinal study, that aortic stiffness is an independent predictor of fatal stroke in patients with essential hypertension. "><meta property="og:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
-  <meta property="twitter:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
+  <meta property="og:description" content="BACKGROUND AND OBJECTIVE:Pulse pressure is a stronger predictor of cardiovascular events than systolic or diastolic blood pressure in large cohorts of French and North American patients. However, its influence on stroke is controversial. Large-artery stiffness is the main determinant of pulse pressure. The influence of arterial stiffness on the occurrence of stroke has never been demonstrated. Our aim was to establish the relationship between aortic stiffness and stroke death in hypertensive patients.METHODS:We included, in a longitudinal study, 1715 essential hypertensive patients who had a measurement of arterial stiffness at entry (ie, between 1980 and 2001) and no overt cardiovascular disease or symptoms. Mean follow-up was 7.9 years. At entry, aortic stiffness was assessed from the carotid-femoral pulse wave velocity. A Cox proportional hazard regression model was used to estimate the relative risk (RR) of stroke and coronary deaths.RESULTS:Mean&#43;/-SD age at entry was 51&#43;/-13 years. Twenty-five fatal strokes and 35 fatal coronary events occurred. Pulse wave velocity significantly predicted the occurrence of stroke death in the whole population. There was a RR increase of 1.72 (95% CI, 1.48 to 1.96; P&amp;lt;0.0001) for each SD increase in pulse wave velocity (4 m/s). The predictive value of pulse wave velocity remained significant (RR=1.39 [95% CI, 1.08 to 1.72]; P=0.02) after full adjustment for classic cardiovascular risk factors, including age, cholesterol, diabetes, smoking, mean blood pressure, and pulse pressure. In this population, pulse pressure significantly predicted stroke in univariate analysis, with a RR increase of 1.33 (95% CI, 1.16 to 1.51) for each 10 mm Hg of pulse pressure (P&amp;lt;0.0001) but not after adjustment for age (RR=1.19 [95% CI, 0.96 to 1.47]; P=0.10).CONCLUSIONS:This study provides the first evidence, in a longitudinal study, that aortic stiffness is an independent predictor of fatal stroke in patients with essential hypertension. "><meta property="og:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
+  <meta property="twitter:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
   
     
       <meta property="article:published_time" content="2003-05-01T00:00:00&#43;00:00">
@@ -308,7 +346,7 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://www.coreds.com/publication/2003-05-01_aortic_stiffness_is_/"
+    "@id": "https://consultation-recherche-donnees-sante.netlify.app/publication/2003-05-01_aortic_stiffness_is_/"
   },
   "headline": "Aortic stiffness is an independent predictor of fatal stroke in essential hypertension.",
   
@@ -325,7 +363,7 @@
     "name": "Consultation Recherche Données de Santé - CoReDS",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
+      "url": "https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
     }
   },
   "description": "BACKGROUND AND OBJECTIVE:Pulse pressure is a stronger predictor of cardiovascular events than systolic or diastolic blood pressure in large cohorts of French and North American patients. However, its influence on stroke is controversial. Large-artery stiffness is the main determinant of pulse pressure. The influence of arterial stiffness on the occurrence of stroke has never been demonstrated. Our aim was to establish the relationship between aortic stiffness and stroke death in hypertensive patients.METHODS:We included, in a longitudinal study, 1715 essential hypertensive patients who had a measurement of arterial stiffness at entry (ie, between 1980 and 2001) and no overt cardiovascular disease or symptoms. Mean follow-up was 7.9 years. At entry, aortic stiffness was assessed from the carotid-femoral pulse wave velocity. A Cox proportional hazard regression model was used to estimate the relative risk (RR) of stroke and coronary deaths.RESULTS:Mean+/-SD age at entry was 51+/-13 years. Twenty-five fatal strokes and 35 fatal coronary events occurred. Pulse wave velocity significantly predicted the occurrence of stroke death in the whole population. There was a RR increase of 1.72 (95% CI, 1.48 to 1.96; P\u0026lt;0.0001) for each SD increase in pulse wave velocity (4 m/s). The predictive value of pulse wave velocity remained significant (RR=1.39 [95% CI, 1.08 to 1.72]; P=0.02) after full adjustment for classic cardiovascular risk factors, including age, cholesterol, diabetes, smoking, mean blood pressure, and pulse pressure. In this population, pulse pressure significantly predicted stroke in univariate analysis, with a RR increase of 1.33 (95% CI, 1.16 to 1.51) for each 10 mm Hg of pulse pressure (P\u0026lt;0.0001) but not after adjustment for age (RR=1.19 [95% CI, 0.96 to 1.47]; P=0.10).CONCLUSIONS:This study provides the first evidence, in a longitudinal study, that aortic stiffness is an independent predictor of fatal stroke in patients with essential hypertension. "
@@ -390,7 +428,7 @@
     <script>const isSiteThemeDark = false;</script>
   
   
-  <script src="/js/load-theme.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/load-theme.js"></script>
 
   <aside class="search-results" id="search">
   <div class="container">
@@ -445,7 +483,7 @@
 
     
     <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -458,7 +496,7 @@
 
     
     <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -494,7 +532,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/entreprendre/"><span>Commencer un projet</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/entreprendre/"><span>Commencer un projet</span></a>
         </li>
 
         
@@ -524,44 +562,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/suivremonprojet/"><span>Suivre son projet</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-            
-            
-            
-              
-            
-            
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#outils"><span>Boite à outils</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/suivremonprojet/"><span>Suivre son projet</span></a>
         </li>
 
         
@@ -598,7 +599,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#publi"><span>Publications</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#outils"><span>Boite à outils</span></a>
         </li>
 
         
@@ -635,7 +636,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#transparence"><span>Portail de transparence</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#publi"><span>Publications</span></a>
         </li>
 
         
@@ -672,7 +673,44 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#people"><span>Qui sommes-nous ?</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#transparence"><span>Portail de transparence</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#people"><span>Qui sommes-nous ?</span></a>
         </li>
 
         
@@ -745,7 +783,7 @@
     
 
   
-  <span ><a href="/author/laurent-stephane/">Laurent Stephane</a></span>, <span ><a href="/author/katsahian-sandrine/">Katsahian Sandrine</a></span>, <span ><a href="/author/fassot-celine/">Fassot Celine</a></span>, <span ><a href="/author/tropeano-anne-isabelle/">Tropeano Anne-Isabelle</a></span>, <span ><a href="/author/gautier-isabelle/">Gautier Isabelle</a></span>, <span ><a href="/author/laloux-brigitte/">Laloux Brigitte</a></span>, <span ><a href="/author/boutouyrie-pierre/">Boutouyrie Pierre</a></span>
+  <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/laurent-stephane/">Laurent Stephane</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/katsahian-sandrine/">Katsahian Sandrine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/fassot-celine/">Fassot Celine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/tropeano-anne-isabelle/">Tropeano Anne-Isabelle</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/gautier-isabelle/">Gautier Isabelle</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/laloux-brigitte/">Laloux Brigitte</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/boutouyrie-pierre/">Boutouyrie Pierre</a></span>
   </div>
   
   
@@ -811,7 +849,7 @@
           <div class="col-12 col-md-9">
             
             
-            <a href="/publication/#2">
+            <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/#2">
               Article de revue
             </a>
             
@@ -870,7 +908,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://www.coreds.com/publication/2003-05-01_aortic_stiffness_is_/&amp;text=Aortic%20stiffness%20is%20an%20independent%20predictor%20of%20fatal%20stroke%20in%20essential%20hypertension." target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2003-05-01_aortic_stiffness_is_/&amp;text=Aortic%20stiffness%20is%20an%20independent%20predictor%20of%20fatal%20stroke%20in%20essential%20hypertension." target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -883,7 +921,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://www.coreds.com/publication/2003-05-01_aortic_stiffness_is_/&amp;t=Aortic%20stiffness%20is%20an%20independent%20predictor%20of%20fatal%20stroke%20in%20essential%20hypertension." target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://consultation-recherche-donnees-sante.netlify.app/publication/2003-05-01_aortic_stiffness_is_/&amp;t=Aortic%20stiffness%20is%20an%20independent%20predictor%20of%20fatal%20stroke%20in%20essential%20hypertension." target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -896,7 +934,7 @@
       
       
       <li>
-        <a href="mailto:?subject=Aortic%20stiffness%20is%20an%20independent%20predictor%20of%20fatal%20stroke%20in%20essential%20hypertension.&amp;body=https://www.coreds.com/publication/2003-05-01_aortic_stiffness_is_/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=Aortic%20stiffness%20is%20an%20independent%20predictor%20of%20fatal%20stroke%20in%20essential%20hypertension.&amp;body=https://consultation-recherche-donnees-sante.netlify.app/publication/2003-05-01_aortic_stiffness_is_/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -909,7 +947,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://www.coreds.com/publication/2003-05-01_aortic_stiffness_is_/&amp;title=Aortic%20stiffness%20is%20an%20independent%20predictor%20of%20fatal%20stroke%20in%20essential%20hypertension." target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2003-05-01_aortic_stiffness_is_/&amp;title=Aortic%20stiffness%20is%20an%20independent%20predictor%20of%20fatal%20stroke%20in%20essential%20hypertension." target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -922,7 +960,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=Aortic%20stiffness%20is%20an%20independent%20predictor%20of%20fatal%20stroke%20in%20essential%20hypertension.%20https://www.coreds.com/publication/2003-05-01_aortic_stiffness_is_/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=Aortic%20stiffness%20is%20an%20independent%20predictor%20of%20fatal%20stroke%20in%20essential%20hypertension.%20https://consultation-recherche-donnees-sante.netlify.app/publication/2003-05-01_aortic_stiffness_is_/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -935,7 +973,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://www.coreds.com/publication/2003-05-01_aortic_stiffness_is_/&amp;title=Aortic%20stiffness%20is%20an%20independent%20predictor%20of%20fatal%20stroke%20in%20essential%20hypertension." target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2003-05-01_aortic_stiffness_is_/&amp;title=Aortic%20stiffness%20is%20an%20independent%20predictor%20of%20fatal%20stroke%20in%20essential%20hypertension." target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1017,9 +1055,9 @@
     <h3>Sur le même sujet</h3>
     <ul>
       
-      <li><a href="/publication/2006-07-01_brachial_pressure-in/">Brachial pressure-independent reduction in carotid stiffness after long-term angiotensin-converting enzyme inhibition in diabetic hypertensives.</a></li>
+      <li><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2006-07-01_brachial_pressure-in/">Brachial pressure-independent reduction in carotid stiffness after long-term angiotensin-converting enzyme inhibition in diabetic hypertensives.</a></li>
       
-      <li><a href="/publication/2004-11-01_glucose_level_is_a_m/">Glucose level is a major determinant of carotid intima-media thickness in patients with hypertension and hyperglycemia.</a></li>
+      <li><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2004-11-01_glucose_level_is_a_m/">Glucose level is a major determinant of carotid intima-media thickness in patients with hypertension and hyperglycemia.</a></li>
       
     </ul>
   </div>
@@ -1203,7 +1241,7 @@
     
     
     
-    <script src="/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
+    <script src="https://consultation-recherche-donnees-sante.netlify.app/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
 
     
 

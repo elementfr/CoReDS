@@ -37,7 +37,7 @@
   <meta name="description" content="BACKGROUND:Pulmonary edema may alter alveolar bacterial clearance and infectivity. Manipulation of fluid balance aimed at reducing fluid overload may, therefore, influence ventilator-associated pneumonia (VAP) occurrence in intubated patients. The objective of the present study was to assess the impact of a depletive fluid-management strategy on ventilator-associated complication (VAC) and VAP occurrence during weaning from mechanical ventilation.METHODS:We used data from the B-type Natriuretic Peptide for the Fluid Management of Weaning (BMW) randomized controlled trial performed in nine ICUs across Europe and America. We compared the cumulative incidence of VAC and VAP between the biomarker-driven, depletive fluid-management group and the usual-care group during the 14 days following randomization, using specific competing-risk methods (the Fine and Gray model).RESULTS:Among the 304 patients analyzed, 41 experienced VAP, including 27 (17.8%) in the usual-care group vs 14 (9.2%) in the interventional group (P = .03). From the Fine and Gray model, the probabilities of VAC and VAP occurrence were both significantly reduced with the interventional strategy while adjusting for weaning outcome as a competing event (subhazard ratios [25th-75th percentiles], 0.44 [0.22-0.87], P = .02 and 0.50 [0.25-0.96], P = .03, respectively).CONCLUSIONS:Using proper competing risk analyses, we found that a depletive fluid-management strategy, when initiating the weaning process, has the potential for lowering VAP risk in patients who are mechanically ventilated.TRIAL BACKGROUND:ClinicalTrials.gov; No.: NCT00473148; URL: www.clinicaltrials.gov. ">
 
   
-  <link rel="alternate" hreflang="fr" href="https://www.coreds.com/publication/2014-07-01_ventilator-associate/">
+  <link rel="alternate" hreflang="fr" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2014-07-01_ventilator-associate/">
 
   
 
@@ -66,7 +66,7 @@
   
   
   
-  <script src="/js/mathjax-config.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/mathjax-config.js"></script>
   
 
   
@@ -241,13 +241,51 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.css">
+  <link rel="stylesheet" href="https://consultation-recherche-donnees-sante.netlify.app/css/wowchemy.css">
 
   
 
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-80B5KND2Y6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-80B5KND2Y6', { 'anonymize_ip': true });
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
   
@@ -258,11 +296,11 @@
 
   
 
-  <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
+  <link rel="manifest" href="https://consultation-recherche-donnees-sante.netlify.app/index.webmanifest">
+  <link rel="icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="https://www.coreds.com/publication/2014-07-01_ventilator-associate/">
+  <link rel="canonical" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2014-07-01_ventilator-associate/">
 
   
   
@@ -278,10 +316,10 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:url" content="https://www.coreds.com/publication/2014-07-01_ventilator-associate/">
+  <meta property="og:url" content="https://consultation-recherche-donnees-sante.netlify.app/publication/2014-07-01_ventilator-associate/">
   <meta property="og:title" content="Ventilator-associated pneumonia during weaning from mechanical ventilation: role of fluid management. | Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:description" content="BACKGROUND:Pulmonary edema may alter alveolar bacterial clearance and infectivity. Manipulation of fluid balance aimed at reducing fluid overload may, therefore, influence ventilator-associated pneumonia (VAP) occurrence in intubated patients. The objective of the present study was to assess the impact of a depletive fluid-management strategy on ventilator-associated complication (VAC) and VAP occurrence during weaning from mechanical ventilation.METHODS:We used data from the B-type Natriuretic Peptide for the Fluid Management of Weaning (BMW) randomized controlled trial performed in nine ICUs across Europe and America. We compared the cumulative incidence of VAC and VAP between the biomarker-driven, depletive fluid-management group and the usual-care group during the 14 days following randomization, using specific competing-risk methods (the Fine and Gray model).RESULTS:Among the 304 patients analyzed, 41 experienced VAP, including 27 (17.8%) in the usual-care group vs 14 (9.2%) in the interventional group (P = .03). From the Fine and Gray model, the probabilities of VAC and VAP occurrence were both significantly reduced with the interventional strategy while adjusting for weaning outcome as a competing event (subhazard ratios [25th-75th percentiles], 0.44 [0.22-0.87], P = .02 and 0.50 [0.25-0.96], P = .03, respectively).CONCLUSIONS:Using proper competing risk analyses, we found that a depletive fluid-management strategy, when initiating the weaning process, has the potential for lowering VAP risk in patients who are mechanically ventilated.TRIAL BACKGROUND:ClinicalTrials.gov; No.: NCT00473148; URL: www.clinicaltrials.gov. "><meta property="og:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
-  <meta property="twitter:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
+  <meta property="og:description" content="BACKGROUND:Pulmonary edema may alter alveolar bacterial clearance and infectivity. Manipulation of fluid balance aimed at reducing fluid overload may, therefore, influence ventilator-associated pneumonia (VAP) occurrence in intubated patients. The objective of the present study was to assess the impact of a depletive fluid-management strategy on ventilator-associated complication (VAC) and VAP occurrence during weaning from mechanical ventilation.METHODS:We used data from the B-type Natriuretic Peptide for the Fluid Management of Weaning (BMW) randomized controlled trial performed in nine ICUs across Europe and America. We compared the cumulative incidence of VAC and VAP between the biomarker-driven, depletive fluid-management group and the usual-care group during the 14 days following randomization, using specific competing-risk methods (the Fine and Gray model).RESULTS:Among the 304 patients analyzed, 41 experienced VAP, including 27 (17.8%) in the usual-care group vs 14 (9.2%) in the interventional group (P = .03). From the Fine and Gray model, the probabilities of VAC and VAP occurrence were both significantly reduced with the interventional strategy while adjusting for weaning outcome as a competing event (subhazard ratios [25th-75th percentiles], 0.44 [0.22-0.87], P = .02 and 0.50 [0.25-0.96], P = .03, respectively).CONCLUSIONS:Using proper competing risk analyses, we found that a depletive fluid-management strategy, when initiating the weaning process, has the potential for lowering VAP risk in patients who are mechanically ventilated.TRIAL BACKGROUND:ClinicalTrials.gov; No.: NCT00473148; URL: www.clinicaltrials.gov. "><meta property="og:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
+  <meta property="twitter:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
   
     
       <meta property="article:published_time" content="2014-07-01T00:00:00&#43;00:00">
@@ -308,7 +346,7 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://www.coreds.com/publication/2014-07-01_ventilator-associate/"
+    "@id": "https://consultation-recherche-donnees-sante.netlify.app/publication/2014-07-01_ventilator-associate/"
   },
   "headline": "Ventilator-associated pneumonia during weaning from mechanical ventilation: role of fluid management.",
   
@@ -325,7 +363,7 @@
     "name": "Consultation Recherche Données de Santé - CoReDS",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
+      "url": "https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
     }
   },
   "description": "BACKGROUND:Pulmonary edema may alter alveolar bacterial clearance and infectivity. Manipulation of fluid balance aimed at reducing fluid overload may, therefore, influence ventilator-associated pneumonia (VAP) occurrence in intubated patients. The objective of the present study was to assess the impact of a depletive fluid-management strategy on ventilator-associated complication (VAC) and VAP occurrence during weaning from mechanical ventilation.METHODS:We used data from the B-type Natriuretic Peptide for the Fluid Management of Weaning (BMW) randomized controlled trial performed in nine ICUs across Europe and America. We compared the cumulative incidence of VAC and VAP between the biomarker-driven, depletive fluid-management group and the usual-care group during the 14 days following randomization, using specific competing-risk methods (the Fine and Gray model).RESULTS:Among the 304 patients analyzed, 41 experienced VAP, including 27 (17.8%) in the usual-care group vs 14 (9.2%) in the interventional group (P = .03). From the Fine and Gray model, the probabilities of VAC and VAP occurrence were both significantly reduced with the interventional strategy while adjusting for weaning outcome as a competing event (subhazard ratios [25th-75th percentiles], 0.44 [0.22-0.87], P = .02 and 0.50 [0.25-0.96], P = .03, respectively).CONCLUSIONS:Using proper competing risk analyses, we found that a depletive fluid-management strategy, when initiating the weaning process, has the potential for lowering VAP risk in patients who are mechanically ventilated.TRIAL BACKGROUND:ClinicalTrials.gov; No.: NCT00473148; URL: www.clinicaltrials.gov. "
@@ -390,7 +428,7 @@
     <script>const isSiteThemeDark = false;</script>
   
   
-  <script src="/js/load-theme.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/load-theme.js"></script>
 
   <aside class="search-results" id="search">
   <div class="container">
@@ -445,7 +483,7 @@
 
     
     <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -458,7 +496,7 @@
 
     
     <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -494,7 +532,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/entreprendre/"><span>Commencer un projet</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/entreprendre/"><span>Commencer un projet</span></a>
         </li>
 
         
@@ -524,44 +562,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/suivremonprojet/"><span>Suivre son projet</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-            
-            
-            
-              
-            
-            
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#outils"><span>Boite à outils</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/suivremonprojet/"><span>Suivre son projet</span></a>
         </li>
 
         
@@ -598,7 +599,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#publi"><span>Publications</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#outils"><span>Boite à outils</span></a>
         </li>
 
         
@@ -635,7 +636,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#transparence"><span>Portail de transparence</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#publi"><span>Publications</span></a>
         </li>
 
         
@@ -672,7 +673,44 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#people"><span>Qui sommes-nous ?</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#transparence"><span>Portail de transparence</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#people"><span>Qui sommes-nous ?</span></a>
         </li>
 
         
@@ -745,7 +783,7 @@
     
 
   
-  <span ><a href="/author/mekontso-dessap-armand/">Mekontso Dessap Armand</a></span>, <span ><a href="/author/katsahian-sandrine/">Katsahian Sandrine</a></span>, <span ><a href="/author/roche-campo-ferran/">Roche-Campo Ferran</a></span>, <span ><a href="/author/varet-hugo/">Varet Hugo</a></span>, <span ><a href="/author/kouatchet-achille/">Kouatchet Achille</a></span>, <span ><a href="/author/tomicic-vinko/">Tomicic Vinko</a></span>, <span ><a href="/author/beduneau-gaetan/">Beduneau Gaetan</a></span>, <span ><a href="/author/sonneville-romain/">Sonneville Romain</a></span>, <span ><a href="/author/jaber-samir/">Jaber Samir</a></span>, <span ><a href="/author/darmon-michael/">Darmon Michael</a></span>, <span ><a href="/author/castanares-zapatero-diego/">Castanares-Zapatero Diego</a></span>, <span ><a href="/author/brochard-laurent/">Brochard Laurent</a></span>, <span ><a href="/author/brun-buisson-christian/">Brun-Buisson Christian</a></span>
+  <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/mekontso-dessap-armand/">Mekontso Dessap Armand</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/katsahian-sandrine/">Katsahian Sandrine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/roche-campo-ferran/">Roche-Campo Ferran</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/varet-hugo/">Varet Hugo</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/kouatchet-achille/">Kouatchet Achille</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/tomicic-vinko/">Tomicic Vinko</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/beduneau-gaetan/">Beduneau Gaetan</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/sonneville-romain/">Sonneville Romain</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/jaber-samir/">Jaber Samir</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/darmon-michael/">Darmon Michael</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/castanares-zapatero-diego/">Castanares-Zapatero Diego</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/brochard-laurent/">Brochard Laurent</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/brun-buisson-christian/">Brun-Buisson Christian</a></span>
   </div>
   
   
@@ -811,7 +849,7 @@
           <div class="col-12 col-md-9">
             
             
-            <a href="/publication/#2">
+            <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/#2">
               Article de revue
             </a>
             
@@ -870,7 +908,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://www.coreds.com/publication/2014-07-01_ventilator-associate/&amp;text=Ventilator-associated%20pneumonia%20during%20weaning%20from%20mechanical%20ventilation:%20role%20of%20fluid%20management." target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2014-07-01_ventilator-associate/&amp;text=Ventilator-associated%20pneumonia%20during%20weaning%20from%20mechanical%20ventilation:%20role%20of%20fluid%20management." target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -883,7 +921,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://www.coreds.com/publication/2014-07-01_ventilator-associate/&amp;t=Ventilator-associated%20pneumonia%20during%20weaning%20from%20mechanical%20ventilation:%20role%20of%20fluid%20management." target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://consultation-recherche-donnees-sante.netlify.app/publication/2014-07-01_ventilator-associate/&amp;t=Ventilator-associated%20pneumonia%20during%20weaning%20from%20mechanical%20ventilation:%20role%20of%20fluid%20management." target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -896,7 +934,7 @@
       
       
       <li>
-        <a href="mailto:?subject=Ventilator-associated%20pneumonia%20during%20weaning%20from%20mechanical%20ventilation:%20role%20of%20fluid%20management.&amp;body=https://www.coreds.com/publication/2014-07-01_ventilator-associate/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=Ventilator-associated%20pneumonia%20during%20weaning%20from%20mechanical%20ventilation:%20role%20of%20fluid%20management.&amp;body=https://consultation-recherche-donnees-sante.netlify.app/publication/2014-07-01_ventilator-associate/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -909,7 +947,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://www.coreds.com/publication/2014-07-01_ventilator-associate/&amp;title=Ventilator-associated%20pneumonia%20during%20weaning%20from%20mechanical%20ventilation:%20role%20of%20fluid%20management." target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2014-07-01_ventilator-associate/&amp;title=Ventilator-associated%20pneumonia%20during%20weaning%20from%20mechanical%20ventilation:%20role%20of%20fluid%20management." target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -922,7 +960,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=Ventilator-associated%20pneumonia%20during%20weaning%20from%20mechanical%20ventilation:%20role%20of%20fluid%20management.%20https://www.coreds.com/publication/2014-07-01_ventilator-associate/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=Ventilator-associated%20pneumonia%20during%20weaning%20from%20mechanical%20ventilation:%20role%20of%20fluid%20management.%20https://consultation-recherche-donnees-sante.netlify.app/publication/2014-07-01_ventilator-associate/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -935,7 +973,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://www.coreds.com/publication/2014-07-01_ventilator-associate/&amp;title=Ventilator-associated%20pneumonia%20during%20weaning%20from%20mechanical%20ventilation:%20role%20of%20fluid%20management." target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2014-07-01_ventilator-associate/&amp;title=Ventilator-associated%20pneumonia%20during%20weaning%20from%20mechanical%20ventilation:%20role%20of%20fluid%20management." target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1053,11 +1091,11 @@
     <h3>Sur le même sujet</h3>
     <ul>
       
-      <li><a href="/publication/2012-12-01_natriuretic_peptide-/">Natriuretic peptide-driven fluid management during ventilator weaning: a randomized controlled trial.</a></li>
+      <li><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2012-12-01_natriuretic_peptide-/">Natriuretic peptide-driven fluid management during ventilator weaning: a randomized controlled trial.</a></li>
       
-      <li><a href="/publication/2013-10-01_prevalence_and_progn/">Prevalence and prognosis of cor pulmonale during protective ventilation for acute respiratory distress syndrome.</a></li>
+      <li><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2013-10-01_prevalence_and_progn/">Prevalence and prognosis of cor pulmonale during protective ventilation for acute respiratory distress syndrome.</a></li>
       
-      <li><a href="/publication/2015-11-01_delirium_and_circadi/">Delirium and Circadian Rhythm of Melatonin During Weaning From Mechanical Ventilation: An Ancillary Study of a Weaning Trial.</a></li>
+      <li><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2015-11-01_delirium_and_circadi/">Delirium and Circadian Rhythm of Melatonin During Weaning From Mechanical Ventilation: An Ancillary Study of a Weaning Trial.</a></li>
       
     </ul>
   </div>
@@ -1241,7 +1279,7 @@
     
     
     
-    <script src="/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
+    <script src="https://consultation-recherche-donnees-sante.netlify.app/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
 
     
 

@@ -37,7 +37,7 @@
   <meta name="description" content="BACKGROUND:POR*28 is a recently newly described allelic variant of the cytochrome P450 oxidoreductase (POR), which might be associated with an increased metabolic activity of P450 cytochromes (CYP) 3A5 and 3A4. Consequently, carriers of at least 1 allele of this polymorphism could require increased calcineurin inhibitors doses to reach the target residual concentrations (C0). The objective of this study was to test whether the allelic variant of POR, which is associated with an increased metabolic activity of CYP3A, impacts tacrolimus (Tac) pharmacokinetics.METHODS:We tested this hypothesis in a population of 229 kidney transplant recipients (KTR) from a large, multicenter, prospective and randomized study. We have analyzed the association between POR*28 genotype and the proportion of individuals reaching the target Tac residual concentration (Tac C0) 10 days after transplantation. We have also measured the association between POR*28 and the Tac C0, and adjusted Tac C0 (Tac C0/Tac dose) over time using generalized mixed linear models.RESULTS:Ten days after transplantation, there was no difference of frequencies of KTR within the target range of Tac C0 (C0 10-15 ng/mL) according to the POR*28 genotype (P = 0.8). The mean Tac C0 at day 10 in the POR*1/*1 group was 15.3 ± 9.7 ng/mL compared with 15.7 ± 7.8 ng/mL in the POR*1/*28 group and 14.2 ± 6.8 ng/mL, in the POR*28/*28 group, P = 0.8. The adjusted Tac C0 was not associated with POR*28 genotype over time (random effects model, P = 0.9). When restricted to KTR expressing CYP3A5, POR*28 genotype did not impact the proportion of individuals within the Tac C0 target range neither the adjusted Tac C0 (random effects model, P = 0.1).CONCLUSIONS:POR*28 does not significantly influence Tac pharmacokinetic parameters in a large cohort of KTR. This study does not confirm recent findings indicating that POR*28 carriers require more Tac to reach target C0. ">
 
   
-  <link rel="alternate" hreflang="fr" href="https://www.coreds.com/publication/2016-04-01_a_lack_of_significan/">
+  <link rel="alternate" hreflang="fr" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2016-04-01_a_lack_of_significan/">
 
   
 
@@ -66,7 +66,7 @@
   
   
   
-  <script src="/js/mathjax-config.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/mathjax-config.js"></script>
   
 
   
@@ -241,13 +241,51 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.css">
+  <link rel="stylesheet" href="https://consultation-recherche-donnees-sante.netlify.app/css/wowchemy.css">
 
   
 
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-80B5KND2Y6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-80B5KND2Y6', { 'anonymize_ip': true });
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
   
@@ -258,11 +296,11 @@
 
   
 
-  <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
+  <link rel="manifest" href="https://consultation-recherche-donnees-sante.netlify.app/index.webmanifest">
+  <link rel="icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="https://www.coreds.com/publication/2016-04-01_a_lack_of_significan/">
+  <link rel="canonical" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2016-04-01_a_lack_of_significan/">
 
   
   
@@ -278,10 +316,10 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:url" content="https://www.coreds.com/publication/2016-04-01_a_lack_of_significan/">
+  <meta property="og:url" content="https://consultation-recherche-donnees-sante.netlify.app/publication/2016-04-01_a_lack_of_significan/">
   <meta property="og:title" content="A Lack of Significant Effect of POR*28 Allelic Variant on Tacrolimus Exposure in Kidney Transplant Recipients. | Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:description" content="BACKGROUND:POR*28 is a recently newly described allelic variant of the cytochrome P450 oxidoreductase (POR), which might be associated with an increased metabolic activity of P450 cytochromes (CYP) 3A5 and 3A4. Consequently, carriers of at least 1 allele of this polymorphism could require increased calcineurin inhibitors doses to reach the target residual concentrations (C0). The objective of this study was to test whether the allelic variant of POR, which is associated with an increased metabolic activity of CYP3A, impacts tacrolimus (Tac) pharmacokinetics.METHODS:We tested this hypothesis in a population of 229 kidney transplant recipients (KTR) from a large, multicenter, prospective and randomized study. We have analyzed the association between POR*28 genotype and the proportion of individuals reaching the target Tac residual concentration (Tac C0) 10 days after transplantation. We have also measured the association between POR*28 and the Tac C0, and adjusted Tac C0 (Tac C0/Tac dose) over time using generalized mixed linear models.RESULTS:Ten days after transplantation, there was no difference of frequencies of KTR within the target range of Tac C0 (C0 10-15 ng/mL) according to the POR*28 genotype (P = 0.8). The mean Tac C0 at day 10 in the POR*1/*1 group was 15.3 ± 9.7 ng/mL compared with 15.7 ± 7.8 ng/mL in the POR*1/*28 group and 14.2 ± 6.8 ng/mL, in the POR*28/*28 group, P = 0.8. The adjusted Tac C0 was not associated with POR*28 genotype over time (random effects model, P = 0.9). When restricted to KTR expressing CYP3A5, POR*28 genotype did not impact the proportion of individuals within the Tac C0 target range neither the adjusted Tac C0 (random effects model, P = 0.1).CONCLUSIONS:POR*28 does not significantly influence Tac pharmacokinetic parameters in a large cohort of KTR. This study does not confirm recent findings indicating that POR*28 carriers require more Tac to reach target C0. "><meta property="og:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
-  <meta property="twitter:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
+  <meta property="og:description" content="BACKGROUND:POR*28 is a recently newly described allelic variant of the cytochrome P450 oxidoreductase (POR), which might be associated with an increased metabolic activity of P450 cytochromes (CYP) 3A5 and 3A4. Consequently, carriers of at least 1 allele of this polymorphism could require increased calcineurin inhibitors doses to reach the target residual concentrations (C0). The objective of this study was to test whether the allelic variant of POR, which is associated with an increased metabolic activity of CYP3A, impacts tacrolimus (Tac) pharmacokinetics.METHODS:We tested this hypothesis in a population of 229 kidney transplant recipients (KTR) from a large, multicenter, prospective and randomized study. We have analyzed the association between POR*28 genotype and the proportion of individuals reaching the target Tac residual concentration (Tac C0) 10 days after transplantation. We have also measured the association between POR*28 and the Tac C0, and adjusted Tac C0 (Tac C0/Tac dose) over time using generalized mixed linear models.RESULTS:Ten days after transplantation, there was no difference of frequencies of KTR within the target range of Tac C0 (C0 10-15 ng/mL) according to the POR*28 genotype (P = 0.8). The mean Tac C0 at day 10 in the POR*1/*1 group was 15.3 ± 9.7 ng/mL compared with 15.7 ± 7.8 ng/mL in the POR*1/*28 group and 14.2 ± 6.8 ng/mL, in the POR*28/*28 group, P = 0.8. The adjusted Tac C0 was not associated with POR*28 genotype over time (random effects model, P = 0.9). When restricted to KTR expressing CYP3A5, POR*28 genotype did not impact the proportion of individuals within the Tac C0 target range neither the adjusted Tac C0 (random effects model, P = 0.1).CONCLUSIONS:POR*28 does not significantly influence Tac pharmacokinetic parameters in a large cohort of KTR. This study does not confirm recent findings indicating that POR*28 carriers require more Tac to reach target C0. "><meta property="og:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
+  <meta property="twitter:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
   
     
       <meta property="article:published_time" content="2016-04-01T00:00:00&#43;00:00">
@@ -308,7 +346,7 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://www.coreds.com/publication/2016-04-01_a_lack_of_significan/"
+    "@id": "https://consultation-recherche-donnees-sante.netlify.app/publication/2016-04-01_a_lack_of_significan/"
   },
   "headline": "A Lack of Significant Effect of POR*28 Allelic Variant on Tacrolimus Exposure in Kidney Transplant Recipients.",
   
@@ -325,7 +363,7 @@
     "name": "Consultation Recherche Données de Santé - CoReDS",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
+      "url": "https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
     }
   },
   "description": "BACKGROUND:POR*28 is a recently newly described allelic variant of the cytochrome P450 oxidoreductase (POR), which might be associated with an increased metabolic activity of P450 cytochromes (CYP) 3A5 and 3A4. Consequently, carriers of at least 1 allele of this polymorphism could require increased calcineurin inhibitors doses to reach the target residual concentrations (C0). The objective of this study was to test whether the allelic variant of POR, which is associated with an increased metabolic activity of CYP3A, impacts tacrolimus (Tac) pharmacokinetics.METHODS:We tested this hypothesis in a population of 229 kidney transplant recipients (KTR) from a large, multicenter, prospective and randomized study. We have analyzed the association between POR*28 genotype and the proportion of individuals reaching the target Tac residual concentration (Tac C0) 10 days after transplantation. We have also measured the association between POR*28 and the Tac C0, and adjusted Tac C0 (Tac C0/Tac dose) over time using generalized mixed linear models.RESULTS:Ten days after transplantation, there was no difference of frequencies of KTR within the target range of Tac C0 (C0 10-15 ng/mL) according to the POR*28 genotype (P = 0.8). The mean Tac C0 at day 10 in the POR*1/*1 group was 15.3 ± 9.7 ng/mL compared with 15.7 ± 7.8 ng/mL in the POR*1/*28 group and 14.2 ± 6.8 ng/mL, in the POR*28/*28 group, P = 0.8. The adjusted Tac C0 was not associated with POR*28 genotype over time (random effects model, P = 0.9). When restricted to KTR expressing CYP3A5, POR*28 genotype did not impact the proportion of individuals within the Tac C0 target range neither the adjusted Tac C0 (random effects model, P = 0.1).CONCLUSIONS:POR*28 does not significantly influence Tac pharmacokinetic parameters in a large cohort of KTR. This study does not confirm recent findings indicating that POR*28 carriers require more Tac to reach target C0. "
@@ -390,7 +428,7 @@
     <script>const isSiteThemeDark = false;</script>
   
   
-  <script src="/js/load-theme.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/load-theme.js"></script>
 
   <aside class="search-results" id="search">
   <div class="container">
@@ -445,7 +483,7 @@
 
     
     <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -458,7 +496,7 @@
 
     
     <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -494,7 +532,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/entreprendre/"><span>Commencer un projet</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/entreprendre/"><span>Commencer un projet</span></a>
         </li>
 
         
@@ -524,44 +562,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/suivremonprojet/"><span>Suivre son projet</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-            
-            
-            
-              
-            
-            
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#outils"><span>Boite à outils</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/suivremonprojet/"><span>Suivre son projet</span></a>
         </li>
 
         
@@ -598,7 +599,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#publi"><span>Publications</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#outils"><span>Boite à outils</span></a>
         </li>
 
         
@@ -635,7 +636,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#transparence"><span>Portail de transparence</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#publi"><span>Publications</span></a>
         </li>
 
         
@@ -672,7 +673,44 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#people"><span>Qui sommes-nous ?</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#transparence"><span>Portail de transparence</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#people"><span>Qui sommes-nous ?</span></a>
         </li>
 
         
@@ -745,7 +783,7 @@
     
 
   
-  <span ><a href="/author/jannot-anne-sophie/">Jannot Anne-Sophie</a></span>, <span ><a href="/author/vuillemin-xavier/">Vuillemin Xavier</a></span>, <span ><a href="/author/etienne-isabelle/">Etienne Isabelle</a></span>, <span ><a href="/author/buchler-mathias/">Buchler Mathias</a></span>, <span ><a href="/author/hurault-de-ligny-bruno/">Hurault de Ligny Bruno</a></span>, <span ><a href="/author/choukroun-gabriel/">Choukroun Gabriel</a></span>, <span ><a href="/author/colosio-charlotte/">Colosio Charlotte</a></span>, <span ><a href="/author/thierry-antoine/">Thierry Antoine</a></span>, <span ><a href="/author/vigneau-cecile/">Vigneau Cecile</a></span>, <span ><a href="/author/moulin-bruno/">Moulin Bruno</a></span>, <span ><a href="/author/rerolle-jean-philippe/">Rerolle Jean-Philippe</a></span>, <span ><a href="/author/heng-anne-elizabeth/">Heng Anne-Elizabeth</a></span>, <span ><a href="/author/subra-jean-francois/">Subra Jean-Francois</a></span>, <span ><a href="/author/legendre-christophe/">Legendre Christophe</a></span>, <span ><a href="/author/beaune-philippe/">Beaune Philippe</a></span>, <span ><a href="/author/loriot-marie-anne/">Loriot Marie Anne</a></span>, <span ><a href="/author/thervet-eric/">Thervet Eric</a></span>, <span ><a href="/author/pallet-nicolas/">Pallet Nicolas</a></span>
+  <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/jannot-anne-sophie/">Jannot Anne-Sophie</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/vuillemin-xavier/">Vuillemin Xavier</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/etienne-isabelle/">Etienne Isabelle</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/buchler-mathias/">Buchler Mathias</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/hurault-de-ligny-bruno/">Hurault de Ligny Bruno</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/choukroun-gabriel/">Choukroun Gabriel</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/colosio-charlotte/">Colosio Charlotte</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/thierry-antoine/">Thierry Antoine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/vigneau-cecile/">Vigneau Cecile</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/moulin-bruno/">Moulin Bruno</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/rerolle-jean-philippe/">Rerolle Jean-Philippe</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/heng-anne-elizabeth/">Heng Anne-Elizabeth</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/subra-jean-francois/">Subra Jean-Francois</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/legendre-christophe/">Legendre Christophe</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/beaune-philippe/">Beaune Philippe</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/loriot-marie-anne/">Loriot Marie Anne</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/thervet-eric/">Thervet Eric</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/pallet-nicolas/">Pallet Nicolas</a></span>
   </div>
   
   
@@ -811,7 +849,7 @@
           <div class="col-12 col-md-9">
             
             
-            <a href="/publication/#2">
+            <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/#2">
               Article de revue
             </a>
             
@@ -870,7 +908,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://www.coreds.com/publication/2016-04-01_a_lack_of_significan/&amp;text=A%20Lack%20of%20Significant%20Effect%20of%20POR*28%20Allelic%20Variant%20on%20Tacrolimus%20Exposure%20in%20Kidney%20Transplant%20Recipients." target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2016-04-01_a_lack_of_significan/&amp;text=A%20Lack%20of%20Significant%20Effect%20of%20POR*28%20Allelic%20Variant%20on%20Tacrolimus%20Exposure%20in%20Kidney%20Transplant%20Recipients." target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -883,7 +921,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://www.coreds.com/publication/2016-04-01_a_lack_of_significan/&amp;t=A%20Lack%20of%20Significant%20Effect%20of%20POR*28%20Allelic%20Variant%20on%20Tacrolimus%20Exposure%20in%20Kidney%20Transplant%20Recipients." target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://consultation-recherche-donnees-sante.netlify.app/publication/2016-04-01_a_lack_of_significan/&amp;t=A%20Lack%20of%20Significant%20Effect%20of%20POR*28%20Allelic%20Variant%20on%20Tacrolimus%20Exposure%20in%20Kidney%20Transplant%20Recipients." target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -896,7 +934,7 @@
       
       
       <li>
-        <a href="mailto:?subject=A%20Lack%20of%20Significant%20Effect%20of%20POR*28%20Allelic%20Variant%20on%20Tacrolimus%20Exposure%20in%20Kidney%20Transplant%20Recipients.&amp;body=https://www.coreds.com/publication/2016-04-01_a_lack_of_significan/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=A%20Lack%20of%20Significant%20Effect%20of%20POR*28%20Allelic%20Variant%20on%20Tacrolimus%20Exposure%20in%20Kidney%20Transplant%20Recipients.&amp;body=https://consultation-recherche-donnees-sante.netlify.app/publication/2016-04-01_a_lack_of_significan/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -909,7 +947,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://www.coreds.com/publication/2016-04-01_a_lack_of_significan/&amp;title=A%20Lack%20of%20Significant%20Effect%20of%20POR*28%20Allelic%20Variant%20on%20Tacrolimus%20Exposure%20in%20Kidney%20Transplant%20Recipients." target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2016-04-01_a_lack_of_significan/&amp;title=A%20Lack%20of%20Significant%20Effect%20of%20POR*28%20Allelic%20Variant%20on%20Tacrolimus%20Exposure%20in%20Kidney%20Transplant%20Recipients." target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -922,7 +960,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=A%20Lack%20of%20Significant%20Effect%20of%20POR*28%20Allelic%20Variant%20on%20Tacrolimus%20Exposure%20in%20Kidney%20Transplant%20Recipients.%20https://www.coreds.com/publication/2016-04-01_a_lack_of_significan/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=A%20Lack%20of%20Significant%20Effect%20of%20POR*28%20Allelic%20Variant%20on%20Tacrolimus%20Exposure%20in%20Kidney%20Transplant%20Recipients.%20https://consultation-recherche-donnees-sante.netlify.app/publication/2016-04-01_a_lack_of_significan/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -935,7 +973,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://www.coreds.com/publication/2016-04-01_a_lack_of_significan/&amp;title=A%20Lack%20of%20Significant%20Effect%20of%20POR*28%20Allelic%20Variant%20on%20Tacrolimus%20Exposure%20in%20Kidney%20Transplant%20Recipients." target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2016-04-01_a_lack_of_significan/&amp;title=A%20Lack%20of%20Significant%20Effect%20of%20POR*28%20Allelic%20Variant%20on%20Tacrolimus%20Exposure%20in%20Kidney%20Transplant%20Recipients." target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1258,7 +1296,7 @@
     
     
     
-    <script src="/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
+    <script src="https://consultation-recherche-donnees-sante.netlify.app/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
 
     
 

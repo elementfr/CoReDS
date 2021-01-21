@@ -37,7 +37,7 @@
   <meta name="description" content="OBJECTIVE:Preliminary data from different cohorts of small sample size or with short follow-up indicate poorer prognosis in people with obesity compared with other patients. This study aims to precisely describe the strength of association between obesity in patients hospitalized with coronavirus disease 2019 (COVID-19) and mortality and to clarify the risk according to usual cardiometabolic risk factors in a large cohort.METHODS:This is a prospective cohort study including 5,795 patients aged 18 to 79 years hospitalized from February 1 to April 30, 2020, in the Paris area, with confirmed infection by severe acute respiratory syndrome coronavirus 2. Adjusted regression models were used to estimate the odds ratios (ORs) and 95% CIs for the mortality rate at 30 days across BMI classes, without and with imputation for missing BMI values.RESULTS:Eight hundred ninety-one deaths had occurred at 30 days. Mortality was significantly raised in people with obesity, with the following ORs for BMI of 30 to 35 kg/m2 , 35 to 40 kg/m2 , and &amp;gt;40 kg/m2 : 1.89 (95% CI: 1.45-2.47), 2.79 (95% CI: 1.95-3.97), and 2.55 (95% CI: 1.62-3.95), respectively (18.5-25 kg/m2 was used as the reference class). This increase holds for all age classes.CONCLUSIONS:Obesity doubles mortality in patients hospitalized with COVID-19. ">
 
   
-  <link rel="alternate" hreflang="fr" href="https://www.coreds.com/publication/2020-12-01_obesity_doubles_mort/">
+  <link rel="alternate" hreflang="fr" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2020-12-01_obesity_doubles_mort/">
 
   
 
@@ -66,7 +66,7 @@
   
   
   
-  <script src="/js/mathjax-config.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/mathjax-config.js"></script>
   
 
   
@@ -241,13 +241,51 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.css">
+  <link rel="stylesheet" href="https://consultation-recherche-donnees-sante.netlify.app/css/wowchemy.css">
 
   
 
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-80B5KND2Y6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-80B5KND2Y6', { 'anonymize_ip': true });
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
   
@@ -258,11 +296,11 @@
 
   
 
-  <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
+  <link rel="manifest" href="https://consultation-recherche-donnees-sante.netlify.app/index.webmanifest">
+  <link rel="icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="https://www.coreds.com/publication/2020-12-01_obesity_doubles_mort/">
+  <link rel="canonical" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2020-12-01_obesity_doubles_mort/">
 
   
   
@@ -278,10 +316,10 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:url" content="https://www.coreds.com/publication/2020-12-01_obesity_doubles_mort/">
+  <meta property="og:url" content="https://consultation-recherche-donnees-sante.netlify.app/publication/2020-12-01_obesity_doubles_mort/">
   <meta property="og:title" content="Obesity Doubles Mortality in Patients Hospitalized for Severe Acute Respiratory Syndrome Coronavirus 2 in Paris Hospitals, France: A Cohort Study on 5,795 Patients. | Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:description" content="OBJECTIVE:Preliminary data from different cohorts of small sample size or with short follow-up indicate poorer prognosis in people with obesity compared with other patients. This study aims to precisely describe the strength of association between obesity in patients hospitalized with coronavirus disease 2019 (COVID-19) and mortality and to clarify the risk according to usual cardiometabolic risk factors in a large cohort.METHODS:This is a prospective cohort study including 5,795 patients aged 18 to 79 years hospitalized from February 1 to April 30, 2020, in the Paris area, with confirmed infection by severe acute respiratory syndrome coronavirus 2. Adjusted regression models were used to estimate the odds ratios (ORs) and 95% CIs for the mortality rate at 30 days across BMI classes, without and with imputation for missing BMI values.RESULTS:Eight hundred ninety-one deaths had occurred at 30 days. Mortality was significantly raised in people with obesity, with the following ORs for BMI of 30 to 35 kg/m2 , 35 to 40 kg/m2 , and &amp;gt;40 kg/m2 : 1.89 (95% CI: 1.45-2.47), 2.79 (95% CI: 1.95-3.97), and 2.55 (95% CI: 1.62-3.95), respectively (18.5-25 kg/m2 was used as the reference class). This increase holds for all age classes.CONCLUSIONS:Obesity doubles mortality in patients hospitalized with COVID-19. "><meta property="og:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
-  <meta property="twitter:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
+  <meta property="og:description" content="OBJECTIVE:Preliminary data from different cohorts of small sample size or with short follow-up indicate poorer prognosis in people with obesity compared with other patients. This study aims to precisely describe the strength of association between obesity in patients hospitalized with coronavirus disease 2019 (COVID-19) and mortality and to clarify the risk according to usual cardiometabolic risk factors in a large cohort.METHODS:This is a prospective cohort study including 5,795 patients aged 18 to 79 years hospitalized from February 1 to April 30, 2020, in the Paris area, with confirmed infection by severe acute respiratory syndrome coronavirus 2. Adjusted regression models were used to estimate the odds ratios (ORs) and 95% CIs for the mortality rate at 30 days across BMI classes, without and with imputation for missing BMI values.RESULTS:Eight hundred ninety-one deaths had occurred at 30 days. Mortality was significantly raised in people with obesity, with the following ORs for BMI of 30 to 35 kg/m2 , 35 to 40 kg/m2 , and &amp;gt;40 kg/m2 : 1.89 (95% CI: 1.45-2.47), 2.79 (95% CI: 1.95-3.97), and 2.55 (95% CI: 1.62-3.95), respectively (18.5-25 kg/m2 was used as the reference class). This increase holds for all age classes.CONCLUSIONS:Obesity doubles mortality in patients hospitalized with COVID-19. "><meta property="og:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
+  <meta property="twitter:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
   
     
       <meta property="article:published_time" content="2020-12-01T00:00:00&#43;00:00">
@@ -308,7 +346,7 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://www.coreds.com/publication/2020-12-01_obesity_doubles_mort/"
+    "@id": "https://consultation-recherche-donnees-sante.netlify.app/publication/2020-12-01_obesity_doubles_mort/"
   },
   "headline": "Obesity Doubles Mortality in Patients Hospitalized for Severe Acute Respiratory Syndrome Coronavirus 2 in Paris Hospitals, France: A Cohort Study on 5,795 Patients.",
   
@@ -325,7 +363,7 @@
     "name": "Consultation Recherche Données de Santé - CoReDS",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
+      "url": "https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
     }
   },
   "description": "OBJECTIVE:Preliminary data from different cohorts of small sample size or with short follow-up indicate poorer prognosis in people with obesity compared with other patients. This study aims to precisely describe the strength of association between obesity in patients hospitalized with coronavirus disease 2019 (COVID-19) and mortality and to clarify the risk according to usual cardiometabolic risk factors in a large cohort.METHODS:This is a prospective cohort study including 5,795 patients aged 18 to 79 years hospitalized from February 1 to April 30, 2020, in the Paris area, with confirmed infection by severe acute respiratory syndrome coronavirus 2. Adjusted regression models were used to estimate the odds ratios (ORs) and 95% CIs for the mortality rate at 30 days across BMI classes, without and with imputation for missing BMI values.RESULTS:Eight hundred ninety-one deaths had occurred at 30 days. Mortality was significantly raised in people with obesity, with the following ORs for BMI of 30 to 35 kg/m2 , 35 to 40 kg/m2 , and \u0026gt;40 kg/m2 : 1.89 (95% CI: 1.45-2.47), 2.79 (95% CI: 1.95-3.97), and 2.55 (95% CI: 1.62-3.95), respectively (18.5-25 kg/m2 was used as the reference class). This increase holds for all age classes.CONCLUSIONS:Obesity doubles mortality in patients hospitalized with COVID-19. "
@@ -390,7 +428,7 @@
     <script>const isSiteThemeDark = false;</script>
   
   
-  <script src="/js/load-theme.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/load-theme.js"></script>
 
   <aside class="search-results" id="search">
   <div class="container">
@@ -445,7 +483,7 @@
 
     
     <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -458,7 +496,7 @@
 
     
     <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -494,7 +532,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/entreprendre/"><span>Commencer un projet</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/entreprendre/"><span>Commencer un projet</span></a>
         </li>
 
         
@@ -524,44 +562,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/suivremonprojet/"><span>Suivre son projet</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-            
-            
-            
-              
-            
-            
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#outils"><span>Boite à outils</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/suivremonprojet/"><span>Suivre son projet</span></a>
         </li>
 
         
@@ -598,7 +599,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#publi"><span>Publications</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#outils"><span>Boite à outils</span></a>
         </li>
 
         
@@ -635,7 +636,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#transparence"><span>Portail de transparence</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#publi"><span>Publications</span></a>
         </li>
 
         
@@ -672,7 +673,44 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#people"><span>Qui sommes-nous ?</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#transparence"><span>Portail de transparence</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#people"><span>Qui sommes-nous ?</span></a>
         </li>
 
         
@@ -745,7 +783,7 @@
     
 
   
-  <span ><a href="/author/czernichow-sebastien/">Czernichow Sebastien</a></span>, <span ><a href="/author/rives-lange-claire/">Rives-Lange Claire</a></span>, <span ><a href="/author/guerot-emmanuel/">Guerot Emmanuel</a></span>, <span ><a href="/author/diehl-jean-luc/">Diehl Jean-Luc</a></span>, <span ><a href="/author/katsahian-sandrine/">Katsahian Sandrine</a></span>, <span ><a href="/author/hulot-jean-sebastien/">Hulot Jean-Sebastien</a></span>, <span ><a href="/author/poghosyan-tigran/">Poghosyan Tigran</a></span>, <span ><a href="/author/carette-claire/">Carette Claire</a></span>, <span ><a href="/author/ancel-pierre-yves/">Ancel Pierre-Yves</a></span>, <span ><a href="/author/bauchet-alain/">Bauchet Alain</a></span>, <span ><a href="/author/beeker-nathanael/">Beeker Nathanael</a></span>, <span ><a href="/author/benoit-vincent/">Benoit Vincent</a></span>, <span ><a href="/author/bernaux-melodie/">Bernaux Melodie</a></span>, <span ><a href="/author/bellamine-ali/">Bellamine Ali</a></span>, <span ><a href="/author/bey-romain/">Bey Romain</a></span>, <span ><a href="/author/bourmaud-aurelie/">Bourmaud Aurelie</a></span>, <span ><a href="/author/breant-stephane/">Breant Stephane</a></span>, <span ><a href="/author/burgun-anita/">Burgun Anita</a></span>, <span ><a href="/author/carrat-fabrice/">Carrat Fabrice</a></span>, <span ><a href="/author/caucheteux-charlotte/">Caucheteux Charlotte</a></span>, <span ><a href="/author/champ-julien/">Champ Julien</a></span>, <span ><a href="/author/cormont-sylvie/">Cormont Sylvie</a></span>, <span ><a href="/author/daniel-christel/">Daniel Christel</a></span>, <span ><a href="/author/dubiel-julien/">Dubiel Julien</a></span>, <span ><a href="/author/ducloas-catherine/">Ducloas Catherine</a></span>, <span ><a href="/author/esteve-loic/">Esteve Loic</a></span>, <span ><a href="/author/frank-marie/">Frank Marie</a></span>, <span ><a href="/author/garcelon-nicolas/">Garcelon Nicolas</a></span>, <span ><a href="/author/gramfort-alexandre/">Gramfort Alexandre</a></span>, <span ><a href="/author/griffon-nicolas/">Griffon Nicolas</a></span>, <span ><a href="/author/grisel-olivier/">Grisel Olivier</a></span>, <span ><a href="/author/guilbaud-martin/">Guilbaud Martin</a></span>, <span ><a href="/author/hassen-khodja-claire/">Hassen-Khodja Claire</a></span>, <span ><a href="/author/hemery-francois/">Hemery Francois</a></span>, <span ><a href="/author/hilka-martin/">Hilka Martin</a></span>, <span ><a href="/author/jannot-anne-sophie/">Jannot Anne-Sophie</a></span>, <span ><a href="/author/lambert-jerome/">Lambert Jerome</a></span>, <span ><a href="/author/layese-richard/">Layese Richard</a></span>, <span ><a href="/author/leblanc-judith/">Leblanc Judith</a></span>, <span ><a href="/author/lebouter-leo/">Lebouter Leo</a></span>, <span ><a href="/author/lemaitre-guillaume/">Lemaitre Guillaume</a></span>, <span ><a href="/author/leprovost-damien/">Leprovost Damien</a></span>, <span ><a href="/author/lerner-ivan/">Lerner Ivan</a></span>, <span ><a href="/author/levi-sallah-kankoe/">Levi Sallah Kankoe</a></span>, <span ><a href="/author/maire-aurelien/">Maire Aurelien</a></span>, <span ><a href="/author/mamzer-marie-france/">Mamzer Marie-France</a></span>, <span ><a href="/author/martel-patricia/">Martel Patricia</a></span>, <span ><a href="/author/mensch-arthur/">Mensch Arthur</a></span>, <span ><a href="/author/moreau-thomas/">Moreau Thomas</a></span>, <span ><a href="/author/neuraz-antoine/">Neuraz Antoine</a></span>, <span ><a href="/author/orlova-nina/">Orlova Nina</a></span>, <span ><a href="/author/paris-nicolas/">Paris Nicolas</a></span>, <span ><a href="/author/rance-bastien/">Rance Bastien</a></span>, <span ><a href="/author/ravera-helene/">Ravera Helene</a></span>, <span ><a href="/author/rozes-antoine/">Rozes Antoine</a></span>, <span ><a href="/author/salamanca-elisa/">Salamanca Elisa</a></span>, <span ><a href="/author/sandrin-arnaud/">Sandrin Arnaud</a></span>, <span ><a href="/author/serre-patricia/">Serre Patricia</a></span>, <span ><a href="/author/tannier-xavier/">Tannier Xavier</a></span>, <span ><a href="/author/treluyer-jean-marc/">Treluyer Jean-Marc</a></span>, <span ><a href="/author/van-gysel-damien/">van Gysel Damien</a></span>, <span ><a href="/author/varoquaux-gael/">Varoquaux Gael</a></span>, <span ><a href="/author/vie-jill-jen/">Vie Jill Jen</a></span>, <span ><a href="/author/wack-maxime/">Wack Maxime</a></span>, <span ><a href="/author/wajsburt-perceval/">Wajsburt Perceval</a></span>, <span ><a href="/author/wassermann-demian/">Wassermann Demian</a></span>, <span ><a href="/author/zapletal-eric/">Zapletal Eric</a></span>
+  <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/czernichow-sebastien/">Czernichow Sebastien</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/rives-lange-claire/">Rives-Lange Claire</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/guerot-emmanuel/">Guerot Emmanuel</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/diehl-jean-luc/">Diehl Jean-Luc</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/katsahian-sandrine/">Katsahian Sandrine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/hulot-jean-sebastien/">Hulot Jean-Sebastien</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/poghosyan-tigran/">Poghosyan Tigran</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/carette-claire/">Carette Claire</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/ancel-pierre-yves/">Ancel Pierre-Yves</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/bauchet-alain/">Bauchet Alain</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/beeker-nathanael/">Beeker Nathanael</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/benoit-vincent/">Benoit Vincent</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/bernaux-melodie/">Bernaux Melodie</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/bellamine-ali/">Bellamine Ali</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/bey-romain/">Bey Romain</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/bourmaud-aurelie/">Bourmaud Aurelie</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/breant-stephane/">Breant Stephane</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/burgun-anita/">Burgun Anita</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/carrat-fabrice/">Carrat Fabrice</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/caucheteux-charlotte/">Caucheteux Charlotte</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/champ-julien/">Champ Julien</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/cormont-sylvie/">Cormont Sylvie</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/daniel-christel/">Daniel Christel</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/dubiel-julien/">Dubiel Julien</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/ducloas-catherine/">Ducloas Catherine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/esteve-loic/">Esteve Loic</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/frank-marie/">Frank Marie</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/garcelon-nicolas/">Garcelon Nicolas</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/gramfort-alexandre/">Gramfort Alexandre</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/griffon-nicolas/">Griffon Nicolas</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/grisel-olivier/">Grisel Olivier</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/guilbaud-martin/">Guilbaud Martin</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/hassen-khodja-claire/">Hassen-Khodja Claire</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/hemery-francois/">Hemery Francois</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/hilka-martin/">Hilka Martin</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/jannot-anne-sophie/">Jannot Anne-Sophie</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/lambert-jerome/">Lambert Jerome</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/layese-richard/">Layese Richard</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/leblanc-judith/">Leblanc Judith</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/lebouter-leo/">Lebouter Leo</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/lemaitre-guillaume/">Lemaitre Guillaume</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/leprovost-damien/">Leprovost Damien</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/lerner-ivan/">Lerner Ivan</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/levi-sallah-kankoe/">Levi Sallah Kankoe</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/maire-aurelien/">Maire Aurelien</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/mamzer-marie-france/">Mamzer Marie-France</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/martel-patricia/">Martel Patricia</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/mensch-arthur/">Mensch Arthur</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/moreau-thomas/">Moreau Thomas</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/neuraz-antoine/">Neuraz Antoine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/orlova-nina/">Orlova Nina</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/paris-nicolas/">Paris Nicolas</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/rance-bastien/">Rance Bastien</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/ravera-helene/">Ravera Helene</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/rozes-antoine/">Rozes Antoine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/salamanca-elisa/">Salamanca Elisa</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/sandrin-arnaud/">Sandrin Arnaud</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/serre-patricia/">Serre Patricia</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/tannier-xavier/">Tannier Xavier</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/treluyer-jean-marc/">Treluyer Jean-Marc</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/van-gysel-damien/">van Gysel Damien</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/varoquaux-gael/">Varoquaux Gael</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/vie-jill-jen/">Vie Jill Jen</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/wack-maxime/">Wack Maxime</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/wajsburt-perceval/">Wajsburt Perceval</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/wassermann-demian/">Wassermann Demian</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/zapletal-eric/">Zapletal Eric</a></span>
   </div>
   
   
@@ -811,7 +849,7 @@
           <div class="col-12 col-md-9">
             
             
-            <a href="/publication/#2">
+            <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/#2">
               Article de revue
             </a>
             
@@ -870,7 +908,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://www.coreds.com/publication/2020-12-01_obesity_doubles_mort/&amp;text=Obesity%20Doubles%20Mortality%20in%20Patients%20Hospitalized%20for%20Severe%20Acute%20Respiratory%20Syndrome%20Coronavirus%202%20in%20Paris%20Hospitals,%20France:%20A%20Cohort%20Study%20on%205,795%20Patients." target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2020-12-01_obesity_doubles_mort/&amp;text=Obesity%20Doubles%20Mortality%20in%20Patients%20Hospitalized%20for%20Severe%20Acute%20Respiratory%20Syndrome%20Coronavirus%202%20in%20Paris%20Hospitals,%20France:%20A%20Cohort%20Study%20on%205,795%20Patients." target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -883,7 +921,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://www.coreds.com/publication/2020-12-01_obesity_doubles_mort/&amp;t=Obesity%20Doubles%20Mortality%20in%20Patients%20Hospitalized%20for%20Severe%20Acute%20Respiratory%20Syndrome%20Coronavirus%202%20in%20Paris%20Hospitals,%20France:%20A%20Cohort%20Study%20on%205,795%20Patients." target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://consultation-recherche-donnees-sante.netlify.app/publication/2020-12-01_obesity_doubles_mort/&amp;t=Obesity%20Doubles%20Mortality%20in%20Patients%20Hospitalized%20for%20Severe%20Acute%20Respiratory%20Syndrome%20Coronavirus%202%20in%20Paris%20Hospitals,%20France:%20A%20Cohort%20Study%20on%205,795%20Patients." target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -896,7 +934,7 @@
       
       
       <li>
-        <a href="mailto:?subject=Obesity%20Doubles%20Mortality%20in%20Patients%20Hospitalized%20for%20Severe%20Acute%20Respiratory%20Syndrome%20Coronavirus%202%20in%20Paris%20Hospitals,%20France:%20A%20Cohort%20Study%20on%205,795%20Patients.&amp;body=https://www.coreds.com/publication/2020-12-01_obesity_doubles_mort/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=Obesity%20Doubles%20Mortality%20in%20Patients%20Hospitalized%20for%20Severe%20Acute%20Respiratory%20Syndrome%20Coronavirus%202%20in%20Paris%20Hospitals,%20France:%20A%20Cohort%20Study%20on%205,795%20Patients.&amp;body=https://consultation-recherche-donnees-sante.netlify.app/publication/2020-12-01_obesity_doubles_mort/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -909,7 +947,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://www.coreds.com/publication/2020-12-01_obesity_doubles_mort/&amp;title=Obesity%20Doubles%20Mortality%20in%20Patients%20Hospitalized%20for%20Severe%20Acute%20Respiratory%20Syndrome%20Coronavirus%202%20in%20Paris%20Hospitals,%20France:%20A%20Cohort%20Study%20on%205,795%20Patients." target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2020-12-01_obesity_doubles_mort/&amp;title=Obesity%20Doubles%20Mortality%20in%20Patients%20Hospitalized%20for%20Severe%20Acute%20Respiratory%20Syndrome%20Coronavirus%202%20in%20Paris%20Hospitals,%20France:%20A%20Cohort%20Study%20on%205,795%20Patients." target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -922,7 +960,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=Obesity%20Doubles%20Mortality%20in%20Patients%20Hospitalized%20for%20Severe%20Acute%20Respiratory%20Syndrome%20Coronavirus%202%20in%20Paris%20Hospitals,%20France:%20A%20Cohort%20Study%20on%205,795%20Patients.%20https://www.coreds.com/publication/2020-12-01_obesity_doubles_mort/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=Obesity%20Doubles%20Mortality%20in%20Patients%20Hospitalized%20for%20Severe%20Acute%20Respiratory%20Syndrome%20Coronavirus%202%20in%20Paris%20Hospitals,%20France:%20A%20Cohort%20Study%20on%205,795%20Patients.%20https://consultation-recherche-donnees-sante.netlify.app/publication/2020-12-01_obesity_doubles_mort/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -935,7 +973,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://www.coreds.com/publication/2020-12-01_obesity_doubles_mort/&amp;title=Obesity%20Doubles%20Mortality%20in%20Patients%20Hospitalized%20for%20Severe%20Acute%20Respiratory%20Syndrome%20Coronavirus%202%20in%20Paris%20Hospitals,%20France:%20A%20Cohort%20Study%20on%205,795%20Patients." target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2020-12-01_obesity_doubles_mort/&amp;title=Obesity%20Doubles%20Mortality%20in%20Patients%20Hospitalized%20for%20Severe%20Acute%20Respiratory%20Syndrome%20Coronavirus%202%20in%20Paris%20Hospitals,%20France:%20A%20Cohort%20Study%20on%205,795%20Patients." target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1377,15 +1415,15 @@
     <h3>Sur le même sujet</h3>
     <ul>
       
-      <li><a href="/publication/2020-08-01_natural_language_pro/">Natural Language Processing for Rapid Response to Emergent Diseases: Case Study of Calcium Channel Blockers and Hypertension in the COVID-19 Pandemic.</a></li>
+      <li><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2020-08-01_natural_language_pro/">Natural Language Processing for Rapid Response to Emergent Diseases: Case Study of Calcium Channel Blockers and Hypertension in the COVID-19 Pandemic.</a></li>
       
-      <li><a href="/publication/2020-01-01_international_electr/">International electronic health record-derived COVID-19 clinical course profiles: the 4CE consortium.</a></li>
+      <li><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2020-01-01_international_electr/">International electronic health record-derived COVID-19 clinical course profiles: the 4CE consortium.</a></li>
       
-      <li><a href="/publication/2018-05-01_next_generation_phen/">Next generation phenotyping using narrative reports in a rare disease clinical data warehouse.</a></li>
+      <li><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2018-05-01_next_generation_phen/">Next generation phenotyping using narrative reports in a rare disease clinical data warehouse.</a></li>
       
-      <li><a href="/publication/2018-04-01_a_clinician_friendly/">A clinician friendly data warehouse oriented toward narrative reports: Dr. Warehouse.</a></li>
+      <li><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2018-04-01_a_clinician_friendly/">A clinician friendly data warehouse oriented toward narrative reports: Dr. Warehouse.</a></li>
       
-      <li><a href="/publication/2020-12-01_can_reproducibility_/">Can reproducibility be improved in clinical natural language processing? A study of 7 clinical NLP suites.</a></li>
+      <li><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2020-12-01_can_reproducibility_/">Can reproducibility be improved in clinical natural language processing? A study of 7 clinical NLP suites.</a></li>
       
     </ul>
   </div>
@@ -1569,7 +1607,7 @@
     
     
     
-    <script src="/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
+    <script src="https://consultation-recherche-donnees-sante.netlify.app/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
 
     
 

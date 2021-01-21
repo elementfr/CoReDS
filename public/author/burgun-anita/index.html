@@ -37,7 +37,7 @@
   <meta name="description" content="Consultation recherche données de santé">
 
   
-  <link rel="alternate" hreflang="fr" href="https://www.coreds.com/author/burgun-anita/">
+  <link rel="alternate" hreflang="fr" href="https://consultation-recherche-donnees-sante.netlify.app/author/burgun-anita/">
 
   
 
@@ -238,30 +238,68 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.css">
+  <link rel="stylesheet" href="https://consultation-recherche-donnees-sante.netlify.app/css/wowchemy.css">
 
   
 
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-80B5KND2Y6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-80B5KND2Y6', { 'anonymize_ip': true });
+
   
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
 
   
 
+  
+
 
   
   
 
   
-  <link rel="alternate" href="/author/burgun-anita/index.xml" type="application/rss+xml" title="Consultation Recherche Données de Santé - CoReDS">
+  <link rel="alternate" href="https://consultation-recherche-donnees-sante.netlify.app/author/burgun-anita/index.xml" type="application/rss+xml" title="Consultation Recherche Données de Santé - CoReDS">
   
 
-  <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
+  <link rel="manifest" href="https://consultation-recherche-donnees-sante.netlify.app/index.webmanifest">
+  <link rel="icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="https://www.coreds.com/author/burgun-anita/">
+  <link rel="canonical" href="https://consultation-recherche-donnees-sante.netlify.app/author/burgun-anita/">
 
   
   
@@ -277,10 +315,10 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:url" content="https://www.coreds.com/author/burgun-anita/">
+  <meta property="og:url" content="https://consultation-recherche-donnees-sante.netlify.app/author/burgun-anita/">
   <meta property="og:title" content="Burgun Anita | Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:description" content="Consultation recherche données de santé"><meta property="og:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
-  <meta property="twitter:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
+  <meta property="og:description" content="Consultation recherche données de santé"><meta property="og:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
+  <meta property="twitter:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
   
     <meta property="og:updated_time" content="2020-12-01T00:00:00&#43;00:00">
   
@@ -343,7 +381,7 @@
     <script>const isSiteThemeDark = false;</script>
   
   
-  <script src="/js/load-theme.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/load-theme.js"></script>
 
   <aside class="search-results" id="search">
   <div class="container">
@@ -398,7 +436,7 @@
 
     
     <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -411,7 +449,7 @@
 
     
     <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -447,7 +485,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/entreprendre/"><span>Commencer un projet</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/entreprendre/"><span>Commencer un projet</span></a>
         </li>
 
         
@@ -477,44 +515,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/suivremonprojet/"><span>Suivre son projet</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-            
-            
-            
-              
-            
-            
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#outils"><span>Boite à outils</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/suivremonprojet/"><span>Suivre son projet</span></a>
         </li>
 
         
@@ -551,7 +552,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#publi"><span>Publications</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#outils"><span>Boite à outils</span></a>
         </li>
 
         
@@ -588,7 +589,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#transparence"><span>Portail de transparence</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#publi"><span>Publications</span></a>
         </li>
 
         
@@ -625,7 +626,44 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#people"><span>Qui sommes-nous ?</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#transparence"><span>Portail de transparence</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#people"><span>Qui sommes-nous ?</span></a>
         </li>
 
         
@@ -681,111 +719,111 @@
       <ul>
         
         <li>
-          <a href="/publication/2020-12-01_can_reproducibility_/">Can reproducibility be improved in clinical natural language processing? A study of 7 clinical NLP suites.</a>
+          <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2020-12-01_can_reproducibility_/">Can reproducibility be improved in clinical natural language processing? A study of 7 clinical NLP suites.</a>
         </li>
         
         <li>
-          <a href="/publication/2020-12-01_obesity_doubles_mort/">Obesity Doubles Mortality in Patients Hospitalized for Severe Acute Respiratory Syndrome Coronavirus 2 in Paris Hospitals, France: A Cohort Study on 5,795 Patients.</a>
+          <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2020-12-01_obesity_doubles_mort/">Obesity Doubles Mortality in Patients Hospitalized for Severe Acute Respiratory Syndrome Coronavirus 2 in Paris Hospitals, France: A Cohort Study on 5,795 Patients.</a>
         </li>
         
         <li>
-          <a href="/publication/2020-08-01_natural_language_pro/">Natural Language Processing for Rapid Response to Emergent Diseases: Case Study of Calcium Channel Blockers and Hypertension in the COVID-19 Pandemic.</a>
+          <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2020-08-01_natural_language_pro/">Natural Language Processing for Rapid Response to Emergent Diseases: Case Study of Calcium Channel Blockers and Hypertension in the COVID-19 Pandemic.</a>
         </li>
         
         <li>
-          <a href="/publication/2020-01-01_international_electr/">International electronic health record-derived COVID-19 clinical course profiles: the 4CE consortium.</a>
+          <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2020-01-01_international_electr/">International electronic health record-derived COVID-19 clinical course profiles: the 4CE consortium.</a>
         </li>
         
         <li>
-          <a href="/publication/2019-11-01_what_can_millions_of/">What can millions of laboratory test results tell us about the temporal aspect of data quality? Study of data spanning 17 years in a clinical data warehouse.</a>
+          <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2019-11-01_what_can_millions_of/">What can millions of laboratory test results tell us about the temporal aspect of data quality? Study of data spanning 17 years in a clinical data warehouse.</a>
         </li>
         
         <li>
-          <a href="/publication/2019-08-01_do_you_need_embeddin/">Do You Need Embeddings Trained on a Massive Specialized Corpus for Your Clinical Natural Language Processing Task?</a>
+          <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2019-08-01_do_you_need_embeddin/">Do You Need Embeddings Trained on a Massive Specialized Corpus for Your Clinical Natural Language Processing Task?</a>
         </li>
         
         <li>
-          <a href="/publication/2019-08-01_evaluating_the_impac/">Evaluating the Impact of Text Duplications on a Corpus of More than 600,000 Clinical Narratives in a French Hospital.</a>
+          <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2019-08-01_evaluating_the_impac/">Evaluating the Impact of Text Duplications on a Corpus of More than 600,000 Clinical Narratives in a French Hospital.</a>
         </li>
         
         <li>
-          <a href="/publication/2019-05-01_the_adverse_drug_rea/">The Adverse Drug Reactions From Patient Reports in Social Media Project: Protocol for an Evaluation Against a Gold Standard.</a>
+          <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2019-05-01_the_adverse_drug_rea/">The Adverse Drug Reactions From Patient Reports in Social Media Project: Protocol for an Evaluation Against a Gold Standard.</a>
         </li>
         
         <li>
-          <a href="/publication/2019-03-01_comparison_of_method/">Comparison of methods for early-readmission prediction in a high-dimensional heterogeneous covariates and time-to-event outcome framework.</a>
+          <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2019-03-01_comparison_of_method/">Comparison of methods for early-readmission prediction in a high-dimensional heterogeneous covariates and time-to-event outcome framework.</a>
         </li>
         
         <li>
-          <a href="/publication/2019-02-01_integration_of_elici/">Integration of elicited expert information via a power prior in Bayesian variable selection: Application to colon cancer data.</a>
+          <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2019-02-01_integration_of_elici/">Integration of elicited expert information via a power prior in Bayesian variable selection: Application to colon cancer data.</a>
         </li>
         
         <li>
-          <a href="/publication/2019-01-01_accuracy_of_claim_da/">Accuracy of claim data in the identification and classification of adults with congenital heart diseases in electronic medical records.</a>
+          <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2019-01-01_accuracy_of_claim_da/">Accuracy of claim data in the identification and classification of adults with congenital heart diseases in electronic medical records.</a>
         </li>
         
         <li>
-          <a href="/publication/2018-05-01_next_generation_phen/">Next generation phenotyping using narrative reports in a rare disease clinical data warehouse.</a>
+          <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2018-05-01_next_generation_phen/">Next generation phenotyping using narrative reports in a rare disease clinical data warehouse.</a>
         </li>
         
         <li>
-          <a href="/publication/2018-04-01_a_clinician_friendly/">A clinician friendly data warehouse oriented toward narrative reports: Dr. Warehouse.</a>
+          <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2018-04-01_a_clinician_friendly/">A clinician friendly data warehouse oriented toward narrative reports: Dr. Warehouse.</a>
         </li>
         
         <li>
-          <a href="/publication/2018-04-01_integrating_multimod/">Integrating Multimodal Radiation Therapy Data into i2b2.</a>
+          <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2018-04-01_integrating_multimod/">Integrating Multimodal Radiation Therapy Data into i2b2.</a>
         </li>
         
         <li>
-          <a href="/publication/2018-04-01_sex_differences_in_a/">Sex differences in antihypertensive treatment in France among 17 856 patients in a tertiary hypertension unit.</a>
+          <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2018-04-01_sex_differences_in_a/">Sex differences in antihypertensive treatment in France among 17 856 patients in a tertiary hypertension unit.</a>
         </li>
         
         <li>
-          <a href="/publication/2018-01-01_descriptions_of_adve/">Descriptions of Adverse Drug Reactions Are Less Informative in Forums Than in the French Pharmacovigilance Database but Provide More Unexpected Reactions.</a>
+          <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2018-01-01_descriptions_of_adve/">Descriptions of Adverse Drug Reactions Are Less Informative in Forums Than in the French Pharmacovigilance Database but Provide More Unexpected Reactions.</a>
         </li>
         
         <li>
-          <a href="/publication/2018-01-01_labeling_for_big_dat/">Labeling for Big Data in radiation oncology: The Radiation Oncology Structures ontology.</a>
+          <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2018-01-01_labeling_for_big_dat/">Labeling for Big Data in radiation oncology: The Radiation Oncology Structures ontology.</a>
         </li>
         
         <li>
-          <a href="/publication/2018-01-01_mining_adverse_drug_/">Mining Adverse Drug Reactions in Social Media with Named Entity Recognition and Semantic Methods.</a>
+          <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2018-01-01_mining_adverse_drug_/">Mining Adverse Drug Reactions in Social Media with Named Entity Recognition and Semantic Methods.</a>
         </li>
         
         <li>
-          <a href="/publication/2018-01-01_mining_patients_nar/">Mining Patients&#39; Narratives in Social Media for Pharmacovigilance: Adverse Effects and Misuse of Methylphenidate.</a>
+          <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2018-01-01_mining_patients_nar/">Mining Patients&#39; Narratives in Social Media for Pharmacovigilance: Adverse Effects and Misuse of Methylphenidate.</a>
         </li>
         
         <li>
-          <a href="/publication/2018-01-01_the_need_of_an_open_/">The Need of an Open Data Quality Policy: The Case of the &amp;quot;Transparency - Health&amp;quot; Database in the Prevention of Conflict of Interest.</a>
+          <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2018-01-01_the_need_of_an_open_/">The Need of an Open Data Quality Policy: The Case of the &amp;quot;Transparency - Health&amp;quot; Database in the Prevention of Conflict of Interest.</a>
         </li>
         
         <li>
-          <a href="/publication/2017-09-01_a_novel_data-driven_/">A novel data-driven workflow combining literature and electronic health records to estimate comorbidities burden for a specific disease: a case study on autoimmune comorbidities in patients with celiac disease.</a>
+          <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2017-09-01_a_novel_data-driven_/">A novel data-driven workflow combining literature and electronic health records to estimate comorbidities burden for a specific disease: a case study on autoimmune comorbidities in patients with celiac disease.</a>
         </li>
         
         <li>
-          <a href="/publication/2017-06-01_the_diagnosis-wide_l/">The Diagnosis-Wide Landscape of Hospital-Acquired AKI.</a>
+          <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2017-06-01_the_diagnosis-wide_l/">The Diagnosis-Wide Landscape of Hospital-Acquired AKI.</a>
         </li>
         
         <li>
-          <a href="/publication/2017-06-01_the_georges_pompidou/">The Georges Pompidou University Hospital Clinical Data Warehouse: A 8-years follow-up experience.</a>
+          <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2017-06-01_the_georges_pompidou/">The Georges Pompidou University Hospital Clinical Data Warehouse: A 8-years follow-up experience.</a>
         </li>
         
         <li>
-          <a href="/publication/2017-02-01_leveraging_the_ehr4c/">Leveraging the EHR4CR platform to support patient inclusion in academic studies: challenges and lessons learned.</a>
+          <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2017-02-01_leveraging_the_ehr4c/">Leveraging the EHR4CR platform to support patient inclusion in academic studies: challenges and lessons learned.</a>
         </li>
         
         <li>
-          <a href="/publication/2016-01-01_integrating_heteroge/">Integrating Heterogeneous Biomedical Data for Cancer Research: the CARPEM infrastructure.</a>
+          <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2016-01-01_integrating_heteroge/">Integrating Heterogeneous Biomedical Data for Cancer Research: the CARPEM infrastructure.</a>
         </li>
         
         <li>
-          <a href="/publication/2015-01-01_evaluation_of_intern/">Evaluation of Internet Social Networks using Net scoring Tool: A Case Study in Adverse Drug Reaction Mining.</a>
+          <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2015-01-01_evaluation_of_intern/">Evaluation of Internet Social Networks using Net scoring Tool: A Case Study in Adverse Drug Reaction Mining.</a>
         </li>
         
         <li>
-          <a href="/publication/2015-01-01_reviewing_741_patien/">Reviewing 741 patients records in two hours with FASTVISU.</a>
+          <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2015-01-01_reviewing_741_patien/">Reviewing 741 patients records in two hours with FASTVISU.</a>
         </li>
         
       </ul>
@@ -965,7 +1003,7 @@
     
     
     
-    <script src="/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
+    <script src="https://consultation-recherche-donnees-sante.netlify.app/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
 
     
 

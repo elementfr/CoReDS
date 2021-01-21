@@ -37,7 +37,7 @@
   <meta name="description" content="BACKGROUND:Acute bronchiolitis treatment in children and infants is largely supportive, but chest physiotherapy is routinely performed in some countries. In France, national guidelines recommend a specific type of physiotherapy combining the increased exhalation technique (IET) and assisted cough (AC). Our objective was to evaluate the efficacy of chest physiotherapy (IET &#43; AC) in previously healthy infants hospitalized for a first episode of acute bronchiolitis.METHODS AND RESULTS:We conducted a multicenter, randomized, outcome assessor-blind and parent-blind trial in seven French pediatric departments. We recruited 496 infants hospitalized for first-episode acute bronchiolitis between October 2004 and January 2008. Patients were randomly allocated to receive from physiotherapists three times a day, either IET &#43; AC (intervention group, n=246) or nasal suction (NS, control group, n=250). Only physiotherapists were aware of the allocation group of the infant. The primary outcome was time to recovery, defined as 8 hours without oxygen supplementation associated with minimal or no chest recession, and ingesting more than two-thirds of daily food requirements. Secondary outcomes were intensive care unit admissions, artificial ventilation, antibiotic treatment, description of side effects during procedures, and parental perception of comfort. Statistical analysis was performed on an intent-to-treat basis. Median time to recovery was 2.31 days, (95% confidence interval [CI] 1.97-2.73) for the control group and 2.02 days (95% CI 1.96-2.34) for the intervention group, indicating no significant effect of physiotherapy (hazard ratio [HR]=1.09, 95% CI 0.91-1.31, p=0.33). No treatment by age interaction was found (p=0.97). Frequency of vomiting and transient respiratory destabilization was higher in the IET &#43; AC group during the procedure (relative risk [RR]=10.2, 95% CI 1.3-78.8, p=0.005 and RR=5.4, 95% CI 1.6-18.4, p=0.002, respectively). No difference between groups in bradycardia with or without desaturation (RR=1.0, 95% CI 0.2-5.0, p=1.00 and RR=3.6, 95% CI 0.7-16.9, p=0.10, respectively) was found during the procedure. Parents reported that the procedure was more arduous in the group treated with IET (mean difference=0.88, 95% CI 0.33-1.44, p=0.002), whereas there was no difference regarding the assessment of the child&#39;s comfort between both groups (mean difference=-0.07, 95% CI -0.53 to 0.38, p=0.40). No evidence of differences between groups in intensive care admission (RR=0.7, 95% CI 0.3-1.8, p=0.62), ventilatory support (RR=2.5, 95% CI 0.5-13.0, p=0.29), and antibiotic treatment (RR=1.0, 95% CI 0.7-1.3, p=1.00) was observed.CONCLUSIONS:IET &#43; AC had no significant effect on time to recovery in this group of hospitalized infants with bronchiolitis. Additional studies are required to explore the effect of chest physiotherapy on ambulatory populations and for infants without a history of atopy.TRIAL BACKGROUND:ClinicalTrials.gov NCT00125450. ">
 
   
-  <link rel="alternate" hreflang="fr" href="https://www.coreds.com/publication/2010-09-01_effectiveness_of_che/">
+  <link rel="alternate" hreflang="fr" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2010-09-01_effectiveness_of_che/">
 
   
 
@@ -66,7 +66,7 @@
   
   
   
-  <script src="/js/mathjax-config.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/mathjax-config.js"></script>
   
 
   
@@ -241,13 +241,51 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.css">
+  <link rel="stylesheet" href="https://consultation-recherche-donnees-sante.netlify.app/css/wowchemy.css">
 
   
 
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-80B5KND2Y6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-80B5KND2Y6', { 'anonymize_ip': true });
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
   
@@ -258,11 +296,11 @@
 
   
 
-  <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
+  <link rel="manifest" href="https://consultation-recherche-donnees-sante.netlify.app/index.webmanifest">
+  <link rel="icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="https://www.coreds.com/publication/2010-09-01_effectiveness_of_che/">
+  <link rel="canonical" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2010-09-01_effectiveness_of_che/">
 
   
   
@@ -278,10 +316,10 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:url" content="https://www.coreds.com/publication/2010-09-01_effectiveness_of_che/">
+  <meta property="og:url" content="https://consultation-recherche-donnees-sante.netlify.app/publication/2010-09-01_effectiveness_of_che/">
   <meta property="og:title" content="Effectiveness of chest physiotherapy in infants hospitalized with acute bronchiolitis: a multicenter, randomized, controlled trial. | Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:description" content="BACKGROUND:Acute bronchiolitis treatment in children and infants is largely supportive, but chest physiotherapy is routinely performed in some countries. In France, national guidelines recommend a specific type of physiotherapy combining the increased exhalation technique (IET) and assisted cough (AC). Our objective was to evaluate the efficacy of chest physiotherapy (IET &#43; AC) in previously healthy infants hospitalized for a first episode of acute bronchiolitis.METHODS AND RESULTS:We conducted a multicenter, randomized, outcome assessor-blind and parent-blind trial in seven French pediatric departments. We recruited 496 infants hospitalized for first-episode acute bronchiolitis between October 2004 and January 2008. Patients were randomly allocated to receive from physiotherapists three times a day, either IET &#43; AC (intervention group, n=246) or nasal suction (NS, control group, n=250). Only physiotherapists were aware of the allocation group of the infant. The primary outcome was time to recovery, defined as 8 hours without oxygen supplementation associated with minimal or no chest recession, and ingesting more than two-thirds of daily food requirements. Secondary outcomes were intensive care unit admissions, artificial ventilation, antibiotic treatment, description of side effects during procedures, and parental perception of comfort. Statistical analysis was performed on an intent-to-treat basis. Median time to recovery was 2.31 days, (95% confidence interval [CI] 1.97-2.73) for the control group and 2.02 days (95% CI 1.96-2.34) for the intervention group, indicating no significant effect of physiotherapy (hazard ratio [HR]=1.09, 95% CI 0.91-1.31, p=0.33). No treatment by age interaction was found (p=0.97). Frequency of vomiting and transient respiratory destabilization was higher in the IET &#43; AC group during the procedure (relative risk [RR]=10.2, 95% CI 1.3-78.8, p=0.005 and RR=5.4, 95% CI 1.6-18.4, p=0.002, respectively). No difference between groups in bradycardia with or without desaturation (RR=1.0, 95% CI 0.2-5.0, p=1.00 and RR=3.6, 95% CI 0.7-16.9, p=0.10, respectively) was found during the procedure. Parents reported that the procedure was more arduous in the group treated with IET (mean difference=0.88, 95% CI 0.33-1.44, p=0.002), whereas there was no difference regarding the assessment of the child&#39;s comfort between both groups (mean difference=-0.07, 95% CI -0.53 to 0.38, p=0.40). No evidence of differences between groups in intensive care admission (RR=0.7, 95% CI 0.3-1.8, p=0.62), ventilatory support (RR=2.5, 95% CI 0.5-13.0, p=0.29), and antibiotic treatment (RR=1.0, 95% CI 0.7-1.3, p=1.00) was observed.CONCLUSIONS:IET &#43; AC had no significant effect on time to recovery in this group of hospitalized infants with bronchiolitis. Additional studies are required to explore the effect of chest physiotherapy on ambulatory populations and for infants without a history of atopy.TRIAL BACKGROUND:ClinicalTrials.gov NCT00125450. "><meta property="og:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
-  <meta property="twitter:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
+  <meta property="og:description" content="BACKGROUND:Acute bronchiolitis treatment in children and infants is largely supportive, but chest physiotherapy is routinely performed in some countries. In France, national guidelines recommend a specific type of physiotherapy combining the increased exhalation technique (IET) and assisted cough (AC). Our objective was to evaluate the efficacy of chest physiotherapy (IET &#43; AC) in previously healthy infants hospitalized for a first episode of acute bronchiolitis.METHODS AND RESULTS:We conducted a multicenter, randomized, outcome assessor-blind and parent-blind trial in seven French pediatric departments. We recruited 496 infants hospitalized for first-episode acute bronchiolitis between October 2004 and January 2008. Patients were randomly allocated to receive from physiotherapists three times a day, either IET &#43; AC (intervention group, n=246) or nasal suction (NS, control group, n=250). Only physiotherapists were aware of the allocation group of the infant. The primary outcome was time to recovery, defined as 8 hours without oxygen supplementation associated with minimal or no chest recession, and ingesting more than two-thirds of daily food requirements. Secondary outcomes were intensive care unit admissions, artificial ventilation, antibiotic treatment, description of side effects during procedures, and parental perception of comfort. Statistical analysis was performed on an intent-to-treat basis. Median time to recovery was 2.31 days, (95% confidence interval [CI] 1.97-2.73) for the control group and 2.02 days (95% CI 1.96-2.34) for the intervention group, indicating no significant effect of physiotherapy (hazard ratio [HR]=1.09, 95% CI 0.91-1.31, p=0.33). No treatment by age interaction was found (p=0.97). Frequency of vomiting and transient respiratory destabilization was higher in the IET &#43; AC group during the procedure (relative risk [RR]=10.2, 95% CI 1.3-78.8, p=0.005 and RR=5.4, 95% CI 1.6-18.4, p=0.002, respectively). No difference between groups in bradycardia with or without desaturation (RR=1.0, 95% CI 0.2-5.0, p=1.00 and RR=3.6, 95% CI 0.7-16.9, p=0.10, respectively) was found during the procedure. Parents reported that the procedure was more arduous in the group treated with IET (mean difference=0.88, 95% CI 0.33-1.44, p=0.002), whereas there was no difference regarding the assessment of the child&#39;s comfort between both groups (mean difference=-0.07, 95% CI -0.53 to 0.38, p=0.40). No evidence of differences between groups in intensive care admission (RR=0.7, 95% CI 0.3-1.8, p=0.62), ventilatory support (RR=2.5, 95% CI 0.5-13.0, p=0.29), and antibiotic treatment (RR=1.0, 95% CI 0.7-1.3, p=1.00) was observed.CONCLUSIONS:IET &#43; AC had no significant effect on time to recovery in this group of hospitalized infants with bronchiolitis. Additional studies are required to explore the effect of chest physiotherapy on ambulatory populations and for infants without a history of atopy.TRIAL BACKGROUND:ClinicalTrials.gov NCT00125450. "><meta property="og:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
+  <meta property="twitter:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
   
     
       <meta property="article:published_time" content="2010-09-01T00:00:00&#43;00:00">
@@ -308,7 +346,7 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://www.coreds.com/publication/2010-09-01_effectiveness_of_che/"
+    "@id": "https://consultation-recherche-donnees-sante.netlify.app/publication/2010-09-01_effectiveness_of_che/"
   },
   "headline": "Effectiveness of chest physiotherapy in infants hospitalized with acute bronchiolitis: a multicenter, randomized, controlled trial.",
   
@@ -325,7 +363,7 @@
     "name": "Consultation Recherche Données de Santé - CoReDS",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
+      "url": "https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
     }
   },
   "description": "BACKGROUND:Acute bronchiolitis treatment in children and infants is largely supportive, but chest physiotherapy is routinely performed in some countries. In France, national guidelines recommend a specific type of physiotherapy combining the increased exhalation technique (IET) and assisted cough (AC). Our objective was to evaluate the efficacy of chest physiotherapy (IET + AC) in previously healthy infants hospitalized for a first episode of acute bronchiolitis.METHODS AND RESULTS:We conducted a multicenter, randomized, outcome assessor-blind and parent-blind trial in seven French pediatric departments. We recruited 496 infants hospitalized for first-episode acute bronchiolitis between October 2004 and January 2008. Patients were randomly allocated to receive from physiotherapists three times a day, either IET + AC (intervention group, n=246) or nasal suction (NS, control group, n=250). Only physiotherapists were aware of the allocation group of the infant. The primary outcome was time to recovery, defined as 8 hours without oxygen supplementation associated with minimal or no chest recession, and ingesting more than two-thirds of daily food requirements. Secondary outcomes were intensive care unit admissions, artificial ventilation, antibiotic treatment, description of side effects during procedures, and parental perception of comfort. Statistical analysis was performed on an intent-to-treat basis. Median time to recovery was 2.31 days, (95% confidence interval [CI] 1.97-2.73) for the control group and 2.02 days (95% CI 1.96-2.34) for the intervention group, indicating no significant effect of physiotherapy (hazard ratio [HR]=1.09, 95% CI 0.91-1.31, p=0.33). No treatment by age interaction was found (p=0.97). Frequency of vomiting and transient respiratory destabilization was higher in the IET + AC group during the procedure (relative risk [RR]=10.2, 95% CI 1.3-78.8, p=0.005 and RR=5.4, 95% CI 1.6-18.4, p=0.002, respectively). No difference between groups in bradycardia with or without desaturation (RR=1.0, 95% CI 0.2-5.0, p=1.00 and RR=3.6, 95% CI 0.7-16.9, p=0.10, respectively) was found during the procedure. Parents reported that the procedure was more arduous in the group treated with IET (mean difference=0.88, 95% CI 0.33-1.44, p=0.002), whereas there was no difference regarding the assessment of the child's comfort between both groups (mean difference=-0.07, 95% CI -0.53 to 0.38, p=0.40). No evidence of differences between groups in intensive care admission (RR=0.7, 95% CI 0.3-1.8, p=0.62), ventilatory support (RR=2.5, 95% CI 0.5-13.0, p=0.29), and antibiotic treatment (RR=1.0, 95% CI 0.7-1.3, p=1.00) was observed.CONCLUSIONS:IET + AC had no significant effect on time to recovery in this group of hospitalized infants with bronchiolitis. Additional studies are required to explore the effect of chest physiotherapy on ambulatory populations and for infants without a history of atopy.TRIAL BACKGROUND:ClinicalTrials.gov NCT00125450. "
@@ -390,7 +428,7 @@
     <script>const isSiteThemeDark = false;</script>
   
   
-  <script src="/js/load-theme.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/load-theme.js"></script>
 
   <aside class="search-results" id="search">
   <div class="container">
@@ -445,7 +483,7 @@
 
     
     <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -458,7 +496,7 @@
 
     
     <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -494,7 +532,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/entreprendre/"><span>Commencer un projet</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/entreprendre/"><span>Commencer un projet</span></a>
         </li>
 
         
@@ -524,44 +562,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/suivremonprojet/"><span>Suivre son projet</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-            
-            
-            
-              
-            
-            
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#outils"><span>Boite à outils</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/suivremonprojet/"><span>Suivre son projet</span></a>
         </li>
 
         
@@ -598,7 +599,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#publi"><span>Publications</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#outils"><span>Boite à outils</span></a>
         </li>
 
         
@@ -635,7 +636,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#transparence"><span>Portail de transparence</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#publi"><span>Publications</span></a>
         </li>
 
         
@@ -672,7 +673,44 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#people"><span>Qui sommes-nous ?</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#transparence"><span>Portail de transparence</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#people"><span>Qui sommes-nous ?</span></a>
         </li>
 
         
@@ -745,7 +783,7 @@
     
 
   
-  <span ><a href="/author/gajdos-vincent/">Gajdos Vincent</a></span>, <span ><a href="/author/katsahian-sandrine/">Katsahian Sandrine</a></span>, <span ><a href="/author/beydon-nicole/">Beydon Nicole</a></span>, <span ><a href="/author/abadie-veronique/">Abadie Veronique</a></span>, <span ><a href="/author/de-pontual-loic/">de Pontual Loic</a></span>, <span ><a href="/author/larrar-sophie/">Larrar Sophie</a></span>, <span ><a href="/author/epaud-ralph/">Epaud Ralph</a></span>, <span ><a href="/author/chevallier-bertrand/">Chevallier Bertrand</a></span>, <span ><a href="/author/bailleux-sylvain/">Bailleux Sylvain</a></span>, <span ><a href="/author/mollet-boudjemline-alix/">Mollet-Boudjemline Alix</a></span>, <span ><a href="/author/bouyer-jean/">Bouyer Jean</a></span>, <span ><a href="/author/chevret-sylvie/">Chevret Sylvie</a></span>, <span ><a href="/author/labrune-philippe/">Labrune Philippe</a></span>
+  <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/gajdos-vincent/">Gajdos Vincent</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/katsahian-sandrine/">Katsahian Sandrine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/beydon-nicole/">Beydon Nicole</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/abadie-veronique/">Abadie Veronique</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/de-pontual-loic/">de Pontual Loic</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/larrar-sophie/">Larrar Sophie</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/epaud-ralph/">Epaud Ralph</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/chevallier-bertrand/">Chevallier Bertrand</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/bailleux-sylvain/">Bailleux Sylvain</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/mollet-boudjemline-alix/">Mollet-Boudjemline Alix</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/bouyer-jean/">Bouyer Jean</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/chevret-sylvie/">Chevret Sylvie</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/labrune-philippe/">Labrune Philippe</a></span>
   </div>
   
   
@@ -811,7 +849,7 @@
           <div class="col-12 col-md-9">
             
             
-            <a href="/publication/#2">
+            <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/#2">
               Article de revue
             </a>
             
@@ -870,7 +908,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://www.coreds.com/publication/2010-09-01_effectiveness_of_che/&amp;text=Effectiveness%20of%20chest%20physiotherapy%20in%20infants%20hospitalized%20with%20acute%20bronchiolitis:%20a%20multicenter,%20randomized,%20controlled%20trial." target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2010-09-01_effectiveness_of_che/&amp;text=Effectiveness%20of%20chest%20physiotherapy%20in%20infants%20hospitalized%20with%20acute%20bronchiolitis:%20a%20multicenter,%20randomized,%20controlled%20trial." target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -883,7 +921,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://www.coreds.com/publication/2010-09-01_effectiveness_of_che/&amp;t=Effectiveness%20of%20chest%20physiotherapy%20in%20infants%20hospitalized%20with%20acute%20bronchiolitis:%20a%20multicenter,%20randomized,%20controlled%20trial." target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://consultation-recherche-donnees-sante.netlify.app/publication/2010-09-01_effectiveness_of_che/&amp;t=Effectiveness%20of%20chest%20physiotherapy%20in%20infants%20hospitalized%20with%20acute%20bronchiolitis:%20a%20multicenter,%20randomized,%20controlled%20trial." target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -896,7 +934,7 @@
       
       
       <li>
-        <a href="mailto:?subject=Effectiveness%20of%20chest%20physiotherapy%20in%20infants%20hospitalized%20with%20acute%20bronchiolitis:%20a%20multicenter,%20randomized,%20controlled%20trial.&amp;body=https://www.coreds.com/publication/2010-09-01_effectiveness_of_che/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=Effectiveness%20of%20chest%20physiotherapy%20in%20infants%20hospitalized%20with%20acute%20bronchiolitis:%20a%20multicenter,%20randomized,%20controlled%20trial.&amp;body=https://consultation-recherche-donnees-sante.netlify.app/publication/2010-09-01_effectiveness_of_che/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -909,7 +947,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://www.coreds.com/publication/2010-09-01_effectiveness_of_che/&amp;title=Effectiveness%20of%20chest%20physiotherapy%20in%20infants%20hospitalized%20with%20acute%20bronchiolitis:%20a%20multicenter,%20randomized,%20controlled%20trial." target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2010-09-01_effectiveness_of_che/&amp;title=Effectiveness%20of%20chest%20physiotherapy%20in%20infants%20hospitalized%20with%20acute%20bronchiolitis:%20a%20multicenter,%20randomized,%20controlled%20trial." target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -922,7 +960,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=Effectiveness%20of%20chest%20physiotherapy%20in%20infants%20hospitalized%20with%20acute%20bronchiolitis:%20a%20multicenter,%20randomized,%20controlled%20trial.%20https://www.coreds.com/publication/2010-09-01_effectiveness_of_che/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=Effectiveness%20of%20chest%20physiotherapy%20in%20infants%20hospitalized%20with%20acute%20bronchiolitis:%20a%20multicenter,%20randomized,%20controlled%20trial.%20https://consultation-recherche-donnees-sante.netlify.app/publication/2010-09-01_effectiveness_of_che/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -935,7 +973,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://www.coreds.com/publication/2010-09-01_effectiveness_of_che/&amp;title=Effectiveness%20of%20chest%20physiotherapy%20in%20infants%20hospitalized%20with%20acute%20bronchiolitis:%20a%20multicenter,%20randomized,%20controlled%20trial." target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2010-09-01_effectiveness_of_che/&amp;title=Effectiveness%20of%20chest%20physiotherapy%20in%20infants%20hospitalized%20with%20acute%20bronchiolitis:%20a%20multicenter,%20randomized,%20controlled%20trial." target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1228,7 +1266,7 @@
     
     
     
-    <script src="/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
+    <script src="https://consultation-recherche-donnees-sante.netlify.app/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
 
     
 

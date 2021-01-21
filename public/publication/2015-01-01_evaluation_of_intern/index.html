@@ -37,7 +37,7 @@
   <meta name="description" content="BACKGROUND AND OBJECTIVE:Suspected adverse drug reactions (ADR) reported by patients through social media can be a complementary tool to already existing ADRs signal detection processes. However, several studies have shown that the quality of medical information published online varies drastically whatever the health topic addressed. The aim of this study is to use an existing rating tool on a set of social network web sites in order to assess the capabilities of these tools to guide experts for selecting the most adapted social network web site to mine ADRs.METHODS:First, we reviewed and rated 132 Internet forums and social networks according to three major criteria: the number of visits, the notoriety of the forum and the number of messages posted in relation with health and drug therapy. Second, the pharmacist reviewed the topic-oriented message boards with a small number of drug names to ensure that they were not off topic. Six experts have been chosen to assess the selected internet forums using a French scoring tool: Net scoring. Three different scores and the agreement between experts according to each set of scores using weighted kappa pooled using mean have been computed.RESULTS:Three internet forums were chosen at the end of the selection step. Some criteria get high score (scores 3-4) no matter the website evaluated like accessibility (45-46) or design (34-36), at the opposite some criteria always have bad scores like quantitative (40-42) and ethical aspect (43-44), hyperlinks actualization (30-33). Kappa were positives but very small which corresponds to a weak agreement between experts.CONCLUSIONS:The personal opinion of the expert seems to have a major impact, undermining the relevance of the criterion. Our future work is to collect results given by this evaluation grid and proposes a new scoring tool for Internet social networks assessment. ">
 
   
-  <link rel="alternate" hreflang="fr" href="https://www.coreds.com/publication/2015-01-01_evaluation_of_intern/">
+  <link rel="alternate" hreflang="fr" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2015-01-01_evaluation_of_intern/">
 
   
 
@@ -66,7 +66,7 @@
   
   
   
-  <script src="/js/mathjax-config.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/mathjax-config.js"></script>
   
 
   
@@ -241,13 +241,51 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.css">
+  <link rel="stylesheet" href="https://consultation-recherche-donnees-sante.netlify.app/css/wowchemy.css">
 
   
 
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-80B5KND2Y6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-80B5KND2Y6', { 'anonymize_ip': true });
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
   
@@ -258,11 +296,11 @@
 
   
 
-  <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
+  <link rel="manifest" href="https://consultation-recherche-donnees-sante.netlify.app/index.webmanifest">
+  <link rel="icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="https://www.coreds.com/publication/2015-01-01_evaluation_of_intern/">
+  <link rel="canonical" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2015-01-01_evaluation_of_intern/">
 
   
   
@@ -278,10 +316,10 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:url" content="https://www.coreds.com/publication/2015-01-01_evaluation_of_intern/">
+  <meta property="og:url" content="https://consultation-recherche-donnees-sante.netlify.app/publication/2015-01-01_evaluation_of_intern/">
   <meta property="og:title" content="Evaluation of Internet Social Networks using Net scoring Tool: A Case Study in Adverse Drug Reaction Mining. | Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:description" content="BACKGROUND AND OBJECTIVE:Suspected adverse drug reactions (ADR) reported by patients through social media can be a complementary tool to already existing ADRs signal detection processes. However, several studies have shown that the quality of medical information published online varies drastically whatever the health topic addressed. The aim of this study is to use an existing rating tool on a set of social network web sites in order to assess the capabilities of these tools to guide experts for selecting the most adapted social network web site to mine ADRs.METHODS:First, we reviewed and rated 132 Internet forums and social networks according to three major criteria: the number of visits, the notoriety of the forum and the number of messages posted in relation with health and drug therapy. Second, the pharmacist reviewed the topic-oriented message boards with a small number of drug names to ensure that they were not off topic. Six experts have been chosen to assess the selected internet forums using a French scoring tool: Net scoring. Three different scores and the agreement between experts according to each set of scores using weighted kappa pooled using mean have been computed.RESULTS:Three internet forums were chosen at the end of the selection step. Some criteria get high score (scores 3-4) no matter the website evaluated like accessibility (45-46) or design (34-36), at the opposite some criteria always have bad scores like quantitative (40-42) and ethical aspect (43-44), hyperlinks actualization (30-33). Kappa were positives but very small which corresponds to a weak agreement between experts.CONCLUSIONS:The personal opinion of the expert seems to have a major impact, undermining the relevance of the criterion. Our future work is to collect results given by this evaluation grid and proposes a new scoring tool for Internet social networks assessment. "><meta property="og:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
-  <meta property="twitter:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
+  <meta property="og:description" content="BACKGROUND AND OBJECTIVE:Suspected adverse drug reactions (ADR) reported by patients through social media can be a complementary tool to already existing ADRs signal detection processes. However, several studies have shown that the quality of medical information published online varies drastically whatever the health topic addressed. The aim of this study is to use an existing rating tool on a set of social network web sites in order to assess the capabilities of these tools to guide experts for selecting the most adapted social network web site to mine ADRs.METHODS:First, we reviewed and rated 132 Internet forums and social networks according to three major criteria: the number of visits, the notoriety of the forum and the number of messages posted in relation with health and drug therapy. Second, the pharmacist reviewed the topic-oriented message boards with a small number of drug names to ensure that they were not off topic. Six experts have been chosen to assess the selected internet forums using a French scoring tool: Net scoring. Three different scores and the agreement between experts according to each set of scores using weighted kappa pooled using mean have been computed.RESULTS:Three internet forums were chosen at the end of the selection step. Some criteria get high score (scores 3-4) no matter the website evaluated like accessibility (45-46) or design (34-36), at the opposite some criteria always have bad scores like quantitative (40-42) and ethical aspect (43-44), hyperlinks actualization (30-33). Kappa were positives but very small which corresponds to a weak agreement between experts.CONCLUSIONS:The personal opinion of the expert seems to have a major impact, undermining the relevance of the criterion. Our future work is to collect results given by this evaluation grid and proposes a new scoring tool for Internet social networks assessment. "><meta property="og:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
+  <meta property="twitter:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
   
     
       <meta property="article:published_time" content="2015-01-01T00:00:00&#43;00:00">
@@ -308,7 +346,7 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://www.coreds.com/publication/2015-01-01_evaluation_of_intern/"
+    "@id": "https://consultation-recherche-donnees-sante.netlify.app/publication/2015-01-01_evaluation_of_intern/"
   },
   "headline": "Evaluation of Internet Social Networks using Net scoring Tool: A Case Study in Adverse Drug Reaction Mining.",
   
@@ -325,7 +363,7 @@
     "name": "Consultation Recherche Données de Santé - CoReDS",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
+      "url": "https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
     }
   },
   "description": "BACKGROUND AND OBJECTIVE:Suspected adverse drug reactions (ADR) reported by patients through social media can be a complementary tool to already existing ADRs signal detection processes. However, several studies have shown that the quality of medical information published online varies drastically whatever the health topic addressed. The aim of this study is to use an existing rating tool on a set of social network web sites in order to assess the capabilities of these tools to guide experts for selecting the most adapted social network web site to mine ADRs.METHODS:First, we reviewed and rated 132 Internet forums and social networks according to three major criteria: the number of visits, the notoriety of the forum and the number of messages posted in relation with health and drug therapy. Second, the pharmacist reviewed the topic-oriented message boards with a small number of drug names to ensure that they were not off topic. Six experts have been chosen to assess the selected internet forums using a French scoring tool: Net scoring. Three different scores and the agreement between experts according to each set of scores using weighted kappa pooled using mean have been computed.RESULTS:Three internet forums were chosen at the end of the selection step. Some criteria get high score (scores 3-4) no matter the website evaluated like accessibility (45-46) or design (34-36), at the opposite some criteria always have bad scores like quantitative (40-42) and ethical aspect (43-44), hyperlinks actualization (30-33). Kappa were positives but very small which corresponds to a weak agreement between experts.CONCLUSIONS:The personal opinion of the expert seems to have a major impact, undermining the relevance of the criterion. Our future work is to collect results given by this evaluation grid and proposes a new scoring tool for Internet social networks assessment. "
@@ -390,7 +428,7 @@
     <script>const isSiteThemeDark = false;</script>
   
   
-  <script src="/js/load-theme.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/load-theme.js"></script>
 
   <aside class="search-results" id="search">
   <div class="container">
@@ -445,7 +483,7 @@
 
     
     <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -458,7 +496,7 @@
 
     
     <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -494,7 +532,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/entreprendre/"><span>Commencer un projet</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/entreprendre/"><span>Commencer un projet</span></a>
         </li>
 
         
@@ -524,44 +562,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/suivremonprojet/"><span>Suivre son projet</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-            
-            
-            
-              
-            
-            
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#outils"><span>Boite à outils</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/suivremonprojet/"><span>Suivre son projet</span></a>
         </li>
 
         
@@ -598,7 +599,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#publi"><span>Publications</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#outils"><span>Boite à outils</span></a>
         </li>
 
         
@@ -635,7 +636,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#transparence"><span>Portail de transparence</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#publi"><span>Publications</span></a>
         </li>
 
         
@@ -672,7 +673,44 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#people"><span>Qui sommes-nous ?</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#transparence"><span>Portail de transparence</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#people"><span>Qui sommes-nous ?</span></a>
         </li>
 
         
@@ -745,7 +783,7 @@
     
 
   
-  <span ><a href="/author/katsahian-sandrine/">Katsahian Sandrine</a></span>, <span ><a href="/author/simond-moreau-erica/">Simond Moreau Erica</a></span>, <span ><a href="/author/leprovost-damien/">Leprovost Damien</a></span>, <span ><a href="/author/lardon-jeremy/">Lardon Jeremy</a></span>, <span ><a href="/author/bousquet-cedric/">Bousquet Cedric</a></span>, <span ><a href="/author/kerdelhue-gaetan/">Kerdelhue Gaetan</a></span>, <span ><a href="/author/abdellaoui-redhouane/">Abdellaoui Redhouane</a></span>, <span ><a href="/author/texier-nathalie/">Texier Nathalie</a></span>, <span ><a href="/author/burgun-anita/">Burgun Anita</a></span>, <span ><a href="/author/boussadi-abdelali/">Boussadi Abdelali</a></span>, <span ><a href="/author/faviez-carole/">Faviez Carole</a></span>
+  <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/katsahian-sandrine/">Katsahian Sandrine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/simond-moreau-erica/">Simond Moreau Erica</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/leprovost-damien/">Leprovost Damien</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/lardon-jeremy/">Lardon Jeremy</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/bousquet-cedric/">Bousquet Cedric</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/kerdelhue-gaetan/">Kerdelhue Gaetan</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/abdellaoui-redhouane/">Abdellaoui Redhouane</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/texier-nathalie/">Texier Nathalie</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/burgun-anita/">Burgun Anita</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/boussadi-abdelali/">Boussadi Abdelali</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/faviez-carole/">Faviez Carole</a></span>
   </div>
   
   
@@ -811,7 +849,7 @@
           <div class="col-12 col-md-9">
             
             
-            <a href="/publication/#2">
+            <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/#2">
               Article de revue
             </a>
             
@@ -870,7 +908,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://www.coreds.com/publication/2015-01-01_evaluation_of_intern/&amp;text=Evaluation%20of%20Internet%20Social%20Networks%20using%20Net%20scoring%20Tool:%20A%20Case%20Study%20in%20Adverse%20Drug%20Reaction%20Mining." target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2015-01-01_evaluation_of_intern/&amp;text=Evaluation%20of%20Internet%20Social%20Networks%20using%20Net%20scoring%20Tool:%20A%20Case%20Study%20in%20Adverse%20Drug%20Reaction%20Mining." target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -883,7 +921,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://www.coreds.com/publication/2015-01-01_evaluation_of_intern/&amp;t=Evaluation%20of%20Internet%20Social%20Networks%20using%20Net%20scoring%20Tool:%20A%20Case%20Study%20in%20Adverse%20Drug%20Reaction%20Mining." target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://consultation-recherche-donnees-sante.netlify.app/publication/2015-01-01_evaluation_of_intern/&amp;t=Evaluation%20of%20Internet%20Social%20Networks%20using%20Net%20scoring%20Tool:%20A%20Case%20Study%20in%20Adverse%20Drug%20Reaction%20Mining." target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -896,7 +934,7 @@
       
       
       <li>
-        <a href="mailto:?subject=Evaluation%20of%20Internet%20Social%20Networks%20using%20Net%20scoring%20Tool:%20A%20Case%20Study%20in%20Adverse%20Drug%20Reaction%20Mining.&amp;body=https://www.coreds.com/publication/2015-01-01_evaluation_of_intern/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=Evaluation%20of%20Internet%20Social%20Networks%20using%20Net%20scoring%20Tool:%20A%20Case%20Study%20in%20Adverse%20Drug%20Reaction%20Mining.&amp;body=https://consultation-recherche-donnees-sante.netlify.app/publication/2015-01-01_evaluation_of_intern/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -909,7 +947,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://www.coreds.com/publication/2015-01-01_evaluation_of_intern/&amp;title=Evaluation%20of%20Internet%20Social%20Networks%20using%20Net%20scoring%20Tool:%20A%20Case%20Study%20in%20Adverse%20Drug%20Reaction%20Mining." target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2015-01-01_evaluation_of_intern/&amp;title=Evaluation%20of%20Internet%20Social%20Networks%20using%20Net%20scoring%20Tool:%20A%20Case%20Study%20in%20Adverse%20Drug%20Reaction%20Mining." target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -922,7 +960,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=Evaluation%20of%20Internet%20Social%20Networks%20using%20Net%20scoring%20Tool:%20A%20Case%20Study%20in%20Adverse%20Drug%20Reaction%20Mining.%20https://www.coreds.com/publication/2015-01-01_evaluation_of_intern/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=Evaluation%20of%20Internet%20Social%20Networks%20using%20Net%20scoring%20Tool:%20A%20Case%20Study%20in%20Adverse%20Drug%20Reaction%20Mining.%20https://consultation-recherche-donnees-sante.netlify.app/publication/2015-01-01_evaluation_of_intern/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -935,7 +973,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://www.coreds.com/publication/2015-01-01_evaluation_of_intern/&amp;title=Evaluation%20of%20Internet%20Social%20Networks%20using%20Net%20scoring%20Tool:%20A%20Case%20Study%20in%20Adverse%20Drug%20Reaction%20Mining." target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2015-01-01_evaluation_of_intern/&amp;title=Evaluation%20of%20Internet%20Social%20Networks%20using%20Net%20scoring%20Tool:%20A%20Case%20Study%20in%20Adverse%20Drug%20Reaction%20Mining." target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1041,15 +1079,15 @@
     <h3>Sur le même sujet</h3>
     <ul>
       
-      <li><a href="/publication/2018-01-01_descriptions_of_adve/">Descriptions of Adverse Drug Reactions Are Less Informative in Forums Than in the French Pharmacovigilance Database but Provide More Unexpected Reactions.</a></li>
+      <li><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2018-01-01_descriptions_of_adve/">Descriptions of Adverse Drug Reactions Are Less Informative in Forums Than in the French Pharmacovigilance Database but Provide More Unexpected Reactions.</a></li>
       
-      <li><a href="/publication/2018-01-01_mining_patients_nar/">Mining Patients&#39; Narratives in Social Media for Pharmacovigilance: Adverse Effects and Misuse of Methylphenidate.</a></li>
+      <li><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2018-01-01_mining_patients_nar/">Mining Patients&#39; Narratives in Social Media for Pharmacovigilance: Adverse Effects and Misuse of Methylphenidate.</a></li>
       
-      <li><a href="/publication/2019-05-01_the_adverse_drug_rea/">The Adverse Drug Reactions From Patient Reports in Social Media Project: Protocol for an Evaluation Against a Gold Standard.</a></li>
+      <li><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2019-05-01_the_adverse_drug_rea/">The Adverse Drug Reactions From Patient Reports in Social Media Project: Protocol for an Evaluation Against a Gold Standard.</a></li>
       
-      <li><a href="/publication/2018-01-01_mining_adverse_drug_/">Mining Adverse Drug Reactions in Social Media with Named Entity Recognition and Semantic Methods.</a></li>
+      <li><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2018-01-01_mining_adverse_drug_/">Mining Adverse Drug Reactions in Social Media with Named Entity Recognition and Semantic Methods.</a></li>
       
-      <li><a href="/publication/2017-09-01_the_adverse_drug_rea/">The Adverse Drug Reactions from Patient Reports in Social Media Project: Five Major Challenges to Overcome to Operationalize Analysis and Efficiently Support Pharmacovigilance Process.</a></li>
+      <li><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2017-09-01_the_adverse_drug_rea/">The Adverse Drug Reactions from Patient Reports in Social Media Project: Five Major Challenges to Overcome to Operationalize Analysis and Efficiently Support Pharmacovigilance Process.</a></li>
       
     </ul>
   </div>
@@ -1233,7 +1271,7 @@
     
     
     
-    <script src="/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
+    <script src="https://consultation-recherche-donnees-sante.netlify.app/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
 
     
 

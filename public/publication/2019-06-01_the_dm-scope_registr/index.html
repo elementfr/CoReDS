@@ -37,7 +37,7 @@
   <meta name="description" content="BACKGROUND:The relevance of registries as a key component for developing clinical research for rare diseases (RD) and improving patient care has been acknowledged by most stakeholders. As recent studies pointed to several limitations of RD registries our challenge was (1) to improve standardization and data comparability; (2) to facilitate interoperability between existing RD registries; (3) to limit the amount of incomplete data; (4) to improve data quality. This report describes the innovative concept of the DM-Scope Registry that was developed to achieve these objectives for Myotonic Dystrophy (DM), a prototypical example of highly heterogeneous RD. By the setting up of an integrated platform attractive for practitioners use, we aimed to promote DM epidemiology, clinical research and patients care management simultaneously.RESULTS:The DM-Scope Registry is a result of the collaboration within the French excellence network established by the National plan for RDs. Inclusion criteria is all genetically confirmed DM individuals, independently of disease age of onset. The dataset includes social-demographic data, clinical features, genotype, and biomaterial data, and is adjustable for clinical trial data collection. To date, the registry has a nationwide coverage, composed of 55 neuromuscular centres, encompassing the whole disease clinical and genetic spectrum. This widely used platform gathers almost 3000 DM patients (DM1 n = 2828, DM2 n = 142), both children (n = 322) and adults (n = 2648), which accounts for &amp;gt; 20% of overall registered DM patients internationally. The registry supported 10 research studies of various type i.e. observational, basic science studies and patient recruitment for clinical trials.CONCLUSION:The DM-Scope registry represents the largest collection of standardized data for the DM population. Our concept improved collaboration among health care professionals by providing annual follow-up of quality longitudinal data collection. The combination of clinical features and biomolecular materials provides a comprehensive view of the disease in a given population. DM-Scope registry proves to be a powerful device for promoting both research and medical care that is suitable to other countries. In the context of emerging therapies, such integrated platform contributes to the standardisation of international DM research and for the design of multicentre clinical trials. Finally, this valuable model is applicable to other RDs. ">
 
   
-  <link rel="alternate" hreflang="fr" href="https://www.coreds.com/publication/2019-06-01_the_dm-scope_registr/">
+  <link rel="alternate" hreflang="fr" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2019-06-01_the_dm-scope_registr/">
 
   
 
@@ -66,7 +66,7 @@
   
   
   
-  <script src="/js/mathjax-config.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/mathjax-config.js"></script>
   
 
   
@@ -241,13 +241,51 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.css">
+  <link rel="stylesheet" href="https://consultation-recherche-donnees-sante.netlify.app/css/wowchemy.css">
 
   
 
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-80B5KND2Y6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-80B5KND2Y6', { 'anonymize_ip': true });
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
   
@@ -258,11 +296,11 @@
 
   
 
-  <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
+  <link rel="manifest" href="https://consultation-recherche-donnees-sante.netlify.app/index.webmanifest">
+  <link rel="icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="https://www.coreds.com/publication/2019-06-01_the_dm-scope_registr/">
+  <link rel="canonical" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2019-06-01_the_dm-scope_registr/">
 
   
   
@@ -278,10 +316,10 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:url" content="https://www.coreds.com/publication/2019-06-01_the_dm-scope_registr/">
+  <meta property="og:url" content="https://consultation-recherche-donnees-sante.netlify.app/publication/2019-06-01_the_dm-scope_registr/">
   <meta property="og:title" content="The DM-scope registry: a rare disease innovative framework bridging the gap between research and medical care. | Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:description" content="BACKGROUND:The relevance of registries as a key component for developing clinical research for rare diseases (RD) and improving patient care has been acknowledged by most stakeholders. As recent studies pointed to several limitations of RD registries our challenge was (1) to improve standardization and data comparability; (2) to facilitate interoperability between existing RD registries; (3) to limit the amount of incomplete data; (4) to improve data quality. This report describes the innovative concept of the DM-Scope Registry that was developed to achieve these objectives for Myotonic Dystrophy (DM), a prototypical example of highly heterogeneous RD. By the setting up of an integrated platform attractive for practitioners use, we aimed to promote DM epidemiology, clinical research and patients care management simultaneously.RESULTS:The DM-Scope Registry is a result of the collaboration within the French excellence network established by the National plan for RDs. Inclusion criteria is all genetically confirmed DM individuals, independently of disease age of onset. The dataset includes social-demographic data, clinical features, genotype, and biomaterial data, and is adjustable for clinical trial data collection. To date, the registry has a nationwide coverage, composed of 55 neuromuscular centres, encompassing the whole disease clinical and genetic spectrum. This widely used platform gathers almost 3000 DM patients (DM1 n = 2828, DM2 n = 142), both children (n = 322) and adults (n = 2648), which accounts for &amp;gt; 20% of overall registered DM patients internationally. The registry supported 10 research studies of various type i.e. observational, basic science studies and patient recruitment for clinical trials.CONCLUSION:The DM-Scope registry represents the largest collection of standardized data for the DM population. Our concept improved collaboration among health care professionals by providing annual follow-up of quality longitudinal data collection. The combination of clinical features and biomolecular materials provides a comprehensive view of the disease in a given population. DM-Scope registry proves to be a powerful device for promoting both research and medical care that is suitable to other countries. In the context of emerging therapies, such integrated platform contributes to the standardisation of international DM research and for the design of multicentre clinical trials. Finally, this valuable model is applicable to other RDs. "><meta property="og:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
-  <meta property="twitter:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
+  <meta property="og:description" content="BACKGROUND:The relevance of registries as a key component for developing clinical research for rare diseases (RD) and improving patient care has been acknowledged by most stakeholders. As recent studies pointed to several limitations of RD registries our challenge was (1) to improve standardization and data comparability; (2) to facilitate interoperability between existing RD registries; (3) to limit the amount of incomplete data; (4) to improve data quality. This report describes the innovative concept of the DM-Scope Registry that was developed to achieve these objectives for Myotonic Dystrophy (DM), a prototypical example of highly heterogeneous RD. By the setting up of an integrated platform attractive for practitioners use, we aimed to promote DM epidemiology, clinical research and patients care management simultaneously.RESULTS:The DM-Scope Registry is a result of the collaboration within the French excellence network established by the National plan for RDs. Inclusion criteria is all genetically confirmed DM individuals, independently of disease age of onset. The dataset includes social-demographic data, clinical features, genotype, and biomaterial data, and is adjustable for clinical trial data collection. To date, the registry has a nationwide coverage, composed of 55 neuromuscular centres, encompassing the whole disease clinical and genetic spectrum. This widely used platform gathers almost 3000 DM patients (DM1 n = 2828, DM2 n = 142), both children (n = 322) and adults (n = 2648), which accounts for &amp;gt; 20% of overall registered DM patients internationally. The registry supported 10 research studies of various type i.e. observational, basic science studies and patient recruitment for clinical trials.CONCLUSION:The DM-Scope registry represents the largest collection of standardized data for the DM population. Our concept improved collaboration among health care professionals by providing annual follow-up of quality longitudinal data collection. The combination of clinical features and biomolecular materials provides a comprehensive view of the disease in a given population. DM-Scope registry proves to be a powerful device for promoting both research and medical care that is suitable to other countries. In the context of emerging therapies, such integrated platform contributes to the standardisation of international DM research and for the design of multicentre clinical trials. Finally, this valuable model is applicable to other RDs. "><meta property="og:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
+  <meta property="twitter:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
   
     
       <meta property="article:published_time" content="2019-06-01T00:00:00&#43;00:00">
@@ -308,7 +346,7 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://www.coreds.com/publication/2019-06-01_the_dm-scope_registr/"
+    "@id": "https://consultation-recherche-donnees-sante.netlify.app/publication/2019-06-01_the_dm-scope_registr/"
   },
   "headline": "The DM-scope registry: a rare disease innovative framework bridging the gap between research and medical care.",
   
@@ -325,7 +363,7 @@
     "name": "Consultation Recherche Données de Santé - CoReDS",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
+      "url": "https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
     }
   },
   "description": "BACKGROUND:The relevance of registries as a key component for developing clinical research for rare diseases (RD) and improving patient care has been acknowledged by most stakeholders. As recent studies pointed to several limitations of RD registries our challenge was (1) to improve standardization and data comparability; (2) to facilitate interoperability between existing RD registries; (3) to limit the amount of incomplete data; (4) to improve data quality. This report describes the innovative concept of the DM-Scope Registry that was developed to achieve these objectives for Myotonic Dystrophy (DM), a prototypical example of highly heterogeneous RD. By the setting up of an integrated platform attractive for practitioners use, we aimed to promote DM epidemiology, clinical research and patients care management simultaneously.RESULTS:The DM-Scope Registry is a result of the collaboration within the French excellence network established by the National plan for RDs. Inclusion criteria is all genetically confirmed DM individuals, independently of disease age of onset. The dataset includes social-demographic data, clinical features, genotype, and biomaterial data, and is adjustable for clinical trial data collection. To date, the registry has a nationwide coverage, composed of 55 neuromuscular centres, encompassing the whole disease clinical and genetic spectrum. This widely used platform gathers almost 3000 DM patients (DM1 n = 2828, DM2 n = 142), both children (n = 322) and adults (n = 2648), which accounts for \u0026gt; 20% of overall registered DM patients internationally. The registry supported 10 research studies of various type i.e. observational, basic science studies and patient recruitment for clinical trials.CONCLUSION:The DM-Scope registry represents the largest collection of standardized data for the DM population. Our concept improved collaboration among health care professionals by providing annual follow-up of quality longitudinal data collection. The combination of clinical features and biomolecular materials provides a comprehensive view of the disease in a given population. DM-Scope registry proves to be a powerful device for promoting both research and medical care that is suitable to other countries. In the context of emerging therapies, such integrated platform contributes to the standardisation of international DM research and for the design of multicentre clinical trials. Finally, this valuable model is applicable to other RDs. "
@@ -390,7 +428,7 @@
     <script>const isSiteThemeDark = false;</script>
   
   
-  <script src="/js/load-theme.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/load-theme.js"></script>
 
   <aside class="search-results" id="search">
   <div class="container">
@@ -445,7 +483,7 @@
 
     
     <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -458,7 +496,7 @@
 
     
     <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -494,7 +532,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/entreprendre/"><span>Commencer un projet</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/entreprendre/"><span>Commencer un projet</span></a>
         </li>
 
         
@@ -524,44 +562,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/suivremonprojet/"><span>Suivre son projet</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-            
-            
-            
-              
-            
-            
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#outils"><span>Boite à outils</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/suivremonprojet/"><span>Suivre son projet</span></a>
         </li>
 
         
@@ -598,7 +599,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#publi"><span>Publications</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#outils"><span>Boite à outils</span></a>
         </li>
 
         
@@ -635,7 +636,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#transparence"><span>Portail de transparence</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#publi"><span>Publications</span></a>
         </li>
 
         
@@ -672,7 +673,44 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#people"><span>Qui sommes-nous ?</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#transparence"><span>Portail de transparence</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#people"><span>Qui sommes-nous ?</span></a>
         </li>
 
         
@@ -745,7 +783,7 @@
     
 
   
-  <span ><a href="/author/de-antonio-marie/">De Antonio Marie</a></span>, <span ><a href="/author/dogan-celine/">Dogan Celine</a></span>, <span ><a href="/author/daidj-ferroudja/">Daidj Ferroudja</a></span>, <span ><a href="/author/eymard-bruno/">Eymard Bruno</a></span>, <span ><a href="/author/puymirat-jack/">Puymirat Jack</a></span>, <span ><a href="/author/mathieu-jean/">Mathieu Jean</a></span>, <span ><a href="/author/gagnon-cynthia/">Gagnon Cynthia</a></span>, <span ><a href="/author/katsahian-sandrine/">Katsahian Sandrine</a></span>, <span ><a href="/author/hamroun-dalil/">Hamroun Dalil</a></span>, <span ><a href="/author/bassez-guillaume/">Bassez Guillaume</a></span>, <span ><a href="/author/arne-bes-marie-christine/">Arne Bes Marie-Christine</a></span>, <span ><a href="/author/attarian-shahram/">Attarian Shahram</a></span>, <span ><a href="/author/aube-nathier-anne-catherine/">Aube-Nathier Anne-Catherine</a></span>, <span ><a href="/author/audic-frederique/">Audic Frederique</a></span>, <span ><a href="/author/bach-nathalie/">Bach Nathalie</a></span>, <span ><a href="/author/barnerias-christine/">Barnerias Christine</a></span>, <span ><a href="/author/bedat-millet-anne-laure/">Bedat-Millet Anne-Laure</a></span>, <span ><a href="/author/behin-anthony/">Behin Anthony</a></span>, <span ><a href="/author/bellance-remi/">Bellance Remi</a></span>, <span ><a href="/author/benyaou-rabah/">Benyaou Rabah</a></span>, <span ><a href="/author/bombard-veronique/">Bombard Veronique</a></span>, <span ><a href="/author/bouhour-francoise/">Bouhour Francoise</a></span>, <span ><a href="/author/boutte-celia/">Boutte Celia</a></span>, <span ><a href="/author/boyer-francois/">Boyer Francois</a></span>, <span ><a href="/author/cances-claude/">Cances Claude</a></span>, <span ><a href="/author/chabrol-brigitte/">Chabrol Brigitte</a></span>, <span ><a href="/author/chanson-jean-baptiste/">Chanson Jean-Baptiste</a></span>, <span ><a href="/author/chapon-francoise/">Chapon Francoise</a></span>, <span ><a href="/author/chasseriau-raphaele/">Chasseriau Raphaele</a></span>, <span ><a href="/author/cintas-pascal/">Cintas Pascal</a></span>, <span ><a href="/author/cobo-ana-maria/">Cobo Ana-Maria</a></span>, <span ><a href="/author/colombert-vanessa/">Colombert Vanessa</a></span>, <span ><a href="/author/cruz-marie-carmen/">Cruz Marie-Carmen</a></span>, <span ><a href="/author/cuisset-jean-marie/">Cuisset Jean-Marie</a></span>, <span ><a href="/author/deschamps-romain/">Deschamps Romain</a></span>, <span ><a href="/author/desguerre-isabelle/">Desguerre Isabelle</a></span>, <span ><a href="/author/durigneux-julien/">Durigneux Julien</a></span>, <span ><a href="/author/duval-fanny/">Duval Fanny</a></span>, <span ><a href="/author/espil-caroline/">Espil Caroline</a></span>, <span ><a href="/author/fafin-catherine/">Fafin Catherine</a></span>, <span ><a href="/author/feasson-leonard/">Feasson Leonard</a></span>, <span ><a href="/author/fradin-melanie/">Fradin Melanie</a></span>, <span ><a href="/author/furby-alain/">Furby Alain</a></span>, <span ><a href="/author/goldenberg-alice/">Goldenberg Alice</a></span>, <span ><a href="/author/grotto-sarah/">Grotto Sarah</a></span>, <span ><a href="/author/ghorab-karima/">Ghorab Karima</a></span>, <span ><a href="/author/guyant-marechal-lucie/">Guyant-Marechal Lucie</a></span>, <span ><a href="/author/heron-delphine/">Heron Delphine</a></span>, <span ><a href="/author/isapof-arnaud/">Isapof Arnaud</a></span>, <span ><a href="/author/jacquin-piques-agnes/">Jacquin-Piques Agnes</a></span>, <span ><a href="/author/journel-hubert/">Journel Hubert</a></span>, <span ><a href="/author/laforet-pascal/">Laforet Pascal</a></span>, <span ><a href="/author/lagrue-emmanuelle/">Lagrue Emmanuelle</a></span>, <span ><a href="/author/laroche-raynaud-cecile/">Laroche-Raynaud Cecile</a></span>, <span ><a href="/author/laugel-vincent/">Laugel Vincent</a></span>, <span ><a href="/author/lebeau-francoise/">Lebeau Francoise</a></span>, <span ><a href="/author/magot-armelle/">Magot Armelle</a></span>, <span ><a href="/author/manel-veronique/">Manel Veronique</a></span>, <span ><a href="/author/mayer-michele/">Mayer Michele</a></span>, <span ><a href="/author/mercier-sandra/">Mercier Sandra</a></span>, <span ><a href="/author/menard-dominique/">Menard Dominique</a></span>, <span ><a href="/author/michaud-maud/">Michaud Maud</a></span>, <span ><a href="/author/minot-marie-christine/">Minot Marie-Christine</a></span>, <span ><a href="/author/morales-raul-juntas/">Morales Raul-Juntas</a></span>, <span ><a href="/author/nadaj-pakleza-aleksandra/">Nadaj-Pakleza Aleksandra</a></span>, <span ><a href="/author/noury-jean-baptiste/">Noury Jean-Baptiste</a></span>, <span ><a href="/author/pasquier-laurent/">Pasquier Laurent</a></span>, <span ><a href="/author/pellieux-sybille/">Pellieux Sybille</a></span>, <span ><a href="/author/pereon-yann/">Pereon Yann</a></span>, <span ><a href="/author/perrier-julie/">Perrier Julie</a></span>, <span ><a href="/author/peudenier-sylviane/">Peudenier Sylviane</a></span>, <span ><a href="/author/preudhomme-marguerite/">Preudhomme Marguerite</a></span>, <span ><a href="/author/pouget-jean/">Pouget Jean</a></span>, <span ><a href="/author/quijano-roy-susana/">Quijano-Roy Susana</a></span>, <span ><a href="/author/ragot-mandry-sylvie/">Ragot-Mandry Sylvie</a></span>, <span ><a href="/author/richelme-christian/">Richelme Christian</a></span>, <span ><a href="/author/rivier-francois/">Rivier Francois</a></span>, <span ><a href="/author/sabouraud-pascal/">Sabouraud Pascal</a></span>, <span ><a href="/author/sacconi-sabrina/">Sacconi Sabrina</a></span>, <span ><a href="/author/salort-campana-emmanuelle/">Salort-Campana Emmanuelle</a></span>, <span ><a href="/author/sarret-catherine/">Sarret Catherine</a></span>, <span ><a href="/author/schaeffer-stephane/">Schaeffer Stephane</a></span>, <span ><a href="/author/sole-guilhem/">Sole Guilhem</a></span>, <span ><a href="/author/stojkovic-tanya/">Stojkovic Tanya</a></span>, <span ><a href="/author/taithe-frederic/">Taithe Frederic</a></span>, <span ><a href="/author/testard-herve/">Testard Herve</a></span>, <span ><a href="/author/tiffereau-vincent/">Tiffereau Vincent</a></span>, <span ><a href="/author/urtizberea-andoni/">Urtizberea Andoni</a></span>, <span ><a href="/author/vanhulle-catherine/">Vanhulle Catherine</a></span>, <span ><a href="/author/vial-christophe/">Vial Christophe</a></span>, <span ><a href="/author/walther-louvier-ulrike/">Walther-Louvier Ulrike</a></span>, <span ><a href="/author/zagnoli-fabien/">Zagnoli Fabien</a></span>
+  <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/de-antonio-marie/">De Antonio Marie</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/dogan-celine/">Dogan Celine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/daidj-ferroudja/">Daidj Ferroudja</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/eymard-bruno/">Eymard Bruno</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/puymirat-jack/">Puymirat Jack</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/mathieu-jean/">Mathieu Jean</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/gagnon-cynthia/">Gagnon Cynthia</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/katsahian-sandrine/">Katsahian Sandrine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/hamroun-dalil/">Hamroun Dalil</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/bassez-guillaume/">Bassez Guillaume</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/arne-bes-marie-christine/">Arne Bes Marie-Christine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/attarian-shahram/">Attarian Shahram</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/aube-nathier-anne-catherine/">Aube-Nathier Anne-Catherine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/audic-frederique/">Audic Frederique</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/bach-nathalie/">Bach Nathalie</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/barnerias-christine/">Barnerias Christine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/bedat-millet-anne-laure/">Bedat-Millet Anne-Laure</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/behin-anthony/">Behin Anthony</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/bellance-remi/">Bellance Remi</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/benyaou-rabah/">Benyaou Rabah</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/bombard-veronique/">Bombard Veronique</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/bouhour-francoise/">Bouhour Francoise</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/boutte-celia/">Boutte Celia</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/boyer-francois/">Boyer Francois</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/cances-claude/">Cances Claude</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/chabrol-brigitte/">Chabrol Brigitte</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/chanson-jean-baptiste/">Chanson Jean-Baptiste</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/chapon-francoise/">Chapon Francoise</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/chasseriau-raphaele/">Chasseriau Raphaele</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/cintas-pascal/">Cintas Pascal</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/cobo-ana-maria/">Cobo Ana-Maria</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/colombert-vanessa/">Colombert Vanessa</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/cruz-marie-carmen/">Cruz Marie-Carmen</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/cuisset-jean-marie/">Cuisset Jean-Marie</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/deschamps-romain/">Deschamps Romain</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/desguerre-isabelle/">Desguerre Isabelle</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/durigneux-julien/">Durigneux Julien</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/duval-fanny/">Duval Fanny</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/espil-caroline/">Espil Caroline</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/fafin-catherine/">Fafin Catherine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/feasson-leonard/">Feasson Leonard</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/fradin-melanie/">Fradin Melanie</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/furby-alain/">Furby Alain</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/goldenberg-alice/">Goldenberg Alice</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/grotto-sarah/">Grotto Sarah</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/ghorab-karima/">Ghorab Karima</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/guyant-marechal-lucie/">Guyant-Marechal Lucie</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/heron-delphine/">Heron Delphine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/isapof-arnaud/">Isapof Arnaud</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/jacquin-piques-agnes/">Jacquin-Piques Agnes</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/journel-hubert/">Journel Hubert</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/laforet-pascal/">Laforet Pascal</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/lagrue-emmanuelle/">Lagrue Emmanuelle</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/laroche-raynaud-cecile/">Laroche-Raynaud Cecile</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/laugel-vincent/">Laugel Vincent</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/lebeau-francoise/">Lebeau Francoise</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/magot-armelle/">Magot Armelle</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/manel-veronique/">Manel Veronique</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/mayer-michele/">Mayer Michele</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/mercier-sandra/">Mercier Sandra</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/menard-dominique/">Menard Dominique</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/michaud-maud/">Michaud Maud</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/minot-marie-christine/">Minot Marie-Christine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/morales-raul-juntas/">Morales Raul-Juntas</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/nadaj-pakleza-aleksandra/">Nadaj-Pakleza Aleksandra</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/noury-jean-baptiste/">Noury Jean-Baptiste</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/pasquier-laurent/">Pasquier Laurent</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/pellieux-sybille/">Pellieux Sybille</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/pereon-yann/">Pereon Yann</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/perrier-julie/">Perrier Julie</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/peudenier-sylviane/">Peudenier Sylviane</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/preudhomme-marguerite/">Preudhomme Marguerite</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/pouget-jean/">Pouget Jean</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/quijano-roy-susana/">Quijano-Roy Susana</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/ragot-mandry-sylvie/">Ragot-Mandry Sylvie</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/richelme-christian/">Richelme Christian</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/rivier-francois/">Rivier Francois</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/sabouraud-pascal/">Sabouraud Pascal</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/sacconi-sabrina/">Sacconi Sabrina</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/salort-campana-emmanuelle/">Salort-Campana Emmanuelle</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/sarret-catherine/">Sarret Catherine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/schaeffer-stephane/">Schaeffer Stephane</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/sole-guilhem/">Sole Guilhem</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/stojkovic-tanya/">Stojkovic Tanya</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/taithe-frederic/">Taithe Frederic</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/testard-herve/">Testard Herve</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/tiffereau-vincent/">Tiffereau Vincent</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/urtizberea-andoni/">Urtizberea Andoni</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/vanhulle-catherine/">Vanhulle Catherine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/vial-christophe/">Vial Christophe</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/walther-louvier-ulrike/">Walther-Louvier Ulrike</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/zagnoli-fabien/">Zagnoli Fabien</a></span>
   </div>
   
   
@@ -811,7 +849,7 @@
           <div class="col-12 col-md-9">
             
             
-            <a href="/publication/#2">
+            <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/#2">
               Article de revue
             </a>
             
@@ -870,7 +908,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://www.coreds.com/publication/2019-06-01_the_dm-scope_registr/&amp;text=The%20DM-scope%20registry:%20a%20rare%20disease%20innovative%20framework%20bridging%20the%20gap%20between%20research%20and%20medical%20care." target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2019-06-01_the_dm-scope_registr/&amp;text=The%20DM-scope%20registry:%20a%20rare%20disease%20innovative%20framework%20bridging%20the%20gap%20between%20research%20and%20medical%20care." target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -883,7 +921,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://www.coreds.com/publication/2019-06-01_the_dm-scope_registr/&amp;t=The%20DM-scope%20registry:%20a%20rare%20disease%20innovative%20framework%20bridging%20the%20gap%20between%20research%20and%20medical%20care." target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://consultation-recherche-donnees-sante.netlify.app/publication/2019-06-01_the_dm-scope_registr/&amp;t=The%20DM-scope%20registry:%20a%20rare%20disease%20innovative%20framework%20bridging%20the%20gap%20between%20research%20and%20medical%20care." target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -896,7 +934,7 @@
       
       
       <li>
-        <a href="mailto:?subject=The%20DM-scope%20registry:%20a%20rare%20disease%20innovative%20framework%20bridging%20the%20gap%20between%20research%20and%20medical%20care.&amp;body=https://www.coreds.com/publication/2019-06-01_the_dm-scope_registr/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=The%20DM-scope%20registry:%20a%20rare%20disease%20innovative%20framework%20bridging%20the%20gap%20between%20research%20and%20medical%20care.&amp;body=https://consultation-recherche-donnees-sante.netlify.app/publication/2019-06-01_the_dm-scope_registr/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -909,7 +947,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://www.coreds.com/publication/2019-06-01_the_dm-scope_registr/&amp;title=The%20DM-scope%20registry:%20a%20rare%20disease%20innovative%20framework%20bridging%20the%20gap%20between%20research%20and%20medical%20care." target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2019-06-01_the_dm-scope_registr/&amp;title=The%20DM-scope%20registry:%20a%20rare%20disease%20innovative%20framework%20bridging%20the%20gap%20between%20research%20and%20medical%20care." target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -922,7 +960,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=The%20DM-scope%20registry:%20a%20rare%20disease%20innovative%20framework%20bridging%20the%20gap%20between%20research%20and%20medical%20care.%20https://www.coreds.com/publication/2019-06-01_the_dm-scope_registr/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=The%20DM-scope%20registry:%20a%20rare%20disease%20innovative%20framework%20bridging%20the%20gap%20between%20research%20and%20medical%20care.%20https://consultation-recherche-donnees-sante.netlify.app/publication/2019-06-01_the_dm-scope_registr/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -935,7 +973,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://www.coreds.com/publication/2019-06-01_the_dm-scope_registr/&amp;title=The%20DM-scope%20registry:%20a%20rare%20disease%20innovative%20framework%20bridging%20the%20gap%20between%20research%20and%20medical%20care." target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2019-06-01_the_dm-scope_registr/&amp;title=The%20DM-scope%20registry:%20a%20rare%20disease%20innovative%20framework%20bridging%20the%20gap%20between%20research%20and%20medical%20care." target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1527,7 +1565,7 @@
     <h3>Sur le même sujet</h3>
     <ul>
       
-      <li><a href="/publication/2016-01-01_gender_as_a_modifyin/">Gender as a Modifying Factor Influencing Myotonic Dystrophy Type 1 Phenotype Severity and Mortality: A Nationwide Multiple Databases Cross-Sectional Observational Study.</a></li>
+      <li><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2016-01-01_gender_as_a_modifyin/">Gender as a Modifying Factor Influencing Myotonic Dystrophy Type 1 Phenotype Severity and Mortality: A Nationwide Multiple Databases Cross-Sectional Observational Study.</a></li>
       
     </ul>
   </div>
@@ -1711,7 +1749,7 @@
     
     
     
-    <script src="/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
+    <script src="https://consultation-recherche-donnees-sante.netlify.app/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
 
     
 

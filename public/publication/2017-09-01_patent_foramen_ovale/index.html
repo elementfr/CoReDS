@@ -37,7 +37,7 @@
   <meta name="description" content="BACKGROUND:Trials of patent foramen ovale (PFO) closure to prevent recurrent stroke have been inconclusive. We investigated whether patients with cryptogenic stroke and echocardiographic features representing risk of stroke would benefit from PFO closure or anticoagulation, as compared with antiplatelet therapy.METHODS:In a multicenter, randomized, open-label trial, we assigned, in a 1:1:1 ratio, patients 16 to 60 years of age who had had a recent stroke attributed to PFO, with an associated atrial septal aneurysm or large interatrial shunt, to transcatheter PFO closure plus long-term antiplatelet therapy (PFO closure group), antiplatelet therapy alone (antiplatelet-only group), or oral anticoagulation (anticoagulation group) (randomization group 1). Patients with contraindications to anticoagulants or to PFO closure were randomly assigned to the alternative noncontraindicated treatment or to antiplatelet therapy (randomization groups 2 and 3). The primary outcome was occurrence of stroke. The comparison of PFO closure plus antiplatelet therapy with antiplatelet therapy alone was performed with combined data from randomization groups 1 and 2, and the comparison of oral anticoagulation with antiplatelet therapy alone was performed with combined data from randomization groups 1 and 3.RESULTS:A total of 663 patients underwent randomization and were followed for a mean (±SD) of 5.3±2.0 years. In the analysis of randomization groups 1 and 2, no stroke occurred among the 238 patients in the PFO closure group, whereas stroke occurred in 14 of the 235 patients in the antiplatelet-only group (hazard ratio, 0.03; 95% confidence interval, 0 to 0.26; P&amp;lt;0.001). Procedural complications from PFO closure occurred in 14 patients (5.9%). The rate of atrial fibrillation was higher in the PFO closure group than in the antiplatelet-only group (4.6% vs. 0.9%, P=0.02). The number of serious adverse events did not differ significantly between the treatment groups (P=0.56). In the analysis of randomization groups 1 and 3, stroke occurred in 3 of 187 patients assigned to oral anticoagulants and in 7 of 174 patients assigned to antiplatelet therapy alone.CONCLUSIONS:Among patients who had had a recent cryptogenic stroke attributed to PFO with an associated atrial septal aneurysm or large interatrial shunt, the rate of stroke recurrence was lower among those assigned to PFO closure combined with antiplatelet therapy than among those assigned to antiplatelet therapy alone. PFO closure was associated with an increased risk of atrial fibrillation. (Funded by the French Ministry of Health; CLOSE ClinicalTrials.gov number, NCT00562289 .). ">
 
   
-  <link rel="alternate" hreflang="fr" href="https://www.coreds.com/publication/2017-09-01_patent_foramen_ovale/">
+  <link rel="alternate" hreflang="fr" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2017-09-01_patent_foramen_ovale/">
 
   
 
@@ -66,7 +66,7 @@
   
   
   
-  <script src="/js/mathjax-config.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/mathjax-config.js"></script>
   
 
   
@@ -241,13 +241,51 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.css">
+  <link rel="stylesheet" href="https://consultation-recherche-donnees-sante.netlify.app/css/wowchemy.css">
 
   
 
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-80B5KND2Y6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-80B5KND2Y6', { 'anonymize_ip': true });
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
   
@@ -258,11 +296,11 @@
 
   
 
-  <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
+  <link rel="manifest" href="https://consultation-recherche-donnees-sante.netlify.app/index.webmanifest">
+  <link rel="icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="https://www.coreds.com/publication/2017-09-01_patent_foramen_ovale/">
+  <link rel="canonical" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2017-09-01_patent_foramen_ovale/">
 
   
   
@@ -278,10 +316,10 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:url" content="https://www.coreds.com/publication/2017-09-01_patent_foramen_ovale/">
+  <meta property="og:url" content="https://consultation-recherche-donnees-sante.netlify.app/publication/2017-09-01_patent_foramen_ovale/">
   <meta property="og:title" content="Patent Foramen Ovale Closure or Anticoagulation vs. Antiplatelets after Stroke. | Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:description" content="BACKGROUND:Trials of patent foramen ovale (PFO) closure to prevent recurrent stroke have been inconclusive. We investigated whether patients with cryptogenic stroke and echocardiographic features representing risk of stroke would benefit from PFO closure or anticoagulation, as compared with antiplatelet therapy.METHODS:In a multicenter, randomized, open-label trial, we assigned, in a 1:1:1 ratio, patients 16 to 60 years of age who had had a recent stroke attributed to PFO, with an associated atrial septal aneurysm or large interatrial shunt, to transcatheter PFO closure plus long-term antiplatelet therapy (PFO closure group), antiplatelet therapy alone (antiplatelet-only group), or oral anticoagulation (anticoagulation group) (randomization group 1). Patients with contraindications to anticoagulants or to PFO closure were randomly assigned to the alternative noncontraindicated treatment or to antiplatelet therapy (randomization groups 2 and 3). The primary outcome was occurrence of stroke. The comparison of PFO closure plus antiplatelet therapy with antiplatelet therapy alone was performed with combined data from randomization groups 1 and 2, and the comparison of oral anticoagulation with antiplatelet therapy alone was performed with combined data from randomization groups 1 and 3.RESULTS:A total of 663 patients underwent randomization and were followed for a mean (±SD) of 5.3±2.0 years. In the analysis of randomization groups 1 and 2, no stroke occurred among the 238 patients in the PFO closure group, whereas stroke occurred in 14 of the 235 patients in the antiplatelet-only group (hazard ratio, 0.03; 95% confidence interval, 0 to 0.26; P&amp;lt;0.001). Procedural complications from PFO closure occurred in 14 patients (5.9%). The rate of atrial fibrillation was higher in the PFO closure group than in the antiplatelet-only group (4.6% vs. 0.9%, P=0.02). The number of serious adverse events did not differ significantly between the treatment groups (P=0.56). In the analysis of randomization groups 1 and 3, stroke occurred in 3 of 187 patients assigned to oral anticoagulants and in 7 of 174 patients assigned to antiplatelet therapy alone.CONCLUSIONS:Among patients who had had a recent cryptogenic stroke attributed to PFO with an associated atrial septal aneurysm or large interatrial shunt, the rate of stroke recurrence was lower among those assigned to PFO closure combined with antiplatelet therapy than among those assigned to antiplatelet therapy alone. PFO closure was associated with an increased risk of atrial fibrillation. (Funded by the French Ministry of Health; CLOSE ClinicalTrials.gov number, NCT00562289 .). "><meta property="og:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
-  <meta property="twitter:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
+  <meta property="og:description" content="BACKGROUND:Trials of patent foramen ovale (PFO) closure to prevent recurrent stroke have been inconclusive. We investigated whether patients with cryptogenic stroke and echocardiographic features representing risk of stroke would benefit from PFO closure or anticoagulation, as compared with antiplatelet therapy.METHODS:In a multicenter, randomized, open-label trial, we assigned, in a 1:1:1 ratio, patients 16 to 60 years of age who had had a recent stroke attributed to PFO, with an associated atrial septal aneurysm or large interatrial shunt, to transcatheter PFO closure plus long-term antiplatelet therapy (PFO closure group), antiplatelet therapy alone (antiplatelet-only group), or oral anticoagulation (anticoagulation group) (randomization group 1). Patients with contraindications to anticoagulants or to PFO closure were randomly assigned to the alternative noncontraindicated treatment or to antiplatelet therapy (randomization groups 2 and 3). The primary outcome was occurrence of stroke. The comparison of PFO closure plus antiplatelet therapy with antiplatelet therapy alone was performed with combined data from randomization groups 1 and 2, and the comparison of oral anticoagulation with antiplatelet therapy alone was performed with combined data from randomization groups 1 and 3.RESULTS:A total of 663 patients underwent randomization and were followed for a mean (±SD) of 5.3±2.0 years. In the analysis of randomization groups 1 and 2, no stroke occurred among the 238 patients in the PFO closure group, whereas stroke occurred in 14 of the 235 patients in the antiplatelet-only group (hazard ratio, 0.03; 95% confidence interval, 0 to 0.26; P&amp;lt;0.001). Procedural complications from PFO closure occurred in 14 patients (5.9%). The rate of atrial fibrillation was higher in the PFO closure group than in the antiplatelet-only group (4.6% vs. 0.9%, P=0.02). The number of serious adverse events did not differ significantly between the treatment groups (P=0.56). In the analysis of randomization groups 1 and 3, stroke occurred in 3 of 187 patients assigned to oral anticoagulants and in 7 of 174 patients assigned to antiplatelet therapy alone.CONCLUSIONS:Among patients who had had a recent cryptogenic stroke attributed to PFO with an associated atrial septal aneurysm or large interatrial shunt, the rate of stroke recurrence was lower among those assigned to PFO closure combined with antiplatelet therapy than among those assigned to antiplatelet therapy alone. PFO closure was associated with an increased risk of atrial fibrillation. (Funded by the French Ministry of Health; CLOSE ClinicalTrials.gov number, NCT00562289 .). "><meta property="og:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
+  <meta property="twitter:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
   
     
       <meta property="article:published_time" content="2017-09-01T00:00:00&#43;00:00">
@@ -308,7 +346,7 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://www.coreds.com/publication/2017-09-01_patent_foramen_ovale/"
+    "@id": "https://consultation-recherche-donnees-sante.netlify.app/publication/2017-09-01_patent_foramen_ovale/"
   },
   "headline": "Patent Foramen Ovale Closure or Anticoagulation vs. Antiplatelets after Stroke.",
   
@@ -325,7 +363,7 @@
     "name": "Consultation Recherche Données de Santé - CoReDS",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
+      "url": "https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
     }
   },
   "description": "BACKGROUND:Trials of patent foramen ovale (PFO) closure to prevent recurrent stroke have been inconclusive. We investigated whether patients with cryptogenic stroke and echocardiographic features representing risk of stroke would benefit from PFO closure or anticoagulation, as compared with antiplatelet therapy.METHODS:In a multicenter, randomized, open-label trial, we assigned, in a 1:1:1 ratio, patients 16 to 60 years of age who had had a recent stroke attributed to PFO, with an associated atrial septal aneurysm or large interatrial shunt, to transcatheter PFO closure plus long-term antiplatelet therapy (PFO closure group), antiplatelet therapy alone (antiplatelet-only group), or oral anticoagulation (anticoagulation group) (randomization group 1). Patients with contraindications to anticoagulants or to PFO closure were randomly assigned to the alternative noncontraindicated treatment or to antiplatelet therapy (randomization groups 2 and 3). The primary outcome was occurrence of stroke. The comparison of PFO closure plus antiplatelet therapy with antiplatelet therapy alone was performed with combined data from randomization groups 1 and 2, and the comparison of oral anticoagulation with antiplatelet therapy alone was performed with combined data from randomization groups 1 and 3.RESULTS:A total of 663 patients underwent randomization and were followed for a mean (±SD) of 5.3±2.0 years. In the analysis of randomization groups 1 and 2, no stroke occurred among the 238 patients in the PFO closure group, whereas stroke occurred in 14 of the 235 patients in the antiplatelet-only group (hazard ratio, 0.03; 95% confidence interval, 0 to 0.26; P\u0026lt;0.001). Procedural complications from PFO closure occurred in 14 patients (5.9%). The rate of atrial fibrillation was higher in the PFO closure group than in the antiplatelet-only group (4.6% vs. 0.9%, P=0.02). The number of serious adverse events did not differ significantly between the treatment groups (P=0.56). In the analysis of randomization groups 1 and 3, stroke occurred in 3 of 187 patients assigned to oral anticoagulants and in 7 of 174 patients assigned to antiplatelet therapy alone.CONCLUSIONS:Among patients who had had a recent cryptogenic stroke attributed to PFO with an associated atrial septal aneurysm or large interatrial shunt, the rate of stroke recurrence was lower among those assigned to PFO closure combined with antiplatelet therapy than among those assigned to antiplatelet therapy alone. PFO closure was associated with an increased risk of atrial fibrillation. (Funded by the French Ministry of Health; CLOSE ClinicalTrials.gov number, NCT00562289 .). "
@@ -390,7 +428,7 @@
     <script>const isSiteThemeDark = false;</script>
   
   
-  <script src="/js/load-theme.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/load-theme.js"></script>
 
   <aside class="search-results" id="search">
   <div class="container">
@@ -445,7 +483,7 @@
 
     
     <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -458,7 +496,7 @@
 
     
     <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -494,7 +532,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/entreprendre/"><span>Commencer un projet</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/entreprendre/"><span>Commencer un projet</span></a>
         </li>
 
         
@@ -524,44 +562,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/suivremonprojet/"><span>Suivre son projet</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-            
-            
-            
-              
-            
-            
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#outils"><span>Boite à outils</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/suivremonprojet/"><span>Suivre son projet</span></a>
         </li>
 
         
@@ -598,7 +599,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#publi"><span>Publications</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#outils"><span>Boite à outils</span></a>
         </li>
 
         
@@ -635,7 +636,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#transparence"><span>Portail de transparence</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#publi"><span>Publications</span></a>
         </li>
 
         
@@ -672,7 +673,44 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#people"><span>Qui sommes-nous ?</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#transparence"><span>Portail de transparence</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#people"><span>Qui sommes-nous ?</span></a>
         </li>
 
         
@@ -745,7 +783,7 @@
     
 
   
-  <span ><a href="/author/mas-jean-louis/">Mas Jean-Louis</a></span>, <span ><a href="/author/derumeaux-genevieve/">Derumeaux Genevieve</a></span>, <span ><a href="/author/guillon-benoit/">Guillon Benoit</a></span>, <span ><a href="/author/massardier-evelyne/">Massardier Evelyne</a></span>, <span ><a href="/author/hosseini-hassan/">Hosseini Hassan</a></span>, <span ><a href="/author/mechtouff-laura/">Mechtouff Laura</a></span>, <span ><a href="/author/arquizan-caroline/">Arquizan Caroline</a></span>, <span ><a href="/author/bejot-yannick/">Bejot Yannick</a></span>, <span ><a href="/author/vuillier-fabrice/">Vuillier Fabrice</a></span>, <span ><a href="/author/detante-olivier/">Detante Olivier</a></span>, <span ><a href="/author/guidoux-celine/">Guidoux Celine</a></span>, <span ><a href="/author/canaple-sandrine/">Canaple Sandrine</a></span>, <span ><a href="/author/vaduva-claudia/">Vaduva Claudia</a></span>, <span ><a href="/author/dequatre-ponchelle-nelly/">Dequatre-Ponchelle Nelly</a></span>, <span ><a href="/author/sibon-igor/">Sibon Igor</a></span>, <span ><a href="/author/garnier-pierre/">Garnier Pierre</a></span>, <span ><a href="/author/ferrier-anna/">Ferrier Anna</a></span>, <span ><a href="/author/timsit-serge/">Timsit Serge</a></span>, <span ><a href="/author/robinet-borgomano-emmanuelle/">Robinet-Borgomano Emmanuelle</a></span>, <span ><a href="/author/sablot-denis/">Sablot Denis</a></span>, <span ><a href="/author/lacour-jean-christophe/">Lacour Jean-Christophe</a></span>, <span ><a href="/author/zuber-mathieu/">Zuber Mathieu</a></span>, <span ><a href="/author/favrole-pascal/">Favrole Pascal</a></span>, <span ><a href="/author/pinel-jean-francois/">Pinel Jean-Francois</a></span>, <span ><a href="/author/apoil-marion/">Apoil Marion</a></span>, <span ><a href="/author/reiner-peggy/">Reiner Peggy</a></span>, <span ><a href="/author/lefebvre-catherine/">Lefebvre Catherine</a></span>, <span ><a href="/author/guerin-patrice/">Guerin Patrice</a></span>, <span ><a href="/author/piot-christophe/">Piot Christophe</a></span>, <span ><a href="/author/rossi-roland/">Rossi Roland</a></span>, <span ><a href="/author/dubois-rande-jean-luc/">Dubois-Rande Jean-Luc</a></span>, <span ><a href="/author/eicher-jean-christophe/">Eicher Jean-Christophe</a></span>, <span ><a href="/author/meneveau-nicolas/">Meneveau Nicolas</a></span>, <span ><a href="/author/lusson-jean-rene/">Lusson Jean-Rene</a></span>, <span ><a href="/author/bertrand-bernard/">Bertrand Bernard</a></span>, <span ><a href="/author/schleich-jean-marc/">Schleich Jean-Marc</a></span>, <span ><a href="/author/godart-francois/">Godart Francois</a></span>, <span ><a href="/author/thambo-jean-benoit/">Thambo Jean-Benoit</a></span>, <span ><a href="/author/leborgne-laurent/">Leborgne Laurent</a></span>, <span ><a href="/author/michel-patrik/">Michel Patrik</a></span>, <span ><a href="/author/pierard-luc/">Pierard Luc</a></span>, <span ><a href="/author/turc-guillaume/">Turc Guillaume</a></span>, <span ><a href="/author/barthelet-martine/">Barthelet Martine</a></span>, <span ><a href="/author/charles-nelson-anais/">Charles-Nelson Anais</a></span>, <span ><a href="/author/weimar-christian/">Weimar Christian</a></span>, <span ><a href="/author/moulin-thierry/">Moulin Thierry</a></span>, <span ><a href="/author/juliard-jean-michel/">Juliard Jean-Michel</a></span>, <span ><a href="/author/chatellier-gilles/">Chatellier Gilles</a></span>, <span ><a href="/author/domigo-v/">Domigo V</a></span>, <span ><a href="/author/guiraud-v/">Guiraud V</a></span>, <span ><a href="/author/touze-e/">Touze E</a></span>, <span ><a href="/author/calvet-d/">Calvet D</a></span>, <span ><a href="/author/lamy-c/">Lamy C</a></span>, <span ><a href="/author/teiger-e/">Teiger E</a></span>, <span ><a href="/author/dubois-rande-j-l/">Dubois-Rande J-L</a></span>, <span ><a href="/author/aubry-p/">Aubry P</a></span>, <span ><a href="/author/varenne-o/">Varenne O</a></span>, <span ><a href="/author/menacer-s/">Menacer S</a></span>, <span ><a href="/author/sroussi-m/">Sroussi M</a></span>, <span ><a href="/author/nana-a/">Nana A</a></span>, <span ><a href="/author/cabanes-l/">Cabanes L</a></span>, <span ><a href="/author/schunck-a/">Schunck A</a></span>, <span ><a href="/author/herisson-f/">Herisson F</a></span>, <span ><a href="/author/de-gaalon-s/">De Gaalon S</a></span>, <span ><a href="/author/sevin-m/">Sevin M</a></span>, <span ><a href="/author/langlard-j-m/">Langlard J-M</a></span>, <span ><a href="/author/piriou-n/">Piriou N</a></span>, <span ><a href="/author/jaafar-p/">Jaafar P</a></span>, <span ><a href="/author/dhere-b/">d&#39;Here B</a></span>, <span ><a href="/author/stepowski-d/">Stepowski D</a></span>, <span ><a href="/author/bauer-f/">Bauer F</a></span>, <span ><a href="/author/duval-a-m/">Duval A-M</a></span>, <span ><a href="/author/lim-p/">Lim P</a></span>, <span ><a href="/author/nighoghossian-n/">Nighoghossian N</a></span>, <span ><a href="/author/derex-l/">Derex L</a></span>, <span ><a href="/author/cho-t/">Cho T</a></span>, <span ><a href="/author/rioufol-g/">Rioufol G</a></span>, <span ><a href="/author/thibaut-h/">Thibaut H</a></span>, <span ><a href="/author/thivolet-s/">Thivolet S</a></span>, <span ><a href="/author/mourand-i/">Mourand I</a></span>, <span ><a href="/author/sportouch-c/">Sportouch C</a></span>, <span ><a href="/author/cade-s/">Cade S</a></span>, <span ><a href="/author/cransac-f/">Cransac F</a></span>, <span ><a href="/author/giroud-m/">Giroud M</a></span>, <span ><a href="/author/lhuillier-i/">L&#39;Huillier I</a></span>, <span ><a href="/author/chopard-r/">Chopard R</a></span>, <span ><a href="/author/descotes-genon-v/">Descotes-Genon V</a></span>, <span ><a href="/author/garambois-k/">Garambois K</a></span>, <span ><a href="/author/saunier-c/">Saunier C</a></span>, <span ><a href="/author/brochet-e/">Brochet E</a></span>, <span ><a href="/author/mazighi-m/">Mazighi M</a></span>, <span ><a href="/author/meseguer-e/">Meseguer E</a></span>, <span ><a href="/author/messika-zeitoun-d/">Messika-Zeitoun D</a></span>, <span ><a href="/author/cabrejo-l/">Cabrejo L</a></span>, <span ><a href="/author/lavallee-p/">Lavallee P</a></span>, <span ><a href="/author/lepage-l/">Lepage L</a></span>, <span ><a href="/author/amarenco-p/">Amarenco P</a></span>, <span ><a href="/author/bugnicourt-j-m/">Bugnicourt J-M</a></span>, <span ><a href="/author/godefroy-o/">Godefroy O</a></span>, <span ><a href="/author/rey-c/">Rey C</a></span>, <span ><a href="/author/guillaumont-m-p/">Guillaumont M-P</a></span>, <span ><a href="/author/trojette-f/">Trojette F</a></span>, <span ><a href="/author/malaquin-d/">Malaquin D</a></span>, <span ><a href="/author/couvreur-g/">Couvreur G</a></span>, <span ><a href="/author/golfier-v/">Golfier V</a></span>, <span ><a href="/author/plurien-f/">Plurien F</a></span>, <span ><a href="/author/taldir-g/">Taldir G</a></span>, <span ><a href="/author/lucas-c/">Lucas C</a></span>, <span ><a href="/author/cordonnier-c/">Cordonnier C</a></span>, <span ><a href="/author/henon-h/">Henon H</a></span>, <span ><a href="/author/dumont-f/">Dumont F</a></span>, <span ><a href="/author/leys-d/">Leys D</a></span>, <span ><a href="/author/richardson-m/">Richardson M</a></span>, <span ><a href="/author/polge-a-s/">Polge A-S</a></span>, <span ><a href="/author/montaigne-d/">Montaigne D</a></span>, <span ><a href="/author/coisne-a/">Coisne A</a></span>, <span ><a href="/author/rouanet-f/">Rouanet F</a></span>, <span ><a href="/author/renou-p/">Renou P</a></span>, <span ><a href="/author/reant-p/">Reant P</a></span>, <span ><a href="/author/laffite-s/">Laffite S</a></span>, <span ><a href="/author/roudaut-r/">Roudaut R</a></span>, <span ><a href="/author/comtet-c/">Comtet C</a></span>, <span ><a href="/author/delsart-d/">Delsart D</a></span>, <span ><a href="/author/bourgois-n/">Bourgois N</a></span>, <span ><a href="/author/clavelou-p/">Clavelou P</a></span>, <span ><a href="/author/rouhart-f/">Rouhart F</a></span>, <span ><a href="/author/le-cadet-e/">Le Cadet E</a></span>, <span ><a href="/author/tirel-a/">Tirel A</a></span>, <span ><a href="/author/mocquard-y/">Mocquard Y</a></span>, <span ><a href="/author/jobic-y/">Jobic Y</a></span>, <span ><a href="/author/le-ven-f/">Le Ven F</a></span>, <span ><a href="/author/pouliquen-m-c/">Pouliquen M-C</a></span>, <span ><a href="/author/milandre-l/">Milandre L</a></span>, <span ><a href="/author/laksiri-n/">Laksiri N</a></span>, <span ><a href="/author/fraisse-a/">Fraisse A</a></span>, <span ><a href="/author/habib-g/">Habib G</a></span>, <span ><a href="/author/chalvignac-v/">Chalvignac V</a></span>, <span ><a href="/author/thuny-f/">Thuny F</a></span>, <span ><a href="/author/targosz-f/">Targosz F</a></span>, <span ><a href="/author/runavot-g/">Runavot G</a></span>, <span ><a href="/author/chopat-p/">Chopat P</a></span>, <span ><a href="/author/sultan-p/">Sultan P</a></span>, <span ><a href="/author/richard-s/">Richard S</a></span>, <span ><a href="/author/ducrocq-x/">Ducrocq X</a></span>, <span ><a href="/author/marcon-f/">Marcon F</a></span>, <span ><a href="/author/selton-suty-m-c/">Selton-Suty M C</a></span>, <span ><a href="/author/huttin-o/">Huttin O</a></span>, <span ><a href="/author/bruandet-m/">Bruandet M</a></span>, <span ><a href="/author/tamazyan-r/">Tamazyan R</a></span>, <span ><a href="/author/antakly-y/">Antakly Y</a></span>, <span ><a href="/author/garcon-p/">Garcon P</a></span>, <span ><a href="/author/serfaty-j/">Serfaty J</a></span>, <span ><a href="/author/hammoudi-n/">Hammoudi N</a></span>, <span ><a href="/author/donal-e/">Donal E</a></span>, <span ><a href="/author/lelong-b/">Lelong B</a></span>, <span ><a href="/author/chabanne-c/">Chabanne C</a></span>, <span ><a href="/author/viader-f/">Viader F</a></span>, <span ><a href="/author/cogez-j/">Cogez J</a></span>, <span ><a href="/author/labombarda-f/">Labombarda F</a></span>, <span ><a href="/author/saloux-e/">Saloux E</a></span>, <span ><a href="/author/buffon-f/">Buffon F</a></span>, <span ><a href="/author/baudet-m/">Baudet M</a></span>, <span ><a href="/author/logeart-d/">Logeart D</a></span>, <span ><a href="/author/bataille-m/">Bataille M</a></span>, <span ><a href="/author/godard-f/">Godard F</a></span>, <span ><a href="/author/biausque-f/">Biausque F</a></span>, <span ><a href="/author/lefetz-y/">Lefetz Y</a></span>, <span ><a href="/author/clement-dupont-m/">Clement-Dupont M</a></span>, <span ><a href="/author/zegarac-v/">Zegarac V</a></span>, <span ><a href="/author/schmitz-t/">Schmitz T</a></span>, <span ><a href="/author/plicht-b/">Plicht B</a></span>, <span ><a href="/author/eissmann-m/">Eissmann M</a></span>, <span ><a href="/author/mahabadi-a/">Mahabadi A</a></span>, <span ><a href="/author/obadia-m/">Obadia M</a></span>, <span ><a href="/author/iglesias-benyounes-n/">Iglesias Benyounes N</a></span>, <span ><a href="/author/macian-f/">Macian F</a></span>, <span ><a href="/author/darodes-n/">Darodes N</a></span>, <span ><a href="/author/tanguy-b/">Tanguy B</a></span>, <span ><a href="/author/mohty-d/">Mohty D</a></span>, <span ><a href="/author/vuillemet-f/">Vuillemet F</a></span>, <span ><a href="/author/onea-r/">Onea R</a></span>, <span ><a href="/author/greciano-s/">Greciano S</a></span>, <span ><a href="/author/roth-o/">Roth O</a></span>, <span ><a href="/author/neau-j-p/">Neau J-P</a></span>, <span ><a href="/author/quillet-l/">Quillet L</a></span>, <span ><a href="/author/christiaens-l/">Christiaens L</a></span>, <span ><a href="/author/saudeau-d/">Saudeau D</a></span>, <span ><a href="/author/patat-f/">Patat F</a></span>, <span ><a href="/author/singer-o/">Singer O</a></span>, <span ><a href="/author/fichtlscherer-s/">Fichtlscherer S</a></span>, <span ><a href="/author/pico-f/">Pico F</a></span>, <span ><a href="/author/charbonnel-c/">Charbonnel C</a></span>, <span ><a href="/author/durand-zaleski-i/">Durand-Zaleski I</a></span>, <span ><a href="/author/woimant-f/">Woimant F</a></span>, <span ><a href="/author/finet-g/">Finet G</a></span>, <span ><a href="/author/mounier-vehier-f/">Mounier-Vehier F</a></span>, <span ><a href="/author/rodier-g/">Rodier G</a></span>, <span ><a href="/author/ernande-l/">Ernande L</a></span>, <span ><a href="/author/lievre-m/">Lievre M</a></span>, <span ><a href="/author/andrieux-chantal/">Andrieux Chantal</a></span>, <span ><a href="/author/sauret-isabelle/">Sauret Isabelle</a></span>, <span ><a href="/author/bruyere-clemence/">Bruyere Clemence</a></span>, <span ><a href="/author/chenu-romain/">Chenu Romain</a></span>, <span ><a href="/author/trinquart-ludovic/">Trinquart Ludovic</a></span>, <span ><a href="/author/alsaleh-khaled/">Alsaleh Khaled</a></span>, <span ><a href="/author/bousry-djennat/">Bousry Djennat</a></span>, <span ><a href="/author/branco-sonia/">Branco Sonia</a></span>, <span ><a href="/author/brussieux-maxime/">Brussieux Maxime</a></span>, <span ><a href="/author/greaud-cecile/">Greaud Cecile</a></span>, <span ><a href="/author/kacher-zineb/">Kacher Zineb</a></span>, <span ><a href="/author/loret-laurie/">Loret Laurie</a></span>, <span ><a href="/author/niranjani-mahendran/">Niranjani Mahendran</a></span>, <span ><a href="/author/olivier-audrey/">Olivier Audrey</a></span>, <span ><a href="/author/pigeat-romain/">Pigeat Romain</a></span>, <span ><a href="/author/sahuc-karen/">Sahuc Karen</a></span>, <span ><a href="/author/djadi-prat-juliette/">Djadi-Prat Juliette</a></span>
+  <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/mas-jean-louis/">Mas Jean-Louis</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/derumeaux-genevieve/">Derumeaux Genevieve</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/guillon-benoit/">Guillon Benoit</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/massardier-evelyne/">Massardier Evelyne</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/hosseini-hassan/">Hosseini Hassan</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/mechtouff-laura/">Mechtouff Laura</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/arquizan-caroline/">Arquizan Caroline</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/bejot-yannick/">Bejot Yannick</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/vuillier-fabrice/">Vuillier Fabrice</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/detante-olivier/">Detante Olivier</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/guidoux-celine/">Guidoux Celine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/canaple-sandrine/">Canaple Sandrine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/vaduva-claudia/">Vaduva Claudia</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/dequatre-ponchelle-nelly/">Dequatre-Ponchelle Nelly</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/sibon-igor/">Sibon Igor</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/garnier-pierre/">Garnier Pierre</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/ferrier-anna/">Ferrier Anna</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/timsit-serge/">Timsit Serge</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/robinet-borgomano-emmanuelle/">Robinet-Borgomano Emmanuelle</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/sablot-denis/">Sablot Denis</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/lacour-jean-christophe/">Lacour Jean-Christophe</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/zuber-mathieu/">Zuber Mathieu</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/favrole-pascal/">Favrole Pascal</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/pinel-jean-francois/">Pinel Jean-Francois</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/apoil-marion/">Apoil Marion</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/reiner-peggy/">Reiner Peggy</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/lefebvre-catherine/">Lefebvre Catherine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/guerin-patrice/">Guerin Patrice</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/piot-christophe/">Piot Christophe</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/rossi-roland/">Rossi Roland</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/dubois-rande-jean-luc/">Dubois-Rande Jean-Luc</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/eicher-jean-christophe/">Eicher Jean-Christophe</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/meneveau-nicolas/">Meneveau Nicolas</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/lusson-jean-rene/">Lusson Jean-Rene</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/bertrand-bernard/">Bertrand Bernard</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/schleich-jean-marc/">Schleich Jean-Marc</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/godart-francois/">Godart Francois</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/thambo-jean-benoit/">Thambo Jean-Benoit</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/leborgne-laurent/">Leborgne Laurent</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/michel-patrik/">Michel Patrik</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/pierard-luc/">Pierard Luc</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/turc-guillaume/">Turc Guillaume</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/barthelet-martine/">Barthelet Martine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/charles-nelson-anais/">Charles-Nelson Anais</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/weimar-christian/">Weimar Christian</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/moulin-thierry/">Moulin Thierry</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/juliard-jean-michel/">Juliard Jean-Michel</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/chatellier-gilles/">Chatellier Gilles</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/domigo-v/">Domigo V</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/guiraud-v/">Guiraud V</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/touze-e/">Touze E</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/calvet-d/">Calvet D</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/lamy-c/">Lamy C</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/teiger-e/">Teiger E</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/dubois-rande-j-l/">Dubois-Rande J-L</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/aubry-p/">Aubry P</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/varenne-o/">Varenne O</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/menacer-s/">Menacer S</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/sroussi-m/">Sroussi M</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/nana-a/">Nana A</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/cabanes-l/">Cabanes L</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/schunck-a/">Schunck A</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/herisson-f/">Herisson F</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/de-gaalon-s/">De Gaalon S</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/sevin-m/">Sevin M</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/langlard-j-m/">Langlard J-M</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/piriou-n/">Piriou N</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/jaafar-p/">Jaafar P</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/dhere-b/">d&#39;Here B</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/stepowski-d/">Stepowski D</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/bauer-f/">Bauer F</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/duval-a-m/">Duval A-M</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/lim-p/">Lim P</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/nighoghossian-n/">Nighoghossian N</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/derex-l/">Derex L</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/cho-t/">Cho T</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/rioufol-g/">Rioufol G</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/thibaut-h/">Thibaut H</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/thivolet-s/">Thivolet S</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/mourand-i/">Mourand I</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/sportouch-c/">Sportouch C</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/cade-s/">Cade S</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/cransac-f/">Cransac F</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/giroud-m/">Giroud M</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/lhuillier-i/">L&#39;Huillier I</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/chopard-r/">Chopard R</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/descotes-genon-v/">Descotes-Genon V</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/garambois-k/">Garambois K</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/saunier-c/">Saunier C</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/brochet-e/">Brochet E</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/mazighi-m/">Mazighi M</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/meseguer-e/">Meseguer E</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/messika-zeitoun-d/">Messika-Zeitoun D</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/cabrejo-l/">Cabrejo L</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/lavallee-p/">Lavallee P</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/lepage-l/">Lepage L</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/amarenco-p/">Amarenco P</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/bugnicourt-j-m/">Bugnicourt J-M</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/godefroy-o/">Godefroy O</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/rey-c/">Rey C</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/guillaumont-m-p/">Guillaumont M-P</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/trojette-f/">Trojette F</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/malaquin-d/">Malaquin D</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/couvreur-g/">Couvreur G</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/golfier-v/">Golfier V</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/plurien-f/">Plurien F</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/taldir-g/">Taldir G</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/lucas-c/">Lucas C</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/cordonnier-c/">Cordonnier C</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/henon-h/">Henon H</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/dumont-f/">Dumont F</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/leys-d/">Leys D</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/richardson-m/">Richardson M</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/polge-a-s/">Polge A-S</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/montaigne-d/">Montaigne D</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/coisne-a/">Coisne A</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/rouanet-f/">Rouanet F</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/renou-p/">Renou P</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/reant-p/">Reant P</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/laffite-s/">Laffite S</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/roudaut-r/">Roudaut R</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/comtet-c/">Comtet C</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/delsart-d/">Delsart D</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/bourgois-n/">Bourgois N</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/clavelou-p/">Clavelou P</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/rouhart-f/">Rouhart F</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/le-cadet-e/">Le Cadet E</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/tirel-a/">Tirel A</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/mocquard-y/">Mocquard Y</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/jobic-y/">Jobic Y</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/le-ven-f/">Le Ven F</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/pouliquen-m-c/">Pouliquen M-C</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/milandre-l/">Milandre L</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/laksiri-n/">Laksiri N</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/fraisse-a/">Fraisse A</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/habib-g/">Habib G</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/chalvignac-v/">Chalvignac V</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/thuny-f/">Thuny F</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/targosz-f/">Targosz F</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/runavot-g/">Runavot G</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/chopat-p/">Chopat P</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/sultan-p/">Sultan P</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/richard-s/">Richard S</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/ducrocq-x/">Ducrocq X</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/marcon-f/">Marcon F</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/selton-suty-m-c/">Selton-Suty M C</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/huttin-o/">Huttin O</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/bruandet-m/">Bruandet M</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/tamazyan-r/">Tamazyan R</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/antakly-y/">Antakly Y</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/garcon-p/">Garcon P</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/serfaty-j/">Serfaty J</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/hammoudi-n/">Hammoudi N</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/donal-e/">Donal E</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/lelong-b/">Lelong B</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/chabanne-c/">Chabanne C</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/viader-f/">Viader F</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/cogez-j/">Cogez J</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/labombarda-f/">Labombarda F</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/saloux-e/">Saloux E</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/buffon-f/">Buffon F</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/baudet-m/">Baudet M</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/logeart-d/">Logeart D</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/bataille-m/">Bataille M</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/godard-f/">Godard F</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/biausque-f/">Biausque F</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/lefetz-y/">Lefetz Y</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/clement-dupont-m/">Clement-Dupont M</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/zegarac-v/">Zegarac V</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/schmitz-t/">Schmitz T</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/plicht-b/">Plicht B</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/eissmann-m/">Eissmann M</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/mahabadi-a/">Mahabadi A</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/obadia-m/">Obadia M</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/iglesias-benyounes-n/">Iglesias Benyounes N</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/macian-f/">Macian F</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/darodes-n/">Darodes N</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/tanguy-b/">Tanguy B</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/mohty-d/">Mohty D</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/vuillemet-f/">Vuillemet F</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/onea-r/">Onea R</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/greciano-s/">Greciano S</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/roth-o/">Roth O</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/neau-j-p/">Neau J-P</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/quillet-l/">Quillet L</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/christiaens-l/">Christiaens L</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/saudeau-d/">Saudeau D</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/patat-f/">Patat F</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/singer-o/">Singer O</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/fichtlscherer-s/">Fichtlscherer S</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/pico-f/">Pico F</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/charbonnel-c/">Charbonnel C</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/durand-zaleski-i/">Durand-Zaleski I</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/woimant-f/">Woimant F</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/finet-g/">Finet G</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/mounier-vehier-f/">Mounier-Vehier F</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/rodier-g/">Rodier G</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/ernande-l/">Ernande L</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/lievre-m/">Lievre M</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/andrieux-chantal/">Andrieux Chantal</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/sauret-isabelle/">Sauret Isabelle</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/bruyere-clemence/">Bruyere Clemence</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/chenu-romain/">Chenu Romain</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/trinquart-ludovic/">Trinquart Ludovic</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/alsaleh-khaled/">Alsaleh Khaled</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/bousry-djennat/">Bousry Djennat</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/branco-sonia/">Branco Sonia</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/brussieux-maxime/">Brussieux Maxime</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/greaud-cecile/">Greaud Cecile</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/kacher-zineb/">Kacher Zineb</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/loret-laurie/">Loret Laurie</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/niranjani-mahendran/">Niranjani Mahendran</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/olivier-audrey/">Olivier Audrey</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/pigeat-romain/">Pigeat Romain</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/sahuc-karen/">Sahuc Karen</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/djadi-prat-juliette/">Djadi-Prat Juliette</a></span>
   </div>
   
   
@@ -811,7 +849,7 @@
           <div class="col-12 col-md-9">
             
             
-            <a href="/publication/#2">
+            <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/#2">
               Article de revue
             </a>
             
@@ -870,7 +908,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://www.coreds.com/publication/2017-09-01_patent_foramen_ovale/&amp;text=Patent%20Foramen%20Ovale%20Closure%20or%20Anticoagulation%20vs.%20Antiplatelets%20after%20Stroke." target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2017-09-01_patent_foramen_ovale/&amp;text=Patent%20Foramen%20Ovale%20Closure%20or%20Anticoagulation%20vs.%20Antiplatelets%20after%20Stroke." target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -883,7 +921,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://www.coreds.com/publication/2017-09-01_patent_foramen_ovale/&amp;t=Patent%20Foramen%20Ovale%20Closure%20or%20Anticoagulation%20vs.%20Antiplatelets%20after%20Stroke." target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://consultation-recherche-donnees-sante.netlify.app/publication/2017-09-01_patent_foramen_ovale/&amp;t=Patent%20Foramen%20Ovale%20Closure%20or%20Anticoagulation%20vs.%20Antiplatelets%20after%20Stroke." target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -896,7 +934,7 @@
       
       
       <li>
-        <a href="mailto:?subject=Patent%20Foramen%20Ovale%20Closure%20or%20Anticoagulation%20vs.%20Antiplatelets%20after%20Stroke.&amp;body=https://www.coreds.com/publication/2017-09-01_patent_foramen_ovale/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=Patent%20Foramen%20Ovale%20Closure%20or%20Anticoagulation%20vs.%20Antiplatelets%20after%20Stroke.&amp;body=https://consultation-recherche-donnees-sante.netlify.app/publication/2017-09-01_patent_foramen_ovale/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -909,7 +947,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://www.coreds.com/publication/2017-09-01_patent_foramen_ovale/&amp;title=Patent%20Foramen%20Ovale%20Closure%20or%20Anticoagulation%20vs.%20Antiplatelets%20after%20Stroke." target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2017-09-01_patent_foramen_ovale/&amp;title=Patent%20Foramen%20Ovale%20Closure%20or%20Anticoagulation%20vs.%20Antiplatelets%20after%20Stroke." target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -922,7 +960,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=Patent%20Foramen%20Ovale%20Closure%20or%20Anticoagulation%20vs.%20Antiplatelets%20after%20Stroke.%20https://www.coreds.com/publication/2017-09-01_patent_foramen_ovale/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=Patent%20Foramen%20Ovale%20Closure%20or%20Anticoagulation%20vs.%20Antiplatelets%20after%20Stroke.%20https://consultation-recherche-donnees-sante.netlify.app/publication/2017-09-01_patent_foramen_ovale/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -935,7 +973,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://www.coreds.com/publication/2017-09-01_patent_foramen_ovale/&amp;title=Patent%20Foramen%20Ovale%20Closure%20or%20Anticoagulation%20vs.%20Antiplatelets%20after%20Stroke." target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2017-09-01_patent_foramen_ovale/&amp;title=Patent%20Foramen%20Ovale%20Closure%20or%20Anticoagulation%20vs.%20Antiplatelets%20after%20Stroke." target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -2446,7 +2484,7 @@
     
     
     
-    <script src="/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
+    <script src="https://consultation-recherche-donnees-sante.netlify.app/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
 
     
 

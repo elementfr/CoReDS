@@ -37,7 +37,7 @@
   <meta name="description" content="Hirschsprung disease (HSCR, aganglionic megacolon) is a complex and heterogeneous disease with an incidence of 1 in 5000 live births. Despite the multifactorial determination of HSCR in the vast majority of cases, there is a monogenic subgroup for which private rare RET coding sequence mutations with high penetrance are found (45% of HSCR familial cases). An asymmetrical parental origin is observed for RET coding sequence mutations with a higher maternal inheritance. A parent-of-origin effect is usually assumed. Here we show that a differential reproductive rate for males and females also leads to an asymmetrical parental origin, which was never considered as a possible explanation till now. In the case of HSCR, we show a positive association between penetrance of the mutation and parental transmission asymmetry: no parental transmission asymmetry is observed in sporadic RET CDS mutation carrier cases for which penetrance of the mutation is low, whereas a parental transmission asymmetry is observed in affected sib-pairs for which penetrance of the mutation is higher. This allows us to conclude that the explanation for this parental asymmetry is that more severe mutations have resulted in a differential reproductive rate between male and female carriers.">
 
   
-  <link rel="alternate" hreflang="fr" href="https://www.coreds.com/publication/2012-09-01_male_and_female_diff/">
+  <link rel="alternate" hreflang="fr" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2012-09-01_male_and_female_diff/">
 
   
 
@@ -66,7 +66,7 @@
   
   
   
-  <script src="/js/mathjax-config.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/mathjax-config.js"></script>
   
 
   
@@ -241,13 +241,51 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.css">
+  <link rel="stylesheet" href="https://consultation-recherche-donnees-sante.netlify.app/css/wowchemy.css">
 
   
 
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-80B5KND2Y6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-80B5KND2Y6', { 'anonymize_ip': true });
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
   
@@ -258,11 +296,11 @@
 
   
 
-  <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
+  <link rel="manifest" href="https://consultation-recherche-donnees-sante.netlify.app/index.webmanifest">
+  <link rel="icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="https://www.coreds.com/publication/2012-09-01_male_and_female_diff/">
+  <link rel="canonical" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2012-09-01_male_and_female_diff/">
 
   
   
@@ -278,10 +316,10 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:url" content="https://www.coreds.com/publication/2012-09-01_male_and_female_diff/">
+  <meta property="og:url" content="https://consultation-recherche-donnees-sante.netlify.app/publication/2012-09-01_male_and_female_diff/">
   <meta property="og:title" content="Male and female differential reproductive rate could explain parental transmission asymmetry of mutation origin in Hirschsprung disease. | Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:description" content="Hirschsprung disease (HSCR, aganglionic megacolon) is a complex and heterogeneous disease with an incidence of 1 in 5000 live births. Despite the multifactorial determination of HSCR in the vast majority of cases, there is a monogenic subgroup for which private rare RET coding sequence mutations with high penetrance are found (45% of HSCR familial cases). An asymmetrical parental origin is observed for RET coding sequence mutations with a higher maternal inheritance. A parent-of-origin effect is usually assumed. Here we show that a differential reproductive rate for males and females also leads to an asymmetrical parental origin, which was never considered as a possible explanation till now. In the case of HSCR, we show a positive association between penetrance of the mutation and parental transmission asymmetry: no parental transmission asymmetry is observed in sporadic RET CDS mutation carrier cases for which penetrance of the mutation is low, whereas a parental transmission asymmetry is observed in affected sib-pairs for which penetrance of the mutation is higher. This allows us to conclude that the explanation for this parental asymmetry is that more severe mutations have resulted in a differential reproductive rate between male and female carriers."><meta property="og:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
-  <meta property="twitter:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
+  <meta property="og:description" content="Hirschsprung disease (HSCR, aganglionic megacolon) is a complex and heterogeneous disease with an incidence of 1 in 5000 live births. Despite the multifactorial determination of HSCR in the vast majority of cases, there is a monogenic subgroup for which private rare RET coding sequence mutations with high penetrance are found (45% of HSCR familial cases). An asymmetrical parental origin is observed for RET coding sequence mutations with a higher maternal inheritance. A parent-of-origin effect is usually assumed. Here we show that a differential reproductive rate for males and females also leads to an asymmetrical parental origin, which was never considered as a possible explanation till now. In the case of HSCR, we show a positive association between penetrance of the mutation and parental transmission asymmetry: no parental transmission asymmetry is observed in sporadic RET CDS mutation carrier cases for which penetrance of the mutation is low, whereas a parental transmission asymmetry is observed in affected sib-pairs for which penetrance of the mutation is higher. This allows us to conclude that the explanation for this parental asymmetry is that more severe mutations have resulted in a differential reproductive rate between male and female carriers."><meta property="og:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
+  <meta property="twitter:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
   
     
       <meta property="article:published_time" content="2012-09-01T00:00:00&#43;00:00">
@@ -308,7 +346,7 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://www.coreds.com/publication/2012-09-01_male_and_female_diff/"
+    "@id": "https://consultation-recherche-donnees-sante.netlify.app/publication/2012-09-01_male_and_female_diff/"
   },
   "headline": "Male and female differential reproductive rate could explain parental transmission asymmetry of mutation origin in Hirschsprung disease.",
   
@@ -325,7 +363,7 @@
     "name": "Consultation Recherche Données de Santé - CoReDS",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
+      "url": "https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
     }
   },
   "description": "Hirschsprung disease (HSCR, aganglionic megacolon) is a complex and heterogeneous disease with an incidence of 1 in 5000 live births. Despite the multifactorial determination of HSCR in the vast majority of cases, there is a monogenic subgroup for which private rare RET coding sequence mutations with high penetrance are found (45% of HSCR familial cases). An asymmetrical parental origin is observed for RET coding sequence mutations with a higher maternal inheritance. A parent-of-origin effect is usually assumed. Here we show that a differential reproductive rate for males and females also leads to an asymmetrical parental origin, which was never considered as a possible explanation till now. In the case of HSCR, we show a positive association between penetrance of the mutation and parental transmission asymmetry: no parental transmission asymmetry is observed in sporadic RET CDS mutation carrier cases for which penetrance of the mutation is low, whereas a parental transmission asymmetry is observed in affected sib-pairs for which penetrance of the mutation is higher. This allows us to conclude that the explanation for this parental asymmetry is that more severe mutations have resulted in a differential reproductive rate between male and female carriers."
@@ -390,7 +428,7 @@
     <script>const isSiteThemeDark = false;</script>
   
   
-  <script src="/js/load-theme.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/load-theme.js"></script>
 
   <aside class="search-results" id="search">
   <div class="container">
@@ -445,7 +483,7 @@
 
     
     <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -458,7 +496,7 @@
 
     
     <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -494,7 +532,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/entreprendre/"><span>Commencer un projet</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/entreprendre/"><span>Commencer un projet</span></a>
         </li>
 
         
@@ -524,44 +562,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/suivremonprojet/"><span>Suivre son projet</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-            
-            
-            
-              
-            
-            
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#outils"><span>Boite à outils</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/suivremonprojet/"><span>Suivre son projet</span></a>
         </li>
 
         
@@ -598,7 +599,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#publi"><span>Publications</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#outils"><span>Boite à outils</span></a>
         </li>
 
         
@@ -635,7 +636,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#transparence"><span>Portail de transparence</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#publi"><span>Publications</span></a>
         </li>
 
         
@@ -672,7 +673,44 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#people"><span>Qui sommes-nous ?</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#transparence"><span>Portail de transparence</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#people"><span>Qui sommes-nous ?</span></a>
         </li>
 
         
@@ -745,7 +783,7 @@
     
 
   
-  <span ><a href="/author/jannot-anne-sophie/">Jannot Anne-Sophie</a></span>, <span ><a href="/author/amiel-jeanne/">Amiel Jeanne</a></span>, <span ><a href="/author/pelet-anna/">Pelet Anna</a></span>, <span ><a href="/author/lantieri-francesca/">Lantieri Francesca</a></span>, <span ><a href="/author/fernandez-raquel-m/">Fernandez Raquel M</a></span>, <span ><a href="/author/verheij-joke-b-g-m/">Verheij Joke B G M</a></span>, <span ><a href="/author/garcia-barcelo-merce/">Garcia-Barcelo Merce</a></span>, <span ><a href="/author/arnold-stacey/">Arnold Stacey</a></span>, <span ><a href="/author/ceccherini-isabella/">Ceccherini Isabella</a></span>, <span ><a href="/author/borrego-salud/">Borrego Salud</a></span>, <span ><a href="/author/hofstra-robert-m-w/">Hofstra Robert M W</a></span>, <span ><a href="/author/tam-paul-k-h/">Tam Paul K H</a></span>, <span ><a href="/author/munnich-arnold/">Munnich Arnold</a></span>, <span ><a href="/author/chakravarti-aravinda/">Chakravarti Aravinda</a></span>, <span ><a href="/author/clerget-darpoux-francoise/">Clerget-Darpoux Francoise</a></span>, <span ><a href="/author/lyonnet-stanislas/">Lyonnet Stanislas</a></span>
+  <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/jannot-anne-sophie/">Jannot Anne-Sophie</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/amiel-jeanne/">Amiel Jeanne</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/pelet-anna/">Pelet Anna</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/lantieri-francesca/">Lantieri Francesca</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/fernandez-raquel-m/">Fernandez Raquel M</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/verheij-joke-b-g-m/">Verheij Joke B G M</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/garcia-barcelo-merce/">Garcia-Barcelo Merce</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/arnold-stacey/">Arnold Stacey</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/ceccherini-isabella/">Ceccherini Isabella</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/borrego-salud/">Borrego Salud</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/hofstra-robert-m-w/">Hofstra Robert M W</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/tam-paul-k-h/">Tam Paul K H</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/munnich-arnold/">Munnich Arnold</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/chakravarti-aravinda/">Chakravarti Aravinda</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/clerget-darpoux-francoise/">Clerget-Darpoux Francoise</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/lyonnet-stanislas/">Lyonnet Stanislas</a></span>
   </div>
   
   
@@ -811,7 +849,7 @@
           <div class="col-12 col-md-9">
             
             
-            <a href="/publication/#2">
+            <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/#2">
               Article de revue
             </a>
             
@@ -870,7 +908,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://www.coreds.com/publication/2012-09-01_male_and_female_diff/&amp;text=Male%20and%20female%20differential%20reproductive%20rate%20could%20explain%20parental%20transmission%20asymmetry%20of%20mutation%20origin%20in%20Hirschsprung%20disease." target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2012-09-01_male_and_female_diff/&amp;text=Male%20and%20female%20differential%20reproductive%20rate%20could%20explain%20parental%20transmission%20asymmetry%20of%20mutation%20origin%20in%20Hirschsprung%20disease." target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -883,7 +921,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://www.coreds.com/publication/2012-09-01_male_and_female_diff/&amp;t=Male%20and%20female%20differential%20reproductive%20rate%20could%20explain%20parental%20transmission%20asymmetry%20of%20mutation%20origin%20in%20Hirschsprung%20disease." target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://consultation-recherche-donnees-sante.netlify.app/publication/2012-09-01_male_and_female_diff/&amp;t=Male%20and%20female%20differential%20reproductive%20rate%20could%20explain%20parental%20transmission%20asymmetry%20of%20mutation%20origin%20in%20Hirschsprung%20disease." target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -896,7 +934,7 @@
       
       
       <li>
-        <a href="mailto:?subject=Male%20and%20female%20differential%20reproductive%20rate%20could%20explain%20parental%20transmission%20asymmetry%20of%20mutation%20origin%20in%20Hirschsprung%20disease.&amp;body=https://www.coreds.com/publication/2012-09-01_male_and_female_diff/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=Male%20and%20female%20differential%20reproductive%20rate%20could%20explain%20parental%20transmission%20asymmetry%20of%20mutation%20origin%20in%20Hirschsprung%20disease.&amp;body=https://consultation-recherche-donnees-sante.netlify.app/publication/2012-09-01_male_and_female_diff/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -909,7 +947,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://www.coreds.com/publication/2012-09-01_male_and_female_diff/&amp;title=Male%20and%20female%20differential%20reproductive%20rate%20could%20explain%20parental%20transmission%20asymmetry%20of%20mutation%20origin%20in%20Hirschsprung%20disease." target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2012-09-01_male_and_female_diff/&amp;title=Male%20and%20female%20differential%20reproductive%20rate%20could%20explain%20parental%20transmission%20asymmetry%20of%20mutation%20origin%20in%20Hirschsprung%20disease." target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -922,7 +960,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=Male%20and%20female%20differential%20reproductive%20rate%20could%20explain%20parental%20transmission%20asymmetry%20of%20mutation%20origin%20in%20Hirschsprung%20disease.%20https://www.coreds.com/publication/2012-09-01_male_and_female_diff/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=Male%20and%20female%20differential%20reproductive%20rate%20could%20explain%20parental%20transmission%20asymmetry%20of%20mutation%20origin%20in%20Hirschsprung%20disease.%20https://consultation-recherche-donnees-sante.netlify.app/publication/2012-09-01_male_and_female_diff/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -935,7 +973,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://www.coreds.com/publication/2012-09-01_male_and_female_diff/&amp;title=Male%20and%20female%20differential%20reproductive%20rate%20could%20explain%20parental%20transmission%20asymmetry%20of%20mutation%20origin%20in%20Hirschsprung%20disease." target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2012-09-01_male_and_female_diff/&amp;title=Male%20and%20female%20differential%20reproductive%20rate%20could%20explain%20parental%20transmission%20asymmetry%20of%20mutation%20origin%20in%20Hirschsprung%20disease." target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1071,7 +1109,7 @@
     <h3>Sur le même sujet</h3>
     <ul>
       
-      <li><a href="/publication/2013-01-01_chromosome_21_scan_i/">Chromosome 21 scan in Down syndrome reveals DSCAM as a predisposing locus in Hirschsprung disease.</a></li>
+      <li><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2013-01-01_chromosome_21_scan_i/">Chromosome 21 scan in Down syndrome reveals DSCAM as a predisposing locus in Hirschsprung disease.</a></li>
       
     </ul>
   </div>
@@ -1255,7 +1293,7 @@
     
     
     
-    <script src="/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
+    <script src="https://consultation-recherche-donnees-sante.netlify.app/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
 
     
 

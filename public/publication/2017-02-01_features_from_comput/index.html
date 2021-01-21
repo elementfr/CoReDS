@@ -37,7 +37,7 @@
   <meta name="description" content="Purpose To evaluate whether features from texture analysis of breast cancers were associated with pathologic complete response (pCR) after neoadjuvant chemotherapy and to explore the association between texture features and tumor subtypes at pretreatment magnetic resonance (MR) imaging. Materials and Methods Institutional review board approval was obtained. This retrospective study included 85 patients with 85 breast cancers who underwent breast MR imaging before neoadjuvant chemotherapy between April 10, 2008, and March 12, 2015. Two-dimensional texture analysis was performed by using software at T2-weighted MR imaging and contrast material-enhanced T1-weighted MR imaging. Quantitative parameters were compared between patients with pCR and those with non-pCR and between patients with triple-negative breast cancer and those with non-triple-negative cancer. Multiple logistic regression analysis was used to determine independent parameters. Results Eighteen tumors (22%) were triple-negative breast cancers. pCR was achieved in 30 of the 85 tumors (35%). At univariate analysis, mean pixel intensity with spatial scaling factor (SSF) of 2 and 4 on T2-weighted images and kurtosis on contrast-enhanced T1-weighted images showed a significant difference between triple-negative breast cancer and non-triple-negative breast cancer (P = .009, .003, and .001, respectively). Kurtosis (SSF, 2) on T2-weighted images showed a significant difference between pCR and non-pCR (P = .015). At multiple logistic regression, kurtosis on T2-weighted images was independently associated with pCR in non-triple-negative breast cancer (P = .033). A multivariate model incorporating T2-weighted and contrast-enhanced T1-weighted kurtosis showed good performance for the identification of triple-negative breast cancer (area under the receiver operating characteristic curve, 0.834). Conclusion At pretreatment MR imaging, kurtosis appears to be associated with pCR to neoadjuvant chemotherapy in non-triple-negative breast cancer and may be a promising biomarker for the identification of triple-negative breast cancer. © RSNA, 2017.">
 
   
-  <link rel="alternate" hreflang="fr" href="https://www.coreds.com/publication/2017-02-01_features_from_comput/">
+  <link rel="alternate" hreflang="fr" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2017-02-01_features_from_comput/">
 
   
 
@@ -66,7 +66,7 @@
   
   
   
-  <script src="/js/mathjax-config.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/mathjax-config.js"></script>
   
 
   
@@ -241,13 +241,51 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.css">
+  <link rel="stylesheet" href="https://consultation-recherche-donnees-sante.netlify.app/css/wowchemy.css">
 
   
 
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-80B5KND2Y6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-80B5KND2Y6', { 'anonymize_ip': true });
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
   
@@ -258,11 +296,11 @@
 
   
 
-  <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
+  <link rel="manifest" href="https://consultation-recherche-donnees-sante.netlify.app/index.webmanifest">
+  <link rel="icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="https://www.coreds.com/publication/2017-02-01_features_from_comput/">
+  <link rel="canonical" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2017-02-01_features_from_comput/">
 
   
   
@@ -278,10 +316,10 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:url" content="https://www.coreds.com/publication/2017-02-01_features_from_comput/">
+  <meta property="og:url" content="https://consultation-recherche-donnees-sante.netlify.app/publication/2017-02-01_features_from_comput/">
   <meta property="og:title" content="Features from Computerized Texture Analysis of Breast Cancers at Pretreatment MR Imaging Are Associated with Response to Neoadjuvant Chemotherapy. | Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:description" content="Purpose To evaluate whether features from texture analysis of breast cancers were associated with pathologic complete response (pCR) after neoadjuvant chemotherapy and to explore the association between texture features and tumor subtypes at pretreatment magnetic resonance (MR) imaging. Materials and Methods Institutional review board approval was obtained. This retrospective study included 85 patients with 85 breast cancers who underwent breast MR imaging before neoadjuvant chemotherapy between April 10, 2008, and March 12, 2015. Two-dimensional texture analysis was performed by using software at T2-weighted MR imaging and contrast material-enhanced T1-weighted MR imaging. Quantitative parameters were compared between patients with pCR and those with non-pCR and between patients with triple-negative breast cancer and those with non-triple-negative cancer. Multiple logistic regression analysis was used to determine independent parameters. Results Eighteen tumors (22%) were triple-negative breast cancers. pCR was achieved in 30 of the 85 tumors (35%). At univariate analysis, mean pixel intensity with spatial scaling factor (SSF) of 2 and 4 on T2-weighted images and kurtosis on contrast-enhanced T1-weighted images showed a significant difference between triple-negative breast cancer and non-triple-negative breast cancer (P = .009, .003, and .001, respectively). Kurtosis (SSF, 2) on T2-weighted images showed a significant difference between pCR and non-pCR (P = .015). At multiple logistic regression, kurtosis on T2-weighted images was independently associated with pCR in non-triple-negative breast cancer (P = .033). A multivariate model incorporating T2-weighted and contrast-enhanced T1-weighted kurtosis showed good performance for the identification of triple-negative breast cancer (area under the receiver operating characteristic curve, 0.834). Conclusion At pretreatment MR imaging, kurtosis appears to be associated with pCR to neoadjuvant chemotherapy in non-triple-negative breast cancer and may be a promising biomarker for the identification of triple-negative breast cancer. © RSNA, 2017."><meta property="og:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
-  <meta property="twitter:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
+  <meta property="og:description" content="Purpose To evaluate whether features from texture analysis of breast cancers were associated with pathologic complete response (pCR) after neoadjuvant chemotherapy and to explore the association between texture features and tumor subtypes at pretreatment magnetic resonance (MR) imaging. Materials and Methods Institutional review board approval was obtained. This retrospective study included 85 patients with 85 breast cancers who underwent breast MR imaging before neoadjuvant chemotherapy between April 10, 2008, and March 12, 2015. Two-dimensional texture analysis was performed by using software at T2-weighted MR imaging and contrast material-enhanced T1-weighted MR imaging. Quantitative parameters were compared between patients with pCR and those with non-pCR and between patients with triple-negative breast cancer and those with non-triple-negative cancer. Multiple logistic regression analysis was used to determine independent parameters. Results Eighteen tumors (22%) were triple-negative breast cancers. pCR was achieved in 30 of the 85 tumors (35%). At univariate analysis, mean pixel intensity with spatial scaling factor (SSF) of 2 and 4 on T2-weighted images and kurtosis on contrast-enhanced T1-weighted images showed a significant difference between triple-negative breast cancer and non-triple-negative breast cancer (P = .009, .003, and .001, respectively). Kurtosis (SSF, 2) on T2-weighted images showed a significant difference between pCR and non-pCR (P = .015). At multiple logistic regression, kurtosis on T2-weighted images was independently associated with pCR in non-triple-negative breast cancer (P = .033). A multivariate model incorporating T2-weighted and contrast-enhanced T1-weighted kurtosis showed good performance for the identification of triple-negative breast cancer (area under the receiver operating characteristic curve, 0.834). Conclusion At pretreatment MR imaging, kurtosis appears to be associated with pCR to neoadjuvant chemotherapy in non-triple-negative breast cancer and may be a promising biomarker for the identification of triple-negative breast cancer. © RSNA, 2017."><meta property="og:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
+  <meta property="twitter:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
   
     
       <meta property="article:published_time" content="2017-02-01T00:00:00&#43;00:00">
@@ -308,7 +346,7 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://www.coreds.com/publication/2017-02-01_features_from_comput/"
+    "@id": "https://consultation-recherche-donnees-sante.netlify.app/publication/2017-02-01_features_from_comput/"
   },
   "headline": "Features from Computerized Texture Analysis of Breast Cancers at Pretreatment MR Imaging Are Associated with Response to Neoadjuvant Chemotherapy.",
   
@@ -325,7 +363,7 @@
     "name": "Consultation Recherche Données de Santé - CoReDS",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
+      "url": "https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
     }
   },
   "description": "Purpose To evaluate whether features from texture analysis of breast cancers were associated with pathologic complete response (pCR) after neoadjuvant chemotherapy and to explore the association between texture features and tumor subtypes at pretreatment magnetic resonance (MR) imaging. Materials and Methods Institutional review board approval was obtained. This retrospective study included 85 patients with 85 breast cancers who underwent breast MR imaging before neoadjuvant chemotherapy between April 10, 2008, and March 12, 2015. Two-dimensional texture analysis was performed by using software at T2-weighted MR imaging and contrast material-enhanced T1-weighted MR imaging. Quantitative parameters were compared between patients with pCR and those with non-pCR and between patients with triple-negative breast cancer and those with non-triple-negative cancer. Multiple logistic regression analysis was used to determine independent parameters. Results Eighteen tumors (22%) were triple-negative breast cancers. pCR was achieved in 30 of the 85 tumors (35%). At univariate analysis, mean pixel intensity with spatial scaling factor (SSF) of 2 and 4 on T2-weighted images and kurtosis on contrast-enhanced T1-weighted images showed a significant difference between triple-negative breast cancer and non-triple-negative breast cancer (P = .009, .003, and .001, respectively). Kurtosis (SSF, 2) on T2-weighted images showed a significant difference between pCR and non-pCR (P = .015). At multiple logistic regression, kurtosis on T2-weighted images was independently associated with pCR in non-triple-negative breast cancer (P = .033). A multivariate model incorporating T2-weighted and contrast-enhanced T1-weighted kurtosis showed good performance for the identification of triple-negative breast cancer (area under the receiver operating characteristic curve, 0.834). Conclusion At pretreatment MR imaging, kurtosis appears to be associated with pCR to neoadjuvant chemotherapy in non-triple-negative breast cancer and may be a promising biomarker for the identification of triple-negative breast cancer. © RSNA, 2017."
@@ -390,7 +428,7 @@
     <script>const isSiteThemeDark = false;</script>
   
   
-  <script src="/js/load-theme.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/load-theme.js"></script>
 
   <aside class="search-results" id="search">
   <div class="container">
@@ -445,7 +483,7 @@
 
     
     <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -458,7 +496,7 @@
 
     
     <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -494,7 +532,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/entreprendre/"><span>Commencer un projet</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/entreprendre/"><span>Commencer un projet</span></a>
         </li>
 
         
@@ -524,44 +562,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/suivremonprojet/"><span>Suivre son projet</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-            
-            
-            
-              
-            
-            
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#outils"><span>Boite à outils</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/suivremonprojet/"><span>Suivre son projet</span></a>
         </li>
 
         
@@ -598,7 +599,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#publi"><span>Publications</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#outils"><span>Boite à outils</span></a>
         </li>
 
         
@@ -635,7 +636,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#transparence"><span>Portail de transparence</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#publi"><span>Publications</span></a>
         </li>
 
         
@@ -672,7 +673,44 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#people"><span>Qui sommes-nous ?</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#transparence"><span>Portail de transparence</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#people"><span>Qui sommes-nous ?</span></a>
         </li>
 
         
@@ -745,7 +783,7 @@
     
 
   
-  <span ><a href="/author/chammings-foucauld/">Chamming&#39;s Foucauld</a></span>, <span ><a href="/author/ueno-yoshiko/">Ueno Yoshiko</a></span>, <span ><a href="/author/ferre-romuald/">Ferre Romuald</a></span>, <span ><a href="/author/kao-ellen/">Kao Ellen</a></span>, <span ><a href="/author/jannot-anne-sophie/">Jannot Anne-Sophie</a></span>, <span ><a href="/author/chong-jaron/">Chong Jaron</a></span>, <span ><a href="/author/omeroglu-atilla/">Omeroglu Atilla</a></span>, <span ><a href="/author/mesurolle-benoit/">Mesurolle Benoit</a></span>, <span ><a href="/author/reinhold-caroline/">Reinhold Caroline</a></span>, <span ><a href="/author/gallix-benoit/">Gallix Benoit</a></span>
+  <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/chammings-foucauld/">Chamming&#39;s Foucauld</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/ueno-yoshiko/">Ueno Yoshiko</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/ferre-romuald/">Ferre Romuald</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/kao-ellen/">Kao Ellen</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/jannot-anne-sophie/">Jannot Anne-Sophie</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/chong-jaron/">Chong Jaron</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/omeroglu-atilla/">Omeroglu Atilla</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/mesurolle-benoit/">Mesurolle Benoit</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/reinhold-caroline/">Reinhold Caroline</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/gallix-benoit/">Gallix Benoit</a></span>
   </div>
   
   
@@ -811,7 +849,7 @@
           <div class="col-12 col-md-9">
             
             
-            <a href="/publication/#2">
+            <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/#2">
               Article de revue
             </a>
             
@@ -870,7 +908,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://www.coreds.com/publication/2017-02-01_features_from_comput/&amp;text=Features%20from%20Computerized%20Texture%20Analysis%20of%20Breast%20Cancers%20at%20Pretreatment%20MR%20Imaging%20Are%20Associated%20with%20Response%20to%20Neoadjuvant%20Chemotherapy." target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2017-02-01_features_from_comput/&amp;text=Features%20from%20Computerized%20Texture%20Analysis%20of%20Breast%20Cancers%20at%20Pretreatment%20MR%20Imaging%20Are%20Associated%20with%20Response%20to%20Neoadjuvant%20Chemotherapy." target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -883,7 +921,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://www.coreds.com/publication/2017-02-01_features_from_comput/&amp;t=Features%20from%20Computerized%20Texture%20Analysis%20of%20Breast%20Cancers%20at%20Pretreatment%20MR%20Imaging%20Are%20Associated%20with%20Response%20to%20Neoadjuvant%20Chemotherapy." target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://consultation-recherche-donnees-sante.netlify.app/publication/2017-02-01_features_from_comput/&amp;t=Features%20from%20Computerized%20Texture%20Analysis%20of%20Breast%20Cancers%20at%20Pretreatment%20MR%20Imaging%20Are%20Associated%20with%20Response%20to%20Neoadjuvant%20Chemotherapy." target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -896,7 +934,7 @@
       
       
       <li>
-        <a href="mailto:?subject=Features%20from%20Computerized%20Texture%20Analysis%20of%20Breast%20Cancers%20at%20Pretreatment%20MR%20Imaging%20Are%20Associated%20with%20Response%20to%20Neoadjuvant%20Chemotherapy.&amp;body=https://www.coreds.com/publication/2017-02-01_features_from_comput/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=Features%20from%20Computerized%20Texture%20Analysis%20of%20Breast%20Cancers%20at%20Pretreatment%20MR%20Imaging%20Are%20Associated%20with%20Response%20to%20Neoadjuvant%20Chemotherapy.&amp;body=https://consultation-recherche-donnees-sante.netlify.app/publication/2017-02-01_features_from_comput/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -909,7 +947,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://www.coreds.com/publication/2017-02-01_features_from_comput/&amp;title=Features%20from%20Computerized%20Texture%20Analysis%20of%20Breast%20Cancers%20at%20Pretreatment%20MR%20Imaging%20Are%20Associated%20with%20Response%20to%20Neoadjuvant%20Chemotherapy." target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2017-02-01_features_from_comput/&amp;title=Features%20from%20Computerized%20Texture%20Analysis%20of%20Breast%20Cancers%20at%20Pretreatment%20MR%20Imaging%20Are%20Associated%20with%20Response%20to%20Neoadjuvant%20Chemotherapy." target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -922,7 +960,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=Features%20from%20Computerized%20Texture%20Analysis%20of%20Breast%20Cancers%20at%20Pretreatment%20MR%20Imaging%20Are%20Associated%20with%20Response%20to%20Neoadjuvant%20Chemotherapy.%20https://www.coreds.com/publication/2017-02-01_features_from_comput/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=Features%20from%20Computerized%20Texture%20Analysis%20of%20Breast%20Cancers%20at%20Pretreatment%20MR%20Imaging%20Are%20Associated%20with%20Response%20to%20Neoadjuvant%20Chemotherapy.%20https://consultation-recherche-donnees-sante.netlify.app/publication/2017-02-01_features_from_comput/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -935,7 +973,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://www.coreds.com/publication/2017-02-01_features_from_comput/&amp;title=Features%20from%20Computerized%20Texture%20Analysis%20of%20Breast%20Cancers%20at%20Pretreatment%20MR%20Imaging%20Are%20Associated%20with%20Response%20to%20Neoadjuvant%20Chemotherapy." target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2017-02-01_features_from_comput/&amp;title=Features%20from%20Computerized%20Texture%20Analysis%20of%20Breast%20Cancers%20at%20Pretreatment%20MR%20Imaging%20Are%20Associated%20with%20Response%20to%20Neoadjuvant%20Chemotherapy." target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1210,7 +1248,7 @@
     
     
     
-    <script src="/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
+    <script src="https://consultation-recherche-donnees-sante.netlify.app/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
 
     
 

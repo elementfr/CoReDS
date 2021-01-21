@@ -37,7 +37,7 @@
   <meta name="description" content="BACKGROUND AND OBJECTIVE:Serious medication administration errors are common in hospitals. Various interventions, including barcode-based technologies, have been developed to help prevent such errors. This systematic review and this meta-analysis focus on the efficacy of interventions for reducing medication administration errors. The types of error and their gravity were also studied.METHODS:MEDLINE, EMBASE, the Cochrane Library and reference lists of relevant articles published between January 1975 and August 2014 were searched, without language restriction. Randomized controlled trials, interrupted time-series studies, non-randomized controlled trials and controlled before-and-after studies were included. Studies evaluating interventions for decreasing administration errors based on total opportunity for error method were included. Nurses administering medications to adult or child inpatients were considered eligible as participants. Two reviewers independently assessed studies for eligibility, extracted data and assessed the risk of bias. The main outcome was the error rate without wrong-time errors measured at study level. A random effects model was used to evaluate the effects of interventions on administration errors.RESULTS:5312 records from electronic database searches were identified. Seven studies were included: five were randomized controlled trials (including one crossover trial) and two were non-randomized controlled trials. Interventions were training-related (n=4; dedicated medication nurses, interactive CD-ROM program, simulation-based learning, pharmacist-led training program), and technology-related (n=3; computerized prescribing and automated medication dispensing systems). All studies were subject to a high risk of bias, mostly due to a lack of blinding to outcome assessment and a risk of contamination. No difference between the control group and the intervention group was found (OR=0.72 [0.39; 1.34], p=0.3). No fatal error was observed in the three studies evaluating the gravity of errors.CONCLUSIONS:This review did not find evidence that interventions can effectively decrease administration errors. In addition, most studies had a high risk of bias. More evaluation studies with stronger designs are required. ">
 
   
-  <link rel="alternate" hreflang="fr" href="https://www.coreds.com/publication/2015-01-01_interventions_to_red/">
+  <link rel="alternate" hreflang="fr" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2015-01-01_interventions_to_red/">
 
   
 
@@ -66,7 +66,7 @@
   
   
   
-  <script src="/js/mathjax-config.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/mathjax-config.js"></script>
   
 
   
@@ -241,13 +241,51 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.css">
+  <link rel="stylesheet" href="https://consultation-recherche-donnees-sante.netlify.app/css/wowchemy.css">
 
   
 
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-80B5KND2Y6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-80B5KND2Y6', { 'anonymize_ip': true });
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
   
@@ -258,11 +296,11 @@
 
   
 
-  <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
+  <link rel="manifest" href="https://consultation-recherche-donnees-sante.netlify.app/index.webmanifest">
+  <link rel="icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="https://www.coreds.com/publication/2015-01-01_interventions_to_red/">
+  <link rel="canonical" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2015-01-01_interventions_to_red/">
 
   
   
@@ -278,10 +316,10 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:url" content="https://www.coreds.com/publication/2015-01-01_interventions_to_red/">
+  <meta property="og:url" content="https://consultation-recherche-donnees-sante.netlify.app/publication/2015-01-01_interventions_to_red/">
   <meta property="og:title" content="Interventions to reduce nurses&#39; medication administration errors in inpatient settings: A systematic review and meta-analysis. | Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:description" content="BACKGROUND AND OBJECTIVE:Serious medication administration errors are common in hospitals. Various interventions, including barcode-based technologies, have been developed to help prevent such errors. This systematic review and this meta-analysis focus on the efficacy of interventions for reducing medication administration errors. The types of error and their gravity were also studied.METHODS:MEDLINE, EMBASE, the Cochrane Library and reference lists of relevant articles published between January 1975 and August 2014 were searched, without language restriction. Randomized controlled trials, interrupted time-series studies, non-randomized controlled trials and controlled before-and-after studies were included. Studies evaluating interventions for decreasing administration errors based on total opportunity for error method were included. Nurses administering medications to adult or child inpatients were considered eligible as participants. Two reviewers independently assessed studies for eligibility, extracted data and assessed the risk of bias. The main outcome was the error rate without wrong-time errors measured at study level. A random effects model was used to evaluate the effects of interventions on administration errors.RESULTS:5312 records from electronic database searches were identified. Seven studies were included: five were randomized controlled trials (including one crossover trial) and two were non-randomized controlled trials. Interventions were training-related (n=4; dedicated medication nurses, interactive CD-ROM program, simulation-based learning, pharmacist-led training program), and technology-related (n=3; computerized prescribing and automated medication dispensing systems). All studies were subject to a high risk of bias, mostly due to a lack of blinding to outcome assessment and a risk of contamination. No difference between the control group and the intervention group was found (OR=0.72 [0.39; 1.34], p=0.3). No fatal error was observed in the three studies evaluating the gravity of errors.CONCLUSIONS:This review did not find evidence that interventions can effectively decrease administration errors. In addition, most studies had a high risk of bias. More evaluation studies with stronger designs are required. "><meta property="og:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
-  <meta property="twitter:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
+  <meta property="og:description" content="BACKGROUND AND OBJECTIVE:Serious medication administration errors are common in hospitals. Various interventions, including barcode-based technologies, have been developed to help prevent such errors. This systematic review and this meta-analysis focus on the efficacy of interventions for reducing medication administration errors. The types of error and their gravity were also studied.METHODS:MEDLINE, EMBASE, the Cochrane Library and reference lists of relevant articles published between January 1975 and August 2014 were searched, without language restriction. Randomized controlled trials, interrupted time-series studies, non-randomized controlled trials and controlled before-and-after studies were included. Studies evaluating interventions for decreasing administration errors based on total opportunity for error method were included. Nurses administering medications to adult or child inpatients were considered eligible as participants. Two reviewers independently assessed studies for eligibility, extracted data and assessed the risk of bias. The main outcome was the error rate without wrong-time errors measured at study level. A random effects model was used to evaluate the effects of interventions on administration errors.RESULTS:5312 records from electronic database searches were identified. Seven studies were included: five were randomized controlled trials (including one crossover trial) and two were non-randomized controlled trials. Interventions were training-related (n=4; dedicated medication nurses, interactive CD-ROM program, simulation-based learning, pharmacist-led training program), and technology-related (n=3; computerized prescribing and automated medication dispensing systems). All studies were subject to a high risk of bias, mostly due to a lack of blinding to outcome assessment and a risk of contamination. No difference between the control group and the intervention group was found (OR=0.72 [0.39; 1.34], p=0.3). No fatal error was observed in the three studies evaluating the gravity of errors.CONCLUSIONS:This review did not find evidence that interventions can effectively decrease administration errors. In addition, most studies had a high risk of bias. More evaluation studies with stronger designs are required. "><meta property="og:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
+  <meta property="twitter:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
   
     
       <meta property="article:published_time" content="2015-01-01T00:00:00&#43;00:00">
@@ -308,7 +346,7 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://www.coreds.com/publication/2015-01-01_interventions_to_red/"
+    "@id": "https://consultation-recherche-donnees-sante.netlify.app/publication/2015-01-01_interventions_to_red/"
   },
   "headline": "Interventions to reduce nurses' medication administration errors in inpatient settings: A systematic review and meta-analysis.",
   
@@ -325,7 +363,7 @@
     "name": "Consultation Recherche Données de Santé - CoReDS",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
+      "url": "https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
     }
   },
   "description": "BACKGROUND AND OBJECTIVE:Serious medication administration errors are common in hospitals. Various interventions, including barcode-based technologies, have been developed to help prevent such errors. This systematic review and this meta-analysis focus on the efficacy of interventions for reducing medication administration errors. The types of error and their gravity were also studied.METHODS:MEDLINE, EMBASE, the Cochrane Library and reference lists of relevant articles published between January 1975 and August 2014 were searched, without language restriction. Randomized controlled trials, interrupted time-series studies, non-randomized controlled trials and controlled before-and-after studies were included. Studies evaluating interventions for decreasing administration errors based on total opportunity for error method were included. Nurses administering medications to adult or child inpatients were considered eligible as participants. Two reviewers independently assessed studies for eligibility, extracted data and assessed the risk of bias. The main outcome was the error rate without wrong-time errors measured at study level. A random effects model was used to evaluate the effects of interventions on administration errors.RESULTS:5312 records from electronic database searches were identified. Seven studies were included: five were randomized controlled trials (including one crossover trial) and two were non-randomized controlled trials. Interventions were training-related (n=4; dedicated medication nurses, interactive CD-ROM program, simulation-based learning, pharmacist-led training program), and technology-related (n=3; computerized prescribing and automated medication dispensing systems). All studies were subject to a high risk of bias, mostly due to a lack of blinding to outcome assessment and a risk of contamination. No difference between the control group and the intervention group was found (OR=0.72 [0.39; 1.34], p=0.3). No fatal error was observed in the three studies evaluating the gravity of errors.CONCLUSIONS:This review did not find evidence that interventions can effectively decrease administration errors. In addition, most studies had a high risk of bias. More evaluation studies with stronger designs are required. "
@@ -390,7 +428,7 @@
     <script>const isSiteThemeDark = false;</script>
   
   
-  <script src="/js/load-theme.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/load-theme.js"></script>
 
   <aside class="search-results" id="search">
   <div class="container">
@@ -445,7 +483,7 @@
 
     
     <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -458,7 +496,7 @@
 
     
     <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -494,7 +532,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/entreprendre/"><span>Commencer un projet</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/entreprendre/"><span>Commencer un projet</span></a>
         </li>
 
         
@@ -524,44 +562,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/suivremonprojet/"><span>Suivre son projet</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-            
-            
-            
-              
-            
-            
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#outils"><span>Boite à outils</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/suivremonprojet/"><span>Suivre son projet</span></a>
         </li>
 
         
@@ -598,7 +599,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#publi"><span>Publications</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#outils"><span>Boite à outils</span></a>
         </li>
 
         
@@ -635,7 +636,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#transparence"><span>Portail de transparence</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#publi"><span>Publications</span></a>
         </li>
 
         
@@ -672,7 +673,44 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#people"><span>Qui sommes-nous ?</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#transparence"><span>Portail de transparence</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#people"><span>Qui sommes-nous ?</span></a>
         </li>
 
         
@@ -745,7 +783,7 @@
     
 
   
-  <span ><a href="/author/berdot-sarah/">Berdot Sarah</a></span>, <span ><a href="/author/roudot-marjorie/">Roudot Marjorie</a></span>, <span ><a href="/author/schramm-catherine/">Schramm Catherine</a></span>, <span ><a href="/author/katsahian-sandrine/">Katsahian Sandrine</a></span>, <span ><a href="/author/durieux-pierre/">Durieux Pierre</a></span>, <span ><a href="/author/sabatier-brigitte/">Sabatier Brigitte</a></span>
+  <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/berdot-sarah/">Berdot Sarah</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/roudot-marjorie/">Roudot Marjorie</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/schramm-catherine/">Schramm Catherine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/katsahian-sandrine/">Katsahian Sandrine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/durieux-pierre/">Durieux Pierre</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/sabatier-brigitte/">Sabatier Brigitte</a></span>
   </div>
   
   
@@ -811,7 +849,7 @@
           <div class="col-12 col-md-9">
             
             
-            <a href="/publication/#2">
+            <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/#2">
               Article de revue
             </a>
             
@@ -870,7 +908,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://www.coreds.com/publication/2015-01-01_interventions_to_red/&amp;text=Interventions%20to%20reduce%20nurses&amp;#39;%20medication%20administration%20errors%20in%20inpatient%20settings:%20A%20systematic%20review%20and%20meta-analysis." target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2015-01-01_interventions_to_red/&amp;text=Interventions%20to%20reduce%20nurses&amp;#39;%20medication%20administration%20errors%20in%20inpatient%20settings:%20A%20systematic%20review%20and%20meta-analysis." target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -883,7 +921,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://www.coreds.com/publication/2015-01-01_interventions_to_red/&amp;t=Interventions%20to%20reduce%20nurses&amp;#39;%20medication%20administration%20errors%20in%20inpatient%20settings:%20A%20systematic%20review%20and%20meta-analysis." target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://consultation-recherche-donnees-sante.netlify.app/publication/2015-01-01_interventions_to_red/&amp;t=Interventions%20to%20reduce%20nurses&amp;#39;%20medication%20administration%20errors%20in%20inpatient%20settings:%20A%20systematic%20review%20and%20meta-analysis." target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -896,7 +934,7 @@
       
       
       <li>
-        <a href="mailto:?subject=Interventions%20to%20reduce%20nurses&amp;#39;%20medication%20administration%20errors%20in%20inpatient%20settings:%20A%20systematic%20review%20and%20meta-analysis.&amp;body=https://www.coreds.com/publication/2015-01-01_interventions_to_red/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=Interventions%20to%20reduce%20nurses&amp;#39;%20medication%20administration%20errors%20in%20inpatient%20settings:%20A%20systematic%20review%20and%20meta-analysis.&amp;body=https://consultation-recherche-donnees-sante.netlify.app/publication/2015-01-01_interventions_to_red/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -909,7 +947,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://www.coreds.com/publication/2015-01-01_interventions_to_red/&amp;title=Interventions%20to%20reduce%20nurses&amp;#39;%20medication%20administration%20errors%20in%20inpatient%20settings:%20A%20systematic%20review%20and%20meta-analysis." target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2015-01-01_interventions_to_red/&amp;title=Interventions%20to%20reduce%20nurses&amp;#39;%20medication%20administration%20errors%20in%20inpatient%20settings:%20A%20systematic%20review%20and%20meta-analysis." target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -922,7 +960,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=Interventions%20to%20reduce%20nurses&amp;#39;%20medication%20administration%20errors%20in%20inpatient%20settings:%20A%20systematic%20review%20and%20meta-analysis.%20https://www.coreds.com/publication/2015-01-01_interventions_to_red/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=Interventions%20to%20reduce%20nurses&amp;#39;%20medication%20administration%20errors%20in%20inpatient%20settings:%20A%20systematic%20review%20and%20meta-analysis.%20https://consultation-recherche-donnees-sante.netlify.app/publication/2015-01-01_interventions_to_red/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -935,7 +973,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://www.coreds.com/publication/2015-01-01_interventions_to_red/&amp;title=Interventions%20to%20reduce%20nurses&amp;#39;%20medication%20administration%20errors%20in%20inpatient%20settings:%20A%20systematic%20review%20and%20meta-analysis." target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2015-01-01_interventions_to_red/&amp;title=Interventions%20to%20reduce%20nurses&amp;#39;%20medication%20administration%20errors%20in%20inpatient%20settings:%20A%20systematic%20review%20and%20meta-analysis." target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1011,7 +1049,7 @@
     <h3>Sur le même sujet</h3>
     <ul>
       
-      <li><a href="/publication/2014-01-01_treatment_for_stable/">Treatment for stable coronary artery disease: a network meta-analysis of cost-effectiveness studies.</a></li>
+      <li><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2014-01-01_treatment_for_stable/">Treatment for stable coronary artery disease: a network meta-analysis of cost-effectiveness studies.</a></li>
       
     </ul>
   </div>
@@ -1195,7 +1233,7 @@
     
     
     
-    <script src="/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
+    <script src="https://consultation-recherche-donnees-sante.netlify.app/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
 
     
 

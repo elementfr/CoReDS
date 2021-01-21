@@ -37,7 +37,7 @@
   <meta name="description" content="INTRODUCTION:Molecular classification of endometrial carcinoma has been proposed to predict survival. However, its role in patient management remains to be determined. We aimed to identify whether a molecular and immunohistochemical classification of endometrial carcinoma could improve decision-making for adjuvant therapy.METHODS:All consecutive patients treated for endometrial carcinoma between 2010 and 2017 at Cochin University Hospital were included. Clinical risk of relapse was based on European Society for Medical Oncology-European Society of Gynaecological Oncology-European SocieTy for Radiotherapy &amp;amp; Oncology (ESMO-ESGO-ESTRO) consensus. The clinical event of interest was event-free survival. Formalin-fixed paraffin-embedded tissue samples were processed for histopathological analysis and DNA extraction. The nuclear expression of mismatch repair and TP53 proteins was analyzed by immunohistochemistry. Next-generation sequencing of a panel of 15 genes including TP53 and POLE was performed using Ampliseq panels on Ion Torrent PGM (ThermoFisher). Tumors were allocated into four molecular groups using a sequential method based on next-generation sequencing and immunohistochemistry data: (1) POLE/ultramutated-like; (2) MSI/hypermutated-like (mismatch repair-deficient); (3) TP53-mutated (without POLE mutations or mismatch repair deficiency); (4) not otherwise specified (the remaining tumors).RESULTS:159 patients were included; 125 tumors were available for molecular characterization and distributed as follows: (1) POLE/ultramutated-like: n=4 (3%); (2) MSI/hypermutated-like: n=35 (30%); (3) TP53-mutated: n=30 (25%); and (4) not otherwise specified: n=49 (42%). Assessing the TP53 status by immunohistochemistry only rather than next-generation sequencing would have misclassified 6 tumors (5%). TP53-mutated tumors were associated with poor prognosis, independently of International Federation of Gynecology and Obstetrics (FIGO) stage and histological grade (Cox-based adjusted hazard ratio (aHR) 5.54, 95% CI 2.30 to 13.4), and independently of clinical risk of relapse (aHR 3.92, 95% CI 1.59 to 9.64). Among patients with FIGO stage I-II tumors, 6 (38%) TP53-mutated tumors had low/intermediate clinical risk of relapse and did not receive adjuvant chemotherapy or radiotherapy.CONCLUSION:Endometrial carcinoma molecular classification identified potentially under-treated patients with poor molecular prognosis despite being at low/intermediate clinical risk of relapse. Consideration of molecular classification in adjuvant therapeutic decisions should be evaluated in prospective trials. ">
 
   
-  <link rel="alternate" hreflang="fr" href="https://www.coreds.com/publication/2020-05-01_na/">
+  <link rel="alternate" hreflang="fr" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2020-05-01_na/">
 
   
 
@@ -66,7 +66,7 @@
   
   
   
-  <script src="/js/mathjax-config.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/mathjax-config.js"></script>
   
 
   
@@ -241,13 +241,51 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.css">
+  <link rel="stylesheet" href="https://consultation-recherche-donnees-sante.netlify.app/css/wowchemy.css">
 
   
 
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-80B5KND2Y6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-80B5KND2Y6', { 'anonymize_ip': true });
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
   
@@ -258,11 +296,11 @@
 
   
 
-  <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
+  <link rel="manifest" href="https://consultation-recherche-donnees-sante.netlify.app/index.webmanifest">
+  <link rel="icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="https://www.coreds.com/publication/2020-05-01_na/">
+  <link rel="canonical" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2020-05-01_na/">
 
   
   
@@ -278,10 +316,10 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:url" content="https://www.coreds.com/publication/2020-05-01_na/">
+  <meta property="og:url" content="https://consultation-recherche-donnees-sante.netlify.app/publication/2020-05-01_na/">
   <meta property="og:title" content="NA | Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:description" content="INTRODUCTION:Molecular classification of endometrial carcinoma has been proposed to predict survival. However, its role in patient management remains to be determined. We aimed to identify whether a molecular and immunohistochemical classification of endometrial carcinoma could improve decision-making for adjuvant therapy.METHODS:All consecutive patients treated for endometrial carcinoma between 2010 and 2017 at Cochin University Hospital were included. Clinical risk of relapse was based on European Society for Medical Oncology-European Society of Gynaecological Oncology-European SocieTy for Radiotherapy &amp;amp; Oncology (ESMO-ESGO-ESTRO) consensus. The clinical event of interest was event-free survival. Formalin-fixed paraffin-embedded tissue samples were processed for histopathological analysis and DNA extraction. The nuclear expression of mismatch repair and TP53 proteins was analyzed by immunohistochemistry. Next-generation sequencing of a panel of 15 genes including TP53 and POLE was performed using Ampliseq panels on Ion Torrent PGM (ThermoFisher). Tumors were allocated into four molecular groups using a sequential method based on next-generation sequencing and immunohistochemistry data: (1) POLE/ultramutated-like; (2) MSI/hypermutated-like (mismatch repair-deficient); (3) TP53-mutated (without POLE mutations or mismatch repair deficiency); (4) not otherwise specified (the remaining tumors).RESULTS:159 patients were included; 125 tumors were available for molecular characterization and distributed as follows: (1) POLE/ultramutated-like: n=4 (3%); (2) MSI/hypermutated-like: n=35 (30%); (3) TP53-mutated: n=30 (25%); and (4) not otherwise specified: n=49 (42%). Assessing the TP53 status by immunohistochemistry only rather than next-generation sequencing would have misclassified 6 tumors (5%). TP53-mutated tumors were associated with poor prognosis, independently of International Federation of Gynecology and Obstetrics (FIGO) stage and histological grade (Cox-based adjusted hazard ratio (aHR) 5.54, 95% CI 2.30 to 13.4), and independently of clinical risk of relapse (aHR 3.92, 95% CI 1.59 to 9.64). Among patients with FIGO stage I-II tumors, 6 (38%) TP53-mutated tumors had low/intermediate clinical risk of relapse and did not receive adjuvant chemotherapy or radiotherapy.CONCLUSION:Endometrial carcinoma molecular classification identified potentially under-treated patients with poor molecular prognosis despite being at low/intermediate clinical risk of relapse. Consideration of molecular classification in adjuvant therapeutic decisions should be evaluated in prospective trials. "><meta property="og:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
-  <meta property="twitter:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
+  <meta property="og:description" content="INTRODUCTION:Molecular classification of endometrial carcinoma has been proposed to predict survival. However, its role in patient management remains to be determined. We aimed to identify whether a molecular and immunohistochemical classification of endometrial carcinoma could improve decision-making for adjuvant therapy.METHODS:All consecutive patients treated for endometrial carcinoma between 2010 and 2017 at Cochin University Hospital were included. Clinical risk of relapse was based on European Society for Medical Oncology-European Society of Gynaecological Oncology-European SocieTy for Radiotherapy &amp;amp; Oncology (ESMO-ESGO-ESTRO) consensus. The clinical event of interest was event-free survival. Formalin-fixed paraffin-embedded tissue samples were processed for histopathological analysis and DNA extraction. The nuclear expression of mismatch repair and TP53 proteins was analyzed by immunohistochemistry. Next-generation sequencing of a panel of 15 genes including TP53 and POLE was performed using Ampliseq panels on Ion Torrent PGM (ThermoFisher). Tumors were allocated into four molecular groups using a sequential method based on next-generation sequencing and immunohistochemistry data: (1) POLE/ultramutated-like; (2) MSI/hypermutated-like (mismatch repair-deficient); (3) TP53-mutated (without POLE mutations or mismatch repair deficiency); (4) not otherwise specified (the remaining tumors).RESULTS:159 patients were included; 125 tumors were available for molecular characterization and distributed as follows: (1) POLE/ultramutated-like: n=4 (3%); (2) MSI/hypermutated-like: n=35 (30%); (3) TP53-mutated: n=30 (25%); and (4) not otherwise specified: n=49 (42%). Assessing the TP53 status by immunohistochemistry only rather than next-generation sequencing would have misclassified 6 tumors (5%). TP53-mutated tumors were associated with poor prognosis, independently of International Federation of Gynecology and Obstetrics (FIGO) stage and histological grade (Cox-based adjusted hazard ratio (aHR) 5.54, 95% CI 2.30 to 13.4), and independently of clinical risk of relapse (aHR 3.92, 95% CI 1.59 to 9.64). Among patients with FIGO stage I-II tumors, 6 (38%) TP53-mutated tumors had low/intermediate clinical risk of relapse and did not receive adjuvant chemotherapy or radiotherapy.CONCLUSION:Endometrial carcinoma molecular classification identified potentially under-treated patients with poor molecular prognosis despite being at low/intermediate clinical risk of relapse. Consideration of molecular classification in adjuvant therapeutic decisions should be evaluated in prospective trials. "><meta property="og:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
+  <meta property="twitter:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
   
     
       <meta property="article:published_time" content="2020-05-01T00:00:00&#43;00:00">
@@ -308,7 +346,7 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://www.coreds.com/publication/2020-05-01_na/"
+    "@id": "https://consultation-recherche-donnees-sante.netlify.app/publication/2020-05-01_na/"
   },
   "headline": "NA",
   
@@ -325,7 +363,7 @@
     "name": "Consultation Recherche Données de Santé - CoReDS",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
+      "url": "https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
     }
   },
   "description": "INTRODUCTION:Molecular classification of endometrial carcinoma has been proposed to predict survival. However, its role in patient management remains to be determined. We aimed to identify whether a molecular and immunohistochemical classification of endometrial carcinoma could improve decision-making for adjuvant therapy.METHODS:All consecutive patients treated for endometrial carcinoma between 2010 and 2017 at Cochin University Hospital were included. Clinical risk of relapse was based on European Society for Medical Oncology-European Society of Gynaecological Oncology-European SocieTy for Radiotherapy \u0026amp; Oncology (ESMO-ESGO-ESTRO) consensus. The clinical event of interest was event-free survival. Formalin-fixed paraffin-embedded tissue samples were processed for histopathological analysis and DNA extraction. The nuclear expression of mismatch repair and TP53 proteins was analyzed by immunohistochemistry. Next-generation sequencing of a panel of 15 genes including TP53 and POLE was performed using Ampliseq panels on Ion Torrent PGM (ThermoFisher). Tumors were allocated into four molecular groups using a sequential method based on next-generation sequencing and immunohistochemistry data: (1) POLE/ultramutated-like; (2) MSI/hypermutated-like (mismatch repair-deficient); (3) TP53-mutated (without POLE mutations or mismatch repair deficiency); (4) not otherwise specified (the remaining tumors).RESULTS:159 patients were included; 125 tumors were available for molecular characterization and distributed as follows: (1) POLE/ultramutated-like: n=4 (3%); (2) MSI/hypermutated-like: n=35 (30%); (3) TP53-mutated: n=30 (25%); and (4) not otherwise specified: n=49 (42%). Assessing the TP53 status by immunohistochemistry only rather than next-generation sequencing would have misclassified 6 tumors (5%). TP53-mutated tumors were associated with poor prognosis, independently of International Federation of Gynecology and Obstetrics (FIGO) stage and histological grade (Cox-based adjusted hazard ratio (aHR) 5.54, 95% CI 2.30 to 13.4), and independently of clinical risk of relapse (aHR 3.92, 95% CI 1.59 to 9.64). Among patients with FIGO stage I-II tumors, 6 (38%) TP53-mutated tumors had low/intermediate clinical risk of relapse and did not receive adjuvant chemotherapy or radiotherapy.CONCLUSION:Endometrial carcinoma molecular classification identified potentially under-treated patients with poor molecular prognosis despite being at low/intermediate clinical risk of relapse. Consideration of molecular classification in adjuvant therapeutic decisions should be evaluated in prospective trials. "
@@ -390,7 +428,7 @@
     <script>const isSiteThemeDark = false;</script>
   
   
-  <script src="/js/load-theme.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/load-theme.js"></script>
 
   <aside class="search-results" id="search">
   <div class="container">
@@ -445,7 +483,7 @@
 
     
     <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -458,7 +496,7 @@
 
     
     <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -494,7 +532,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/entreprendre/"><span>Commencer un projet</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/entreprendre/"><span>Commencer un projet</span></a>
         </li>
 
         
@@ -524,44 +562,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/suivremonprojet/"><span>Suivre son projet</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-            
-            
-            
-              
-            
-            
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#outils"><span>Boite à outils</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/suivremonprojet/"><span>Suivre son projet</span></a>
         </li>
 
         
@@ -598,7 +599,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#publi"><span>Publications</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#outils"><span>Boite à outils</span></a>
         </li>
 
         
@@ -635,7 +636,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#transparence"><span>Portail de transparence</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#publi"><span>Publications</span></a>
         </li>
 
         
@@ -672,7 +673,44 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#people"><span>Qui sommes-nous ?</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#transparence"><span>Portail de transparence</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#people"><span>Qui sommes-nous ?</span></a>
         </li>
 
         
@@ -745,7 +783,7 @@
     
 
   
-  <span ><a href="/author/beinse-guillaume/">Beinse Guillaume</a></span>, <span ><a href="/author/rance-bastien/">Rance Bastien</a></span>, <span ><a href="/author/just-pierre-alexandre/">Just Pierre-Alexandre</a></span>, <span ><a href="/author/izac-brigitte/">Izac Brigitte</a></span>, <span ><a href="/author/letourneur-franck/">Letourneur Franck</a></span>, <span ><a href="/author/saidu-nathaniel-edward-bennett/">Saidu Nathaniel Edward Bennett</a></span>, <span ><a href="/author/chouzenoux-sandrine/">Chouzenoux Sandrine</a></span>, <span ><a href="/author/nicco-carole/">Nicco Carole</a></span>, <span ><a href="/author/goldwasser-francois/">Goldwasser Francois</a></span>, <span ><a href="/author/batteux-frederic/">Batteux Frederic</a></span>, <span ><a href="/author/durdux-catherine/">Durdux Catherine</a></span>, <span ><a href="/author/chapron-charles/">Chapron Charles</a></span>, <span ><a href="/author/pasmant-eric/">Pasmant Eric</a></span>, <span ><a href="/author/leroy-karen/">Leroy Karen</a></span>, <span ><a href="/author/alexandre-jerome/">Alexandre Jerome</a></span>, <span ><a href="/author/borghese-bruno/">Borghese Bruno</a></span>
+  <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/beinse-guillaume/">Beinse Guillaume</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/rance-bastien/">Rance Bastien</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/just-pierre-alexandre/">Just Pierre-Alexandre</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/izac-brigitte/">Izac Brigitte</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/letourneur-franck/">Letourneur Franck</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/saidu-nathaniel-edward-bennett/">Saidu Nathaniel Edward Bennett</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/chouzenoux-sandrine/">Chouzenoux Sandrine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/nicco-carole/">Nicco Carole</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/goldwasser-francois/">Goldwasser Francois</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/batteux-frederic/">Batteux Frederic</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/durdux-catherine/">Durdux Catherine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/chapron-charles/">Chapron Charles</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/pasmant-eric/">Pasmant Eric</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/leroy-karen/">Leroy Karen</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/alexandre-jerome/">Alexandre Jerome</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/borghese-bruno/">Borghese Bruno</a></span>
   </div>
   
   
@@ -811,7 +849,7 @@
           <div class="col-12 col-md-9">
             
             
-            <a href="/publication/#2">
+            <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/#2">
               Article de revue
             </a>
             
@@ -870,7 +908,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://www.coreds.com/publication/2020-05-01_na/&amp;text=NA" target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2020-05-01_na/&amp;text=NA" target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -883,7 +921,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://www.coreds.com/publication/2020-05-01_na/&amp;t=NA" target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://consultation-recherche-donnees-sante.netlify.app/publication/2020-05-01_na/&amp;t=NA" target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -896,7 +934,7 @@
       
       
       <li>
-        <a href="mailto:?subject=NA&amp;body=https://www.coreds.com/publication/2020-05-01_na/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=NA&amp;body=https://consultation-recherche-donnees-sante.netlify.app/publication/2020-05-01_na/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -909,7 +947,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://www.coreds.com/publication/2020-05-01_na/&amp;title=NA" target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2020-05-01_na/&amp;title=NA" target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -922,7 +960,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=NA%20https://www.coreds.com/publication/2020-05-01_na/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=NA%20https://consultation-recherche-donnees-sante.netlify.app/publication/2020-05-01_na/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -935,7 +973,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://www.coreds.com/publication/2020-05-01_na/&amp;title=NA" target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2020-05-01_na/&amp;title=NA" target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1071,7 +1109,7 @@
     <h3>Sur le même sujet</h3>
     <ul>
       
-      <li><a href="/publication/2019-01-01_the_nrf2_transcripti/">The NRF2 transcriptional target NQO1 has low mRNA levels in TP53-mutated endometrial carcinomas.</a></li>
+      <li><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2019-01-01_the_nrf2_transcripti/">The NRF2 transcriptional target NQO1 has low mRNA levels in TP53-mutated endometrial carcinomas.</a></li>
       
     </ul>
   </div>
@@ -1255,7 +1293,7 @@
     
     
     
-    <script src="/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
+    <script src="https://consultation-recherche-donnees-sante.netlify.app/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
 
     
 

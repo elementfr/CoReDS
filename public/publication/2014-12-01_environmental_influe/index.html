@@ -37,7 +37,7 @@
   <meta name="description" content="Previous reports have suggested a role for weather conditions and air pollution on the variability of sickle cell disease (SCD) severity, but large-scale comprehensive epidemiological studies are lacking. In order to evaluate the influence of air pollution and climatic factors on emergency hospital admissions (EHA) in SCD patients, we conducted an 8-year observational retrospective study in 22 French university hospitals in Paris conurbation, using distributed lag non-linear models, a methodology able to flexibly describe simultaneously non-linear and delayed associations, with a multivariable approach. During the 2922 days of the study, there were 17,710 EHA, with a mean daily number of 6.1 ± 2.8. Most environmental factors were significantly correlated to each other. The risk of EHA was significantly associated with higher values of nitrogen dioxide, atmospheric particulate matters, and daily mean wind speed; and with lower values of carbon monoxide, ozone, sulfur dioxide, daily temperature (minimal, maximal, mean, and range), day-to-day mean temperature change, daily bright sunshine, and occurrence of storm. There was a lag effect for 12 of 15 environmental factors influencing hospitalization rate. Multivariate analysis identified carbon monoxide, day-to-day temperature change, and mean wind speed, along with calendar factors (weekend, summer season, and year) as independent factors associated with EHA. In conclusion, most weather conditions and air pollutants assessed were correlated to each other and influenced the rate of EHA in SCD patients. In multivariate analysis, lower carbon monoxide concentrations, day-to-day mean temperature drop and higher wind speed were associated with increased risk of EHA.">
 
   
-  <link rel="alternate" hreflang="fr" href="https://www.coreds.com/publication/2014-12-01_environmental_influe/">
+  <link rel="alternate" hreflang="fr" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2014-12-01_environmental_influe/">
 
   
 
@@ -66,7 +66,7 @@
   
   
   
-  <script src="/js/mathjax-config.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/mathjax-config.js"></script>
   
 
   
@@ -241,13 +241,51 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.css">
+  <link rel="stylesheet" href="https://consultation-recherche-donnees-sante.netlify.app/css/wowchemy.css">
 
   
 
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-80B5KND2Y6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-80B5KND2Y6', { 'anonymize_ip': true });
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
   
@@ -258,11 +296,11 @@
 
   
 
-  <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
+  <link rel="manifest" href="https://consultation-recherche-donnees-sante.netlify.app/index.webmanifest">
+  <link rel="icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="https://www.coreds.com/publication/2014-12-01_environmental_influe/">
+  <link rel="canonical" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2014-12-01_environmental_influe/">
 
   
   
@@ -278,10 +316,10 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:url" content="https://www.coreds.com/publication/2014-12-01_environmental_influe/">
+  <meta property="og:url" content="https://consultation-recherche-donnees-sante.netlify.app/publication/2014-12-01_environmental_influe/">
   <meta property="og:title" content="Environmental influences on daily emergency admissions in sickle-cell disease patients. | Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:description" content="Previous reports have suggested a role for weather conditions and air pollution on the variability of sickle cell disease (SCD) severity, but large-scale comprehensive epidemiological studies are lacking. In order to evaluate the influence of air pollution and climatic factors on emergency hospital admissions (EHA) in SCD patients, we conducted an 8-year observational retrospective study in 22 French university hospitals in Paris conurbation, using distributed lag non-linear models, a methodology able to flexibly describe simultaneously non-linear and delayed associations, with a multivariable approach. During the 2922 days of the study, there were 17,710 EHA, with a mean daily number of 6.1 ± 2.8. Most environmental factors were significantly correlated to each other. The risk of EHA was significantly associated with higher values of nitrogen dioxide, atmospheric particulate matters, and daily mean wind speed; and with lower values of carbon monoxide, ozone, sulfur dioxide, daily temperature (minimal, maximal, mean, and range), day-to-day mean temperature change, daily bright sunshine, and occurrence of storm. There was a lag effect for 12 of 15 environmental factors influencing hospitalization rate. Multivariate analysis identified carbon monoxide, day-to-day temperature change, and mean wind speed, along with calendar factors (weekend, summer season, and year) as independent factors associated with EHA. In conclusion, most weather conditions and air pollutants assessed were correlated to each other and influenced the rate of EHA in SCD patients. In multivariate analysis, lower carbon monoxide concentrations, day-to-day mean temperature drop and higher wind speed were associated with increased risk of EHA."><meta property="og:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
-  <meta property="twitter:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
+  <meta property="og:description" content="Previous reports have suggested a role for weather conditions and air pollution on the variability of sickle cell disease (SCD) severity, but large-scale comprehensive epidemiological studies are lacking. In order to evaluate the influence of air pollution and climatic factors on emergency hospital admissions (EHA) in SCD patients, we conducted an 8-year observational retrospective study in 22 French university hospitals in Paris conurbation, using distributed lag non-linear models, a methodology able to flexibly describe simultaneously non-linear and delayed associations, with a multivariable approach. During the 2922 days of the study, there were 17,710 EHA, with a mean daily number of 6.1 ± 2.8. Most environmental factors were significantly correlated to each other. The risk of EHA was significantly associated with higher values of nitrogen dioxide, atmospheric particulate matters, and daily mean wind speed; and with lower values of carbon monoxide, ozone, sulfur dioxide, daily temperature (minimal, maximal, mean, and range), day-to-day mean temperature change, daily bright sunshine, and occurrence of storm. There was a lag effect for 12 of 15 environmental factors influencing hospitalization rate. Multivariate analysis identified carbon monoxide, day-to-day temperature change, and mean wind speed, along with calendar factors (weekend, summer season, and year) as independent factors associated with EHA. In conclusion, most weather conditions and air pollutants assessed were correlated to each other and influenced the rate of EHA in SCD patients. In multivariate analysis, lower carbon monoxide concentrations, day-to-day mean temperature drop and higher wind speed were associated with increased risk of EHA."><meta property="og:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
+  <meta property="twitter:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
   
     
       <meta property="article:published_time" content="2014-12-01T00:00:00&#43;00:00">
@@ -308,7 +346,7 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://www.coreds.com/publication/2014-12-01_environmental_influe/"
+    "@id": "https://consultation-recherche-donnees-sante.netlify.app/publication/2014-12-01_environmental_influe/"
   },
   "headline": "Environmental influences on daily emergency admissions in sickle-cell disease patients.",
   
@@ -325,7 +363,7 @@
     "name": "Consultation Recherche Données de Santé - CoReDS",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
+      "url": "https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
     }
   },
   "description": "Previous reports have suggested a role for weather conditions and air pollution on the variability of sickle cell disease (SCD) severity, but large-scale comprehensive epidemiological studies are lacking. In order to evaluate the influence of air pollution and climatic factors on emergency hospital admissions (EHA) in SCD patients, we conducted an 8-year observational retrospective study in 22 French university hospitals in Paris conurbation, using distributed lag non-linear models, a methodology able to flexibly describe simultaneously non-linear and delayed associations, with a multivariable approach. During the 2922 days of the study, there were 17,710 EHA, with a mean daily number of 6.1 ± 2.8. Most environmental factors were significantly correlated to each other. The risk of EHA was significantly associated with higher values of nitrogen dioxide, atmospheric particulate matters, and daily mean wind speed; and with lower values of carbon monoxide, ozone, sulfur dioxide, daily temperature (minimal, maximal, mean, and range), day-to-day mean temperature change, daily bright sunshine, and occurrence of storm. There was a lag effect for 12 of 15 environmental factors influencing hospitalization rate. Multivariate analysis identified carbon monoxide, day-to-day temperature change, and mean wind speed, along with calendar factors (weekend, summer season, and year) as independent factors associated with EHA. In conclusion, most weather conditions and air pollutants assessed were correlated to each other and influenced the rate of EHA in SCD patients. In multivariate analysis, lower carbon monoxide concentrations, day-to-day mean temperature drop and higher wind speed were associated with increased risk of EHA."
@@ -390,7 +428,7 @@
     <script>const isSiteThemeDark = false;</script>
   
   
-  <script src="/js/load-theme.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/load-theme.js"></script>
 
   <aside class="search-results" id="search">
   <div class="container">
@@ -445,7 +483,7 @@
 
     
     <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -458,7 +496,7 @@
 
     
     <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -494,7 +532,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/entreprendre/"><span>Commencer un projet</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/entreprendre/"><span>Commencer un projet</span></a>
         </li>
 
         
@@ -524,44 +562,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/suivremonprojet/"><span>Suivre son projet</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-            
-            
-            
-              
-            
-            
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#outils"><span>Boite à outils</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/suivremonprojet/"><span>Suivre son projet</span></a>
         </li>
 
         
@@ -598,7 +599,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#publi"><span>Publications</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#outils"><span>Boite à outils</span></a>
         </li>
 
         
@@ -635,7 +636,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#transparence"><span>Portail de transparence</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#publi"><span>Publications</span></a>
         </li>
 
         
@@ -672,7 +673,44 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#people"><span>Qui sommes-nous ?</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#transparence"><span>Portail de transparence</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#people"><span>Qui sommes-nous ?</span></a>
         </li>
 
         
@@ -745,7 +783,7 @@
     
 
   
-  <span ><a href="/author/mekontso-dessap-armand/">Mekontso Dessap Armand</a></span>, <span ><a href="/author/contou-damien/">Contou Damien</a></span>, <span ><a href="/author/dandine-roulland-claire/">Dandine-Roulland Claire</a></span>, <span ><a href="/author/hemery-francois/">Hemery Francois</a></span>, <span ><a href="/author/habibi-anoosha/">Habibi Anoosha</a></span>, <span ><a href="/author/charles-nelson-anais/">Charles-Nelson Anais</a></span>, <span ><a href="/author/galacteros-frederic/">Galacteros Frederic</a></span>, <span ><a href="/author/brun-buisson-christian/">Brun-Buisson Christian</a></span>, <span ><a href="/author/maitre-bernard/">Maitre Bernard</a></span>, <span ><a href="/author/katsahian-sandrine/">Katsahian Sandrine</a></span>
+  <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/mekontso-dessap-armand/">Mekontso Dessap Armand</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/contou-damien/">Contou Damien</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/dandine-roulland-claire/">Dandine-Roulland Claire</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/hemery-francois/">Hemery Francois</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/habibi-anoosha/">Habibi Anoosha</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/charles-nelson-anais/">Charles-Nelson Anais</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/galacteros-frederic/">Galacteros Frederic</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/brun-buisson-christian/">Brun-Buisson Christian</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/maitre-bernard/">Maitre Bernard</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/katsahian-sandrine/">Katsahian Sandrine</a></span>
   </div>
   
   
@@ -811,7 +849,7 @@
           <div class="col-12 col-md-9">
             
             
-            <a href="/publication/#2">
+            <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/#2">
               Article de revue
             </a>
             
@@ -870,7 +908,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://www.coreds.com/publication/2014-12-01_environmental_influe/&amp;text=Environmental%20influences%20on%20daily%20emergency%20admissions%20in%20sickle-cell%20disease%20patients." target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2014-12-01_environmental_influe/&amp;text=Environmental%20influences%20on%20daily%20emergency%20admissions%20in%20sickle-cell%20disease%20patients." target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -883,7 +921,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://www.coreds.com/publication/2014-12-01_environmental_influe/&amp;t=Environmental%20influences%20on%20daily%20emergency%20admissions%20in%20sickle-cell%20disease%20patients." target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://consultation-recherche-donnees-sante.netlify.app/publication/2014-12-01_environmental_influe/&amp;t=Environmental%20influences%20on%20daily%20emergency%20admissions%20in%20sickle-cell%20disease%20patients." target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -896,7 +934,7 @@
       
       
       <li>
-        <a href="mailto:?subject=Environmental%20influences%20on%20daily%20emergency%20admissions%20in%20sickle-cell%20disease%20patients.&amp;body=https://www.coreds.com/publication/2014-12-01_environmental_influe/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=Environmental%20influences%20on%20daily%20emergency%20admissions%20in%20sickle-cell%20disease%20patients.&amp;body=https://consultation-recherche-donnees-sante.netlify.app/publication/2014-12-01_environmental_influe/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -909,7 +947,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://www.coreds.com/publication/2014-12-01_environmental_influe/&amp;title=Environmental%20influences%20on%20daily%20emergency%20admissions%20in%20sickle-cell%20disease%20patients." target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2014-12-01_environmental_influe/&amp;title=Environmental%20influences%20on%20daily%20emergency%20admissions%20in%20sickle-cell%20disease%20patients." target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -922,7 +960,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=Environmental%20influences%20on%20daily%20emergency%20admissions%20in%20sickle-cell%20disease%20patients.%20https://www.coreds.com/publication/2014-12-01_environmental_influe/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=Environmental%20influences%20on%20daily%20emergency%20admissions%20in%20sickle-cell%20disease%20patients.%20https://consultation-recherche-donnees-sante.netlify.app/publication/2014-12-01_environmental_influe/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -935,7 +973,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://www.coreds.com/publication/2014-12-01_environmental_influe/&amp;title=Environmental%20influences%20on%20daily%20emergency%20admissions%20in%20sickle-cell%20disease%20patients." target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2014-12-01_environmental_influe/&amp;title=Environmental%20influences%20on%20daily%20emergency%20admissions%20in%20sickle-cell%20disease%20patients." target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1035,7 +1073,7 @@
     <h3>Sur le même sujet</h3>
     <ul>
       
-      <li><a href="/publication/2012-10-01_small-bore_catheter_/">Small-bore catheter versus chest tube drainage for pneumothorax.</a></li>
+      <li><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2012-10-01_small-bore_catheter_/">Small-bore catheter versus chest tube drainage for pneumothorax.</a></li>
       
     </ul>
   </div>
@@ -1219,7 +1257,7 @@
     
     
     
-    <script src="/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
+    <script src="https://consultation-recherche-donnees-sante.netlify.app/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
 
     
 

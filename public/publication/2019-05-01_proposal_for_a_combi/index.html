@@ -37,7 +37,7 @@
   <meta name="description" content="INTRODUCTION:Multiple nodules in the lung are being diagnosed with an increasing frequency thanks to high-quality computed tomography imaging. In patients with lung cancer, this situation represents up to 10% of patients who have an operation. For clinical management, it is important to classify the disease as intrapulmonary metastasis or multiple primary lung carcinoma to define TNM classification and optimize therapeutic options. In the present study, we evaluated the respective and combined input of histological and molecular classification to propose a classification algorithm for multiple nodules.METHODS:We studied consecutive patients undergoing an operation with curative intent for lung adenocarcinoma (N = 120) and harboring two tumors (N = 240). Histological diagnosis according to the WHO 2015 classification and molecular profiling using next-generation sequencing targeting 22 hotspot genes allowed classification of samples as multiple primary lung adenocarcinomas or as intrapulmonary metastasis.RESULTS:Next-generation sequencing identified molecular mutations in 91% of tumor pairs (109 of 120). Genomic and histological classification showed a fair agreement when the κ test was used (κ = 0.43). Discordant cases (30 of 109 [27%]) were reclassified by using a combined histomolecular algorithm. EGFR mutations (p = 0.03) and node involvement (p = 0.03) were significantly associated with intrapulmonary metastasis, whereas KRAS mutations (p = 0.00005) were significantly associated with multiple primary lung adenocarcinomas. EGFR mutations (p = 0.02) and node involvement (p = 0.004) were the only independent prognostic factors.CONCLUSION:We showed that combined histomolecular algorithm represents a relevant tool to classify multifocal lung cancers, which could guide adjuvant treatment decisions. Survival analysis underlined the good prognosis of EGFR-mutated adenocarcinoma in patients with intrapulmonary metastasis. ">
 
   
-  <link rel="alternate" hreflang="fr" href="https://www.coreds.com/publication/2019-05-01_proposal_for_a_combi/">
+  <link rel="alternate" hreflang="fr" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2019-05-01_proposal_for_a_combi/">
 
   
 
@@ -66,7 +66,7 @@
   
   
   
-  <script src="/js/mathjax-config.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/mathjax-config.js"></script>
   
 
   
@@ -241,13 +241,51 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.css">
+  <link rel="stylesheet" href="https://consultation-recherche-donnees-sante.netlify.app/css/wowchemy.css">
 
   
 
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-80B5KND2Y6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-80B5KND2Y6', { 'anonymize_ip': true });
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
   
@@ -258,11 +296,11 @@
 
   
 
-  <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
+  <link rel="manifest" href="https://consultation-recherche-donnees-sante.netlify.app/index.webmanifest">
+  <link rel="icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="https://www.coreds.com/publication/2019-05-01_proposal_for_a_combi/">
+  <link rel="canonical" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2019-05-01_proposal_for_a_combi/">
 
   
   
@@ -278,10 +316,10 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:url" content="https://www.coreds.com/publication/2019-05-01_proposal_for_a_combi/">
+  <meta property="og:url" content="https://consultation-recherche-donnees-sante.netlify.app/publication/2019-05-01_proposal_for_a_combi/">
   <meta property="og:title" content="Proposal for a Combined Histomolecular Algorithm to Distinguish Multiple Primary Adenocarcinomas from Intrapulmonary Metastasis in Patients with Multiple Lung Tumors. | Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:description" content="INTRODUCTION:Multiple nodules in the lung are being diagnosed with an increasing frequency thanks to high-quality computed tomography imaging. In patients with lung cancer, this situation represents up to 10% of patients who have an operation. For clinical management, it is important to classify the disease as intrapulmonary metastasis or multiple primary lung carcinoma to define TNM classification and optimize therapeutic options. In the present study, we evaluated the respective and combined input of histological and molecular classification to propose a classification algorithm for multiple nodules.METHODS:We studied consecutive patients undergoing an operation with curative intent for lung adenocarcinoma (N = 120) and harboring two tumors (N = 240). Histological diagnosis according to the WHO 2015 classification and molecular profiling using next-generation sequencing targeting 22 hotspot genes allowed classification of samples as multiple primary lung adenocarcinomas or as intrapulmonary metastasis.RESULTS:Next-generation sequencing identified molecular mutations in 91% of tumor pairs (109 of 120). Genomic and histological classification showed a fair agreement when the κ test was used (κ = 0.43). Discordant cases (30 of 109 [27%]) were reclassified by using a combined histomolecular algorithm. EGFR mutations (p = 0.03) and node involvement (p = 0.03) were significantly associated with intrapulmonary metastasis, whereas KRAS mutations (p = 0.00005) were significantly associated with multiple primary lung adenocarcinomas. EGFR mutations (p = 0.02) and node involvement (p = 0.004) were the only independent prognostic factors.CONCLUSION:We showed that combined histomolecular algorithm represents a relevant tool to classify multifocal lung cancers, which could guide adjuvant treatment decisions. Survival analysis underlined the good prognosis of EGFR-mutated adenocarcinoma in patients with intrapulmonary metastasis. "><meta property="og:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
-  <meta property="twitter:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
+  <meta property="og:description" content="INTRODUCTION:Multiple nodules in the lung are being diagnosed with an increasing frequency thanks to high-quality computed tomography imaging. In patients with lung cancer, this situation represents up to 10% of patients who have an operation. For clinical management, it is important to classify the disease as intrapulmonary metastasis or multiple primary lung carcinoma to define TNM classification and optimize therapeutic options. In the present study, we evaluated the respective and combined input of histological and molecular classification to propose a classification algorithm for multiple nodules.METHODS:We studied consecutive patients undergoing an operation with curative intent for lung adenocarcinoma (N = 120) and harboring two tumors (N = 240). Histological diagnosis according to the WHO 2015 classification and molecular profiling using next-generation sequencing targeting 22 hotspot genes allowed classification of samples as multiple primary lung adenocarcinomas or as intrapulmonary metastasis.RESULTS:Next-generation sequencing identified molecular mutations in 91% of tumor pairs (109 of 120). Genomic and histological classification showed a fair agreement when the κ test was used (κ = 0.43). Discordant cases (30 of 109 [27%]) were reclassified by using a combined histomolecular algorithm. EGFR mutations (p = 0.03) and node involvement (p = 0.03) were significantly associated with intrapulmonary metastasis, whereas KRAS mutations (p = 0.00005) were significantly associated with multiple primary lung adenocarcinomas. EGFR mutations (p = 0.02) and node involvement (p = 0.004) were the only independent prognostic factors.CONCLUSION:We showed that combined histomolecular algorithm represents a relevant tool to classify multifocal lung cancers, which could guide adjuvant treatment decisions. Survival analysis underlined the good prognosis of EGFR-mutated adenocarcinoma in patients with intrapulmonary metastasis. "><meta property="og:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
+  <meta property="twitter:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
   
     
       <meta property="article:published_time" content="2019-05-01T00:00:00&#43;00:00">
@@ -308,7 +346,7 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://www.coreds.com/publication/2019-05-01_proposal_for_a_combi/"
+    "@id": "https://consultation-recherche-donnees-sante.netlify.app/publication/2019-05-01_proposal_for_a_combi/"
   },
   "headline": "Proposal for a Combined Histomolecular Algorithm to Distinguish Multiple Primary Adenocarcinomas from Intrapulmonary Metastasis in Patients with Multiple Lung Tumors.",
   
@@ -325,7 +363,7 @@
     "name": "Consultation Recherche Données de Santé - CoReDS",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
+      "url": "https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
     }
   },
   "description": "INTRODUCTION:Multiple nodules in the lung are being diagnosed with an increasing frequency thanks to high-quality computed tomography imaging. In patients with lung cancer, this situation represents up to 10% of patients who have an operation. For clinical management, it is important to classify the disease as intrapulmonary metastasis or multiple primary lung carcinoma to define TNM classification and optimize therapeutic options. In the present study, we evaluated the respective and combined input of histological and molecular classification to propose a classification algorithm for multiple nodules.METHODS:We studied consecutive patients undergoing an operation with curative intent for lung adenocarcinoma (N = 120) and harboring two tumors (N = 240). Histological diagnosis according to the WHO 2015 classification and molecular profiling using next-generation sequencing targeting 22 hotspot genes allowed classification of samples as multiple primary lung adenocarcinomas or as intrapulmonary metastasis.RESULTS:Next-generation sequencing identified molecular mutations in 91% of tumor pairs (109 of 120). Genomic and histological classification showed a fair agreement when the κ test was used (κ = 0.43). Discordant cases (30 of 109 [27%]) were reclassified by using a combined histomolecular algorithm. EGFR mutations (p = 0.03) and node involvement (p = 0.03) were significantly associated with intrapulmonary metastasis, whereas KRAS mutations (p = 0.00005) were significantly associated with multiple primary lung adenocarcinomas. EGFR mutations (p = 0.02) and node involvement (p = 0.004) were the only independent prognostic factors.CONCLUSION:We showed that combined histomolecular algorithm represents a relevant tool to classify multifocal lung cancers, which could guide adjuvant treatment decisions. Survival analysis underlined the good prognosis of EGFR-mutated adenocarcinoma in patients with intrapulmonary metastasis. "
@@ -390,7 +428,7 @@
     <script>const isSiteThemeDark = false;</script>
   
   
-  <script src="/js/load-theme.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/load-theme.js"></script>
 
   <aside class="search-results" id="search">
   <div class="container">
@@ -445,7 +483,7 @@
 
     
     <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -458,7 +496,7 @@
 
     
     <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -494,7 +532,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/entreprendre/"><span>Commencer un projet</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/entreprendre/"><span>Commencer un projet</span></a>
         </li>
 
         
@@ -524,44 +562,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/suivremonprojet/"><span>Suivre son projet</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-            
-            
-            
-              
-            
-            
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#outils"><span>Boite à outils</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/suivremonprojet/"><span>Suivre son projet</span></a>
         </li>
 
         
@@ -598,7 +599,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#publi"><span>Publications</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#outils"><span>Boite à outils</span></a>
         </li>
 
         
@@ -635,7 +636,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#transparence"><span>Portail de transparence</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#publi"><span>Publications</span></a>
         </li>
 
         
@@ -672,7 +673,44 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#people"><span>Qui sommes-nous ?</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#transparence"><span>Portail de transparence</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#people"><span>Qui sommes-nous ?</span></a>
         </li>
 
         
@@ -745,7 +783,7 @@
     
 
   
-  <span ><a href="/author/mansuet-lupo-audrey/">Mansuet-Lupo Audrey</a></span>, <span ><a href="/author/barritault-marc/">Barritault Marc</a></span>, <span ><a href="/author/alifano-marco/">Alifano Marco</a></span>, <span ><a href="/author/janet-vendroux-aurelie/">Janet-Vendroux Aurelie</a></span>, <span ><a href="/author/zarmaev-makmoud/">Zarmaev Makmoud</a></span>, <span ><a href="/author/biton-jerome/">Biton Jerome</a></span>, <span ><a href="/author/velut-yoan/">Velut Yoan</a></span>, <span ><a href="/author/le-hay-christine/">Le Hay Christine</a></span>, <span ><a href="/author/cremer-isabelle/">Cremer Isabelle</a></span>, <span ><a href="/author/regnard-jean-francois/">Regnard Jean-Francois</a></span>, <span ><a href="/author/fournel-ludovic/">Fournel Ludovic</a></span>, <span ><a href="/author/rance-bastien/">Rance Bastien</a></span>, <span ><a href="/author/wislez-marie/">Wislez Marie</a></span>, <span ><a href="/author/laurent-puig-pierre/">Laurent-Puig Pierre</a></span>, <span ><a href="/author/herbst-ronald/">Herbst Ronald</a></span>, <span ><a href="/author/damotte-diane/">Damotte Diane</a></span>, <span ><a href="/author/blons-helene/">Blons Helene</a></span>
+  <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/mansuet-lupo-audrey/">Mansuet-Lupo Audrey</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/barritault-marc/">Barritault Marc</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/alifano-marco/">Alifano Marco</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/janet-vendroux-aurelie/">Janet-Vendroux Aurelie</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/zarmaev-makmoud/">Zarmaev Makmoud</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/biton-jerome/">Biton Jerome</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/velut-yoan/">Velut Yoan</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/le-hay-christine/">Le Hay Christine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/cremer-isabelle/">Cremer Isabelle</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/regnard-jean-francois/">Regnard Jean-Francois</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/fournel-ludovic/">Fournel Ludovic</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/rance-bastien/">Rance Bastien</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/wislez-marie/">Wislez Marie</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/laurent-puig-pierre/">Laurent-Puig Pierre</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/herbst-ronald/">Herbst Ronald</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/damotte-diane/">Damotte Diane</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/blons-helene/">Blons Helene</a></span>
   </div>
   
   
@@ -811,7 +849,7 @@
           <div class="col-12 col-md-9">
             
             
-            <a href="/publication/#2">
+            <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/#2">
               Article de revue
             </a>
             
@@ -870,7 +908,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://www.coreds.com/publication/2019-05-01_proposal_for_a_combi/&amp;text=Proposal%20for%20a%20Combined%20Histomolecular%20Algorithm%20to%20Distinguish%20Multiple%20Primary%20Adenocarcinomas%20from%20Intrapulmonary%20Metastasis%20in%20Patients%20with%20Multiple%20Lung%20Tumors." target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2019-05-01_proposal_for_a_combi/&amp;text=Proposal%20for%20a%20Combined%20Histomolecular%20Algorithm%20to%20Distinguish%20Multiple%20Primary%20Adenocarcinomas%20from%20Intrapulmonary%20Metastasis%20in%20Patients%20with%20Multiple%20Lung%20Tumors." target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -883,7 +921,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://www.coreds.com/publication/2019-05-01_proposal_for_a_combi/&amp;t=Proposal%20for%20a%20Combined%20Histomolecular%20Algorithm%20to%20Distinguish%20Multiple%20Primary%20Adenocarcinomas%20from%20Intrapulmonary%20Metastasis%20in%20Patients%20with%20Multiple%20Lung%20Tumors." target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://consultation-recherche-donnees-sante.netlify.app/publication/2019-05-01_proposal_for_a_combi/&amp;t=Proposal%20for%20a%20Combined%20Histomolecular%20Algorithm%20to%20Distinguish%20Multiple%20Primary%20Adenocarcinomas%20from%20Intrapulmonary%20Metastasis%20in%20Patients%20with%20Multiple%20Lung%20Tumors." target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -896,7 +934,7 @@
       
       
       <li>
-        <a href="mailto:?subject=Proposal%20for%20a%20Combined%20Histomolecular%20Algorithm%20to%20Distinguish%20Multiple%20Primary%20Adenocarcinomas%20from%20Intrapulmonary%20Metastasis%20in%20Patients%20with%20Multiple%20Lung%20Tumors.&amp;body=https://www.coreds.com/publication/2019-05-01_proposal_for_a_combi/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=Proposal%20for%20a%20Combined%20Histomolecular%20Algorithm%20to%20Distinguish%20Multiple%20Primary%20Adenocarcinomas%20from%20Intrapulmonary%20Metastasis%20in%20Patients%20with%20Multiple%20Lung%20Tumors.&amp;body=https://consultation-recherche-donnees-sante.netlify.app/publication/2019-05-01_proposal_for_a_combi/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -909,7 +947,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://www.coreds.com/publication/2019-05-01_proposal_for_a_combi/&amp;title=Proposal%20for%20a%20Combined%20Histomolecular%20Algorithm%20to%20Distinguish%20Multiple%20Primary%20Adenocarcinomas%20from%20Intrapulmonary%20Metastasis%20in%20Patients%20with%20Multiple%20Lung%20Tumors." target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2019-05-01_proposal_for_a_combi/&amp;title=Proposal%20for%20a%20Combined%20Histomolecular%20Algorithm%20to%20Distinguish%20Multiple%20Primary%20Adenocarcinomas%20from%20Intrapulmonary%20Metastasis%20in%20Patients%20with%20Multiple%20Lung%20Tumors." target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -922,7 +960,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=Proposal%20for%20a%20Combined%20Histomolecular%20Algorithm%20to%20Distinguish%20Multiple%20Primary%20Adenocarcinomas%20from%20Intrapulmonary%20Metastasis%20in%20Patients%20with%20Multiple%20Lung%20Tumors.%20https://www.coreds.com/publication/2019-05-01_proposal_for_a_combi/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=Proposal%20for%20a%20Combined%20Histomolecular%20Algorithm%20to%20Distinguish%20Multiple%20Primary%20Adenocarcinomas%20from%20Intrapulmonary%20Metastasis%20in%20Patients%20with%20Multiple%20Lung%20Tumors.%20https://consultation-recherche-donnees-sante.netlify.app/publication/2019-05-01_proposal_for_a_combi/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -935,7 +973,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://www.coreds.com/publication/2019-05-01_proposal_for_a_combi/&amp;title=Proposal%20for%20a%20Combined%20Histomolecular%20Algorithm%20to%20Distinguish%20Multiple%20Primary%20Adenocarcinomas%20from%20Intrapulmonary%20Metastasis%20in%20Patients%20with%20Multiple%20Lung%20Tumors." target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2019-05-01_proposal_for_a_combi/&amp;title=Proposal%20for%20a%20Combined%20Histomolecular%20Algorithm%20to%20Distinguish%20Multiple%20Primary%20Adenocarcinomas%20from%20Intrapulmonary%20Metastasis%20in%20Patients%20with%20Multiple%20Lung%20Tumors." target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1077,7 +1115,7 @@
     <h3>Sur le même sujet</h3>
     <ul>
       
-      <li><a href="/publication/2018-07-01_validity_of_targeted/">Validity of Targeted Next-Generation Sequencing in Routine Care for Identifying Clinically Relevant Molecular Profiles in Non-Small-Cell Lung Cancer: Results of a 2-Year Experience on 1343 Samples.</a></li>
+      <li><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2018-07-01_validity_of_targeted/">Validity of Targeted Next-Generation Sequencing in Routine Care for Identifying Clinically Relevant Molecular Profiles in Non-Small-Cell Lung Cancer: Results of a 2-Year Experience on 1343 Samples.</a></li>
       
     </ul>
   </div>
@@ -1261,7 +1299,7 @@
     
     
     
-    <script src="/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
+    <script src="https://consultation-recherche-donnees-sante.netlify.app/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
 
     
 

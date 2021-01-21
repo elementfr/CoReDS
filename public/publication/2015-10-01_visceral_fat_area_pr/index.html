@@ -37,7 +37,7 @@
   <meta name="description" content="BACKGROUND:Anthropometric measurements have been linked to resistance to anti-angiogenic treatment and survival.METHODS:Patients with advanced hepatocellular carcinoma treated with sorafenib or brivanib in 2008-2011 were included in this retrospective study. Anthropometric measurements were assessed using computed tomography and were correlated with drug toxicity, radiological response, and overall survival.RESULTS:52 patients were included, Barcelona Clinic Liver Classification B (38%) and C (62%), with a mean value of α-fetoprotein of 29,554±85,654 ng/mL, with a median overall survival of 10.5 months. Sarcopenia was associated with a greater rate of hand-foot syndrome (P=0.049). Modified Response Evaluation Criteria In Solid Tumours (mRECIST) and Choi criteria were significantly associated with survival, but RECIST criteria were not. An absence of hand-foot syndrome and high-visceral fat area were associated with progressive disease as assessed by RECIST and mRECIST criteria. In multivariate analyses, high visceral fat area (HR=3.6; P=0.002), low lean body mass (HR=2.4; P=0.015), and presence of hand-foot syndrome (HR=1.8; P=0.004) were significantly associated with overall survival. In time-dependent multivariate analyses; only high visceral fat area was associated with survival.CONCLUSIONS:Visceral fat area is associated with survival and seems to be a predictive marker for primary resistance to tyrosine kinase inhibitors in patients with advanced hepatocellular carcinoma. ">
 
   
-  <link rel="alternate" hreflang="fr" href="https://www.coreds.com/publication/2015-10-01_visceral_fat_area_pr/">
+  <link rel="alternate" hreflang="fr" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2015-10-01_visceral_fat_area_pr/">
 
   
 
@@ -66,7 +66,7 @@
   
   
   
-  <script src="/js/mathjax-config.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/mathjax-config.js"></script>
   
 
   
@@ -241,13 +241,51 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.css">
+  <link rel="stylesheet" href="https://consultation-recherche-donnees-sante.netlify.app/css/wowchemy.css">
 
   
 
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-80B5KND2Y6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-80B5KND2Y6', { 'anonymize_ip': true });
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
   
@@ -258,11 +296,11 @@
 
   
 
-  <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
+  <link rel="manifest" href="https://consultation-recherche-donnees-sante.netlify.app/index.webmanifest">
+  <link rel="icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="https://www.coreds.com/publication/2015-10-01_visceral_fat_area_pr/">
+  <link rel="canonical" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2015-10-01_visceral_fat_area_pr/">
 
   
   
@@ -278,10 +316,10 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:url" content="https://www.coreds.com/publication/2015-10-01_visceral_fat_area_pr/">
+  <meta property="og:url" content="https://consultation-recherche-donnees-sante.netlify.app/publication/2015-10-01_visceral_fat_area_pr/">
   <meta property="og:title" content="Visceral fat area predicts survival in patients with advanced hepatocellular carcinoma treated with tyrosine kinase inhibitors. | Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:description" content="BACKGROUND:Anthropometric measurements have been linked to resistance to anti-angiogenic treatment and survival.METHODS:Patients with advanced hepatocellular carcinoma treated with sorafenib or brivanib in 2008-2011 were included in this retrospective study. Anthropometric measurements were assessed using computed tomography and were correlated with drug toxicity, radiological response, and overall survival.RESULTS:52 patients were included, Barcelona Clinic Liver Classification B (38%) and C (62%), with a mean value of α-fetoprotein of 29,554±85,654 ng/mL, with a median overall survival of 10.5 months. Sarcopenia was associated with a greater rate of hand-foot syndrome (P=0.049). Modified Response Evaluation Criteria In Solid Tumours (mRECIST) and Choi criteria were significantly associated with survival, but RECIST criteria were not. An absence of hand-foot syndrome and high-visceral fat area were associated with progressive disease as assessed by RECIST and mRECIST criteria. In multivariate analyses, high visceral fat area (HR=3.6; P=0.002), low lean body mass (HR=2.4; P=0.015), and presence of hand-foot syndrome (HR=1.8; P=0.004) were significantly associated with overall survival. In time-dependent multivariate analyses; only high visceral fat area was associated with survival.CONCLUSIONS:Visceral fat area is associated with survival and seems to be a predictive marker for primary resistance to tyrosine kinase inhibitors in patients with advanced hepatocellular carcinoma. "><meta property="og:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
-  <meta property="twitter:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
+  <meta property="og:description" content="BACKGROUND:Anthropometric measurements have been linked to resistance to anti-angiogenic treatment and survival.METHODS:Patients with advanced hepatocellular carcinoma treated with sorafenib or brivanib in 2008-2011 were included in this retrospective study. Anthropometric measurements were assessed using computed tomography and were correlated with drug toxicity, radiological response, and overall survival.RESULTS:52 patients were included, Barcelona Clinic Liver Classification B (38%) and C (62%), with a mean value of α-fetoprotein of 29,554±85,654 ng/mL, with a median overall survival of 10.5 months. Sarcopenia was associated with a greater rate of hand-foot syndrome (P=0.049). Modified Response Evaluation Criteria In Solid Tumours (mRECIST) and Choi criteria were significantly associated with survival, but RECIST criteria were not. An absence of hand-foot syndrome and high-visceral fat area were associated with progressive disease as assessed by RECIST and mRECIST criteria. In multivariate analyses, high visceral fat area (HR=3.6; P=0.002), low lean body mass (HR=2.4; P=0.015), and presence of hand-foot syndrome (HR=1.8; P=0.004) were significantly associated with overall survival. In time-dependent multivariate analyses; only high visceral fat area was associated with survival.CONCLUSIONS:Visceral fat area is associated with survival and seems to be a predictive marker for primary resistance to tyrosine kinase inhibitors in patients with advanced hepatocellular carcinoma. "><meta property="og:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
+  <meta property="twitter:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
   
     
       <meta property="article:published_time" content="2015-10-01T00:00:00&#43;00:00">
@@ -308,7 +346,7 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://www.coreds.com/publication/2015-10-01_visceral_fat_area_pr/"
+    "@id": "https://consultation-recherche-donnees-sante.netlify.app/publication/2015-10-01_visceral_fat_area_pr/"
   },
   "headline": "Visceral fat area predicts survival in patients with advanced hepatocellular carcinoma treated with tyrosine kinase inhibitors.",
   
@@ -325,7 +363,7 @@
     "name": "Consultation Recherche Données de Santé - CoReDS",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
+      "url": "https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
     }
   },
   "description": "BACKGROUND:Anthropometric measurements have been linked to resistance to anti-angiogenic treatment and survival.METHODS:Patients with advanced hepatocellular carcinoma treated with sorafenib or brivanib in 2008-2011 were included in this retrospective study. Anthropometric measurements were assessed using computed tomography and were correlated with drug toxicity, radiological response, and overall survival.RESULTS:52 patients were included, Barcelona Clinic Liver Classification B (38%) and C (62%), with a mean value of α-fetoprotein of 29,554±85,654 ng/mL, with a median overall survival of 10.5 months. Sarcopenia was associated with a greater rate of hand-foot syndrome (P=0.049). Modified Response Evaluation Criteria In Solid Tumours (mRECIST) and Choi criteria were significantly associated with survival, but RECIST criteria were not. An absence of hand-foot syndrome and high-visceral fat area were associated with progressive disease as assessed by RECIST and mRECIST criteria. In multivariate analyses, high visceral fat area (HR=3.6; P=0.002), low lean body mass (HR=2.4; P=0.015), and presence of hand-foot syndrome (HR=1.8; P=0.004) were significantly associated with overall survival. In time-dependent multivariate analyses; only high visceral fat area was associated with survival.CONCLUSIONS:Visceral fat area is associated with survival and seems to be a predictive marker for primary resistance to tyrosine kinase inhibitors in patients with advanced hepatocellular carcinoma. "
@@ -390,7 +428,7 @@
     <script>const isSiteThemeDark = false;</script>
   
   
-  <script src="/js/load-theme.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/load-theme.js"></script>
 
   <aside class="search-results" id="search">
   <div class="container">
@@ -445,7 +483,7 @@
 
     
     <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -458,7 +496,7 @@
 
     
     <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -494,7 +532,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/entreprendre/"><span>Commencer un projet</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/entreprendre/"><span>Commencer un projet</span></a>
         </li>
 
         
@@ -524,44 +562,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/suivremonprojet/"><span>Suivre son projet</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-            
-            
-            
-              
-            
-            
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#outils"><span>Boite à outils</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/suivremonprojet/"><span>Suivre son projet</span></a>
         </li>
 
         
@@ -598,7 +599,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#publi"><span>Publications</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#outils"><span>Boite à outils</span></a>
         </li>
 
         
@@ -635,7 +636,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#transparence"><span>Portail de transparence</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#publi"><span>Publications</span></a>
         </li>
 
         
@@ -672,7 +673,44 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#people"><span>Qui sommes-nous ?</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#transparence"><span>Portail de transparence</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#people"><span>Qui sommes-nous ?</span></a>
         </li>
 
         
@@ -745,7 +783,7 @@
     
 
   
-  <span ><a href="/author/nault-jean-charles/">Nault Jean-Charles</a></span>, <span ><a href="/author/pigneur-frederic/">Pigneur Frederic</a></span>, <span ><a href="/author/nelson-anais-charles/">Nelson Anais Charles</a></span>, <span ><a href="/author/costentin-charlotte/">Costentin Charlotte</a></span>, <span ><a href="/author/tselikas-lambros/">Tselikas Lambros</a></span>, <span ><a href="/author/katsahian-sandrine/">Katsahian Sandrine</a></span>, <span ><a href="/author/diao-guoqing/">Diao Guoqing</a></span>, <span ><a href="/author/laurent-alexis/">Laurent Alexis</a></span>, <span ><a href="/author/mallat-ariane/">Mallat Ariane</a></span>, <span ><a href="/author/duvoux-christophe/">Duvoux Christophe</a></span>, <span ><a href="/author/luciani-alain/">Luciani Alain</a></span>, <span ><a href="/author/decaens-thomas/">Decaens Thomas</a></span>
+  <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/nault-jean-charles/">Nault Jean-Charles</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/pigneur-frederic/">Pigneur Frederic</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/nelson-anais-charles/">Nelson Anais Charles</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/costentin-charlotte/">Costentin Charlotte</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/tselikas-lambros/">Tselikas Lambros</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/katsahian-sandrine/">Katsahian Sandrine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/diao-guoqing/">Diao Guoqing</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/laurent-alexis/">Laurent Alexis</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/mallat-ariane/">Mallat Ariane</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/duvoux-christophe/">Duvoux Christophe</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/luciani-alain/">Luciani Alain</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/decaens-thomas/">Decaens Thomas</a></span>
   </div>
   
   
@@ -811,7 +849,7 @@
           <div class="col-12 col-md-9">
             
             
-            <a href="/publication/#2">
+            <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/#2">
               Article de revue
             </a>
             
@@ -870,7 +908,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://www.coreds.com/publication/2015-10-01_visceral_fat_area_pr/&amp;text=Visceral%20fat%20area%20predicts%20survival%20in%20patients%20with%20advanced%20hepatocellular%20carcinoma%20treated%20with%20tyrosine%20kinase%20inhibitors." target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2015-10-01_visceral_fat_area_pr/&amp;text=Visceral%20fat%20area%20predicts%20survival%20in%20patients%20with%20advanced%20hepatocellular%20carcinoma%20treated%20with%20tyrosine%20kinase%20inhibitors." target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -883,7 +921,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://www.coreds.com/publication/2015-10-01_visceral_fat_area_pr/&amp;t=Visceral%20fat%20area%20predicts%20survival%20in%20patients%20with%20advanced%20hepatocellular%20carcinoma%20treated%20with%20tyrosine%20kinase%20inhibitors." target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://consultation-recherche-donnees-sante.netlify.app/publication/2015-10-01_visceral_fat_area_pr/&amp;t=Visceral%20fat%20area%20predicts%20survival%20in%20patients%20with%20advanced%20hepatocellular%20carcinoma%20treated%20with%20tyrosine%20kinase%20inhibitors." target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -896,7 +934,7 @@
       
       
       <li>
-        <a href="mailto:?subject=Visceral%20fat%20area%20predicts%20survival%20in%20patients%20with%20advanced%20hepatocellular%20carcinoma%20treated%20with%20tyrosine%20kinase%20inhibitors.&amp;body=https://www.coreds.com/publication/2015-10-01_visceral_fat_area_pr/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=Visceral%20fat%20area%20predicts%20survival%20in%20patients%20with%20advanced%20hepatocellular%20carcinoma%20treated%20with%20tyrosine%20kinase%20inhibitors.&amp;body=https://consultation-recherche-donnees-sante.netlify.app/publication/2015-10-01_visceral_fat_area_pr/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -909,7 +947,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://www.coreds.com/publication/2015-10-01_visceral_fat_area_pr/&amp;title=Visceral%20fat%20area%20predicts%20survival%20in%20patients%20with%20advanced%20hepatocellular%20carcinoma%20treated%20with%20tyrosine%20kinase%20inhibitors." target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2015-10-01_visceral_fat_area_pr/&amp;title=Visceral%20fat%20area%20predicts%20survival%20in%20patients%20with%20advanced%20hepatocellular%20carcinoma%20treated%20with%20tyrosine%20kinase%20inhibitors." target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -922,7 +960,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=Visceral%20fat%20area%20predicts%20survival%20in%20patients%20with%20advanced%20hepatocellular%20carcinoma%20treated%20with%20tyrosine%20kinase%20inhibitors.%20https://www.coreds.com/publication/2015-10-01_visceral_fat_area_pr/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=Visceral%20fat%20area%20predicts%20survival%20in%20patients%20with%20advanced%20hepatocellular%20carcinoma%20treated%20with%20tyrosine%20kinase%20inhibitors.%20https://consultation-recherche-donnees-sante.netlify.app/publication/2015-10-01_visceral_fat_area_pr/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -935,7 +973,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://www.coreds.com/publication/2015-10-01_visceral_fat_area_pr/&amp;title=Visceral%20fat%20area%20predicts%20survival%20in%20patients%20with%20advanced%20hepatocellular%20carcinoma%20treated%20with%20tyrosine%20kinase%20inhibitors." target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2015-10-01_visceral_fat_area_pr/&amp;title=Visceral%20fat%20area%20predicts%20survival%20in%20patients%20with%20advanced%20hepatocellular%20carcinoma%20treated%20with%20tyrosine%20kinase%20inhibitors." target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1047,7 +1085,7 @@
     <h3>Sur le même sujet</h3>
     <ul>
       
-      <li><a href="/publication/2013-02-01_intravoxel_incoheren/">Intravoxel incoherent motion (IVIM) MR imaging of colorectal liver metastases: are we only looking at tumor necrosis?</a></li>
+      <li><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2013-02-01_intravoxel_incoheren/">Intravoxel incoherent motion (IVIM) MR imaging of colorectal liver metastases: are we only looking at tumor necrosis?</a></li>
       
     </ul>
   </div>
@@ -1231,7 +1269,7 @@
     
     
     
-    <script src="/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
+    <script src="https://consultation-recherche-donnees-sante.netlify.app/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
 
     
 

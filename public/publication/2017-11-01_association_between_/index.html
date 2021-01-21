@@ -37,7 +37,7 @@
   <meta name="description" content="BACKGROUND:Even small variations of serum sodium concentration may be associated with mortality. Our objective was to confirm the impact of borderline dysnatremia for patients admitted to hospital on in-hospital mortality using real life care data from our electronic health record (EHR) and a phenome-wide association analysis (PheWAS).METHODS:Retrospective observational study based on patient data admitted to Hôpital Européen George Pompidou, between 01/01/2008 and 31/06/2014; including 45,834 patients with serum sodium determinations on admission. We analyzed the association between dysnatremia and in-hospital mortality, using a multivariate logistic regression model to adjust for classical potential confounders. We performed a PheWAS to identify new potential confounders.RESULTS:Hyponatremia and hypernatremia were recorded for 12.0% and 1.0% of hospital stays, respectively. Adjusted odds ratios (ORa) for severe, moderate and borderline hyponatremia were 3.44 (95% CI, 2.41-4.86), 2.48 (95% CI, 1.96-3.13) and 1.98 (95% CI, 1.73-2.28), respectively. ORa for severe, moderate and borderline hypernatremia were 4.07 (95% CI, 2.92-5.62), 4.42 (95% CI, 2.04-9.20) and 3.72 (95% CI, 1.53-8.45), respectively. Borderline hyponatremia (ORa = 1.57 95% CI, 1.35-1.81) and borderline hypernatremia (ORa = 3.47 95% CI, 2.43-4.90) were still associated with in-hospital mortality after adjustment for classical and new confounding factors identified through the PheWAS analysis.CONCLUSIONS:Borderline dysnatremia on admission are independently associated with a higher risk of in-hospital mortality. By using medical data automatically collected in EHR and a new data mining approach, we identified new potential confounding factors that were highly associated with both mortality and dysnatremia. ">
 
   
-  <link rel="alternate" hreflang="fr" href="https://www.coreds.com/publication/2017-11-01_association_between_/">
+  <link rel="alternate" hreflang="fr" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2017-11-01_association_between_/">
 
   
 
@@ -66,7 +66,7 @@
   
   
   
-  <script src="/js/mathjax-config.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/mathjax-config.js"></script>
   
 
   
@@ -241,13 +241,51 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.css">
+  <link rel="stylesheet" href="https://consultation-recherche-donnees-sante.netlify.app/css/wowchemy.css">
 
   
 
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-80B5KND2Y6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-80B5KND2Y6', { 'anonymize_ip': true });
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
   
@@ -258,11 +296,11 @@
 
   
 
-  <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
+  <link rel="manifest" href="https://consultation-recherche-donnees-sante.netlify.app/index.webmanifest">
+  <link rel="icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="https://www.coreds.com/publication/2017-11-01_association_between_/">
+  <link rel="canonical" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2017-11-01_association_between_/">
 
   
   
@@ -278,10 +316,10 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:url" content="https://www.coreds.com/publication/2017-11-01_association_between_/">
+  <meta property="og:url" content="https://consultation-recherche-donnees-sante.netlify.app/publication/2017-11-01_association_between_/">
   <meta property="og:title" content="Association between borderline dysnatremia and mortality insight into a new data mining approach. | Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:description" content="BACKGROUND:Even small variations of serum sodium concentration may be associated with mortality. Our objective was to confirm the impact of borderline dysnatremia for patients admitted to hospital on in-hospital mortality using real life care data from our electronic health record (EHR) and a phenome-wide association analysis (PheWAS).METHODS:Retrospective observational study based on patient data admitted to Hôpital Européen George Pompidou, between 01/01/2008 and 31/06/2014; including 45,834 patients with serum sodium determinations on admission. We analyzed the association between dysnatremia and in-hospital mortality, using a multivariate logistic regression model to adjust for classical potential confounders. We performed a PheWAS to identify new potential confounders.RESULTS:Hyponatremia and hypernatremia were recorded for 12.0% and 1.0% of hospital stays, respectively. Adjusted odds ratios (ORa) for severe, moderate and borderline hyponatremia were 3.44 (95% CI, 2.41-4.86), 2.48 (95% CI, 1.96-3.13) and 1.98 (95% CI, 1.73-2.28), respectively. ORa for severe, moderate and borderline hypernatremia were 4.07 (95% CI, 2.92-5.62), 4.42 (95% CI, 2.04-9.20) and 3.72 (95% CI, 1.53-8.45), respectively. Borderline hyponatremia (ORa = 1.57 95% CI, 1.35-1.81) and borderline hypernatremia (ORa = 3.47 95% CI, 2.43-4.90) were still associated with in-hospital mortality after adjustment for classical and new confounding factors identified through the PheWAS analysis.CONCLUSIONS:Borderline dysnatremia on admission are independently associated with a higher risk of in-hospital mortality. By using medical data automatically collected in EHR and a new data mining approach, we identified new potential confounding factors that were highly associated with both mortality and dysnatremia. "><meta property="og:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
-  <meta property="twitter:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
+  <meta property="og:description" content="BACKGROUND:Even small variations of serum sodium concentration may be associated with mortality. Our objective was to confirm the impact of borderline dysnatremia for patients admitted to hospital on in-hospital mortality using real life care data from our electronic health record (EHR) and a phenome-wide association analysis (PheWAS).METHODS:Retrospective observational study based on patient data admitted to Hôpital Européen George Pompidou, between 01/01/2008 and 31/06/2014; including 45,834 patients with serum sodium determinations on admission. We analyzed the association between dysnatremia and in-hospital mortality, using a multivariate logistic regression model to adjust for classical potential confounders. We performed a PheWAS to identify new potential confounders.RESULTS:Hyponatremia and hypernatremia were recorded for 12.0% and 1.0% of hospital stays, respectively. Adjusted odds ratios (ORa) for severe, moderate and borderline hyponatremia were 3.44 (95% CI, 2.41-4.86), 2.48 (95% CI, 1.96-3.13) and 1.98 (95% CI, 1.73-2.28), respectively. ORa for severe, moderate and borderline hypernatremia were 4.07 (95% CI, 2.92-5.62), 4.42 (95% CI, 2.04-9.20) and 3.72 (95% CI, 1.53-8.45), respectively. Borderline hyponatremia (ORa = 1.57 95% CI, 1.35-1.81) and borderline hypernatremia (ORa = 3.47 95% CI, 2.43-4.90) were still associated with in-hospital mortality after adjustment for classical and new confounding factors identified through the PheWAS analysis.CONCLUSIONS:Borderline dysnatremia on admission are independently associated with a higher risk of in-hospital mortality. By using medical data automatically collected in EHR and a new data mining approach, we identified new potential confounding factors that were highly associated with both mortality and dysnatremia. "><meta property="og:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
+  <meta property="twitter:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
   
     
       <meta property="article:published_time" content="2017-11-01T00:00:00&#43;00:00">
@@ -308,7 +346,7 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://www.coreds.com/publication/2017-11-01_association_between_/"
+    "@id": "https://consultation-recherche-donnees-sante.netlify.app/publication/2017-11-01_association_between_/"
   },
   "headline": "Association between borderline dysnatremia and mortality insight into a new data mining approach.",
   
@@ -325,7 +363,7 @@
     "name": "Consultation Recherche Données de Santé - CoReDS",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
+      "url": "https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
     }
   },
   "description": "BACKGROUND:Even small variations of serum sodium concentration may be associated with mortality. Our objective was to confirm the impact of borderline dysnatremia for patients admitted to hospital on in-hospital mortality using real life care data from our electronic health record (EHR) and a phenome-wide association analysis (PheWAS).METHODS:Retrospective observational study based on patient data admitted to Hôpital Européen George Pompidou, between 01/01/2008 and 31/06/2014; including 45,834 patients with serum sodium determinations on admission. We analyzed the association between dysnatremia and in-hospital mortality, using a multivariate logistic regression model to adjust for classical potential confounders. We performed a PheWAS to identify new potential confounders.RESULTS:Hyponatremia and hypernatremia were recorded for 12.0% and 1.0% of hospital stays, respectively. Adjusted odds ratios (ORa) for severe, moderate and borderline hyponatremia were 3.44 (95% CI, 2.41-4.86), 2.48 (95% CI, 1.96-3.13) and 1.98 (95% CI, 1.73-2.28), respectively. ORa for severe, moderate and borderline hypernatremia were 4.07 (95% CI, 2.92-5.62), 4.42 (95% CI, 2.04-9.20) and 3.72 (95% CI, 1.53-8.45), respectively. Borderline hyponatremia (ORa = 1.57 95% CI, 1.35-1.81) and borderline hypernatremia (ORa = 3.47 95% CI, 2.43-4.90) were still associated with in-hospital mortality after adjustment for classical and new confounding factors identified through the PheWAS analysis.CONCLUSIONS:Borderline dysnatremia on admission are independently associated with a higher risk of in-hospital mortality. By using medical data automatically collected in EHR and a new data mining approach, we identified new potential confounding factors that were highly associated with both mortality and dysnatremia. "
@@ -390,7 +428,7 @@
     <script>const isSiteThemeDark = false;</script>
   
   
-  <script src="/js/load-theme.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/load-theme.js"></script>
 
   <aside class="search-results" id="search">
   <div class="container">
@@ -445,7 +483,7 @@
 
     
     <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -458,7 +496,7 @@
 
     
     <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -494,7 +532,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/entreprendre/"><span>Commencer un projet</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/entreprendre/"><span>Commencer un projet</span></a>
         </li>
 
         
@@ -524,44 +562,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/suivremonprojet/"><span>Suivre son projet</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-            
-            
-            
-              
-            
-            
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#outils"><span>Boite à outils</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/suivremonprojet/"><span>Suivre son projet</span></a>
         </li>
 
         
@@ -598,7 +599,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#publi"><span>Publications</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#outils"><span>Boite à outils</span></a>
         </li>
 
         
@@ -635,7 +636,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#transparence"><span>Portail de transparence</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#publi"><span>Publications</span></a>
         </li>
 
         
@@ -672,7 +673,44 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#people"><span>Qui sommes-nous ?</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#transparence"><span>Portail de transparence</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#people"><span>Qui sommes-nous ?</span></a>
         </li>
 
         
@@ -745,7 +783,7 @@
     
 
   
-  <span ><a href="/author/girardeau-yannick/">Girardeau Yannick</a></span>, <span ><a href="/author/jannot-anne-sophie/">Jannot Anne-Sophie</a></span>, <span ><a href="/author/chatellier-gilles/">Chatellier Gilles</a></span>, <span ><a href="/author/saint-jean-olivier/">Saint-Jean Olivier</a></span>
+  <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/girardeau-yannick/">Girardeau Yannick</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/jannot-anne-sophie/">Jannot Anne-Sophie</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/chatellier-gilles/">Chatellier Gilles</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/saint-jean-olivier/">Saint-Jean Olivier</a></span>
   </div>
   
   
@@ -811,7 +849,7 @@
           <div class="col-12 col-md-9">
             
             
-            <a href="/publication/#2">
+            <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/#2">
               Article de revue
             </a>
             
@@ -870,7 +908,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://www.coreds.com/publication/2017-11-01_association_between_/&amp;text=Association%20between%20borderline%20dysnatremia%20and%20mortality%20insight%20into%20a%20new%20data%20mining%20approach." target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2017-11-01_association_between_/&amp;text=Association%20between%20borderline%20dysnatremia%20and%20mortality%20insight%20into%20a%20new%20data%20mining%20approach." target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -883,7 +921,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://www.coreds.com/publication/2017-11-01_association_between_/&amp;t=Association%20between%20borderline%20dysnatremia%20and%20mortality%20insight%20into%20a%20new%20data%20mining%20approach." target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://consultation-recherche-donnees-sante.netlify.app/publication/2017-11-01_association_between_/&amp;t=Association%20between%20borderline%20dysnatremia%20and%20mortality%20insight%20into%20a%20new%20data%20mining%20approach." target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -896,7 +934,7 @@
       
       
       <li>
-        <a href="mailto:?subject=Association%20between%20borderline%20dysnatremia%20and%20mortality%20insight%20into%20a%20new%20data%20mining%20approach.&amp;body=https://www.coreds.com/publication/2017-11-01_association_between_/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=Association%20between%20borderline%20dysnatremia%20and%20mortality%20insight%20into%20a%20new%20data%20mining%20approach.&amp;body=https://consultation-recherche-donnees-sante.netlify.app/publication/2017-11-01_association_between_/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -909,7 +947,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://www.coreds.com/publication/2017-11-01_association_between_/&amp;title=Association%20between%20borderline%20dysnatremia%20and%20mortality%20insight%20into%20a%20new%20data%20mining%20approach." target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2017-11-01_association_between_/&amp;title=Association%20between%20borderline%20dysnatremia%20and%20mortality%20insight%20into%20a%20new%20data%20mining%20approach." target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -922,7 +960,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=Association%20between%20borderline%20dysnatremia%20and%20mortality%20insight%20into%20a%20new%20data%20mining%20approach.%20https://www.coreds.com/publication/2017-11-01_association_between_/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=Association%20between%20borderline%20dysnatremia%20and%20mortality%20insight%20into%20a%20new%20data%20mining%20approach.%20https://consultation-recherche-donnees-sante.netlify.app/publication/2017-11-01_association_between_/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -935,7 +973,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://www.coreds.com/publication/2017-11-01_association_between_/&amp;title=Association%20between%20borderline%20dysnatremia%20and%20mortality%20insight%20into%20a%20new%20data%20mining%20approach." target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2017-11-01_association_between_/&amp;title=Association%20between%20borderline%20dysnatremia%20and%20mortality%20insight%20into%20a%20new%20data%20mining%20approach." target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1174,7 +1212,7 @@
     
     
     
-    <script src="/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
+    <script src="https://consultation-recherche-donnees-sante.netlify.app/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
 
     
 

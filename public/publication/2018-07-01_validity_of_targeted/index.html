@@ -37,7 +37,7 @@
   <meta name="description" content="Theranostic assays are based on single-gene testing, but the ability of next-generation sequencing (NGS) to interrogate numerous genetic alterations will progressively replace single-gene assays. Although NGS was evaluated to screen for theranostic mutations, its usefulness in clinical practice on large series of samples remains to be demonstrated. NGS performance was assessed following guidelines. TaqMan probes and NGS were compared for their ability to detect EGFR and KRAS mutations, and NGS mutation profiles were analyzed on a large series of non-small-cell lung cancers (n = 1343). The R2 correlation between expected and measured allelic ratio, using commercial samples, was &amp;gt;0.96. Mutation detection threshold was 2% for 10 ng of DNA input. κ Scores for TaqMan versus NGS were 0.99 (95% CI, 0.97-1.00) for EGFR and 0.98 (95% CI, 0.97-1.00) for KRAS after exclusion of rare EGFR (n = 40) and KRAS (n = 60) mutations. NGS identified 693 and 292 mutations in validated and potential oncogenic drivers, respectively. Significant associations were found between EGFR and PI3KCA or CTNNB1 and between KRAS and STK11. Potential oncogenic driver mutations or gene amplifications were more frequent in validated oncogenic driver nonmutated samples. This work is a proof of concept that targeted NGS is accessible in routine screening, including large screening, at reasonable cost. Clinical data should be collected and implemented in specific databases to make molecular data meaningful for direct patients&#39; benefit.">
 
   
-  <link rel="alternate" hreflang="fr" href="https://www.coreds.com/publication/2018-07-01_validity_of_targeted/">
+  <link rel="alternate" hreflang="fr" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2018-07-01_validity_of_targeted/">
 
   
 
@@ -66,7 +66,7 @@
   
   
   
-  <script src="/js/mathjax-config.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/mathjax-config.js"></script>
   
 
   
@@ -241,13 +241,51 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.css">
+  <link rel="stylesheet" href="https://consultation-recherche-donnees-sante.netlify.app/css/wowchemy.css">
 
   
 
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-80B5KND2Y6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-80B5KND2Y6', { 'anonymize_ip': true });
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
   
@@ -258,11 +296,11 @@
 
   
 
-  <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
+  <link rel="manifest" href="https://consultation-recherche-donnees-sante.netlify.app/index.webmanifest">
+  <link rel="icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="https://www.coreds.com/publication/2018-07-01_validity_of_targeted/">
+  <link rel="canonical" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2018-07-01_validity_of_targeted/">
 
   
   
@@ -278,10 +316,10 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:url" content="https://www.coreds.com/publication/2018-07-01_validity_of_targeted/">
+  <meta property="og:url" content="https://consultation-recherche-donnees-sante.netlify.app/publication/2018-07-01_validity_of_targeted/">
   <meta property="og:title" content="Validity of Targeted Next-Generation Sequencing in Routine Care for Identifying Clinically Relevant Molecular Profiles in Non-Small-Cell Lung Cancer: Results of a 2-Year Experience on 1343 Samples. | Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:description" content="Theranostic assays are based on single-gene testing, but the ability of next-generation sequencing (NGS) to interrogate numerous genetic alterations will progressively replace single-gene assays. Although NGS was evaluated to screen for theranostic mutations, its usefulness in clinical practice on large series of samples remains to be demonstrated. NGS performance was assessed following guidelines. TaqMan probes and NGS were compared for their ability to detect EGFR and KRAS mutations, and NGS mutation profiles were analyzed on a large series of non-small-cell lung cancers (n = 1343). The R2 correlation between expected and measured allelic ratio, using commercial samples, was &amp;gt;0.96. Mutation detection threshold was 2% for 10 ng of DNA input. κ Scores for TaqMan versus NGS were 0.99 (95% CI, 0.97-1.00) for EGFR and 0.98 (95% CI, 0.97-1.00) for KRAS after exclusion of rare EGFR (n = 40) and KRAS (n = 60) mutations. NGS identified 693 and 292 mutations in validated and potential oncogenic drivers, respectively. Significant associations were found between EGFR and PI3KCA or CTNNB1 and between KRAS and STK11. Potential oncogenic driver mutations or gene amplifications were more frequent in validated oncogenic driver nonmutated samples. This work is a proof of concept that targeted NGS is accessible in routine screening, including large screening, at reasonable cost. Clinical data should be collected and implemented in specific databases to make molecular data meaningful for direct patients&#39; benefit."><meta property="og:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
-  <meta property="twitter:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
+  <meta property="og:description" content="Theranostic assays are based on single-gene testing, but the ability of next-generation sequencing (NGS) to interrogate numerous genetic alterations will progressively replace single-gene assays. Although NGS was evaluated to screen for theranostic mutations, its usefulness in clinical practice on large series of samples remains to be demonstrated. NGS performance was assessed following guidelines. TaqMan probes and NGS were compared for their ability to detect EGFR and KRAS mutations, and NGS mutation profiles were analyzed on a large series of non-small-cell lung cancers (n = 1343). The R2 correlation between expected and measured allelic ratio, using commercial samples, was &amp;gt;0.96. Mutation detection threshold was 2% for 10 ng of DNA input. κ Scores for TaqMan versus NGS were 0.99 (95% CI, 0.97-1.00) for EGFR and 0.98 (95% CI, 0.97-1.00) for KRAS after exclusion of rare EGFR (n = 40) and KRAS (n = 60) mutations. NGS identified 693 and 292 mutations in validated and potential oncogenic drivers, respectively. Significant associations were found between EGFR and PI3KCA or CTNNB1 and between KRAS and STK11. Potential oncogenic driver mutations or gene amplifications were more frequent in validated oncogenic driver nonmutated samples. This work is a proof of concept that targeted NGS is accessible in routine screening, including large screening, at reasonable cost. Clinical data should be collected and implemented in specific databases to make molecular data meaningful for direct patients&#39; benefit."><meta property="og:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
+  <meta property="twitter:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
   
     
       <meta property="article:published_time" content="2018-07-01T00:00:00&#43;00:00">
@@ -308,7 +346,7 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://www.coreds.com/publication/2018-07-01_validity_of_targeted/"
+    "@id": "https://consultation-recherche-donnees-sante.netlify.app/publication/2018-07-01_validity_of_targeted/"
   },
   "headline": "Validity of Targeted Next-Generation Sequencing in Routine Care for Identifying Clinically Relevant Molecular Profiles in Non-Small-Cell Lung Cancer: Results of a 2-Year Experience on 1343 Samples.",
   
@@ -325,7 +363,7 @@
     "name": "Consultation Recherche Données de Santé - CoReDS",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
+      "url": "https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
     }
   },
   "description": "Theranostic assays are based on single-gene testing, but the ability of next-generation sequencing (NGS) to interrogate numerous genetic alterations will progressively replace single-gene assays. Although NGS was evaluated to screen for theranostic mutations, its usefulness in clinical practice on large series of samples remains to be demonstrated. NGS performance was assessed following guidelines. TaqMan probes and NGS were compared for their ability to detect EGFR and KRAS mutations, and NGS mutation profiles were analyzed on a large series of non-small-cell lung cancers (n = 1343). The R2 correlation between expected and measured allelic ratio, using commercial samples, was \u0026gt;0.96. Mutation detection threshold was 2% for 10 ng of DNA input. κ Scores for TaqMan versus NGS were 0.99 (95% CI, 0.97-1.00) for EGFR and 0.98 (95% CI, 0.97-1.00) for KRAS after exclusion of rare EGFR (n = 40) and KRAS (n = 60) mutations. NGS identified 693 and 292 mutations in validated and potential oncogenic drivers, respectively. Significant associations were found between EGFR and PI3KCA or CTNNB1 and between KRAS and STK11. Potential oncogenic driver mutations or gene amplifications were more frequent in validated oncogenic driver nonmutated samples. This work is a proof of concept that targeted NGS is accessible in routine screening, including large screening, at reasonable cost. Clinical data should be collected and implemented in specific databases to make molecular data meaningful for direct patients' benefit."
@@ -390,7 +428,7 @@
     <script>const isSiteThemeDark = false;</script>
   
   
-  <script src="/js/load-theme.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/load-theme.js"></script>
 
   <aside class="search-results" id="search">
   <div class="container">
@@ -445,7 +483,7 @@
 
     
     <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -458,7 +496,7 @@
 
     
     <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -494,7 +532,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/entreprendre/"><span>Commencer un projet</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/entreprendre/"><span>Commencer un projet</span></a>
         </li>
 
         
@@ -524,44 +562,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/suivremonprojet/"><span>Suivre son projet</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-            
-            
-            
-              
-            
-            
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#outils"><span>Boite à outils</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/suivremonprojet/"><span>Suivre son projet</span></a>
         </li>
 
         
@@ -598,7 +599,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#publi"><span>Publications</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#outils"><span>Boite à outils</span></a>
         </li>
 
         
@@ -635,7 +636,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#transparence"><span>Portail de transparence</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#publi"><span>Publications</span></a>
         </li>
 
         
@@ -672,7 +673,44 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#people"><span>Qui sommes-nous ?</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#transparence"><span>Portail de transparence</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#people"><span>Qui sommes-nous ?</span></a>
         </li>
 
         
@@ -745,7 +783,7 @@
     
 
   
-  <span ><a href="/author/legras-antoine/">Legras Antoine</a></span>, <span ><a href="/author/barritault-marc/">Barritault Marc</a></span>, <span ><a href="/author/tallet-anne/">Tallet Anne</a></span>, <span ><a href="/author/fabre-elizabeth/">Fabre Elizabeth</a></span>, <span ><a href="/author/guyard-alice/">Guyard Alice</a></span>, <span ><a href="/author/rance-bastien/">Rance Bastien</a></span>, <span ><a href="/author/digan-william/">Digan William</a></span>, <span ><a href="/author/pecuchet-nicolas/">Pecuchet Nicolas</a></span>, <span ><a href="/author/giroux-leprieur-etienne/">Giroux-Leprieur Etienne</a></span>, <span ><a href="/author/julie-catherine/">Julie Catherine</a></span>, <span ><a href="/author/jouveshomme-stephane/">Jouveshomme Stephane</a></span>, <span ><a href="/author/duchatelle-veronique/">Duchatelle Veronique</a></span>, <span ><a href="/author/giraudet-veronique/">Giraudet Veronique</a></span>, <span ><a href="/author/gibault-laure/">Gibault Laure</a></span>, <span ><a href="/author/cazier-alain/">Cazier Alain</a></span>, <span ><a href="/author/pastre-jean/">Pastre Jean</a></span>, <span ><a href="/author/le-pimpec-barthes-francoise/">Le Pimpec-Barthes Francoise</a></span>, <span ><a href="/author/laurent-puig-pierre/">Laurent-Puig Pierre</a></span>, <span ><a href="/author/blons-helene/">Blons Helene</a></span>
+  <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/legras-antoine/">Legras Antoine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/barritault-marc/">Barritault Marc</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/tallet-anne/">Tallet Anne</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/fabre-elizabeth/">Fabre Elizabeth</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/guyard-alice/">Guyard Alice</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/rance-bastien/">Rance Bastien</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/digan-william/">Digan William</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/pecuchet-nicolas/">Pecuchet Nicolas</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/giroux-leprieur-etienne/">Giroux-Leprieur Etienne</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/julie-catherine/">Julie Catherine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/jouveshomme-stephane/">Jouveshomme Stephane</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/duchatelle-veronique/">Duchatelle Veronique</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/giraudet-veronique/">Giraudet Veronique</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/gibault-laure/">Gibault Laure</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/cazier-alain/">Cazier Alain</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/pastre-jean/">Pastre Jean</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/le-pimpec-barthes-francoise/">Le Pimpec-Barthes Francoise</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/laurent-puig-pierre/">Laurent-Puig Pierre</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/blons-helene/">Blons Helene</a></span>
   </div>
   
   
@@ -811,7 +849,7 @@
           <div class="col-12 col-md-9">
             
             
-            <a href="/publication/#2">
+            <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/#2">
               Article de revue
             </a>
             
@@ -870,7 +908,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://www.coreds.com/publication/2018-07-01_validity_of_targeted/&amp;text=Validity%20of%20Targeted%20Next-Generation%20Sequencing%20in%20Routine%20Care%20for%20Identifying%20Clinically%20Relevant%20Molecular%20Profiles%20in%20Non-Small-Cell%20Lung%20Cancer:%20Results%20of%20a%202-Year%20Experience%20on%201343%20Samples." target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2018-07-01_validity_of_targeted/&amp;text=Validity%20of%20Targeted%20Next-Generation%20Sequencing%20in%20Routine%20Care%20for%20Identifying%20Clinically%20Relevant%20Molecular%20Profiles%20in%20Non-Small-Cell%20Lung%20Cancer:%20Results%20of%20a%202-Year%20Experience%20on%201343%20Samples." target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -883,7 +921,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://www.coreds.com/publication/2018-07-01_validity_of_targeted/&amp;t=Validity%20of%20Targeted%20Next-Generation%20Sequencing%20in%20Routine%20Care%20for%20Identifying%20Clinically%20Relevant%20Molecular%20Profiles%20in%20Non-Small-Cell%20Lung%20Cancer:%20Results%20of%20a%202-Year%20Experience%20on%201343%20Samples." target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://consultation-recherche-donnees-sante.netlify.app/publication/2018-07-01_validity_of_targeted/&amp;t=Validity%20of%20Targeted%20Next-Generation%20Sequencing%20in%20Routine%20Care%20for%20Identifying%20Clinically%20Relevant%20Molecular%20Profiles%20in%20Non-Small-Cell%20Lung%20Cancer:%20Results%20of%20a%202-Year%20Experience%20on%201343%20Samples." target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -896,7 +934,7 @@
       
       
       <li>
-        <a href="mailto:?subject=Validity%20of%20Targeted%20Next-Generation%20Sequencing%20in%20Routine%20Care%20for%20Identifying%20Clinically%20Relevant%20Molecular%20Profiles%20in%20Non-Small-Cell%20Lung%20Cancer:%20Results%20of%20a%202-Year%20Experience%20on%201343%20Samples.&amp;body=https://www.coreds.com/publication/2018-07-01_validity_of_targeted/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=Validity%20of%20Targeted%20Next-Generation%20Sequencing%20in%20Routine%20Care%20for%20Identifying%20Clinically%20Relevant%20Molecular%20Profiles%20in%20Non-Small-Cell%20Lung%20Cancer:%20Results%20of%20a%202-Year%20Experience%20on%201343%20Samples.&amp;body=https://consultation-recherche-donnees-sante.netlify.app/publication/2018-07-01_validity_of_targeted/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -909,7 +947,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://www.coreds.com/publication/2018-07-01_validity_of_targeted/&amp;title=Validity%20of%20Targeted%20Next-Generation%20Sequencing%20in%20Routine%20Care%20for%20Identifying%20Clinically%20Relevant%20Molecular%20Profiles%20in%20Non-Small-Cell%20Lung%20Cancer:%20Results%20of%20a%202-Year%20Experience%20on%201343%20Samples." target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2018-07-01_validity_of_targeted/&amp;title=Validity%20of%20Targeted%20Next-Generation%20Sequencing%20in%20Routine%20Care%20for%20Identifying%20Clinically%20Relevant%20Molecular%20Profiles%20in%20Non-Small-Cell%20Lung%20Cancer:%20Results%20of%20a%202-Year%20Experience%20on%201343%20Samples." target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -922,7 +960,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=Validity%20of%20Targeted%20Next-Generation%20Sequencing%20in%20Routine%20Care%20for%20Identifying%20Clinically%20Relevant%20Molecular%20Profiles%20in%20Non-Small-Cell%20Lung%20Cancer:%20Results%20of%20a%202-Year%20Experience%20on%201343%20Samples.%20https://www.coreds.com/publication/2018-07-01_validity_of_targeted/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=Validity%20of%20Targeted%20Next-Generation%20Sequencing%20in%20Routine%20Care%20for%20Identifying%20Clinically%20Relevant%20Molecular%20Profiles%20in%20Non-Small-Cell%20Lung%20Cancer:%20Results%20of%20a%202-Year%20Experience%20on%201343%20Samples.%20https://consultation-recherche-donnees-sante.netlify.app/publication/2018-07-01_validity_of_targeted/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -935,7 +973,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://www.coreds.com/publication/2018-07-01_validity_of_targeted/&amp;title=Validity%20of%20Targeted%20Next-Generation%20Sequencing%20in%20Routine%20Care%20for%20Identifying%20Clinically%20Relevant%20Molecular%20Profiles%20in%20Non-Small-Cell%20Lung%20Cancer:%20Results%20of%20a%202-Year%20Experience%20on%201343%20Samples." target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2018-07-01_validity_of_targeted/&amp;title=Validity%20of%20Targeted%20Next-Generation%20Sequencing%20in%20Routine%20Care%20for%20Identifying%20Clinically%20Relevant%20Molecular%20Profiles%20in%20Non-Small-Cell%20Lung%20Cancer:%20Results%20of%20a%202-Year%20Experience%20on%201343%20Samples." target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1089,7 +1127,7 @@
     <h3>Sur le même sujet</h3>
     <ul>
       
-      <li><a href="/publication/2019-05-01_proposal_for_a_combi/">Proposal for a Combined Histomolecular Algorithm to Distinguish Multiple Primary Adenocarcinomas from Intrapulmonary Metastasis in Patients with Multiple Lung Tumors.</a></li>
+      <li><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2019-05-01_proposal_for_a_combi/">Proposal for a Combined Histomolecular Algorithm to Distinguish Multiple Primary Adenocarcinomas from Intrapulmonary Metastasis in Patients with Multiple Lung Tumors.</a></li>
       
     </ul>
   </div>
@@ -1273,7 +1311,7 @@
     
     
     
-    <script src="/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
+    <script src="https://consultation-recherche-donnees-sante.netlify.app/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
 
     
 

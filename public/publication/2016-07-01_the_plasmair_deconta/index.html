@@ -37,7 +37,7 @@
   <meta name="description" content="OBJECTIVE Invasive aspergillosis (IA) is a rare but severe infection caused by Aspergillus spp. that often develops in immunocompromised patients. Lethality remains high in this population. Therefore, preventive strategies are of key importance. The impact of a mobile air decontamination system (Plasmair, AirInSpace, Montigny-le-Bretonneux, France) on the incidence of IA in neutropenic patients was evaluated in this study. DESIGN Retrospective cohort study METHODS Patients with chemotherapy-induced neutropenia lasting 7 days or more were included over a 2-year period. Cases of IA were confirmed using the revised European Organization for Research and Treatment of Cancer (EORTC) criteria. We took advantage of a partial installation of Plasmair systems in the hematology intensive care unit during this period to compare patients treated in Plasmair-equipped versus non-equipped rooms. Patients were assigned to Plasmair-equipped or non-equipped rooms depending only on bed availability. Differences in IA incidence in both groups were compared using Fisher&#39;s exact test, and a multivariate analysis was performed to take into account potential confounding factors. RESULTS Data from 156 evaluable patients were available. Both groups were homogenous in terms of age, gender, hematological diagnosis, duration of neutropenia, and prophylaxis. A total of 11 cases of probable IA were diagnosed: 10 in patients in non-equipped rooms and only 1 patient in a Plasmair-equipped room. The odds of developing IA were much lower for patients hospitalized in Plasmair-equipped rooms than for patients in non-equipped rooms (P=.02; odds ratio [OR] =0.11; 95% confidence interval [CI], 0.00-0.84). CONCLUSION In this study, Plasmair demonstrated a major impact in reducing the incidence of IA in neutropenic patients with hematologic malignancies. Infect Control Hosp Epidemiol 2016;37:845-851.">
 
   
-  <link rel="alternate" hreflang="fr" href="https://www.coreds.com/publication/2016-07-01_the_plasmair_deconta/">
+  <link rel="alternate" hreflang="fr" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2016-07-01_the_plasmair_deconta/">
 
   
 
@@ -66,7 +66,7 @@
   
   
   
-  <script src="/js/mathjax-config.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/mathjax-config.js"></script>
   
 
   
@@ -241,13 +241,51 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.css">
+  <link rel="stylesheet" href="https://consultation-recherche-donnees-sante.netlify.app/css/wowchemy.css">
 
   
 
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-80B5KND2Y6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-80B5KND2Y6', { 'anonymize_ip': true });
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
   
@@ -258,11 +296,11 @@
 
   
 
-  <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
+  <link rel="manifest" href="https://consultation-recherche-donnees-sante.netlify.app/index.webmanifest">
+  <link rel="icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="https://www.coreds.com/publication/2016-07-01_the_plasmair_deconta/">
+  <link rel="canonical" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2016-07-01_the_plasmair_deconta/">
 
   
   
@@ -278,10 +316,10 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:url" content="https://www.coreds.com/publication/2016-07-01_the_plasmair_deconta/">
+  <meta property="og:url" content="https://consultation-recherche-donnees-sante.netlify.app/publication/2016-07-01_the_plasmair_deconta/">
   <meta property="og:title" content="The Plasmair Decontamination System Is Protective Against Invasive Aspergillosis in Neutropenic Patients. | Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:description" content="OBJECTIVE Invasive aspergillosis (IA) is a rare but severe infection caused by Aspergillus spp. that often develops in immunocompromised patients. Lethality remains high in this population. Therefore, preventive strategies are of key importance. The impact of a mobile air decontamination system (Plasmair, AirInSpace, Montigny-le-Bretonneux, France) on the incidence of IA in neutropenic patients was evaluated in this study. DESIGN Retrospective cohort study METHODS Patients with chemotherapy-induced neutropenia lasting 7 days or more were included over a 2-year period. Cases of IA were confirmed using the revised European Organization for Research and Treatment of Cancer (EORTC) criteria. We took advantage of a partial installation of Plasmair systems in the hematology intensive care unit during this period to compare patients treated in Plasmair-equipped versus non-equipped rooms. Patients were assigned to Plasmair-equipped or non-equipped rooms depending only on bed availability. Differences in IA incidence in both groups were compared using Fisher&#39;s exact test, and a multivariate analysis was performed to take into account potential confounding factors. RESULTS Data from 156 evaluable patients were available. Both groups were homogenous in terms of age, gender, hematological diagnosis, duration of neutropenia, and prophylaxis. A total of 11 cases of probable IA were diagnosed: 10 in patients in non-equipped rooms and only 1 patient in a Plasmair-equipped room. The odds of developing IA were much lower for patients hospitalized in Plasmair-equipped rooms than for patients in non-equipped rooms (P=.02; odds ratio [OR] =0.11; 95% confidence interval [CI], 0.00-0.84). CONCLUSION In this study, Plasmair demonstrated a major impact in reducing the incidence of IA in neutropenic patients with hematologic malignancies. Infect Control Hosp Epidemiol 2016;37:845-851."><meta property="og:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
-  <meta property="twitter:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
+  <meta property="og:description" content="OBJECTIVE Invasive aspergillosis (IA) is a rare but severe infection caused by Aspergillus spp. that often develops in immunocompromised patients. Lethality remains high in this population. Therefore, preventive strategies are of key importance. The impact of a mobile air decontamination system (Plasmair, AirInSpace, Montigny-le-Bretonneux, France) on the incidence of IA in neutropenic patients was evaluated in this study. DESIGN Retrospective cohort study METHODS Patients with chemotherapy-induced neutropenia lasting 7 days or more were included over a 2-year period. Cases of IA were confirmed using the revised European Organization for Research and Treatment of Cancer (EORTC) criteria. We took advantage of a partial installation of Plasmair systems in the hematology intensive care unit during this period to compare patients treated in Plasmair-equipped versus non-equipped rooms. Patients were assigned to Plasmair-equipped or non-equipped rooms depending only on bed availability. Differences in IA incidence in both groups were compared using Fisher&#39;s exact test, and a multivariate analysis was performed to take into account potential confounding factors. RESULTS Data from 156 evaluable patients were available. Both groups were homogenous in terms of age, gender, hematological diagnosis, duration of neutropenia, and prophylaxis. A total of 11 cases of probable IA were diagnosed: 10 in patients in non-equipped rooms and only 1 patient in a Plasmair-equipped room. The odds of developing IA were much lower for patients hospitalized in Plasmair-equipped rooms than for patients in non-equipped rooms (P=.02; odds ratio [OR] =0.11; 95% confidence interval [CI], 0.00-0.84). CONCLUSION In this study, Plasmair demonstrated a major impact in reducing the incidence of IA in neutropenic patients with hematologic malignancies. Infect Control Hosp Epidemiol 2016;37:845-851."><meta property="og:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
+  <meta property="twitter:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
   
     
       <meta property="article:published_time" content="2016-07-01T00:00:00&#43;00:00">
@@ -308,7 +346,7 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://www.coreds.com/publication/2016-07-01_the_plasmair_deconta/"
+    "@id": "https://consultation-recherche-donnees-sante.netlify.app/publication/2016-07-01_the_plasmair_deconta/"
   },
   "headline": "The Plasmair Decontamination System Is Protective Against Invasive Aspergillosis in Neutropenic Patients.",
   
@@ -325,7 +363,7 @@
     "name": "Consultation Recherche Données de Santé - CoReDS",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
+      "url": "https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
     }
   },
   "description": "OBJECTIVE Invasive aspergillosis (IA) is a rare but severe infection caused by Aspergillus spp. that often develops in immunocompromised patients. Lethality remains high in this population. Therefore, preventive strategies are of key importance. The impact of a mobile air decontamination system (Plasmair, AirInSpace, Montigny-le-Bretonneux, France) on the incidence of IA in neutropenic patients was evaluated in this study. DESIGN Retrospective cohort study METHODS Patients with chemotherapy-induced neutropenia lasting 7 days or more were included over a 2-year period. Cases of IA were confirmed using the revised European Organization for Research and Treatment of Cancer (EORTC) criteria. We took advantage of a partial installation of Plasmair systems in the hematology intensive care unit during this period to compare patients treated in Plasmair-equipped versus non-equipped rooms. Patients were assigned to Plasmair-equipped or non-equipped rooms depending only on bed availability. Differences in IA incidence in both groups were compared using Fisher's exact test, and a multivariate analysis was performed to take into account potential confounding factors. RESULTS Data from 156 evaluable patients were available. Both groups were homogenous in terms of age, gender, hematological diagnosis, duration of neutropenia, and prophylaxis. A total of 11 cases of probable IA were diagnosed: 10 in patients in non-equipped rooms and only 1 patient in a Plasmair-equipped room. The odds of developing IA were much lower for patients hospitalized in Plasmair-equipped rooms than for patients in non-equipped rooms (P=.02; odds ratio [OR] =0.11; 95% confidence interval [CI], 0.00-0.84). CONCLUSION In this study, Plasmair demonstrated a major impact in reducing the incidence of IA in neutropenic patients with hematologic malignancies. Infect Control Hosp Epidemiol 2016;37:845-851."
@@ -390,7 +428,7 @@
     <script>const isSiteThemeDark = false;</script>
   
   
-  <script src="/js/load-theme.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/load-theme.js"></script>
 
   <aside class="search-results" id="search">
   <div class="container">
@@ -445,7 +483,7 @@
 
     
     <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -458,7 +496,7 @@
 
     
     <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -494,7 +532,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/entreprendre/"><span>Commencer un projet</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/entreprendre/"><span>Commencer un projet</span></a>
         </li>
 
         
@@ -524,44 +562,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/suivremonprojet/"><span>Suivre son projet</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-            
-            
-            
-              
-            
-            
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#outils"><span>Boite à outils</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/suivremonprojet/"><span>Suivre son projet</span></a>
         </li>
 
         
@@ -598,7 +599,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#publi"><span>Publications</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#outils"><span>Boite à outils</span></a>
         </li>
 
         
@@ -635,7 +636,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#transparence"><span>Portail de transparence</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#publi"><span>Publications</span></a>
         </li>
 
         
@@ -672,7 +673,44 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#people"><span>Qui sommes-nous ?</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#transparence"><span>Portail de transparence</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#people"><span>Qui sommes-nous ?</span></a>
         </li>
 
         
@@ -745,7 +783,7 @@
     
 
   
-  <span ><a href="/author/fernandez-gerlinger-marie-paule/">Fernandez-Gerlinger Marie-Paule</a></span>, <span ><a href="/author/jannot-anne-sophie/">Jannot Anne-Sophie</a></span>, <span ><a href="/author/rigaudeau-sophie/">Rigaudeau Sophie</a></span>, <span ><a href="/author/lambert-juliette/">Lambert Juliette</a></span>, <span ><a href="/author/eloy-odile/">Eloy Odile</a></span>, <span ><a href="/author/mignon-francois/">Mignon Francois</a></span>, <span ><a href="/author/farhat-hassan/">Farhat Hassan</a></span>, <span ><a href="/author/castaigne-sylvie/">Castaigne Sylvie</a></span>, <span ><a href="/author/merrer-jacques/">Merrer Jacques</a></span>, <span ><a href="/author/rousselot-philippe/">Rousselot Philippe</a></span>
+  <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/fernandez-gerlinger-marie-paule/">Fernandez-Gerlinger Marie-Paule</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/jannot-anne-sophie/">Jannot Anne-Sophie</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/rigaudeau-sophie/">Rigaudeau Sophie</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/lambert-juliette/">Lambert Juliette</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/eloy-odile/">Eloy Odile</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/mignon-francois/">Mignon Francois</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/farhat-hassan/">Farhat Hassan</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/castaigne-sylvie/">Castaigne Sylvie</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/merrer-jacques/">Merrer Jacques</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/rousselot-philippe/">Rousselot Philippe</a></span>
   </div>
   
   
@@ -811,7 +849,7 @@
           <div class="col-12 col-md-9">
             
             
-            <a href="/publication/#2">
+            <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/#2">
               Article de revue
             </a>
             
@@ -870,7 +908,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://www.coreds.com/publication/2016-07-01_the_plasmair_deconta/&amp;text=The%20Plasmair%20Decontamination%20System%20Is%20Protective%20Against%20Invasive%20Aspergillosis%20in%20Neutropenic%20Patients." target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2016-07-01_the_plasmair_deconta/&amp;text=The%20Plasmair%20Decontamination%20System%20Is%20Protective%20Against%20Invasive%20Aspergillosis%20in%20Neutropenic%20Patients." target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -883,7 +921,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://www.coreds.com/publication/2016-07-01_the_plasmair_deconta/&amp;t=The%20Plasmair%20Decontamination%20System%20Is%20Protective%20Against%20Invasive%20Aspergillosis%20in%20Neutropenic%20Patients." target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://consultation-recherche-donnees-sante.netlify.app/publication/2016-07-01_the_plasmair_deconta/&amp;t=The%20Plasmair%20Decontamination%20System%20Is%20Protective%20Against%20Invasive%20Aspergillosis%20in%20Neutropenic%20Patients." target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -896,7 +934,7 @@
       
       
       <li>
-        <a href="mailto:?subject=The%20Plasmair%20Decontamination%20System%20Is%20Protective%20Against%20Invasive%20Aspergillosis%20in%20Neutropenic%20Patients.&amp;body=https://www.coreds.com/publication/2016-07-01_the_plasmair_deconta/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=The%20Plasmair%20Decontamination%20System%20Is%20Protective%20Against%20Invasive%20Aspergillosis%20in%20Neutropenic%20Patients.&amp;body=https://consultation-recherche-donnees-sante.netlify.app/publication/2016-07-01_the_plasmair_deconta/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -909,7 +947,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://www.coreds.com/publication/2016-07-01_the_plasmair_deconta/&amp;title=The%20Plasmair%20Decontamination%20System%20Is%20Protective%20Against%20Invasive%20Aspergillosis%20in%20Neutropenic%20Patients." target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2016-07-01_the_plasmair_deconta/&amp;title=The%20Plasmair%20Decontamination%20System%20Is%20Protective%20Against%20Invasive%20Aspergillosis%20in%20Neutropenic%20Patients." target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -922,7 +960,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=The%20Plasmair%20Decontamination%20System%20Is%20Protective%20Against%20Invasive%20Aspergillosis%20in%20Neutropenic%20Patients.%20https://www.coreds.com/publication/2016-07-01_the_plasmair_deconta/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=The%20Plasmair%20Decontamination%20System%20Is%20Protective%20Against%20Invasive%20Aspergillosis%20in%20Neutropenic%20Patients.%20https://consultation-recherche-donnees-sante.netlify.app/publication/2016-07-01_the_plasmair_deconta/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -935,7 +973,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://www.coreds.com/publication/2016-07-01_the_plasmair_deconta/&amp;title=The%20Plasmair%20Decontamination%20System%20Is%20Protective%20Against%20Invasive%20Aspergillosis%20in%20Neutropenic%20Patients." target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2016-07-01_the_plasmair_deconta/&amp;title=The%20Plasmair%20Decontamination%20System%20Is%20Protective%20Against%20Invasive%20Aspergillosis%20in%20Neutropenic%20Patients." target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1210,7 +1248,7 @@
     
     
     
-    <script src="/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
+    <script src="https://consultation-recherche-donnees-sante.netlify.app/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
 
     
 

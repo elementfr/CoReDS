@@ -37,7 +37,7 @@
   <meta name="description" content="BACKGROUND &amp;amp; AIMS:The AFP model was shown to be superior to the Milan criteria for predicting hepatocellular carcinoma (HCC) recurrence after liver transplantation in a French population. Our aim was to test the AFP model in a non-French, post-hepatitic cirrhosis-based population of HCC candidates.METHODS:574 patients transplanted for HCC in four Italian centers were studied. AFP score was assessed at the last evaluation before liver transplantation (LT). Probabilities of recurrence and survival were estimated by the log-rank test or competing risk analysis and compared according to the AFP model.RESULTS:24.7% patients were beyond Milan criteria. HCC complicated hepatitis C virus (HCV) and hepatitis B virus (HBV) cirrhosis in 58.7% and 24% of the cases, respectively. Five-year probabilities of recurrence differed according to AFP score ⩽2 vs. &amp;gt;2 in the whole population (13.2±1.8% vs. 49.8±8.7%, p&amp;lt;0.001, HR=4.98), in patients within Milan criteria (12.8±2.0% vs. 32.4±12.1%, p=0.009, HR=3.51), beyond Milan criteria (14.9±4.2% vs. 58.9±11.5%, p&amp;lt;0.001, HR=4.26), HCV patients (14.9±2.5% vs. 67.6±14.7%, p&amp;lt;0.001, HR=6.56) and HBV patients (11.6±3.4% vs. 34.3±12.5%, p=0.012, HR=3.49). By net reclassification improvement analysis AFP score significantly improved prediction of non-recurrence compared to Milan criteria. Overall five-year survival rates according to AFP score ⩽2 or &amp;gt;2 were 71.7±2.2% vs. 42.2±8.3% (p&amp;lt;0.001, HR=2.14).CONCLUSIONS:The AFP model identifies HCC candidates at low risk of recurrence, otherwise excluded by Milan criteria in a population with a predominance of post-hepatitic-related HCC. The AFP score can be proposed for selection of HCC candidates in programs with a high proportion of viral/HCV-related cirrhosis.LAY SUMMARY:Selection criteria for liver transplantation of patients affected with hepatocellular carcinoma (HCC) are based on the Milan criteria, which have been shown to be too restrictive, precluding access to liver transplantation for some patients who might be cured by this operation. Recently, a French group of researchers developed a new selection model called the AFP model, or AFP score, allowing some patients with HCC not meeting Milan criteria to be transplanted with excellent results. In the present work, the AFP score was tested in a population of non-French patients transplanted for HCC occurring mainly on post-hepatitic (HCV or HBV) cirrhosis. The results confirm that in this specific population, as in the original French population of patients, the AFP model better selects patients with HCC eligible for transplantation, compared to Milan criteria. We conclude that the AFP score, which has been officially adopted by the French organization for Organ Sharing for HCC patients, can also be implemented in countries with an important burden of HCC occurring on post-hepatitic cirrhosis. ">
 
   
-  <link rel="alternate" hreflang="fr" href="https://www.coreds.com/publication/2016-03-01_validation_of_the_af/">
+  <link rel="alternate" hreflang="fr" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2016-03-01_validation_of_the_af/">
 
   
 
@@ -66,7 +66,7 @@
   
   
   
-  <script src="/js/mathjax-config.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/mathjax-config.js"></script>
   
 
   
@@ -241,13 +241,51 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.css">
+  <link rel="stylesheet" href="https://consultation-recherche-donnees-sante.netlify.app/css/wowchemy.css">
 
   
 
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-80B5KND2Y6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-80B5KND2Y6', { 'anonymize_ip': true });
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
   
@@ -258,11 +296,11 @@
 
   
 
-  <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
+  <link rel="manifest" href="https://consultation-recherche-donnees-sante.netlify.app/index.webmanifest">
+  <link rel="icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="https://www.coreds.com/publication/2016-03-01_validation_of_the_af/">
+  <link rel="canonical" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2016-03-01_validation_of_the_af/">
 
   
   
@@ -278,10 +316,10 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:url" content="https://www.coreds.com/publication/2016-03-01_validation_of_the_af/">
+  <meta property="og:url" content="https://consultation-recherche-donnees-sante.netlify.app/publication/2016-03-01_validation_of_the_af/">
   <meta property="og:title" content="Validation of the AFP model as a predictor of HCC recurrence in patients with viral hepatitis-related cirrhosis who had received a liver transplant for HCC. | Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:description" content="BACKGROUND &amp;amp; AIMS:The AFP model was shown to be superior to the Milan criteria for predicting hepatocellular carcinoma (HCC) recurrence after liver transplantation in a French population. Our aim was to test the AFP model in a non-French, post-hepatitic cirrhosis-based population of HCC candidates.METHODS:574 patients transplanted for HCC in four Italian centers were studied. AFP score was assessed at the last evaluation before liver transplantation (LT). Probabilities of recurrence and survival were estimated by the log-rank test or competing risk analysis and compared according to the AFP model.RESULTS:24.7% patients were beyond Milan criteria. HCC complicated hepatitis C virus (HCV) and hepatitis B virus (HBV) cirrhosis in 58.7% and 24% of the cases, respectively. Five-year probabilities of recurrence differed according to AFP score ⩽2 vs. &amp;gt;2 in the whole population (13.2±1.8% vs. 49.8±8.7%, p&amp;lt;0.001, HR=4.98), in patients within Milan criteria (12.8±2.0% vs. 32.4±12.1%, p=0.009, HR=3.51), beyond Milan criteria (14.9±4.2% vs. 58.9±11.5%, p&amp;lt;0.001, HR=4.26), HCV patients (14.9±2.5% vs. 67.6±14.7%, p&amp;lt;0.001, HR=6.56) and HBV patients (11.6±3.4% vs. 34.3±12.5%, p=0.012, HR=3.49). By net reclassification improvement analysis AFP score significantly improved prediction of non-recurrence compared to Milan criteria. Overall five-year survival rates according to AFP score ⩽2 or &amp;gt;2 were 71.7±2.2% vs. 42.2±8.3% (p&amp;lt;0.001, HR=2.14).CONCLUSIONS:The AFP model identifies HCC candidates at low risk of recurrence, otherwise excluded by Milan criteria in a population with a predominance of post-hepatitic-related HCC. The AFP score can be proposed for selection of HCC candidates in programs with a high proportion of viral/HCV-related cirrhosis.LAY SUMMARY:Selection criteria for liver transplantation of patients affected with hepatocellular carcinoma (HCC) are based on the Milan criteria, which have been shown to be too restrictive, precluding access to liver transplantation for some patients who might be cured by this operation. Recently, a French group of researchers developed a new selection model called the AFP model, or AFP score, allowing some patients with HCC not meeting Milan criteria to be transplanted with excellent results. In the present work, the AFP score was tested in a population of non-French patients transplanted for HCC occurring mainly on post-hepatitic (HCV or HBV) cirrhosis. The results confirm that in this specific population, as in the original French population of patients, the AFP model better selects patients with HCC eligible for transplantation, compared to Milan criteria. We conclude that the AFP score, which has been officially adopted by the French organization for Organ Sharing for HCC patients, can also be implemented in countries with an important burden of HCC occurring on post-hepatitic cirrhosis. "><meta property="og:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
-  <meta property="twitter:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
+  <meta property="og:description" content="BACKGROUND &amp;amp; AIMS:The AFP model was shown to be superior to the Milan criteria for predicting hepatocellular carcinoma (HCC) recurrence after liver transplantation in a French population. Our aim was to test the AFP model in a non-French, post-hepatitic cirrhosis-based population of HCC candidates.METHODS:574 patients transplanted for HCC in four Italian centers were studied. AFP score was assessed at the last evaluation before liver transplantation (LT). Probabilities of recurrence and survival were estimated by the log-rank test or competing risk analysis and compared according to the AFP model.RESULTS:24.7% patients were beyond Milan criteria. HCC complicated hepatitis C virus (HCV) and hepatitis B virus (HBV) cirrhosis in 58.7% and 24% of the cases, respectively. Five-year probabilities of recurrence differed according to AFP score ⩽2 vs. &amp;gt;2 in the whole population (13.2±1.8% vs. 49.8±8.7%, p&amp;lt;0.001, HR=4.98), in patients within Milan criteria (12.8±2.0% vs. 32.4±12.1%, p=0.009, HR=3.51), beyond Milan criteria (14.9±4.2% vs. 58.9±11.5%, p&amp;lt;0.001, HR=4.26), HCV patients (14.9±2.5% vs. 67.6±14.7%, p&amp;lt;0.001, HR=6.56) and HBV patients (11.6±3.4% vs. 34.3±12.5%, p=0.012, HR=3.49). By net reclassification improvement analysis AFP score significantly improved prediction of non-recurrence compared to Milan criteria. Overall five-year survival rates according to AFP score ⩽2 or &amp;gt;2 were 71.7±2.2% vs. 42.2±8.3% (p&amp;lt;0.001, HR=2.14).CONCLUSIONS:The AFP model identifies HCC candidates at low risk of recurrence, otherwise excluded by Milan criteria in a population with a predominance of post-hepatitic-related HCC. The AFP score can be proposed for selection of HCC candidates in programs with a high proportion of viral/HCV-related cirrhosis.LAY SUMMARY:Selection criteria for liver transplantation of patients affected with hepatocellular carcinoma (HCC) are based on the Milan criteria, which have been shown to be too restrictive, precluding access to liver transplantation for some patients who might be cured by this operation. Recently, a French group of researchers developed a new selection model called the AFP model, or AFP score, allowing some patients with HCC not meeting Milan criteria to be transplanted with excellent results. In the present work, the AFP score was tested in a population of non-French patients transplanted for HCC occurring mainly on post-hepatitic (HCV or HBV) cirrhosis. The results confirm that in this specific population, as in the original French population of patients, the AFP model better selects patients with HCC eligible for transplantation, compared to Milan criteria. We conclude that the AFP score, which has been officially adopted by the French organization for Organ Sharing for HCC patients, can also be implemented in countries with an important burden of HCC occurring on post-hepatitic cirrhosis. "><meta property="og:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
+  <meta property="twitter:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
   
     
       <meta property="article:published_time" content="2016-03-01T00:00:00&#43;00:00">
@@ -308,7 +346,7 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://www.coreds.com/publication/2016-03-01_validation_of_the_af/"
+    "@id": "https://consultation-recherche-donnees-sante.netlify.app/publication/2016-03-01_validation_of_the_af/"
   },
   "headline": "Validation of the AFP model as a predictor of HCC recurrence in patients with viral hepatitis-related cirrhosis who had received a liver transplant for HCC.",
   
@@ -325,7 +363,7 @@
     "name": "Consultation Recherche Données de Santé - CoReDS",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
+      "url": "https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
     }
   },
   "description": "BACKGROUND \u0026amp; AIMS:The AFP model was shown to be superior to the Milan criteria for predicting hepatocellular carcinoma (HCC) recurrence after liver transplantation in a French population. Our aim was to test the AFP model in a non-French, post-hepatitic cirrhosis-based population of HCC candidates.METHODS:574 patients transplanted for HCC in four Italian centers were studied. AFP score was assessed at the last evaluation before liver transplantation (LT). Probabilities of recurrence and survival were estimated by the log-rank test or competing risk analysis and compared according to the AFP model.RESULTS:24.7% patients were beyond Milan criteria. HCC complicated hepatitis C virus (HCV) and hepatitis B virus (HBV) cirrhosis in 58.7% and 24% of the cases, respectively. Five-year probabilities of recurrence differed according to AFP score ⩽2 vs. \u0026gt;2 in the whole population (13.2±1.8% vs. 49.8±8.7%, p\u0026lt;0.001, HR=4.98), in patients within Milan criteria (12.8±2.0% vs. 32.4±12.1%, p=0.009, HR=3.51), beyond Milan criteria (14.9±4.2% vs. 58.9±11.5%, p\u0026lt;0.001, HR=4.26), HCV patients (14.9±2.5% vs. 67.6±14.7%, p\u0026lt;0.001, HR=6.56) and HBV patients (11.6±3.4% vs. 34.3±12.5%, p=0.012, HR=3.49). By net reclassification improvement analysis AFP score significantly improved prediction of non-recurrence compared to Milan criteria. Overall five-year survival rates according to AFP score ⩽2 or \u0026gt;2 were 71.7±2.2% vs. 42.2±8.3% (p\u0026lt;0.001, HR=2.14).CONCLUSIONS:The AFP model identifies HCC candidates at low risk of recurrence, otherwise excluded by Milan criteria in a population with a predominance of post-hepatitic-related HCC. The AFP score can be proposed for selection of HCC candidates in programs with a high proportion of viral/HCV-related cirrhosis.LAY SUMMARY:Selection criteria for liver transplantation of patients affected with hepatocellular carcinoma (HCC) are based on the Milan criteria, which have been shown to be too restrictive, precluding access to liver transplantation for some patients who might be cured by this operation. Recently, a French group of researchers developed a new selection model called the AFP model, or AFP score, allowing some patients with HCC not meeting Milan criteria to be transplanted with excellent results. In the present work, the AFP score was tested in a population of non-French patients transplanted for HCC occurring mainly on post-hepatitic (HCV or HBV) cirrhosis. The results confirm that in this specific population, as in the original French population of patients, the AFP model better selects patients with HCC eligible for transplantation, compared to Milan criteria. We conclude that the AFP score, which has been officially adopted by the French organization for Organ Sharing for HCC patients, can also be implemented in countries with an important burden of HCC occurring on post-hepatitic cirrhosis. "
@@ -390,7 +428,7 @@
     <script>const isSiteThemeDark = false;</script>
   
   
-  <script src="/js/load-theme.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/load-theme.js"></script>
 
   <aside class="search-results" id="search">
   <div class="container">
@@ -445,7 +483,7 @@
 
     
     <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -458,7 +496,7 @@
 
     
     <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -494,7 +532,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/entreprendre/"><span>Commencer un projet</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/entreprendre/"><span>Commencer un projet</span></a>
         </li>
 
         
@@ -524,44 +562,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/suivremonprojet/"><span>Suivre son projet</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-            
-            
-            
-              
-            
-            
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#outils"><span>Boite à outils</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/suivremonprojet/"><span>Suivre son projet</span></a>
         </li>
 
         
@@ -598,7 +599,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#publi"><span>Publications</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#outils"><span>Boite à outils</span></a>
         </li>
 
         
@@ -635,7 +636,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#transparence"><span>Portail de transparence</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#publi"><span>Publications</span></a>
         </li>
 
         
@@ -672,7 +673,44 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#people"><span>Qui sommes-nous ?</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#transparence"><span>Portail de transparence</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#people"><span>Qui sommes-nous ?</span></a>
         </li>
 
         
@@ -745,7 +783,7 @@
     
 
   
-  <span ><a href="/author/notarpaolo-andrea/">Notarpaolo Andrea</a></span>, <span ><a href="/author/layese-richard/">Layese Richard</a></span>, <span ><a href="/author/magistri-paolo/">Magistri Paolo</a></span>, <span ><a href="/author/gambato-maria/">Gambato Maria</a></span>, <span ><a href="/author/colledan-michele/">Colledan Michele</a></span>, <span ><a href="/author/magini-giulia/">Magini Giulia</a></span>, <span ><a href="/author/miglioresi-lucia/">Miglioresi Lucia</a></span>, <span ><a href="/author/vitale-alessandro/">Vitale Alessandro</a></span>, <span ><a href="/author/vennarecci-giovanni/">Vennarecci Giovanni</a></span>, <span ><a href="/author/ambrosio-cecilia-d/">Ambrosio Cecilia D</a></span>, <span ><a href="/author/burra-patrizia/">Burra Patrizia</a></span>, <span ><a href="/author/di-benedetto-fabrizio/">Di Benedetto Fabrizio</a></span>, <span ><a href="/author/fagiuoli-stefano/">Fagiuoli Stefano</a></span>, <span ><a href="/author/colasanti-marco/">Colasanti Marco</a></span>, <span ><a href="/author/maria-ettorre-giuseppe/">Maria Ettorre Giuseppe</a></span>, <span ><a href="/author/andreoli-arnoldo/">Andreoli Arnoldo</a></span>, <span ><a href="/author/cillo-umberto/">Cillo Umberto</a></span>, <span ><a href="/author/laurent-alexis/">Laurent Alexis</a></span>, <span ><a href="/author/katsahian-sandrine/">Katsahian Sandrine</a></span>, <span ><a href="/author/audureau-etienne/">Audureau Etienne</a></span>, <span ><a href="/author/roudot-thoraval-francoise/">Roudot-Thoraval Francoise</a></span>, <span ><a href="/author/duvoux-christophe/">Duvoux Christophe</a></span>
+  <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/notarpaolo-andrea/">Notarpaolo Andrea</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/layese-richard/">Layese Richard</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/magistri-paolo/">Magistri Paolo</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/gambato-maria/">Gambato Maria</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/colledan-michele/">Colledan Michele</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/magini-giulia/">Magini Giulia</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/miglioresi-lucia/">Miglioresi Lucia</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/vitale-alessandro/">Vitale Alessandro</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/vennarecci-giovanni/">Vennarecci Giovanni</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/ambrosio-cecilia-d/">Ambrosio Cecilia D</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/burra-patrizia/">Burra Patrizia</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/di-benedetto-fabrizio/">Di Benedetto Fabrizio</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/fagiuoli-stefano/">Fagiuoli Stefano</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/colasanti-marco/">Colasanti Marco</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/maria-ettorre-giuseppe/">Maria Ettorre Giuseppe</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/andreoli-arnoldo/">Andreoli Arnoldo</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/cillo-umberto/">Cillo Umberto</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/laurent-alexis/">Laurent Alexis</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/katsahian-sandrine/">Katsahian Sandrine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/audureau-etienne/">Audureau Etienne</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/roudot-thoraval-francoise/">Roudot-Thoraval Francoise</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/duvoux-christophe/">Duvoux Christophe</a></span>
   </div>
   
   
@@ -811,7 +849,7 @@
           <div class="col-12 col-md-9">
             
             
-            <a href="/publication/#2">
+            <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/#2">
               Article de revue
             </a>
             
@@ -870,7 +908,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://www.coreds.com/publication/2016-03-01_validation_of_the_af/&amp;text=Validation%20of%20the%20AFP%20model%20as%20a%20predictor%20of%20HCC%20recurrence%20in%20patients%20with%20viral%20hepatitis-related%20cirrhosis%20who%20had%20received%20a%20liver%20transplant%20for%20HCC." target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2016-03-01_validation_of_the_af/&amp;text=Validation%20of%20the%20AFP%20model%20as%20a%20predictor%20of%20HCC%20recurrence%20in%20patients%20with%20viral%20hepatitis-related%20cirrhosis%20who%20had%20received%20a%20liver%20transplant%20for%20HCC." target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -883,7 +921,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://www.coreds.com/publication/2016-03-01_validation_of_the_af/&amp;t=Validation%20of%20the%20AFP%20model%20as%20a%20predictor%20of%20HCC%20recurrence%20in%20patients%20with%20viral%20hepatitis-related%20cirrhosis%20who%20had%20received%20a%20liver%20transplant%20for%20HCC." target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://consultation-recherche-donnees-sante.netlify.app/publication/2016-03-01_validation_of_the_af/&amp;t=Validation%20of%20the%20AFP%20model%20as%20a%20predictor%20of%20HCC%20recurrence%20in%20patients%20with%20viral%20hepatitis-related%20cirrhosis%20who%20had%20received%20a%20liver%20transplant%20for%20HCC." target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -896,7 +934,7 @@
       
       
       <li>
-        <a href="mailto:?subject=Validation%20of%20the%20AFP%20model%20as%20a%20predictor%20of%20HCC%20recurrence%20in%20patients%20with%20viral%20hepatitis-related%20cirrhosis%20who%20had%20received%20a%20liver%20transplant%20for%20HCC.&amp;body=https://www.coreds.com/publication/2016-03-01_validation_of_the_af/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=Validation%20of%20the%20AFP%20model%20as%20a%20predictor%20of%20HCC%20recurrence%20in%20patients%20with%20viral%20hepatitis-related%20cirrhosis%20who%20had%20received%20a%20liver%20transplant%20for%20HCC.&amp;body=https://consultation-recherche-donnees-sante.netlify.app/publication/2016-03-01_validation_of_the_af/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -909,7 +947,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://www.coreds.com/publication/2016-03-01_validation_of_the_af/&amp;title=Validation%20of%20the%20AFP%20model%20as%20a%20predictor%20of%20HCC%20recurrence%20in%20patients%20with%20viral%20hepatitis-related%20cirrhosis%20who%20had%20received%20a%20liver%20transplant%20for%20HCC." target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2016-03-01_validation_of_the_af/&amp;title=Validation%20of%20the%20AFP%20model%20as%20a%20predictor%20of%20HCC%20recurrence%20in%20patients%20with%20viral%20hepatitis-related%20cirrhosis%20who%20had%20received%20a%20liver%20transplant%20for%20HCC." target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -922,7 +960,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=Validation%20of%20the%20AFP%20model%20as%20a%20predictor%20of%20HCC%20recurrence%20in%20patients%20with%20viral%20hepatitis-related%20cirrhosis%20who%20had%20received%20a%20liver%20transplant%20for%20HCC.%20https://www.coreds.com/publication/2016-03-01_validation_of_the_af/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=Validation%20of%20the%20AFP%20model%20as%20a%20predictor%20of%20HCC%20recurrence%20in%20patients%20with%20viral%20hepatitis-related%20cirrhosis%20who%20had%20received%20a%20liver%20transplant%20for%20HCC.%20https://consultation-recherche-donnees-sante.netlify.app/publication/2016-03-01_validation_of_the_af/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -935,7 +973,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://www.coreds.com/publication/2016-03-01_validation_of_the_af/&amp;title=Validation%20of%20the%20AFP%20model%20as%20a%20predictor%20of%20HCC%20recurrence%20in%20patients%20with%20viral%20hepatitis-related%20cirrhosis%20who%20had%20received%20a%20liver%20transplant%20for%20HCC." target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2016-03-01_validation_of_the_af/&amp;title=Validation%20of%20the%20AFP%20model%20as%20a%20predictor%20of%20HCC%20recurrence%20in%20patients%20with%20viral%20hepatitis-related%20cirrhosis%20who%20had%20received%20a%20liver%20transplant%20for%20HCC." target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1282,7 +1320,7 @@
     
     
     
-    <script src="/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
+    <script src="https://consultation-recherche-donnees-sante.netlify.app/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
 
     
 

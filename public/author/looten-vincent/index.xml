@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Looten Vincent | Consultation Recherche Données de Santé - CoReDS</title>
-    <link>https://www.coreds.com/author/looten-vincent/</link>
-      <atom:link href="https://www.coreds.com/author/looten-vincent/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://consultation-recherche-donnees-sante.netlify.app/author/looten-vincent/</link>
+      <atom:link href="https://consultation-recherche-donnees-sante.netlify.app/author/looten-vincent/index.xml" rel="self" type="application/rss+xml" />
     <description>Looten Vincent</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>fr</language><copyright>`2021` - **CoReDS**</copyright><lastBuildDate>Fri, 01 Nov 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png</url>
+      <url>https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png</url>
       <title>Looten Vincent</title>
-      <link>https://www.coreds.com/author/looten-vincent/</link>
+      <link>https://consultation-recherche-donnees-sante.netlify.app/author/looten-vincent/</link>
     </image>
     
     <item>
       <title>What can millions of laboratory test results tell us about the temporal aspect of data quality? Study of data spanning 17 years in a clinical data warehouse.</title>
-      <link>https://www.coreds.com/publication/2019-11-01_what_can_millions_of/</link>
+      <link>https://consultation-recherche-donnees-sante.netlify.app/publication/2019-11-01_what_can_millions_of/</link>
       <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>https://www.coreds.com/publication/2019-11-01_what_can_millions_of/</guid>
+      <guid>https://consultation-recherche-donnees-sante.netlify.app/publication/2019-11-01_what_can_millions_of/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://www.scimagojr.com/journalsearch.php?q=23604&amp;amp;tip=sid&amp;amp;exact=no&#34; title=&#34;SCImago Journal &amp;amp; Country Rank&#34;&gt;&lt;img border=&#34;0&#34; src=&#34;https://www.scimagojr.com/journal_img.php?id=23604&#34; alt=&#34;SCImago Journal &amp;amp; Country Rank&#34;  /&gt;&lt;/a&gt;
 &lt;strong&gt;SCImago Journal Rank (SJR)&lt;/strong&gt; est un indicateur de notoriété des revues indexées à partir de 1996 dans la base de données Scopus de l’éditeur Elsevier. Le SJR a été créé par le groupe de travail SCImago Research Group (SRG) de l’Université de Grenade et Alcana de Henares en Espagne.&lt;/p&gt;
 &lt;p&gt;Le SJR d’une revue est le nombre de fois où un article de cette revue est cité par d’autres articles pendant les 3 ans qui suivent sa publication, chaque citation reçue étant pondérée par la notoriété de la revue citante. Les articles « citants » sont issus d’autres revues et de la revue notée. Les citations d’articles de la revue par des articles de cette même revue (on parle d’autocitations) sont ainsi incluses dans le calcul du SJR, mais dans une limite de 35 %. Dans le calcul du SJR, le nombre de citations reçues par une revue est rapporté au nombre d’articles publiés par la revue au cours des 3 années qui précèdent.&lt;/p&gt;
@@ -31,9 +31,9 @@
     
     <item>
       <title>Trajectories of Biological Values and Vital Parameters: An Observational Cohort Study of Adult Patients with Sickle Cell Disease Hospitalized for a Non-Complicated Vaso-Occlusive Crisis.</title>
-      <link>https://www.coreds.com/publication/2019-09-01_trajectories_of_biol/</link>
+      <link>https://consultation-recherche-donnees-sante.netlify.app/publication/2019-09-01_trajectories_of_biol/</link>
       <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>https://www.coreds.com/publication/2019-09-01_trajectories_of_biol/</guid>
+      <guid>https://consultation-recherche-donnees-sante.netlify.app/publication/2019-09-01_trajectories_of_biol/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://www.scimagojr.com/journalsearch.php?q=&amp;amp;tip=sid&amp;amp;exact=no&#34; title=&#34;SCImago Journal &amp;amp; Country Rank&#34;&gt;&lt;img border=&#34;0&#34; src=&#34;https://www.scimagojr.com/journal_img.php?id=&#34; alt=&#34;SCImago Journal &amp;amp; Country Rank&#34;  /&gt;&lt;/a&gt;
 &lt;strong&gt;SCImago Journal Rank (SJR)&lt;/strong&gt; est un indicateur de notoriété des revues indexées à partir de 1996 dans la base de données Scopus de l’éditeur Elsevier. Le SJR a été créé par le groupe de travail SCImago Research Group (SRG) de l’Université de Grenade et Alcana de Henares en Espagne.&lt;/p&gt;
 &lt;p&gt;Le SJR d’une revue est le nombre de fois où un article de cette revue est cité par d’autres articles pendant les 3 ans qui suivent sa publication, chaque citation reçue étant pondérée par la notoriété de la revue citante. Les articles « citants » sont issus d’autres revues et de la revue notée. Les citations d’articles de la revue par des articles de cette même revue (on parle d’autocitations) sont ainsi incluses dans le calcul du SJR, mais dans une limite de 35 %. Dans le calcul du SJR, le nombre de citations reçues par une revue est rapporté au nombre d’articles publiés par la revue au cours des 3 années qui précèdent.&lt;/p&gt;
@@ -48,9 +48,9 @@
     
     <item>
       <title>Do You Need Embeddings Trained on a Massive Specialized Corpus for Your Clinical Natural Language Processing Task?</title>
-      <link>https://www.coreds.com/publication/2019-08-01_do_you_need_embeddin/</link>
+      <link>https://consultation-recherche-donnees-sante.netlify.app/publication/2019-08-01_do_you_need_embeddin/</link>
       <pubDate>Thu, 01 Aug 2019 00:00:00 +0000</pubDate>
-      <guid>https://www.coreds.com/publication/2019-08-01_do_you_need_embeddin/</guid>
+      <guid>https://consultation-recherche-donnees-sante.netlify.app/publication/2019-08-01_do_you_need_embeddin/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://www.scimagojr.com/journalsearch.php?q=&amp;amp;tip=sid&amp;amp;exact=no&#34; title=&#34;SCImago Journal &amp;amp; Country Rank&#34;&gt;&lt;img border=&#34;0&#34; src=&#34;https://www.scimagojr.com/journal_img.php?id=&#34; alt=&#34;SCImago Journal &amp;amp; Country Rank&#34;  /&gt;&lt;/a&gt;
 &lt;strong&gt;SCImago Journal Rank (SJR)&lt;/strong&gt; est un indicateur de notoriété des revues indexées à partir de 1996 dans la base de données Scopus de l’éditeur Elsevier. Le SJR a été créé par le groupe de travail SCImago Research Group (SRG) de l’Université de Grenade et Alcana de Henares en Espagne.&lt;/p&gt;
 &lt;p&gt;Le SJR d’une revue est le nombre de fois où un article de cette revue est cité par d’autres articles pendant les 3 ans qui suivent sa publication, chaque citation reçue étant pondérée par la notoriété de la revue citante. Les articles « citants » sont issus d’autres revues et de la revue notée. Les citations d’articles de la revue par des articles de cette même revue (on parle d’autocitations) sont ainsi incluses dans le calcul du SJR, mais dans une limite de 35 %. Dans le calcul du SJR, le nombre de citations reçues par une revue est rapporté au nombre d’articles publiés par la revue au cours des 3 années qui précèdent.&lt;/p&gt;
@@ -65,9 +65,9 @@
     
     <item>
       <title>Evaluating the Impact of Text Duplications on a Corpus of More than 600,000 Clinical Narratives in a French Hospital.</title>
-      <link>https://www.coreds.com/publication/2019-08-01_evaluating_the_impac/</link>
+      <link>https://consultation-recherche-donnees-sante.netlify.app/publication/2019-08-01_evaluating_the_impac/</link>
       <pubDate>Thu, 01 Aug 2019 00:00:00 +0000</pubDate>
-      <guid>https://www.coreds.com/publication/2019-08-01_evaluating_the_impac/</guid>
+      <guid>https://consultation-recherche-donnees-sante.netlify.app/publication/2019-08-01_evaluating_the_impac/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://www.scimagojr.com/journalsearch.php?q=&amp;amp;tip=sid&amp;amp;exact=no&#34; title=&#34;SCImago Journal &amp;amp; Country Rank&#34;&gt;&lt;img border=&#34;0&#34; src=&#34;https://www.scimagojr.com/journal_img.php?id=&#34; alt=&#34;SCImago Journal &amp;amp; Country Rank&#34;  /&gt;&lt;/a&gt;
 &lt;strong&gt;SCImago Journal Rank (SJR)&lt;/strong&gt; est un indicateur de notoriété des revues indexées à partir de 1996 dans la base de données Scopus de l’éditeur Elsevier. Le SJR a été créé par le groupe de travail SCImago Research Group (SRG) de l’Université de Grenade et Alcana de Henares en Espagne.&lt;/p&gt;
 &lt;p&gt;Le SJR d’une revue est le nombre de fois où un article de cette revue est cité par d’autres articles pendant les 3 ans qui suivent sa publication, chaque citation reçue étant pondérée par la notoriété de la revue citante. Les articles « citants » sont issus d’autres revues et de la revue notée. Les citations d’articles de la revue par des articles de cette même revue (on parle d’autocitations) sont ainsi incluses dans le calcul du SJR, mais dans une limite de 35 %. Dans le calcul du SJR, le nombre de citations reçues par une revue est rapporté au nombre d’articles publiés par la revue au cours des 3 années qui précèdent.&lt;/p&gt;
@@ -82,9 +82,9 @@
     
     <item>
       <title>Comparison of methods for early-readmission prediction in a high-dimensional heterogeneous covariates and time-to-event outcome framework.</title>
-      <link>https://www.coreds.com/publication/2019-03-01_comparison_of_method/</link>
+      <link>https://consultation-recherche-donnees-sante.netlify.app/publication/2019-03-01_comparison_of_method/</link>
       <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>https://www.coreds.com/publication/2019-03-01_comparison_of_method/</guid>
+      <guid>https://consultation-recherche-donnees-sante.netlify.app/publication/2019-03-01_comparison_of_method/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://www.scimagojr.com/journalsearch.php?q=28110&amp;amp;tip=sid&amp;amp;exact=no&#34; title=&#34;SCImago Journal &amp;amp; Country Rank&#34;&gt;&lt;img border=&#34;0&#34; src=&#34;https://www.scimagojr.com/journal_img.php?id=28110&#34; alt=&#34;SCImago Journal &amp;amp; Country Rank&#34;  /&gt;&lt;/a&gt;
 &lt;strong&gt;SCImago Journal Rank (SJR)&lt;/strong&gt; est un indicateur de notoriété des revues indexées à partir de 1996 dans la base de données Scopus de l’éditeur Elsevier. Le SJR a été créé par le groupe de travail SCImago Research Group (SRG) de l’Université de Grenade et Alcana de Henares en Espagne.&lt;/p&gt;
 &lt;p&gt;Le SJR d’une revue est le nombre de fois où un article de cette revue est cité par d’autres articles pendant les 3 ans qui suivent sa publication, chaque citation reçue étant pondérée par la notoriété de la revue citante. Les articles « citants » sont issus d’autres revues et de la revue notée. Les citations d’articles de la revue par des articles de cette même revue (on parle d’autocitations) sont ainsi incluses dans le calcul du SJR, mais dans une limite de 35 %. Dans le calcul du SJR, le nombre de citations reçues par une revue est rapporté au nombre d’articles publiés par la revue au cours des 3 années qui précèdent.&lt;/p&gt;
@@ -99,9 +99,9 @@
     
     <item>
       <title>The Need of an Open Data Quality Policy: The Case of the &amp;quot;Transparency - Health&amp;quot; Database in the Prevention of Conflict of Interest.</title>
-      <link>https://www.coreds.com/publication/2018-01-01_the_need_of_an_open_/</link>
+      <link>https://consultation-recherche-donnees-sante.netlify.app/publication/2018-01-01_the_need_of_an_open_/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>https://www.coreds.com/publication/2018-01-01_the_need_of_an_open_/</guid>
+      <guid>https://consultation-recherche-donnees-sante.netlify.app/publication/2018-01-01_the_need_of_an_open_/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://www.scimagojr.com/journalsearch.php?q=&amp;amp;tip=sid&amp;amp;exact=no&#34; title=&#34;SCImago Journal &amp;amp; Country Rank&#34;&gt;&lt;img border=&#34;0&#34; src=&#34;https://www.scimagojr.com/journal_img.php?id=&#34; alt=&#34;SCImago Journal &amp;amp; Country Rank&#34;  /&gt;&lt;/a&gt;
 &lt;strong&gt;SCImago Journal Rank (SJR)&lt;/strong&gt; est un indicateur de notoriété des revues indexées à partir de 1996 dans la base de données Scopus de l’éditeur Elsevier. Le SJR a été créé par le groupe de travail SCImago Research Group (SRG) de l’Université de Grenade et Alcana de Henares en Espagne.&lt;/p&gt;
 &lt;p&gt;Le SJR d’une revue est le nombre de fois où un article de cette revue est cité par d’autres articles pendant les 3 ans qui suivent sa publication, chaque citation reçue étant pondérée par la notoriété de la revue citante. Les articles « citants » sont issus d’autres revues et de la revue notée. Les citations d’articles de la revue par des articles de cette même revue (on parle d’autocitations) sont ainsi incluses dans le calcul du SJR, mais dans une limite de 35 %. Dans le calcul du SJR, le nombre de citations reçues par une revue est rapporté au nombre d’articles publiés par la revue au cours des 3 années qui précèdent.&lt;/p&gt;

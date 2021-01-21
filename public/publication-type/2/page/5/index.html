@@ -37,7 +37,7 @@
   <meta name="description" content="Consultation recherche données de santé">
 
   
-  <link rel="alternate" hreflang="fr" href="https://www.coreds.com/publication-type/2/">
+  <link rel="alternate" hreflang="fr" href="https://consultation-recherche-donnees-sante.netlify.app/publication-type/2/">
 
   
 
@@ -238,30 +238,68 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.css">
+  <link rel="stylesheet" href="https://consultation-recherche-donnees-sante.netlify.app/css/wowchemy.css">
 
   
 
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-80B5KND2Y6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-80B5KND2Y6', { 'anonymize_ip': true });
+
   
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
 
   
 
+  
+
 
   
   
 
   
-  <link rel="alternate" href="/publication-type/2/index.xml" type="application/rss+xml" title="Consultation Recherche Données de Santé - CoReDS">
+  <link rel="alternate" href="https://consultation-recherche-donnees-sante.netlify.app/publication-type/2/index.xml" type="application/rss+xml" title="Consultation Recherche Données de Santé - CoReDS">
   
 
-  <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
+  <link rel="manifest" href="https://consultation-recherche-donnees-sante.netlify.app/index.webmanifest">
+  <link rel="icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="https://www.coreds.com/publication-type/2/">
+  <link rel="canonical" href="https://consultation-recherche-donnees-sante.netlify.app/publication-type/2/">
 
   
   
@@ -277,10 +315,10 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:url" content="https://www.coreds.com/publication-type/2/">
+  <meta property="og:url" content="https://consultation-recherche-donnees-sante.netlify.app/publication-type/2/">
   <meta property="og:title" content="2 | Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:description" content="Consultation recherche données de santé"><meta property="og:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
-  <meta property="twitter:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
+  <meta property="og:description" content="Consultation recherche données de santé"><meta property="og:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
+  <meta property="twitter:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
   
     <meta property="og:updated_time" content="2020-12-01T00:00:00&#43;00:00">
   
@@ -343,7 +381,7 @@
     <script>const isSiteThemeDark = false;</script>
   
   
-  <script src="/js/load-theme.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/load-theme.js"></script>
 
   <aside class="search-results" id="search">
   <div class="container">
@@ -398,7 +436,7 @@
 
     
     <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -411,7 +449,7 @@
 
     
     <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -447,7 +485,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/entreprendre/"><span>Commencer un projet</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/entreprendre/"><span>Commencer un projet</span></a>
         </li>
 
         
@@ -477,44 +515,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/suivremonprojet/"><span>Suivre son projet</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-            
-            
-            
-              
-            
-            
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#outils"><span>Boite à outils</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/suivremonprojet/"><span>Suivre son projet</span></a>
         </li>
 
         
@@ -551,7 +552,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#publi"><span>Publications</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#outils"><span>Boite à outils</span></a>
         </li>
 
         
@@ -588,7 +589,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#transparence"><span>Portail de transparence</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#publi"><span>Publications</span></a>
         </li>
 
         
@@ -625,7 +626,44 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#people"><span>Qui sommes-nous ?</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#transparence"><span>Portail de transparence</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#people"><span>Qui sommes-nous ?</span></a>
         </li>
 
         
@@ -698,7 +736,7 @@
     
     
     <div>
-      <h2><a href="/publication/2016-10-01_management_of_endocr/" >MANAGEMENT OF ENDOCRINE DISEASE: Recurrence or new tumors after complete resection of pheochromocytomas and paragangliomas: a systematic review and meta-analysis.</a></h2>
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2016-10-01_management_of_endocr/" >MANAGEMENT OF ENDOCRINE DISEASE: Recurrence or new tumors after complete resection of pheochromocytomas and paragangliomas: a systematic review and meta-analysis.</a></h2>
       <div class="article-style">
         
           OBJECTIVE:To systematically review the incidence and factors associated with recurrences or new tumors after apparent complete resection of pheochromocytoma or thoraco-abdomino-pelvic paraganglioma.METHODS:A systematic review and meta-analysis of …
@@ -710,7 +748,7 @@
     
     
     <div>
-      <h2><a href="/publication/2016-10-01_nurse_workload_and_i/" >Nurse workload and inexperienced medical staff members are associated with seasonal peaks in severe adverse events in the adult medical intensive care unit: A seven-year prospective study.</a></h2>
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2016-10-01_nurse_workload_and_i/" >Nurse workload and inexperienced medical staff members are associated with seasonal peaks in severe adverse events in the adult medical intensive care unit: A seven-year prospective study.</a></h2>
       <div class="article-style">
         
           OBJECTIVE:Our purpose was to identify potential organizational factors that contributed to life-threatening adverse events in adult intensive care unit.METHODS:A prospective, observational, dynamic cohort study was carried out from January 2006 to …
@@ -722,7 +760,7 @@
     
     
     <div>
-      <h2><a href="/publication/2016-08-01_prostate_cancer_char/" >Prostate cancer characteristics and outcome in renal transplant recipients: results from a contemporary single center study.</a></h2>
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2016-08-01_prostate_cancer_char/" >Prostate cancer characteristics and outcome in renal transplant recipients: results from a contemporary single center study.</a></h2>
       <div class="article-style">
         
           BACKGROUND:Prostate cancer (PCa) incidence is expected to increase in renal transplant recipients (RTR) with no clear nor contemporary data on management and oncological outcome.METHODS:We conducted a retrospective single center study of RTR …
@@ -734,7 +772,7 @@
     
     
     <div>
-      <h2><a href="/publication/2016-08-01_rationale_and_design/" >Rationale and design of the multicenter randomized trial investigating the effects of levosimendan pretreatment in patients with low ejection fraction (≤40 %) undergoing CABG with cardiopulmonary bypass (LICORN study).</a></h2>
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2016-08-01_rationale_and_design/" >Rationale and design of the multicenter randomized trial investigating the effects of levosimendan pretreatment in patients with low ejection fraction (≤40 %) undergoing CABG with cardiopulmonary bypass (LICORN study).</a></h2>
       <div class="article-style">
         
           BACKGROUND:Patients with a left ventricular ejection fraction (LVEF) of less than 40 % are at high risk of developing postoperative low cardiac output syndrome (LCOS). Despite actual treatments (inotropic agents and/or mechanical assist devices), the …
@@ -746,7 +784,7 @@
     
     
     <div>
-      <h2><a href="/publication/2016-07-01_how_do_researchers_d/" >How do researchers determine the difference to be detected in superiority trials? Results of a survey from a panel of researchers.</a></h2>
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2016-07-01_how_do_researchers_d/" >How do researchers determine the difference to be detected in superiority trials? Results of a survey from a panel of researchers.</a></h2>
       <div class="article-style">
         
           BACKGROUND:There is currently no guidance for selecting a specific difference to be detected in a superiority trial. We explored 3 factors that in our opinion should influence the difference to be detected (type of outcome, patient age group, and …
@@ -758,7 +796,7 @@
     
     
     <div>
-      <h2><a href="/publication/2016-07-01_the_plasmair_deconta/" >The Plasmair Decontamination System Is Protective Against Invasive Aspergillosis in Neutropenic Patients.</a></h2>
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2016-07-01_the_plasmair_deconta/" >The Plasmair Decontamination System Is Protective Against Invasive Aspergillosis in Neutropenic Patients.</a></h2>
       <div class="article-style">
         
           OBJECTIVE Invasive aspergillosis (IA) is a rare but severe infection caused by Aspergillus spp. that often develops in immunocompromised patients. Lethality remains high in this population. Therefore, preventive strategies are of key importance. The …
@@ -770,7 +808,7 @@
     
     
     <div>
-      <h2><a href="/publication/2016-06-01_one-month_apparent_d/" >One-month apparent diffusion coefficient correlates with response to radiofrequency ablation of hepatocellular carcinoma.</a></h2>
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2016-06-01_one-month_apparent_d/" >One-month apparent diffusion coefficient correlates with response to radiofrequency ablation of hepatocellular carcinoma.</a></h2>
       <div class="article-style">
         
           PURPOSE:To assess whether apparent diffusion coefficient (ADC) values at 1 and 3 months after radiofrequency ablation (RFA) may be associated with a favorable response to therapy for hepatocellular carcinoma (HCC) and liver metastases.MATERIALS AND …
@@ -782,7 +820,7 @@
     
     
     <div>
-      <h2><a href="/publication/2016-04-01_a_lack_of_significan/" >A Lack of Significant Effect of POR*28 Allelic Variant on Tacrolimus Exposure in Kidney Transplant Recipients.</a></h2>
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2016-04-01_a_lack_of_significan/" >A Lack of Significant Effect of POR*28 Allelic Variant on Tacrolimus Exposure in Kidney Transplant Recipients.</a></h2>
       <div class="article-style">
         
           BACKGROUND:POR*28 is a recently newly described allelic variant of the cytochrome P450 oxidoreductase (POR), which might be associated with an increased metabolic activity of P450 cytochromes (CYP) 3A5 and 3A4. Consequently, carriers of at least 1 …
@@ -794,7 +832,7 @@
     
     
     <div>
-      <h2><a href="/publication/2016-03-01_natural_history_of_a/" >Natural History of Adjustable Gastric Banding: Lifespan and Revisional Rate: A Nationwide Study on Administrative Data on 53,000 Patients.</a></h2>
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2016-03-01_natural_history_of_a/" >Natural History of Adjustable Gastric Banding: Lifespan and Revisional Rate: A Nationwide Study on Administrative Data on 53,000 Patients.</a></h2>
       <div class="article-style">
         
           OBJECTIVE:The aim of this study was to analyze the adjustable gastric banding (AGB) natural history on a national basis.BACKGROUND:Adjustable gastric banding represented the most common bariatric procedure in France until 2010. Since then, the number …
@@ -806,7 +844,7 @@
     
     
     <div>
-      <h2><a href="/publication/2016-03-01_validation_of_the_af/" >Validation of the AFP model as a predictor of HCC recurrence in patients with viral hepatitis-related cirrhosis who had received a liver transplant for HCC.</a></h2>
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2016-03-01_validation_of_the_af/" >Validation of the AFP model as a predictor of HCC recurrence in patients with viral hepatitis-related cirrhosis who had received a liver transplant for HCC.</a></h2>
       <div class="article-style">
         
           BACKGROUND &amp; AIMS:The AFP model was shown to be superior to the Milan criteria for predicting hepatocellular carcinoma (HCC) recurrence after liver transplantation in a French population. Our aim was to test the AFP model in a non-French, …
@@ -818,7 +856,7 @@
     
     
     <div>
-      <h2><a href="/publication/2016-02-01_effect_of_acetazolam/" >Effect of Acetazolamide vs Placebo on Duration of Invasive Mechanical Ventilation Among Patients With Chronic Obstructive Pulmonary Disease: A Randomized Clinical Trial.</a></h2>
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2016-02-01_effect_of_acetazolam/" >Effect of Acetazolamide vs Placebo on Duration of Invasive Mechanical Ventilation Among Patients With Chronic Obstructive Pulmonary Disease: A Randomized Clinical Trial.</a></h2>
       <div class="article-style">
         
           OBJECTIVE:Acetazolamide has been used for decades as a respiratory stimulant for patients with chronic obstructive pulmonary disease (COPD) and metabolic alkalosis, but no large randomized placebo-controlled trial is available to confirm this …
@@ -830,7 +868,7 @@
     
     
     <div>
-      <h2><a href="/publication/2016-02-01_predictive_factors_o/" >Predictive Factors of &amp;quot;Forgotten Knee&amp;quot; Acquisition After Total Knee Arthroplasty: Long-Term Follow-Up of a Large Prospective Cohort.</a></h2>
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2016-02-01_predictive_factors_o/" >Predictive Factors of &amp;quot;Forgotten Knee&amp;quot; Acquisition After Total Knee Arthroplasty: Long-Term Follow-Up of a Large Prospective Cohort.</a></h2>
       <div class="article-style">
         
           BACKGROUND:In a large prospective cohort, we recently showed that only 66.1% of total knee arthroplasty (TKA) with a perfect outcome according to Knee Society Knee Score was completely forgotten in all everyday activities. The main objective of this …
@@ -842,7 +880,7 @@
     
     
     <div>
-      <h2><a href="/publication/2016-01-01_clustering_of_longit/" >Clustering of longitudinal data by using an extended baseline: A new method for treatment efficacy clustering in longitudinal data.</a></h2>
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2016-01-01_clustering_of_longit/" >Clustering of longitudinal data by using an extended baseline: A new method for treatment efficacy clustering in longitudinal data.</a></h2>
       <div class="article-style">
         
           Heterogeneity in treatment efficacy is a major concern in clinical trials. Clustering may help to identify the treatment responders and the non-responders. In the context of longitudinal cluster analyses, sample size and variability of the times of …
@@ -854,7 +892,7 @@
     
     
     <div>
-      <h2><a href="/publication/2016-01-01_cross_border_semanti/" >Cross border semantic interoperability for clinical research: the EHR4CR semantic resources and services.</a></h2>
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2016-01-01_cross_border_semanti/" >Cross border semantic interoperability for clinical research: the EHR4CR semantic resources and services.</a></h2>
       <div class="article-style">
         
           With the development of platforms enabling the use of routinely collected clinical data in the context of international clinical research, scalable solutions for cross border semantic interoperability need to be developed. Within the context of the …
@@ -866,7 +904,7 @@
     
     
     <div>
-      <h2><a href="/publication/2016-01-01_gender_as_a_modifyin/" >Gender as a Modifying Factor Influencing Myotonic Dystrophy Type 1 Phenotype Severity and Mortality: A Nationwide Multiple Databases Cross-Sectional Observational Study.</a></h2>
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2016-01-01_gender_as_a_modifyin/" >Gender as a Modifying Factor Influencing Myotonic Dystrophy Type 1 Phenotype Severity and Mortality: A Nationwide Multiple Databases Cross-Sectional Observational Study.</a></h2>
       <div class="article-style">
         
           BACKGROUND:Myotonic Dystrophy type 1 (DM1) is one of the most heterogeneous hereditary disease in terms of age of onset, clinical manifestations, and severity, challenging both medical management and clinical trials. The CTG expansion size is the …
@@ -878,7 +916,7 @@
     
     
     <div>
-      <h2><a href="/publication/2016-01-01_integrating_heteroge/" >Integrating Heterogeneous Biomedical Data for Cancer Research: the CARPEM infrastructure.</a></h2>
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2016-01-01_integrating_heteroge/" >Integrating Heterogeneous Biomedical Data for Cancer Research: the CARPEM infrastructure.</a></h2>
       <div class="article-style">
         
           Cancer research involves numerous disciplines. The multiplicity of data sources and their heterogeneous nature render the integration and the exploration of the data more and more complex. Translational research platforms are a promising way to …
@@ -890,7 +928,7 @@
     
     
     <div>
-      <h2><a href="/publication/2015-11-01_delirium_and_circadi/" >Delirium and Circadian Rhythm of Melatonin During Weaning From Mechanical Ventilation: An Ancillary Study of a Weaning Trial.</a></h2>
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2015-11-01_delirium_and_circadi/" >Delirium and Circadian Rhythm of Melatonin During Weaning From Mechanical Ventilation: An Ancillary Study of a Weaning Trial.</a></h2>
       <div class="article-style">
         
           BACKGROUND:Delirium is frequent in patients in the ICU, but its association with the outcome of weaning from mechanical ventilation has not been assessed. Circadian rhythm alteration may favor delirium. In the current study, we assessed the impact of …
@@ -902,7 +940,7 @@
     
     
     <div>
-      <h2><a href="/publication/2015-10-01_respective_impact_of/" >Respective impact of lowering body temperature and heart rate on mortality in septic shock: mediation analysis of a randomized trial.</a></h2>
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2015-10-01_respective_impact_of/" >Respective impact of lowering body temperature and heart rate on mortality in septic shock: mediation analysis of a randomized trial.</a></h2>
       <div class="article-style">
         
           OBJECTIVE:We previously showed that external cooling decreases day 14 mortality in febrile septic shock. Because cooling may participate in heart rate control, we studied the respective impact of heart rate and temperature lowering on …
@@ -914,7 +952,7 @@
     
     
     <div>
-      <h2><a href="/publication/2015-10-01_visceral_fat_area_pr/" >Visceral fat area predicts survival in patients with advanced hepatocellular carcinoma treated with tyrosine kinase inhibitors.</a></h2>
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2015-10-01_visceral_fat_area_pr/" >Visceral fat area predicts survival in patients with advanced hepatocellular carcinoma treated with tyrosine kinase inhibitors.</a></h2>
       <div class="article-style">
         
           BACKGROUND:Anthropometric measurements have been linked to resistance to anti-angiogenic treatment and survival.METHODS:Patients with advanced hepatocellular carcinoma treated with sorafenib or brivanib in 2008-2011 were included in this …
@@ -926,7 +964,7 @@
     
     
     <div>
-      <h2><a href="/publication/2015-05-01_quotforgotten_knee/" >&amp;quot;Forgotten knee&amp;quot; after total knee replacement: A pragmatic study from a single-centre cohort.</a></h2>
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2015-05-01_quotforgotten_knee/" >&amp;quot;Forgotten knee&amp;quot; after total knee replacement: A pragmatic study from a single-centre cohort.</a></h2>
       <div class="article-style">
         
           OBJECTIVE:After total knee replacement (TKR), some patients find their operated knee totally natural and can be said to have &quot;forgotten&quot; it, while others, although satisfied with their results, remain conscious of their prosthesis. This is …
@@ -939,10 +977,10 @@
 <nav>
   <ul class="pagination justify-content-center">
     
-    <li class="page-item"><a class="page-link" href="/publication-type/2/page/4/">&laquo;</a></li>
+    <li class="page-item"><a class="page-link" href="https://consultation-recherche-donnees-sante.netlify.app/publication-type/2/page/4/">&laquo;</a></li>
     
     
-    <li class="page-item"><a class="page-link" href="/publication-type/2/page/6/">&raquo;</a></li>
+    <li class="page-item"><a class="page-link" href="https://consultation-recherche-donnees-sante.netlify.app/publication-type/2/page/6/">&raquo;</a></li>
     
   </ul>
 </nav>
@@ -1121,7 +1159,7 @@
     
     
     
-    <script src="/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
+    <script src="https://consultation-recherche-donnees-sante.netlify.app/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
 
     
 

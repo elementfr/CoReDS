@@ -37,7 +37,7 @@
   <meta name="description" content="BACKGROUND:In adults, the most common cause of out-of-hospital cardiac arrests (OHCA) is acute coronary artery occlusion. If an immediate coronary angiogram (CAG) is recommended for survivors presenting a ST segment elevation on the electrocardiogram (ECG) performed after resuscitation, there is still a debate regarding the best strategy in patients without ST segment elevation.HYPOTHESIS:Performing an immediate CAG after an OHCA without ST segment elevation on the post-resuscitation ECG and no obvious non-cardiac cause of arrest could lead to a better 180-day survival rate with no or minimal neurological sequel as compared with a delayed CAG performed 48 to 96 hours after the arrest.DESIGN:The EMERGE trial is a prospective national, randomized, open and parallel group trial, in which 970 survivors of OHCA will be randomized (1:1) to either immediate (as soon as possible after return of spontaneous circulation) or delayed (48 to 96 h) CAG. Participants will be OHCA patients with no ST segment elevation on the post resuscitation ECG and no obvious non-cardiac cause of arrest. The primary endpoint of the study is the 180-day survival rate with no or minimal neurological sequel corresponding to Cerebral Performance Category (CPC) 1 or 2. The secondary endpoints are: occurrence of shock during the first 48 hours, ventricular tachycardia and/or fibrillation during the first 48 hours, change in left ventricular ejection fraction between baseline and 180 days assessed by echocardiogram, neurological status evaluated by the CPC score at intensive care unit (ICU) discharge and day 90 neurological status assessed by the Glasgow Outcome Scale Extended score (GOSE) at 90 and 180 days, overall survival rate, and hospital length of stay.SUMMARY:The EMERGE trial is a prospective, multicenter, randomized, controlled trial that will assess the 180-day survival rate with no or minimal neurologic sequel in patients resuscitated from an OHCA without ST segment elevation and who will be managed with either immediate or delayed CAG. ">
 
   
-  <link rel="alternate" hreflang="fr" href="https://www.coreds.com/publication/2020-04-01_emergency_versus_del/">
+  <link rel="alternate" hreflang="fr" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2020-04-01_emergency_versus_del/">
 
   
 
@@ -66,7 +66,7 @@
   
   
   
-  <script src="/js/mathjax-config.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/mathjax-config.js"></script>
   
 
   
@@ -241,13 +241,51 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.css">
+  <link rel="stylesheet" href="https://consultation-recherche-donnees-sante.netlify.app/css/wowchemy.css">
 
   
 
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-80B5KND2Y6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-80B5KND2Y6', { 'anonymize_ip': true });
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
   
@@ -258,11 +296,11 @@
 
   
 
-  <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
+  <link rel="manifest" href="https://consultation-recherche-donnees-sante.netlify.app/index.webmanifest">
+  <link rel="icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="https://www.coreds.com/publication/2020-04-01_emergency_versus_del/">
+  <link rel="canonical" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2020-04-01_emergency_versus_del/">
 
   
   
@@ -278,10 +316,10 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:url" content="https://www.coreds.com/publication/2020-04-01_emergency_versus_del/">
+  <meta property="og:url" content="https://consultation-recherche-donnees-sante.netlify.app/publication/2020-04-01_emergency_versus_del/">
   <meta property="og:title" content="EMERGEncy versus delayed coronary angiogram in survivors of out-of-hospital cardiac arrest with no obvious non-cardiac cause of arrest: Design of the EMERGE trial. | Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:description" content="BACKGROUND:In adults, the most common cause of out-of-hospital cardiac arrests (OHCA) is acute coronary artery occlusion. If an immediate coronary angiogram (CAG) is recommended for survivors presenting a ST segment elevation on the electrocardiogram (ECG) performed after resuscitation, there is still a debate regarding the best strategy in patients without ST segment elevation.HYPOTHESIS:Performing an immediate CAG after an OHCA without ST segment elevation on the post-resuscitation ECG and no obvious non-cardiac cause of arrest could lead to a better 180-day survival rate with no or minimal neurological sequel as compared with a delayed CAG performed 48 to 96 hours after the arrest.DESIGN:The EMERGE trial is a prospective national, randomized, open and parallel group trial, in which 970 survivors of OHCA will be randomized (1:1) to either immediate (as soon as possible after return of spontaneous circulation) or delayed (48 to 96 h) CAG. Participants will be OHCA patients with no ST segment elevation on the post resuscitation ECG and no obvious non-cardiac cause of arrest. The primary endpoint of the study is the 180-day survival rate with no or minimal neurological sequel corresponding to Cerebral Performance Category (CPC) 1 or 2. The secondary endpoints are: occurrence of shock during the first 48 hours, ventricular tachycardia and/or fibrillation during the first 48 hours, change in left ventricular ejection fraction between baseline and 180 days assessed by echocardiogram, neurological status evaluated by the CPC score at intensive care unit (ICU) discharge and day 90 neurological status assessed by the Glasgow Outcome Scale Extended score (GOSE) at 90 and 180 days, overall survival rate, and hospital length of stay.SUMMARY:The EMERGE trial is a prospective, multicenter, randomized, controlled trial that will assess the 180-day survival rate with no or minimal neurologic sequel in patients resuscitated from an OHCA without ST segment elevation and who will be managed with either immediate or delayed CAG. "><meta property="og:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
-  <meta property="twitter:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
+  <meta property="og:description" content="BACKGROUND:In adults, the most common cause of out-of-hospital cardiac arrests (OHCA) is acute coronary artery occlusion. If an immediate coronary angiogram (CAG) is recommended for survivors presenting a ST segment elevation on the electrocardiogram (ECG) performed after resuscitation, there is still a debate regarding the best strategy in patients without ST segment elevation.HYPOTHESIS:Performing an immediate CAG after an OHCA without ST segment elevation on the post-resuscitation ECG and no obvious non-cardiac cause of arrest could lead to a better 180-day survival rate with no or minimal neurological sequel as compared with a delayed CAG performed 48 to 96 hours after the arrest.DESIGN:The EMERGE trial is a prospective national, randomized, open and parallel group trial, in which 970 survivors of OHCA will be randomized (1:1) to either immediate (as soon as possible after return of spontaneous circulation) or delayed (48 to 96 h) CAG. Participants will be OHCA patients with no ST segment elevation on the post resuscitation ECG and no obvious non-cardiac cause of arrest. The primary endpoint of the study is the 180-day survival rate with no or minimal neurological sequel corresponding to Cerebral Performance Category (CPC) 1 or 2. The secondary endpoints are: occurrence of shock during the first 48 hours, ventricular tachycardia and/or fibrillation during the first 48 hours, change in left ventricular ejection fraction between baseline and 180 days assessed by echocardiogram, neurological status evaluated by the CPC score at intensive care unit (ICU) discharge and day 90 neurological status assessed by the Glasgow Outcome Scale Extended score (GOSE) at 90 and 180 days, overall survival rate, and hospital length of stay.SUMMARY:The EMERGE trial is a prospective, multicenter, randomized, controlled trial that will assess the 180-day survival rate with no or minimal neurologic sequel in patients resuscitated from an OHCA without ST segment elevation and who will be managed with either immediate or delayed CAG. "><meta property="og:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
+  <meta property="twitter:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
   
     
       <meta property="article:published_time" content="2020-04-01T00:00:00&#43;00:00">
@@ -308,7 +346,7 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://www.coreds.com/publication/2020-04-01_emergency_versus_del/"
+    "@id": "https://consultation-recherche-donnees-sante.netlify.app/publication/2020-04-01_emergency_versus_del/"
   },
   "headline": "EMERGEncy versus delayed coronary angiogram in survivors of out-of-hospital cardiac arrest with no obvious non-cardiac cause of arrest: Design of the EMERGE trial.",
   
@@ -325,7 +363,7 @@
     "name": "Consultation Recherche Données de Santé - CoReDS",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
+      "url": "https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
     }
   },
   "description": "BACKGROUND:In adults, the most common cause of out-of-hospital cardiac arrests (OHCA) is acute coronary artery occlusion. If an immediate coronary angiogram (CAG) is recommended for survivors presenting a ST segment elevation on the electrocardiogram (ECG) performed after resuscitation, there is still a debate regarding the best strategy in patients without ST segment elevation.HYPOTHESIS:Performing an immediate CAG after an OHCA without ST segment elevation on the post-resuscitation ECG and no obvious non-cardiac cause of arrest could lead to a better 180-day survival rate with no or minimal neurological sequel as compared with a delayed CAG performed 48 to 96 hours after the arrest.DESIGN:The EMERGE trial is a prospective national, randomized, open and parallel group trial, in which 970 survivors of OHCA will be randomized (1:1) to either immediate (as soon as possible after return of spontaneous circulation) or delayed (48 to 96 h) CAG. Participants will be OHCA patients with no ST segment elevation on the post resuscitation ECG and no obvious non-cardiac cause of arrest. The primary endpoint of the study is the 180-day survival rate with no or minimal neurological sequel corresponding to Cerebral Performance Category (CPC) 1 or 2. The secondary endpoints are: occurrence of shock during the first 48 hours, ventricular tachycardia and/or fibrillation during the first 48 hours, change in left ventricular ejection fraction between baseline and 180 days assessed by echocardiogram, neurological status evaluated by the CPC score at intensive care unit (ICU) discharge and day 90 neurological status assessed by the Glasgow Outcome Scale Extended score (GOSE) at 90 and 180 days, overall survival rate, and hospital length of stay.SUMMARY:The EMERGE trial is a prospective, multicenter, randomized, controlled trial that will assess the 180-day survival rate with no or minimal neurologic sequel in patients resuscitated from an OHCA without ST segment elevation and who will be managed with either immediate or delayed CAG. "
@@ -390,7 +428,7 @@
     <script>const isSiteThemeDark = false;</script>
   
   
-  <script src="/js/load-theme.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/load-theme.js"></script>
 
   <aside class="search-results" id="search">
   <div class="container">
@@ -445,7 +483,7 @@
 
     
     <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -458,7 +496,7 @@
 
     
     <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -494,7 +532,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/entreprendre/"><span>Commencer un projet</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/entreprendre/"><span>Commencer un projet</span></a>
         </li>
 
         
@@ -524,44 +562,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/suivremonprojet/"><span>Suivre son projet</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-            
-            
-            
-              
-            
-            
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#outils"><span>Boite à outils</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/suivremonprojet/"><span>Suivre son projet</span></a>
         </li>
 
         
@@ -598,7 +599,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#publi"><span>Publications</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#outils"><span>Boite à outils</span></a>
         </li>
 
         
@@ -635,7 +636,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#transparence"><span>Portail de transparence</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#publi"><span>Publications</span></a>
         </li>
 
         
@@ -672,7 +673,44 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#people"><span>Qui sommes-nous ?</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#transparence"><span>Portail de transparence</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#people"><span>Qui sommes-nous ?</span></a>
         </li>
 
         
@@ -745,7 +783,7 @@
     
 
   
-  <span ><a href="/author/hauw-berlemont-caroline/">Hauw-Berlemont Caroline</a></span>, <span ><a href="/author/lamhaut-lionel/">Lamhaut Lionel</a></span>, <span ><a href="/author/diehl-jean-luc/">Diehl Jean-Luc</a></span>, <span ><a href="/author/andreotti-christophe/">Andreotti Christophe</a></span>, <span ><a href="/author/varenne-olivier/">Varenne Olivier</a></span>, <span ><a href="/author/leroux-pierre/">Leroux Pierre</a></span>, <span ><a href="/author/lascarrou-jean-baptiste/">Lascarrou Jean-Baptiste</a></span>, <span ><a href="/author/guerin-patrice/">Guerin Patrice</a></span>, <span ><a href="/author/loeb-thomas/">Loeb Thomas</a></span>, <span ><a href="/author/roupie-eric/">Roupie Eric</a></span>, <span ><a href="/author/daubin-cedric/">Daubin Cedric</a></span>, <span ><a href="/author/beygui-farzin/">Beygui Farzin</a></span>, <span ><a href="/author/vilfaillot-aurelie/">Vilfaillot Aurelie</a></span>, <span ><a href="/author/glippa-sophie/">Glippa Sophie</a></span>, <span ><a href="/author/djadi-prat-juliette/">Djadi-Prat Juliette</a></span>, <span ><a href="/author/chatellier-gilles/">Chatellier Gilles</a></span>, <span ><a href="/author/cariou-alain/">Cariou Alain</a></span>, <span ><a href="/author/spaulding-christian/">Spaulding Christian</a></span>
+  <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/hauw-berlemont-caroline/">Hauw-Berlemont Caroline</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/lamhaut-lionel/">Lamhaut Lionel</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/diehl-jean-luc/">Diehl Jean-Luc</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/andreotti-christophe/">Andreotti Christophe</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/varenne-olivier/">Varenne Olivier</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/leroux-pierre/">Leroux Pierre</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/lascarrou-jean-baptiste/">Lascarrou Jean-Baptiste</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/guerin-patrice/">Guerin Patrice</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/loeb-thomas/">Loeb Thomas</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/roupie-eric/">Roupie Eric</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/daubin-cedric/">Daubin Cedric</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/beygui-farzin/">Beygui Farzin</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/vilfaillot-aurelie/">Vilfaillot Aurelie</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/glippa-sophie/">Glippa Sophie</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/djadi-prat-juliette/">Djadi-Prat Juliette</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/chatellier-gilles/">Chatellier Gilles</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/cariou-alain/">Cariou Alain</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/spaulding-christian/">Spaulding Christian</a></span>
   </div>
   
   
@@ -811,7 +849,7 @@
           <div class="col-12 col-md-9">
             
             
-            <a href="/publication/#2">
+            <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/#2">
               Article de revue
             </a>
             
@@ -870,7 +908,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://www.coreds.com/publication/2020-04-01_emergency_versus_del/&amp;text=EMERGEncy%20versus%20delayed%20coronary%20angiogram%20in%20survivors%20of%20out-of-hospital%20cardiac%20arrest%20with%20no%20obvious%20non-cardiac%20cause%20of%20arrest:%20Design%20of%20the%20EMERGE%20trial." target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2020-04-01_emergency_versus_del/&amp;text=EMERGEncy%20versus%20delayed%20coronary%20angiogram%20in%20survivors%20of%20out-of-hospital%20cardiac%20arrest%20with%20no%20obvious%20non-cardiac%20cause%20of%20arrest:%20Design%20of%20the%20EMERGE%20trial." target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -883,7 +921,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://www.coreds.com/publication/2020-04-01_emergency_versus_del/&amp;t=EMERGEncy%20versus%20delayed%20coronary%20angiogram%20in%20survivors%20of%20out-of-hospital%20cardiac%20arrest%20with%20no%20obvious%20non-cardiac%20cause%20of%20arrest:%20Design%20of%20the%20EMERGE%20trial." target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://consultation-recherche-donnees-sante.netlify.app/publication/2020-04-01_emergency_versus_del/&amp;t=EMERGEncy%20versus%20delayed%20coronary%20angiogram%20in%20survivors%20of%20out-of-hospital%20cardiac%20arrest%20with%20no%20obvious%20non-cardiac%20cause%20of%20arrest:%20Design%20of%20the%20EMERGE%20trial." target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -896,7 +934,7 @@
       
       
       <li>
-        <a href="mailto:?subject=EMERGEncy%20versus%20delayed%20coronary%20angiogram%20in%20survivors%20of%20out-of-hospital%20cardiac%20arrest%20with%20no%20obvious%20non-cardiac%20cause%20of%20arrest:%20Design%20of%20the%20EMERGE%20trial.&amp;body=https://www.coreds.com/publication/2020-04-01_emergency_versus_del/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=EMERGEncy%20versus%20delayed%20coronary%20angiogram%20in%20survivors%20of%20out-of-hospital%20cardiac%20arrest%20with%20no%20obvious%20non-cardiac%20cause%20of%20arrest:%20Design%20of%20the%20EMERGE%20trial.&amp;body=https://consultation-recherche-donnees-sante.netlify.app/publication/2020-04-01_emergency_versus_del/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -909,7 +947,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://www.coreds.com/publication/2020-04-01_emergency_versus_del/&amp;title=EMERGEncy%20versus%20delayed%20coronary%20angiogram%20in%20survivors%20of%20out-of-hospital%20cardiac%20arrest%20with%20no%20obvious%20non-cardiac%20cause%20of%20arrest:%20Design%20of%20the%20EMERGE%20trial." target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2020-04-01_emergency_versus_del/&amp;title=EMERGEncy%20versus%20delayed%20coronary%20angiogram%20in%20survivors%20of%20out-of-hospital%20cardiac%20arrest%20with%20no%20obvious%20non-cardiac%20cause%20of%20arrest:%20Design%20of%20the%20EMERGE%20trial." target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -922,7 +960,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=EMERGEncy%20versus%20delayed%20coronary%20angiogram%20in%20survivors%20of%20out-of-hospital%20cardiac%20arrest%20with%20no%20obvious%20non-cardiac%20cause%20of%20arrest:%20Design%20of%20the%20EMERGE%20trial.%20https://www.coreds.com/publication/2020-04-01_emergency_versus_del/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=EMERGEncy%20versus%20delayed%20coronary%20angiogram%20in%20survivors%20of%20out-of-hospital%20cardiac%20arrest%20with%20no%20obvious%20non-cardiac%20cause%20of%20arrest:%20Design%20of%20the%20EMERGE%20trial.%20https://consultation-recherche-donnees-sante.netlify.app/publication/2020-04-01_emergency_versus_del/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -935,7 +973,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://www.coreds.com/publication/2020-04-01_emergency_versus_del/&amp;title=EMERGEncy%20versus%20delayed%20coronary%20angiogram%20in%20survivors%20of%20out-of-hospital%20cardiac%20arrest%20with%20no%20obvious%20non-cardiac%20cause%20of%20arrest:%20Design%20of%20the%20EMERGE%20trial." target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2020-04-01_emergency_versus_del/&amp;title=EMERGEncy%20versus%20delayed%20coronary%20angiogram%20in%20survivors%20of%20out-of-hospital%20cardiac%20arrest%20with%20no%20obvious%20non-cardiac%20cause%20of%20arrest:%20Design%20of%20the%20EMERGE%20trial." target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1258,7 +1296,7 @@
     
     
     
-    <script src="/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
+    <script src="https://consultation-recherche-donnees-sante.netlify.app/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
 
     
 

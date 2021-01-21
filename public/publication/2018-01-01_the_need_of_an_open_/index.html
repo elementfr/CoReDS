@@ -37,7 +37,7 @@
   <meta name="description" content="Open data available largely and with minimal constraints to the general public and journalists are needed to help rebuild trust between citizens and the health system. By opening data, we can expect to increase the democratic accountability, the self-empowerment of citizens. This article aims at assessing the quality and reusability of the Transparency - Health database with regards to the FAIR principles. More specifically, we observe the quality of the identity of the French medical doctors in the Transp-db. This study shows that the quality of the data in the Transp-db does not allow to identity with certainty those who benefit from an advantage or remuneration to be confirmed, reducing noticeably the impact of the open data effort.">
 
   
-  <link rel="alternate" hreflang="fr" href="https://www.coreds.com/publication/2018-01-01_the_need_of_an_open_/">
+  <link rel="alternate" hreflang="fr" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2018-01-01_the_need_of_an_open_/">
 
   
 
@@ -66,7 +66,7 @@
   
   
   
-  <script src="/js/mathjax-config.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/mathjax-config.js"></script>
   
 
   
@@ -241,13 +241,51 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.css">
+  <link rel="stylesheet" href="https://consultation-recherche-donnees-sante.netlify.app/css/wowchemy.css">
 
   
 
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-80B5KND2Y6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-80B5KND2Y6', { 'anonymize_ip': true });
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
   
@@ -258,11 +296,11 @@
 
   
 
-  <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
+  <link rel="manifest" href="https://consultation-recherche-donnees-sante.netlify.app/index.webmanifest">
+  <link rel="icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="https://www.coreds.com/publication/2018-01-01_the_need_of_an_open_/">
+  <link rel="canonical" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2018-01-01_the_need_of_an_open_/">
 
   
   
@@ -278,10 +316,10 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:url" content="https://www.coreds.com/publication/2018-01-01_the_need_of_an_open_/">
+  <meta property="og:url" content="https://consultation-recherche-donnees-sante.netlify.app/publication/2018-01-01_the_need_of_an_open_/">
   <meta property="og:title" content="The Need of an Open Data Quality Policy: The Case of the &amp;quot;Transparency - Health&amp;quot; Database in the Prevention of Conflict of Interest. | Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:description" content="Open data available largely and with minimal constraints to the general public and journalists are needed to help rebuild trust between citizens and the health system. By opening data, we can expect to increase the democratic accountability, the self-empowerment of citizens. This article aims at assessing the quality and reusability of the Transparency - Health database with regards to the FAIR principles. More specifically, we observe the quality of the identity of the French medical doctors in the Transp-db. This study shows that the quality of the data in the Transp-db does not allow to identity with certainty those who benefit from an advantage or remuneration to be confirmed, reducing noticeably the impact of the open data effort."><meta property="og:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
-  <meta property="twitter:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
+  <meta property="og:description" content="Open data available largely and with minimal constraints to the general public and journalists are needed to help rebuild trust between citizens and the health system. By opening data, we can expect to increase the democratic accountability, the self-empowerment of citizens. This article aims at assessing the quality and reusability of the Transparency - Health database with regards to the FAIR principles. More specifically, we observe the quality of the identity of the French medical doctors in the Transp-db. This study shows that the quality of the data in the Transp-db does not allow to identity with certainty those who benefit from an advantage or remuneration to be confirmed, reducing noticeably the impact of the open data effort."><meta property="og:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
+  <meta property="twitter:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
   
     
       <meta property="article:published_time" content="2018-01-01T00:00:00&#43;00:00">
@@ -308,7 +346,7 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://www.coreds.com/publication/2018-01-01_the_need_of_an_open_/"
+    "@id": "https://consultation-recherche-donnees-sante.netlify.app/publication/2018-01-01_the_need_of_an_open_/"
   },
   "headline": "The Need of an Open Data Quality Policy: The Case of the \u0026quot;Transparency - Health\u0026quot; Database in the Prevention of Conflict of Interest.",
   
@@ -325,7 +363,7 @@
     "name": "Consultation Recherche Données de Santé - CoReDS",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
+      "url": "https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
     }
   },
   "description": "Open data available largely and with minimal constraints to the general public and journalists are needed to help rebuild trust between citizens and the health system. By opening data, we can expect to increase the democratic accountability, the self-empowerment of citizens. This article aims at assessing the quality and reusability of the Transparency - Health database with regards to the FAIR principles. More specifically, we observe the quality of the identity of the French medical doctors in the Transp-db. This study shows that the quality of the data in the Transp-db does not allow to identity with certainty those who benefit from an advantage or remuneration to be confirmed, reducing noticeably the impact of the open data effort."
@@ -390,7 +428,7 @@
     <script>const isSiteThemeDark = false;</script>
   
   
-  <script src="/js/load-theme.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/load-theme.js"></script>
 
   <aside class="search-results" id="search">
   <div class="container">
@@ -445,7 +483,7 @@
 
     
     <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -458,7 +496,7 @@
 
     
     <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -494,7 +532,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/entreprendre/"><span>Commencer un projet</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/entreprendre/"><span>Commencer un projet</span></a>
         </li>
 
         
@@ -524,44 +562,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/suivremonprojet/"><span>Suivre son projet</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-            
-            
-            
-              
-            
-            
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#outils"><span>Boite à outils</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/suivremonprojet/"><span>Suivre son projet</span></a>
         </li>
 
         
@@ -598,7 +599,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#publi"><span>Publications</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#outils"><span>Boite à outils</span></a>
         </li>
 
         
@@ -635,7 +636,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#transparence"><span>Portail de transparence</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#publi"><span>Publications</span></a>
         </li>
 
         
@@ -672,7 +673,44 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#people"><span>Qui sommes-nous ?</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#transparence"><span>Portail de transparence</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#people"><span>Qui sommes-nous ?</span></a>
         </li>
 
         
@@ -745,7 +783,7 @@
     
 
   
-  <span ><a href="/author/jantzen-rodolphe/">Jantzen Rodolphe</a></span>, <span ><a href="/author/rance-bastien/">Rance Bastien</a></span>, <span ><a href="/author/katsahian-sandrine/">Katsahian Sandrine</a></span>, <span ><a href="/author/burgun-anita/">Burgun Anita</a></span>, <span ><a href="/author/looten-vincent/">Looten Vincent</a></span>
+  <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/jantzen-rodolphe/">Jantzen Rodolphe</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/rance-bastien/">Rance Bastien</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/katsahian-sandrine/">Katsahian Sandrine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/burgun-anita/">Burgun Anita</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/looten-vincent/">Looten Vincent</a></span>
   </div>
   
   
@@ -811,7 +849,7 @@
           <div class="col-12 col-md-9">
             
             
-            <a href="/publication/#2">
+            <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/#2">
               Article de revue
             </a>
             
@@ -870,7 +908,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://www.coreds.com/publication/2018-01-01_the_need_of_an_open_/&amp;text=The%20Need%20of%20an%20Open%20Data%20Quality%20Policy:%20The%20Case%20of%20the%20&amp;amp;quot;Transparency%20-%20Health&amp;amp;quot;%20Database%20in%20the%20Prevention%20of%20Conflict%20of%20Interest." target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2018-01-01_the_need_of_an_open_/&amp;text=The%20Need%20of%20an%20Open%20Data%20Quality%20Policy:%20The%20Case%20of%20the%20&amp;amp;quot;Transparency%20-%20Health&amp;amp;quot;%20Database%20in%20the%20Prevention%20of%20Conflict%20of%20Interest." target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -883,7 +921,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://www.coreds.com/publication/2018-01-01_the_need_of_an_open_/&amp;t=The%20Need%20of%20an%20Open%20Data%20Quality%20Policy:%20The%20Case%20of%20the%20&amp;amp;quot;Transparency%20-%20Health&amp;amp;quot;%20Database%20in%20the%20Prevention%20of%20Conflict%20of%20Interest." target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://consultation-recherche-donnees-sante.netlify.app/publication/2018-01-01_the_need_of_an_open_/&amp;t=The%20Need%20of%20an%20Open%20Data%20Quality%20Policy:%20The%20Case%20of%20the%20&amp;amp;quot;Transparency%20-%20Health&amp;amp;quot;%20Database%20in%20the%20Prevention%20of%20Conflict%20of%20Interest." target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -896,7 +934,7 @@
       
       
       <li>
-        <a href="mailto:?subject=The%20Need%20of%20an%20Open%20Data%20Quality%20Policy:%20The%20Case%20of%20the%20&amp;amp;quot;Transparency%20-%20Health&amp;amp;quot;%20Database%20in%20the%20Prevention%20of%20Conflict%20of%20Interest.&amp;body=https://www.coreds.com/publication/2018-01-01_the_need_of_an_open_/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=The%20Need%20of%20an%20Open%20Data%20Quality%20Policy:%20The%20Case%20of%20the%20&amp;amp;quot;Transparency%20-%20Health&amp;amp;quot;%20Database%20in%20the%20Prevention%20of%20Conflict%20of%20Interest.&amp;body=https://consultation-recherche-donnees-sante.netlify.app/publication/2018-01-01_the_need_of_an_open_/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -909,7 +947,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://www.coreds.com/publication/2018-01-01_the_need_of_an_open_/&amp;title=The%20Need%20of%20an%20Open%20Data%20Quality%20Policy:%20The%20Case%20of%20the%20&amp;amp;quot;Transparency%20-%20Health&amp;amp;quot;%20Database%20in%20the%20Prevention%20of%20Conflict%20of%20Interest." target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2018-01-01_the_need_of_an_open_/&amp;title=The%20Need%20of%20an%20Open%20Data%20Quality%20Policy:%20The%20Case%20of%20the%20&amp;amp;quot;Transparency%20-%20Health&amp;amp;quot;%20Database%20in%20the%20Prevention%20of%20Conflict%20of%20Interest." target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -922,7 +960,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=The%20Need%20of%20an%20Open%20Data%20Quality%20Policy:%20The%20Case%20of%20the%20&amp;amp;quot;Transparency%20-%20Health&amp;amp;quot;%20Database%20in%20the%20Prevention%20of%20Conflict%20of%20Interest.%20https://www.coreds.com/publication/2018-01-01_the_need_of_an_open_/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=The%20Need%20of%20an%20Open%20Data%20Quality%20Policy:%20The%20Case%20of%20the%20&amp;amp;quot;Transparency%20-%20Health&amp;amp;quot;%20Database%20in%20the%20Prevention%20of%20Conflict%20of%20Interest.%20https://consultation-recherche-donnees-sante.netlify.app/publication/2018-01-01_the_need_of_an_open_/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -935,7 +973,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://www.coreds.com/publication/2018-01-01_the_need_of_an_open_/&amp;title=The%20Need%20of%20an%20Open%20Data%20Quality%20Policy:%20The%20Case%20of%20the%20&amp;amp;quot;Transparency%20-%20Health&amp;amp;quot;%20Database%20in%20the%20Prevention%20of%20Conflict%20of%20Interest." target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2018-01-01_the_need_of_an_open_/&amp;title=The%20Need%20of%20an%20Open%20Data%20Quality%20Policy:%20The%20Case%20of%20the%20&amp;amp;quot;Transparency%20-%20Health&amp;amp;quot;%20Database%20in%20the%20Prevention%20of%20Conflict%20of%20Interest." target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1005,7 +1043,7 @@
     <h3>Sur le même sujet</h3>
     <ul>
       
-      <li><a href="/publication/2020-08-01_natural_language_pro/">Natural Language Processing for Rapid Response to Emergent Diseases: Case Study of Calcium Channel Blockers and Hypertension in the COVID-19 Pandemic.</a></li>
+      <li><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2020-08-01_natural_language_pro/">Natural Language Processing for Rapid Response to Emergent Diseases: Case Study of Calcium Channel Blockers and Hypertension in the COVID-19 Pandemic.</a></li>
       
     </ul>
   </div>
@@ -1189,7 +1227,7 @@
     
     
     
-    <script src="/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
+    <script src="https://consultation-recherche-donnees-sante.netlify.app/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
 
     
 

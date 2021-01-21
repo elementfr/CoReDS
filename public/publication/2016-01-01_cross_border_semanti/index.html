@@ -37,7 +37,7 @@
   <meta name="description" content="With the development of platforms enabling the use of routinely collected clinical data in the context of international clinical research, scalable solutions for cross border semantic interoperability need to be developed. Within the context of the IMI EHR4CR project, we first defined the requirements and evaluation criteria of the EHR4CR semantic interoperability platform and then developed the semantic resources and supportive services and tooling to assist hospital sites in standardizing their data for allowing the execution of the project use cases. The experience gained from the evaluation of the EHR4CR platform accessing to semantically equivalent data elements across 11 European participating EHR systems from 5 countries demonstrated how far the mediation model and mapping efforts met the expected requirements of the project. Developers of semantic interoperability platforms are beginning to address a core set of requirements in order to reach the goal of developing cross border semantic integration of data.">
 
   
-  <link rel="alternate" hreflang="fr" href="https://www.coreds.com/publication/2016-01-01_cross_border_semanti/">
+  <link rel="alternate" hreflang="fr" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2016-01-01_cross_border_semanti/">
 
   
 
@@ -66,7 +66,7 @@
   
   
   
-  <script src="/js/mathjax-config.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/mathjax-config.js"></script>
   
 
   
@@ -241,13 +241,51 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.css">
+  <link rel="stylesheet" href="https://consultation-recherche-donnees-sante.netlify.app/css/wowchemy.css">
 
   
 
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-80B5KND2Y6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-80B5KND2Y6', { 'anonymize_ip': true });
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
   
@@ -258,11 +296,11 @@
 
   
 
-  <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
+  <link rel="manifest" href="https://consultation-recherche-donnees-sante.netlify.app/index.webmanifest">
+  <link rel="icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="https://www.coreds.com/publication/2016-01-01_cross_border_semanti/">
+  <link rel="canonical" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2016-01-01_cross_border_semanti/">
 
   
   
@@ -278,10 +316,10 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:url" content="https://www.coreds.com/publication/2016-01-01_cross_border_semanti/">
+  <meta property="og:url" content="https://consultation-recherche-donnees-sante.netlify.app/publication/2016-01-01_cross_border_semanti/">
   <meta property="og:title" content="Cross border semantic interoperability for clinical research: the EHR4CR semantic resources and services. | Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:description" content="With the development of platforms enabling the use of routinely collected clinical data in the context of international clinical research, scalable solutions for cross border semantic interoperability need to be developed. Within the context of the IMI EHR4CR project, we first defined the requirements and evaluation criteria of the EHR4CR semantic interoperability platform and then developed the semantic resources and supportive services and tooling to assist hospital sites in standardizing their data for allowing the execution of the project use cases. The experience gained from the evaluation of the EHR4CR platform accessing to semantically equivalent data elements across 11 European participating EHR systems from 5 countries demonstrated how far the mediation model and mapping efforts met the expected requirements of the project. Developers of semantic interoperability platforms are beginning to address a core set of requirements in order to reach the goal of developing cross border semantic integration of data."><meta property="og:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
-  <meta property="twitter:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
+  <meta property="og:description" content="With the development of platforms enabling the use of routinely collected clinical data in the context of international clinical research, scalable solutions for cross border semantic interoperability need to be developed. Within the context of the IMI EHR4CR project, we first defined the requirements and evaluation criteria of the EHR4CR semantic interoperability platform and then developed the semantic resources and supportive services and tooling to assist hospital sites in standardizing their data for allowing the execution of the project use cases. The experience gained from the evaluation of the EHR4CR platform accessing to semantically equivalent data elements across 11 European participating EHR systems from 5 countries demonstrated how far the mediation model and mapping efforts met the expected requirements of the project. Developers of semantic interoperability platforms are beginning to address a core set of requirements in order to reach the goal of developing cross border semantic integration of data."><meta property="og:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
+  <meta property="twitter:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
   
     
       <meta property="article:published_time" content="2016-01-01T00:00:00&#43;00:00">
@@ -308,7 +346,7 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://www.coreds.com/publication/2016-01-01_cross_border_semanti/"
+    "@id": "https://consultation-recherche-donnees-sante.netlify.app/publication/2016-01-01_cross_border_semanti/"
   },
   "headline": "Cross border semantic interoperability for clinical research: the EHR4CR semantic resources and services.",
   
@@ -325,7 +363,7 @@
     "name": "Consultation Recherche Données de Santé - CoReDS",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
+      "url": "https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
     }
   },
   "description": "With the development of platforms enabling the use of routinely collected clinical data in the context of international clinical research, scalable solutions for cross border semantic interoperability need to be developed. Within the context of the IMI EHR4CR project, we first defined the requirements and evaluation criteria of the EHR4CR semantic interoperability platform and then developed the semantic resources and supportive services and tooling to assist hospital sites in standardizing their data for allowing the execution of the project use cases. The experience gained from the evaluation of the EHR4CR platform accessing to semantically equivalent data elements across 11 European participating EHR systems from 5 countries demonstrated how far the mediation model and mapping efforts met the expected requirements of the project. Developers of semantic interoperability platforms are beginning to address a core set of requirements in order to reach the goal of developing cross border semantic integration of data."
@@ -390,7 +428,7 @@
     <script>const isSiteThemeDark = false;</script>
   
   
-  <script src="/js/load-theme.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/load-theme.js"></script>
 
   <aside class="search-results" id="search">
   <div class="container">
@@ -445,7 +483,7 @@
 
     
     <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -458,7 +496,7 @@
 
     
     <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -494,7 +532,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/entreprendre/"><span>Commencer un projet</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/entreprendre/"><span>Commencer un projet</span></a>
         </li>
 
         
@@ -524,44 +562,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/suivremonprojet/"><span>Suivre son projet</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-            
-            
-            
-              
-            
-            
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#outils"><span>Boite à outils</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/suivremonprojet/"><span>Suivre son projet</span></a>
         </li>
 
         
@@ -598,7 +599,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#publi"><span>Publications</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#outils"><span>Boite à outils</span></a>
         </li>
 
         
@@ -635,7 +636,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#transparence"><span>Portail de transparence</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#publi"><span>Publications</span></a>
         </li>
 
         
@@ -672,7 +673,44 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#people"><span>Qui sommes-nous ?</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#transparence"><span>Portail de transparence</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#people"><span>Qui sommes-nous ?</span></a>
         </li>
 
         
@@ -745,7 +783,7 @@
     
 
   
-  <span ><a href="/author/daniel-christel/">Daniel Christel</a></span>, <span ><a href="/author/ouagne-david/">Ouagne David</a></span>, <span ><a href="/author/sadou-eric/">Sadou Eric</a></span>, <span ><a href="/author/forsberg-kerstin/">Forsberg Kerstin</a></span>, <span ><a href="/author/gilchrist-mark-mc/">Gilchrist Mark Mc</a></span>, <span ><a href="/author/zapletal-eric/">Zapletal Eric</a></span>, <span ><a href="/author/paris-nicolas/">Paris Nicolas</a></span>, <span ><a href="/author/hussain-sajjad/">Hussain Sajjad</a></span>, <span ><a href="/author/jaulent-marie-christine/">Jaulent Marie-Christine</a></span>, <span ><a href="/author/kalra-dipka/">Kalra Dipka</a></span>
+  <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/daniel-christel/">Daniel Christel</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/ouagne-david/">Ouagne David</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/sadou-eric/">Sadou Eric</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/forsberg-kerstin/">Forsberg Kerstin</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/gilchrist-mark-mc/">Gilchrist Mark Mc</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/zapletal-eric/">Zapletal Eric</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/paris-nicolas/">Paris Nicolas</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/hussain-sajjad/">Hussain Sajjad</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/jaulent-marie-christine/">Jaulent Marie-Christine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/kalra-dipka/">Kalra Dipka</a></span>
   </div>
   
   
@@ -811,7 +849,7 @@
           <div class="col-12 col-md-9">
             
             
-            <a href="/publication/#2">
+            <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/#2">
               Article de revue
             </a>
             
@@ -870,7 +908,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://www.coreds.com/publication/2016-01-01_cross_border_semanti/&amp;text=Cross%20border%20semantic%20interoperability%20for%20clinical%20research:%20the%20EHR4CR%20semantic%20resources%20and%20services." target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2016-01-01_cross_border_semanti/&amp;text=Cross%20border%20semantic%20interoperability%20for%20clinical%20research:%20the%20EHR4CR%20semantic%20resources%20and%20services." target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -883,7 +921,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://www.coreds.com/publication/2016-01-01_cross_border_semanti/&amp;t=Cross%20border%20semantic%20interoperability%20for%20clinical%20research:%20the%20EHR4CR%20semantic%20resources%20and%20services." target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://consultation-recherche-donnees-sante.netlify.app/publication/2016-01-01_cross_border_semanti/&amp;t=Cross%20border%20semantic%20interoperability%20for%20clinical%20research:%20the%20EHR4CR%20semantic%20resources%20and%20services." target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -896,7 +934,7 @@
       
       
       <li>
-        <a href="mailto:?subject=Cross%20border%20semantic%20interoperability%20for%20clinical%20research:%20the%20EHR4CR%20semantic%20resources%20and%20services.&amp;body=https://www.coreds.com/publication/2016-01-01_cross_border_semanti/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=Cross%20border%20semantic%20interoperability%20for%20clinical%20research:%20the%20EHR4CR%20semantic%20resources%20and%20services.&amp;body=https://consultation-recherche-donnees-sante.netlify.app/publication/2016-01-01_cross_border_semanti/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -909,7 +947,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://www.coreds.com/publication/2016-01-01_cross_border_semanti/&amp;title=Cross%20border%20semantic%20interoperability%20for%20clinical%20research:%20the%20EHR4CR%20semantic%20resources%20and%20services." target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2016-01-01_cross_border_semanti/&amp;title=Cross%20border%20semantic%20interoperability%20for%20clinical%20research:%20the%20EHR4CR%20semantic%20resources%20and%20services." target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -922,7 +960,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=Cross%20border%20semantic%20interoperability%20for%20clinical%20research:%20the%20EHR4CR%20semantic%20resources%20and%20services.%20https://www.coreds.com/publication/2016-01-01_cross_border_semanti/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=Cross%20border%20semantic%20interoperability%20for%20clinical%20research:%20the%20EHR4CR%20semantic%20resources%20and%20services.%20https://consultation-recherche-donnees-sante.netlify.app/publication/2016-01-01_cross_border_semanti/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -935,7 +973,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://www.coreds.com/publication/2016-01-01_cross_border_semanti/&amp;title=Cross%20border%20semantic%20interoperability%20for%20clinical%20research:%20the%20EHR4CR%20semantic%20resources%20and%20services." target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2016-01-01_cross_border_semanti/&amp;title=Cross%20border%20semantic%20interoperability%20for%20clinical%20research:%20the%20EHR4CR%20semantic%20resources%20and%20services." target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1035,7 +1073,7 @@
     <h3>Sur le même sujet</h3>
     <ul>
       
-      <li><a href="/publication/2020-08-01_natural_language_pro/">Natural Language Processing for Rapid Response to Emergent Diseases: Case Study of Calcium Channel Blockers and Hypertension in the COVID-19 Pandemic.</a></li>
+      <li><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2020-08-01_natural_language_pro/">Natural Language Processing for Rapid Response to Emergent Diseases: Case Study of Calcium Channel Blockers and Hypertension in the COVID-19 Pandemic.</a></li>
       
     </ul>
   </div>
@@ -1219,7 +1257,7 @@
     
     
     
-    <script src="/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
+    <script src="https://consultation-recherche-donnees-sante.netlify.app/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
 
     
 

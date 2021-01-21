@@ -37,7 +37,7 @@
   <meta name="description" content="BACKGROUND:Myotonic Dystrophy type 1 (DM1) is one of the most heterogeneous hereditary disease in terms of age of onset, clinical manifestations, and severity, challenging both medical management and clinical trials. The CTG expansion size is the main factor determining the age of onset although no factor can finely predict phenotype and prognosis. Differences between males and females have not been specifically reported. Our aim is to study gender impact on DM1 phenotype and severity.METHODS:We first performed cross-sectional analysis of main multiorgan clinical parameters in 1409 adult DM1 patients (&amp;gt;18 y) from the DM-Scope nationwide registry and observed different patterns in males and females. Then, we assessed gender impact on social and economic domains using the AFM-Téléthon DM1 survey (n = 970), and morbidity and mortality using the French National Health Service Database (n = 3301).RESULTS:Men more frequently had (1) severe muscular disability with marked myotonia, muscle weakness, cardiac, and respiratory involvement; (2) developmental abnormalities with facial dysmorphism and cognitive impairment inferred from low educational levels and work in specialized environments; and (3) lonely life. Alternatively, women more frequently had cataracts, dysphagia, digestive tract dysfunction, incontinence, thyroid disorder and obesity. Most differences were out of proportion to those observed in the general population. Compared to women, males were more affected in their social and economic life. In addition, they were more frequently hospitalized for cardiac problems, and had a higher mortality rate.CONCLUSIONS:Gender is a previously unrecognized factor influencing DM1 clinical profile and severity of the disease, with worse socio-economic consequences of the disease and higher morbidity and mortality in males. Gender should be considered in the design of both stratified medical management and clinical trials. ">
 
   
-  <link rel="alternate" hreflang="fr" href="https://www.coreds.com/publication/2016-01-01_gender_as_a_modifyin/">
+  <link rel="alternate" hreflang="fr" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2016-01-01_gender_as_a_modifyin/">
 
   
 
@@ -66,7 +66,7 @@
   
   
   
-  <script src="/js/mathjax-config.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/mathjax-config.js"></script>
   
 
   
@@ -241,13 +241,51 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.css">
+  <link rel="stylesheet" href="https://consultation-recherche-donnees-sante.netlify.app/css/wowchemy.css">
 
   
 
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-80B5KND2Y6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-80B5KND2Y6', { 'anonymize_ip': true });
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
   
@@ -258,11 +296,11 @@
 
   
 
-  <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
+  <link rel="manifest" href="https://consultation-recherche-donnees-sante.netlify.app/index.webmanifest">
+  <link rel="icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="https://www.coreds.com/publication/2016-01-01_gender_as_a_modifyin/">
+  <link rel="canonical" href="https://consultation-recherche-donnees-sante.netlify.app/publication/2016-01-01_gender_as_a_modifyin/">
 
   
   
@@ -278,10 +316,10 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:url" content="https://www.coreds.com/publication/2016-01-01_gender_as_a_modifyin/">
+  <meta property="og:url" content="https://consultation-recherche-donnees-sante.netlify.app/publication/2016-01-01_gender_as_a_modifyin/">
   <meta property="og:title" content="Gender as a Modifying Factor Influencing Myotonic Dystrophy Type 1 Phenotype Severity and Mortality: A Nationwide Multiple Databases Cross-Sectional Observational Study. | Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:description" content="BACKGROUND:Myotonic Dystrophy type 1 (DM1) is one of the most heterogeneous hereditary disease in terms of age of onset, clinical manifestations, and severity, challenging both medical management and clinical trials. The CTG expansion size is the main factor determining the age of onset although no factor can finely predict phenotype and prognosis. Differences between males and females have not been specifically reported. Our aim is to study gender impact on DM1 phenotype and severity.METHODS:We first performed cross-sectional analysis of main multiorgan clinical parameters in 1409 adult DM1 patients (&amp;gt;18 y) from the DM-Scope nationwide registry and observed different patterns in males and females. Then, we assessed gender impact on social and economic domains using the AFM-Téléthon DM1 survey (n = 970), and morbidity and mortality using the French National Health Service Database (n = 3301).RESULTS:Men more frequently had (1) severe muscular disability with marked myotonia, muscle weakness, cardiac, and respiratory involvement; (2) developmental abnormalities with facial dysmorphism and cognitive impairment inferred from low educational levels and work in specialized environments; and (3) lonely life. Alternatively, women more frequently had cataracts, dysphagia, digestive tract dysfunction, incontinence, thyroid disorder and obesity. Most differences were out of proportion to those observed in the general population. Compared to women, males were more affected in their social and economic life. In addition, they were more frequently hospitalized for cardiac problems, and had a higher mortality rate.CONCLUSIONS:Gender is a previously unrecognized factor influencing DM1 clinical profile and severity of the disease, with worse socio-economic consequences of the disease and higher morbidity and mortality in males. Gender should be considered in the design of both stratified medical management and clinical trials. "><meta property="og:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
-  <meta property="twitter:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
+  <meta property="og:description" content="BACKGROUND:Myotonic Dystrophy type 1 (DM1) is one of the most heterogeneous hereditary disease in terms of age of onset, clinical manifestations, and severity, challenging both medical management and clinical trials. The CTG expansion size is the main factor determining the age of onset although no factor can finely predict phenotype and prognosis. Differences between males and females have not been specifically reported. Our aim is to study gender impact on DM1 phenotype and severity.METHODS:We first performed cross-sectional analysis of main multiorgan clinical parameters in 1409 adult DM1 patients (&amp;gt;18 y) from the DM-Scope nationwide registry and observed different patterns in males and females. Then, we assessed gender impact on social and economic domains using the AFM-Téléthon DM1 survey (n = 970), and morbidity and mortality using the French National Health Service Database (n = 3301).RESULTS:Men more frequently had (1) severe muscular disability with marked myotonia, muscle weakness, cardiac, and respiratory involvement; (2) developmental abnormalities with facial dysmorphism and cognitive impairment inferred from low educational levels and work in specialized environments; and (3) lonely life. Alternatively, women more frequently had cataracts, dysphagia, digestive tract dysfunction, incontinence, thyroid disorder and obesity. Most differences were out of proportion to those observed in the general population. Compared to women, males were more affected in their social and economic life. In addition, they were more frequently hospitalized for cardiac problems, and had a higher mortality rate.CONCLUSIONS:Gender is a previously unrecognized factor influencing DM1 clinical profile and severity of the disease, with worse socio-economic consequences of the disease and higher morbidity and mortality in males. Gender should be considered in the design of both stratified medical management and clinical trials. "><meta property="og:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
+  <meta property="twitter:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
   
     
       <meta property="article:published_time" content="2016-01-01T00:00:00&#43;00:00">
@@ -308,7 +346,7 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://www.coreds.com/publication/2016-01-01_gender_as_a_modifyin/"
+    "@id": "https://consultation-recherche-donnees-sante.netlify.app/publication/2016-01-01_gender_as_a_modifyin/"
   },
   "headline": "Gender as a Modifying Factor Influencing Myotonic Dystrophy Type 1 Phenotype Severity and Mortality: A Nationwide Multiple Databases Cross-Sectional Observational Study.",
   
@@ -325,7 +363,7 @@
     "name": "Consultation Recherche Données de Santé - CoReDS",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
+      "url": "https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png"
     }
   },
   "description": "BACKGROUND:Myotonic Dystrophy type 1 (DM1) is one of the most heterogeneous hereditary disease in terms of age of onset, clinical manifestations, and severity, challenging both medical management and clinical trials. The CTG expansion size is the main factor determining the age of onset although no factor can finely predict phenotype and prognosis. Differences between males and females have not been specifically reported. Our aim is to study gender impact on DM1 phenotype and severity.METHODS:We first performed cross-sectional analysis of main multiorgan clinical parameters in 1409 adult DM1 patients (\u0026gt;18 y) from the DM-Scope nationwide registry and observed different patterns in males and females. Then, we assessed gender impact on social and economic domains using the AFM-Téléthon DM1 survey (n = 970), and morbidity and mortality using the French National Health Service Database (n = 3301).RESULTS:Men more frequently had (1) severe muscular disability with marked myotonia, muscle weakness, cardiac, and respiratory involvement; (2) developmental abnormalities with facial dysmorphism and cognitive impairment inferred from low educational levels and work in specialized environments; and (3) lonely life. Alternatively, women more frequently had cataracts, dysphagia, digestive tract dysfunction, incontinence, thyroid disorder and obesity. Most differences were out of proportion to those observed in the general population. Compared to women, males were more affected in their social and economic life. In addition, they were more frequently hospitalized for cardiac problems, and had a higher mortality rate.CONCLUSIONS:Gender is a previously unrecognized factor influencing DM1 clinical profile and severity of the disease, with worse socio-economic consequences of the disease and higher morbidity and mortality in males. Gender should be considered in the design of both stratified medical management and clinical trials. "
@@ -390,7 +428,7 @@
     <script>const isSiteThemeDark = false;</script>
   
   
-  <script src="/js/load-theme.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/load-theme.js"></script>
 
   <aside class="search-results" id="search">
   <div class="container">
@@ -445,7 +483,7 @@
 
     
     <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -458,7 +496,7 @@
 
     
     <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -494,7 +532,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/entreprendre/"><span>Commencer un projet</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/entreprendre/"><span>Commencer un projet</span></a>
         </li>
 
         
@@ -524,44 +562,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/suivremonprojet/"><span>Suivre son projet</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-            
-            
-            
-              
-            
-            
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#outils"><span>Boite à outils</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/suivremonprojet/"><span>Suivre son projet</span></a>
         </li>
 
         
@@ -598,7 +599,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#publi"><span>Publications</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#outils"><span>Boite à outils</span></a>
         </li>
 
         
@@ -635,7 +636,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#transparence"><span>Portail de transparence</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#publi"><span>Publications</span></a>
         </li>
 
         
@@ -672,7 +673,44 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#people"><span>Qui sommes-nous ?</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#transparence"><span>Portail de transparence</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#people"><span>Qui sommes-nous ?</span></a>
         </li>
 
         
@@ -745,7 +783,7 @@
     
 
   
-  <span ><a href="/author/dogan-celine/">Dogan Celine</a></span>, <span ><a href="/author/de-antonio-marie/">De Antonio Marie</a></span>, <span ><a href="/author/hamroun-dalil/">Hamroun Dalil</a></span>, <span ><a href="/author/varet-hugo/">Varet Hugo</a></span>, <span ><a href="/author/fabbro-marianne/">Fabbro Marianne</a></span>, <span ><a href="/author/rougier-felix/">Rougier Felix</a></span>, <span ><a href="/author/amarof-khadija/">Amarof Khadija</a></span>, <span ><a href="/author/arne-bes-marie-christine/">Arne Bes Marie-Christine</a></span>, <span ><a href="/author/bedat-millet-anne-laure/">Bedat-Millet Anne-Laure</a></span>, <span ><a href="/author/behin-anthony/">Behin Anthony</a></span>, <span ><a href="/author/bellance-remi/">Bellance Remi</a></span>, <span ><a href="/author/bouhour-francoise/">Bouhour Francoise</a></span>, <span ><a href="/author/boutte-celia/">Boutte Celia</a></span>, <span ><a href="/author/boyer-francois/">Boyer Francois</a></span>, <span ><a href="/author/campana-salort-emmanuelle/">Campana-Salort Emmanuelle</a></span>, <span ><a href="/author/chapon-francoise/">Chapon Francoise</a></span>, <span ><a href="/author/cintas-pascal/">Cintas Pascal</a></span>, <span ><a href="/author/desnuelle-claude/">Desnuelle Claude</a></span>, <span ><a href="/author/deschamps-romain/">Deschamps Romain</a></span>, <span ><a href="/author/drouin-garraud-valerie/">Drouin-Garraud Valerie</a></span>, <span ><a href="/author/ferrer-xavier/">Ferrer Xavier</a></span>, <span ><a href="/author/gervais-bernard-helene/">Gervais-Bernard Helene</a></span>, <span ><a href="/author/ghorab-karima/">Ghorab Karima</a></span>, <span ><a href="/author/laforet-pascal/">Laforet Pascal</a></span>, <span ><a href="/author/magot-armelle/">Magot Armelle</a></span>, <span ><a href="/author/magy-laurent/">Magy Laurent</a></span>, <span ><a href="/author/menard-dominique/">Menard Dominique</a></span>, <span ><a href="/author/minot-marie-christine/">Minot Marie-Christine</a></span>, <span ><a href="/author/nadaj-pakleza-aleksandra/">Nadaj-Pakleza Aleksandra</a></span>, <span ><a href="/author/pellieux-sybille/">Pellieux Sybille</a></span>, <span ><a href="/author/pereon-yann/">Pereon Yann</a></span>, <span ><a href="/author/preudhomme-marguerite/">Preudhomme Marguerite</a></span>, <span ><a href="/author/pouget-jean/">Pouget Jean</a></span>, <span ><a href="/author/sacconi-sabrina/">Sacconi Sabrina</a></span>, <span ><a href="/author/sole-guilhem/">Sole Guilhem</a></span>, <span ><a href="/author/stojkovich-tanya/">Stojkovich Tanya</a></span>, <span ><a href="/author/tiffreau-vincent/">Tiffreau Vincent</a></span>, <span ><a href="/author/urtizberea-andoni/">Urtizberea Andoni</a></span>, <span ><a href="/author/vial-christophe/">Vial Christophe</a></span>, <span ><a href="/author/zagnoli-fabien/">Zagnoli Fabien</a></span>, <span ><a href="/author/caranhac-gilbert/">Caranhac Gilbert</a></span>, <span ><a href="/author/bourlier-claude/">Bourlier Claude</a></span>, <span ><a href="/author/riviere-gerard/">Riviere Gerard</a></span>, <span ><a href="/author/geille-alain/">Geille Alain</a></span>, <span ><a href="/author/gherardi-romain-k/">Gherardi Romain K</a></span>, <span ><a href="/author/eymard-bruno/">Eymard Bruno</a></span>, <span ><a href="/author/puymirat-jack/">Puymirat Jack</a></span>, <span ><a href="/author/katsahian-sandrine/">Katsahian Sandrine</a></span>, <span ><a href="/author/bassez-guillaume/">Bassez Guillaume</a></span>
+  <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/dogan-celine/">Dogan Celine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/de-antonio-marie/">De Antonio Marie</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/hamroun-dalil/">Hamroun Dalil</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/varet-hugo/">Varet Hugo</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/fabbro-marianne/">Fabbro Marianne</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/rougier-felix/">Rougier Felix</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/amarof-khadija/">Amarof Khadija</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/arne-bes-marie-christine/">Arne Bes Marie-Christine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/bedat-millet-anne-laure/">Bedat-Millet Anne-Laure</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/behin-anthony/">Behin Anthony</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/bellance-remi/">Bellance Remi</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/bouhour-francoise/">Bouhour Francoise</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/boutte-celia/">Boutte Celia</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/boyer-francois/">Boyer Francois</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/campana-salort-emmanuelle/">Campana-Salort Emmanuelle</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/chapon-francoise/">Chapon Francoise</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/cintas-pascal/">Cintas Pascal</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/desnuelle-claude/">Desnuelle Claude</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/deschamps-romain/">Deschamps Romain</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/drouin-garraud-valerie/">Drouin-Garraud Valerie</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/ferrer-xavier/">Ferrer Xavier</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/gervais-bernard-helene/">Gervais-Bernard Helene</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/ghorab-karima/">Ghorab Karima</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/laforet-pascal/">Laforet Pascal</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/magot-armelle/">Magot Armelle</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/magy-laurent/">Magy Laurent</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/menard-dominique/">Menard Dominique</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/minot-marie-christine/">Minot Marie-Christine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/nadaj-pakleza-aleksandra/">Nadaj-Pakleza Aleksandra</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/pellieux-sybille/">Pellieux Sybille</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/pereon-yann/">Pereon Yann</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/preudhomme-marguerite/">Preudhomme Marguerite</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/pouget-jean/">Pouget Jean</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/sacconi-sabrina/">Sacconi Sabrina</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/sole-guilhem/">Sole Guilhem</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/stojkovich-tanya/">Stojkovich Tanya</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/tiffreau-vincent/">Tiffreau Vincent</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/urtizberea-andoni/">Urtizberea Andoni</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/vial-christophe/">Vial Christophe</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/zagnoli-fabien/">Zagnoli Fabien</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/caranhac-gilbert/">Caranhac Gilbert</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/bourlier-claude/">Bourlier Claude</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/riviere-gerard/">Riviere Gerard</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/geille-alain/">Geille Alain</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/gherardi-romain-k/">Gherardi Romain K</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/eymard-bruno/">Eymard Bruno</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/puymirat-jack/">Puymirat Jack</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/katsahian-sandrine/">Katsahian Sandrine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/bassez-guillaume/">Bassez Guillaume</a></span>
   </div>
   
   
@@ -811,7 +849,7 @@
           <div class="col-12 col-md-9">
             
             
-            <a href="/publication/#2">
+            <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/#2">
               Article de revue
             </a>
             
@@ -870,7 +908,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://www.coreds.com/publication/2016-01-01_gender_as_a_modifyin/&amp;text=Gender%20as%20a%20Modifying%20Factor%20Influencing%20Myotonic%20Dystrophy%20Type%201%20Phenotype%20Severity%20and%20Mortality:%20A%20Nationwide%20Multiple%20Databases%20Cross-Sectional%20Observational%20Study." target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2016-01-01_gender_as_a_modifyin/&amp;text=Gender%20as%20a%20Modifying%20Factor%20Influencing%20Myotonic%20Dystrophy%20Type%201%20Phenotype%20Severity%20and%20Mortality:%20A%20Nationwide%20Multiple%20Databases%20Cross-Sectional%20Observational%20Study." target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -883,7 +921,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://www.coreds.com/publication/2016-01-01_gender_as_a_modifyin/&amp;t=Gender%20as%20a%20Modifying%20Factor%20Influencing%20Myotonic%20Dystrophy%20Type%201%20Phenotype%20Severity%20and%20Mortality:%20A%20Nationwide%20Multiple%20Databases%20Cross-Sectional%20Observational%20Study." target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://consultation-recherche-donnees-sante.netlify.app/publication/2016-01-01_gender_as_a_modifyin/&amp;t=Gender%20as%20a%20Modifying%20Factor%20Influencing%20Myotonic%20Dystrophy%20Type%201%20Phenotype%20Severity%20and%20Mortality:%20A%20Nationwide%20Multiple%20Databases%20Cross-Sectional%20Observational%20Study." target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -896,7 +934,7 @@
       
       
       <li>
-        <a href="mailto:?subject=Gender%20as%20a%20Modifying%20Factor%20Influencing%20Myotonic%20Dystrophy%20Type%201%20Phenotype%20Severity%20and%20Mortality:%20A%20Nationwide%20Multiple%20Databases%20Cross-Sectional%20Observational%20Study.&amp;body=https://www.coreds.com/publication/2016-01-01_gender_as_a_modifyin/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=Gender%20as%20a%20Modifying%20Factor%20Influencing%20Myotonic%20Dystrophy%20Type%201%20Phenotype%20Severity%20and%20Mortality:%20A%20Nationwide%20Multiple%20Databases%20Cross-Sectional%20Observational%20Study.&amp;body=https://consultation-recherche-donnees-sante.netlify.app/publication/2016-01-01_gender_as_a_modifyin/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -909,7 +947,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://www.coreds.com/publication/2016-01-01_gender_as_a_modifyin/&amp;title=Gender%20as%20a%20Modifying%20Factor%20Influencing%20Myotonic%20Dystrophy%20Type%201%20Phenotype%20Severity%20and%20Mortality:%20A%20Nationwide%20Multiple%20Databases%20Cross-Sectional%20Observational%20Study." target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2016-01-01_gender_as_a_modifyin/&amp;title=Gender%20as%20a%20Modifying%20Factor%20Influencing%20Myotonic%20Dystrophy%20Type%201%20Phenotype%20Severity%20and%20Mortality:%20A%20Nationwide%20Multiple%20Databases%20Cross-Sectional%20Observational%20Study." target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -922,7 +960,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=Gender%20as%20a%20Modifying%20Factor%20Influencing%20Myotonic%20Dystrophy%20Type%201%20Phenotype%20Severity%20and%20Mortality:%20A%20Nationwide%20Multiple%20Databases%20Cross-Sectional%20Observational%20Study.%20https://www.coreds.com/publication/2016-01-01_gender_as_a_modifyin/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=Gender%20as%20a%20Modifying%20Factor%20Influencing%20Myotonic%20Dystrophy%20Type%201%20Phenotype%20Severity%20and%20Mortality:%20A%20Nationwide%20Multiple%20Databases%20Cross-Sectional%20Observational%20Study.%20https://consultation-recherche-donnees-sante.netlify.app/publication/2016-01-01_gender_as_a_modifyin/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -935,7 +973,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://www.coreds.com/publication/2016-01-01_gender_as_a_modifyin/&amp;title=Gender%20as%20a%20Modifying%20Factor%20Influencing%20Myotonic%20Dystrophy%20Type%201%20Phenotype%20Severity%20and%20Mortality:%20A%20Nationwide%20Multiple%20Databases%20Cross-Sectional%20Observational%20Study." target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://consultation-recherche-donnees-sante.netlify.app/publication/2016-01-01_gender_as_a_modifyin/&amp;title=Gender%20as%20a%20Modifying%20Factor%20Influencing%20Myotonic%20Dystrophy%20Type%201%20Phenotype%20Severity%20and%20Mortality:%20A%20Nationwide%20Multiple%20Databases%20Cross-Sectional%20Observational%20Study." target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1269,7 +1307,7 @@
     <h3>Sur le même sujet</h3>
     <ul>
       
-      <li><a href="/publication/2019-06-01_the_dm-scope_registr/">The DM-scope registry: a rare disease innovative framework bridging the gap between research and medical care.</a></li>
+      <li><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2019-06-01_the_dm-scope_registr/">The DM-scope registry: a rare disease innovative framework bridging the gap between research and medical care.</a></li>
       
     </ul>
   </div>
@@ -1453,7 +1491,7 @@
     
     
     
-    <script src="/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
+    <script src="https://consultation-recherche-donnees-sante.netlify.app/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
 
     
 

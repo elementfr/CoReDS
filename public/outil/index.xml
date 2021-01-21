@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Boite à outils | Consultation Recherche Données de Santé - CoReDS</title>
-    <link>https://www.coreds.com/outil/</link>
-      <atom:link href="https://www.coreds.com/outil/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://consultation-recherche-donnees-sante.netlify.app/outil/</link>
+      <atom:link href="https://consultation-recherche-donnees-sante.netlify.app/outil/index.xml" rel="self" type="application/rss+xml" />
     <description>Boite à outils</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>fr</language><copyright>`2021` - **CoReDS**</copyright><lastBuildDate>Mon, 14 Dec 2020 22:53:00 +0100</lastBuildDate>
     <image>
-      <url>https://www.coreds.com/outil/featured.jpeg</url>
+      <url>https://consultation-recherche-donnees-sante.netlify.app/outil/featured.jpeg</url>
       <title>Boite à outils</title>
-      <link>https://www.coreds.com/outil/</link>
+      <link>https://consultation-recherche-donnees-sante.netlify.app/outil/</link>
     </image>
     
     <item>
       <title>Réglementaire et recherche médicale</title>
-      <link>https://www.coreds.com/outil/reglementaire/</link>
+      <link>https://consultation-recherche-donnees-sante.netlify.app/outil/reglementaire/</link>
       <pubDate>Mon, 14 Dec 2020 22:53:00 +0100</pubDate>
-      <guid>https://www.coreds.com/outil/reglementaire/</guid>
+      <guid>https://consultation-recherche-donnees-sante.netlify.app/outil/reglementaire/</guid>
       <description>&lt;p&gt;Les recherches menées sur la personne humaine doivent répondre à de nombreux critères organisationnels et éthiques, encadrés par la loi, pour garantir la sécurité des participants. Ce dispositif s&amp;rsquo;appuie sur une réflexion approfondie visant à protéger la personne participant à une recherche, quelle qu’elle soit (mineur, majeur protégé, majeur, personne malade ou vulnérable, volontaire sain), ainsi que ses données et ses prélèvements biologiques (sang, tissus, organes). L&amp;rsquo;intérêt des personnes doit toujours primer sur ceux de la science et de la société.&lt;/p&gt;
 &lt;p&gt;Acronymes :&lt;/p&gt;
 &lt;ul&gt;
@@ -186,9 +186,9 @@ Si votre traitement répond à ces trois critères, vous pouvez débuter le remp
     
     <item>
       <title>Protection des données personnelles</title>
-      <link>https://www.coreds.com/outil/droits/</link>
+      <link>https://consultation-recherche-donnees-sante.netlify.app/outil/droits/</link>
       <pubDate>Mon, 14 Dec 2020 17:56:36 +0100</pubDate>
-      <guid>https://www.coreds.com/outil/droits/</guid>
+      <guid>https://consultation-recherche-donnees-sante.netlify.app/outil/droits/</guid>
       <description>&lt;p&gt;&lt;span style=&#34;color:red&#34;&gt;&lt;strong&gt;Vous disposez d’un :&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;droit d’accès aux données personnelles vous concernant&lt;/li&gt;
@@ -213,9 +213,9 @@ Les informations administratives, sociales et médicales qui vous concernent, ou
     
     <item>
       <title>Kit - Entrepôt de données APHP</title>
-      <link>https://www.coreds.com/outil/eds/</link>
+      <link>https://consultation-recherche-donnees-sante.netlify.app/outil/eds/</link>
       <pubDate>Sun, 13 Dec 2020 22:53:00 +0100</pubDate>
-      <guid>https://www.coreds.com/outil/eds/</guid>
+      <guid>https://consultation-recherche-donnees-sante.netlify.app/outil/eds/</guid>
       <description>&lt;p&gt;Ce projet s&amp;rsquo;inscrit dans un effort plus large d&amp;rsquo;AP-HP de créer une base de données unique pour collecter l&amp;rsquo;ensemble des données médicales et administratives d&amp;rsquo;AP-HP. L&amp;rsquo;objectif est de &amp;ldquo;soutenir la recherche scientifique et l’innovation dans le domaine de la santé&amp;rdquo;.&lt;br&gt;
 Ce projet s&amp;rsquo;appelle l&amp;rsquo;Entrepôt de Données de Santé ou EDS et rassemble aujourd&amp;rsquo;hui des données sur plus de 11 millions de patients traités dans les 39 établissements de l&amp;rsquo;AP-HP.&lt;/p&gt;
 &lt;p&gt;Un site internet AP-HP sur le projet EDS présente ce projet qui a officiellement débuté en 2017 : &lt;a href=&#34;https://eds.aphp.fr//&#34;&gt;https://eds.aphp.fr//&lt;/a&gt;&lt;/p&gt;
@@ -239,9 +239,9 @@ Vous êtes porteur d’un projet de recherche fondé sur la réutilisation des d
     
     <item>
       <title>Kit - Entrepôt de données HEGP</title>
-      <link>https://www.coreds.com/outil/hegp/</link>
+      <link>https://consultation-recherche-donnees-sante.netlify.app/outil/hegp/</link>
       <pubDate>Sun, 13 Dec 2020 22:53:00 +0100</pubDate>
-      <guid>https://www.coreds.com/outil/hegp/</guid>
+      <guid>https://consultation-recherche-donnees-sante.netlify.app/outil/hegp/</guid>
       <description>&lt;p&gt;L’HEGP dispose d’un dossier patient informatisé depuis son ouverture en 2000, et il a été le premier en France à se doter en 2010 d’un entrepôt de données cliniques, “miroir” du dossier patient informatisé. Cet entrepôt contient une copie de l&amp;rsquo;ensemble des données patients informatisées organisée de façon à pouvoir croiser un très grand nombre de variables (par exemple, extraction des patients avec à la fois une maladie coeliaque, une CRP élevée, une préalbumine basse et un âge compris entre 40 et 50 ans).&lt;/p&gt;
 &lt;p&gt;La base complète de l’entrepôt de données cliniques de l’HEGP contient près de 700 000 patients différents.Le standard informatique utilisé pour cet entrepôt est i2b2, standard mondialement reconnu et utilisé dans un grand nombre d&amp;rsquo;établissements hospitaliers.&lt;/p&gt;
 &lt;p&gt;Les données disponibles couvrent la totalité des données du dossier patient informatisé DxC@re (consultations et hospitalisations) : codage des diagnostics et des actes, questionnaires DXC@re, comptes rendus textuels, suivi des données vitales (tension, poids, etc), ensemble des résultats biologiques, prescriptions médicamenteuses. Dans cette base les identifiants patients sont cryptés avec la possibilité de revenir aux identifiants patients (table de correspondance).&lt;/p&gt;

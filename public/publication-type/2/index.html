@@ -37,7 +37,7 @@
   <meta name="description" content="Consultation recherche données de santé">
 
   
-  <link rel="alternate" hreflang="fr" href="https://www.coreds.com/publication-type/2/">
+  <link rel="alternate" hreflang="fr" href="https://consultation-recherche-donnees-sante.netlify.app/publication-type/2/">
 
   
 
@@ -238,30 +238,68 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.css">
+  <link rel="stylesheet" href="https://consultation-recherche-donnees-sante.netlify.app/css/wowchemy.css">
 
   
 
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-80B5KND2Y6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-80B5KND2Y6', { 'anonymize_ip': true });
+
   
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
 
   
 
+  
+
 
   
   
 
   
-  <link rel="alternate" href="/publication-type/2/index.xml" type="application/rss+xml" title="Consultation Recherche Données de Santé - CoReDS">
+  <link rel="alternate" href="https://consultation-recherche-donnees-sante.netlify.app/publication-type/2/index.xml" type="application/rss+xml" title="Consultation Recherche Données de Santé - CoReDS">
   
 
-  <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
+  <link rel="manifest" href="https://consultation-recherche-donnees-sante.netlify.app/index.webmanifest">
+  <link rel="icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="https://www.coreds.com/publication-type/2/">
+  <link rel="canonical" href="https://consultation-recherche-donnees-sante.netlify.app/publication-type/2/">
 
   
   
@@ -277,10 +315,10 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:url" content="https://www.coreds.com/publication-type/2/">
+  <meta property="og:url" content="https://consultation-recherche-donnees-sante.netlify.app/publication-type/2/">
   <meta property="og:title" content="2 | Consultation Recherche Données de Santé - CoReDS">
-  <meta property="og:description" content="Consultation recherche données de santé"><meta property="og:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
-  <meta property="twitter:image" content="https://www.coreds.com/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
+  <meta property="og:description" content="Consultation recherche données de santé"><meta property="og:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
+  <meta property="twitter:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
   
     <meta property="og:updated_time" content="2020-12-01T00:00:00&#43;00:00">
   
@@ -343,7 +381,7 @@
     <script>const isSiteThemeDark = false;</script>
   
   
-  <script src="/js/load-theme.js"></script>
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/load-theme.js"></script>
 
   <aside class="search-results" id="search">
   <div class="container">
@@ -398,7 +436,7 @@
 
     
     <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -411,7 +449,7 @@
 
     
     <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
     </div>
     
 
@@ -447,7 +485,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/entreprendre/"><span>Commencer un projet</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/entreprendre/"><span>Commencer un projet</span></a>
         </li>
 
         
@@ -477,44 +515,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/suivremonprojet/"><span>Suivre son projet</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-            
-            
-            
-              
-            
-            
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#outils"><span>Boite à outils</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/suivremonprojet/"><span>Suivre son projet</span></a>
         </li>
 
         
@@ -551,7 +552,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#publi"><span>Publications</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#outils"><span>Boite à outils</span></a>
         </li>
 
         
@@ -588,7 +589,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#transparence"><span>Portail de transparence</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#publi"><span>Publications</span></a>
         </li>
 
         
@@ -625,7 +626,44 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#people"><span>Qui sommes-nous ?</span></a>
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#transparence"><span>Portail de transparence</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#people"><span>Qui sommes-nous ?</span></a>
         </li>
 
         
@@ -698,7 +736,7 @@
     
     
     <div>
-      <h2><a href="/publication/2020-12-01_can_reproducibility_/" >Can reproducibility be improved in clinical natural language processing? A study of 7 clinical NLP suites.</a></h2>
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2020-12-01_can_reproducibility_/" >Can reproducibility be improved in clinical natural language processing? A study of 7 clinical NLP suites.</a></h2>
       <div class="article-style">
         
           BACKGROUND:The increasing complexity of data streams and computational processes in modern clinical health information systems makes reproducibility challenging. Clinical natural language processing (NLP) pipelines are routinely leveraged for the …
@@ -710,7 +748,7 @@
     
     
     <div>
-      <h2><a href="/publication/2020-12-01_obesity_doubles_mort/" >Obesity Doubles Mortality in Patients Hospitalized for Severe Acute Respiratory Syndrome Coronavirus 2 in Paris Hospitals, France: A Cohort Study on 5,795 Patients.</a></h2>
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2020-12-01_obesity_doubles_mort/" >Obesity Doubles Mortality in Patients Hospitalized for Severe Acute Respiratory Syndrome Coronavirus 2 in Paris Hospitals, France: A Cohort Study on 5,795 Patients.</a></h2>
       <div class="article-style">
         
           OBJECTIVE:Preliminary data from different cohorts of small sample size or with short follow-up indicate poorer prognosis in people with obesity compared with other patients. This study aims to precisely describe the strength of association between …
@@ -722,7 +760,7 @@
     
     
     <div>
-      <h2><a href="/publication/2020-11-01_diagnostic_algorithm/" >Diagnostic Algorithm to Differentiate Benign Atypical Leiomyomas from Malignant Uterine Sarcomas with Diffusion-weighted MRI.</a></h2>
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2020-11-01_diagnostic_algorithm/" >Diagnostic Algorithm to Differentiate Benign Atypical Leiomyomas from Malignant Uterine Sarcomas with Diffusion-weighted MRI.</a></h2>
       <div class="article-style">
         
           Background Improving the differentiation of uterine sarcomas from atypical leiomyomas remains a clinical challenge and is needed to avoid inappropriate surgery. Purpose To develop a diagnostic algorithm including diffusion-weighted MRI criteria to …
@@ -734,7 +772,7 @@
     
     
     <div>
-      <h2><a href="/publication/2020-11-01_sequential_sars-cov-/" >Sequential SARS-CoV-2 IgG assays as confirmatory strategy to confirm equivocal results: Hospital-wide antibody screening in 3,569 staff health care workers in Paris.</a></h2>
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2020-11-01_sequential_sars-cov-/" >Sequential SARS-CoV-2 IgG assays as confirmatory strategy to confirm equivocal results: Hospital-wide antibody screening in 3,569 staff health care workers in Paris.</a></h2>
       <div class="article-style">
         
           SCImago Journal Rank (SJR) est un indicateur de notoriété des revues indexées à partir de 1996 dans la base de données Scopus de l’éditeur Elsevier. Le SJR a été créé par le groupe de travail SCImago Research Group (SRG) de l’Université de Grenade et Alcana de Henares en Espagne.
@@ -746,7 +784,7 @@
     
     
     <div>
-      <h2><a href="/publication/2020-10-01_impact_of_a_model_us/" >Impact of a Model Used to Simulate Chronic Socio-Environmental Stressors Encountered during Spaceflight on Murine Intestinal Microbiota.</a></h2>
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2020-10-01_impact_of_a_model_us/" >Impact of a Model Used to Simulate Chronic Socio-Environmental Stressors Encountered during Spaceflight on Murine Intestinal Microbiota.</a></h2>
       <div class="article-style">
         
           During deep-space travels, crewmembers face various physical and psychosocial stressors that could alter gut microbiota composition. Since it is well known that intestinal dysbiosis is involved in the onset or exacerbation of several disorders, the …
@@ -758,7 +796,7 @@
     
     
     <div>
-      <h2><a href="/publication/2020-09-01_curative_anticoagula/" >Curative anticoagulation prevents endothelial lesion in COVID-19 patients.</a></h2>
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2020-09-01_curative_anticoagula/" >Curative anticoagulation prevents endothelial lesion in COVID-19 patients.</a></h2>
       <div class="article-style">
         
           BACKGROUND:Coronavirus disease-2019 (COVID-19) has been associated with cardiovascular complications and coagulation disorders.OBJECTIVES:To explore the coagulopathy and endothelial dysfunction in COVID-19 patients.METHODS:The study analyzed clinical …
@@ -770,7 +808,7 @@
     
     
     <div>
-      <h2><a href="/publication/2020-09-01_incidences_of_deep_m/" >Incidences of Deep Molecular Responses and Treatment-Free Remission in de Novo CP-CML Patients.</a></h2>
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2020-09-01_incidences_of_deep_m/" >Incidences of Deep Molecular Responses and Treatment-Free Remission in de Novo CP-CML Patients.</a></h2>
       <div class="article-style">
         
           Background: Tyrosine Kinase Inhibitors (TKIs) discontinuation in patients who had achieved a deep molecular response (DMR) offer now the opportunity of prolonged treatment-free remission (TFR). Patients and Methods: Aims of this study were to …
@@ -782,7 +820,7 @@
     
     
     <div>
-      <h2><a href="/publication/2020-09-01_measured_glomerular_/" >Measured glomerular filtration rate (GFR) significantly and rapidly decreases after radical cystectomy for bladder cancer.</a></h2>
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2020-09-01_measured_glomerular_/" >Measured glomerular filtration rate (GFR) significantly and rapidly decreases after radical cystectomy for bladder cancer.</a></h2>
       <div class="article-style">
         
           Precise determination of glomerular filtration rate (GFR) is essential for the management of patients with muscle-invasive bladder cancer (MIBC). We aim to describe the early evolution of measured GFR (mGFR) after radical cystectomy and urinary …
@@ -794,7 +832,7 @@
     
     
     <div>
-      <h2><a href="/publication/2020-09-01_prognostic_value_of_/" >Prognostic value of high-sensitivity measurable residual disease assessment after front-line chemoimmunotherapy in chronic lymphocytic leukemia.</a></h2>
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2020-09-01_prognostic_value_of_/" >Prognostic value of high-sensitivity measurable residual disease assessment after front-line chemoimmunotherapy in chronic lymphocytic leukemia.</a></h2>
       <div class="article-style">
         
           Measurable residual disease (MRD) status is widely adopted in clinical trials in patients with chronic lymphocytic leukemia (CLL). Findings from FILO group trials (CLL2007FMP, CLL2007SA, CLL2010FMP) enabled investigation of the prognostic value of …
@@ -806,7 +844,7 @@
     
     
     <div>
-      <h2><a href="/publication/2020-08-01_contributions_from_t/" >Contributions from the 2019 Literature on Bioinformatics and Translational Informatics.</a></h2>
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2020-08-01_contributions_from_t/" >Contributions from the 2019 Literature on Bioinformatics and Translational Informatics.</a></h2>
       <div class="article-style">
         
           OBJECTIVE:Summarize recent research and select the best papers published in 2019 in the field of Bioinformatics and Translational Informatics (BTI) for the corresponding section of the International Medical Informatics Association Yearbook.METHODS:A …
@@ -818,7 +856,7 @@
     
     
     <div>
-      <h2><a href="/publication/2020-08-01_highly_sensitive_qua/" >Highly sensitive quantification of plasma SARS-CoV-2 RNA shelds light on its potential clinical value.</a></h2>
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2020-08-01_highly_sensitive_qua/" >Highly sensitive quantification of plasma SARS-CoV-2 RNA shelds light on its potential clinical value.</a></h2>
       <div class="article-style">
         
           BACKGROUND:Coronavirus disease 2019 (COVID-19) is a global public health problem that has already caused more than 662,000 deaths worldwide. Although the clinical manifestations of COVID-19 are dominated by respiratory symptoms, some patients present …
@@ -830,7 +868,7 @@
     
     
     <div>
-      <h2><a href="/publication/2020-08-01_natural_language_pro/" >Natural Language Processing for Rapid Response to Emergent Diseases: Case Study of Calcium Channel Blockers and Hypertension in the COVID-19 Pandemic.</a></h2>
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2020-08-01_natural_language_pro/" >Natural Language Processing for Rapid Response to Emergent Diseases: Case Study of Calcium Channel Blockers and Hypertension in the COVID-19 Pandemic.</a></h2>
       <div class="article-style">
         
           BACKGROUND:A novel disease poses special challenges for informatics solutions. Biomedical informatics relies for the most part on structured data, which require a preexisting data or knowledge model; however, novel diseases do not have preexisting …
@@ -842,7 +880,7 @@
     
     
     <div>
-      <h2><a href="/publication/2020-06-01_analysis_of_trajecto/" >Analysis of Trajectories of Care After Bariatric Surgery Using Data Mining Method and Health Administrative Information Systems.</a></h2>
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2020-06-01_analysis_of_trajecto/" >Analysis of Trajectories of Care After Bariatric Surgery Using Data Mining Method and Health Administrative Information Systems.</a></h2>
       <div class="article-style">
         
           BACKGROUND:The 30-day readmission rate after bariatric surgery is considered an important metric of the quality of hospital care. However, readmission rate beyond 30 days is rarely reported and does not provide any information about trajectories of …
@@ -854,7 +892,7 @@
     
     
     <div>
-      <h2><a href="/publication/2020-06-01_performances_of_a_so/" >Performances of a Solution to Semi-Automatically Fill eCRF with Data from the Electronic Health Record: Protocol for a Prospective Individual Participant Data Meta-Analysis.</a></h2>
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2020-06-01_performances_of_a_so/" >Performances of a Solution to Semi-Automatically Fill eCRF with Data from the Electronic Health Record: Protocol for a Prospective Individual Participant Data Meta-Analysis.</a></h2>
       <div class="article-style">
         
           Clinical trial data collection still relies on a manual entry from information available in the medical record. This process introduces delay and error risk. Automating data transfer from Electronic Health Record (EHR) to Electronic Data Capture …
@@ -866,7 +904,7 @@
     
     
     <div>
-      <h2><a href="/publication/2020-05-01_na/" >NA</a></h2>
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2020-05-01_na/" >NA</a></h2>
       <div class="article-style">
         
           INTRODUCTION:Molecular classification of endometrial carcinoma has been proposed to predict survival. However, its role in patient management remains to be determined. We aimed to identify whether a molecular and immunohistochemical classification of …
@@ -878,7 +916,7 @@
     
     
     <div>
-      <h2><a href="/publication/2020-05-01_nasal_swab_sampling_/" >Nasal Swab Sampling for SARS-CoV-2: a Convenient Alternative in Times of Nasopharyngeal Swab Shortage.</a></h2>
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2020-05-01_nasal_swab_sampling_/" >Nasal Swab Sampling for SARS-CoV-2: a Convenient Alternative in Times of Nasopharyngeal Swab Shortage.</a></h2>
       <div class="article-style">
         
           SCImago Journal Rank (SJR) est un indicateur de notoriété des revues indexées à partir de 1996 dans la base de données Scopus de l’éditeur Elsevier. Le SJR a été créé par le groupe de travail SCImago Research Group (SRG) de l’Université de Grenade et Alcana de Henares en Espagne.
@@ -890,7 +928,7 @@
     
     
     <div>
-      <h2><a href="/publication/2020-04-01_emergency_versus_del/" >EMERGEncy versus delayed coronary angiogram in survivors of out-of-hospital cardiac arrest with no obvious non-cardiac cause of arrest: Design of the EMERGE trial.</a></h2>
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2020-04-01_emergency_versus_del/" >EMERGEncy versus delayed coronary angiogram in survivors of out-of-hospital cardiac arrest with no obvious non-cardiac cause of arrest: Design of the EMERGE trial.</a></h2>
       <div class="article-style">
         
           BACKGROUND:In adults, the most common cause of out-of-hospital cardiac arrests (OHCA) is acute coronary artery occlusion. If an immediate coronary angiogram (CAG) is recommended for survivors presenting a ST segment elevation on the electrocardiogram …
@@ -902,7 +940,7 @@
     
     
     <div>
-      <h2><a href="/publication/2020-04-01_genetic_cellular_a/" >Genetic, Cellular, and Molecular Heterogeneity in Adrenals With Aldosterone-Producing Adenoma.</a></h2>
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2020-04-01_genetic_cellular_a/" >Genetic, Cellular, and Molecular Heterogeneity in Adrenals With Aldosterone-Producing Adenoma.</a></h2>
       <div class="article-style">
         
           Aldosterone-producing adenoma (APA) cause primary aldosteronism-the most frequent form of secondary hypertension. Somatic mutations in genes coding for ion channels and ATPases are found in APA and in aldosterone-producing cell clusters. We …
@@ -914,7 +952,7 @@
     
     
     <div>
-      <h2><a href="/publication/2020-01-01_effect_of_tocilizuma/" >Effect of Tocilizumab vs Usual Care in Adults Hospitalized With COVID-19 and Moderate or Severe Pneumonia: A Randomized Clinical Trial.</a></h2>
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2020-01-01_effect_of_tocilizuma/" >Effect of Tocilizumab vs Usual Care in Adults Hospitalized With COVID-19 and Moderate or Severe Pneumonia: A Randomized Clinical Trial.</a></h2>
       <div class="article-style">
         
           Importance:Severe pneumonia with hyperinflammation and elevated interleukin-6 is a common presentation of coronavirus disease 2019 (COVID-19).Objective:To determine whether tocilizumab (TCZ) improves outcomes of patients hospitalized with …
@@ -926,7 +964,7 @@
     
     
     <div>
-      <h2><a href="/publication/2020-01-01_impact_of_obesity_on/" >Impact of obesity on surgical and oncologic outcomes in patients with endometrial cancer treated with a robotic approach.</a></h2>
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2020-01-01_impact_of_obesity_on/" >Impact of obesity on surgical and oncologic outcomes in patients with endometrial cancer treated with a robotic approach.</a></h2>
       <div class="article-style">
         
           OBJECTIVE:The surgical treatment of endometrial cancer (EC) can be more complicated in obese patients. Robotic surgery could simplify the surgical approach in these patients. The aim of our study was to compare the outcomes of robotic surgery in …
@@ -940,7 +978,7 @@
   <ul class="pagination justify-content-center">
     
     
-    <li class="page-item"><a class="page-link" href="/publication-type/2/page/2/">&raquo;</a></li>
+    <li class="page-item"><a class="page-link" href="https://consultation-recherche-donnees-sante.netlify.app/publication-type/2/page/2/">&raquo;</a></li>
     
   </ul>
 </nav>
@@ -1119,7 +1157,7 @@
     
     
     
-    <script src="/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
+    <script src="https://consultation-recherche-donnees-sante.netlify.app/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
 
     
 
