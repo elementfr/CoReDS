@@ -445,20 +445,26 @@ Avis URC
 Avis informatique
 &lt;/th&gt;
 &lt;th style=&#34;text-align:left;&#34;&gt;
-Avis éthique
+Avis éthique CERAPHP
+&lt;/th&gt;
+&lt;th style=&#34;text-align:left;&#34;&gt;
+Avis éthique CPP
 &lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:left;&#34;&gt;
-2021-01-18
+2020-12-25
 &lt;/td&gt;
 &lt;td style=&#34;text-align:left;width: 5cm; &#34;&gt;
-Lunette virtuelle pour cocker
+Étude préliminaire de description de l’abcès cérébral chez des patients transplantés
 &lt;/td&gt;
 &lt;td style=&#34;text-align:left;width: 3cm; &#34;&gt;
-Sabatier
+Lebeaux
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;span style=&#34; font-weight: bold;    color: lightseagreen !important;&#34;&gt;Avis OK&lt;/span&gt;
 &lt;/td&gt;
 &lt;td style=&#34;text-align:left;&#34;&gt;
 &lt;span style=&#34; font-weight: bold;    color: lightseagreen !important;&#34;&gt;Avis OK&lt;/span&gt;
@@ -467,7 +473,7 @@ Sabatier
 &lt;span style=&#34; font-weight: bold;    color: gray !important;&#34;&gt;Non concerné&lt;/span&gt;
 &lt;/td&gt;
 &lt;td style=&#34;text-align:left;&#34;&gt;
-&lt;span style=&#34; font-weight: bold;    color: orange !important;&#34;&gt;En attente&lt;/span&gt;
+&lt;span style=&#34; font-weight: bold;    color: gray !important;&#34;&gt;Non concerné&lt;/span&gt;
 &lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;

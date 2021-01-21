@@ -44,7 +44,7 @@ ds_all_rows_all_fields <- redcap_read(redcap_uri = uri, token = token)$data
 
 tableau <- ds_all_rows_all_fields %>% 
   filter(demande_complete == 2) %>% 
-  select(titre_etude, pi_nom, demande_date, avis_urc_complete, avis_infomed_complete, avis_ceraphp_complete) 
+  select(titre_etude, pi_nom, demande_date, avis_urc_complete, avis_infomed_complete, avis_ceraphp_complete, avis_cpp_complete) 
 
 
 tableau$avis_urc_complete <- as.character(tableau$avis_urc_complete)
@@ -71,9 +71,17 @@ tableau$avis_ceraphp_complete <- fct_recode(tableau$avis_ceraphp_complete,
 tableau$avis_ceraphp_complete <- fct_recode(tableau$avis_ceraphp_complete,
   "Avis OK" = "2")
 
+tableau$avis_cpp_complete <- as.character(tableau$avis_cpp_complete)
+tableau$avis_cpp_complete <- fct_recode(tableau$avis_cpp_complete,
+  "En attente" = "0")
+tableau$avis_cpp_complete <- fct_recode(tableau$avis_cpp_complete,
+  "Non concerné" = "1")
+tableau$avis_cpp_complete <- fct_recode(tableau$avis_cpp_complete,
+  "Avis OK" = "2")
+
 tableau2 <- tableau %>% 
   select(demande_date, everything()) %>% 
-  rename("Nom de l'étude" = titre_etude, "Investigateur" = pi_nom, "Date" = demande_date, "Avis URC" = avis_urc_complete, "Avis éthique" = avis_ceraphp_complete, "Avis informatique" = avis_infomed_complete) 
+  rename("Nom de l'étude" = titre_etude, "Investigateur" = pi_nom, "Date" = demande_date, "Avis URC" = avis_urc_complete, "Avis éthique CERAPHP" = avis_ceraphp_complete, "Avis éthique CPP" = avis_cpp_complete, "Avis informatique" = avis_infomed_complete)
 ```
 
 ```{r echo=FALSE}
@@ -83,11 +91,16 @@ tableau2 %>%
     else if (`Avis URC` == "En attente"){
      cell_spec(`Avis URC`, "html", color = "orange", bold = T)} 
     else {cell_spec(`Avis URC`, "html", color = "gray", bold = T)},
-    `Avis éthique` = if (`Avis éthique` == "Avis OK"){
-    cell_spec(`Avis éthique`, "html", color = "lightseagreen", bold = T)} 
-    else if (`Avis éthique` == "En attente"){
-     cell_spec(`Avis éthique`, "html", color = "orange", bold = T)} 
-    else {cell_spec(`Avis éthique`, "html", color = "gray", bold = T)},
+    `Avis éthique CERAPHP` = if (`Avis éthique CERAPHP` == "Avis OK"){
+    cell_spec(`Avis éthique CERAPHP`, "html", color = "lightseagreen", bold = T)} 
+    else if (`Avis éthique CERAPHP` == "En attente"){
+     cell_spec(`Avis éthique CERAPHP`, "html", color = "orange", bold = T)} 
+    else {cell_spec(`Avis éthique CERAPHP`, "html", color = "gray", bold = T)},
+    `Avis éthique CPP` = if (`Avis éthique CPP` == "Avis OK"){
+    cell_spec(`Avis éthique CPP`, "html", color = "lightseagreen", bold = T)} 
+    else if (`Avis éthique CPP` == "En attente"){
+     cell_spec(`Avis éthique CPP`, "html", color = "orange", bold = T)} 
+    else {cell_spec(`Avis éthique CPP`, "html", color = "gray", bold = T)},
     `Avis informatique` = if (`Avis informatique` == "Avis OK"){
     cell_spec(`Avis informatique`, "html", color = "lightseagreen", bold = T)} 
     else if (`Avis informatique` == "En attente"){
