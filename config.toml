@@ -34,6 +34,7 @@ summaryLength = 30  # Listing summary length in words. Also, see `abstract_lengt
 paginate = 20  # Number of items per page in paginated lists.
 enableEmoji = true
 enableRobotsTXT = true
+canonifyURLs = true
 footnotereturnlinkcontents = "<sup>^</sup>"
 ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "_cache$", "\\.knit\\.md$", "\\.utf8\\.md$"]
 
