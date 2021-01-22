@@ -30,9 +30,13 @@ runtime: shiny
 output: html_document
 ---
 
-<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 
-<iframe src="http://s1.eq22.fr/redcap/surveys/?s=CP9DJJ4W3J" style="position:absolute; top:0; left:0; bottom:0; right:0; width:100%; height:100%  "> </iframe>
+```{r}
+library(knitr)
+include_url("http://s1.eq22.fr/redcap/surveys/?s=CP9DJJ4W3J")
+```
+
+
 
 
 
