@@ -30,13 +30,11 @@ hasCJKLanguage = false  # Set `true` for Chinese/Japanese/Korean languages.
 defaultContentLanguageInSubdir = false
 removePathAccents = true  # Workaround for https://github.com/gohugoio/hugo/issues/5687
 
-summaryLength = 30  # Listing summary length in words. Also, see `abstract_length` in `params.toml`.
-paginate = 20  # Number of items per page in paginated lists.
+summaryLength = 40  # Listing summary length in words. Also, see `abstract_length` in `params.toml`.
+paginate = 40  # Number of items per page in paginated lists.
 enableEmoji = true
 enableRobotsTXT = true
 canonifyURLs = true
-
-googleAnalytics = "G-80B5KND2Y6"
 
 footnotereturnlinkcontents = "<sup>^</sup>"
 ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "_cache$", "\\.knit\\.md$", "\\.utf8\\.md$"]
