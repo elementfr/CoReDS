@@ -52,7 +52,7 @@ bibtex_2academic <- function(projet_data,
       
       
       if (x[["responsable_traitement"]] == 1) {
-      write(paste0("Responsable(s) du traitement : ",'<span style="color:#3498DB;font-weight:bold">', "APHP", "</span>", "<br><br>"), fileConn, append = T)
+        write(paste0("Responsable(s) du traitement : ",'<span style="color:#3498DB;font-weight:bold">', "APHP", "</span>", "<br><br>"), fileConn, append = T)
       } else {
         write(paste0("Responsable(s) du traitement : ", '<span style="color:#3498DB;font-weight:bold">', x[["si_autre_partenaire"]], "</span>","<br><br>"), fileConn, append = T)
       }
@@ -63,14 +63,23 @@ bibtex_2academic <- function(projet_data,
       } else {
         write(paste0("Objectif de l'étude : ", '<span style="color:#3498DB;font-weight:bold">', "aucun",  "</span>","<br><br>"), fileConn, append = T)
       }
-     
-      if (!is.na(x[["date_ceraphp"]])) {
+      
+      if (x[["avis_ceraphp_complete"]] == 2) {
         write(paste0("Date d'avis Comité éthique CERAPHP : ", '<span style="color:#3498DB;font-weight:bold">', x[["date_ceraphp"]], "</span>", "<br><br>"), fileConn, append = T)
-      } else if (!is.na(x[["date_cpp"]])) {
+      } else if (x[["avis_ceraphp_complete"]] == 1) {
+        write(paste0("Date d'avis Comité éthique CERAPHP : ", '<span style="color:#3498DB;font-weight:bold">', "Non concerné", "</span>", "<br><br>"), fileConn, append = T)
+      } else if (x[["avis_ceraphp_complete"]] == 0) {
+        write(paste0("Date d'avis Comité éthique CERAPHP : ", '<span style="color:#3498DB;font-weight:bold">', "En attente", "</span>", "<br><br>"), fileConn, append = T)
+      } 
+      
+      if (x[["avis_cpp_complete"]] == 2) {
         write(paste0("Date d'avis Comité éthique CPP : ", '<span style="color:#3498DB;font-weight:bold">', x[["date_cpp"]], "</span>", "<br><br>"), fileConn, append = T)
-      } else {
-        write(paste0("Date d'avis Comité éthique : ", '<span style="color:#3498DB;font-weight:bold">', "en attente", "</span>","<br><br>"), fileConn, append = T)
+      } else if (x[["avis_cpp_complete"]] == 1) {
+        write(paste0("Date d'avis Comité éthique CPP : ", '<span style="color:#3498DB;font-weight:bold">', "Non concerné", "</span>", "<br><br>"), fileConn, append = T)
+      } else if (x[["avis_cpp_complete"]] == 0) {
+        write(paste0("Date d'avis Comité éthique CPP : ", '<span style="color:#3498DB;font-weight:bold">', "En attente", "</span>", "<br><br>"), fileConn, append = T)
       }
+      
       
       if (!is.na(x[["duree_conservation"]])) {
         write(paste0("Durée de conservation des données : ", '<span style="color:#3498DB;font-weight:bold">', x[["duree_conservation"]],   "</span>", "<br><br>"), fileConn, append = T)
