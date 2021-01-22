@@ -117,7 +117,7 @@ ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "
     
 [[redirects]]
   from = "/content/entreprendre"
-  to = "https://redcap.link/coreds-form"
+  to = "http://s1.eq22.fr/redcap/surveys/?s=CP9DJJ4W3J"
   status = 200
   force = true
   headers = {X-From = "Netlify"}
