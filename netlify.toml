@@ -4,5 +4,5 @@
   to = "http://s1.eq22.fr/redcap/surveys/?s=CP9DJJ4W3J"
   status = 200
   force = true
-  headers = {X-From = "RedCap"}
+  headers = {X-From = "Netlify"}
 

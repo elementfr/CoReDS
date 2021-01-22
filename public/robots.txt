@@ -1,3 +1,0 @@
-User-agent: *
-
-Sitemap: https://consultation-recherche-donnees-sante.netlify.app/sitemap.xml
