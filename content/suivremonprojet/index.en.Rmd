@@ -1,0 +1,123 @@
+---
+# Documentation: https://wowchemy.com/docs/managing-content/
+
+title: "Etat d'avancement des projets de recherche"
+subtitle: ""
+summary: ""
+authors: []
+tags: []
+categories: []
+date: 2020-11-11T20:53:03+01:00
+lastmod: 2020-11-11T20:53:03+01:00
+featured: false
+draft: false
+
+# Featured image
+# To use, add an image named `featured.jpg/png` to your page's folder.
+# Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
+image:
+  caption: ""
+  focal_point: "Smart"
+  preview_only: false
+
+# Projects (optional).
+#   Associate this post with one or more of your projects.
+#   Simply enter your project's folder or file name without extension.
+#   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
+#   Otherwise, set `projects = []`.
+projects: []
+---
+
+Liste des recherches (répertoriées ci-dessous par date de soumission). Toutes ces études sont menées par des professionnels de l’AP-HP, certaines en collaboration avec des partenaires extérieurs à l’AP-HP.  
+
+```{r include=FALSE}
+library(REDCapR)
+library(questionr)
+library(tidyverse)
+library(kableExtra)
+library(formattable)
+
+uri <- "http://s1.eq22.fr/redcap/api/"
+token <- "3707C9643481CAE91EAC1EAE913B0E30"
+
+ds_all_rows_all_fields <- redcap_read(redcap_uri = uri, token = token)$data
+
+tableau <- ds_all_rows_all_fields %>% 
+  filter(demande_complete == 2) %>% 
+  select(titre_etude, pi_nom, demande_date, avis_urc_complete, avis_infomed_complete, avis_ceraphp_complete, avis_cpp_complete) 
+
+
+tableau$avis_urc_complete <- as.character(tableau$avis_urc_complete)
+tableau$avis_urc_complete <- fct_recode(tableau$avis_urc_complete,
+  "En attente" = "0")
+tableau$avis_urc_complete <- fct_recode(tableau$avis_urc_complete,
+  "Non concerné" = "1")
+tableau$avis_urc_complete <- fct_recode(tableau$avis_urc_complete,
+  "Avis OK" = "2")
+
+tableau$avis_infomed_complete <- as.character(tableau$avis_infomed_complete)
+tableau$avis_infomed_complete <- fct_recode(tableau$avis_infomed_complete,
+  "En attente" = "0")
+tableau$avis_infomed_complete <- fct_recode(tableau$avis_infomed_complete,
+  "Non concerné" = "1")
+tableau$avis_infomed_complete <- fct_recode(tableau$avis_infomed_complete,
+  "Avis OK" = "2")
+
+tableau$avis_ceraphp_complete <- as.character(tableau$avis_ceraphp_complete)
+tableau$avis_ceraphp_complete <- fct_recode(tableau$avis_ceraphp_complete,
+  "En attente" = "0")
+tableau$avis_ceraphp_complete <- fct_recode(tableau$avis_ceraphp_complete,
+  "Non concerné" = "1")
+tableau$avis_ceraphp_complete <- fct_recode(tableau$avis_ceraphp_complete,
+  "Avis OK" = "2")
+
+tableau$avis_cpp_complete <- as.character(tableau$avis_cpp_complete)
+tableau$avis_cpp_complete <- fct_recode(tableau$avis_cpp_complete,
+  "En attente" = "0")
+tableau$avis_cpp_complete <- fct_recode(tableau$avis_cpp_complete,
+  "Non concerné" = "1")
+tableau$avis_cpp_complete <- fct_recode(tableau$avis_cpp_complete,
+  "Avis OK" = "2")
+
+tableau2 <- tableau %>% 
+  select(demande_date, everything()) %>% 
+  rename("Nom de l'étude" = titre_etude, "Investigateur" = pi_nom, "Date" = demande_date, "Avis URC" = avis_urc_complete, "Avis éthique CERAPHP" = avis_ceraphp_complete, "Avis éthique CPP" = avis_cpp_complete, "Avis informatique" = avis_infomed_complete)
+```
+
+```{r echo=FALSE}
+tableau2 %>% 
+  mutate(`Avis URC` = if (`Avis URC` == "Avis OK"){
+    cell_spec(`Avis URC`, "html", color = "lightseagreen", bold = T)} 
+    else if (`Avis URC` == "En attente"){
+     cell_spec(`Avis URC`, "html", color = "orange", bold = T)} 
+    else {cell_spec(`Avis URC`, "html", color = "gray", bold = T)},
+    `Avis éthique CERAPHP` = if (`Avis éthique CERAPHP` == "Avis OK"){
+    cell_spec(`Avis éthique CERAPHP`, "html", color = "lightseagreen", bold = T)} 
+    else if (`Avis éthique CERAPHP` == "En attente"){
+     cell_spec(`Avis éthique CERAPHP`, "html", color = "orange", bold = T)} 
+    else {cell_spec(`Avis éthique CERAPHP`, "html", color = "gray", bold = T)},
+    `Avis éthique CPP` = if (`Avis éthique CPP` == "Avis OK"){
+    cell_spec(`Avis éthique CPP`, "html", color = "lightseagreen", bold = T)} 
+    else if (`Avis éthique CPP` == "En attente"){
+     cell_spec(`Avis éthique CPP`, "html", color = "orange", bold = T)} 
+    else {cell_spec(`Avis éthique CPP`, "html", color = "gray", bold = T)},
+    `Avis informatique` = if (`Avis informatique` == "Avis OK"){
+    cell_spec(`Avis informatique`, "html", color = "lightseagreen", bold = T)} 
+    else if (`Avis informatique` == "En attente"){
+     cell_spec(`Avis informatique`, "html", color = "orange", bold = T)} 
+    else {cell_spec(`Avis informatique`, "html", color = "gray", bold = T)}) %>%
+  kable("html", escape = F, caption = 'Le tableau de suivi des projets est mis à jour toutes les 24H') %>%
+  kable_styling(position = "center") %>% 
+  column_spec(2, width = "5cm") %>% 
+  column_spec(3, width = "3cm")
+
+```
+
+
+
+
+
+
+
+
+

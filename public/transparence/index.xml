@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Portail de transparence | Consultation Recherche Données de Santé - CoReDS</title>
+    <link>https://consultation-recherche-donnees-sante.netlify.app/transparence/</link>
+      <atom:link href="https://consultation-recherche-donnees-sante.netlify.app/transparence/index.xml" rel="self" type="application/rss+xml" />
+    <description>Portail de transparence</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>fr</language><copyright>`2021` - **CoReDS**</copyright><lastBuildDate>Fri, 25 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png</url>
+      <title>Portail de transparence</title>
+      <link>https://consultation-recherche-donnees-sante.netlify.app/transparence/</link>
+    </image>
+    
+    <item>
+      <title>Étude préliminaire de description de l&#39;abcès cérébral chez des patients transplantés</title>
+      <link>https://consultation-recherche-donnees-sante.netlify.app/transparence/2020-12-25_etude_preliminaire_d/</link>
+      <pubDate>Fri, 25 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://consultation-recherche-donnees-sante.netlify.app/transparence/2020-12-25_etude_preliminaire_d/</guid>
+      <description>&lt;p&gt;Responsable(s) du traitement : &lt;span style=&#34;color:#3498DB;font-weight:bold&#34;&gt;APHP&lt;/span&gt;&lt;br&gt;&lt;br&gt;
+Investigateur principal : &lt;span style=&#34;color:#3498DB;font-weight:bold&#34;&gt;Lebeaux David&lt;/span&gt;&lt;br&gt;&lt;br&gt;
+Objectif de l&amp;rsquo;étude : &lt;span style=&#34;color:#3498DB;font-weight:bold&#34;&gt;Étude préliminaire de description de l&amp;rsquo;abcès cérébral chez des patients transplantés.
+Principal : Incidence de l&amp;rsquo;abcès cérébral chez des patients transplantés par centre de transplantation par interrogation de la base nationale du PMSI.
+Secondaires : Décrire l&amp;rsquo;épidémiologie des abcès cérébraux des patients transplantés (transplantation d&amp;rsquo;organe ou allogreffe de cellules souches hématopoïétiques)
+&lt;/span&gt;&lt;br&gt;&lt;br&gt;
+Date d&amp;rsquo;avis Comité éthique : &lt;span style=&#34;color:#3498DB;font-weight:bold&#34;&gt;en attente&lt;/span&gt;&lt;br&gt;&lt;br&gt;
+Durée de conservation des données : &lt;span style=&#34;color:#3498DB;font-weight:bold&#34;&gt;3 ans&lt;/span&gt;&lt;br&gt;&lt;br&gt;
+Licéité du traitement : &lt;span style=&#34;color:#3498DB;font-weight:bold&#34;&gt;Le traitement est nécessaire à l&amp;rsquo;exécution d&amp;rsquo;une mission d&amp;rsquo;intérêt publique ou relève de l&amp;rsquo;exercice de l&amp;rsquo;autorité publique du responsable de traitement&lt;/span&gt;&lt;br&gt;&lt;br&gt;
+Destinataire(s) des données : &lt;span style=&#34;color:#3498DB;font-weight:bold&#34;&gt;Le responsable de traitement et ses sous-traitants, Le responsable scientifique de la recherche, Les professionnels intervenant dans la recherche, Les personnes chargées du traitement et de l&amp;rsquo;analyse des données&lt;/span&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

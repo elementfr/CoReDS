@@ -1,0 +1,3669 @@
+<!DOCTYPE html><html lang="fr" >
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  
+  
+  <meta name="generator" content="Wowchemy 5.0.0-beta.0 for Hugo">
+  
+
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Team CoReDS">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Consultation recherche données de santé">
+
+  
+  <link rel="alternate" hreflang="fr" href="https://consultation-recherche-donnees-sante.netlify.app/">
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.2/lazysizes.min.js" integrity="sha512-TmDwFLhg3UA4ZG0Eb4MIyT1O1Mb+Oww5kFG0uHqXsdbyZz9DcvYQhKpGgNkamAI6h2lGGZq2X8ftOJvF/XjTUg==" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+    
+      
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+    
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="https://consultation-recherche-donnees-sante.netlify.app/css/wowchemy.css">
+
+  
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-80B5KND2Y6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-80B5KND2Y6', { 'anonymize_ip': true });
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+  
+
+  
+
+
+  
+  
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  
+
+  
+  <link rel="alternate" href="https://consultation-recherche-donnees-sante.netlify.app/index.xml" type="application/rss+xml" title="Consultation Recherche Données de Santé - CoReDS">
+  
+
+  <link rel="manifest" href="https://consultation-recherche-donnees-sante.netlify.app/index.webmanifest">
+  <link rel="icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="https://consultation-recherche-donnees-sante.netlify.app/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="https://consultation-recherche-donnees-sante.netlify.app/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="Consultation Recherche Données de Santé - CoReDS">
+  <meta property="og:url" content="https://consultation-recherche-donnees-sante.netlify.app/">
+  <meta property="og:title" content="Consultation Recherche Données de Santé - CoReDS">
+  <meta property="og:description" content="Consultation recherche données de santé"><meta property="og:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png">
+  <meta property="twitter:image" content="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr">
+  
+    <meta property="og:updated_time" content="2030-06-01T13:00:00&#43;00:00">
+  
+
+  
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://consultation-recherche-donnees-sante.netlify.app?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  },
+  "url": "https://consultation-recherche-donnees-sante.netlify.app"
+}
+</script>
+
+
+  
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Project",
+  "@id": "https://consultation-recherche-donnees-sante.netlify.app",
+  "name": "Consultation Recherche Données de Santé - CoReDS",
+  "logo": "https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_192x192_fit_lanczos_2.png",
+  
+  
+  
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "20 Rue Leblanc",
+    "addressLocality": "Paris",
+    "addressRegion": "Ile de France",
+    "postalCode": "75015 Paris",
+    "addressCountry": "FR"
+  },
+  
+  
+  "url": "https://consultation-recherche-donnees-sante.netlify.app"
+}
+</script>
+
+  
+
+
+  
+  
+  
+  
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.js" integrity="sha256-5VhCqFam2Cn+yjw61zbBNrbHVJ6SRydPeKopYlngbiQ=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.css" integrity="sha256-zQ0LblD/Af8vOppw18+2anxsuaz3pWYyVWi+bTvTH8Q=" crossorigin="anonymous">
+  
+  <script>
+  window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#2962ff",
+          "text": "rgb(255, 255, 255)"
+        },
+        "button": {
+          "background": "rgb(255, 255, 255)",
+          "text": "#2962ff"
+        }
+      },
+      "theme": "classic",
+      "content": {
+        "message": "Ce site utilise des cookies pour vous assurer la meilleure expérience.",
+        "dismiss": "Accepter",
+        "link": "En savoir plus",
+        "href": "https://www.cookiesandyou.com"
+      }
+    })});
+  </script>
+
+
+
+  
+
+
+
+
+
+  <title>Consultation Recherche Données de Santé - CoReDS</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" class="page-wrapper  ">
+
+  
+  
+  
+  
+    <script>const isSiteThemeDark = false;</script>
+  
+  
+  <script src="https://consultation-recherche-donnees-sante.netlify.app/js/load-theme.js"></script>
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Rechercher</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Recherche..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Ouvrir la barre de navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="https://consultation-recherche-donnees-sante.netlify.app/"><img src="https://consultation-recherche-donnees-sante.netlify.app/images/logo_hu240a3cf0bd6402c880746328a9376fed_42031_0x70_resize_lanczos_2.png" alt="Consultation Recherche Données de Santé - CoReDS"></a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/entreprendre/"><span>Commencer un projet</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/suivremonprojet/"><span>Suivre son projet</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#outils" data-target="#outils"><span>Boite à outils</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#publi" data-target="#publi"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#transparence" data-target="#transparence"><span>Portail de transparence</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://consultation-recherche-donnees-sante.netlify.app/#people" data-target="#people"><span>Qui sommes-nous ?</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Rechercher"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    
+
+
+
+
+
+
+
+
+
+
+
+  
+<span class="js-widget-page d-none"></span>
+
+
+
+
+
+  
+  
+  
+  
+
+
+
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  <section id="hero" class="home-section wg-hero  "  >
+   <div class="home-section-bg " ></div>
+    <div class="container">
+
+    
+
+      
+
+
+
+
+<div class="row">
+  <div class="col-12 col-md-6 order-md-1 text-center text-md-left">
+
+
+    <h1 class="hero-title">
+      <strong>Consultation Recherche Données de Santé</strong>
+    </h1>
+
+    
+    <div class="hero-lead"><p>Construire <strong>ensemble</strong> votre projet du règlementaire à la faisabilité - analyse</p>
+</div>
+    
+
+    
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+    <p class="cta-btns">
+      <a href="https://consultation-recherche-donnees-sante.netlify.app/entreprendre/"  class="btn btn-primary btn-lg"><i class="fas fa-download pr-1" aria-hidden="true"></i>Commencer un projet ? C&rsquo;est par ici !</a>
+
+      
+      
+    </p>
+    
+
+    
+    
+
+  
+  
+    
+  </div>
+  <div class="col-12 mx-auto col-md-6 order-md-2 hero-media">
+    <img src="https://consultation-recherche-donnees-sante.netlify.app/media/image.jpg" alt="">
+  </div>
+</div>
+
+
+
+    
+
+    </div>
+  </section>
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  <section id="skills" class="home-section wg-featurette  "  >
+   <div class="home-section-bg " ></div>
+    <div class="container">
+
+    
+
+      
+
+
+<div class="row featurette">
+  
+  <div class="col-md-12 section-heading">
+    <h1>Comment ça marche ?</h1>
+    
+  </div>
+  
+
+  
+
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-4">
+    
+    <div class="featurette-icon"><i class="fas fa-gavel"></i></div>
+    
+    <h3><strong>Consultation Technico-Règlementaire</strong></h3>
+    <p>Entretien avec l&rsquo;Unité de Recherche Clinique vous permettant d&rsquo;obtenir l&rsquo;ensemble des documents à remplir pour respecter les exigences de la recherche sur personne humaine ou sur données de santé.</p>
+  </div>
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-4">
+    
+    <div class="featurette-icon"><i class="fas fa-user-shield"></i></div>
+    
+    <h3><strong>Comité éthique</strong></h3>
+    <p>Selon votre type de recherche, nous vous aiderons à soumettre votre projet au CERAPHP (comité éthique local) si votre projet est sur données de santé ou à un CPP (Comité Protection des Personnes) si votre recherche implique la personne humaine.</p>
+  </div>
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-4">
+    
+    <div class="featurette-icon"><i class="fas fa-chart-bar"></i></div>
+    
+    <h3><strong>Faisabilité - Analyse</strong></h3>
+    <p>Vous avez besoin de conseils méthodologiques pour votre projet ? Besoin de data-scientist pour l&rsquo;analyse statistique de vos résultats ? Besoin d&rsquo;extraire des données de l&rsquo;entrepôt de l&rsquo;HEGP ou l&rsquo;EDS APHP ou du PMSI national ou de l&rsquo;EGB (base de données de la sécurité sociale) ? Quels que soient vos besoins, le département d&rsquo;informatique médicale est à votre écoute !</p>
+  </div>
+  
+</div>
+
+
+    
+
+    </div>
+  </section>
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  <section id="outils" class="home-section wg-pages  "  >
+   <div class="home-section-bg " ></div>
+    <div class="container">
+
+    
+      <div class="row  ">
+      
+        
+          <div class="col-12 col-lg-4 section-heading">
+            <h1>Boite à outils</h1>
+            
+          </div>
+        
+      
+    
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+<div class="col-12 col-lg-8">
+
+  
+
+  
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="media stream-item">
+  <div class="media-body">
+
+    <h3 class="article-title mb-0 mt-0">
+      <a href="https://consultation-recherche-donnees-sante.netlify.app/outil/reglementaire/" >Réglementaire et recherche médicale</a>
+    </h3>
+
+    
+    <a href="https://consultation-recherche-donnees-sante.netlify.app/outil/reglementaire/"  class="summary-link">
+      <div class="article-style">
+        Les recherches menées sur la personne humaine doivent répondre à de nombreux critères organisationnels et éthiques, encadrés par la loi, pour garantir la sécurité des participants. Ce dispositif s&rsquo;appuie sur une réflexion approfondie visant à protéger la personne participant à une recherche, quelle qu’elle soit (mineur, majeur protégé, majeur, personne malade ou vulnérable, volontaire sain), ainsi que ses données et ses prélèvements biologiques (sang, tissus, organes).
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+        
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    2020-12-14
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+      
+    </div>
+
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+    
+    <a href="https://consultation-recherche-donnees-sante.netlify.app/outil/reglementaire/" >
+      <img src="https://consultation-recherche-donnees-sante.netlify.app/outil/reglementaire/featured_hu4ceff7cd6fedc4591830a1b78c2c134b_3179398_150x0_resize_q90_lanczos.jpg" alt="Réglementaire et recherche médicale">
+    </a>
+    
+  </div>
+</div>
+
+    
+  
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="media stream-item">
+  <div class="media-body">
+
+    <h3 class="article-title mb-0 mt-0">
+      <a href="https://consultation-recherche-donnees-sante.netlify.app/outil/droits/" >Protection des données personnelles</a>
+    </h3>
+
+    
+    <a href="https://consultation-recherche-donnees-sante.netlify.app/outil/droits/"  class="summary-link">
+      <div class="article-style">
+        Vous disposez d’un :
+ droit d’accès aux données personnelles vous concernant droit de rectification : correction de données inexactes, incomplètes ou équivoques droit de suppression de ces données droit de définir des directives relatives à la conservation, à l’effacement et à la communication de ces données vous concernant après votre décès  Vous pouvez exercer ces droits en vous adressant au directeur de l’hôpital ou du groupe hospitalier où vous avez été soigné(e).
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+        
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    2020-12-14
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+      
+    </div>
+
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+    
+    <a href="https://consultation-recherche-donnees-sante.netlify.app/outil/droits/" >
+      <img src="https://consultation-recherche-donnees-sante.netlify.app/outil/droits/featured_hu46ac1ca7f78681ee7ebab8f4adfd65ff_684990_150x0_resize_q90_lanczos.jpg" alt="Protection des données personnelles">
+    </a>
+    
+  </div>
+</div>
+
+    
+  
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="media stream-item">
+  <div class="media-body">
+
+    <h3 class="article-title mb-0 mt-0">
+      <a href="https://consultation-recherche-donnees-sante.netlify.app/outil/eds/" >Kit - Entrepôt de données APHP</a>
+    </h3>
+
+    
+    <a href="https://consultation-recherche-donnees-sante.netlify.app/outil/eds/"  class="summary-link">
+      <div class="article-style">
+        Ce projet s&rsquo;inscrit dans un effort plus large d&rsquo;AP-HP de créer une base de données unique pour collecter l&rsquo;ensemble des données médicales et administratives d&rsquo;AP-HP. L&rsquo;objectif est de &ldquo;soutenir la recherche scientifique et l’innovation dans le domaine de la santé&rdquo;.
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+        
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    2020-12-13
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+      
+    </div>
+
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+    
+    <a href="https://consultation-recherche-donnees-sante.netlify.app/outil/eds/" >
+      <img src="https://consultation-recherche-donnees-sante.netlify.app/outil/eds/featured_hu0e5938f3c73cff128fe0ae1b23365452_1171874_150x0_resize_lanczos_2.png" alt="Kit - Entrepôt de données APHP">
+    </a>
+    
+  </div>
+</div>
+
+    
+  
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="media stream-item">
+  <div class="media-body">
+
+    <h3 class="article-title mb-0 mt-0">
+      <a href="https://consultation-recherche-donnees-sante.netlify.app/outil/hegp/" >Kit - Entrepôt de données HEGP</a>
+    </h3>
+
+    
+    <a href="https://consultation-recherche-donnees-sante.netlify.app/outil/hegp/"  class="summary-link">
+      <div class="article-style">
+        L’HEGP dispose d’un dossier patient informatisé depuis son ouverture en 2000, et il a été le premier en France à se doter en 2010 d’un entrepôt de données cliniques, “miroir” du dossier patient informatisé.
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+        
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    2020-12-13
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+      
+    </div>
+
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+    
+    <a href="https://consultation-recherche-donnees-sante.netlify.app/outil/hegp/" >
+      <img src="https://consultation-recherche-donnees-sante.netlify.app/outil/hegp/featured_hu1c464698a8ea5d23f48b1f1df3a0cd21_2130773_150x0_resize_lanczos_2.png" alt="Kit - Entrepôt de données HEGP">
+    </a>
+    
+  </div>
+</div>
+
+    
+  
+
+  
+  
+  
+
+</div>
+
+
+    
+      </div>
+    
+
+    </div>
+  </section>
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  <section id="posts" class="home-section wg-pages  "  >
+   <div class="home-section-bg " ></div>
+    <div class="container">
+
+    
+      <div class="row  ">
+      
+        
+          <div class="col-12 col-lg-4 section-heading">
+            <h1>Bilan d&rsquo;activité</h1>
+            
+          </div>
+        
+      
+    
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+<div class="col-12 col-lg-8">
+
+  
+
+  
+    
+      
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="card-simple">
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+          Dernière mise à jour le
+      
+    
+    2020-11-18
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+  
+  
+  
+  
+  <a href="https://consultation-recherche-donnees-sante.netlify.app/post/publi/">
+    <div class="img-hover-zoom"><img src="https://consultation-recherche-donnees-sante.netlify.app/post/publi/featured_hu05741b0b71fe0c613a84a4a288596c6a_1756221_918x517_fill_q90_lanczos_smart1.jpg" class="article-banner" alt="Travaux de recherche de l&#39;équipe CoReDS"></div>
+  </a>
+  
+
+  <h3 class="article-title mb-1 mt-3">
+    <a href="https://consultation-recherche-donnees-sante.netlify.app/post/publi/">Travaux de recherche de l&#39;équipe CoReDS</a>
+  </h3>
+
+  
+  <a href="https://consultation-recherche-donnees-sante.netlify.app/post/publi/" class="summary-link">
+    <div class="article-style">
+      <p>Pluridisciplinaire et transversale, la recherche sur données de santé a pour objectif d’améliorer la santé et le bien-être des populations. L’équipe CoReDS est la pour vous accompagner dans l’exploitation de ces données massives de santé.</p>
+    </div>
+  </a>
+  
+
+  
+
+</div>
+
+    
+  
+
+  
+  
+  
+
+</div>
+
+
+    
+      </div>
+    
+
+    </div>
+  </section>
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  <section id="publi" class="home-section wg-pages  "  >
+   <div class="home-section-bg " ></div>
+    <div class="container">
+
+    
+      <div class="row  ">
+      
+        
+          <div class="col-12 col-lg-4 section-heading">
+            <h1>Dernières publications</h1>
+            
+          </div>
+        
+      
+    
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+<div class="col-12 col-lg-8">
+
+  
+
+  
+    
+      
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<div class="view-list-item">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+  <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2020-09-01_incidences_of_deep_m/" >Incidences of Deep Molecular Responses and Treatment-Free Remission in de Novo CP-CML Patients.</a>
+
+  
+
+  
+  <div class="article-metadata">
+    
+
+  
+  <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/etienne-gabriel/">Etienne Gabriel</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/dulucq-stephanie/">Dulucq Stephanie</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/bauduer-frederic/">Bauduer Frederic</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/adiko-didier/">Adiko Didier</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/lifermann-francois/">Lifermann Francois</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/dagada-corinne/">Dagada Corinne</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/lenoir-caroline/">Lenoir Caroline</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/schmitt-anna/">Schmitt Anna</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/klein-emilie/">Klein Emilie</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/madene-samia/">Madene Samia</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/fort-marie-pierre/">Fort Marie-Pierre</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/bijou-fontanet/">Bijou Fontanet</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/moldovan-marius/">Moldovan Marius</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/turcq-beatrice/">Turcq Beatrice</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/robbesyn-fanny/">Robbesyn Fanny</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/durrieu-francoise/">Durrieu Francoise</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/versmee-laura/">Versmee Laura</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/katsahian-sandrine/">Katsahian Sandrine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/faberes-carole/">Faberes Carole</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/lascaux-axelle/">Lascaux Axelle</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/mahon-francois-xavier/">Mahon Francois-Xavier</a></span>
+  </div>
+  
+
+  
+  <div class="btn-links">
+    
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+  
+
+</div>
+
+    
+  
+    
+      
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<div class="view-list-item">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+  <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2020-09-01_curative_anticoagula/" >Curative anticoagulation prevents endothelial lesion in COVID-19 patients.</a>
+
+  
+
+  
+  <div class="article-metadata">
+    
+
+  
+  <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/khider-lina/">Khider Lina</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/gendron-nicolas/">Gendron Nicolas</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/goudot-guillaume/">Goudot Guillaume</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/chocron-richard/">Chocron Richard</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/hauw-berlemont-caroline/">Hauw-Berlemont Caroline</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/cheng-charles/">Cheng Charles</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/rivet-nadia/">Rivet Nadia</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/pere-helene/">Pere Helene</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/roffe-ariel/">Roffe Ariel</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/clerc-sebastien/">Clerc Sebastien</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/lebeaux-david/">Lebeaux David</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/debuc-benjamin/">Debuc Benjamin</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/veyer-david/">Veyer David</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/rance-bastien/">Rance Bastien</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/gaussem-pascale/">Gaussem Pascale</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/bertil-sebastien/">Bertil Sebastien</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/badoual-cecile/">Badoual Cecile</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/juvin-philippe/">Juvin Philippe</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/planquette-benjamin/">Planquette Benjamin</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/messas-emmanuel/">Messas Emmanuel</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/sanchez-olivier/">Sanchez Olivier</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/hulot-jean-sebastien/">Hulot Jean-Sebastien</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/diehl-jean-luc/">Diehl Jean-Luc</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/mirault-tristan/">Mirault Tristan</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/smadja-david-m/">Smadja David M</a></span>
+  </div>
+  
+
+  
+  <div class="btn-links">
+    
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+  
+
+</div>
+
+    
+  
+    
+      
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<div class="view-list-item">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+  <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2020-09-01_measured_glomerular_/" >Measured glomerular filtration rate (GFR) significantly and rapidly decreases after radical cystectomy for bladder cancer.</a>
+
+  
+
+  
+  <div class="article-metadata">
+    
+
+  
+  <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/rouanne-mathieu/">Rouanne Mathieu</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/gaillard-francois/">Gaillard Francois</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/meunier-matthias/">Meunier Matthias</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/soorojebally-yanish/">Soorojebally Yanish</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/phan-hoang/">Phan Hoang</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/slimani-thevenet-hind/">Slimani-Thevenet Hind</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/jannot-anne-sophie/">Jannot Anne-Sophie</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/neuzillet-yann/">Neuzillet Yann</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/friedlander-gerard/">Friedlander Gerard</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/froissart-marc/">Froissart Marc</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/botto-henry/">Botto Henry</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/houillier-pascal/">Houillier Pascal</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/lebret-thierry/">Lebret Thierry</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/courbebaisse-marie/">Courbebaisse Marie</a></span>
+  </div>
+  
+
+  
+  <div class="btn-links">
+    
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+  
+
+</div>
+
+    
+  
+    
+      
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<div class="view-list-item">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+  <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2020-09-01_prognostic_value_of_/" >Prognostic value of high-sensitivity measurable residual disease assessment after front-line chemoimmunotherapy in chronic lymphocytic leukemia.</a>
+
+  
+
+  
+  <div class="article-metadata">
+    
+
+  
+  <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/letestu-remi/">Letestu Remi</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/dahmani-abdelmalek/">Dahmani Abdelmalek</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/boubaya-marouane/">Boubaya Marouane</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/baseggio-lucile/">Baseggio Lucile</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/campos-lydia/">Campos Lydia</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/chatelain-bernard/">Chatelain Bernard</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/debliquis-agathe/">Debliquis Agathe</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/jacob-marie-christine/">Jacob Marie-Christine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/legac-eric/">Legac Eric</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/le-garff-tavernier-magali/">Le Garff-Tavernier Magali</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/lhoumeau-anne-catherine/">Lhoumeau Anne-Catherine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/quiney-claire/">Quiney Claire</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/robillard-nelly/">Robillard Nelly</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/ticchioni-michel/">Ticchioni Michel</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/aanei-carmen/">Aanei Carmen</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/katsahian-sandrine/">Katsahian Sandrine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/delepine-roselyne/">Delepine Roselyne</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/vaudaux-sandrine/">Vaudaux Sandrine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/rouille-valerie/">Rouille Valerie</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/bene-marie-christine/">Bene Marie-Christine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/van-den-neste-eric/">Van Den Neste Eric</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/cailleres-sylvie/">Cailleres Sylvie</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/damaj-gandhi/">Damaj Gandhi</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/royer-bruno/">Royer Bruno</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/gardembas-martine/">Gardembas Martine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/dib-mamoun/">Dib Mamoun</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/truchan-graczyk-matgorzata/">Truchan-Graczyk Matgorzata</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/hunault-mathilde/">Hunault Mathilde</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/foussard-charles/">Foussard Charles</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/corront-bernadette/">Corront Bernadette</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/parry-anne/">Parry Anne</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/orsini-piocelle-frederique/">Orsini-Piocelle Frederique</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/trouillier-sebastien/">Trouillier Sebastien</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/slama-bohiane/">Slama Bohiane</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/lepeu-gerard/">Lepeu Gerard</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/zerazhi-hacene/">Zerazhi Hacene</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/boulat-olivier/">Boulat Olivier</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/azzedine-ahmed/">Azzedine Ahmed</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/araujo-carla/">Araujo Carla</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/banos-anne/">Banos Anne</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/bauduer-frederic/">Bauduer Frederic</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/dutel-jean-luc/">Dutel Jean-Luc</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/ghomari-kamel/">Ghomari Kamel</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/deconinck-eric/">Deconinck Eric</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/brion-annie/">Brion Annie</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/vuillier-jacqueline/">Vuillier Jacqueline</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/saad-alain/">Saad Alain</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/el-yamani-abderrazak/">El Yamani Abderrazak</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/rodon-philippe/">Rodon Philippe</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/soubeyran-pierre/">Soubeyran Pierre</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/etienne-gabriel/">Etienne Gabriel</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/dilhuydy-marie-sarah/">Dilhuydy Marie-Sarah</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/bouabdallah-krimo/">Bouabdallah Krimo</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/leguay-thibaut/">Leguay Thibaut</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/chouffi-bachra/">Chouffi Bachra</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/pollet-bertrand/">Pollet Bertrand</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/maakaroun-abdallah/">Maakaroun Abdallah</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/guillerm-gaelle/">Guillerm Gaelle</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/berthou-christian/">Berthou Christian</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/cheron-nathalie/">Cheron Nathalie</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/andre-marc/">Andre Marc</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/vilque-jean-pierre/">Vilque Jean Pierre</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/fruchart-christophe/">Fruchart Christophe</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/voillat-laurent/">Voillat Laurent</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/pica-gian-matteo/">Pica Gian Matteo</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/corm-selim/">Corm Selim</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/miclea-jean-michel/">Miclea Jean-Michel</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/souleau-bertrand/">Souleau Bertrand</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/molucon-chabrot-cecile/">Molucon-Chabrot Cecile</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/de-renzis-benoit/">De Renzis Benoit</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/tournilhac-olivier/">Tournilhac Olivier</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/bay-jacques-olivier/">Bay Jacques-Olivier</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/chaleteix-carine/">Chaleteix Carine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/guieze-romain/">Guieze Romain</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/fleury-joel/">Fleury Joel</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/precupanu-cristina/">Precupanu Cristina</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/bouledroua-selwa/">Bouledroua Selwa</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/haiat-stephanie/">Haiat Stephanie</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/petitdidier-charlotte/">Petitdidier Charlotte</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/dupuis-jehan/">Dupuis Jehan</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/belhadj-karim/">Belhadj Karim</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/casasnovas-olivier/">Casasnovas Olivier</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/bastie-jean-noel/">Bastie Jean-Noel</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/ferrant-emmanuelle/">Ferrant Emmanuelle</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/gholam-dany/">Gholam Dany</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/molina-lysiane/">Molina Lysiane</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/garban-frederic/">Garban Frederic</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/tiab-mourad/">Tiab Mourad</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/maisonneuve-herve/">Maisonneuve Herve</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/villemagne-bruno/">Villemagne Bruno</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/jacomy-dominique/">Jacomy Dominique</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/besson-caroline/">Besson Caroline</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/tertian-gerard/">Tertian Gerard</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/laribi-kamel/">Laribi Kamel</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/morel-pierre/">Morel Pierre</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/cazin-bruno/">Cazin Bruno</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/moreau-stephane/">Moreau Stephane</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/reminieras-liliane/">Reminieras Liliane</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/rapp-marie-jose/">Rapp Marie-Jose</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/moreau-philippe/">Moreau Philippe</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/sebban-catherine/">Sebban Catherine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/michallet-anne-sophie/">Michallet Anne-Sophie</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/salles-gilles/">Salles Gilles</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/broussais-florence/">Broussais Florence</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/aurran-schleinitz-therese/">Aurran-Schleinitz Therese</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/coso-diane/">Coso Diane</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/abarah-wajed/">Abarah Wajed</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/kulekci-claire/">Kulekci Claire</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/dorvaux-veronique/">Dorvaux Veronique</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/carassou-philippe/">Carassou Philippe</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/guibaud-isabelle/">Guibaud Isabelle</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/christian-bernard/">Christian Bernard</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/graux-carlos/">Graux Carlos</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/rossi-jean-francois/">Rossi Jean-Francois</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/quittet-philippe/">Quittet Philippe</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/cartron-guillaume/">Cartron Guillaume</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/dubois-alain/">Dubois Alain</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/eisenmann-jean-claude/">Eisenmann Jean-Claude</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/drenou-bernard/">Drenou Bernard</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/morineau-nadine/">Morineau Nadine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/mahe-beatrice/">Mahe Beatrice</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/karsenti-jean-michel/">Karsenti Jean-Michel</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/jourdan-eric/">Jourdan Eric</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/legouffe-eric/">Legouffe Eric</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/alexis-vigier-magda/">Alexis-Vigier Magda</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/boulet-jean-michel/">Boulet Jean-Michel</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/aoudjhane-malek/">Aoudjhane Malek</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/thieblemont-catherine/">Thieblemont Catherine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/andreoli-anna-lisa/">Andreoli Anna Lisa</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/cymbalista-florence/">Cymbalista Florence</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/levy-vincent/">Levy Vincent</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/dreyfus-francois/">Dreyfus Francois</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/leblond-veronique/">Leblond Veronique</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/choquet-sylvain/">Choquet Sylvain</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/maloum-karim/">Maloum Karim</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/merle-beral-helene/">Merle-Beral Helene</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/vekhoff-anne/">Vekhoff Anne</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/decaudin-didier/">Decaudin Didier</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/brault-philippe/">Brault Philippe</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/delarue-richard/">Delarue Richard</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/janvier-maud/">Janvier Maud</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/soussain-carole/">Soussain Carole</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/vallantin-xavier/">Vallantin Xavier</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/sanhes-laurence/">Sanhes Laurence</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/dreyfus-brigitte/">Dreyfus Brigitte</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/tomowiak-cecile/">Tomowiak Cecile</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/benramdane-riad/">Benramdane Riad</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/gonzalez-hugo/">Gonzalez Hugo</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/blaise-brenna-anne/">Blaise-Brenna Anne</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/kolb-brigitte/">Kolb Brigitte</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/delmer-alain/">Delmer Alain</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/dauriac-charles/">Dauriac Charles</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/houot-roch/">Houot Roch</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/escoffre-barbe-martine/">Escoffre-Barbe Martine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/lamy-thierry/">Lamy Thierry</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/de-guibert-sophie/">De Guibert Sophie</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/bernard-marc/">Bernard Marc</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/grosbois-bernard/">Grosbois Bernard</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/brehar-oana/">Brehar Oana</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/lepretre-stephane/">Lepretre Stephane</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/morice-patrick/">Morice Patrick</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/guyotat-denis/">Guyotat Denis</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/jaubert-jerome/">Jaubert Jerome</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/portois-christelle/">Portois Christelle</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/fornecker-luc-matthieu/">Fornecker Luc-Matthieu</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/herbrecht-raoul/">Herbrecht Raoul</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/bilger-karin/">Bilger Karin</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/ame-shanti/">Ame Shanti</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/ysebaert-loic/">Ysebaert Loic</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/dartigeas-caroline/">Dartigeas Caroline</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/feugier-pierre/">Feugier Pierre</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/godmer-pascal/">Godmer Pascal</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/jardel-henry/">Jardel Henry</a></span>
+  </div>
+  
+
+  
+  <div class="btn-links">
+    
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+  
+
+</div>
+
+    
+  
+    
+      
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<div class="view-list-item">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+  <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/2020-08-01_natural_language_pro/" >Natural Language Processing for Rapid Response to Emergent Diseases: Case Study of Calcium Channel Blockers and Hypertension in the COVID-19 Pandemic.</a>
+
+  
+
+  
+  <div class="article-metadata">
+    
+
+  
+  <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/digan-william/">Digan William</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/tsopra-rosy/">Tsopra Rosy</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/rogier-alice/">Rogier Alice</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/baudoin-david/">Baudoin David</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/cohen-kevin-bretonnel/">Cohen Kevin Bretonnel</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/ancel-pierre-yves/">Ancel Pierre-Yves</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/bauchet-alain/">Bauchet Alain</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/beeker-nathanael/">Beeker Nathanael</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/benoit-vincent/">Benoit Vincent</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/bernaux-melodie/">Bernaux Melodie</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/bellamine-ali/">Bellamine Ali</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/bey-romain/">Bey Romain</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/bourmaud-aurelie/">Bourmaud Aurelie</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/breant-stephane/">Breant Stephane</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/burgun-anita/">Burgun Anita</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/carrat-fabrice/">Carrat Fabrice</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/caucheteux-charlotte/">Caucheteux Charlotte</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/champ-julien/">Champ Julien</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/cormont-sylvie/">Cormont Sylvie</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/daniel-christel/">Daniel Christel</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/dubiel-julien/">Dubiel Julien</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/duclos-catherine/">Duclos Catherine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/esteve-loic/">Esteve Loic</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/frank-marie/">Frank Marie</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/garcelon-nicolas/">Garcelon Nicolas</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/gramfort-alexandre/">Gramfort Alexandre</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/griffon-nicolas/">Griffon Nicolas</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/grisel-olivier/">Grisel Olivier</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/guilbaud-martin/">Guilbaud Martin</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/hassen-khodja-claire/">Hassen-Khodja Claire</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/hemery-francois/">Hemery Francois</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/hilka-martin/">Hilka Martin</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/jannot-anne-sophie/">Jannot Anne-Sophie</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/lambert-jerome/">Lambert Jerome</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/layese-richard/">Layese Richard</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/leblanc-judith/">Leblanc Judith</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/lebouter-leo/">Lebouter Leo</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/lemaitre-guillaume/">Lemaitre Guillaume</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/leprovost-damien/">Leprovost Damien</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/lerner-ivan/">Lerner Ivan</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/sallah-kankoe-levi/">Sallah Kankoe Levi</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/maire-aurelien/">Maire Aurelien</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/mamzer-marie-france/">Mamzer Marie-France</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/martel-patricia/">Martel Patricia</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/mensch-arthur/">Mensch Arthur</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/moreau-thomas/">Moreau Thomas</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/neuraz-antoine/">Neuraz Antoine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/orlova-nina/">Orlova Nina</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/paris-nicolas/">Paris Nicolas</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/rance-bastien/">Rance Bastien</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/ravera-helene/">Ravera Helene</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/rozes-antoine/">Rozes Antoine</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/salamanca-elisa/">Salamanca Elisa</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/sandrin-arnaud/">Sandrin Arnaud</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/serre-patricia/">Serre Patricia</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/tannier-xavier/">Tannier Xavier</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/treluyer-jean-marc/">Treluyer Jean-Marc</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/van-gysel-damien/">van Gysel Damien</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/varoquaux-gael/">Varoquaux Gael</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/jen-vie-jill/">Jen Vie Jill</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/wack-maxime/">Wack Maxime</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/wajsburt-perceval/">Wajsburt Perceval</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/wassermann-demian/">Wassermann Demian</a></span>, <span ><a href="https://consultation-recherche-donnees-sante.netlify.app/author/zapletal-eric/">Zapletal Eric</a></span>
+  </div>
+  
+
+  
+  <div class="btn-links">
+    
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+  
+
+</div>
+
+    
+  
+
+  
+  
+  
+
+    
+    
+      
+    
+
+    
+
+    <div class="see-all">
+      <a href="https://consultation-recherche-donnees-sante.netlify.app/publication/">
+        Plus de publications
+        <i class="fas fa-angle-right"></i>
+      </a>
+    </div>
+  
+
+</div>
+
+
+    
+      </div>
+    
+
+    </div>
+  </section>
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  <section id="transparence" class="home-section wg-pages  "  >
+   <div class="home-section-bg " ></div>
+    <div class="container">
+
+    
+      <div class="row  ">
+      
+        
+          <div class="col-12 col-lg-4 section-heading">
+            <h1>Portail de transparence</h1>
+            
+          </div>
+        
+      
+    
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+<div class="col-12 col-lg-8">
+
+  
+
+  
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="media stream-item">
+  <div class="media-body">
+
+    <h3 class="article-title mb-0 mt-0">
+      <a href="https://consultation-recherche-donnees-sante.netlify.app/transparence/2020-12-25_etude_preliminaire_d/" >Étude préliminaire de description de l&#39;abcès cérébral chez des patients transplantés</a>
+    </h3>
+
+    
+    <a href="https://consultation-recherche-donnees-sante.netlify.app/transparence/2020-12-25_etude_preliminaire_d/"  class="summary-link">
+      <div class="article-style">
+        Responsable(s) du traitement : APHP
+Investigateur principal : Lebeaux David
+Objectif de l&rsquo;étude : Étude préliminaire de description de l&rsquo;abcès cérébral chez des patients transplantés. Principal : Incidence de l&rsquo;abcès cérébral chez des patients transplantés par centre de transplantation par interrogation de la base nationale du PMSI.
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+        
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    2020-12-25
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+      
+    </div>
+
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+  </div>
+</div>
+
+    
+  
+
+  
+  
+  
+
+</div>
+
+
+    
+      </div>
+    
+
+    </div>
+  </section>
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  <section id="people" class="home-section wg-people  "  >
+   <div class="home-section-bg " ></div>
+    <div class="container">
+
+    
+
+      
+
+
+
+
+
+
+
+<div class="row justify-content-center people-widget">
+  
+  <div class="col-md-12 section-heading">
+    <h1>Qui sommes-nous ?</h1>
+    
+  </div>
+  
+
+  
+
+  
+  
+
+  
+  <div class="col-md-12">
+    <h2 class="mb-4">Département Informatique Médicale</h2>
+  </div>
+  
+
+  
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-auto people-person">
+    
+    
+      
+      
+    
+    
+      
+      <a href="https://consultation-recherche-donnees-sante.netlify.app/author/alexis-mareau/"><img class="avatar avatar-circle" src="https://consultation-recherche-donnees-sante.netlify.app/author/alexis-mareau/avatar_hudfa9c405957c93f7e5d9a03eb313c071_1871915_270x270_fill_q90_lanczos_center.jpg" alt="Avatar"></a>
+    
+
+    <div class="portrait-title">
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/author/alexis-mareau/">Alexis Mareau</a></h2>
+      <h3>Data scientist</h3>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://consultation-recherche-donnees-sante.netlify.app/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/alexis-mareau-3b6914179/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+</ul>
+
+      
+    </div>
+  </div>
+  
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-auto people-person">
+    
+    
+      
+      
+    
+    
+      
+      <a href="https://consultation-recherche-donnees-sante.netlify.app/author/anne-sophie-jannot/"><img class="avatar avatar-circle" src="https://consultation-recherche-donnees-sante.netlify.app/author/anne-sophie-jannot/avatar_hu3e3d60faec444d908a071429e38bcabe_11163_270x270_fill_q90_lanczos_center.jpg" alt="Avatar"></a>
+    
+
+    <div class="portrait-title">
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/author/anne-sophie-jannot/">Anne-Sophie Jannot</a></h2>
+      <h3>Coordinatrice CoReDS</h3>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://consultation-recherche-donnees-sante.netlify.app/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/anne-sophie-jannot-a2286ba1/?originalSubdomain=fr" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+</ul>
+
+      
+    </div>
+  </div>
+  
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-auto people-person">
+    
+    
+      
+      
+    
+    
+      
+      <a href="https://consultation-recherche-donnees-sante.netlify.app/author/bastien-rance/"><img class="avatar avatar-circle" src="https://consultation-recherche-donnees-sante.netlify.app/author/bastien-rance/avatar_hu599b1fb5ed2959bce84d391573fdd0de_334712_270x270_fill_q90_lanczos_center.jpg" alt="Avatar"></a>
+    
+
+    <div class="portrait-title">
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/author/bastien-rance/">Bastien Rance</a></h2>
+      <h3>Coordinateur CARPEM HEGP, Responsable RedCap</h3>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://consultation-recherche-donnees-sante.netlify.app/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/bastienrance/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+</ul>
+
+      
+    </div>
+  </div>
+  
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-auto people-person">
+    
+    
+      
+      
+    
+    
+      
+      <a href="https://consultation-recherche-donnees-sante.netlify.app/author/eric-zapletal/"><img class="avatar avatar-circle" src="https://consultation-recherche-donnees-sante.netlify.app/author/eric-zapletal/avatar_hud573f3e20018ba77bc38e728fb95ef09_320835_270x270_fill_lanczos_center_2.png" alt="Avatar"></a>
+    
+
+    <div class="portrait-title">
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/author/eric-zapletal/">Eric Zapletal</a></h2>
+      <h3>Administrateur de l&rsquo;entrepôt de données cliniques HEGP</h3>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://consultation-recherche-donnees-sante.netlify.app/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/eric-zapletal-3a5128bb/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+</ul>
+
+      
+    </div>
+  </div>
+  
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-auto people-person">
+    
+    
+      
+      
+    
+    
+      
+      <a href="https://consultation-recherche-donnees-sante.netlify.app/author/hector-countouris/"><img class="avatar avatar-circle" src="https://consultation-recherche-donnees-sante.netlify.app/author/hector-countouris/avatar_hu6e391020183162ea8fbb2700cafd8183_17138_270x270_fill_q90_lanczos_center.jpg" alt="Avatar"></a>
+    
+
+    <div class="portrait-title">
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/author/hector-countouris/">Hector Countouris</a></h2>
+      <h3>Datamanager, Coordinateur Redcap</h3>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://consultation-recherche-donnees-sante.netlify.app/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/hector-c-067b191/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+</ul>
+
+      
+    </div>
+  </div>
+  
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-auto people-person">
+    
+    
+      
+      
+    
+    
+      
+      <a href="https://consultation-recherche-donnees-sante.netlify.app/author/maxime-wack/"><img class="avatar avatar-circle" src="https://consultation-recherche-donnees-sante.netlify.app/author/maxime-wack/avatar_hu32b8347c857f1fa3b11212a5f41e89b1_7058_270x270_fill_lanczos_center_2.png" alt="Avatar"></a>
+    
+
+    <div class="portrait-title">
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/author/maxime-wack/">Maxime Wack</a></h2>
+      <h3>Data-scientist</h3>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://consultation-recherche-donnees-sante.netlify.app/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/maxime-wack-6b529a114/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+</ul>
+
+      
+    </div>
+  </div>
+  
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-auto people-person">
+    
+    
+      
+      
+    
+    
+      
+      <a href="https://consultation-recherche-donnees-sante.netlify.app/author/pierre-sabatier/"><img class="avatar avatar-circle" src="https://consultation-recherche-donnees-sante.netlify.app/author/pierre-sabatier/avatar_hu86b670dd8e4bc43f00987d0e6ee1e52d_1300012_270x270_fill_q90_lanczos_center.jpeg" alt="Avatar"></a>
+    
+
+    <div class="portrait-title">
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/author/pierre-sabatier/">Pierre Sabatier</a></h2>
+      <h3>Data-scientist</h3>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://consultation-recherche-donnees-sante.netlify.app/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/pierre-sabatier-72671894/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+</ul>
+
+      
+    </div>
+  </div>
+  
+  
+  
+
+  
+  <div class="col-md-12">
+    <h2 class="mb-4">Unité de Recherche Clinique</h2>
+  </div>
+  
+
+  
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-auto people-person">
+    
+    
+      
+      
+    
+    
+      
+      <a href="https://consultation-recherche-donnees-sante.netlify.app/author/juliette-djadi-prat/"><img class="avatar avatar-circle" src="https://consultation-recherche-donnees-sante.netlify.app/author/juliette-djadi-prat/avatar_hub67e56c47ea5ec700ba1b7aa33da0845_54150_270x270_fill_q90_lanczos_center.jpg" alt="Avatar"></a>
+    
+
+    <div class="portrait-title">
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/author/juliette-djadi-prat/">Juliette Djadi-Prat</a></h2>
+      <h3>Responsable adjointe de l&rsquo;Unité de Recherche Clinique</h3>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://consultation-recherche-donnees-sante.netlify.app/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/juliette-djadi-prat-05671127/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+</ul>
+
+      
+    </div>
+  </div>
+  
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-auto people-person">
+    
+    
+      
+      
+    
+    
+      
+      <a href="https://consultation-recherche-donnees-sante.netlify.app/author/pauline-jouany/"><img class="avatar avatar-circle" src="https://consultation-recherche-donnees-sante.netlify.app/author/pauline-jouany/avatar_hu8ccef799b0abae7f91d898ddb6414f1d_2353414_270x270_fill_q90_lanczos_center.jpg" alt="Avatar"></a>
+    
+
+    <div class="portrait-title">
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/author/pauline-jouany/">Pauline Jouany</a></h2>
+      <h3>Cadre de l’Unité de Recherche Clinique de l’HEGP</h3>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://consultation-recherche-donnees-sante.netlify.app/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/jouany-pauline-0a3472a0/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+</ul>
+
+      
+    </div>
+  </div>
+  
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-auto people-person">
+    
+    
+      
+      
+    
+    
+      
+      <a href="https://consultation-recherche-donnees-sante.netlify.app/author/pierre-sabatier/"><img class="avatar avatar-circle" src="https://consultation-recherche-donnees-sante.netlify.app/author/pierre-sabatier/avatar_hu86b670dd8e4bc43f00987d0e6ee1e52d_1300012_270x270_fill_q90_lanczos_center.jpeg" alt="Avatar"></a>
+    
+
+    <div class="portrait-title">
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/author/pierre-sabatier/">Pierre Sabatier</a></h2>
+      <h3>Data-scientist</h3>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://consultation-recherche-donnees-sante.netlify.app/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/pierre-sabatier-72671894/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+</ul>
+
+      
+    </div>
+  </div>
+  
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-auto people-person">
+    
+    
+      
+      
+    
+    
+      
+      <a href="https://consultation-recherche-donnees-sante.netlify.app/author/sandrine-katsahian/"><img class="avatar avatar-circle" src="https://consultation-recherche-donnees-sante.netlify.app/author/sandrine-katsahian/avatar_hu6af1568f37cc5d902719c56af06b344d_10789_270x270_fill_q90_lanczos_center.jpg" alt="Avatar"></a>
+    
+
+    <div class="portrait-title">
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/author/sandrine-katsahian/">Sandrine Katsahian</a></h2>
+      <h3>Directrice de l&rsquo;Unité de Recherche Clinique de l&rsquo;HEGP et directrice du DMU PRIME</h3>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://consultation-recherche-donnees-sante.netlify.app/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/sandrine-katsahian-98555679/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+</ul>
+
+      
+    </div>
+  </div>
+  
+  
+  
+
+  
+  <div class="col-md-12">
+    <h2 class="mb-4">Comité éthique CERAPHP</h2>
+  </div>
+  
+
+  
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-auto people-person">
+    
+    
+      
+      
+    
+    
+      
+      <a href="https://consultation-recherche-donnees-sante.netlify.app/author/anne-sophie-jannot/"><img class="avatar avatar-circle" src="https://consultation-recherche-donnees-sante.netlify.app/author/anne-sophie-jannot/avatar_hu3e3d60faec444d908a071429e38bcabe_11163_270x270_fill_q90_lanczos_center.jpg" alt="Avatar"></a>
+    
+
+    <div class="portrait-title">
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/author/anne-sophie-jannot/">Anne-Sophie Jannot</a></h2>
+      <h3>Coordinatrice CoReDS</h3>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://consultation-recherche-donnees-sante.netlify.app/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/anne-sophie-jannot-a2286ba1/?originalSubdomain=fr" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+</ul>
+
+      
+    </div>
+  </div>
+  
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-auto people-person">
+    
+    
+      
+      
+    
+    
+      
+      <a href="https://consultation-recherche-donnees-sante.netlify.app/author/marie-caroline-lai/"><img class="avatar avatar-circle" src="https://consultation-recherche-donnees-sante.netlify.app/author/marie-caroline-lai/avatar_hub1a29aa1420624908a418668640a00d8_176014_270x270_fill_lanczos_center_2.png" alt="Avatar"></a>
+    
+
+    <div class="portrait-title">
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/author/marie-caroline-lai/">Marie-Caroline Laï</a></h2>
+      <h3>Secrétaire Générale CERAPHP</h3>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://consultation-recherche-donnees-sante.netlify.app/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/marie-caroline-la%C3%AF-40275a110/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+</ul>
+
+      
+    </div>
+  </div>
+  
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-auto people-person">
+    
+    
+      
+      
+    
+    
+      
+      <a href="https://consultation-recherche-donnees-sante.netlify.app/author/maxime-wack/"><img class="avatar avatar-circle" src="https://consultation-recherche-donnees-sante.netlify.app/author/maxime-wack/avatar_hu32b8347c857f1fa3b11212a5f41e89b1_7058_270x270_fill_lanczos_center_2.png" alt="Avatar"></a>
+    
+
+    <div class="portrait-title">
+      <h2><a href="https://consultation-recherche-donnees-sante.netlify.app/author/maxime-wack/">Maxime Wack</a></h2>
+      <h3>Data-scientist</h3>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://consultation-recherche-donnees-sante.netlify.app/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/maxime-wack-6b529a114/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+</ul>
+
+      
+    </div>
+  </div>
+  
+  
+</div>
+
+
+    
+
+    </div>
+  </section>
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  <section id="contact" class="home-section wg-contact  "  >
+   <div class="home-section-bg " ></div>
+    <div class="container">
+
+    
+      <div class="row  ">
+      
+        
+          <div class="col-12 col-lg-4 section-heading">
+            <h1>Contact</h1>
+            
+          </div>
+        
+      
+    
+
+      
+
+
+
+
+
+
+<div class="col-12 col-lg-8">
+  
+
+  
+
+  <ul class="fa-ul">
+
+    
+    <li>
+      <i class="fa-li fas fa-envelope fa-2x" aria-hidden="true"></i>
+      <span id="person-email">pierre.sabatier@aphp.fr</span>
+    </li>
+    
+
+    
+
+    
+    
+      
+      <li>
+        <i class="fa-li fas fa-map-marker fa-2x" aria-hidden="true"></i>
+        <span id="person-address">20 Rue Leblanc<br>75015 Paris Paris</span>
+      </li>
+    
+
+    
+    <li>
+      <i class="fa-li fas fa-compass fa-2x" aria-hidden="true"></i>
+      <span>Département informatique Médicale</span>
+    </li>
+    
+
+    
+    <li>
+      <i class="fa-li fas fa-clock fa-2x" aria-hidden="true"></i>
+      <span></span>
+    </li>
+    
+
+    
+
+    
+    
+
+  </ul>
+
+  
+  <div class="d-none">
+    <input id="map-provider" value="3">
+    <input id="map-lat" value="48.839451694823296">
+    <input id="map-lng" value="2.2733330386404433">
+    <input id="map-dir" value="20 Rue Leblanc75015 Paris Paris">
+    <input id="map-zoom" value="15">
+    <input id="map-api-key" value="">
+  </div>
+  <div id="map"></div>
+  
+
+</div>
+
+
+    
+      </div>
+    
+
+    </div>
+  </section>
+
+
+
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    <code>2021</code> - <strong>CoReDS</strong>
+  </p>
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+    Published with
+    <a href="https://wowchemy.com" target="_blank" rel="noopener">Wowchemy</a>  —
+    the free, <a href="https://github.com/wowchemy/wowchemy-hugo-modules" target="_blank" rel="noopener">
+    open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Citation</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copier
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Télécharger
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/latex.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js" integrity="sha512-SeiQaaDh73yrb56sTW/RgVdi/mMqNeM2oBwubFHagc5BkixSpP1fvqF47mKzPGWYSSy4RwbBunrJBQ4Co8fRWA==" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"Aucun résultat n'a été trouvé","placeholder":"Recherche...","results":"Résultats trouvés"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projets",
+        'publication' : "Publications",
+        'talk' : "Présentations",
+        'slides' : "Slides"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="https://consultation-recherche-donnees-sante.netlify.app/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
+
+    
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,144 @@
+---
+title: Travaux de recherche de l'équipe CoReDS
+author: admin
+date: '2020-12-10'
+slug: publi
+lastmod: '2020-11-18T17:29:38+01:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+output: html_document
+---
+
+Pluridisciplinaire et transversale, la recherche sur données de santé a pour objectif d’améliorer la santé et le bien-être des populations. L'équipe CoReDS est la pour vous accompagner dans l'exploitation de ces données massives de santé.     
+  
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+library(RISmed)
+library(tidyverse)
+library(stringr)
+library(questionr)
+library(tidyverse)
+library(lubridate)
+library(ggplot2)
+library(plotly)
+library(RColorBrewer)
+```
+
+```{r message=FALSE, warning=FALSE, include=FALSE, paged.print=FALSE}
+search_topic <- 'Anne-Sophie Jannot OR Pierre Sabatier OR Bastien Rance OR Eric Zapletal OR Hector Countouris OR Juliette Djadi-Prat OR Marie-Caroline Lai OR Maxime Wack OR Pauline Jouany OR Sandrine Katsahian'
+
+search_query <- EUtilsSummary(search_topic, retmax=1000, mindate=2010)
+
+summary(search_query)
+
+records<- EUtilsGet(search_query)
+
+
+pubmed_data <- data.frame('ArticleTitle' = ArticleTitle(records),
+                          'PMID' = PMID(records),
+                          'Authors' = (sapply(Author(records), function(x)paste(x$LastName,x$ForeName)) %>% 
+  sapply(., paste, collapse=" , ")),
+                          'Affiliation' = (Affiliation(records) %>% 
+  sapply(., paste, collapse=" ; ")),
+                         'Year' = YearPubmed(records), 
+                          'Month' = MonthPubDate(records),
+                         'Journal' = Title(records),
+                          'DOI' = DOI(records),
+                          'ArticleId' = ArticleId(records),
+                          'AbstractText' = AbstractText(records),
+                          'PublicationType' = (PublicationType(records) %>% 
+  sapply(., paste, collapse=" ; "))) 
+
+## Recoding pubmed_data$Month into pubmed_data$Month_rec
+pubmed_data$Month <- fct_recode(pubmed_data$Month,
+  "04" = "Apr",
+  "08" = "Aug",
+  "12" = "Dec",
+  "02" = "Feb",
+  "01" = "Jan",
+  "07" = "Jul",
+  "06" = "Jun",
+  "03" = "Mar",
+  "05" = "May",
+  "11" = "Nov",
+  "10" = "Oct",
+  "09" = "Sep"
+)
+pubmed_data$Month <- fct_explicit_na(pubmed_data$Month, "01")
+pubmed_data$Month <- as.character(pubmed_data$Month)
+
+pubmed_data <- pubmed_data %>% 
+  mutate(date = ymd(paste(Year, Month, "01", sep = "-")),
+         ArticleTitle = str_replace_all(ArticleTitle, "/", " "),
+         AbstractText = str_replace_all(AbstractText, "Label=", " "),
+         PublicationType = "2",
+         AbstractText = str_replace_all(AbstractText, '"', ""),
+         AbstractText = str_replace_all(AbstractText, "                  ", ""),
+         AbstractText = str_replace_all(AbstractText, "[A-Z]{6,}[:space:]NlmCategory=", "")) %>% 
+  filter(str_detect(str_to_lower(Affiliation), "hôpital européen georges pompidou|hôpital européen georges-pompidou|georges-pompidou european hospital|georges pompidou european hospital|hegp|h.e.g.p|georges pompidou|g. pompidou|georges-pompidou"))
+```
+  
+<br><br>
+
+# Bilan scientifique
+  
+**Statistiques des publications de l'équipe CoReDS**
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+pubmed_data %>% 
+  arrange(desc(date)) %>%
+  mutate(annee = year(date)) %>% 
+  group_by(annee) %>% 
+  summarise(nbr = n()) %>% 
+  ungroup() %>% 
+  filter(annee >= 2010) %>% 
+  mutate(annee = as.factor(annee)) -> stats
+
+plot_ly(stats, x = ~annee) %>% 
+  add_trace(y = ~nbr,  color = ~annee, type = 'bar', colors = brewer.pal(n = 12, name = 'Set3'), values = ~nbr, textposition = 'inside') %>%
+  layout(uniformtext=list(minsize=12, mode='hide'),
+         showlegend = FALSE,
+         xaxis = list(
+           title = "Date en année",
+           dtick = 1),
+         yaxis = list(title = "Nombre de publication")) %>%  
+  add_annotations(
+    x= 0,
+    y= 1,
+    xref = "x",
+    yref = "y",
+    text = "Création entrepôt HEGP",
+    showarrow = T,
+    ax = 0,
+    ay = -40,
+    font = list(color = '#ff0000')
+  )
+```
+
+<br><br>
+
+# Nombre de point SIGAS
+![En travaux](http://www.bultecappelle.fr/wp-content/uploads/2011/12/travaux.png)
+  
+  
+
+<br><br>
+
+# Nombre de projet accompagné
+![En travaux](http://www.bultecappelle.fr/wp-content/uploads/2011/12/travaux.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
