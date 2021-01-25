@@ -38,7 +38,7 @@ title = "**Consultation Recherche Données de Santé**"
 #   Remove a link/note by deleting a cta/note block.
 [cta]
   url = "entreprendre/"
-  label = "Prendre RDV pour votre projet ? C'est par ici !"
+  label = "Soumettre un projet"
   icon_pack = "fas"
   icon = "download"
   
@@ -51,4 +51,6 @@ title = "**Consultation Recherche Données de Santé**"
 #  label = '<a class="js-github-release" href="https://sourcethemes.com/academic/updates" data-repo="gcushen/hugo-academic">Latest #release<!-- V --></a>'
 +++
   
-Construire **ensemble** votre projet du règlementaire à la faisabilité - analyse
+Notre mission : vous accompagner dans le développement de votre projet. 
+
+

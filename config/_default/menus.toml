@@ -5,7 +5,7 @@
 
 
 [[main]]
-  name = "Prendre RDV pour votre projet"
+  name = "Soumettre un projet"
   url = "entreprendre/"
   weight = 10
 
@@ -20,7 +20,7 @@
   weight = 40
   
 [[main]]
-  name = "Boite à outils"
+  name = "En savoir plus"
   url = "#outils"
   weight = 30
 
