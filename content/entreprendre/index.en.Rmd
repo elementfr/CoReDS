@@ -31,8 +31,8 @@ output: html_document
 ---
 
 
+<a href="http://s1.eq22.fr/redcap/surveys/?s=CP9DJJ4W3J">Click here to take the survey</a>
 
-<iframe src="http://s1.eq22.fr/redcap/surveys/?s=CP9DJJ4W3J" style="position:absolute; top:0; left:0; bottom:0; right:0; width:100%; height:100%"> </iframe>
 
 
 
