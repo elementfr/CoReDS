@@ -84,7 +84,7 @@ tableau2 <- tableau %>%
   rename("Nom de l'étude" = titre_etude, "Investigateur" = pi_nom, "Date" = demande_date, "Avis URC" = avis_urc_complete, "Avis éthique CERAPHP" = avis_ceraphp_complete, "Avis éthique CPP" = avis_cpp_complete, "Avis informatique" = avis_infomed_complete)
 ```
 
-```{r echo=FALSE}
+```{r echo=FALSE, message=FALSE, warning=FALSE}
 tableau2 %>% 
   mutate(`Avis URC` = if (`Avis URC` == "Avis OK"){
     cell_spec(`Avis URC`, "html", color = "lightseagreen", bold = T)} 
