@@ -34,7 +34,12 @@
   
   <url>
     <loc>https://consultation-recherche-donnees-sante.netlify.app/transparence/</loc>
-    <lastmod>2020-12-25T00:00:00+00:00</lastmod>
+    <lastmod>2021-01-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://consultation-recherche-donnees-sante.netlify.app/transparence/2021-01-25_utilisation_de_lhyp/</loc>
+    <lastmod>2021-01-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -53,8 +58,8 @@
   </url>
   
   <url>
-    <loc>https://consultation-recherche-donnees-sante.netlify.app/outil/droits/</loc>
-    <lastmod>2020-12-14T17:56:36+01:00</lastmod>
+    <loc>https://consultation-recherche-donnees-sante.netlify.app/outil/pmsi/</loc>
+    <lastmod>2020-12-13T22:53:00+01:00</lastmod>
   </url>
   
   <url>
@@ -64,6 +69,16 @@
   
   <url>
     <loc>https://consultation-recherche-donnees-sante.netlify.app/outil/hegp/</loc>
+    <lastmod>2020-12-13T22:53:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://consultation-recherche-donnees-sante.netlify.app/outil/egb/</loc>
+    <lastmod>2020-12-13T22:53:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://consultation-recherche-donnees-sante.netlify.app/outil/redcap/</loc>
     <lastmod>2020-12-13T22:53:00+01:00</lastmod>
   </url>
   
