@@ -38,7 +38,7 @@ title = "**Consultation Recherche Données de Santé**"
 #   Remove a link/note by deleting a cta/note block.
 [cta]
   url = "entreprendre/"
-  label = "Commencer un projet ? C'est par ici !"
+  label = "Prendre RDV pour votre projet ? C'est par ici !"
   icon_pack = "fas"
   icon = "download"
   

@@ -3,5 +3,5 @@ header:
   caption: ""
   image: ""
 title: Boite à outils
-view: 2
+view: 10
 ---

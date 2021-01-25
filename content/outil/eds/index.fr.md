@@ -1,7 +1,7 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Kit - Entrepôt de données APHP"
+title: "Entrepôt de données APHP"
 subtitle: ""
 summary: ""
 authors: []

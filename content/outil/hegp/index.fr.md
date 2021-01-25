@@ -1,7 +1,7 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Kit - Entrepôt de données HEGP"
+title: "Entrepôt de données HEGP"
 subtitle: ""
 summary: ""
 authors: []

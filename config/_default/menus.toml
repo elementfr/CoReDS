@@ -5,17 +5,12 @@
 
 
 [[main]]
-  name = "Commencer un projet"
+  name = "Prendre RDV pour votre projet"
   url = "entreprendre/"
   weight = 10
 
 [[main]]
-  name = "Suivre son projet"
-  url = "suivremonprojet/"
-  weight = 20
-
-[[main]]
-  name = "Portail de transparence"
+  name = "Projet en cours"
   url = "#transparence"
   weight = 50
   
