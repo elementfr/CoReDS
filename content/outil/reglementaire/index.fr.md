@@ -46,7 +46,7 @@ Acronymes :
 4. [Hors loi Jardé : n'impliquant pas la personne humaine](#liensutiles)
 5. [Liens utiles](#horsjarde)
 <br>
-<img alt = 'Organisation réglementaire' width='800' src='img/reglementaire.png' />
+<img alt = 'Organisation réglementaire' width='600' src='img/reglementaire.png' />
 
   
 <a name="RIPH1"></a> <br><br> 
