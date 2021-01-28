@@ -27,8 +27,10 @@ image:
 #   Otherwise, set `projects = []`.
 projects: []
 ---
-RedCap blabla
- 
+REDCap (Research Electronic Data Capture) est une solution logicielle d'acquisition électronique de données sur navigateur reposant sur métadonnées, pour la conception de bases de données de recherche clinique et translationnelle.  
+
+## <span style="color:red">**L'histoire**</span> 
+REDCap a été développé par une équipe informatique à l'Université Vanderbilt avec l'appui continu de subventions du NCRR (National Center for Research Resources) et du NIH3. REDCap a été conçu pour résoudre les problèmes communs des chercheurs biomédicaux universitaires souhaitant utiliser des bases de données électroniques. Tout d'abord, les grands fournisseurs de solutions d'acquisition électronique de données (EDC : electronic data capture) et de systèmes de gestion des données cliniques (CDMS : clinical data management system) s'adressent aux promoteurs de grands essais cliniques, avec des prix pouvant être prohibitifs pour les études initiées par des chercheurs et autres études à plus petite échelle4. Deuxièmement, l'environnement de la recherche indépendante manque souvent du support informatique nécessaire pour une bonne intégration des technologies de l'information dans les protocoles de recherche5. Le logiciel REDCap tente de faciliter le soutien informatique pour les chercheurs cliniques et de favoriser un réseau de collaboration entre les chercheurs travaillant dans des établissements qui partagent REDCap comme outil de recherche.
 
 
 
