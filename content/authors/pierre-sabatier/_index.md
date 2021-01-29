@@ -7,7 +7,7 @@ highlight_name: true
 organizations:
 - name: Hôpital européen Georges-Pompidou
   url: "http://hopital-georgespompidou.aphp.fr/"
-role: Data-scientist
+role: Pharmacien Data-scientist
 social:
 - icon: envelope
   icon_pack: fas

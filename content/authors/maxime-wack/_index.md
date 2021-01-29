@@ -8,7 +8,7 @@ email: "maxime.wack@aphp.fr"
 organizations:
 - name: Hôpital européen Georges-Pompidou
   url: "http://hopital-georgespompidou.aphp.fr/"
-role: Data-scientist
+role: Médecin Data-scientist
 social:
 - icon: envelope
   icon_pack: fas
