@@ -74,7 +74,7 @@ pubmed_data <- pubmed_data %>%
 bibtex_2academic <- function(pubmed_data,
                              outfold,
                              abstract = TRUE, 
-                             overwrite = TRUE) {
+                             overwrite = FALSE) {
   
   require(RefManageR)
   require(dplyr)
